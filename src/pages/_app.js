@@ -24,6 +24,7 @@ export default function App({ Component, pageProps }) {
       <main>
         <Component {...pageProps} />
       </main>
+      // <Footer />
     </>
   );
 }
