@@ -1,0 +1,99 @@
+@import "../../styles/colors";
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2.6rem;
+  margin: 0 auto;
+  align-items: center;
+  background-color: $dark-smooth-hover;
+
+  h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+    color: $white-smooth;
+  }
+
+  h3 {
+    color: $white-smooth;
+    text-align: center;
+  }
+
+  p {
+    color: $white-smooth;
+    padding: 1rem 1rem;
+  }
+
+  &__one,
+  &__two,
+  &__three {
+    border: 2px solid black;
+    padding: 2rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  &__one {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(70, 42, 42, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/image/hero_640.jpg") center/cover no-repeat;
+  }
+
+  &__two {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5)),
+      url("../../assets/image/furniture_640.jpg") center/cover no-repeat;
+  }
+
+  &__three {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5)),
+      url("../../assets/image/tint_640.jpg") center/cover no-repeat;
+  }
+
+  &__button {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.4rem;
+    transition: background-color 0.3s;
+    border-radius: 0.6rem;
+    color: $dark-smooth;
+    background-color: $white-smooth;
+    box-shadow: 0.2rem 0.4rem 0.6rem;
+    // border: none;
+    transition: 0.5s;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0.4rem 0.6rem 0 0 rgba(51, 36, 11, 0.8),
+        inset 0.6rem 0.2rem 0.6rem rgba(35, 27, 7, 0.711);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    font-size: 1.8rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .services {
+    font-size: 2.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    &__one,
+    &__two {
+      grid-template-columns: 1fr;
+    }
+  }
+}

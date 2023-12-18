@@ -14,10 +14,18 @@ const Nav = ({ isOpen }) => {
       <div className={classes.nav__container}>
         <div className={classes.nav__items}>
           <ul aria-hidden className={classes.menu}>
-            <li href="#aboutUs">O nas</li>
-            <li href="#services">Usługi</li>
-            <li href="#">Galeria</li>
-            <li href="#">Kontakt</li>
+            <li>
+              <a href="#aboutUs">O nas</a>
+            </li>
+            <li>
+              <a href="#services">Usługi</a>
+            </li>
+            <li>
+              <a href="#gallery">Galeria</a>
+            </li>
+            <li>
+              <a href="#contact">Kontakt</a>
+            </li>
           </ul>
         </div>
       </div>

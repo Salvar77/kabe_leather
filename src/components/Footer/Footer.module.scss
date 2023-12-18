@@ -1,0 +1,23 @@
+@import "../../styles/colors";
+
+.footer {
+  background-color: $white-smooth;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &Info {
+      color: $dark-smooth;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    background-color: $white-smooth;
+  }
+}
