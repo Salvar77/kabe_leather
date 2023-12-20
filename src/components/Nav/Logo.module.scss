@@ -1,8 +1,11 @@
+@import "../../styles/colors";
+
 .logo {
   position: fixed;
   top: 0;
   left: 0;
-  max-height: 10rem;
+  max-height: 13rem;
   width: auto;
   z-index: 10000;
+  //   background-color: $grey-smooth;
 }
