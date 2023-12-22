@@ -2,7 +2,7 @@ import Head from "next/head";
 import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
-import SliderBeforeAfter from "@/components/Main/SliderBeforeAfter";
+import Slider from "@/components/Main/Slider";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <AboutUs />
       <Services />
-      <SliderBeforeAfter />
+      <Slider />
       <Contact />
     </>
   );
