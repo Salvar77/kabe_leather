@@ -39,6 +39,20 @@
   opacity: 0;
 }
 
+.sliderButton {
+  // position: absolute;
+  background-color: $white-smooth;
+  color: $dark-smooth;
+  padding: 0.5rem;
+  //   border-radius: 100vw;
+  //   display: grid;
+  //   place-items: center;
+  //   top: 50%;
+  //   transform: translate(-50%, -50%);
+  //   pointer-events: none;
+  z-index: 100;
+}
+
 .sliderInput::-webkit-slider-runnable-track {
   width: 0;
   height: 0;

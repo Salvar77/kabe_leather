@@ -56,6 +56,7 @@ const SliderTrue = (props) => {
           objectFit="cover"
         />
         <div style={lineStyles} />
+
         <input
           type="range"
           min="1"
