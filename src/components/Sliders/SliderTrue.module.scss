@@ -1,0 +1,60 @@
+@import "../../styles/colors";
+
+.slideBox {
+  position: relative;
+  margin: 2rem;
+  background-color: $dark-smooth;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sliderContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBefore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.sliderInput {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%, -50%);
+  color: $dark-smooth;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.sliderInput::-webkit-slider-runnable-track {
+  width: 0;
+  height: 0;
+  background: #ddd;
+}
+
+.sliderInput::-moz-range-track {
+  /* Styl dla Firefox */
+  width: 0;
+  height: 0;
+  background: #ddd;
+}
+
+.sliderInput::-ms-track {
+  /* Styl dla IE/Edge */
+  width: 0;
+  height: 0;
+  background: #ddd;
+}
