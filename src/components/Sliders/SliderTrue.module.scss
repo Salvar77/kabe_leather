@@ -18,14 +18,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 80rem;
 }
 
 .imageBefore {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  max-width: 60rem;
+  object-fit: cover;
+}
+
+.titleSlide {
+  color: $white-smooth;
 }
 
 .sliderInput {
@@ -39,36 +46,62 @@
   opacity: 0;
 }
 
-.sliderButton {
-  // position: absolute;
-  background-color: $white-smooth;
-  color: $dark-smooth;
-  padding: 0.5rem;
-  //   border-radius: 100vw;
-  //   display: grid;
-  //   place-items: center;
-  //   top: 50%;
-  //   transform: translate(-50%, -50%);
-  //   pointer-events: none;
-  z-index: 100;
+.lineStyles::before {
+  content: ""; /* Niezbędne dla pseudoelementów */
+  position: absolute;
+  top: 50%; /* Centrowanie względem wysokości linii */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px; /* Szerokość strzałki */
+  height: 20px; /* Wysokość strzałki */
+  background: url("../../assets/image/arrows.svg") no-repeat center center;
+  background-size: contain;
 }
 
-.sliderInput::-webkit-slider-runnable-track {
-  width: 0;
-  height: 0;
-  background: #ddd;
+@media (min-width: 992px) {
+  .slideBox {
+    display: grid;
+    flex-direction: row;
+  }
+
+  .sliderContainer {
+    flex-direction: row;
+  }
+  .imageBefore {
+    flex-direction: row;
+  }
 }
 
-.sliderInput::-moz-range-track {
-  /* Styl dla Firefox */
-  width: 0;
-  height: 0;
-  background: #ddd;
-}
+// .sliderButton {
+//   // position: absolute;
+//   background-color: $white-smooth;
+//   color: $dark-smooth;
+//   padding: 0.5rem;
+//   //   border-radius: 100vw;
+//   //   display: grid;
+//   //   place-items: center;
+//   //   top: 50%;
+//   //   transform: translate(-50%, -50%);
+//   //   pointer-events: none;
+//   z-index: 100;
+// }
 
-.sliderInput::-ms-track {
-  /* Styl dla IE/Edge */
-  width: 0;
-  height: 0;
-  background: #ddd;
-}
+// .sliderInput::-webkit-slider-runnable-track {
+//   width: 0;
+//   height: 0;
+//   background: #ddd;
+// }
+
+// .sliderInput::-moz-range-track {
+//   /* Styl dla Firefox */
+//   width: 0;
+//   height: 0;
+//   background: #ddd;
+// }
+
+// .sliderInput::-ms-track {
+//   /* Styl dla IE/Edge */
+//   width: 0;
+//   height: 0;
+//   background: #ddd;
+// }

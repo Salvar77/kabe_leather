@@ -26,7 +26,12 @@ const Hero = () => {
   return (
     <section id="hero" className={classes.hero}>
       <div className={classes.imageContainer}>
-        <Image src={currentImage} alt="Hero" layout="fill" objectFit="cover" />
+        <Image
+          src={currentImage}
+          alt="Hero"
+          fill={true}
+          style={{ objectFit: "cover" }}
+        />
       </div>
       <div className={classes.textOverlay}>
         <h1 className={classes.hero__title}>KaBe Tint&Leather</h1>

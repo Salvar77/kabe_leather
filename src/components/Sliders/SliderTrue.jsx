@@ -12,7 +12,6 @@ const SliderTrue = (props) => {
   const imageStyles = {
     position: "absolute",
     width: "100%",
-    height: "100%",
     objectFit: "cover",
   };
 
@@ -29,19 +28,14 @@ const SliderTrue = (props) => {
 
   return (
     <div className={classes.slideBox}>
-      {" "}
-      Galeria
-      <span className={classes.titleSlide}></span>
       <div className={classes.sliderContainer}>
         <Image
           src={props.beforeImage}
           alt="before"
           style={imageStyles}
           className={classes.imageBefore}
-          layout="responsive"
-          width={400}
-          height={300}
-          objectFit="cover"
+          width={260}
+          height={400}
         />
         <Image
           src={props.afterImage}
@@ -50,10 +44,8 @@ const SliderTrue = (props) => {
           style={{
             clipPath: `inset(0 ${100 - sliderValue}% 0 0)`,
           }}
-          layout="responsive"
-          width={400}
-          height={300}
-          objectFit="cover"
+          width={260}
+          height={400}
         />
         <div style={lineStyles} />
 

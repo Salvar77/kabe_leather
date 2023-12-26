@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import classes from "./SliderBeforeAfter.module.scss";
+// import classes from "./SliderBeforeAfter.module.scss";
 
 const SliderBeforeAfter = (props) => {
   const [sliderValue, setSliderValue] = useState(50);

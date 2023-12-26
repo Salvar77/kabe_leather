@@ -1,0 +1,11 @@
+@import "../../styles/colors";
+
+.titleSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-smooth;
+  color: $white-smooth;
+  font-size: 2rem;
+  padding: 2rem;
+}
