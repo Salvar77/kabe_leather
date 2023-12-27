@@ -3,7 +3,7 @@
 .slideBox {
   position: relative;
   margin: 2rem;
-  background-color: $dark-smooth;
+  background-color: $dark-smooth-hover;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -46,16 +46,19 @@
   opacity: 0;
 }
 
-.lineStyles::before {
-  content: ""; /* Niezbędne dla pseudoelementów */
+.line::before {
   position: absolute;
-  top: 50%; /* Centrowanie względem wysokości linii */
+  content: "";
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20px; /* Szerokość strzałki */
-  height: 20px; /* Wysokość strzałki */
-  background: url("../../assets/image/arrows.svg") no-repeat center center;
-  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  // background-image: url("../../assets/image/arrows.svg");
+  // background: url("../../assets/image/arrows.svg");
+  background-size: cover;
+  background-color: $white-smooth;
 }
 
 @media (min-width: 992px) {

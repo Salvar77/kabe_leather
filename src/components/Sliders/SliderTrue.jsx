@@ -20,7 +20,7 @@ const SliderTrue = (props) => {
     top: 0,
     bottom: 0,
     left: `${sliderValue}%`,
-    width: "0.2rem",
+    width: ".2rem",
     height: "100%",
     backgroundColor: "#fff",
     transform: "translateX(-50%)",
@@ -36,6 +36,7 @@ const SliderTrue = (props) => {
           className={classes.imageBefore}
           width={260}
           height={400}
+          priority
         />
         <Image
           src={props.afterImage}
@@ -47,12 +48,12 @@ const SliderTrue = (props) => {
           width={260}
           height={400}
         />
-        <div style={lineStyles} />
+        <div style={lineStyles} className={classes.line} />
 
         <input
           type="range"
-          min="1"
-          max="100"
+          min="5"
+          max="95"
           value={sliderValue}
           onChange={handleSliderChange}
           className={classes.sliderInput}

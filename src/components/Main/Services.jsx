@@ -8,7 +8,7 @@ const Services = () => {
     <section id="services" className={classes.services}>
       <h2>Usługi</h2>
       <div className={classes.services__one}>
-        <h3>Renowacja Tapicerki Skórzanej samochodowej</h3>
+        <h3>Regeneracja Tapicerki Skórzanej samochodowej</h3>
         <p></p>
         <Link href="#services" className={classes.services__button}>
           Sprawdź

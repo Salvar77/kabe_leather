@@ -9,7 +9,7 @@ const Contact = () => {
         <p>Ulica: Grota Roweckiego 18</p>
         <p>Miasto: Opole</p>
         <p>Telefon: 881 325 631</p>
-        <p>Email: kabetint@gmail.com</p>
+        <p>Email: Kabetint@kabetintleather.pl</p>
       </div>
       <form className={classes.contactForm}>
         <h2>Wyślij nam wiadomość</h2>
