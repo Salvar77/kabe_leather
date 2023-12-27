@@ -2,7 +2,7 @@ import Head from "next/head";
 import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
-
+import Reviews from "@/components/Main/Reviews";
 import SliderSection from "@/components/Sliders/SliderSection";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <SliderSection />
-
+      <Reviews />
       <Contact />
     </>
   );

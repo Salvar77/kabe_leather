@@ -13,6 +13,7 @@
     text-align: center;
     grid-column: 1 / -1;
     color: $white-smooth;
+    font-size: 2rem;
   }
 
   h3 {
@@ -91,6 +92,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     align-items: stretch;
+
+    h2 {
+      font-size: 2.4rem;
+    }
     &__one,
     &__two {
       grid-template-columns: 1fr;
