@@ -14,7 +14,6 @@ const SliderSection = (props) => {
       <span className={classes.titleSlide}>Galeria</span>
       <SliderTrue beforeImage={BeforeImage1} afterImage={AfterImage1} />
       <SliderTrue beforeImage={BeforeImage2} afterImage={AfterImage2} />
-      <SliderTrue beforeImage={BeforeImage3} afterImage={AfterImage3} />
     </div>
   );
 };
