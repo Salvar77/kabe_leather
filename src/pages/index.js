@@ -16,7 +16,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <SliderSection />
-      <Reviews />
+
       <Contact />
     </>
   );
