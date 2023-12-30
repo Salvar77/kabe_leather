@@ -1,0 +1,8 @@
+@import "../../styles/colors";
+
+.automotivePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white-smooth;
+}
