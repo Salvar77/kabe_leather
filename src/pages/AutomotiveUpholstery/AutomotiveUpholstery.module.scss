@@ -4,5 +4,84 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $white-smooth;
+  justify-content: center;
+  padding-top: 10rem;
+  background-color: $dark-smooth;
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: $white-smooth;
+  }
+}
+
+.automotivePage_box {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  // border: 1px solid $white-smooth;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: $white-smooth;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.appointmentLink {
+  color: $white-smooth;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid $white-smooth;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $blue-main;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; // Opcjonalnie, aby dodać trochę przestrzeni na górze
+}
+
+// Specyficzne style dla poszczególnych boxów (jeśli potrzebne)
+.automotive1_box {
+  // Styl specyficzny dla automotive1
+}
+
+.automotive2_box {
+  // Styl specyficzny dla automotive2
+}
+
+.automotive3_box {
+  // Styl specyficzny dla automotive3
 }

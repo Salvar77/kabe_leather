@@ -1,4 +1,5 @@
 import classes from "./Nav.module.scss";
+import Link from "next/link";
 
 const Nav = ({ isOpen }) => {
   let navClasses = classes.nav;
@@ -15,16 +16,16 @@ const Nav = ({ isOpen }) => {
         <div className={classes.nav__items}>
           <ul aria-hidden className={classes.menu}>
             <li>
-              <a href="#aboutUs">O nas</a>
+              <Link href="/#aboutUs">O nas</Link>
             </li>
             <li>
-              <a href="#services">Usługi</a>
+              <Link href="/#services">Usługi</Link>
             </li>
             <li>
-              <a href="#gallery">Galeria</a>
+              <Link href="/#gallery">Galeria</Link>
             </li>
             <li>
-              <a href="#contact">Kontakt</a>
+              <Link href="/#contact">Kontakt</Link>
             </li>
           </ul>
         </div>
