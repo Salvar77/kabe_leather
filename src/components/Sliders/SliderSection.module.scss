@@ -29,6 +29,27 @@
   }
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.realizationButton {
+  padding: 1rem 2rem;
+  background-color: $white-smooth;
+  color: $dark-smooth;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($blue-main, 10%);
+    text-decoration: none;
+  }
+}
+
 @media (min-width: 992px) {
   .titleSlide {
     font-size: 2.4rem;
