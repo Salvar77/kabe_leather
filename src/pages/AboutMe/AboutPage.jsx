@@ -23,7 +23,10 @@ const AboutPage = () => {
         ></Image>
       </div>
       <div className={classes.buttonContainer}>
-        <Link href="/realizacje" className={classes.realizationButton}>
+        <Link
+          href="/Realizations/Realizations"
+          className={classes.realizationButton}
+        >
           Realizacje
         </Link>
       </div>

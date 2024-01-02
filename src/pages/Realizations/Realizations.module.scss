@@ -1,0 +1,32 @@
+@import "../../styles/colors";
+
+.realizations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   padding-top: 5rem;
+  //   height: 100vh;
+  background-color: $dark-smooth;
+
+  &__header {
+    padding-top: 10rem;
+    color: $white-smooth;
+  }
+}
+
+@media (min-width: 992px) {
+  .realizations {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .realizations__header {
+    padding-top: 0; // Usuwa dodatkowy padding na większych ekranach
+  }
+}

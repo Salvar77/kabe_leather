@@ -7,19 +7,24 @@ import AfterImage2 from "../../assets/image/renovation_3.jpg";
 import classes from "./SliderSection.module.scss";
 import Link from "next/link";
 
-const SliderSection = (props) => {
+const SliderSection = ({ showTitle = true, showButton = true }) => {
   return (
     <section id="gallery" className={classes.sliderSection}>
-      <span className={classes.titleSlide}>Galeria</span>
+      {showTitle && <span className={classes.titleSlide}>Galeria</span>}
       <div className={classes.sliderGrid}>
         <SliderTrue beforeImage={BeforeImage1} afterImage={AfterImage1} />
         <SliderTrue beforeImage={BeforeImage2} afterImage={AfterImage2} />
       </div>
-      <div className={classes.buttonContainer}>
-        <Link href="/realizacje" className={classes.realizationButton}>
-          Realizacje
-        </Link>
-      </div>
+      {showButton && (
+        <div className={classes.buttonContainer}>
+          <Link
+            href="/Realizations/Realizations"
+            className={classes.realizationButton}
+          >
+            Realizacje
+          </Link>
+        </div>
+      )}
     </section>
   );
 };
