@@ -28,7 +28,7 @@ const AboutUs = () => {
           niezbędne doświadczenie kierunku regeneracji tapicerki skórzanej oraz
           przciemnianiu szyb samochodowych.
         </p>
-        <Link href="/AboutMe/AboutPage" className={styles.aboutUs__btn}>
+        <Link href="/O-Mnie" className={styles.aboutUs__btn}>
           &#10132;
         </Link>
         <div className={styles.links}>

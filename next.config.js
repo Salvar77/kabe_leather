@@ -1,11 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-};
 
-module.exports = nextConfig;
+  async rewrites() {
+    return [
+      {
+        source: "/Realizacje",
+        destination: "/Realizations/Realizations",
+      },
+      {
+        source: "/Tapicerka/:id",
+        destination: "/AutomotiveUpholstery/:id",
+      },
+      {
+        source: "/O-Mnie",
+        destination: "/AboutMe/AboutPage",
+      },
+    ];
+  },
 
-module.exports = {
   webpack(config, options) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -15,3 +28,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = nextConfig;

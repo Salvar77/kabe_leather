@@ -1,7 +1,40 @@
+import { useState } from "react";
 import classes from "./Contact.module.scss";
 import Link from "next/link";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        console.log("Wiadomość wysłana: ", data.message);
+        // Możesz tutaj dodać dodatkowe działania, np. wyczyszczenie formularza
+      } else {
+        console.error("Błąd wysyłania: ", data.error);
+      }
+    } catch (error) {
+      console.error("Błąd: ", error);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
   return (
     <section id="contact" className={classes.contactSection}>
       <div className={classes.contactInfo}>
@@ -11,11 +44,31 @@ const Contact = () => {
         <p>Telefon: 881 325 631</p>
         <p>Email: Kabetint@kabetintleather.pl</p>
       </div>
-      <form className={classes.contactForm}>
+      <form className={classes.contactForm} onSubmit={handleSubmit}>
         <h2>Wyślij nam wiadomość</h2>
-        <input type="text" placeholder="Twoje imię" required />
-        <input type="email" placeholder="Twój email" required />
-        <textarea placeholder="Twoja wiadomość" required></textarea>
+        <input
+          type="text"
+          name="name"
+          placeholder="Twoje imię"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Twój email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Twoja wiadomość"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
         <button type="submit">Wyślij</button>
       </form>
       <iframe

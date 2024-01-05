@@ -53,7 +53,7 @@ const Services = () => {
               <div className={classes.services__content}>
                 <p>{service.description}</p>
                 <Link
-                  href={`/AutomotiveUpholstery/${service.id}`}
+                  href={`/Tapicerka/${service.id}`}
                   className={classes.services__button}
                 >
                   Sprawdź

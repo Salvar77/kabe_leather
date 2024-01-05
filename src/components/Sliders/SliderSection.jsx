@@ -17,10 +17,7 @@ const SliderSection = ({ showTitle = true, showButton = true }) => {
       </div>
       {showButton && (
         <div className={classes.buttonContainer}>
-          <Link
-            href="/Realizations/Realizations"
-            className={classes.realizationButton}
-          >
+          <Link href="/Realizacje" className={classes.realizationButton}>
             Realizacje
           </Link>
         </div>
