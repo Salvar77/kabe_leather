@@ -5,12 +5,12 @@ export default async function handler(req, res) {
     const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
-      host: "ssl0.ovh.net",
-      port: 587,
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
       secure: false,
       auth: {
-        user: "Kabetint@kabetintleather.pl",
-        pass: "Haslofirmoweodlotowe126!", // Uważaj na bezpieczeństwo hasła
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
       },
       tls: {
         rejectUnauthorized: false, // Ignoruje błędy związane z certyfikatem SSL
