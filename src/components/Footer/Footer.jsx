@@ -15,20 +15,13 @@ const Footer = () => {
         <ul className={classes.footer__icons}>
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61554800660887"
               className="fab fa-facebook-f"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
           </li>
-          <li>
-            <a
-              href="#"
-              className="fab fa-twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-          </li>
+
           <li>
             <a
               href="#"

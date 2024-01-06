@@ -5,20 +5,23 @@ export default async function handler(req, res) {
     const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
+      host: "ssl0.ovh.net",
+      port: 587,
       secure: false,
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD, // Uważaj na bezpieczeństwo hasła
+        user: "Kabetint@kabetintleather.pl",
+        pass: "Haslofirmoweodlotowe126!", // Uważaj na bezpieczeństwo hasła
+      },
+      tls: {
+        rejectUnauthorized: false, // Ignoruje błędy związane z certyfikatem SSL
       },
     });
 
     const mailOptions = {
       from: "Kabetint@kabetintleather.pl",
-      to: "Kabetint@kabetintleather.pl",
+      to: email,
       subject: "Wiadomość z formularza kontaktowego",
-      text: `Cześć ${name}, \n\nDziękuję za Twoją wiadomość. Oto treść Twojej wiadomości:\n\n${message} \n\nPozdrawiam, \nTwoje imię`,
+      text: `Cześć ${name}, \n\nDziękuję za Twoją wiadomość. Oto treść Twojej wiadomości:\n\n${message} \n\nSkontaktuję się z Tobą wkrótce. \n\nPozdrawiam, \nKabetint&Leather`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

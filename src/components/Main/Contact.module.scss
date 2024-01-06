@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem;
+  top: 2rem;
+  // padding: 2rem;
   background-color: $dark-smooth;
-  width: 100%; // Dodaj szerokość dla sekcji
+  width: 100%;
   margin: 0 auto; // Wyśrodkuj sekcję
   // margin-left: auto;
   // margin-right: auto;
@@ -25,6 +26,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    text-decoration: none;
 
     p {
       margin-bottom: 0.5rem;
@@ -52,18 +54,118 @@
 
     button {
       padding: 0.5rem 1rem;
-      background-color: #007bff;
-      color: white;
+      background-color: $white-smooth;
+      color: $dark-smooth;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
       border-radius: 1rem;
+      font-weight: bold;
 
       &:hover {
-        background-color: $dark-smooth;
+        background-color: $blue-main;
       }
     }
   }
+}
+
+.messageStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $white-smooth;
+  border-radius: 0.6rem;
+  // width: 20rem;
+  // height: 7rem;
+  background-color: $white-smooth; /* jasne tło */
+  color: $dark-smooth; /* ciemniejszy kolor tekstu */
+  text-align: center;
+  font-size: 2rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-smooth;
+  background-color: $dark-smooth;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: $white-smooth;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(44, 28, 28, 0.25);
+}
+
+.appointmentLink {
+  position: relative;
+  color: $white-smooth;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border: 1px solid $white-smooth;
+  border-radius: 0.4rem;
+  display: inline-block;
+  margin-top: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    transition: all 0.5s;
+    z-index: -1;
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &:hover {
+    border: 1px solid transparent;
+    color: $blue-main;
+  }
+
+  &:hover::after {
+    bottom: 0.3rem;
+    left: 0.4rem;
+    border-bottom: 4px solid $blue-main;
+    border-right: 4px solid $blue-main;
+  }
+
+  &:hover::before {
+    top: 0.3rem;
+    right: 0.4rem;
+    border-top: 4px solid $blue-main;
+    border-left: 4px solid $blue-main;
+  }
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem; // Opcjonalnie, aby dodać trochę przestrzeni na górze
 }
 
 @media (min-width: 992px) {
@@ -88,7 +190,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       padding-left: 10%;
 
       p {
@@ -100,7 +202,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       width: min(90%, 400px);
 
       input,
@@ -115,17 +217,32 @@
 
       button {
         padding: 0.5rem 1rem;
-        background-color: #007bff;
-        color: white;
+        background-color: $white-smooth;
+        color: $dark-smooth;
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease;
         border-radius: 1rem;
 
         &:hover {
-          background-color: $dark-smooth;
+          background-color: $blue-main;
         }
       }
+    }
+
+    .linkWrapper {
+      grid-column: 1 / -1; // Rozciąga na całą szerokość gridu
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .mapWrapper {
+      grid-column: 1 / -1; // Rozciąga na całą szerokość gridu
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
     }
   }
 }

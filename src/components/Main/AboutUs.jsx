@@ -5,7 +5,7 @@ import image from "../../assets/image/logo_aboutUs.png";
 
 const AboutUs = () => {
   return (
-    <section id="aboutUs" className={styles.aboutUs}>
+    <section id="O-nas" className={styles.aboutUs}>
       <div>
         <Image
           className={styles.aboutUs__img}
@@ -33,21 +33,14 @@ const AboutUs = () => {
         </Link>
         <div className={styles.links}>
           <a
-            href="https://www.youtube.com/user/TwojaNazwaUzytkownika"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-youtube"></i>
-          </a>
-          <a
-            href="https://www.facebook.com/TwojaNazwaUzytkownika"
+            href="https://www.facebook.com/profile.php?id=61554800660887"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-facebook"></i>
           </a>
           <a
-            href="https://www.instagram.com/moon.julu88/"
+            href="https://www.instagram.com/TwojProfilInsta"
             target="_blank"
             rel="noopener noreferrer"
           >

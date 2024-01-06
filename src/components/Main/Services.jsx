@@ -7,7 +7,7 @@ import tintImage from "../../assets/image/tint_640.jpg";
 
 export const servicesData = [
   {
-    id: "automotive1",
+    id: "tapicerka-samochodowa",
     description: "Regeneracja Tapicerki Skórzanej samochodowej",
     image: heroImage,
     title: "Sprawdź",
@@ -17,7 +17,7 @@ export const servicesData = [
       "Regeneracja Tapicerki Skórzanej : Profesjonalna renowacja tapicerki skórzanej to bardzo złożony proces, dzięki któremu Twoje meble lub tapicerka samochodowa zyskają zupełnie nowy wygląd. Profesjonalne preparaty i fach w ręku sprawiają, że skórzane elementy wyglądają jak nowe! Renowacja i naprawa tapicerki skórzanej w KaBe Tint&Leather to usługa dedykowana wszystkim posiadaczom skórzanych mebli - zarówno tapicerki samochodowej, jak i kanap i narożników domowych. w KaBe Tint&Leather kompleksowo zadbamy o każdą skórzaną tapicerkę. Zakres naszych usług jest bardzo szeroki, a w jego skład wchodzi: ",
   },
   {
-    id: "automotive2",
+    id: "tapicerka-domowa",
     description: "Regeneracja Tapicerki Skórzanej domowej",
     image: furnitureImage,
     title: "Sprawdź",
@@ -27,7 +27,7 @@ export const servicesData = [
       " Regeneracja Tapicerki Skórzanej : Profesjonalna renowacja tapicerki skórzanej to bardzo złożony proces, dzięki któremu Twoje meble lub tapicerka samochodowa zyskają zupełnie nowy wygląd. Profesjonalne preparaty i fach w ręku sprawiają, że skórzane elementy wyglądają jak nowe! Renowacja i naprawa tapicerki skórzanej w KaBe Tint&Leather to usługa dedykowana wszystkim posiadaczom skórzanych mebli - zarówno tapicerki samochodowej, jak i kanap i narożników domowych. w KaBe Tint&Leather kompleksowo zadbamy o każdą skórzaną tapicerkę. Zakres naszych usług jest bardzo szeroki, a w jego skład wchodzi:",
   },
   {
-    id: "automotive3",
+    id: "bezinwazyjne-przyciemnianie-szyb",
     description: "Bezinwazyjne Przyciemnianie szyb samochodowych",
     image: tintImage,
     title: "Sprawdź",
@@ -40,7 +40,7 @@ export const servicesData = [
 
 const Services = () => {
   return (
-    <section id="services" className={classes.services}>
+    <section id="usługi" className={classes.services}>
       <h2>Usługi</h2>
       <div className={classes.services__wrapper}>
         {servicesData.map((service) => (

@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const SliderSection = ({ showTitle = true, showButton = true }) => {
   return (
-    <section id="gallery" className={classes.sliderSection}>
+    <section id="galeria" className={classes.sliderSection}>
       {showTitle && <span className={classes.titleSlide}>Galeria</span>}
       <div className={classes.sliderGrid}>
         <SliderTrue beforeImage={BeforeImage1} afterImage={AfterImage1} />

@@ -39,7 +39,7 @@ const Hero = () => {
           Z dumą chcielibyśmy zaprezentować państwu usługi przyciemniania szyb
           samochodowych oraz regenerację tapicerki skórzanej.
         </p>
-        <Link href="#services" className={classes.button}>
+        <Link href="#usługi" className={classes.button}>
           Nasze usługi
         </Link>
       </div>

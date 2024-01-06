@@ -24,7 +24,7 @@ const AutomotiveUpholstery = () => {
   }`;
 
   return (
-    <section id="automotive1" className={sectionClass}>
+    <section id="tapicerka1" className={sectionClass}>
       <h1>{automotive.description}</h1>
       <div className={boxClass}>
         <Image
@@ -32,11 +32,11 @@ const AutomotiveUpholstery = () => {
           alt={`Obraz usługi ${automotive.title}`}
         />
         {/* Dodatkowe informacje dla wybranych usług */}
-        <p>{automotive.additionalInfo}</p>
-        {(automotiveId === "automotive1" || automotiveId === "automotive2") && (
+        <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+        {(automotiveId === "tapicerka-samochodowa" ||
+          automotiveId === "tapicerka-domowa") && (
           <>
-            <p></p>
-            <ul>
+            <ul className={classes.listStyle}>
               <li>czyszczenie skóry meblowej i samochodowej</li>
               <li>konserwacja skóry meblowej i samochodowej</li>
               <li>usuwanie plam i przebarwień</li>
@@ -54,16 +54,16 @@ const AutomotiveUpholstery = () => {
               </li>
             </ul>
             <div className={classes.linkWrapper}>
-              <Link href="#message" className={classes.appointmentLink}>
+              <Link href="tel:+48881325631" className={classes.appointmentLink}>
                 Umów się na wizytę!
               </Link>
             </div>
           </>
         )}
-        {automotiveId === "automotive3" && (
+        {automotiveId === "bezinwazyjne-przyciemnianie-szyb" && (
           <>
-            <p></p>
-            <ul>
+            <p className={classes.paragraphStyle}></p>
+            <ul className={classes.listStyle}>
               <li>
                 Redukcja energii słonecznej, pozwala obniżyć temperaturę w
                 samochodzie
@@ -76,7 +76,7 @@ const AutomotiveUpholstery = () => {
               <li>Oszczędność pieniędzy, pozwa</li>
             </ul>
             <div className={classes.linkWrapper}>
-              <Link href="#message" className={classes.appointmentLink}>
+              <Link href="tel:+48881325631" className={classes.appointmentLink}>
                 Umów się na wizytę!
               </Link>
             </div>

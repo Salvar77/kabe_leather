@@ -19,14 +19,15 @@
   }
 
   &__header {
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding: 2rem;
     text-align: center;
   }
 
   &__text {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin: 2rem;
+    padding: 0.6rem;
   }
 
   &__content {
@@ -58,6 +59,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .aboutMe {
+    &_header {
+      font-size: 4.4rem;
+    }
+
+    &_text {
+      font-size: 4rem;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   .aboutMe {
     flex-direction: row;
@@ -65,6 +78,14 @@
 
     &__img {
       padding: 2rem;
+    }
+
+    &__header {
+      font-size: 3rem;
+    }
+
+    &__text {
+      font-size: 2.4rem;
     }
 
     .buttonContainer {

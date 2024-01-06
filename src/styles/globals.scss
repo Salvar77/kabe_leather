@@ -20,19 +20,19 @@ body {
   font-family: "Oxygen", sans-serif;
 }
 
-#aboutUs,
-#services,
-#gallery,
-#contact {
-  padding-top: 9rem; // Wysokość twojego paska nawigacji + dodatkowy margines
-  margin-top: -9rem; // Odpowiednie przesunięcie w górę
+#O-nas,
+#usługi,
+#galeria,
+#kontakt {
+  padding-top: 8.3rem; // Wysokość twojego paska nawigacji + dodatkowy margines
+  margin-top: -8.3rem; // Odpowiednie przesunięcie w górę
 }
 
 @media only screen and (max-width: 768px) {
-  #aboutUs,
-  #services,
-  #gallery,
-  #contact {
+  #O-nas,
+  #usługi,
+  #galeria,
+  #kontakt {
     padding-top: 8rem; // Mniejszy dla urządzeń mobilnych
     margin-top: -8rem;
   }

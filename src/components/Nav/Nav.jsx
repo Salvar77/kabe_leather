@@ -16,16 +16,16 @@ const Nav = ({ isOpen }) => {
         <div className={classes.nav__items}>
           <ul aria-hidden className={classes.menu}>
             <li>
-              <Link href="/#aboutUs">O nas</Link>
+              <Link href="/#O-nas">O nas</Link>
             </li>
             <li>
-              <Link href="/#services">Usługi</Link>
+              <Link href="/#usługi">Usługi</Link>
             </li>
             <li>
-              <Link href="/#gallery">Galeria</Link>
+              <Link href="/#galeria">Galeria</Link>
             </li>
             <li>
-              <Link href="/#contact">Kontakt</Link>
+              <Link href="/#kontakt">Kontakt</Link>
             </li>
           </ul>
         </div>
