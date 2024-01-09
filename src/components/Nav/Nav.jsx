@@ -7,7 +7,6 @@ const Nav = ({ isOpen, toggleNav }) => {
   if (isOpen) {
     navClasses = `${classes.nav} ${classes.nav__show}`;
   }
-
   return (
     <nav className={navClasses}>
       <div className={classes.nav__container}>
