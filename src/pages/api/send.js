@@ -19,9 +19,9 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: "Kabetint@kabetintleather.pl",
-      to: email,
+      to: "Kabetint@kabetintleather.pl",
       subject: "Wiadomość z formularza kontaktowego",
-      text: `Cześć ${name}, \n\nDziękuję za Twoją wiadomość. Oto treść Twojej wiadomości:\n\n${message} \n\nSkontaktuję się z Tobą wkrótce. \n\nPozdrawiam, \nKabetint&Leather`,
+      text: `Nowa wiadomość od: ${name} \nEmail: ${email} \nTreść wiadomości: ${message}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
