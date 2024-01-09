@@ -23,6 +23,19 @@ const Hero = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const heroSection = document.getElementById("hero");
+      const viewportHeight = window.innerHeight;
+      heroSection.style.height = `${viewportHeight}px`;
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section id="hero" className={classes.hero}>
       <div className={classes.imageContainer}>
