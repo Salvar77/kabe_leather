@@ -1,30 +1,27 @@
 import { useState, useEffect } from "react";
 import classes from "./BurgerMenu.module.scss";
 
-const BurgerMenu = ({ handleOpen }) => {
-  const [isActiveMenu, setIsActiveMenu] = useState(false);
-
+const BurgerMenu = ({ isOpen, handleOpen }) => {
   const toggleActive = () => {
-    setIsActiveMenu(!isActiveMenu);
-    handleOpen();
+    handleOpen(); // Bezpośrednie wywołanie funkcji zmieniającej stan
   };
 
-  const [windowWidth, setWindowWidth] = useState("");
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    const handleResizeWindow = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResizeWindow);
-    return () => {
-      window.removeEventListener("resize", handleResizeWindow);
-    };
-  }, []);
+  // const [windowWidth, setWindowWidth] = useState("");
+  // useEffect(() => {
+  //   setWindowWidth(window.innerWidth);
+  //   const handleResizeWindow = () => setWindowWidth(window.innerWidth);
+  //   window.addEventListener("resize", handleResizeWindow);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResizeWindow);
+  //   };
+  // }, []);
 
   return (
     <>
       <div className={classes.hamburgerContainer}>
         <button
           className={`${classes.hamburger} ${classes.hamburger__arrow} ${
-            isActiveMenu ? classes.isActive : ""
+            isOpen ? classes.isActive : ""
           }`}
           type="button"
           onClick={toggleActive}

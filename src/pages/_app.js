@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
       <header>
         <Logo />
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
-        <BurgerMenu handleOpen={toggleNav} />
+        <BurgerMenu handleOpen={toggleNav} isOpen={isOpen} />
       </header>
 
       <main>
