@@ -1,51 +1,47 @@
-import styles from "./AboutUs.module.scss";
+import classes from "./AboutUs.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import image from "../../assets/image/logo_aboutUs.png";
 
 const AboutUs = () => {
   return (
-    <section id="O-nas" className={styles.aboutUs}>
+    <section id="O-nas" className={classes.aboutMe}>
       <div>
-        <Image
-          className={styles.aboutUs__img}
-          src={image}
-          alt="Opis obrazu"
-          width={500}
-          height={300}
-        />
+        <Image src={image} alt="Opis obrazu" className={classes.aboutMe__img} />
       </div>
-      <div className={styles.aboutUs__boxText}>
-        <h2 className={styles.sectionHeading}>O nas</h2>
-        <ul>
+      <div className={classes.aboutMe__content}>
+        <h2 className={classes.aboutMe__header}>O nas</h2>
+        <ul className={classes.aboutMe__list}>
           <li>Wysoka jakość</li>
           <li>Dostępność</li>
           <li>Indywidualne podejście</li>
         </ul>
-        <p className={styles.aboutUs__info}>
-          W ostatnim czasie przeszlismy szkolenia pod okiem fachowców w
-          renomowanej firmie Colourlock oraz Wrapster, dzieki którym nabyliśmy
+        <p className={classes.aboutMe__text}>
+          W ostatnim czasie przeszliśmy szkolenia pod okiem fachowców w
+          renomowanej firmie Colourlock oraz Wrapster, dzięki którym nabyliśmy
           niezbędne doświadczenie kierunku regeneracji tapicerki skórzanej oraz
-          przciemnianiu szyb samochodowych.
+          przyciemnianiu szyb samochodowych.
         </p>
-        <Link href="/O-Mnie" className={styles.aboutUs__btn}>
-          &#10132;
-        </Link>
-        <div className={styles.links}>
-          <a
-            href="https://www.facebook.com/profile.php?id=61554800660887"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/TwojProfilInsta"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-instagram"></i>
-          </a>
+        <div className={classes.buttonContainer}>
+          <Link href="/O-Mnie" className={classes.realizationButton}>
+            &#10132;
+          </Link>
+          <div className={classes.aboutMe__socialLinks}>
+            <a
+              href="https://www.facebook.com/profile.php?id=61554800660887"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/TwojProfilInsta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>

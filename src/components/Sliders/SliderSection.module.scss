@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $dark-smooth;
+  background-color: $dark-smooth-hover;
   color: $white-smooth;
   font-size: 2rem;
   padding: 2rem;
+  font-weight: bold;
 }
 
 .sliderSection {
@@ -15,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: $dark-smooth;
+  background-color: $dark-smooth-hover;
 }
 
 .sliderGrid {
@@ -50,8 +51,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .titleSlide {
+    font-size: 3rem;
+  }
+
+  .realizationButton {
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 992px) {
   .titleSlide {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 }

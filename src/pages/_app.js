@@ -10,18 +10,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function App({ Component, pageProps }) {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
-    setMenuOpen(!menuOpen);
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <>
       <header>
         <Logo />
-        <Nav isOpen={menuOpen} />
-        <BurgerMenu handleOpen={handleOpen} />
+        <Nav isOpen={isOpen} toggleNav={toggleNav} />
+        <BurgerMenu handleOpen={toggleNav} />
       </header>
 
       <main>

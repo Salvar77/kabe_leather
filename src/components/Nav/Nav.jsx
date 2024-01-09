@@ -1,30 +1,28 @@
 import classes from "./Nav.module.scss";
 import Link from "next/link";
 
-const Nav = ({ isOpen }) => {
+const Nav = ({ isOpen, toggleNav }) => {
   let navClasses = classes.nav;
 
   if (isOpen) {
     navClasses = `${classes.nav} ${classes.nav__show}`;
   }
 
-  console.log(navClasses, isOpen);
-
   return (
     <nav className={navClasses}>
       <div className={classes.nav__container}>
         <div className={classes.nav__items}>
           <ul aria-hidden className={classes.menu}>
-            <li>
+            <li onClick={toggleNav}>
               <Link href="/#O-nas">O nas</Link>
             </li>
-            <li>
+            <li onClick={toggleNav}>
               <Link href="/#usługi">Usługi</Link>
             </li>
-            <li>
+            <li onClick={toggleNav}>
               <Link href="/#galeria">Galeria</Link>
             </li>
-            <li>
+            <li onClick={toggleNav}>
               <Link href="/#kontakt">Kontakt</Link>
             </li>
           </ul>
@@ -33,4 +31,5 @@ const Nav = ({ isOpen }) => {
     </nav>
   );
 };
+
 export default Nav;

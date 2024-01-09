@@ -114,9 +114,8 @@
 }
 
 .paragraphStyle {
-  color: $white-smooth;
-  font-size: 1.6rem;
   padding: 1rem;
+  margin: 1rem;
 }
 
 .listStyle {
@@ -127,25 +126,38 @@
   padding: 1rem;
 }
 
-// Specyficzne style dla poszczególnych boxów (jeśli potrzebne)
-.automotive1_box {
-  // Styl specyficzny dla automotive1
-}
-
-.automotive2_box {
-  // Styl specyficzny dla automotive2
-}
-
-.automotive3_box {
-  // Styl specyficzny dla automotive3
-}
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  .appointmentLink {
+    font-size: 2rem;
+  }
+  .automotivePage {
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
   .paragraphStyle {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .listStyle {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .appointmentLink {
+    font-size: 2.2rem;
+  }
+  .automotivePage {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .paragraphStyle {
+    font-size: 2.2rem;
+  }
+
+  .listStyle {
+    font-size: 2.2rem;
   }
 }

@@ -31,6 +31,7 @@
   }
 
   &__content {
+    margin: 1rem;
     background-color: $dark-smooth;
     padding-top: 10rem;
   }
@@ -61,13 +62,17 @@
 
 @media (min-width: 768px) {
   .aboutMe {
-    &_header {
-      font-size: 4.4rem;
+    &__header {
+      font-size: 3.4rem;
     }
 
-    &_text {
-      font-size: 4rem;
+    &__text {
+      font-size: 2.4rem;
     }
+  }
+
+  .realizationButton {
+    font-size: 1.8rem;
   }
 }
 
@@ -81,11 +86,11 @@
     }
 
     &__header {
-      font-size: 3rem;
+      font-size: 3.2rem;
     }
 
     &__text {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
     }
 
     .buttonContainer {
@@ -95,5 +100,9 @@
       transform: translateX(-50%);
       width: auto;
     }
+  }
+
+  .realizationButton {
+    font-size: 2rem;
   }
 }
