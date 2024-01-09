@@ -34,7 +34,7 @@ export const servicesData = [
     backgroundImage: " url('../../assets/image/tint_640.jpg')",
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "Bezinwazyjne przcyiemnianie szyb to nic innego jak usługa bez demontażu elementów tapicerki w twoim samochodzie. Przyciemnianie szyb to usługa która nie tylko poprawi wygląd twojego samochodu, ale również poprawi komfort podróżowania Tobie i pasażerom. Korzyści z przyciemniania szyb samochodowych to: ",
+      "Bezinwazyjne przyciemnianie szyb to nic innego jak usługa bez demontażu elementów tapicerki w twoim samochodzie. Przyciemnianie szyb to usługa która nie tylko poprawi wygląd twojego samochodu, ale również poprawi komfort podróżowania Tobie i pasażerom. Korzyści z przyciemniania szyb samochodowych to: ",
   },
 ];
 
