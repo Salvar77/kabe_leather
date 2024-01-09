@@ -3,15 +3,10 @@ import classes from "./BurgerMenu.module.scss";
 
 const BurgerMenu = ({ handleOpen }) => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggleActive = () => {
     setIsActiveMenu(!isActiveMenu);
     handleOpen();
-  };
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
   };
 
   const [windowWidth, setWindowWidth] = useState("");
