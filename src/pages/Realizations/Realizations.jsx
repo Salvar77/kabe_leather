@@ -7,7 +7,11 @@ const Realizations = () => {
     <section id="#realizations" className={classes.realizations}>
       <h1 className={classes.realizations__header}>Realizacje</h1>
 
-      <SliderSection showTitle={false} showButton={false} />
+      <SliderSection
+        showTitle={false}
+        showButton={false}
+        customBgColor={true}
+      />
     </section>
   );
 };

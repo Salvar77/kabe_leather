@@ -19,11 +19,15 @@
   background-color: $dark-smooth-hover;
 }
 
+.customBgColor {
+  background-color: $dark-smooth;
+}
 .sliderGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   justify-items: center;
+  margin-bottom: 1rem;
 
   @media screen and (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
@@ -49,6 +53,11 @@
     background-color: darken($blue-main, 10%);
     text-decoration: none;
   }
+}
+
+.realizationsPage {
+  background: $dark-smooth;
+  background-color: $dark-smooth;
 }
 
 @media (min-width: 768px) {
