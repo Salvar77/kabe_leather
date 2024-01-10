@@ -76,6 +76,7 @@ const Contact = () => {
           required
         />
         <textarea
+          type="message"
           name="message"
           placeholder="Twoja wiadomość"
           value={formData.message}

@@ -49,8 +49,8 @@ const Hero = () => {
       <div className={classes.textOverlay}>
         <h1 className={classes.hero__title}>KaBe Tint&Leather</h1>
         <p>
-          Z dumą chcielibyśmy zaprezentować państwu usługi przyciemniania szyb
-          samochodowych oraz regenerację tapicerki skórzanej.
+          Usługi przyciemniania szyb samochodowych oraz regeneracja tapicerki
+          skórzanej.
         </p>
         <Link href="#usługi" className={classes.button}>
           Nasze usługi
