@@ -86,7 +86,7 @@ const Contact = () => {
       </form>
 
       <div className={classes.linkWrapper}>
-        <Link href="tel:+48694004530" className={classes.appointmentLink}>
+        <Link href="tel:+48881325631" className={classes.appointmentLink}>
           Umów się na wizytę!
         </Link>
       </div>
