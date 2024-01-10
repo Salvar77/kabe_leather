@@ -35,7 +35,7 @@ const AboutUs = () => {
               <i className="fab fa-facebook"></i>
             </a>
             <a
-              href="https://www.instagram.com/TwojProfilInsta"
+              href="https://www.instagram.com/kabe_tintleather/"
               target="_blank"
               rel="noopener noreferrer"
             >

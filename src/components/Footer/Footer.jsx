@@ -24,15 +24,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="#"
-              className="fab fa-linkedin-in"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#"
+              href="https://www.instagram.com/kabe_tintleather/"
               className="fab fa-instagram"
               target="_blank"
               rel="noopener noreferrer"

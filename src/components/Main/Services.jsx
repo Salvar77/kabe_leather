@@ -2,7 +2,7 @@ import classes from "./Services.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import heroImage from "../../assets/image/hero_640.jpg";
-import furnitureImage from "../../assets/image/furniture_640.jpg";
+import furnitureImage from "../../assets/image/furniture5_640.png";
 import tintImage from "../../assets/image/tint_640.jpg";
 
 export const servicesData = [

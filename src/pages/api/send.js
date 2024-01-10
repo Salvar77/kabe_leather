@@ -12,14 +12,14 @@ export default async function handler(req, res) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
-      tls: {
-        rejectUnauthorized: false, // Ignoruje błędy związane z certyfikatem SSL
-      },
+      // tls: {
+      //   rejectUnauthorized: false, // Ignoruje błędy związane z certyfikatem SSL
+      // },
     });
 
     const mailOptions = {
       from: "Kabetint@kabetintleather.pl",
-      to: "Kabetint@kabetintleather.pl",
+      to: "kabetint@gmail.com",
       subject: "Wiadomość z formularza kontaktowego",
       text: `Nowa wiadomość od: ${name} \nEmail: ${email} \nTreść wiadomości: ${message}`,
     };
