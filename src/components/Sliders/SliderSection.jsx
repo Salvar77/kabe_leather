@@ -7,9 +7,16 @@ import AfterImage2 from "../../assets/image/renovation_3.jpg";
 import classes from "./SliderSection.module.scss";
 import Link from "next/link";
 
-const SliderSection = ({ showTitle = true, showButton = true }) => {
+const SliderSection = ({
+  showTitle = true,
+  showButton = true,
+  customBgColor,
+}) => {
   return (
-    <section id="galeria" className={classes.sliderSection}>
+    <section
+      id="galeria"
+      className={customBgColor ? classes.customBgColor : classes.sliderSection}
+    >
       {showTitle && <span className={classes.titleSlide}>Galeria</span>}
       <div className={classes.sliderGrid}>
         <SliderTrue beforeImage={BeforeImage1} afterImage={AfterImage1} />
