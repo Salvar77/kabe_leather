@@ -3,8 +3,8 @@ import BeforeImage1 from "../../assets/image/renovation_2.jpg";
 import AfterImage1 from "../../assets/image/renovation_1.jpg";
 import BeforeImage2 from "../../assets/image/renovation_4.jpg";
 import AfterImage2 from "../../assets/image/renovation_3.jpg";
-import BeforeImage3 from "../../assets/image/renovation_6.jpg";
-import AfterImage3 from "../../assets/image/renovation_5.jpg";
+import BeforeImage3 from "../../assets/image/renovation_6.png";
+import AfterImage3 from "../../assets/image/renovation_5.png";
 
 import classes from "./SliderSection.module.scss";
 import Link from "next/link";
