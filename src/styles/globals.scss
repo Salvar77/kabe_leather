@@ -18,7 +18,14 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Oxygen", sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
+
+// .container {
+//   max-width: 1400px;
+//   margin: 0 auto;
+// }
 
 #O-nas,
 #usługi,
