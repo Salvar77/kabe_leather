@@ -41,6 +41,7 @@
 
 .imageWrapper {
   width: 100%;
+  // border-radius: 0.4rem;
 
   @media (min-width: 992px) {
     width: 50%;
@@ -48,7 +49,10 @@
   }
 
   img {
-    padding: 2rem;
+    box-shadow: 0.3rem 0.4rem 0.8rem rgba(27, 27, 140, 0.1);
+    border: 1px solid rgba(38, 52, 127, 0.9);
+    background-color: $dark-smooth-hover;
+    // padding: 2rem;
     width: 100%;
     height: 100%;
   }
@@ -69,6 +73,9 @@
   color: $white-smooth; // Przykładowy kolor tekstu
   margin-bottom: 1rem;
   padding: 2rem;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
+  border: 1px solid rgba(61, 54, 54, 0.9);
+  background-color: $dark-smooth-hover;
 
   @media (min-width: 768px) {
     font-size: 2.2rem;
@@ -84,6 +91,9 @@
   list-style-type: none;
   padding: 2rem;
   color: $white-smooth;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
+  border: 1px solid rgba(61, 54, 54, 0.9);
+  background-color: $dark-smooth-hover;
   @media (min-width: 768px) {
     font-size: 2.2rem;
   }
