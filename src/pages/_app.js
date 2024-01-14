@@ -24,9 +24,8 @@ export default function App({ Component, pageProps }) {
         <BurgerMenu handleOpen={toggleNav} isOpen={isOpen} />
       </header>
 
-      <div className="container">
-        <Component {...pageProps} />
-      </div>
+      <Component {...pageProps} />
+
       <Footer />
     </>
   );
