@@ -44,6 +44,7 @@ const Hero = () => {
           alt="Hero"
           fill={true}
           style={{ objectFit: "cover" }}
+          priority
         />
       </div>
       <div className={classes.textOverlay}>
