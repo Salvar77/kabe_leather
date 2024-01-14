@@ -98,7 +98,6 @@ const ContentTinting = ({ automotive }) => (
         Folia przyciemniająca szyby chroni pasażerów podczas wypadku przed
         odłamkami stłuczonego szkła
       </li>
-      <li>Oszczędność pieniędzy, pozwa</li>
     </ul>
     <div className={classes.linkWrapper}>
       <AppointmentLink />

@@ -1,10 +1,10 @@
 import classes from "./Services.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "../../assets/image/hero_640.jpg";
+import heroImage from "../../assets/image/hero2_640.jpg";
 import furnitureImage from "../../assets/image/furniture5_640.png";
 import tintImage from "../../assets/image/tint_640.jpg";
-import heroImageLarge from "../../assets/image/hero_1920.jpg";
+import heroImageLarge from "../../assets/image/hero2_1920.jpg";
 import furnitureImageLarge from "../../assets/image/furniture2_640.png";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
 
