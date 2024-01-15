@@ -41,7 +41,7 @@ const Hero = () => {
       <div className={classes.imageContainer}>
         <Image
           src={currentImage}
-          alt="Hero"
+          alt="Hero grafika"
           fill={true}
           style={{ objectFit: "cover" }}
           priority
