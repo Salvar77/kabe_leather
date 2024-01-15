@@ -62,7 +62,7 @@ const Services = () => {
                 src={service.image}
                 srcSet={`${service.largeImage} ${service.largeImageWidth}w`}
                 sizes="(min-width: 992px) 100vw, (min-width: 1600px) 1600px, 1920px"
-                alt="pictures of upholstery"
+                alt="obrazy tapicerki skórzanej i domowej i przyciemniania szyb"
               />
               <div className={classes.services__content}>
                 <p>{service.description}</p>

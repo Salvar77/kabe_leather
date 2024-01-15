@@ -29,6 +29,7 @@
 .automotivePage_box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   width: 100%;
@@ -69,7 +70,7 @@
 }
 
 .paragraphStyle {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: $white-smooth; // Przykładowy kolor tekstu
   margin-bottom: 1rem;
   padding: 2rem;
@@ -78,16 +79,16 @@
   background-color: $dark-smooth-hover;
 
   @media (min-width: 768px) {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   @media (min-width: 992px) {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
 .listStyle {
-  font-size: 2rem;
+  font-size: 1.8rem;
   list-style-type: none;
   padding: 2rem;
   color: $white-smooth;
@@ -95,10 +96,10 @@
   border: 1px solid rgba(61, 54, 54, 0.1);
   background-color: $dark-smooth-hover;
   @media (min-width: 768px) {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   @media (min-width: 992px) {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   li {
     margin-bottom: 0.5rem;
