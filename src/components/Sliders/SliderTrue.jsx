@@ -58,6 +58,7 @@ const SliderTrue = (props) => {
           value={sliderValue}
           onChange={handleSliderChange}
           className={classes.sliderInput}
+          aria-label="Przesuń, aby zobaczyć zmiany przed i po regeneracji"
         />
       </div>
     </div>

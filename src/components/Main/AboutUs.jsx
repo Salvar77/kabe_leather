@@ -7,7 +7,11 @@ const AboutUs = () => {
   return (
     <section id="O-nas" className={classes.aboutMe}>
       <div>
-        <Image src={image} alt="Opis obrazu" className={classes.aboutMe__img} />
+        <Image
+          src={image}
+          alt="logo firmy do sekcji o nas"
+          className={classes.aboutMe__img}
+        />
       </div>
       <div className={classes.aboutMe__content}>
         <h2 className={classes.aboutMe__header}>O nas</h2>
@@ -31,6 +35,7 @@ const AboutUs = () => {
               href="https://www.facebook.com/profile.php?id=61554800660887"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Odwiedź nas na Facebooku"
             >
               <i className="fab fa-facebook"></i>
             </a>
@@ -38,6 +43,7 @@ const AboutUs = () => {
               href="https://www.instagram.com/kabe_tintleather/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Odwiedź nas na Instagramie"
             >
               <i className="fab fa-instagram"></i>
             </a>

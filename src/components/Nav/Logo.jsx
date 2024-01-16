@@ -7,7 +7,7 @@ const Logo = () => {
     <Image
       className={classes.logo}
       src={logo}
-      alt="Logo Firmy"
+      alt="Logo firmy KaBe Tint&Leather"
       priority
       width={110}
       height={110}

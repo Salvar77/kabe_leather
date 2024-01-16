@@ -69,6 +69,7 @@ const Services = () => {
                 <Link
                   href={`/Tapicerka/${service.id}`}
                   className={classes.services__button}
+                  aria-label={`Sprawdź usługę: ${service.description}`}
                 >
                   Sprawdź
                 </Link>

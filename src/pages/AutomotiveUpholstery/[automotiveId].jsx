@@ -44,7 +44,7 @@ const AutomotiveUpholstery = () => {
       <div className={boxClass}>
         <div className={classes.imageWrapper}>
           {currentImage && (
-            <Image src={currentImage} alt="pictures of upholstery" />
+            <Image src={currentImage} alt="Obraz przedstawiający tapicerkę" />
           )}
         </div>
         <div className={classes.textWrapper}>
@@ -105,7 +105,11 @@ const ContentTinting = ({ automotive }) => (
   </div>
 );
 const AppointmentLink = () => (
-  <Link href="tel:+48881325631" className={classes.appointmentLink}>
+  <Link
+    href="tel:+48881325631"
+    className={classes.appointmentLink}
+    aria-label="Umów się na wizytę"
+  >
     Umów się na wizytę!
   </Link>
 );
