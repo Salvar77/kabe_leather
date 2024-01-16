@@ -8,6 +8,7 @@ import classes from "../styles/globals.scss";
 import Footer from "@/components/Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,12 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Script
+        src="https://example.com/some-external-script.js"
+        strategy="lazyOnload"
+      />
+      {/* Tutaj dodajesz skrypt stron trzecich, które chcesz załadować opóźnienie */}
+
       <header>
         <Logo />
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
