@@ -8,7 +8,6 @@
   transition-duration: 0.15s;
   transition-timing-function: linear;
   font: inherit;
-  // color: red;
   text-transform: none;
   background-color: transparent;
   border: 0;
@@ -100,7 +99,7 @@
 .shopButton {
   top: 1rem;
   right: 4rem;
-  /* z-index: 500; */
+
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -122,6 +121,5 @@
     justify-content: flex-end;
     align-items: flex-end;
     right: 20rem;
-    // z-index: 1000;
   }
 }
