@@ -18,7 +18,7 @@ const AboutPage = () => {
       <div>
         <Image
           src={picture}
-          alt="logo"
+          alt="Logo firmy KaBe Tint&Leather"
           className={classes.aboutMe__img}
         ></Image>
       </div>
@@ -26,6 +26,7 @@ const AboutPage = () => {
         <Link
           href="/Realizations/Realizations"
           className={classes.realizationButton}
+          aria-label="Zobacz nasze realizacje"
         >
           Realizacje
         </Link>

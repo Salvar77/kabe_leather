@@ -25,6 +25,7 @@ const BurgerMenu = ({ isOpen, handleOpen }) => {
           }`}
           type="button"
           onClick={toggleActive}
+          aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
         >
           <span className={classes.hamburgerBox}>
             <span className={classes.hamburgerInner}></span>

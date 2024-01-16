@@ -27,7 +27,11 @@ const SliderSection = ({
       </div>
       {showButton && (
         <div className={classes.buttonContainer}>
-          <Link href="/Realizacje" className={classes.realizationButton}>
+          <Link
+            href="/Realizacje"
+            className={classes.realizationButton}
+            aria-label="Zobacz wszystkie realizacje"
+          >
             Realizacje
           </Link>
         </div>
