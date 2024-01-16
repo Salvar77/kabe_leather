@@ -1,10 +1,9 @@
 @import "../../styles/colors";
 
 .services {
-  // position: relative;
   gap: 2rem;
   padding: 2.6rem;
-  // margin: 0 auto;
+
   align-items: center;
   background-color: $dark-smooth;
 
@@ -35,11 +34,11 @@
     padding: 1rem;
 
     @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr; // Dwa elementy w rzędzie
+      grid-template-columns: 1fr 1fr;
     }
 
     @media (min-width: 992px) {
-      grid-template-columns: repeat(3, 1fr); // Trzy elementy w rzędzie
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
@@ -47,7 +46,7 @@
     position: relative;
     max-width: 100%;
     max-height: 42rem;
-    // aspect-ratio: 9 / 16;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +60,7 @@
       right: 0;
       bottom: 0;
       background: inherit;
-      z-index: 1; // Gradient na obrazie
+      z-index: 1;
     }
   }
 
@@ -89,7 +88,7 @@
       color: $dark-smooth;
       background-color: $white-smooth;
       box-shadow: 0.2rem 0.4rem 0.6rem;
-      // border: none;
+
       transition: 0.3s;
       text-decoration: none;
       margin-top: 2rem;
@@ -152,12 +151,3 @@
     }
   }
 }
-
-// @media (min-width: 2000px) {
-//   .services__wrapper {
-//     grid-template-columns: repeat(
-//       4,
-//       1fr
-//     ); // Cztery elementy w rzędzie dla bardzo szerokich ekranów
-//   }
-// }

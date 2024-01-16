@@ -9,7 +9,6 @@
   background-color: $dark-smooth;
   width: 100%;
   font-size: 1.8rem;
-  // margin: 0 auto;
 
   color: $white-smooth;
 
@@ -21,7 +20,7 @@
   .contactInfo {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+
     align-items: center;
     width: 100%;
     text-decoration: none;
@@ -46,8 +45,6 @@
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.9);
     padding: 2rem;
-    // width: min(90%,400px);
-    // width: 100%;
 
     h2 {
       margin-bottom: 1rem;
@@ -98,10 +95,9 @@
   align-items: center;
   border: 1px solid $white-smooth;
   border-radius: 0.6rem;
-  // width: 20rem;
-  // height: 7rem;
-  background-color: $white-smooth; /* jasne tło */
-  color: $dark-smooth; /* ciemniejszy kolor tekstu */
+
+  background-color: $white-smooth;
+  color: $dark-smooth;
   text-align: center;
   font-size: 2rem;
 }
@@ -188,7 +184,7 @@
 .linkWrapper {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem; // Opcjonalnie, aby dodać trochę przestrzeni na górze
+  margin-top: 1.5rem;
 }
 
 .mapWrapper {
@@ -239,10 +235,7 @@
     gap: 2rem;
     padding: 2rem;
     background-color: $dark-smooth;
-    // width: 100%;
-    // margin: 0 auto;
-    // margin-left: auto;
-    // margin-right: auto;
+
     padding-top: 15vh;
 
     h2 {
@@ -261,7 +254,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      // width: min(90%, 400px);
 
       input,
       textarea {
@@ -317,23 +309,23 @@
 
 @media (max-width: 280px) {
   .contactSection {
-    padding: 1rem; /* Zmniejsz padding, aby oszczędzić miejsce */
-    width: auto; /* Dostosuj szerokość do zawartości */
+    padding: 1rem;
+    width: auto;
   }
 
   .contactSection .contactInfo,
   .contactSection .contactForm {
-    padding: 1rem; /* Zmniejsz padding wewnątrz tych elementów */
-    width: auto; /* Dostosuj szerokość do zawartości */
+    padding: 1rem;
+    width: auto;
   }
 
   .contactSection input,
   .contactSection textarea {
-    padding: 0.4rem; /* Zmniejsz padding dla pól formularza */
-    width: 90%; /* Dostosuj szerokość do mniejszej przestrzeni */
+    padding: 0.4rem;
+    width: 90%;
   }
 
   .contactSection button {
-    padding: 0.4rem 0.8rem; /* Zmniejsz padding przycisku */
+    padding: 0.4rem 0.8rem;
   }
 }

@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; // Upewnij się, że obraz jest pod gradientem
+  z-index: 0;
 }
 
 .textOverlay {
@@ -51,11 +51,6 @@
   gap: 2rem;
 }
 
-// .hero h1,
-// .hero p {
-// 	color: #ffffff;
-// }
-
 .hero h1 {
   font-size: 2.4rem;
 }
@@ -68,17 +63,17 @@
 .button {
   display: inline-block;
   width: auto;
-  // text-align: center;
+
   margin: 0 auto;
   padding: 0.8rem 1.4rem;
   font-size: 1.4rem;
   transition: background-color 0.3s;
   border-radius: 0.6rem;
-  // opacity: 0.6;
+
   color: $dark-smooth;
   background-color: $white-smooth;
   box-shadow: 0.4rem 0.6rem 0.8rem;
-  // border: none;
+
   transition: 0.5s;
   text-decoration: none;
 
