@@ -8,6 +8,7 @@ const Logo = () => {
       className={classes.logo}
       src={logo}
       alt="Logo firmy KaBe Tint&Leather"
+      priority
       width={110}
       height={110}
     />
