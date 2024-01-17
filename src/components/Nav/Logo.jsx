@@ -1,6 +1,6 @@
 import classes from "./Logo.module.scss";
 import Image from "next/image";
-import logo from "../../assets/image/logo_true6.png";
+import logo from "../../assets/image/logo_true7.png";
 
 const Logo = () => {
   return (
