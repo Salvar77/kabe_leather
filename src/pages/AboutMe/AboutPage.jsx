@@ -12,7 +12,7 @@ const AboutPage = () => {
           W ostatnim czasie przeszlismy szkolenia pod okiem fachowców w
           renomowanej firmie Colourlock oraz Wrapster, dzieki którym nabyliśmy
           niezbędne doświadczenie kierunku regeneracji tapicerki skórzanej oraz
-          przciemnianiu szyb samochodowych.
+          przyciemnianiu szyb samochodowych.
         </p>
       </div>
       <div>
