@@ -22,7 +22,7 @@
 .columnLayout {
   font-size: 2.6rem;
   @media (min-width: 992px) {
-    flex-direction: column; // Użycie !important, aby upewnić się, że ta reguła ma priorytet.
+    flex-direction: column;
   }
 }
 
@@ -36,24 +36,22 @@
 
   @media (min-width: 992px) {
     flex-direction: row;
-    // justify-content: center;
   }
 }
 
 .imageWrapper {
   width: 100%;
-  // border-radius: 0.4rem;
 
   @media (min-width: 992px) {
     width: 50%;
-    padding-right: 1rem; // Dodaj margines między obrazem a tekstem
+    padding-right: 1rem;
   }
 
   img {
-    box-shadow: 0.3rem 0.4rem 0.8rem rgba(27, 27, 140, 0.1);
-    border: 1px solid rgba(38, 52, 127, 0.9);
+    box-shadow: 0.3rem 0.4rem 0.8rem rgba(98, 98, 126, 0.1);
+    border: 1px solid rgba(94, 97, 114, 0.9);
     background-color: $dark-smooth-hover;
-    // padding: 2rem;
+
     width: 100%;
     height: 100%;
   }
