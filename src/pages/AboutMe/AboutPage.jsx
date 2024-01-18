@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./AboutPage.module.scss";
-import picture from "../../assets/image/logo_true6.png";
+import picture from "../../assets/image/logo_true9.jpg";
 
 const AboutPage = () => {
   return (
@@ -20,6 +20,7 @@ const AboutPage = () => {
           src={picture}
           alt="Logo firmy KaBe Tint&Leather"
           className={classes.aboutMe__img}
+          priority
         ></Image>
       </div>
       <div className={classes.buttonContainer}>
