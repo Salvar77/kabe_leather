@@ -4,7 +4,6 @@ import Nav from "@/components/Nav/Nav";
 import BurgerMenu from "@/components/Nav/BurgerMenu";
 import { useState } from "react";
 import Logo from "@/components/Nav/Logo";
-import classes from "../styles/globals.scss";
 import Footer from "@/components/Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,12 +18,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Script
-        src="https://example.com/some-external-script.js"
-        strategy="lazyOnload"
-      />
-      {/* Tutaj dodajesz skrypt stron trzecich, które chcesz załadować opóźnienie */}
-
       <header>
         <Logo />
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
