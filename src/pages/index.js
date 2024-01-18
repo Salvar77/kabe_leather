@@ -2,10 +2,9 @@ import Head from "next/head";
 import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
-import Reviews from "@/components/Main/Reviews";
+
 import Hero from "@/components/Main/Hero";
 import SliderSection from "@/components/Sliders/SliderSection";
-import image from "../assets/image/hero2_1920.jpg";
 
 export default function Home() {
   return (
