@@ -11,9 +11,7 @@
 
   &__img {
     max-width: 100%;
-    // margin: 2rem;
-    // border: 2px solid black;
-    // background-color: $dark-smooth;
+
     border-radius: 0.2rem;
     height: 100%;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
@@ -24,8 +22,6 @@
     font-size: 2.2rem;
     padding: 1rem;
     text-align: center;
-    // box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.2);
-    // border: 1px solid rgba(61, 54, 54, 0.2);
   }
 
   &__text {
@@ -35,12 +31,10 @@
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.1);
     background-color: $dark-smooth-hover;
+    text-align: center;
   }
 
   &__content {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     margin: 1.2rem;
     background-color: $dark-smooth;
   }
@@ -88,8 +82,6 @@
 @media (min-width: 992px) {
   .aboutMe {
     flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
 
     &__img {
       box-shadow: 0.3rem 0.4rem 0.8rem 0.44rem rgba(232, 232, 235, 0.1);
