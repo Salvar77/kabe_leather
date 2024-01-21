@@ -28,6 +28,16 @@
 
   &__title {
     color: $white-smooth;
+    font-size: 2.8rem;
+  }
+
+  &__text {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0.2rem 0.3rem 0.4rem rgba(37, 37, 176, 0.3);
+    // border: 0.1rem solid rgba(51, 79, 172, 0.4);
+    font-weight: bold;
+    color: $white-smooth-hover;
   }
 }
 
@@ -51,15 +61,6 @@
   gap: 2rem;
 }
 
-.hero h1 {
-  font-size: 2.4rem;
-}
-
-.hero p {
-  font-size: 1.4rem;
-  color: $white-smooth;
-}
-
 .button {
   display: inline-block;
   width: auto;
@@ -69,7 +70,7 @@
   font-size: 1.4rem;
   transition: background-color 0.3s;
   border-radius: 0.6rem;
-
+  font-weight: bold;
   color: $dark-smooth;
   background-color: $white-smooth;
   box-shadow: 0.4rem 0.6rem 0.8rem;
