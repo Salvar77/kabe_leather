@@ -25,7 +25,7 @@ const AboutPage = () => {
       </div>
       <div className={classes.buttonContainer}>
         <Link
-          href="/Realizations/Realizations"
+          href="/Realizacje"
           className={classes.realizationButton}
           aria-label="Zobacz nasze realizacje"
         >
