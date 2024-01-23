@@ -63,7 +63,7 @@
 
   @media (min-width: 992px) {
     width: 50%;
-    padding-left: 1rem; // Dodaj margines między tekstem a obrazem
+    padding-left: 1rem;
   }
 }
 
@@ -88,7 +88,6 @@
 
 .listStyle {
   font-size: 1.8rem;
-  list-style-type: none;
   padding: 2rem;
   color: $white-smooth;
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
@@ -101,6 +100,7 @@
     font-size: 2rem;
   }
   li {
+    margin-left: 1rem;
     margin-bottom: 0.5rem;
   }
 }
@@ -114,12 +114,12 @@
 
 .appointmentLink {
   position: relative;
-  color: $blue-main;
+  color: $blue-after;
   text-decoration: none;
   font-weight: bold;
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
-  border: 0.2rem solid $blue-main;
+  border: 0.2rem solid $blue-after;
   border-radius: 0.4rem;
   display: inline-block;
   margin-top: 1.5rem;
@@ -154,21 +154,21 @@
 
   &:hover {
     border: 1px solid transparent;
-    color: $blue-main;
+    color: $blue-after;
   }
 
   &:hover::after {
     bottom: 0.3rem;
     left: 0.4rem;
-    border-bottom: 4px solid $blue-main;
-    border-right: 4px solid $blue-main;
+    border-bottom: 4px solid $blue-after;
+    border-right: 4px solid $blue-after;
   }
 
   &:hover::before {
     top: 0.3rem;
     right: 0.4rem;
-    border-top: 4px solid $blue-main;
-    border-left: 4px solid $blue-main;
+    border-top: 4px solid $blue-after;
+    border-left: 4px solid $blue-after;
   }
 
   @media (min-width: 768px) {

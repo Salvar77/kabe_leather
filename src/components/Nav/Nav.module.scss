@@ -23,7 +23,7 @@
     font-weight: bold;
 
     &:hover {
-      color: $blue-main;
+      color: $blue-after;
     }
   }
 
@@ -63,7 +63,7 @@
 }
 
 .nav ul li a:hover {
-  color: $blue-main;
+  color: $blue-after;
 }
 
 .four {
@@ -95,7 +95,7 @@
 
     opacity: 0.9;
     z-index: 1000;
-    box-shadow: 2rem 0.5rem 0.5rem 0.2rem $blue-main;
+    box-shadow: 2rem 0.5rem 0.5rem 0.2rem $blue-after;
 
     &::before,
     &::after {

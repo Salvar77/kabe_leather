@@ -125,11 +125,11 @@
 
 .appointmentLink {
   position: relative;
-  color: $blue-main;
+  color: $blue-after;
   text-decoration: none;
   font-weight: bold;
   padding: 1rem 1.5rem;
-  border: 0.2rem solid $blue-main;
+  border: 0.2rem solid $blue-after;
   border-radius: 0.4rem;
   display: inline-block;
   margin-bottom: 1rem;
@@ -163,21 +163,21 @@
 
   &:hover {
     border: 1px solid transparent;
-    color: $blue-main;
+    color: $blue-after;
   }
 
   &:hover::after {
     bottom: 0.3rem;
     left: 0.4rem;
-    border-bottom: 4px solid $blue-main;
-    border-right: 4px solid $blue-main;
+    border-bottom: 4px solid $blue-after;
+    border-right: 4px solid $blue-after;
   }
 
   &:hover::before {
     top: 0.3rem;
     right: 0.4rem;
-    border-top: 4px solid $blue-main;
-    border-left: 4px solid $blue-main;
+    border-top: 4px solid $blue-after;
+    border-left: 4px solid $blue-after;
   }
 }
 

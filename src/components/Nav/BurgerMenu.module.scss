@@ -38,7 +38,7 @@
 .hamburger.isActive .hamburgerInner,
 .hamburger.isActive .hamburgerInner::before,
 .hamburger.isActive .hamburgerInner::after {
-  background-color: $blue-main;
+  background-color: $blue-after;
 }
 
 .hamburgerBox {
