@@ -1,7 +1,7 @@
 .slideBox {
   position: relative;
-  width: 100%; // Zmień zgodnie z potrzebami
-  max-width: 600px; // Zmień zgodnie z potrzebami
+  width: 100%;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -41,6 +41,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; // Zapewnia, że obrazy są odpowiednio dopasowane
+    object-fit: cover;
   }
 }
