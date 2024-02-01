@@ -6,10 +6,28 @@
   justify-content: center;
   align-items: center;
   background-color: $dark-smooth;
+  margin-top: 9rem;
 
   &__header {
-    padding-top: 10rem;
     color: $white-smooth;
+  }
+  .extraImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+
+    .image {
+      width: 25rem;
+      height: 25rem;
+      object-fit: fill;
+      border-radius: 0.4rem;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
   }
 }
 
@@ -24,6 +42,11 @@
 }
 
 @media (min-width: 992px) {
+  .realizations {
+    .extraImages {
+      flex-direction: row;
+    }
+  }
   .realizations__header {
     padding-top: 0;
   }
