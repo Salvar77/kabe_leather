@@ -5,6 +5,10 @@ import BeforeImage2 from "../../assets/image/renovation_4.jpg";
 import AfterImage2 from "../../assets/image/renovation_3.jpg";
 import BeforeImage3 from "../../assets/image/renovation_6.png";
 import AfterImage3 from "../../assets/image/renovation_5.png";
+import BeforeImage4 from "../../assets/image/renovation_8-1.jpg";
+import AfterImage4 from "../../assets/image/renovation_7-1.jpg";
+import BeforeImage5 from "../../assets/image/renovation_9.jpg";
+import AfterImage5 from "../../assets/image/renovation_9-1.jpg";
 
 import classes from "./SliderSection.module.scss";
 import Link from "next/link";
@@ -24,6 +28,8 @@ const SliderSection = ({
         <SliderTrue beforeImage={BeforeImage1} afterImage={AfterImage1} />
         <SliderTrue beforeImage={BeforeImage2} afterImage={AfterImage2} />
         <SliderTrue beforeImage={BeforeImage3} afterImage={AfterImage3} />
+        <SliderTrue beforeImage={BeforeImage4} afterImage={AfterImage4} />
+        <SliderTrue beforeImage={BeforeImage5} afterImage={AfterImage5} />
       </div>
       {showButton && (
         <div className={classes.buttonContainer}>
