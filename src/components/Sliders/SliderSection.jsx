@@ -17,19 +17,33 @@ const SliderSection = ({
   showTitle = true,
   showButton = true,
   customBgColor,
+  maxImagesToShow = 3,
+  additionalClass = "",
 }) => {
+  const images = [
+    { beforeImage: BeforeImage1, afterImage: AfterImage1 },
+    { beforeImage: BeforeImage2, afterImage: AfterImage2 },
+    { beforeImage: BeforeImage3, afterImage: AfterImage3 },
+    { beforeImage: BeforeImage4, afterImage: AfterImage4 },
+    { beforeImage: BeforeImage5, afterImage: AfterImage5 },
+  ];
+
   return (
     <section
       id="galeria"
       className={customBgColor ? classes.customBgColor : classes.sliderSection}
     >
       {showTitle && <span className={classes.titleSlide}>Galeria</span>}
-      <div className={classes.sliderGrid}>
-        <SliderTrue beforeImage={BeforeImage1} afterImage={AfterImage1} />
-        <SliderTrue beforeImage={BeforeImage2} afterImage={AfterImage2} />
-        <SliderTrue beforeImage={BeforeImage3} afterImage={AfterImage3} />
-        <SliderTrue beforeImage={BeforeImage4} afterImage={AfterImage4} />
-        <SliderTrue beforeImage={BeforeImage5} afterImage={AfterImage5} />
+      <div className={`${classes.sliderGrid} ${additionalClass}`}>
+        {images
+          .slice(0, maxImagesToShow)
+          .map(({ beforeImage, afterImage }, index) => (
+            <SliderTrue
+              key={index}
+              beforeImage={beforeImage}
+              afterImage={afterImage}
+            />
+          ))}
       </div>
       {showButton && (
         <div className={classes.buttonContainer}>

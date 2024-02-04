@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+
+.pricingTable {
+  width: 100%;
+  flex-direction: column;
+  background-color: $dark-smooth-hover;
+  color: $white-smooth;
+  padding: 2rem;
+  /* Stylizacje tabeli */
+
+  h2 {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+.header {
+  display: flex;
+  /* Inne stylizacje nagłówka */
+}
+
+.headerCell {
+  flex: 1;
+  padding: 10px;
+  /* Stylizacje komórki nagłówka */
+}
+
+.row {
+  display: flex;
+  /* Stylizacje rzędu */
+}
+
+.cell,
+.headerCell {
+  flex: 1; /* Zapewnia, że komórki będą miały równą szerokość */
+  padding: 10px; /* Taki sam padding dla wszystkich komórek */
+  text-align: center; /* Wycentrowanie tekstu */
+  border: 1px solid $grey-smooth;
+  align-self: stretch; /* Rozciąga komórki, aby wypełniły całą wysokość kontenera */
+}
+
+.cell {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid $grey-smooth;
+  /* Stylizacje komórki */
+}

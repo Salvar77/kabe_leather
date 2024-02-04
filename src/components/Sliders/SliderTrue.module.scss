@@ -9,10 +9,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @media screen and (min-width: 992px) {
-    width: calc(33.33% - 2rem);
-  }
 }
 
 .sliderContainer {

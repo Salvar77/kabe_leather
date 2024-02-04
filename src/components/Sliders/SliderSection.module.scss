@@ -30,7 +30,7 @@
   margin-bottom: 1rem;
 
   @media screen and (min-width: 992px) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -60,6 +60,17 @@
   background-color: $dark-smooth;
 }
 
+.realizationsPage .fiveColumnsGrid {
+  width: 100%; // Zapewnia, że grid ma pełną dostępną szerokość
+  max-width: 1200px; // Opcjonalnie, możesz ograniczyć maksymalną szerokość
+  margin: auto; // Wyśrodkowanie kontenera, jeśli ma określoną maksymalną szerokość
+}
+
+.realizationsPage .fiveColumnsGrid img {
+  width: 100%; // Zdjęcia zajmują 100% szerokości kolumny gridu
+  height: auto; // Zachowanie proporcji
+}
+
 @media (min-width: 768px) {
   .titleSlide {
     font-size: 3rem;
@@ -73,5 +84,10 @@
 @media (min-width: 992px) {
   .titleSlide {
     font-size: 3.2rem;
+  }
+
+  .fiveColumnsGrid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
   }
 }
