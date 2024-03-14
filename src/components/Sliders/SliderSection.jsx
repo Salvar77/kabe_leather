@@ -17,19 +17,19 @@ const SliderSection = ({
   showTitle = true,
   showButton = true,
   customBgColor,
-  maxImagesToShow = 4,
+  maxImagesToShow = 3,
   additionalClass = "",
   style,
 }) => {
   const images = [
     { beforeImage: BeforeImage1, afterImage: AfterImage1 },
     { beforeImage: BeforeImage4, afterImage: AfterImage4 },
-
     { beforeImage: BeforeImage3, afterImage: AfterImage3 },
+    { beforeImage: BeforeImage2, afterImage: AfterImage2 },
   ];
 
   const gridClass =
-    maxImagesToShow === 5 ? classes.fiveColumns : classes.defaultGrid;
+    maxImagesToShow === 4 ? classes.fiveColumnsGrid : classes.defaultGrid;
 
   return (
     <section

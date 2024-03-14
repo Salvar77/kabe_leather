@@ -120,6 +120,9 @@
 }
 
 @media (min-width: 768px) {
+  .pricingHeader {
+    font-size: 2.8rem;
+  }
   .pricingList {
     font-size: 2rem;
   }
@@ -138,6 +141,9 @@
 }
 
 @media (min-width: 992px) {
+  .pricingHeader {
+    font-size: 3rem;
+  }
   .pricingList {
     font-size: 2.2rem;
   }
