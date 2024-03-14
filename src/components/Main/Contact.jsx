@@ -58,7 +58,10 @@ const Contact = () => {
         </p>
         <p>Miasto: Opole</p>
         <p>
-          Telefon: <span className={classes.highlightedText}>881 325 631</span>
+          Telefon:{" "}
+          <span className={`${classes.highlightedText} noLinkStyle`}>
+            881 325 631
+          </span>
         </p>
         <p>E-mail: kabetint@gmail.com</p>
       </div>
