@@ -17,24 +17,29 @@ const SliderSection = ({
   showTitle = true,
   showButton = true,
   customBgColor,
-  maxImagesToShow = 3,
+  maxImagesToShow = 4,
   additionalClass = "",
+  style,
 }) => {
   const images = [
     { beforeImage: BeforeImage1, afterImage: AfterImage1 },
     { beforeImage: BeforeImage2, afterImage: AfterImage2 },
-    { beforeImage: BeforeImage3, afterImage: AfterImage3 },
     { beforeImage: BeforeImage4, afterImage: AfterImage4 },
     { beforeImage: BeforeImage5, afterImage: AfterImage5 },
   ];
 
+  const gridClass =
+    maxImagesToShow === 5 ? classes.fiveColumns : classes.defaultGrid;
+
   return (
     <section
       id="galeria"
-      className={customBgColor ? classes.customBgColor : classes.sliderSection}
+      className={`${
+        customBgColor ? classes.customBgColor : classes.sliderSection
+      } ${additionalClass}`}
     >
       {showTitle && <span className={classes.titleSlide}>Galeria</span>}
-      <div className={`${classes.sliderGrid} ${additionalClass}`}>
+      <div className={`${classes.sliderGrid} ${gridClass}`}>
         {images
           .slice(0, maxImagesToShow)
           .map(({ beforeImage, afterImage }, index) => (

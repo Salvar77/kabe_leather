@@ -2,16 +2,16 @@ import classes from "./Services.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import heroImage from "../../assets/image/hero2_640.jpg";
-import furnitureImage from "../../assets/image/furniture5_640.png";
+import furnitureImage from "../../assets/image/detailing.jpg";
 import tintImage from "../../assets/image/tint_640.jpg";
 import heroImageLarge from "../../assets/image/hero2_1920.jpg";
-import furnitureImageLarge from "../../assets/image/furniture2_640.png";
+import furnitureImageLarge from "../../assets/image/detailing.jpg";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
 
 export const servicesData = [
   {
     id: "tapicerka-samochodowa",
-    description: "Regeneracja Tapicerki Skórzanej samochodowej",
+    description: "Renowacja Tapicerki Skórzanej",
     image: heroImage,
     largeImage: heroImageLarge,
     largeImageWidth: 1920,
@@ -19,11 +19,11 @@ export const servicesData = [
     backgroundImage: "url('../../assets/image/hero4_640.jpg')",
     gradient: "linear-gradient(rgba(90, 42, 42, 0.5), rgba(0, 0, 0, 0.5))",
     additionalInfo:
-      "Regeneracja Tapicerki Skórzanej : Profesjonalna renowacja tapicerki skórzanej to bardzo złożony proces, dzięki któremu Twoje meble lub tapicerka samochodowa zyskają zupełnie nowy wygląd. Profesjonalne preparaty i fach w ręku sprawiają, że skórzane elementy wyglądają jak nowe! Renowacja i naprawa tapicerki skórzanej w KaBe Tint&Leather to usługa dedykowana wszystkim posiadaczom skórzanych mebli - zarówno tapicerki samochodowej, jak i kanap i narożników domowych. w KaBe Tint&Leather kompleksowo zadbamy o każdą skórzaną tapicerkę. Zakres naszych usług jest bardzo szeroki, a w jego skład wchodzi: ",
+      "Renowacja Tapicerki Skórzanej : Profesjonalna renowacja tapicerki skórzanej to bardzo złożony proces, dzięki któremu Twoje meble lub tapicerka samochodowa zyskają zupełnie nowy wygląd. Profesjonalne preparaty i fach w ręku sprawiają, że skórzane elementy wyglądają jak nowe! Renowacja i naprawa tapicerki skórzanej w KaBe Tint&Leather to usługa dedykowana wszystkim posiadaczom skórzanych mebli - zarówno tapicerki samochodowej, jak i kanap i narożników domowych. w KaBe Tint&Leather kompleksowo zadbamy o każdą skórzaną tapicerkę. Zakres naszych usług jest bardzo szeroki, a w jego skład wchodzi: ",
   },
   {
     id: "tapicerka-domowa",
-    description: "Regeneracja Tapicerki Skórzanej domowej",
+    description: "Autokosmetyka",
     image: furnitureImage,
     largeImage: furnitureImageLarge,
     largeImageWidth: 1600,
@@ -31,7 +31,7 @@ export const servicesData = [
     backgroundImage: "url('../../assets/image/furniture_640.jpg')",
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      " Regeneracja Tapicerki Skórzanej : Profesjonalna renowacja tapicerki skórzanej to bardzo złożony proces, dzięki któremu Twoje meble lub tapicerka samochodowa zyskają zupełnie nowy wygląd. Profesjonalne preparaty i fach w ręku sprawiają, że skórzane elementy wyglądają jak nowe! Renowacja i naprawa tapicerki skórzanej w KaBe Tint&Leather to usługa dedykowana wszystkim posiadaczom skórzanych mebli - zarówno tapicerki samochodowej, jak i kanap i narożników domowych. w KaBe Tint&Leather kompleksowo zadbamy o każdą skórzaną tapicerkę. Zakres naszych usług jest bardzo szeroki, a w jego skład wchodzi:",
+      " Renowacja Tapicerki Skórzanej : Profesjonalna renowacja tapicerki skórzanej to bardzo złożony proces, dzięki któremu Twoje meble lub tapicerka samochodowa zyskają zupełnie nowy wygląd. Profesjonalne preparaty i fach w ręku sprawiają, że skórzane elementy wyglądają jak nowe! Renowacja i naprawa tapicerki skórzanej w KaBe Tint&Leather to usługa dedykowana wszystkim posiadaczom skórzanych mebli - zarówno tapicerki samochodowej, jak i kanap i narożników domowych. w KaBe Tint&Leather kompleksowo zadbamy o każdą skórzaną tapicerkę. Zakres naszych usług jest bardzo szeroki, a w jego skład wchodzi:",
   },
   {
     id: "bezinwazyjne-przyciemnianie-szyb",
