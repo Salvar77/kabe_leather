@@ -91,9 +91,9 @@ const PricingSection = () => {
       ],
       imagePath: foto6,
       prices: {
-        small: "Od 300 zł",
-        medium: "Od 350 zł",
-        large: "Od 400 zł",
+        small: "Od 400 zł",
+        medium: "Od 500 zł",
+        large: "Od 600 zł",
       },
       description: "Opis usługi myjnia ręczna...",
     },
