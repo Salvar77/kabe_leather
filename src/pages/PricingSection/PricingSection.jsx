@@ -182,21 +182,21 @@ const PricingSection = () => {
               </ul>
               <div className={styles.pricingInfo}>
                 <div className={styles.pricingType}>
-                  Małe auta:{" "}
+                  Małe auta: od{" "}
                   <span className={styles.priceValue}>
                     {service.prices.small.split(" ")[1]}
                   </span>{" "}
                   zł
                 </div>
                 <div className={styles.pricingType}>
-                  Średnie auta:{" "}
+                  Średnie auta: od{" "}
                   <span className={styles.priceValue}>
                     {service.prices.medium.split(" ")[1]}
                   </span>{" "}
                   zł
                 </div>
                 <div className={styles.pricingType}>
-                  Duże auta:{" "}
+                  Duże auta: od{" "}
                   <span className={styles.priceValue}>
                     {service.prices.large.split(" ")[1]}
                   </span>{" "}
