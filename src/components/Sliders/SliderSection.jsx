@@ -3,8 +3,8 @@ import BeforeImage1 from "../../assets/image/renovation_7.jpg";
 import AfterImage1 from "../../assets/image/renovation_8.jpg";
 import BeforeImage2 from "../../assets/image/renovation_4.jpg";
 import AfterImage2 from "../../assets/image/renovation_3.jpg";
-import BeforeImage3 from "../../assets/image/renovation_6.png";
-import AfterImage3 from "../../assets/image/renovation_5.png";
+import BeforeImage3 from "../../assets/image/renovatio2.JPG";
+import AfterImage3 from "../../assets/image/renovatio.JPG";
 import BeforeImage4 from "../../assets/image/renovation_8-1.jpg";
 import AfterImage4 from "../../assets/image/renovation_7-1.jpg";
 import BeforeImage5 from "../../assets/image/renovation_9.jpg";
@@ -23,9 +23,9 @@ const SliderSection = ({
 }) => {
   const images = [
     { beforeImage: BeforeImage1, afterImage: AfterImage1 },
-    { beforeImage: BeforeImage2, afterImage: AfterImage2 },
     { beforeImage: BeforeImage4, afterImage: AfterImage4 },
     { beforeImage: BeforeImage5, afterImage: AfterImage5 },
+    { beforeImage: BeforeImage3, afterImage: AfterImage3 },
   ];
 
   const gridClass =
