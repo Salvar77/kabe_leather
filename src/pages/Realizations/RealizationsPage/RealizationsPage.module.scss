@@ -51,13 +51,13 @@
     justify-content: center;
     // flex-wrap: wrap;
     gap: 2rem;
-    padding: 3rem;
+    padding: 1rem;
 
     // margin-top: 5rem;
 
     img {
-      width: 100%;
-      max-width: 100%;
+      min-width: 100%;
+      max-width: 90vw;
       max-height: 100vw;
       object-fit: cover;
     }
@@ -242,6 +242,11 @@
     &__imageWrapper {
       display: flex;
       flex-direction: row;
+
+      img {
+        max-width: 70rem;
+        max-height: 50rem;
+      }
     }
 
     &__brandsList {
@@ -262,7 +267,6 @@
     }
 
     .resetButton {
-      margin: 1rem;
       font-size: 2rem;
     }
 
