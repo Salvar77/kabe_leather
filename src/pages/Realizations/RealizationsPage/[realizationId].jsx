@@ -123,13 +123,10 @@ const RealizationDetail = () => {
             <SliderSection
               showTitle={false}
               showButton={false}
-              maxImagesToShow={5}
+              maxImagesToShow={4}
               additionalClass={styles.noBackground}
             />
-            <SliderTrue
-              beforeImage={beforeImage1}
-              afterImage={afterImage1}
-            ></SliderTrue>
+
             <div className={classes.realizationDetail__real}>
               <div className={classes.imageHover}>
                 <Image src={real} />

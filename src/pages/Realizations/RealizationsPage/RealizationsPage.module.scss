@@ -59,15 +59,7 @@
       min-width: 100%;
       max-width: 90vw;
       max-height: 100vw;
-      object-fit: cover;
-    }
-
-    @media (min-width: 992px) {
-      flex-direction: row;
-      img {
-        max-width: 100%;
-        max-height: 90rem;
-      }
+      object-fit: contain;
     }
   }
 
@@ -244,8 +236,8 @@
       flex-direction: row;
 
       img {
-        max-width: 70rem;
-        max-height: 50rem;
+        max-width: 100%;
+        max-height: 50%;
       }
     }
 
@@ -271,6 +263,7 @@
     }
 
     &__real {
+      transform: scale(0.8);
       flex-direction: row;
       gap: 2rem;
       img {
