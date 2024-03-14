@@ -9,7 +9,7 @@ const AboutPage = () => {
       <div className={classes.aboutMe__content}>
         <h2 className={classes.aboutMe__header}>O mnie</h2>
         <p className={classes.aboutMe__text}>
-          W ostatnim czasie przeszlismy szkolenia pod okiem fachowców w
+          W ostatnim czasie przeszliśmy szkolenia pod okiem fachowców w
           renomowanej firmie Colourlock oraz Wrapster, dzieki którym nabyliśmy
           niezbędne doświadczenie kierunku regeneracji tapicerki skórzanej oraz
           przyciemnianiu szyb samochodowych.

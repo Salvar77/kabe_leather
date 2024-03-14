@@ -7,21 +7,25 @@ const Nav = ({ isOpen, toggleNav }) => {
   if (isOpen) {
     navClasses = `${classes.nav} ${classes.nav__show}`;
   }
+
   return (
     <nav className={navClasses}>
       <div className={classes.nav__container}>
         <div className={classes.nav__items}>
           <ul aria-hidden className={classes.menu}>
-            <li onClick={toggleNav}>
+            <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/#O-nas">O nas</Link>
             </li>
-            <li onClick={toggleNav}>
+            <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/#usługi">Usługi</Link>
             </li>
-            <li onClick={toggleNav}>
+            <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/#galeria">Galeria</Link>
             </li>
-            <li onClick={toggleNav}>
+            <li onClick={toggleNav} className={classes.nav__item}>
+              <Link href="/Cennik">Cennik</Link>
+            </li>
+            <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/#kontakt">Kontakt</Link>
             </li>
           </ul>

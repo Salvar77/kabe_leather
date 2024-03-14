@@ -1,61 +1,102 @@
 @import "../../styles/colors";
 
 .realizations {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
+  padding: 2.6rem;
   background-color: $dark-smooth;
-  margin-top: 10rem;
+  color: $white-smooth;
+  margin-top: 5.6rem;
+  min-height: 100vh;
 
-  &__header {
-    color: $white-smooth;
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 2rem 0;
   }
-  .extraImages {
+
+  &__wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    padding: 2rem;
+    flex-direction: column; /* Domyślnie, ale dobrze jest być wyraźnym */
+    align-items: center; /* Centruje elementy horyzontalnie */
+    justify-content: center; /* Centruje elementy wertykalnie */
+    gap: 2rem;
+    padding: 1rem;
 
-    .image {
-      width: 100%;
-      height: 30rem;
-      object-fit: fill;
-      border-radius: 0.4rem;
-      transition: 0.3s;
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
-      &:hover {
-        scale: 1.1;
-      }
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; /* Pozwala elementom na zawijanie */
     }
   }
-}
 
-.slidersContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
+  &__item {
+    position: relative;
+    border: 2px solid black;
+    align-items: center;
+    justify-items: center;
+  }
 
-@media (min-width: 992px) {
-  .realizations {
-    min-height: 100vh;
+  &__imageWrapper {
+    position: relative;
+    width: 100%;
+    max-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      z-index: 1;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+  }
+
+  &__button {
+    padding: 1rem 2rem;
+    background-color: $white-smooth;
+    color: $dark-smooth;
+    text-decoration: none;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($blue-main, 10%);
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-}
+    text-align: center;
+    width: 100%;
 
-@media (min-width: 992px) {
-  .realizations {
-    .extraImages {
-      flex-direction: row;
+    p {
+      font-size: 2rem;
+      padding: 1rem;
     }
-  }
-  .realizations__header {
-    padding-top: 0;
   }
 }

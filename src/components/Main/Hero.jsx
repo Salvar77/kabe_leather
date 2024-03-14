@@ -50,7 +50,7 @@ const Hero = () => {
       <div className={classes.textOverlay}>
         <h1 className={classes.hero__title}>KaBe Tint&Leather</h1>
         <p className={classes.hero__text}>
-          Usługi przyciemniania szyb samochodowych i regeneracji tapicerki
+          Usługi przyciemniania szyb samochodowych i renowacji tapicerki
           skórzanej.
         </p>
         <Link href="#usługi" className={classes.button}>

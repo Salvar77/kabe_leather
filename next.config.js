@@ -9,12 +9,20 @@ const nextConfig = {
         destination: "/Realizations/Realizations",
       },
       {
+        source: "/Realizacje/:slug*",
+        destination: "/Realizations/RealizationsPage/:slug*", // gdzie `slug` to parametr dla danego rodzaju realizacji
+      },
+      {
         source: "/Tapicerka/:id",
         destination: "/AutomotiveUpholstery/:id",
       },
       {
         source: "/O-Mnie",
         destination: "/AboutMe/AboutPage",
+      },
+      {
+        source: "/Cennik",
+        destination: "/PricingSection/PricingSection",
       },
     ];
   },

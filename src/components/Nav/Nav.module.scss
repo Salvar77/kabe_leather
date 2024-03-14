@@ -10,21 +10,33 @@
   transition: transform 0.4s ease-in-out;
 
   &__show {
-    top: 10rem;
+    top: 8.6rem;
     transform: translateX(0);
     min-width: 100%;
     max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.9;
+
     z-index: 100;
-    background-color: $dark-smooth;
+    background-color: rgba($dark-smooth, 0.9);
     font-weight: bold;
 
     &:hover {
       color: $blue-after;
     }
+
+    ul {
+      opacity: 1.9;
+      li {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
   }
 
   &__desktop {
@@ -45,11 +57,12 @@
   align-items: center;
   justify-content: center;
 
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .nav ul li {
-  padding: 1rem;
+  font-size: 2rem;
+  padding: 1.6rem;
   color: $white-smooth;
   text-align: center;
   cursor: pointer;
@@ -70,9 +83,28 @@
   display: none;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 992px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    li {
+      background-color: $blue-after;
+      box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
+      border: 1px solid rgba(61, 54, 54, 0.9);
+      margin: 1rem;
+      min-width: 100%;
+
+      border-radius: 0.4rem;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -107,6 +139,13 @@
 
       &:hover::before,
       &:hover::after {
+        display: none;
+      }
+    }
+
+    &__item {
+      &::after,
+      &::before {
         display: none;
       }
     }
