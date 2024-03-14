@@ -15,9 +15,9 @@ import fotoo2 from "../../assets/image/detailing3.jpg";
 import mercedes from "../../assets/image/merc.png";
 import bmw from "../../assets/image/bmw.png";
 import audi from "../../assets/image/audi.png";
-import mercedes1 from "../../assets/image/merc1.JPG";
-import bmw1 from "../../assets/image/bmw1.JPG";
-import audi1 from "../../assets/image/audi1.JPG";
+import mercedes1 from "../../assets/image/merc1.jpg";
+import bmw1 from "../../assets/image/bmw1.jpg";
+import audi1 from "../../assets/image/audi1.jpg";
 
 export const realizationsData = [
   {
