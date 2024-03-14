@@ -24,7 +24,7 @@ const SliderSection = ({
   const images = [
     { beforeImage: BeforeImage1, afterImage: AfterImage1 },
     { beforeImage: BeforeImage4, afterImage: AfterImage4 },
-    { beforeImage: BeforeImage5, afterImage: AfterImage5 },
+
     { beforeImage: BeforeImage3, afterImage: AfterImage3 },
   ];
 
