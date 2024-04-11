@@ -11,20 +11,15 @@ import "slick-carousel/slick/slick-theme.css";
 export default function App({ Component, pageProps }) {
   const [showLogo, setShowLogo] = useState(true);
 
-  const handleScroll = () => {
-    const currentScrollPos = document.documentElement.scrollTop;
-    const windowWidth = window.innerWidth;
-
-    if (windowWidth < 992) {
-      setShowLogo(currentScrollPos <= 200);
-    } else {
-      setShowLogo(true);
-    }
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      const currentScrollPos = document.documentElement.scrollTop;
+      const windowWidth = window.innerWidth;
 
+      setShowLogo(!(windowWidth < 992 && currentScrollPos > 200));
+    };
+
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +31,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <header>
-        {showLogo && <Logo />}
+        <Logo showLogo={showLogo} />
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
         <BurgerMenu handleOpen={toggleNav} isOpen={isOpen} />
       </header>
