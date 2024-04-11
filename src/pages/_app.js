@@ -12,8 +12,7 @@ export default function App({ Component, pageProps }) {
   const [showLogo, setShowLogo] = useState(true);
 
   const handleScroll = () => {
-    const currentScrollPos =
-      window.pageYOffset || document.documentElement.scrollTop;
+    const currentScrollPos = document.documentElement.scrollTop;
     const windowWidth = window.innerWidth;
 
     if (windowWidth < 992) {
