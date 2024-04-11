@@ -2,8 +2,8 @@
 
 .logo {
   position: fixed;
-  top: 0.6rem;
-  left: 0.5rem;
+  top: 0.8rem;
+  left: 0.8rem;
   max-height: 15rem;
 
   z-index: 10000;
@@ -11,6 +11,7 @@
 
 @media (min-width: 992px) {
   .logo {
+    top: -0.4rem;
     left: 0.8rem;
   }
 }
