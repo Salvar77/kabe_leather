@@ -2,7 +2,6 @@ import Head from "next/head";
 import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
-
 import Hero from "@/components/Main/Hero";
 import SliderSection from "@/components/Sliders/SliderSection";
 
