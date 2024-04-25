@@ -14,10 +14,7 @@ export default function Home() {
           property="og:image"
           content="https://www.kabetintleather.pl/logooooo.jpg"
         />
-        <meta
-          property="og:image"
-          content="https://kabetintleather.pl/logooooo.jpg"
-        />
+
         <meta
           name="description"
           content="Kabe Tint&Leather - Usługi przyciemniania szyb samochodowych oraz regeneracja tapicerki skórzanej"
