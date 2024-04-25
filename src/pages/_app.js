@@ -22,6 +22,7 @@ export default function App({ Component, pageProps }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
