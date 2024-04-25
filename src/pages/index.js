@@ -12,7 +12,11 @@ export default function Home() {
         <title>Kabe Tint&Leather</title>
         <meta
           property="og:image"
-          content="https://www.kabetintleather.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffurniture2_640.44b52eb5.png&w=1920&q=75"
+          content="https://www.kabetintleather.pl/logooooo.jpg"
+        />
+        <meta
+          property="og:image"
+          content="https://kabetintleather.pl/logooooo.jpg"
         />
         <meta
           name="description"
