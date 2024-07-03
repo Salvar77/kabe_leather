@@ -14,6 +14,7 @@ const PricingSection = () => {
   const [activeService, setActiveService] = useState(null);
 
   const contentRefs = useRef(new Map());
+  const headerRefs = useRef(new Map());
 
   const services = [
     {
@@ -103,7 +104,7 @@ const PricingSection = () => {
       details: [
         "Mycie samochodu profesjonalnym szamponem 🫧",
         "Czyszczenie i odłuszczanie karoserii i felg 🧽",
-        "Dekontaminacja lakieru (usuwanie smoły, żywicy, opiłków żelza - również z felg) 🧤",
+        "Dekontaminacja lakieru (usuwanie smoły, żywicy, opiłków żelaza - również z felg) 🧤",
         "Pełny detailing wnętrza - kompleksowe odkurzanie wnętrza / czyszczenie specjalistyczne pędzelkami kanałów wentylacyjnych, wszelkich otworów, zakamarków i przycisków, pranie foteli, tylnej kanapy, boczków drzwi, bagażnika, dywaników oraz wykładzin podłogowych/  czyszczenie i pielęgnacja komory bagażnika łącznie z kołem zapasowym 🍃",
         "Mycie szyb zarówno wewnątrz, jak i na zewnątrz 🚿",
         "Dressing na opony ✨",
@@ -132,25 +133,40 @@ const PricingSection = () => {
   }, [activeService, services]);
 
   const toggleService = (id) => {
-    console.log("Current activeService before toggle:", activeService);
-    setActiveService(activeService === id ? null : id);
-    console.log(
-      "New activeService after toggle:",
-      activeService === id ? null : id
-    );
+    const isSameService = activeService === id;
+    setActiveService(isSameService ? null : id);
+
+    if (!isSameService) {
+      // Opóźnione przewijanie do nagłówka aktywnej usługi
+      setTimeout(() => {
+        const headerRef = headerRefs.current.get(id);
+        if (headerRef) {
+          const headerRect = headerRef.getBoundingClientRect();
+          const offsetPosition = window.pageYOffset + headerRect.top - 20; // Przesuń trochę powyżej elementu, jeśli chcesz
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 200);
+    }
   };
 
   return (
     <section id="cennik" className={styles.pricingSection}>
       <h2 className={styles.pricingHeader}>Cennik</h2>
       <div className={styles.servicesContainer}>
-        {services.map((service, index) => (
-          <div key={index} className={styles.serviceItem}>
+        {services.map((service) => (
+          <div key={service.id} className={styles.serviceItem}>
             <div
               className={cn(styles.serviceHeader, {
                 [styles.active]: activeService === service.id,
               })}
               onClick={() => toggleService(service.id)}
+              ref={(el) => {
+                headerRefs.current.set(service.id, el);
+              }}
             >
               {service.name}
             </div>

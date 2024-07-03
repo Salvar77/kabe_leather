@@ -37,7 +37,7 @@ const AutomotiveUpholstery = () => {
   const sectionClass = `${classes.automotivePage}`;
   const boxClass = `${classes.automotivePage_box}`;
 
-  // Używaj wspólnej struktury dla obu wariantów
+  // Używaj wspólnej struktury dla wszystkich wariantów
   return (
     <section id="tapicerka1" className={sectionClass}>
       <h1>{automotive.description}</h1>
@@ -48,14 +48,16 @@ const AutomotiveUpholstery = () => {
           )}
         </div>
         <div className={classes.textWrapper}>
-          {/* Kontent dla tapicerka-samochodowa i tapicerka-domowa */}
+          {/* Kontent dla różnych usług */}
           {(automotiveId === "tapicerka-samochodowa" ||
             automotiveId === "tapicerka-domowa") && (
             <ContentUpholstery automotive={automotive} />
           )}
-          {/* Kontent dla bezinwazyjne-przyciemnianie-szyb */}
           {automotiveId === "bezinwazyjne-przyciemnianie-szyb" && (
             <ContentTinting automotive={automotive} />
+          )}
+          {automotiveId === "pranie-tapicerki-skorzanej" && (
+            <ContentCleaning automotive={automotive} />
           )}
         </div>
       </div>
@@ -104,6 +106,21 @@ const ContentTinting = ({ automotive }) => (
     </div>
   </div>
 );
+
+const ContentCleaning = ({ automotive }) => (
+  <div className={classes.columnLayout}>
+    <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+    <ul className={classes.listStyle}>
+      <li>Usuwanie plam i zabrudzeń</li>
+      <li>Pranie tapicerki samochodowej</li>
+      <li>Ochrona przed przetarciami i uszkodzeniami</li>
+    </ul>
+    <div className={classes.linkWrapper}>
+      <AppointmentLink />
+    </div>
+  </div>
+);
+
 const AppointmentLink = () => (
   <Link
     href="tel:+48881325631"
@@ -113,4 +130,5 @@ const AppointmentLink = () => (
     Umów się na wizytę!
   </Link>
 );
+
 export default AutomotiveUpholstery;
