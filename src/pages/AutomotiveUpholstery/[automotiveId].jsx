@@ -33,11 +33,9 @@ const AutomotiveUpholstery = () => {
     };
   }, [automotive.largeImage, automotive.image]);
 
-  // Przypisz wspólne klasy do sekcji i box
   const sectionClass = `${classes.automotivePage}`;
   const boxClass = `${classes.automotivePage_box}`;
 
-  // Używaj wspólnej struktury dla wszystkich wariantów
   return (
     <section id="tapicerka1" className={sectionClass}>
       <h1>{automotive.description}</h1>
@@ -48,7 +46,6 @@ const AutomotiveUpholstery = () => {
           )}
         </div>
         <div className={classes.textWrapper}>
-          {/* Kontent dla różnych usług */}
           {(automotiveId === "tapicerka-samochodowa" ||
             automotiveId === "tapicerka-domowa") && (
             <ContentUpholstery automotive={automotive} />
