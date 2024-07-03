@@ -56,7 +56,7 @@ const AutomotiveUpholstery = () => {
           {automotiveId === "bezinwazyjne-przyciemnianie-szyb" && (
             <ContentTinting automotive={automotive} />
           )}
-          {automotiveId === "pranie-tapicerki-ssamochodowej" && (
+          {automotiveId === "pranie-tapicerki-samochodowej" && (
             <ContentCleaning automotive={automotive} />
           )}
         </div>
