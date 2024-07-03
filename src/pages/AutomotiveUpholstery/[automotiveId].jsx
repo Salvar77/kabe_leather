@@ -11,27 +11,29 @@ const AutomotiveUpholstery = () => {
 
   const [currentImage, setCurrentImage] = useState(null);
 
-  if (!automotiveId) return null;
-
   const automotive = servicesData.find(
     (service) => service.id === automotiveId
   );
 
-  if (!automotive) return <p>Usługa nie została znaleziona.</p>;
-
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 992px)");
-    const handleMediaQueryChange = (e) => {
-      setCurrentImage(e.matches ? automotive.largeImage : automotive.image);
-    };
+    if (automotive) {
+      const mediaQuery = window.matchMedia("(min-width: 992px)");
+      const handleMediaQueryChange = (e) => {
+        setCurrentImage(e.matches ? automotive.largeImage : automotive.image);
+      };
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-    handleMediaQueryChange(mediaQuery);
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+      handleMediaQueryChange(mediaQuery);
 
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, [automotive.largeImage, automotive.image]);
+      return () => {
+        mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      };
+    }
+  }, [automotive]);
+
+  if (!automotiveId) return null;
+
+  if (!automotive) return <p>Usługa nie została znaleziona.</p>;
 
   const sectionClass = `${classes.automotivePage}`;
   const boxClass = `${classes.automotivePage_box}`;
