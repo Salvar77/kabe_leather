@@ -56,31 +56,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 2rem 0;
 }
 
 .nav ul li {
-  font-size: 2rem;
-  padding: 1.6rem;
+  font-size: 2.4rem;
+  padding: 0.5rem;
   color: $white-smooth;
   text-align: center;
   cursor: pointer;
+  margin: 0.5rem; /* Dodanie marginesów wokół elementów listy */
+  width: 100%; /* Sprawienie, że przyciski będą miały taką samą szerokość */
+  max-width: 200px; /* Maksymalna szerokość dla przycisków */
 }
 
 .nav ul li a {
   text-decoration: none;
   color: $white-smooth;
   transition: color 0.3s ease;
-  font-size: 1.8rem;
+  display: block;
+  padding: 1rem; /* Dodanie paddingu dla większego obszaru klikalnego */
 }
 
 .nav ul li a:hover {
   color: $blue-after;
-}
-
-.four {
-  display: none;
 }
 
 @media (max-width: 992px) {
@@ -96,12 +95,11 @@
       box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
       border: 1px solid rgba(61, 54, 54, 0.9);
       margin: 1rem;
-      min-width: 100%;
-
       border-radius: 0.4rem;
 
       a {
         width: 100%;
+        padding: 1rem; /* Mniejszy padding */
       }
     }
   }
