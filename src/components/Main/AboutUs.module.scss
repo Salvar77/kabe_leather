@@ -1,25 +1,37 @@
 @import "../../styles/colors";
 
-@import "../../styles/colors";
-
 .aboutMe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   background-color: $dark-smooth-hover;
   color: $white-smooth;
 
-  &__img {
+  &__image {
     width: 100%;
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 
-    background-color: $dark-smooth;
+    img {
+      max-width: 100%;
+      height: auto;
+      background-color: $dark-smooth;
+      padding: 2rem;
+      box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
+      border: 1px solid rgba(61, 54, 54, 0.9);
+      border-radius: 1rem;
+    }
+  }
 
-    height: 100%;
-    padding: 2rem;
-    box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-    border: 1px solid rgba(61, 54, 54, 0.9);
-    border-radius: 1rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%; /* Dodane ograniczenie szerokości */
+    text-align: center; /* Wyrównanie tekstu do środka */
   }
 
   &__header {
@@ -65,10 +77,6 @@
       }
     }
   }
-
-  &__content {
-    border-radius: 1rem;
-  }
 }
 
 .buttonContainer {
@@ -84,7 +92,6 @@
   background-color: $white-smooth;
   color: $dark-smooth;
   text-decoration: none;
-  flex-direction: column;
   border-radius: 0.4rem;
   font-weight: bold;
   transition: background-color 0.3s;
@@ -120,14 +127,29 @@
 @media (min-width: 992px) {
   .aboutMe {
     flex-direction: row;
-    align-items: center;
+    align-items: center; /* Zmiana wyrównania na center */
 
-    &__header {
-      font-size: 3.4rem;
+    &__image {
+      width: 40%; /* Obraz zajmie 40% szerokości */
+      padding: 0; /* Usuń padding dla obrazu */
+
+      img {
+        max-width: 100%;
+        height: auto;
+        background-color: $dark-smooth;
+        padding: 2rem;
+        box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
+        border: 1px solid rgba(61, 54, 54, 0.9);
+        border-radius: 1rem;
+      }
     }
 
-    .realizationButton {
-      font-size: 3rem;
+    &__content {
+      width: 60%; /* Treść zajmie 60% szerokości */
+      align-items: center; /* Wyrównanie treści do środka */
+      flex-direction: column;
+      padding: 0 2rem;
+      text-align: left; /* Wyrównanie tekstu do lewej */
     }
   }
 }
