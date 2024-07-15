@@ -7,7 +7,7 @@
   padding-top: 2rem;
   background-color: $dark-smooth;
   max-width: 100%;
-  padding: 3rem;
+  padding: 2rem;
 
   font-size: 1.8rem;
 
@@ -217,6 +217,16 @@
   border: 1px solid rgba(61, 54, 54, 0.9);
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
   color: $white-smooth;
+
+  input[type="checkbox"] {
+    margin-right: 0.5rem; /* Dystans pomiędzy checkboxem a tekstem */
+    transform: translateY(2px); /* Dopasowanie checkboxa do linii tekstu */
+  }
+
+  label {
+    flex: 1; /* Rozciągnięcie etykiety, aby zajmowała całą dostępną przestrzeń */
+    font-size: 0.9rem; /* Rozmiar tekstu w etykiecie */
+  }
 }
 
 .policy {
