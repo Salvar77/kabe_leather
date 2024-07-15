@@ -225,7 +225,20 @@
 
   label {
     flex: 1; /* Rozciągnięcie etykiety, aby zajmowała całą dostępną przestrzeń */
-    font-size: 0.9rem; /* Rozmiar tekstu w etykiecie */
+
+    display: flex;
+    align-items: center; /* Wyśrodkowanie tekstu w pionie */
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    input[type="checkbox"] {
+      margin-right: 0; /* Usunięcie marginesu poziomego dla checkboxa w wersji kolumnowej */
+      margin-bottom: 0.5rem; /* Dystans pomiędzy checkboxem a tekstem w wersji kolumnowej */
+      transform: translateY(0);
+    }
   }
 }
 
@@ -250,7 +263,7 @@
 
 @media (min-width: 768px) {
   .consentWrapper {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .policy {
