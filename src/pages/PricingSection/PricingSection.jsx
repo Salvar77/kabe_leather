@@ -5,7 +5,7 @@ import cn from "classnames";
 import Image from "next/image";
 import foto1 from "../../assets/image/detalShot1.jpg";
 import foto2 from "../../assets/image/detalShot6.jpg";
-import foto3 from "../../assets/image/detalShot3.jpg";
+import foto3 from "../../assets/image/tint_640.jpg";
 import foto4 from "../../assets/image/detalShot4.jpg";
 import foto5 from "../../assets/image/detalShot5.jpg";
 import foto6 from "../../assets/image/detalShot2.jpg";
@@ -119,8 +119,21 @@ const PricingSection = () => {
       },
       description: "Opis usługi myjnia ręczna...",
     },
-
-    // ... inne usługi
+    {
+      id: 6,
+      name: "PRZYCIEMNIANIE SZYB - Bezinwazyjne 🛠️",
+      details: [
+        "Profesjonalne przyciemnienie szyb samochodowych 🔧",
+        "Użycie wysokiej jakości folii, która zapewnia ochronę przed promieniowaniem UV ☀️",
+        "Redukcja nagrzewania wnętrza pojazdu 🌡️",
+        "Zwiększenie prywatności i estetyki pojazdu 🔒",
+        "Bezinwazyjny montaż bez naruszania struktury szyb 🚗",
+        "Gwarancja na trwałość i brak pęcherzyków powietrza 📜",
+      ],
+      imagePath: foto3,
+      price: "Od 450 zł",
+      description: "Opis usługi myjnia ręczna...",
+    },
   ];
 
   useEffect(() => {
@@ -180,7 +193,6 @@ const PricingSection = () => {
             >
               {activeService === service.id && (
                 <div className={styles.img}>
-                  {/* Here you use the Image component to load the imagePath associated with the active service */}
                   <Image
                     src={services.find((s) => s.id === activeService).imagePath}
                     alt={service.name}
@@ -189,7 +201,6 @@ const PricingSection = () => {
               )}
               <h3 className={styles.h3}>{service.name}</h3>
               <ul className={styles.pricingList}>
-                {/* Bezpośrednie mapowanie tablicy details */}
                 {service.details.map((detail, index) => (
                   <li key={index} className={styles.pricingListItem}>
                     {detail}
@@ -197,27 +208,36 @@ const PricingSection = () => {
                 ))}
               </ul>
               <div className={styles.pricingInfo}>
-                <div className={styles.pricingType}>
-                  Małe auta: od{" "}
-                  <span className={styles.priceValue}>
-                    {service.prices.small.split(" ")[1]}
-                  </span>{" "}
-                  zł
-                </div>
-                <div className={styles.pricingType}>
-                  Średnie auta: od{" "}
-                  <span className={styles.priceValue}>
-                    {service.prices.medium.split(" ")[1]}
-                  </span>{" "}
-                  zł
-                </div>
-                <div className={styles.pricingType}>
-                  Duże auta: od{" "}
-                  <span className={styles.priceValue}>
-                    {service.prices.large.split(" ")[1]}
-                  </span>{" "}
-                  zł
-                </div>
+                {service.prices ? (
+                  <>
+                    <div className={styles.pricingType}>
+                      Małe auta: od{" "}
+                      <span className={styles.priceValue}>
+                        {service.prices.small.split(" ")[1]}
+                      </span>{" "}
+                      zł
+                    </div>
+                    <div className={styles.pricingType}>
+                      Średnie auta: od{" "}
+                      <span className={styles.priceValue}>
+                        {service.prices.medium.split(" ")[1]}
+                      </span>{" "}
+                      zł
+                    </div>
+                    <div className={styles.pricingType}>
+                      Duże auta: od{" "}
+                      <span className={styles.priceValue}>
+                        {service.prices.large.split(" ")[1]}
+                      </span>{" "}
+                      zł
+                    </div>
+                  </>
+                ) : (
+                  <div className={styles.pricingType}>
+                    Cena:{" "}
+                    <span className={styles.priceValue}>{service.price}</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
