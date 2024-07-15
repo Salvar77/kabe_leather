@@ -8,8 +8,8 @@ const paths = [
   "/Tapicerka/tapicerka-samochodowa",
   "/Tapicerka/tapicerka-domowa",
   "/Tapicerka/bezinwazyjne-przyciemnianie-szyb",
+  "/Tapicerka/pranie-tapicerki-samochodowej", // Nowa ścieżka
   "/Realizacje",
-  "/pranie-tapicerki-samochodowej", // Nowa ścieżka
 ];
 
 const GenerateSitemap = () => {

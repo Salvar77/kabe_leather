@@ -17,7 +17,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Kabe Tint&Leather - Usługi przyciemniania szyb samochodowych oraz regeneracja tapicerki skórzanej"
+          content="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
