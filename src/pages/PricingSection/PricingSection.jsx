@@ -167,84 +167,90 @@ const PricingSection = () => {
   };
 
   return (
-    <section id="cennik" className={styles.pricingSection}>
-      <h2 className={styles.pricingHeader}>Cennik</h2>
-      <div className={styles.servicesContainer}>
-        {services.map((service) => (
-          <div key={service.id} className={styles.serviceItem}>
-            <div
-              className={cn(styles.serviceHeader, {
-                [styles.active]: activeService === service.id,
-              })}
-              onClick={() => toggleService(service.id)}
-              ref={(el) => {
-                headerRefs.current.set(service.id, el);
-              }}
-            >
-              {service.name}
-            </div>
-            <div
-              className={cn(styles.serviceDetails, {
-                [styles.active]: activeService === service.id,
-              })}
-              ref={(el) => {
-                contentRefs.current.set(service.id, el);
-              }}
-            >
-              {activeService === service.id && (
-                <div className={styles.img}>
-                  <Image
-                    src={services.find((s) => s.id === activeService).imagePath}
-                    alt={service.name}
-                  />
-                </div>
-              )}
-              <h3 className={styles.h3}>{service.name}</h3>
-              <ul className={styles.pricingList}>
-                {service.details.map((detail, index) => (
-                  <li key={index} className={styles.pricingListItem}>
-                    {detail}
-                  </li>
-                ))}
-              </ul>
-              <div className={styles.pricingInfo}>
-                {service.prices ? (
-                  <>
-                    <div className={styles.pricingType}>
-                      Małe auta: od{" "}
-                      <span className={styles.priceValue}>
-                        {service.prices.small.split(" ")[1]}
-                      </span>{" "}
-                      zł
-                    </div>
-                    <div className={styles.pricingType}>
-                      Średnie auta: od{" "}
-                      <span className={styles.priceValue}>
-                        {service.prices.medium.split(" ")[1]}
-                      </span>{" "}
-                      zł
-                    </div>
-                    <div className={styles.pricingType}>
-                      Duże auta: od{" "}
-                      <span className={styles.priceValue}>
-                        {service.prices.large.split(" ")[1]}
-                      </span>{" "}
-                      zł
-                    </div>
-                  </>
-                ) : (
-                  <div className={styles.pricingType}>
-                    Cena:{" "}
-                    <span className={styles.priceValue}>{service.price}</span>
+    <>
+      <section id="cennik" className={styles.pricingSection}>
+        <h2 className={styles.pricingHeader}>Cennik</h2>
+        <div className={styles.servicesContainer}>
+          {services.map((service) => (
+            <div key={service.id} className={styles.serviceItem}>
+              <div
+                className={cn(styles.serviceHeader, {
+                  [styles.active]: activeService === service.id,
+                })}
+                onClick={() => toggleService(service.id)}
+                ref={(el) => {
+                  headerRefs.current.set(service.id, el);
+                }}
+              >
+                {service.name}
+              </div>
+              <div
+                className={cn(styles.serviceDetails, {
+                  [styles.active]: activeService === service.id,
+                })}
+                ref={(el) => {
+                  contentRefs.current.set(service.id, el);
+                }}
+              >
+                {activeService === service.id && (
+                  <div className={styles.img}>
+                    <Image
+                      src={
+                        services.find((s) => s.id === activeService).imagePath
+                      }
+                      alt={service.name}
+                    />
                   </div>
                 )}
+                <h3 className={styles.h3}>{service.name}</h3>
+                <ul className={styles.pricingList}>
+                  {service.details.map((detail, index) => (
+                    <li key={index} className={styles.pricingListItem}>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+                <div className={styles.pricingInfo}>
+                  {service.prices ? (
+                    <>
+                      <div className={styles.pricingType}>
+                        Małe auta: od{" "}
+                        <span className={styles.priceValue}>
+                          {service.prices.small.split(" ")[1]}
+                        </span>{" "}
+                        zł
+                      </div>
+                      <div className={styles.pricingType}>
+                        Średnie auta: od{" "}
+                        <span className={styles.priceValue}>
+                          {service.prices.medium.split(" ")[1]}
+                        </span>{" "}
+                        zł
+                      </div>
+                      <div className={styles.pricingType}>
+                        Duże auta: od{" "}
+                        <span className={styles.priceValue}>
+                          {service.prices.large.split(" ")[1]}
+                        </span>{" "}
+                        zł
+                      </div>
+                    </>
+                  ) : (
+                    <div className={styles.pricingType}>
+                      Cena:{" "}
+                      <span className={styles.priceValue}>{service.price}</span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </section>
+      <div className={styles.priceContact}>
+        <Contact />
       </div>
-      <Contact />
-    </section>
+    </>
   );
 };
 
