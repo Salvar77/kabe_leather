@@ -48,7 +48,7 @@ export const servicesData = [
   },
   {
     id: "bezinwazyjne-przyciemnianie-szyb",
-    description: "Bezinwazyjne Przyciemnianie szyb samochodowych",
+    description: "Bezinwazyjne Przyciemnianie Szyb Samochodowych",
     image: tintImage,
     largeImage: tintImageLarge,
     largeImageWidth: 1920,
