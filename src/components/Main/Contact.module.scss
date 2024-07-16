@@ -219,6 +219,8 @@
   color: $white-smooth;
 
   input[type="checkbox"] {
+    display: flex;
+    align-items: center;
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -252,7 +254,10 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .consentWrapper {
     input[type="checkbox"] {
-      padding-left: 10.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
     }
   }
 }
