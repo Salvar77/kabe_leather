@@ -39,11 +39,11 @@ const Contact = () => {
         setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
         console.error("Błąd wysyłania: ", data.error);
       }
-      setShowModal(true); // Pokaż modal po udanym wysłaniu wiadomości
+      setShowModal(true); // Dodaj tę linię, aby wyświetlić modal
     } catch (error) {
       setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
       console.error("Błąd: ", error);
-      setShowModal(true); // Pokaż modal także w przypadku błędu
+      setShowModal(true); // Dodaj tę linię, aby wyświetlić modal również w przypadku błędu
     }
   };
 
@@ -101,6 +101,13 @@ const Contact = () => {
             required
           ></textarea>
           <div className={classes.consentWrapper}>
+            <input
+              type="checkbox"
+              id="rodoConsent"
+              checked={consent}
+              onChange={() => setConsent(!consent)}
+              required
+            />
             <label htmlFor="rodoConsent">
               Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z
               ustawą o ochronie danych osobowych w związku z wysłaniem zapytania
@@ -111,13 +118,6 @@ const Contact = () => {
               Administratorem danych osobowych jest KaBe Tint & Leather Kamil
               Brzoskwinia, ul. Grota Roweckiego 18.
             </label>
-            <input
-              type="checkbox"
-              id="rodoConsent"
-              checked={consent}
-              onChange={() => setConsent(!consent)}
-              required
-            />
           </div>
           <button type="submit">Wyślij</button>
         </form>
