@@ -210,6 +210,8 @@
 }
 
 .consentWrapper {
+  display: flex;
+  align-items: center;
   padding: 0.5rem;
   margin: 0.5rem;
   text-align: center;
@@ -230,6 +232,18 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input[type="checkbox"] {
+      margin-right: 0; /* Usunięcie marginesu poziomego dla checkboxa w wersji kolumnowej */
+      margin-bottom: 0.5rem; /* Dystans pomiędzy checkboxem a tekstem w wersji kolumnowej */
+      transform: translateY(0);
+    }
   }
 }
 
