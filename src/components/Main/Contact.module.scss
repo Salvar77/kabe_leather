@@ -228,14 +228,6 @@
     align-items: center;
     width: auto;
   }
-
-  @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-    .consentWrapper {
-      input[type="checkbox"] {
-        margin-left: 10rem;
-      }
-    }
-  }
 }
 
 .policy {
@@ -254,6 +246,14 @@
   &__link {
     text-decoration: none;
     color: $blue-after;
+  }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .consentWrapper {
+    input[type="checkbox"] {
+      margin-left: 10rem;
+    }
   }
 }
 
