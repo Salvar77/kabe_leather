@@ -15,7 +15,7 @@ const AboutPage = () => {
           praniu tapicerki samochodowej oraz przyciemnianiu szyb samochodowych.
         </p>
       </div>
-      <div>
+      <div className={classes.aboutMe__box}>
         <Image
           src={picture}
           alt="Logo firmy KaBe Tint&Leather"
