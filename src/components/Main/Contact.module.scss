@@ -221,6 +221,21 @@
   input[type="checkbox"] {
     width: 1.5rem;
     height: 1.5rem;
+
+    -webkit-appearance: none; /* Wsparcie dla Safari */
+    -moz-appearance: none; /* Wsparcie dla Firefox */
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: $blue-main; /* Kolor tła po zaznaczeniu */
+    border-color: $blue-main; /* Kolor obramowania po zaznaczeniu */
+  }
+
+  label {
+    display: inline-block; /* Blokowe wyświetlanie */
+    margin-left: 0.5rem; /* Modyfikacja marginesu */
+    font-size: 1.2rem; /* Rozmiar czcionki */
+    color: $white-smooth; /* Kolor czcionki */
   }
 }
 
@@ -246,7 +261,7 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .consentWrapper {
     input[type="checkbox"] {
-      margin-left: 10.5rem;
+      width: auto; /* Dopasowanie szerokości na urządzeniach mobilnych */
     }
   }
 }
