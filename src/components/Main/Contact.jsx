@@ -108,7 +108,7 @@ const Contact = () => {
               onChange={() => setConsent(!consent)}
               required
             />
-            <label htmlFor="rodoConsent">
+            <label>
               Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z
               ustawą o ochronie danych osobowych w związku z wysłaniem zapytania
               przez formularz kontaktowy. Podanie danych jest dobrowolne, ale
