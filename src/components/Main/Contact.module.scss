@@ -226,7 +226,7 @@
   label {
     display: flex;
     align-items: center;
-    width: auto;
+    // width: auto;
   }
 }
 
@@ -252,7 +252,7 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .consentWrapper {
     input[type="checkbox"] {
-      margin-left: 12rem;
+      margin-left: 10.5rem;
     }
   }
 }
