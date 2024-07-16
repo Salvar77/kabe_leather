@@ -219,15 +219,17 @@
   color: $white-smooth;
 
   input[type="checkbox"] {
-    margin-right: 0.5rem; /* Dystans pomiędzy checkboxem a tekstem */
-    transform: translateY(2px); /* Dopasowanie checkboxa do linii tekstu */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   label {
-    flex: 1; /* Rozciągnięcie etykiety, aby zajmowała całą dostępną przestrzeń */
-
     display: flex;
-    align-items: center; /* Wyśrodkowanie tekstu w pionie */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   @media (max-width: 480px) {
