@@ -218,17 +218,9 @@
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
   color: $white-smooth;
 
-  input[type="checkbox"] {
-    width: 1.5rem;
-    height: 1.5rem;
-
-    -webkit-appearance: none; /* Wsparcie dla Safari */
-    -moz-appearance: none; /* Wsparcie dla Firefox */
-  }
-
   input[type="checkbox"]:checked {
-    background-color: $blue-main; /* Kolor tła po zaznaczeniu */
-    border-color: $blue-main; /* Kolor obramowania po zaznaczeniu */
+    background-color: $blue-after; /* Kolor tła po zaznaczeniu */
+    border-color: $blue-after; /* Kolor obramowania po zaznaczeniu */
   }
 
   label {
@@ -261,7 +253,23 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .consentWrapper {
     input[type="checkbox"] {
-      width: auto; /* Dopasowanie szerokości na urządzeniach mobilnych */
+      appearance: none; /* Resetowanie domyślnego stylu na urządzeniach iOS */
+      -webkit-appearance: none; /* Wsparcie dla Safari */
+      -moz-appearance: none; /* Wsparcie dla Firefox */
+      border: 1px solid #ccc; /* Styl obramowania */
+      background-color: $dark-smooth-hover; /* Kolor tła */
+      border-radius: 0.2rem; /* Zaokrąglenie narożników */
+      cursor: pointer; /* Kursor na wskaźnik */
+      vertical-align: middle; /* Wyrównanie pionowe */
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px) and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
+  .consentWrapper {
+    input[type="checkbox"] {
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 }
