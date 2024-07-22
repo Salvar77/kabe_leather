@@ -54,7 +54,7 @@
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(98, 98, 126, 0.1);
     border: 1px solid rgba(94, 97, 114, 0.9);
     background-color: $dark-smooth-hover;
-
+    border-radius: 0.6rem;
     width: 100%;
     height: 100%;
   }
@@ -72,7 +72,7 @@
 
 .paragraphStyle {
   font-size: 1.8rem;
-
+  border-radius: 0.6rem;
   margin-bottom: 1rem;
   padding: 2rem;
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
@@ -92,7 +92,7 @@
 .listStyle {
   font-size: 1.8rem;
   padding: 2rem;
-
+  border-radius: 0.6rem;
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
   border: 2px solid rgba(61, 54, 54, 0.1);
   background-color: $white-smooth;
@@ -109,7 +109,7 @@
 }
 
 .linkWrapper {
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
