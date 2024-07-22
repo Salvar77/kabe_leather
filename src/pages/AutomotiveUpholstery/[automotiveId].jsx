@@ -48,8 +48,7 @@ const AutomotiveUpholstery = () => {
           )}
         </div>
         <div className={classes.textWrapper}>
-          {(automotiveId === "tapicerka-samochodowa" ||
-            automotiveId === "autokosmetyka") && (
+          {automotiveId === "tapicerka-samochodowa" && (
             <ContentUpholstery automotive={automotive} />
           )}
           {automotiveId === "przyciemnianie-szyb" && (
@@ -57,6 +56,9 @@ const AutomotiveUpholstery = () => {
           )}
           {automotiveId === "pranie-tapicerki" && (
             <ContentCleaning automotive={automotive} />
+          )}
+          {automotiveId === "autokosmetyka" && (
+            <ContentCosmetic automotive={automotive} />
           )}
         </div>
       </div>
@@ -68,18 +70,24 @@ const ContentUpholstery = ({ automotive }) => (
   <div className={classes.listContainer}>
     <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
     <ul className={classes.listStyle}>
-      <li>czyszczenie skóry meblowej i samochodowej</li>
-      <li>konserwacja skóry meblowej i samochodowej</li>
-      <li>usuwanie plam i przebarwień</li>
-      <li>usuwanie śladów po długopisie, szmince, markerach</li>
-      <li>naprawa uszkodzeń skóry (dziury, rozcięcia)</li>
-      <li>usuwanie przetarć, spękań</li>
-      <li>usuwanie śladów zadrapań (np. po kocich lub psich pazurach)</li>
-      <li>farbowanie i dobarwianie tapicerki skórzanej</li>
-      <li>kompleksowa renowacja foteli i innych elementów samochodu</li>
-      <li>kompleksowa renowacja mebli skórzanych</li>
-      <li>dobieranie farby pod indywidualne zamówienie i kolor tapicerki</li>
-      {/* ... */}
+      <li>
+        <b>Odnowienie koloru i tekstury:</b> Przywracamy skórze jej naturalny
+        kolor i gładkość, eliminując zarysowania, plamy i odbarwienia.
+      </li>
+      <li>
+        <b>Zwiększenie trwałości:</b> Nasze zabiegi zabezpieczają skórę przed
+        przyszłymi uszkodzeniami i zużyciem, co pozwala cieszyć się jej
+        doskonałym stanem przez długie lata.
+      </li>
+      <li>
+        <b>Wzmocnienie i naprawa:</b> Naprawiamy drobne pęknięcia i rozdarcia,
+        które mogą wpłynąć na estetykę i komfort użytkowania.
+      </li>
+      <li>
+        <b>Ochrona przed czynnikami zewnętrznymi:</b> Stosujemy specjalistyczne
+        preparaty, które chronią skórę przed działaniem promieni UV, wilgocią i
+        innymi szkodliwymi czynnikami.
+      </li>
     </ul>
     <div className={classes.linkWrapper}>
       <AppointmentLink />
@@ -92,17 +100,25 @@ const ContentTinting = ({ automotive }) => (
     <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
     <ul className={classes.listStyle}>
       <li>
-        Redukcja energii słonecznej, pozwala obniżyć temperaturę w samochodzie
+        <b>Redukcja energii słonecznej:</b> Obniż temperaturę w samochodzie, co
+        zwiększa komfort jazdy, szczególnie w gorące dni.
       </li>
-      <li>Ochrona przed szkodliwymi promieniami UV</li>
       <li>
-        Folia przyciemniająca szyby chroni pasażerów podczas wypadku przed
-        odłamkami stłuczonego szkła
+        <b>Ochrona przed szkodliwymi promieniami UV:</b> Folie przyciemniające
+        chronią pasażerów przed szkodliwymi promieniami UV.
       </li>
-      <li>Bezinwazyjny montaż bez naruszania struktury szyb</li>
-      <li>Zwiększenie prywatności i estetyki pojazdu</li>
-      <li>Redukcja nagrzewania wnętrza pojazdu</li>
-      <li>Gwarancja na trwałość i brak pęcherzyków powietrza </li>
+      <li>
+        <b> Zwiększenie prywatności:</b> Popraw swoją prywatność i
+        bezpieczeństwo dzięki foliom, które utrudniają widoczność z zewnątrz.
+      </li>
+      <li>
+        <b>Bezpieczeństwo w razie wypadku:</b> Folie przyciemniające mogą pomóc
+        w ochronie pasażerów przed odłamkami stłuczonego szkła podczas wypadków.
+      </li>
+      <li>
+        <b>Estetyka pojazdu:</b> Nowoczesne folie nadają samochodowi elegancki i
+        stylowy wygląd, który wyróżnia się na drodze.
+      </li>
     </ul>
     <div className={classes.linkWrapper}>
       <AppointmentLink />
@@ -114,15 +130,62 @@ const ContentCleaning = ({ automotive }) => (
   <div className={classes.columnLayout}>
     <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
     <ul className={classes.listStyle}>
-      <li>Usuwanie plam i zabrudzeń</li>
-      <li>Pranie tapicerki samochodowej</li>
-      <li>Ochrona przed przetarciami i uszkodzeniami</li>
+      <li>
+        <b>Głęboki i skuteczny efekt czyszczenia:</b> Usuwamy zanieczyszczenia,
+        kurz, brud i plamy, przywracając tapicerce jej pierwotny wygląd i
+        zapach.
+      </li>
+      <li>
+        <b>Poprawa higieny:</b> Nasze metody czyszczenia eliminują bakterie,
+        roztocza i alergeny, poprawiając jakość powietrza i komfort użytkowania.
+      </li>
+      <li>
+        <b>Odświeżenie kolorów:</b> Przywracamy naturalne kolory tapicerki,
+        eliminując matowienie i przebarwienia spowodowane użytkowaniem.
+      </li>
+      <li>
+        <b>Ochrona tkanin:</b> Stosujemy specjalne preparaty, które nie tylko
+        czyszczą, ale również zabezpieczają tapicerkę przed przyszłymi
+        zanieczyszczeniami i zużyciem.
+      </li>
     </ul>
     <div className={classes.linkWrapper}>
       <AppointmentLink />
     </div>
   </div>
 );
+
+const ContentCosmetic = ({ automotive }) => {
+  return (
+    <div className={`${classes.columnLayout}`}>
+      <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+      <ul className={classes.listStyle}>
+        <li>
+          <b>Idealny wygląd i blask:</b> Nasze zabiegi zapewniają gruntowne
+          czyszczenie i polerowanie, które przywracają karoserii i wnętrzu
+          samochodu świeżość i blask.
+        </li>
+        <li>
+          <b>Ochrona lakieru:</b> Stosujemy preparaty zabezpieczające lakier
+          przed działaniem szkodliwych czynników atmosferycznych, takich jak UV,
+          sól czy zanieczyszczenia drogowe.
+        </li>
+        <li>
+          <b>Wnętrze jak nowe:</b> Skutecznie usuwamy zabrudzenia, plamy i
+          nieprzyjemne zapachy z tapicerki, dywaników i powierzchni
+          wewnętrznych.
+        </li>
+        <li>
+          <b>Wzmocnienie odświeżenia:</b> Wykonujemy detailing, który poprawia
+          wygląd, stan techniczny i komfort użytkowania Twojego pojazdu.
+        </li>
+      </ul>
+      <div className={classes.linkWrapper}>
+        <AppointmentLink />
+      </div>
+    </div>
+  );
+};
 
 const AppointmentLink = () => (
   <Link
