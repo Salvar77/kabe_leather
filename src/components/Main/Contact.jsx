@@ -61,10 +61,7 @@ const Contact = () => {
       <section id="kontakt" className={classes.contactSection}>
         <div className={classes.contactInfo}>
           <h2>Kontakt</h2>
-          <p>
-            Ulica:{" "}
-            <span className={classes.highlightedText}>Grota Roweckiego 18</span>
-          </p>
+          <p>Ulica: Grota Roweckiego 18</p>
           <p>Miasto: Opole</p>
           <p>
             Telefon:{" "}

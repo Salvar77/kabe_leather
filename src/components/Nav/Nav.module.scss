@@ -19,7 +19,7 @@
     align-items: center;
 
     z-index: 100;
-    background-color: rgba($dark-smooth, 0.9);
+    background-color: rgba($white-smooth, 0.9);
     font-weight: bold;
 
     &:hover {
@@ -65,9 +65,9 @@
   color: $white-smooth;
   text-align: center;
   cursor: pointer;
-  margin: 0.5rem; /* Dodanie marginesów wokół elementów listy */
-  width: 100%; /* Sprawienie, że przyciski będą miały taką samą szerokość */
-  max-width: 200px; /* Maksymalna szerokość dla przycisków */
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 200px;
 }
 
 .nav ul li a {
@@ -75,7 +75,7 @@
   color: $white-smooth;
   transition: color 0.3s ease;
   display: block;
-  padding: 1rem; /* Dodanie paddingu dla większego obszaru klikalnego */
+  padding: 1rem;
 }
 
 .nav ul li a:hover {
@@ -93,13 +93,13 @@
     li {
       background-color: $blue-after;
       box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-      border: 1px solid rgba(61, 54, 54, 0.9);
+      border: 1px solid rgba(61, 54, 54, 0.4);
       margin: 1rem;
       border-radius: 0.4rem;
 
       a {
         width: 100%;
-        padding: 1rem; /* Mniejszy padding */
+        padding: 1rem;
       }
     }
   }

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./PricingSection.module.scss";
+
 import Contact from "@/components/Main/Contact";
+import styles from "./PricingSection.module.scss";
 import cn from "classnames";
 import Image from "next/image";
 import foto1 from "../../assets/image/detalShot1.jpg";

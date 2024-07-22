@@ -2,13 +2,11 @@
 
 .contactSection {
   display: grid;
-
   gap: 2rem;
   padding-top: 2rem;
-  background-color: $dark-smooth;
   max-width: 100%;
   padding: 4rem;
-
+  background-color: $white-smooth;
   font-size: 1.8rem;
 
   color: $white-smooth;
@@ -21,10 +19,11 @@
   .contactInfo {
     display: flex;
     flex-direction: column;
-
+    border-radius: 0.4rem;
     align-items: center;
     width: 100%;
     text-decoration: none;
+    color: $white-smooth;
     background-color: $dark-smooth-hover;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.9);
@@ -40,8 +39,10 @@
   .contactForm {
     display: flex;
     flex-direction: column;
+    border-radius: 0.4rem;
     justify-content: center;
     align-items: center;
+    color: $white-smooth;
     background-color: $dark-smooth-hover;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.9);
@@ -66,8 +67,8 @@
     button {
       margin-top: 1rem;
       padding: 0.5rem 1rem;
-      background-color: $white-smooth;
-      color: $dark-smooth;
+      background-color: $blue-after;
+      color: $white-smooth;
       border: none;
 
       font-size: 1.6rem;
@@ -216,7 +217,6 @@
   font-size: 1rem;
   border: 1px solid rgba(61, 54, 54, 0.9);
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  color: $white-smooth;
 
   input[type="checkbox"]:checked {
     background-color: $blue-after; /* Kolor tła po zaznaczeniu */
@@ -232,7 +232,7 @@
 }
 
 .policy {
-  color: $white-smooth;
+  color: $dark-smooth;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,7 +240,7 @@
   justify-content: center;
   border: 1px solid rgba(61, 54, 54, 0.9);
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  padding: 0.5rem;
+  padding: 1rem;
   margin-bottom: 0.4rem;
   text-align: center;
 
@@ -327,7 +327,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
-    background-color: $dark-smooth;
 
     padding-top: 15vh;
 
@@ -361,8 +360,7 @@
       button {
         font-size: 2rem;
         padding: 1rem 2rem;
-        background-color: $white-smooth;
-        color: $dark-smooth;
+
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease;

@@ -21,10 +21,13 @@ const AboutUs = () => {
           <li>Indywidualne podejście</li>
         </ul>
         <p className={classes.aboutMe__text}>
-          W ostatnim czasie przeszliśmy szkolenia pod okiem fachowców w
-          renomowanej firmie Colourlock oraz Wrapster, dzięki którym nabyliśmy
-          niezbędne doświadczenie kierunku renowacji tapicerki skórzanej, praniu
-          tapicerki samochodowej oraz przyciemnianiu szyb samochodowych.
+          KaBe Tint&Leather Pranie Tapicerki , Renowacja/Czyszczenie skór ,
+          Przyciemnianie szyb samochodowych. Specjalizujemy się w profesjonalnym
+          praniu tapicerki samochodowej, czyszczeniu oraz naprawie wyrobów
+          skórzanych, oraz przyciemnianiu szyb. Renowacja Tapicerki skórzanej to
+          usługa dla osób które chcą by ich tapicerka odzyskała blask. Nasze
+          usługi to gwarancja wysokiej jakości i precyzji. Zadzwoń lub odwiedź
+          nas już dziś, a my zadbamy o Twój samochód
         </p>
         <div className={classes.buttonContainer}>
           <Link href="/O-Mnie" className={classes.realizationButton}>
