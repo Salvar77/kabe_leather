@@ -42,24 +42,22 @@
 
 .pricingList {
   padding: 1rem;
-  border: 1px solid white;
+
   // background-color: $blue-main;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.9);
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
 }
 
 .pricingInfo {
-  border: 1px solid white;
   // background-color: $blue-main;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.9);
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
 }
 
 .pricingType {
-  border: 1px solid white;
   // background-color: $blue-main;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.9);
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
   margin: 1rem;
   padding: 1rem;
   font-weight: bold;
@@ -70,8 +68,8 @@
 .pricingListItem {
   border: 1px solid white;
   // background-color: $blue-main;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.9);
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
   padding: 1rem;
   margin: 1rem;
   list-style: none;
@@ -101,13 +99,12 @@
 }
 
 .serviceHeader {
-  /* Styl dla nagłówka każdej usługi */
   cursor: pointer;
   padding: 10px;
-  background-color: $dark-smooth-hover;
-  color: $white-smooth;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.9);
+  background-color: $white-smooth;
+  color: $dark-smooth;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
   font-weight: bold;
 }
 
@@ -116,8 +113,8 @@
   transition: max-height 0.3s ease-out;
 }
 .active {
-  /* Styl dla aktywnego nagłówka lub aktywnych szczegółów */
-  background-color: $dark-smooth;
+  background-color: $white-smooth;
+  color: $dark-smooth;
 }
 
 .priceValue {
@@ -165,3 +162,6 @@
     font-size: 2.2rem;
   }
 }
+
+// box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
+// border: 1px solid rgba(61, 54, 54, 0.9);
