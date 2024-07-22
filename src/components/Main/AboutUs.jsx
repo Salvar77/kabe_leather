@@ -1,7 +1,7 @@
 import classes from "./AboutUs.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import image from "../../assets/image/logo_true.png";
+import image from "../../assets/image/LOGO.jpg";
 
 const AboutUs = () => {
   return (
@@ -27,7 +27,7 @@ const AboutUs = () => {
           skórzanych, oraz przyciemnianiu szyb. Renowacja Tapicerki skórzanej to
           usługa dla osób które chcą by ich tapicerka odzyskała blask. Nasze
           usługi to gwarancja wysokiej jakości i precyzji. Zadzwoń lub odwiedź
-          nas już dziś, a my zadbamy o Twój samochód
+          nas już dziś, a my zadbamy o Twój samochód.
         </p>
         <div className={classes.buttonContainer}>
           <Link href="/O-Mnie" className={classes.realizationButton}>
