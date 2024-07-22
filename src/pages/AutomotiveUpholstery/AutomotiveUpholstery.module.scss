@@ -33,9 +33,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 2rem;
-  width: 100%;
+  // width: 100%;
 
   @media (min-width: 992px) {
     flex-direction: row;
@@ -61,8 +61,8 @@
 }
 
 .textWrapper {
-  width: 100%;
-  padding-top: 2rem;
+  // width: 100%;
+  // padding-top: 2rem;
 
   @media (min-width: 992px) {
     width: 50%;
@@ -72,12 +72,12 @@
 
 .paragraphStyle {
   font-size: 1.8rem;
-  color: $white-smooth; // Przykładowy kolor tekstu
+
   margin-bottom: 1rem;
   padding: 2rem;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.1);
-  background-color: $dark-smooth-hover;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
+  background-color: $white-smooth;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -92,10 +92,10 @@
 .listStyle {
   font-size: 1.8rem;
   padding: 2rem;
-  color: $white-smooth;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
-  border: 1px solid rgba(61, 54, 54, 0.1);
-  background-color: $dark-smooth-hover;
+
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
+  background-color: $white-smooth;
   @media (min-width: 768px) {
     font-size: 2rem;
   }
