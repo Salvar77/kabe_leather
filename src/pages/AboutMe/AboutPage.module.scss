@@ -21,7 +21,7 @@
     border-radius: 0.2rem;
     height: 100%;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
-    border: 1px solid rgba(61, 54, 54, 0.9);
+    border: 1px solid rgba(61, 54, 54, 0.2);
   }
 
   &__header {
@@ -34,8 +34,8 @@
     font-size: 1.8rem;
     margin: 2rem;
     padding: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
-    border: 1px solid rgba(61, 54, 54, 0.1);
+    box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+    border: 2px solid rgba(61, 54, 54, 0.1);
     // background-color: $dark-smooth-hover;
     text-align: center;
   }
@@ -60,6 +60,8 @@
   text-decoration: none;
   flex-direction: column;
   border-radius: 0.4rem;
+  margin-top: -2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   transition: background-color 0.3s;
 
@@ -113,5 +115,6 @@
 
   .realizationButton {
     font-size: 2rem;
+    margin: 0;
   }
 }

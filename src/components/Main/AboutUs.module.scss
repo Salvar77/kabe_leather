@@ -18,10 +18,10 @@
       max-width: 100%;
       height: auto;
       background-color: $dark-smooth;
-      padding: 2rem;
+      // padding: 2rem;
       box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-      border: 1px solid rgba(61, 54, 54, 0.9);
-      border-radius: 1rem;
+      border: 1px solid rgba(232, 227, 227, 0.7);
+      border-radius: 0.6rem;
     }
   }
 
@@ -45,6 +45,8 @@
     margin: 2rem;
     padding: 1rem;
     text-align: center;
+    box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+    border: 2px solid rgba(61, 54, 54, 0.1);
   }
 
   &__list {
@@ -137,10 +139,6 @@
         max-width: 100%;
         height: auto;
         background-color: $dark-smooth;
-        padding: 2rem;
-        box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-        border: 1px solid rgba(61, 54, 54, 0.9);
-        border-radius: 1rem;
       }
     }
 
