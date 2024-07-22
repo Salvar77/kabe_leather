@@ -3,19 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
 
   async rewrites() {
+    console.log("Rewrites configuration loaded");
     return [
-      {
-        source: "/Realizacje",
-        destination: "/Realizations/Realizations",
-      },
-      {
-        source: "/Realizacje/:slug*",
-        destination: "/Realizations/RealizationsPage/:slug*", // gdzie `slug` to parametr dla danego rodzaju realizacji
-      },
-      {
-        source: "/Tapicerka/:id",
-        destination: "/AutomotiveUpholstery/:id",
-      },
       {
         source: "/O-Mnie",
         destination: "/AboutMe/AboutPage",
@@ -23,6 +12,18 @@ const nextConfig = {
       {
         source: "/Cennik",
         destination: "/PricingSection/PricingSection",
+      },
+      {
+        source: "/Realizacje",
+        destination: "/Realizations/Realizations",
+      },
+      {
+        source: "/Realizacje/:slug*",
+        destination: "/Realizations/RealizationsPage/:slug*",
+      },
+      {
+        source: "/:id",
+        destination: "/AutomotiveUpholstery/:id",
       },
     ];
   },

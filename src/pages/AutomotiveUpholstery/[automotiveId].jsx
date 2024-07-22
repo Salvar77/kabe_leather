@@ -49,13 +49,13 @@ const AutomotiveUpholstery = () => {
         </div>
         <div className={classes.textWrapper}>
           {(automotiveId === "tapicerka-samochodowa" ||
-            automotiveId === "tapicerka-domowa") && (
+            automotiveId === "autokosmetyka") && (
             <ContentUpholstery automotive={automotive} />
           )}
-          {automotiveId === "bezinwazyjne-przyciemnianie-szyb" && (
+          {automotiveId === "przyciemnianie-szyb" && (
             <ContentTinting automotive={automotive} />
           )}
-          {automotiveId === "pranie-tapicerki-samochodowej" && (
+          {automotiveId === "pranie-tapicerki" && (
             <ContentCleaning automotive={automotive} />
           )}
         </div>

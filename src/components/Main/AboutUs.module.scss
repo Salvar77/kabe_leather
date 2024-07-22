@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  background-color: $dark-smooth-hover;
-  color: $white-smooth;
+  background-color: $white-smooth;
+  color: $dark-smooth;
 
   &__image {
     width: 100%;
@@ -36,7 +36,7 @@
 
   &__header {
     font-size: 2.2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
   }
 
@@ -56,7 +56,7 @@
 
     li {
       font-size: 1.8rem;
-      color: $white-smooth;
+      color: $dark-smooth;
       margin-bottom: 0.5rem;
     }
   }
@@ -68,7 +68,7 @@
     justify-content: center;
 
     a {
-      color: $white-smooth;
+      color: $blue-after;
       margin: 0 1rem;
       font-size: 2.4rem;
 
@@ -89,8 +89,8 @@
 
 .realizationButton {
   padding: 1rem 2rem;
-  background-color: $white-smooth;
-  color: $dark-smooth;
+  background-color: $blue-after;
+  color: $white-smooth;
   text-decoration: none;
   border-radius: 0.4rem;
   font-weight: bold;

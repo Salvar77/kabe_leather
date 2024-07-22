@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $dark-smooth;
-  color: $white-smooth;
+  // background-color: $dark-smooth;
+  color: $dark-smooth;
   min-height: 100vh;
   padding-top: 10rem;
   max-width: 1400px;
@@ -36,13 +36,13 @@
     padding: 1rem;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.1);
-    background-color: $dark-smooth-hover;
+    // background-color: $dark-smooth-hover;
     text-align: center;
   }
 
   &__content {
     margin: 1.2rem;
-    background-color: $dark-smooth;
+    // background-color: $dark-smooth;
   }
 }
 
@@ -55,8 +55,8 @@
 
 .realizationButton {
   padding: 1rem 2rem;
-  background-color: $white-smooth;
-  color: $dark-smooth;
+  background-color: $blue-after;
+  color: $white-smooth;
   text-decoration: none;
   flex-direction: column;
   border-radius: 0.4rem;

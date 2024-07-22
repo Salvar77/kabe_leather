@@ -12,7 +12,7 @@ const Nav = ({ isOpen, toggleNav }) => {
     <nav className={navClasses}>
       <div className={classes.nav__container}>
         <div className={classes.nav__items}>
-          <ul aria-hidden className={classes.menu}>
+          <ul aria-hidden="true" className={classes.menu}>
             <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/#O-nas">O nas</Link>
             </li>

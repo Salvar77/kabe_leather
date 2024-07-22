@@ -3,7 +3,7 @@
 .realizations {
   gap: 2rem;
   padding: 2.6rem;
-  background-color: $dark-smooth;
+  // background-color: $dark-smooth;
   color: $white-smooth;
   margin-top: 5.6rem;
   min-height: 100vh;
@@ -12,6 +12,7 @@
     text-align: center;
     font-size: 2.2rem;
     margin: 2rem 0;
+    color: $dark-smooth;
 
     @media (min-width: 992px) {
       font-size: 3rem;

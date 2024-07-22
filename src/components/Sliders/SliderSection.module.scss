@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $dark-smooth-hover;
-  color: $white-smooth;
+  background-color: $white-smooth;
+  color: $dark-smooth;
   font-size: 2rem;
   padding: 2rem;
   font-weight: bold;
@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: $dark-smooth-hover;
+  background-color: $white-smooth;
 }
 
 .customBgColor {
@@ -42,8 +42,8 @@
 
 .realizationButton {
   padding: 1rem 2rem;
-  background-color: $white-smooth;
-  color: $dark-smooth;
+  background-color: $blue-after;
+  color: $white-smooth;
   text-decoration: none;
   border-radius: 0.4rem;
   font-weight: bold;
@@ -89,6 +89,10 @@
 @media (min-width: 992px) {
   .titleSlide {
     font-size: 3.2rem;
+  }
+
+  .realizationButton {
+    font-size: 2.2rem;
   }
 
   .fiveColumnsGrid {

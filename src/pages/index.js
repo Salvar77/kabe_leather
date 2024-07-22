@@ -9,7 +9,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Kabe Tint&Leather</title>
+        <title>
+          Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie
+          szyb.
+        </title>
         <meta
           property="og:image"
           content="https://www.kabetintleather.pl/logooooo.jpg"
