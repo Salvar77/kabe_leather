@@ -219,15 +219,15 @@
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
 
   input[type="checkbox"]:checked {
-    background-color: $blue-after; /* Kolor tła po zaznaczeniu */
-    border-color: $blue-after; /* Kolor obramowania po zaznaczeniu */
+    background-color: $blue-after;
+    border-color: $blue-after;
   }
 
   label {
-    display: inline-block; /* Blokowe wyświetlanie */
-    margin-left: 0.5rem; /* Modyfikacja marginesu */
-    font-size: 1.2rem; /* Rozmiar czcionki */
-    color: $white-smooth; /* Kolor czcionki */
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    color: $white-smooth;
   }
 }
 
@@ -253,14 +253,14 @@
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .consentWrapper {
     input[type="checkbox"] {
-      appearance: none; /* Resetowanie domyślnego stylu na urządzeniach iOS */
+      appearance: none;
       -webkit-appearance: none; /* Wsparcie dla Safari */
       -moz-appearance: none; /* Wsparcie dla Firefox */
       border: 1px solid #ccc; /* Styl obramowania */
-      background-color: $dark-smooth-hover; /* Kolor tła */
-      border-radius: 0.2rem; /* Zaokrąglenie narożników */
-      cursor: pointer; /* Kursor na wskaźnik */
-      vertical-align: middle; /* Wyrównanie pionowe */
+      background-color: $dark-smooth-hover;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      vertical-align: middle;
     }
   }
 }
