@@ -25,7 +25,7 @@
 .sliderGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  // grid-gap: 2rem;
+
   justify-items: center;
   margin-bottom: 1rem;
 
@@ -61,14 +61,14 @@
 }
 
 .realizationsPage .fiveColumnsGrid {
-  width: 100%; // Zapewnia, że grid ma pełną dostępną szerokość
-  max-width: 1200px; // Opcjonalnie, możesz ograniczyć maksymalną szerokość
-  margin: auto; // Wyśrodkowanie kontenera, jeśli ma określoną maksymalną szerokość
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .realizationsPage .fiveColumnsGrid img {
-  width: 100%; // Zdjęcia zajmują 100% szerokości kolumny gridu
-  height: auto; // Zachowanie proporcji
+  width: 100%;
+  height: auto;
 }
 
 .noBackground {
@@ -97,7 +97,6 @@
 
   .fiveColumnsGrid {
     grid-template-columns: repeat(4, 1fr);
-    // grid-gap: 2rem;
   }
 
   .defaultGrid {

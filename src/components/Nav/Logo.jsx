@@ -11,11 +11,7 @@ const Logo = ({ showLogo }) => {
   };
 
   return (
-    <div
-      style={logoStyle}
-      // className={classes.logoContainer}
-      className={classes.logo}
-    >
+    <div style={logoStyle} className={classes.logo}>
       <Image
         src={logo}
         alt="Logo firmy KaBe Tint&Leather"

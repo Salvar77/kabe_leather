@@ -73,26 +73,26 @@
 
 .sliderInput::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 24px; /* Rzeczywisty rozmiar kciuka */
+  height: 24px;
   width: 24px;
   border-radius: 50%;
   background: $white-smooth;
   cursor: pointer;
-  position: relative; /* Pozycja względna dla pseudoelementu */
-  z-index: 2; /* Upewnij się, że kciuk jest nad paddingiem */
+  position: relative;
+  z-index: 2;
 }
 
 /* Styl dla paddingu kciuka (Webkit/Blink) */
 .sliderInput::before {
   content: "";
   position: absolute;
-  top: -6px; /* Rozszerzenie obszaru dotykowego na górę */
-  left: -6px; /* Rozszerzenie na lewo */
-  right: -6px; /* Rozszerzenie na prawo */
-  bottom: -6px; /* Rozszerzenie na dół */
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
   border-radius: 50%;
-  background: transparent; /* Przezroczyste tło */
-  z-index: 1; /* Upewnij się, że pseudoelement jest pod kciukiem */
+  background: transparent;
+  z-index: 1;
 }
 
 .sliderInput::-moz-range-thumb {

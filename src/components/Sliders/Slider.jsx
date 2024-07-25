@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { useState, useRef } from "react";
-import classes from "./Slider.module.scss"; // Załóżmy, że te style obejmują również style z SliderBeforeAfter.module.scss
+import classes from "./Slider.module.scss";
 
 const Slider = ({ beforeImage, afterImage }) => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -33,7 +33,7 @@ const Slider = ({ beforeImage, afterImage }) => {
     top: 0,
     bottom: 0,
     left: `${sliderPosition}%`,
-    width: 0, // Możesz dostosować szerokość linii, jeśli potrzebujesz
+    width: 0,
     borderRight: "2px solid black",
   };
 

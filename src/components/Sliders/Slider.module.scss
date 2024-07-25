@@ -30,17 +30,16 @@
   transform: translate(-50%, -50%);
   width: 3rem;
   height: 3rem;
-  border-radius: 50%; // Kształt okrągły
-  background-color: #fff; // Biały kolor tła
-  border: 2px solid black; // Czarna obwódka
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 
-  // Ikona strzałki (możesz dostosować według potrzeb)
   &::after {
-    content: "↔"; // Symbol strzałek
+    content: "↔";
     font-size: 2.4rem;
     color: black;
     line-height: 1;

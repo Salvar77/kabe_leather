@@ -18,7 +18,7 @@
       max-width: 100%;
       height: auto;
       background-color: $dark-smooth;
-      // padding: 2rem;
+
       box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
       border: 1px solid rgba(232, 227, 227, 0.7);
       border-radius: 0.6rem;
@@ -30,8 +30,8 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    max-width: 100%; /* Dodane ograniczenie szerokości */
-    text-align: center; /* Wyrównanie tekstu do środka */
+    max-width: 100%;
+    text-align: center;
   }
 
   &__header {
@@ -129,11 +129,11 @@
 @media (min-width: 992px) {
   .aboutMe {
     flex-direction: row;
-    align-items: center; /* Zmiana wyrównania na center */
+    align-items: center;
 
     &__image {
-      width: 40%; /* Obraz zajmie 40% szerokości */
-      padding: 0; /* Usuń padding dla obrazu */
+      width: 40%;
+      padding: 0;
 
       img {
         max-width: 100%;
@@ -143,11 +143,11 @@
     }
 
     &__content {
-      width: 60%; /* Treść zajmie 60% szerokości */
-      align-items: center; /* Wyrównanie treści do środka */
+      width: 60%;
+      align-items: center;
       flex-direction: column;
       padding: 0 2rem;
-      text-align: left; /* Wyrównanie tekstu do lewej */
+      text-align: left;
     }
   }
 }

@@ -8,7 +8,7 @@ const BurgerMenu = ({ isOpen, handleOpen }) => {
   const router = useRouter();
 
   const toggleActive = () => {
-    handleOpen(); // Bezpośrednie wywołanie funkcji zmieniającej stan
+    handleOpen();
   };
 
   const handleScroll = () => {
@@ -23,10 +23,8 @@ const BurgerMenu = ({ isOpen, handleOpen }) => {
 
       const scrollY = window.scrollY;
 
-      // Ustalamy margines przewijania
-      const offset = 100; // Możesz dostosować margines przewijania
+      const offset = 100;
 
-      // Zmieniamy kolor, jeśli przewijamy poza nav, hero i aboutUs
       if (scrollY > navHeight + heroHeight + aboutUsHeight + offset) {
         setScrolled(true);
       } else {
@@ -36,18 +34,15 @@ const BurgerMenu = ({ isOpen, handleOpen }) => {
   };
 
   useEffect(() => {
-    // Sprawdzenie, czy jesteśmy na stronie specjalnej
     const path = router.pathname;
-    setIsOnSpecialPage(path === "/Cennik"); // Sprawdzenie dla strony Cennik (lub innych stron)
+    setIsOnSpecialPage(path === "/Cennik");
 
-    // Dodanie nasłuchiwania przewijania
     window.addEventListener("scroll", handleScroll);
 
-    // Usunięcie nasłuchiwania przy demontażu komponentu
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [router.pathname]); // Używamy router.pathname jako zależności
+  }, [router.pathname]);
 
   return (
     <>
