@@ -12,12 +12,13 @@
   &__show {
     top: 8.6rem;
     transform: translateX(0);
-    min-width: 100%;
+
+    border-top-left-radius: 0.6rem;
     max-height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2rem;
     z-index: 100;
     background-color: rgba($white-smooth, 0.9);
     font-weight: bold;
