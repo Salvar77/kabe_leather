@@ -4,7 +4,7 @@
   padding: 3rem;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 4.7rem;
 }
 
 .priceContact {
@@ -17,6 +17,7 @@
   padding: 1rem;
   margin: 1rem;
   color: $dark-smooth;
+  font-size: 2.6rem;
 }
 
 .img {
@@ -143,6 +144,9 @@
 }
 
 @media (min-width: 992px) {
+  .pricingSection {
+    margin-top: 5.7rem;
+  }
   .pricingHeader {
     font-size: 3rem;
   }
