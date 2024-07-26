@@ -49,7 +49,7 @@ export const realizationsData = [
   {
     id: "autokosmetyka",
     description: "Autokosmetyka",
-    images: [photoAutoscmetic1, photoAutoscmetic2, photoAutoscmetic3],
+    images: [photoAutoscmetic3, photoAutoscmetic2, photoAutoscmetic1],
     image: photoRealizations2,
     largeImage: photoRealizations3,
     largeImageWidth: 1920,
