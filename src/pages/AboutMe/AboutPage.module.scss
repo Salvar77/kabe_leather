@@ -4,24 +4,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: $dark-smooth;
   color: $dark-smooth;
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 10.5rem;
   max-width: 1200px;
   margin: 0 auto;
 
-  &__box {
-    padding: 3rem;
+  &__grid {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
   }
 
-  &__img {
-    max-width: 100%;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 
-    border-radius: 0.2rem;
-    height: 100%;
-    box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
-    border: 1px solid rgba(61, 54, 54, 0.2);
+    img {
+      max-width: 100%;
+      border-radius: 0.2rem;
+      height: 100%;
+      box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
+      border: 1px solid rgba(61, 54, 54, 0.2);
+    }
   }
 
   &__header {
@@ -36,20 +43,18 @@
     padding: 1rem;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
     border: 2px solid rgba(61, 54, 54, 0.1);
-    // background-color: $dark-smooth-hover;
     text-align: center;
   }
 
   &__content {
-    margin: 1.2rem;
-    // background-color: $dark-smooth;
+    padding: 0.5rem;
   }
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+
   padding: 2rem;
 }
 
@@ -60,7 +65,8 @@
   text-decoration: none;
   flex-direction: column;
   border-radius: 0.4rem;
-  margin-top: -2rem;
+  margin-top: -1rem;
+  text-align: center;
   margin-bottom: 1rem;
   font-weight: bold;
   transition: background-color 0.3s;
@@ -89,32 +95,41 @@
 
 @media (min-width: 992px) {
   .aboutMe {
-    flex-direction: row;
+    flex-direction: column;
+    // padding-top: 0;
 
-    &__img {
-      box-shadow: 0.3rem 0.4rem 0.8rem 0.44rem rgba(232, 232, 235, 0.1);
-      border: none;
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
     }
 
     &__header {
       font-size: 3.2rem;
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    &__box {
+      img {
+        box-shadow: 0.3rem 0.4rem 0.8rem 0.44rem rgba(232, 232, 235, 0.1);
+        max-width: 100%;
+      }
     }
 
     &__text {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
 
     .buttonContainer {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: span 2;
     }
   }
 
   .realizationButton {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 2.2rem;
+    margin-top: 0;
   }
 }
