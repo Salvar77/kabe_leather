@@ -16,19 +16,20 @@ const AboutUs = () => {
       <div className={classes.aboutMe__content}>
         <h2 className={classes.aboutMe__header}>O nas</h2>
         <ul className={classes.aboutMe__list}>
-          <li>Wysoka jakość</li>
-          <li>Dostępność</li>
-          <li>Indywidualne podejście</li>
+          <ul>
+            <li>⭐️ Myjnia ręczna</li>
+            <li>⭐️ Czyszczenie wnętrza</li>
+            <li>⭐️ Pranie tapicerki</li>
+            <li>⭐️ Pozbywanie się zapachów np. po zwierzętach</li>
+            <li>⭐️ Renowacja tapicerki skórzanej</li>
+            <li>⭐️ Czyszczenie i impregnacja tapicerki skórzanej</li>
+            <li>⭐️ Woskowanie</li>
+            <li>⭐️ Przyciemnianie szyb samochodowych</li>
+            <li>⭐️ Naprawa podsufitek samochodowych</li>
+            <li>⭐️ Ozonowanie</li>
+          </ul>
         </ul>
-        <p className={classes.aboutMe__text}>
-          KaBe Tint&Leather Pranie Tapicerki , Renowacja/Czyszczenie skór ,
-          Przyciemnianie szyb samochodowych. Specjalizujemy się w profesjonalnym
-          praniu tapicerki samochodowej, czyszczeniu oraz naprawie wyrobów
-          skórzanych, oraz przyciemnianiu szyb. Renowacja Tapicerki skórzanej to
-          usługa dla osób które chcą by ich tapicerka odzyskała blask. Nasze
-          usługi to gwarancja wysokiej jakości i precyzji. Zadzwoń lub odwiedź
-          nas już dziś, a my zadbamy o Twój samochód.
-        </p>
+
         <div className={classes.buttonContainer}>
           <Link href="/O-Mnie" className={classes.realizationButton}>
             &#10132;
