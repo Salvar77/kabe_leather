@@ -35,13 +35,10 @@ const AutomotiveUpholstery = () => {
 
   if (!automotive) return <p>Usługa nie została znaleziona.</p>;
 
-  const sectionClass = `${classes.automotivePage}`;
-  const boxClass = `${classes.automotivePage_box}`;
-
   return (
-    <section id="tapicerka1" className={sectionClass}>
+    <section id="tapicerka1" className={classes.automotivePage}>
       <h1>{automotive.description}</h1>
-      <div className={boxClass}>
+      <div className={classes.automotivePage__grid}>
         <div className={classes.imageWrapper}>
           {currentImage && (
             <Image src={currentImage} alt="Obraz przedstawiający tapicerkę" />
@@ -61,6 +58,15 @@ const AutomotiveUpholstery = () => {
             <ContentCosmetic automotive={automotive} />
           )}
         </div>
+      </div>
+      <div className={classes.buttonContainer}>
+        <Link
+          href="tel:+48881325631"
+          className={classes.appointmentLink}
+          aria-label="Umów się na wizytę"
+        >
+          Umów się na wizytę!
+        </Link>
       </div>
     </section>
   );
@@ -89,14 +95,11 @@ const ContentUpholstery = ({ automotive }) => (
         innymi szkodliwymi czynnikami.
       </li>
     </ul>
-    <div className={classes.linkWrapper}>
-      <AppointmentLink />
-    </div>
   </div>
 );
 
 const ContentTinting = ({ automotive }) => (
-  <div className={`${classes.columnLayout}`}>
+  <div className={classes.listContainer}>
     <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
     <ul className={classes.listStyle}>
       <li>
@@ -108,8 +111,8 @@ const ContentTinting = ({ automotive }) => (
         chronią pasażerów przed szkodliwymi promieniami UV.
       </li>
       <li>
-        <b> Zwiększenie prywatności:</b> Popraw swoją prywatność i
-        bezpieczeństwo dzięki foliom, które utrudniają widoczność z zewnątrz.
+        <b>Zwiększenie prywatności:</b> Popraw swoją prywatność i bezpieczeństwo
+        dzięki foliom, które utrudniają widoczność z zewnątrz.
       </li>
       <li>
         <b>Bezpieczeństwo w razie wypadku:</b> Folie przyciemniające mogą pomóc
@@ -120,14 +123,11 @@ const ContentTinting = ({ automotive }) => (
         stylowy wygląd, który wyróżnia się na drodze.
       </li>
     </ul>
-    <div className={classes.linkWrapper}>
-      <AppointmentLink />
-    </div>
   </div>
 );
 
 const ContentCleaning = ({ automotive }) => (
-  <div className={classes.columnLayout}>
+  <div className={classes.listContainer}>
     <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
     <ul className={classes.listStyle}>
       <li>
@@ -149,15 +149,12 @@ const ContentCleaning = ({ automotive }) => (
         zanieczyszczeniami i zużyciem.
       </li>
     </ul>
-    <div className={classes.linkWrapper}>
-      <AppointmentLink />
-    </div>
   </div>
 );
 
 const ContentCosmetic = ({ automotive }) => {
   return (
-    <div className={`${classes.columnLayout}`}>
+    <div className={classes.listContainer}>
       <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
       <ul className={classes.listStyle}>
         <li>
@@ -180,21 +177,8 @@ const ContentCosmetic = ({ automotive }) => {
           wygląd, stan techniczny i komfort użytkowania Twojego pojazdu.
         </li>
       </ul>
-      <div className={classes.linkWrapper}>
-        <AppointmentLink />
-      </div>
     </div>
   );
 };
-
-const AppointmentLink = () => (
-  <Link
-    href="tel:+48881325631"
-    className={classes.appointmentLink}
-    aria-label="Umów się na wizytę"
-  >
-    Umów się na wizytę!
-  </Link>
-);
 
 export default AutomotiveUpholstery;

@@ -5,14 +5,15 @@
   padding: 2.6rem;
   // background-color: $dark-smooth;
   color: $white-smooth;
-  margin-top: 5.6rem;
+  margin-top: 4.7rem;
   min-height: 100vh;
 
   h2 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     margin: 2rem 0;
     color: $dark-smooth;
+    padding-top: 1.5rem;
 
     @media (min-width: 992px) {
       font-size: 3rem;
@@ -21,9 +22,9 @@
 
   &__wrapper {
     display: flex;
-    flex-direction: column; /* Domyślnie, ale dobrze jest być wyraźnym */
-    align-items: center; /* Centruje elementy horyzontalnie */
-    justify-content: center; /* Centruje elementy wertykalnie */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     padding: 1rem;
 

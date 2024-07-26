@@ -48,7 +48,7 @@ export const servicesData = [
   },
   {
     id: "przyciemnianie-szyb",
-    description: "Przyciemnianie Szyb Samochodowych",
+    description: "Przyciemnianie Szyb",
     image: tintImage,
     largeImage: tintImageLarge,
     largeImageWidth: 1920,
