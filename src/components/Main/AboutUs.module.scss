@@ -52,14 +52,15 @@
   &__list {
     list-style: none;
     font-weight: bold;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 0.5rem;
+    // margin: 1rem 0;
     text-align: center;
 
     li {
       font-size: 1.8rem;
       color: $dark-smooth;
       margin-bottom: 0.5rem;
+      list-style-type: none;
     }
   }
 
