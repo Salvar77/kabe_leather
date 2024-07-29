@@ -5,10 +5,11 @@ const path = require("path");
 const paths = [
   "/",
   "/O-Mnie",
-  "/Tapicerka/tapicerka-samochodowa",
-  "/Tapicerka/tapicerka-domowa",
-  "/Tapicerka/bezinwazyjne-przyciemnianie-szyb",
-  "/Tapicerka/pranie-tapicerki-samochodowej", // Nowa ścieżka
+  "/tapicerka-samochodowa",
+  "/tapicerka-domowa",
+  "/autokosmetyka",
+  "/przyciemnianie-szyb",
+  "/pranie-tapicerki",
   "/Realizacje",
 ];
 
