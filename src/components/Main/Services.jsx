@@ -23,7 +23,7 @@ export const servicesData = [
       "Nasza usługa prania tapicerki to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
   },
   {
-    id: "tapicerka-samochodowa",
+    id: "renowacja-tapicerki-skorzanej",
     description: "Renowacja Tapicerki Skórzanej",
     image: heroImage,
     largeImage: heroImageLarge,

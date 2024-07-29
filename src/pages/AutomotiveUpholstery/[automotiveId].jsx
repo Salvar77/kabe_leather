@@ -45,7 +45,7 @@ const AutomotiveUpholstery = () => {
           )}
         </div>
         <div className={classes.textWrapper}>
-          {automotiveId === "tapicerka-samochodowa" && (
+          {automotiveId === "renowacja-tapicerki-skorzanej" && (
             <ContentUpholstery automotive={automotive} />
           )}
           {automotiveId === "przyciemnianie-szyb" && (
