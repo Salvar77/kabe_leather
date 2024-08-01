@@ -6,7 +6,7 @@ const paths = [
   "/",
   "/O-Mnie",
   "/tapicerka-samochodowa",
-  "/tapicerka-domowa",
+  "/renowacja-tapicerki-skorzanej",
   "/autokosmetyka",
   "/przyciemnianie-szyb",
   "/pranie-tapicerki",

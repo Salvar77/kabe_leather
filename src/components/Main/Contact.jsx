@@ -1,6 +1,7 @@
 import { useState } from "react";
 import classes from "./Contact.module.scss";
 import Link from "next/link";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Import ikon
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -64,12 +65,14 @@ const Contact = () => {
           <p>Ulica: Grota Roweckiego 18</p>
           <p>Miasto: Opole</p>
           <p>
-            Telefon:{" "}
+            <FaPhoneAlt /> Telefon:{" "}
             <span className={`${classes.highlightedText} noLinkStyle`}>
               881 325 631
             </span>
           </p>
-          <p>E-mail: kabetint@gmail.com</p>
+          <p>
+            <FaEnvelope /> E-mail: kabetint@gmail.com
+          </p>
         </div>
         <form className={classes.contactForm} onSubmit={handleSubmit}>
           <h2>Wyślij nam wiadomość</h2>
