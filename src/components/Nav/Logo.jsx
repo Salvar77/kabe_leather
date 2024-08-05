@@ -1,4 +1,3 @@
-// components/Nav/Logo.jsx
 import classes from "./Logo.module.scss";
 import Image from "next/image";
 import logo from "../../assets/image/logo_true6.png";

@@ -254,9 +254,9 @@
   .consentWrapper {
     input[type="checkbox"] {
       appearance: none;
-      -webkit-appearance: none; /* Wsparcie dla Safari */
-      -moz-appearance: none; /* Wsparcie dla Firefox */
-      border: 1px solid #ccc; /* Styl obramowania */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: 1px solid #ccc;
       background-color: $dark-smooth-hover;
       border-radius: 0.2rem;
       cursor: pointer;

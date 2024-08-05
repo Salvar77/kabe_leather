@@ -1,7 +1,7 @@
 import { useState } from "react";
 import classes from "./Contact.module.scss";
 import Link from "next/link";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Import ikon
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,11 +40,11 @@ const Contact = () => {
         setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
         console.error("Błąd wysyłania: ", data.error);
       }
-      setShowModal(true); // Dodaj tę linię, aby wyświetlić modal
+      setShowModal(true);
     } catch (error) {
       setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
       console.error("Błąd: ", error);
-      setShowModal(true); // Dodaj tę linię, aby wyświetlić modal również w przypadku błędu
+      setShowModal(true);
     }
   };
 
@@ -53,8 +53,8 @@ const Contact = () => {
   };
 
   const closeModal = () => {
-    setShowModal(false); // Zamknij modal po kliknięciu
-    setMessageStatus(null); // Opcjonalnie wyczyść status wiadomości
+    setShowModal(false);
+    setMessageStatus(null);
   };
 
   return (

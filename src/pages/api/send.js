@@ -12,9 +12,6 @@ export default async function handler(req, res) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
-      // tls: {
-      //   rejectUnauthorized: false, // Ignoruje błędy związane z certyfikatem SSL
-      // },
     });
 
     const mailOptions = {
