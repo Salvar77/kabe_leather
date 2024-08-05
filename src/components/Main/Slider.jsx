@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { useState, useRef } from "react";
-import classes from "./Slider.module.scss"; // Załóżmy, że te style obejmują również style z SliderBeforeAfter.module.scss
+import classes from "./Slider.module.scss";
 
 const Slider = ({ beforeImage, afterImage }) => {
   const [sliderPosition, setSliderPosition] = useState(50);

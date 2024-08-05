@@ -151,13 +151,11 @@ const PricingSection = () => {
     setActiveService(isSameService ? null : id);
 
     if (!isSameService) {
-      // Opóźnione przewijanie do nagłówka aktywnej usługi
       setTimeout(() => {
         const headerRef = headerRefs.current.get(id);
         if (headerRef) {
           const headerRect = headerRef.getBoundingClientRect();
-          const offsetPosition = window.pageYOffset + headerRect.top - 20; // Przesuń trochę powyżej elementu, jeśli chcesz
-
+          const offsetPosition = window.pageYOffset + headerRect.top - 20;
           window.scrollTo({
             top: offsetPosition,
             behavior: "smooth",
