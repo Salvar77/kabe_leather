@@ -19,6 +19,10 @@ import photoTint3 from "../../assets/image/tint3.jpg";
 import photoAutoscmetic1 from "../../assets/image/autocosmetic1.jpg";
 import photoAutoscmetic2 from "../../assets/image/autocosmetic2.jpg";
 import photoAutoscmetic3 from "../../assets/image/autocosmetic.png";
+import photoClean from "../../assets/image/clean4.png";
+import photoCleaning from "../../assets/image/cleaning.jpg";
+import photoCleaning2 from "../../assets/image/cleaning2.jpg";
+import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
@@ -31,6 +35,21 @@ import photoAutoscmetic3 from "../../assets/image/autocosmetic.png";
 // import audi1 from "../../assets/image/audi1.jpg";
 
 export const realizationsData = [
+  {
+    id: "pranie-tapicerki",
+    description: "Pranie Tapicerki",
+    images: [photoCleaning, photoCleaning2, photoCleaning3],
+    image: photoClean,
+    largeImage: photoClean,
+    largeImageWidth: 1920,
+
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    // brands: [
+    //   { src: audi.src, alt: "Audi", backgroundImage: audi1 },
+    //   { src: mercedes.src, alt: "Mercedes", backgroundImage: mercedes1 },
+    //   { src: bmw.src, alt: "BMW", backgroundImage: bmw1 },
+    // ],
+  },
   {
     id: "renowacje-skor",
     description: "Renowacje Skór",

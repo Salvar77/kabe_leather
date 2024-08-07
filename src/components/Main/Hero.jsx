@@ -49,9 +49,9 @@ const Hero = () => {
       </div>
       <div className={classes.textOverlay}>
         <h1 className={classes.hero__title}>KaBe Tint&Leather</h1>
-        <p className={classes.hero__text}>
+        <h2 className={classes.hero__text}>
           Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb
-        </p>
+        </h2>
         <Link href="#usługi" className={classes.button}>
           Nasze usługi
         </Link>
