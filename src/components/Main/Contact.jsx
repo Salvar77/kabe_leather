@@ -36,15 +36,18 @@ const Contact = () => {
       if (response.ok) {
         setMessageStatus("Wiadomość wysłana pomyślnie!");
         console.log("Wiadomość wysłana: ", data.message);
+
+        window.gtag("event", "conversion", {
+          send_to: "AW-16652411588/FSKBCKn448gZEMTFvoQ-",
+        });
+        setShowModal(true);
       } else {
         setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
         console.error("Błąd wysyłania: ", data.error);
       }
-      setShowModal(true);
     } catch (error) {
       setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
       console.error("Błąd: ", error);
-      setShowModal(true);
     }
   };
 
@@ -121,13 +124,11 @@ const Contact = () => {
           </div>
           <button type="submit">Wyślij</button>
         </form>
-
         <div className={classes.linkWrapper}>
           <Link href="tel:+48881325631" className={classes.appointmentLink}>
             Umów się na wizytę!
           </Link>
         </div>
-
         {showModal && (
           <div className={classes.modal} onClick={closeModal}>
             <div className={classes.modalContent}>
@@ -153,6 +154,7 @@ const Contact = () => {
         <Link href="/polityka-prywatnosci" className={classes.policy__link}>
           Polityce Prywatności
         </Link>
+        .
       </p>
     </>
   );

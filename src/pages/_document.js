@@ -39,6 +39,23 @@ class MyDocument extends Document {
             }}
           />
           {/* End Google Tag Manager */}
+          {/* Google Analytics Tag */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16652411588"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'AW-16652411588');
+              `,
+            }}
+          />
+          {/* End Google Analytics Tag */}
         </Head>
         <body>
           <noscript>
@@ -49,7 +66,7 @@ class MyDocument extends Document {
               style={{ display: "none", visibility: "hidden" }}
             ></iframe>
           </noscript>
-          {/* End Google Tag Manager (noscript) */}
+          {/* Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
         </body>
