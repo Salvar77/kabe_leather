@@ -37,7 +37,7 @@ const AutomotiveUpholstery = () => {
 
   return (
     <section id="tapicerka1" className={classes.automotivePage}>
-      <h1>{automotive.description}</h1>
+      <h2>{automotive.description}</h2>
       <div className={classes.automotivePage__grid}>
         <div className={classes.imageWrapper}>
           {currentImage && (
