@@ -23,8 +23,8 @@ export const servicesData = [
       "Nasza usługa prania tapicerki to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
   },
   {
-    id: "renowacja-tapicerki-skorzanej",
-    description: "Renowacja Tapicerki Skórzanej",
+    id: "renowacja-skor",
+    description: "Renowacja Skór",
     image: heroImage,
     largeImage: heroImageLarge,
     largeImageWidth: 1920,
@@ -32,7 +32,7 @@ export const servicesData = [
     backgroundImage: "url('../../assets/image/hero4_640.jpg')",
     gradient: "linear-gradient(rgba(90, 42, 42, 0.5), rgba(0, 0, 0, 0.5))",
     additionalInfo:
-      "Nasza usługa renowacji tapicerki skórzanej to idealne rozwiązanie dla tych, którzy pragną odświeżyć wygląd i przedłużyć żywotność swoich mebli lub wnętrza samochodowego. Dzięki naszym zaawansowanym technikom oraz wysokiej jakości materiałom, Twoja tapicerka odzyska pierwotny wygląd i funkcjonalność.",
+      "Nasza usługa renowacji skór to idealne rozwiązanie dla tych, którzy pragną odświeżyć wygląd i przedłużyć żywotność swoich mebli lub wnętrza samochodowego. Dzięki naszym zaawansowanym technikom oraz wysokiej jakości materiałom, Twoja tapicerka odzyska pierwotny wygląd i funkcjonalność.",
   },
   {
     id: "autokosmetyka",

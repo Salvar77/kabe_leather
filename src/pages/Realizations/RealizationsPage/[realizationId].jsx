@@ -5,16 +5,7 @@ import classes from "./RealizationsPage.module.scss";
 import { realizationsData } from "../Realizations";
 import Link from "next/link";
 
-const RealizationDetail = () => {
-  const router = useRouter();
-  const { realizationId } = router.query;
-
-  if (!realizationId) return null;
-
-  const realization = realizationsData.find(
-    (item) => item.id === realizationId
-  );
-
+const RealizationDetail = ({ realization }) => {
   if (!realization) return <p>Nie został znaleziony</p>;
 
   const renderContent = () => {
@@ -25,6 +16,8 @@ const RealizationDetail = () => {
             <Image
               src={image}
               alt={`${realization.description} ${index + 1}`}
+              width={600}
+              height={400}
             />
           </div>
         ))}
@@ -50,6 +43,17 @@ const RealizationDetail = () => {
     </section>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { realizationId } = context.params;
+  const realization = realizationsData.find(
+    (item) => item.id === realizationId
+  );
+
+  return {
+    props: { realization: realization || null },
+  };
+}
 
 export default RealizationDetail;
 

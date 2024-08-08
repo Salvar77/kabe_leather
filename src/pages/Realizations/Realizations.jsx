@@ -51,8 +51,8 @@ export const realizationsData = [
     // ],
   },
   {
-    id: "renowacje-skor",
-    description: "Renowacje Skór",
+    id: "renowacja-skor",
+    description: "Renowacja Skór",
     images: [photoLeathers1, photoLeathers2, photoLeathers3, photoLeathers4],
     image: photoRealizations,
     largeImage: photoRealizations,

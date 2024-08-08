@@ -1,38 +1,30 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 import { servicesData } from "../../components/Main/Services";
 import classes from "./AutomotiveUpholstery.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-const AutomotiveUpholstery = () => {
-  const router = useRouter();
-  const { automotiveId } = router.query;
-
-  const [currentImage, setCurrentImage] = useState(null);
-
+export async function getServerSideProps(context) {
+  const automotiveId = context.params.automotiveId;
   const automotive = servicesData.find(
     (service) => service.id === automotiveId
   );
 
-  useEffect(() => {
-    if (automotive) {
-      const mediaQuery = window.matchMedia("(min-width: 992px)");
-      const handleMediaQueryChange = (e) => {
-        setCurrentImage(e.matches ? automotive.largeImage : automotive.image);
-      };
+  const isMobile = context.req.headers["user-agent"]
+    .toLowerCase()
+    .includes("mobi");
+  const currentImage = automotive
+    ? isMobile
+      ? automotive.image
+      : automotive.largeImage
+    : null;
 
-      mediaQuery.addEventListener("change", handleMediaQueryChange);
-      handleMediaQueryChange(mediaQuery);
+  return {
+    props: { automotive, currentImage },
+  };
+}
 
-      return () => {
-        mediaQuery.removeEventListener("change", handleMediaQueryChange);
-      };
-    }
-  }, [automotive]);
-
-  if (!automotiveId) return null;
-
+const AutomotiveUpholstery = ({ automotive, currentImage }) => {
   if (!automotive) return <p>Usługa nie została znaleziona.</p>;
 
   return (
@@ -45,27 +37,27 @@ const AutomotiveUpholstery = () => {
           )}
         </div>
         <div className={classes.textWrapper}>
-          {automotiveId === "renowacja-tapicerki-skorzanej" && (
+          {automotive.id === "renowacja-skor" && (
             <ContentUpholstery automotive={automotive} />
           )}
-          {automotiveId === "przyciemnianie-szyb" && (
+          {automotive.id === "przyciemnianie-szyb" && (
             <ContentTinting automotive={automotive} />
           )}
-          {automotiveId === "pranie-tapicerki" && (
+          {automotive.id === "pranie-tapicerki" && (
             <ContentCleaning automotive={automotive} />
           )}
-          {automotiveId === "autokosmetyka" && (
+          {automotive.id === "autokosmetyka" && (
             <ContentCosmetic automotive={automotive} />
           )}
         </div>
       </div>
       <div className={classes.buttonContainer}>
         <Link
-          href="tel:+48881325631"
+          href={`/Realizacje/${automotive.id}`}
           className={classes.appointmentLink}
           aria-label="Umów się na wizytę"
         >
-          Umów się na wizytę!
+          Zobacz realizacje
         </Link>
       </div>
     </section>
