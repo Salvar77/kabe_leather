@@ -6,6 +6,8 @@ import Hero from "@/components/Main/Hero";
 import SliderSection from "@/components/Sliders/SliderSection";
 import Logo from "@/components/Nav/Logo";
 import { useState, useEffect } from "react";
+import { NextSeo } from "next-seo";
+import SEO from "@/components/Main/SEO";
 
 export default function Home() {
   const [showLogo, setShowLogo] = useState(true);
@@ -23,22 +25,43 @@ export default function Home() {
   });
   return (
     <>
-      <Head>
-        <title>
-          Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie
-          szyb.
-        </title>
-        <meta
-          property="og:image"
-          content="https://www.kabetintleather.pl/logooooo.jpg"
-        />
-
-        <meta
-          name="description"
-          content="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+      <SEO
+        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
+        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
+        image="https://www.kabetintleather.pl/logooooo.jpg"
+      />
+      <NextSeo
+        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
+        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
+        canonical="https://www.kabetintleather.pl/"
+        openGraph={{
+          url: "https://www.kabetintleather.pl/",
+          title:
+            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb",
+          description:
+            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb",
+          images: [
+            {
+              url: "https://www.kabetintleather.pl/logooooo.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+              type: "image/jpeg",
+            },
+          ],
+          site_name: "Kabe Tint&Leather",
+        }}
+        facebook={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+        instagram={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
       <Logo showLogo={showLogo} />
       <Hero />
       <div className="container">
