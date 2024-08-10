@@ -16,8 +16,6 @@ const RealizationDetail = ({ realization }) => {
             <Image
               src={image}
               alt={`${realization.description} ${index + 1}`}
-              width={320}
-              height={300}
             />
           </div>
         ))}
