@@ -50,7 +50,7 @@ const Hero = () => {
       <div className={classes.textOverlay}>
         <h1 className={classes.hero__title}>KaBe Tint&Leather</h1>
         <h2 className={classes.hero__text}>
-          Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb
+          Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole
         </h2>
         <Link href="#usługi" className={classes.button}>
           Nasze usługi
