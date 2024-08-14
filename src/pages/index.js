@@ -8,6 +8,8 @@ import Logo from "@/components/Nav/Logo";
 import { useState, useEffect } from "react";
 import { NextSeo } from "next-seo";
 import SEO from "@/components/Main/SEO";
+import Reviews from "@/components/Main/Reviews";
+import ElfsightWidget from "@/components/Main/ElfsightWidget";
 
 export default function Home() {
   const [showLogo, setShowLogo] = useState(true);
@@ -26,20 +28,20 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
-        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
+        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
+        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
         image="https://www.kabetintleather.pl/logooooo.jpg"
       />
       <NextSeo
-        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
-        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb"
+        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
+        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
         canonical="https://www.kabetintleather.pl/"
         openGraph={{
           url: "https://www.kabetintleather.pl/",
           title:
-            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb",
+            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole",
           description:
-            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb",
+            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole",
           images: [
             {
               url: "https://www.kabetintleather.pl/logooooo.jpg",
