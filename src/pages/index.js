@@ -28,20 +28,20 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
-        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
+        title="Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb"
+        description="Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb"
         image="https://www.kabetintleather.pl/logooooo.jpg"
       />
       <NextSeo
-        title="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
-        description="Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole"
+        title="Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb"
+        description="Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb"
         canonical="https://www.kabetintleather.pl/"
         openGraph={{
           url: "https://www.kabetintleather.pl/",
           title:
-            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole",
+            "Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb",
           description:
-            "Kabe Tint&Leather - Pranie Tapicerki, Renowacja Skór, Przyciemnianie szyb Opole",
+            "Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb",
           images: [
             {
               url: "https://www.kabetintleather.pl/logooooo.jpg",
