@@ -9,8 +9,7 @@ const PrivacyPolicyPage = () => {
       <p>
         Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony
         danych osobowych przekazanych przez Użytkowników w związku z
-        korzystaniem przez nich z usług Kabe Tint&Leather za pośrednictwem
-        Serwisu.
+        korzystaniem przez nich z usług Kabe za pośrednictwem Serwisu.
       </p>
 
       <h2>2. Administrator Danych Osobowych</h2>
@@ -40,7 +39,7 @@ const PrivacyPolicyPage = () => {
           Umożliwienia kontaktu z Użytkownikiem w celu odpowiedzi na przesłane
           zapytania,
         </li>
-        <li>Realizacji usług oferowanych przez Kabe Tint&Leather,</li>
+        <li>Realizacji usług oferowanych przez Kabe,</li>
         <li>
           Przesyłania informacji handlowych i marketingowych za zgodą
           Użytkownika.
@@ -81,9 +80,9 @@ const PrivacyPolicyPage = () => {
 
       <h2>9. Zmiany w Polityce Prywatności</h2>
       <p>
-        Kabe Tint&Leather zastrzega sobie prawo do wprowadzania zmian w Polityce
-        Prywatności. O wszelkich zmianach Użytkownicy będą informowani poprzez
-        odpowiednie komunikaty w Serwisie.
+        Kabe zastrzega sobie prawo do wprowadzania zmian w Polityce Prywatności.
+        O wszelkich zmianach Użytkownicy będą informowani poprzez odpowiednie
+        komunikaty w Serwisie.
       </p>
     </div>
   );

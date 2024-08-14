@@ -13,7 +13,7 @@ const SEO = ({ title, description, image }) => (
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://www.kabetintleather.pl",
-          "name": "Kabe Tint&Leather",
+          "name": "Kabe",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+48-881-325-631",

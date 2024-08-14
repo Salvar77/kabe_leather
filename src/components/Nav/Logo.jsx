@@ -13,7 +13,7 @@ const Logo = ({ showLogo }) => {
     <div style={logoStyle} className={classes.logo}>
       <Image
         src={logo}
-        alt="Logo firmy KaBe Tint&Leather"
+        alt="Logo firmy KaBe"
         priority
         width={110}
         height={110}
