@@ -51,7 +51,7 @@ export default function Home() {
               type: "image/jpeg",
             },
           ],
-          site_name: "Kabe Tint&Leather",
+          site_name: "Kabe",
         }}
         facebook={{
           handle: "@handle",
