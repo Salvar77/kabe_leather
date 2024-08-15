@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.footer__container}>
         <div className={classes.footer__text}>
-          <p className={classes.footer__textInfo}>&copy;{currentYear} KaBe</p>
+          <p className={classes.footer__textInfo}>&copy;{currentYear} Kabe</p>
         </div>
         <ul className={classes.footer__icons}>
           <li>
@@ -22,7 +22,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.instagram.com/kabe_tintleather/"
+              href="https://www.instagram.com/kabe_autokosmetyka"
               className="fab fa-instagram"
               target="_blank"
               rel="noopener noreferrer"
