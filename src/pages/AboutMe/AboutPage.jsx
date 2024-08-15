@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./AboutPage.module.scss";
-import picture from "../../assets/image/LOGO.jpg";
+import picture from "../../assets/image/newLogoWhite.jpg";
 
 const AboutPage = () => {
   return (
