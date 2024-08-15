@@ -11,13 +11,7 @@ const Logo = ({ showLogo }) => {
 
   return (
     <div style={logoStyle} className={classes.logo}>
-      <Image
-        src={logo}
-        alt="Logo firmy KaBe"
-        priority
-        width={110}
-        height={110}
-      />
+      <Image src={logo} alt="Logo firmy KaBe" priority />
     </div>
   );
 };
