@@ -14,9 +14,9 @@ const PrivacyPolicyPage = () => {
 
       <h2>2. Administrator Danych Osobowych</h2>
       <p>
-        Administratorem danych osobowych zawartych w serwisie jest Kabe
-        Tint&Leather z siedzibą w Grota-Roweckiego 18, 45-268 Opole, NIP:
-        7543343759, REGON: 389837340.
+        Administratorem danych osobowych zawartych w serwisie jest Kabe z
+        siedzibą w Grota-Roweckiego 18, 45-268 Opole, NIP: 7543343759, REGON:
+        389837340.
       </p>
 
       <h2>3. Zbieranie Danych</h2>
