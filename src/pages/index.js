@@ -12,19 +12,6 @@ import Reviews from "@/components/Main/Reviews";
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
 
 export default function Home() {
-  const [showLogo, setShowLogo] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = document.documentElement.scrollTop;
-      const windowWidth = window.innerWidth;
-
-      setShowLogo(!(windowWidth < 992 && currentScrollPos > 200));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
   return (
     <>
       <SEO
@@ -64,7 +51,7 @@ export default function Home() {
           cardType: "summary_large_image",
         }}
       />
-      <Logo showLogo={showLogo} />
+
       <Hero />
       <div className="container">
         <AboutUs />
