@@ -4,8 +4,6 @@ import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
 import Hero from "@/components/Main/Hero";
 import SliderSection from "@/components/Sliders/SliderSection";
-import Logo from "@/components/Nav/Logo";
-import { useState, useEffect } from "react";
 import { NextSeo } from "next-seo";
 import SEO from "@/components/Main/SEO";
 import Reviews from "@/components/Main/Reviews";

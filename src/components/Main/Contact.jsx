@@ -138,11 +138,11 @@ const Contact = () => {
         )}
         <div className={classes.mapWrapper}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.8642185435515!2d17.940067993576342!3d50.680564297643635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710531a4c7c14dd%3A0x6c8dfa970a39f1fe!2sKabe%20Tint%26Leather%20Pranie%20Tapicerki%20%2C%20Przyciemnianie%20szyb%20Opole!5e1!3m2!1spl!2spl!4v1723622809834!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.756699699125!2d17.95214825705992!3d50.6852193840941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471053441f9108b3%3A0x22e44a0c9af75ed2!2sKabe%20Tint%26Leather!5e1!3m2!1spl!2spl!4v1725796635231!5m2!1spl!2spl"
             width="100%"
             height="300"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
