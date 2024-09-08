@@ -65,7 +65,7 @@ const Contact = () => {
       <section id="kontakt" className={classes.contactSection}>
         <div className={classes.contactInfo}>
           <h2>Kontakt</h2>
-          <p>Ulica: Grota Roweckiego 18</p>
+          <p>Ulica: Generała Emila Fieldorfa 12</p>
           <p>Miasto: Opole</p>
           <p>
             <FaPhoneAlt /> Telefon:{" "}
