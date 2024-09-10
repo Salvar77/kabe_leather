@@ -1,0 +1,129 @@
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fcfcfc;
+  color: #050505;
+}
+.aboutMe__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.aboutMe__image img {
+  max-width: 100%;
+  height: auto;
+  background-color: #050505;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
+  border: 1px solid rgba(232, 227, 227, 0.7);
+  border-radius: 0.6rem;
+}
+.aboutMe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 100%;
+  text-align: center;
+}
+.aboutMe__header {
+  font-size: 2.2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.aboutMe__text {
+  font-size: 1.8rem;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
+  border: 2px solid rgba(61, 54, 54, 0.1);
+}
+.aboutMe__list {
+  list-style: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+}
+.aboutMe__list li {
+  font-size: 1.8rem;
+  color: #050505;
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+.aboutMe__socialLinks {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutMe__socialLinks a {
+  color: #5b96ac;
+  margin: 0 1rem;
+  font-size: 2.4rem;
+}
+.aboutMe__socialLinks a:hover {
+  color: #4023df;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.realizationButton {
+  padding: 1rem 2rem;
+  background-color: #5b96ac;
+  color: #fcfcfc;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.realizationButton:hover {
+  background-color: #321ab5;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .aboutMe__header {
+    font-size: 3rem;
+  }
+  .aboutMe__text {
+    font-size: 2.2rem;
+  }
+  .aboutMe__list li {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .realizationButton {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .aboutMe {
+    flex-direction: row;
+    align-items: center;
+  }
+  .aboutMe__image {
+    width: 40%;
+    padding: 0;
+  }
+  .aboutMe__image img {
+    max-width: 100%;
+    height: auto;
+    background-color: #050505;
+  }
+  .aboutMe__content {
+    width: 60%;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: left;
+  }
+}/*# sourceMappingURL=AboutUs.module.css.map */
