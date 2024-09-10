@@ -10,13 +10,13 @@ const AboutPage = () => {
       <div className={classes.aboutMe__grid}>
         <div className={classes.aboutMe__content}>
           <p className={classes.aboutMe__text}>
-            Kabe Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb.
-            Specjalizujemy się w profesjonalnym praniu tapicerki samochodowej,
-            czyszczeniu oraz naprawie wyrobów skórzanych, oraz przyciemnianiu
-            szyb. Renowacja Tapicerki skórzanej to usługa dla osób które chcą by
-            ich tapicerka odzyskała blask. Nasze usługi to gwarancja wysokiej
-            jakości i precyzji. Zadzwoń lub odwiedź nas już dziś, a my zadbamy o
-            Twój samochód.
+            Kabe Tint&Leather Auto Detailing. Specjalizujemy się w
+            profesjonalnym praniu tapicerki samochodowej, czyszczeniu oraz
+            naprawie wyrobów skórzanych, oraz przyciemnianiu szyb. Renowacja
+            Tapicerki skórzanej to usługa dla osób które chcą by ich tapicerka
+            odzyskała blask. Nasze usługi to gwarancja wysokiej jakości i
+            precyzji. Zadzwoń lub odwiedź nas już dziś, a my zadbamy o Twój
+            samochód.
           </p>
         </div>
         <div className={classes.aboutMe__box}>

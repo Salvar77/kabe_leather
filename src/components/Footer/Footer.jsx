@@ -8,7 +8,9 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.footer__container}>
         <div className={classes.footer__text}>
-          <p className={classes.footer__textInfo}>&copy;{currentYear} Kabe</p>
+          <p className={classes.footer__textInfo}>
+            &copy;{currentYear} Kabe Tint&Leather Auto Detailing
+          </p>
         </div>
         <ul className={classes.footer__icons}>
           <li>

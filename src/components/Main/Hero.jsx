@@ -48,10 +48,10 @@ const Hero = () => {
         />
       </div>
       <div className={classes.textOverlay}>
-        <h1 className={classes.hero__title}>Kabe</h1>
-        <h2 className={classes.hero__text}>
-          Autokosmetyka Pranie Tapicerki Opole, Przyciemnianie szyb
-        </h2>
+        <h1 className={classes.hero__title}>
+          Kabe Tint&Leather Auto Detailing
+        </h1>
+        <h2 className={classes.hero__text}>Kabe Tint&Leather Auto Detailing</h2>
         <Link href="#usługi" className={classes.button}>
           Nasze usługi
         </Link>

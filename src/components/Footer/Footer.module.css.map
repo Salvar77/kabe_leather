@@ -1,0 +1,1 @@
+{"version":3,"sources":["Footer.module.scss","../../styles/_colors.scss","Footer.module.css"],"names":[],"mappings":"AAEA;EACE,yBCEmB;ACHrB;AFGE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AEDJ;AFGI;EACE,cCXQ;EDYR,iBAAA;AEDN;AFKE;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,gBAAA;AEHJ;AFKI;EACE,gBAAA;AEHN;AFKM;EACE,cCdK;EDeL,qBAAA;AEHR;AFIQ;EACE,cCtBE;ACoBZ","file":"Footer.module.css"}
