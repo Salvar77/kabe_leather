@@ -2,22 +2,26 @@
 
 .logo {
   position: fixed;
-  top: 1.9rem;
-  left: 1.6rem;
-  max-height: 15rem;
+  top: -3rem;
+  left: -1.9rem;
 
   z-index: 10000;
 
   img {
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
   }
 }
 
 @media (min-width: 992px) {
   .logo {
-    top: -0.6rem;
+    top: -6.3rem;
     left: 10rem;
+
+    img {
+      width: 23rem;
+      height: 23rem;
+    }
   }
 }
