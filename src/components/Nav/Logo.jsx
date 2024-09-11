@@ -1,8 +1,30 @@
-import classes from "./Logo.module.scss";
+import { useRouter } from "next/router";
 import Image from "next/image";
-import logo from "../../assets/image/newLogoLogo.png";
+import { useState, useEffect } from "react";
+import classes from "./Logo.module.scss";
+import logoMain from "../../assets/image/kabelogo_transparent.png";
+import logoSubpage from "../../assets/image/kabelogowhite_transparent.png";
 
 const Logo = ({ showLogo }) => {
+  const router = useRouter();
+  const [isMobile, setIsMobile] = useState(false);
+
+  const isHomePage = router.pathname === "/";
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 992);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const logoStyle = {
     opacity: showLogo ? 1 : 0,
     transform: showLogo ? "translateY(0)" : "translateY(-20px)",
@@ -11,8 +33,13 @@ const Logo = ({ showLogo }) => {
 
   return (
     <div style={logoStyle} className={classes.logo}>
-      <Image src={logo} alt="Logo firmy KaBe" priority />
+      <Image
+        src={isMobile && !isHomePage ? logoSubpage : logoMain}
+        alt="Logo firmy KaBe"
+        priority
+      />
     </div>
   );
 };
+
 export default Logo;

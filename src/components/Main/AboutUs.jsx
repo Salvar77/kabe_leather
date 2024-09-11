@@ -1,7 +1,7 @@
 import classes from "./AboutUs.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import image from "../../assets/image/newLogoWhite.JPG";
+import image from "../../assets/image/kabelogowhite.webp";
 
 const AboutUs = () => {
   return (
