@@ -15,7 +15,7 @@ export default function Home() {
       <SEO
         title="Kabe Tint&Leather Auto Detailing"
         description="Kabe Tint&Leather Auto Detailing"
-        image="https://www.kabetintleather.pl/kabelogooo.jpg"
+        image="https://www.kabetintleather.pl/kabelogooo.webp"
       />
       <NextSeo
         title="Kabe Tint&Leather Auto Detailing"
@@ -27,14 +27,14 @@ export default function Home() {
           description: "Kabe Tint&Leather Auto Detailing",
           images: [
             {
-              url: "https://www.kabetintleather.pl/logooooo.jpg",
+              url: "https://www.kabetintleather.pl/kabelogooo.webp",
               width: 800,
               height: 600,
               alt: "Og Image Alt",
               type: "image/jpeg",
             },
           ],
-          site_name: "Kabe",
+          site_name: "Kabe Tint&Leather Auto Detailing",
         }}
         facebook={{
           handle: "@handle",
