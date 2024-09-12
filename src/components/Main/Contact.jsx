@@ -112,14 +112,13 @@ const Contact = () => {
               required
             />
             <label htmlFor="rodoConsent">
-              Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z
-              ustawą o ochronie danych osobowych w związku z wysłaniem zapytania
-              przez formularz kontaktowy. Podanie danych jest dobrowolne, ale
-              niezbędne do przetworzenia zapytania. Zostałem poinformowany, że
-              przysługuje mi prawo dostępu do swoich danych, możliwość ich
-              poprawienia oraz żądanie zaprzestania ich przetwarzania.
-              Administratorem danych osobowych jest KaBe Tint & Leather Auto
-              Detailing Kamil Brzoskwinia, ul. Grota Roweckiego 18.
+              Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o
+              ochronie danych osobowych w związku z wysłaniem zapytania przez
+              formularz kontaktowy. Podanie danych jest dobrowolne, ale
+              niezbędne do przetworzenia zapytania. Przysługuje mi prawo dostępu
+              do swoich danych, ich poprawienia oraz żądania zaprzestania
+              przetwarzania. Administratorem danych osobowych jest KaBe Tint &
+              Leather Auto Detailing Kamil Brzoskwinia, ul. Grota Roweckiego 18.
             </label>
           </div>
           <button type="submit">Wyślij</button>
