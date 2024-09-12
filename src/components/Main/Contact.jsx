@@ -69,7 +69,9 @@ const Contact = () => {
           <p>Miasto: Opole</p>
           <p>
             <FaPhoneAlt /> Telefon:{" "}
-            <span className={`${classes.highlightedText} noLinkStyle`}>
+            <span
+              className={`${classes.highlightedText} ${classes.noLinkStyle}`}
+            >
               881 325 631
             </span>
           </p>
