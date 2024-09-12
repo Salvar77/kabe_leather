@@ -44,7 +44,7 @@ const AboutUs = () => {
               <i className="fab fa-facebook"></i>
             </a>
             <a
-              href="https://www.instagram.com/kabe_autokosmetyka"
+              href="https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg=="
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Odwiedź nas na Instagramie"

@@ -15,7 +15,7 @@ export default function Home() {
       <SEO
         title="Kabe Tint&Leather Auto Detailing"
         description="Kabe Tint&Leather Auto Detailing"
-        image="https://www.kabetintleather.pl/logooooo.jpg"
+        image="https://www.kabetintleather.pl/kabelogooo.webp"
       />
       <NextSeo
         title="Kabe Tint&Leather Auto Detailing"

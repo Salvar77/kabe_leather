@@ -4,8 +4,8 @@
   display: grid;
   gap: 2rem;
   padding-top: 2rem;
-  max-width: 100%;
-  padding: 4rem;
+  width: 100%;
+  padding: 2rem;
   background-color: $white-smooth;
   font-size: 1.8rem;
 
@@ -47,8 +47,8 @@
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.9);
     padding: 2rem;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
+    width: 100%;
 
     h2 {
       margin-bottom: 1rem;
@@ -56,8 +56,8 @@
 
     input,
     textarea {
-      min-width: 100%;
-      max-width: 100%;
+      width: 100%;
+      width: 100%;
       padding: 0.5rem;
       margin-bottom: 1rem;
       border-radius: 0.4rem;

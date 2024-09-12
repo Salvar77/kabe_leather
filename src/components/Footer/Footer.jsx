@@ -24,7 +24,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.instagram.com/kabe_autokosmetyka"
+              href="https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg=="
               className="fab fa-instagram"
               target="_blank"
               rel="noopener noreferrer"

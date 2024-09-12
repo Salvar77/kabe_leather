@@ -9,14 +9,15 @@ const PrivacyPolicyPage = () => {
       <p>
         Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony
         danych osobowych przekazanych przez Użytkowników w związku z
-        korzystaniem przez nich z usług Kabe za pośrednictwem Serwisu.
+        korzystaniem przez nich z usług Kabe Tint&Leather Auto Detailing za
+        pośrednictwem Serwisu.
       </p>
 
       <h2>2. Administrator Danych Osobowych</h2>
       <p>
-        Administratorem danych osobowych zawartych w serwisie jest Kabe z
-        siedzibą w Grota-Roweckiego 18, 45-268 Opole, NIP: 7543343759, REGON:
-        389837340.
+        Administratorem danych osobowych zawartych w serwisie jest Kabe
+        Tint&Leather Auto Detailing z siedzibą w Generała Emila Fieldorfa 12,
+        45-268 Opole, NIP: 7543343759, REGON: 389837340.
       </p>
 
       <h2>3. Zbieranie Danych</h2>
@@ -39,7 +40,9 @@ const PrivacyPolicyPage = () => {
           Umożliwienia kontaktu z Użytkownikiem w celu odpowiedzi na przesłane
           zapytania,
         </li>
-        <li>Realizacji usług oferowanych przez Kabe,</li>
+        <li>
+          Realizacji usług oferowanych przez Kabe Tint&Leather Auto Detailing,
+        </li>
         <li>
           Przesyłania informacji handlowych i marketingowych za zgodą
           Użytkownika.
@@ -80,9 +83,9 @@ const PrivacyPolicyPage = () => {
 
       <h2>9. Zmiany w Polityce Prywatności</h2>
       <p>
-        Kabe zastrzega sobie prawo do wprowadzania zmian w Polityce Prywatności.
-        O wszelkich zmianach Użytkownicy będą informowani poprzez odpowiednie
-        komunikaty w Serwisie.
+        Kabe Tint&Leather Auto Detailing zastrzega sobie prawo do wprowadzania
+        zmian w Polityce Prywatności. O wszelkich zmianach Użytkownicy będą
+        informowani poprzez odpowiednie komunikaty w Serwisie.
       </p>
     </div>
   );
