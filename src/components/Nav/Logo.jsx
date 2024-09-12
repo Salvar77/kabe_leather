@@ -35,7 +35,7 @@ const Logo = ({ showLogo }) => {
     <div style={logoStyle} className={classes.logo}>
       <Image
         src={isMobile && !isHomePage ? logoSubpage : logoMain}
-        alt="Logo firmy KaBe"
+        alt="Kabe Tint&Leather Auto Detailing"
         priority
       />
     </div>
