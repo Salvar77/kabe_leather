@@ -14,7 +14,9 @@ const AboutUs = () => {
         />
       </div>
       <div className={classes.aboutMe__content}>
-        <h2 className={classes.aboutMe__header}>O nas</h2>
+        <h2 className={classes.aboutMe__header}>
+          Kabe Tint&Leather Auto Detailing
+        </h2>
         <ul className={classes.aboutMe__list}>
           <ul>
             <li>⭐️ Myjnia ręczna</li>
