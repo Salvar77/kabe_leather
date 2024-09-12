@@ -205,10 +205,9 @@
 }
 
 .noLinkStyle {
-  color: inherit !important;
-  text-decoration: none !important;
-  -webkit-text-decoration: none !important;
-  cursor: default !important;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  cursor: default;
 }
 
 .consentWrapper {
