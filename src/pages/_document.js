@@ -57,6 +57,23 @@ class MyDocument extends Document {
             }}
           />
           {/* End Google Analytics Tag */}
+          {/* Google Ads Tag */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-PFL7MVJ5ZE"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-PFL7MVJ5ZE');
+              `,
+            }}
+          />
+          {/* End Google Ads Tag */}
         </Head>
         <body>
           <noscript>
