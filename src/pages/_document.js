@@ -70,6 +70,7 @@ class MyDocument extends Document {
                 gtag('js', new Date());
 
                 gtag('config', 'G-PFL7MVJ5ZE');
+                gtag('config', 'AW-16608400370'); // New Google Ads Conversion Tag
               `,
             }}
           />
@@ -87,6 +88,15 @@ class MyDocument extends Document {
           {/* Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
+          {/* Event snippet for Kontakt conversion page */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                gtag('event', 'conversion', {'send_to': 'AW-16608400370/9avKCNyvktMZEPKnwO89'});
+              `,
+            }}
+          />
+          {/* End Google Ads Event Snippet */}
         </body>
       </Html>
     );
