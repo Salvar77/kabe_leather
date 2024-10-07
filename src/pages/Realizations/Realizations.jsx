@@ -13,16 +13,21 @@ import photoLeathers1 from "../../assets/image/leathers1.jpg";
 import photoLeathers2 from "../../assets/image/leathers2.jpg";
 import photoLeathers3 from "../../assets/image/leathers3.jpg";
 import photoLeathers4 from "../../assets/image/leathers4.jpg";
+import photoLeathers5 from "../../assets/image/leathers5.jpg";
+import photoLeathers6 from "../../assets/image/leathers6.jpg";
 import photoTint1 from "../../assets/image/tint1.jpg";
 import photoTint2 from "../../assets/image/tint2.jpg";
 import photoTint3 from "../../assets/image/tint3.jpg";
 import photoAutoscmetic1 from "../../assets/image/autocosmetic1.jpg";
 import photoAutoscmetic2 from "../../assets/image/autocosmetic2.jpg";
 import photoAutoscmetic3 from "../../assets/image/autocosmetic.png";
+import photoAutoscmetic4 from "../../assets/image/autocosmetic5.jpg";
+import photoAutoscmetic5 from "../../assets/image/autocosmetic6.jpg";
 import photoClean from "../../assets/image/clean4.png";
 import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
+import photoCleaning4 from "../../assets/image/cleaning4.jpg";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
@@ -38,7 +43,7 @@ export const realizationsData = [
   {
     id: "pranie-tapicerki",
     description: "Pranie Tapicerki",
-    images: [photoCleaning, photoCleaning2, photoCleaning3],
+    images: [photoCleaning, photoCleaning2, photoCleaning3, photoCleaning4],
     image: photoClean,
     largeImage: photoClean,
     largeImageWidth: 1920,
@@ -53,7 +58,14 @@ export const realizationsData = [
   {
     id: "renowacja-skor",
     description: "Renowacja Skór",
-    images: [photoLeathers1, photoLeathers2, photoLeathers3, photoLeathers4],
+    images: [
+      photoLeathers1,
+      photoLeathers2,
+      photoLeathers3,
+      photoLeathers4,
+      photoLeathers5,
+      photoLeathers6,
+    ],
     image: photoRealizations,
     largeImage: photoRealizations,
     largeImageWidth: 1920,
@@ -68,7 +80,13 @@ export const realizationsData = [
   {
     id: "autokosmetyka",
     description: "Autokosmetyka",
-    images: [photoAutoscmetic3, photoAutoscmetic2, photoAutoscmetic1],
+    images: [
+      photoAutoscmetic3,
+      photoAutoscmetic2,
+      photoAutoscmetic1,
+      photoAutoscmetic4,
+      photoAutoscmetic5,
+    ],
     image: photoRealizations2,
     largeImage: photoRealizations3,
     largeImageWidth: 1920,
