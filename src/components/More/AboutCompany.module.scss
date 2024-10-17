@@ -1,0 +1,59 @@
+.company {
+  text-align: center;
+  &__title {
+    font-weight: bold;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &Image {
+      flex: 1;
+      img {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+
+    &Text {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    &TextOne,
+    &TextTwo {
+      padding: 1rem;
+      text-align: left;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .company {
+    &__box {
+      flex-direction: row;
+
+      &Image {
+        flex: 1;
+        img {
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+
+      &Text {
+        flex: 1;
+
+        padding: 1rem;
+      }
+
+      &TextOne,
+      &TextTwo {
+        margin: 0.5rem;
+      }
+    }
+  }
+}
