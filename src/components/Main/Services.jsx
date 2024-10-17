@@ -24,7 +24,7 @@ export const servicesData = [
   },
   {
     id: "renowacja-skor",
-    description: "Renowacja Skór",
+    description: "Renowacja i Impregnacja Skór",
     image: heroImage,
     largeImage: heroImageLarge,
     largeImageWidth: 1920,

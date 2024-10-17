@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /private/
+Allow: /
 
 Sitemap: https://www.kabetintleather.pl/sitemap.xml
