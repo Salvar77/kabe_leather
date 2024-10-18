@@ -3,12 +3,15 @@ import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
 import Hero from "@/components/Main/Hero";
+import heroImageMobile from "../assets/image/hero2_640.jpg";
+import heroImageDesktop from "../assets/image/hero2_1920.jpg";
 import SliderSection from "@/components/Sliders/SliderSection";
 import { NextSeo } from "next-seo";
 import SEO from "@/components/Main/SEO";
 import Reviews from "@/components/Main/Reviews";
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
 import AboutCompany from "@/components/More/AboutCompany";
+import WhyUs from "@/components/More/WhyUs";
 
 export default function Home() {
   return (
@@ -49,14 +52,28 @@ export default function Home() {
         }}
       />
 
-      <Hero />
-      <div className="container">
-        <AboutUs />
-        <Services />
+      <Hero
+        heroImageMobile={heroImageMobile}
+        heroImageDesktop={heroImageDesktop}
+        title="Kabe Tint&Leather Auto Detailing"
+        description="Kabe Tint&Leather Auto Detailing"
+        showTechnology={true}
+        showButton={true}
+        height="100vh"
+        mobileWhiteBlockColor="#fcfcfc"
+        desktopWhiteBlockColor="#e0e0e0"
+      />
+      <div className="bg">
+        <div className="container">
+          <WhyUs />
+          <AboutUs />
+          <Services />
+        </div>
         <AboutCompany />
-        <SliderSection />
-
-        <Contact />
+        <div className="container">
+          <SliderSection />
+          <Contact />
+        </div>
       </div>
     </>
   );

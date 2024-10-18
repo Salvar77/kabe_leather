@@ -20,8 +20,9 @@ const Nav = ({ isOpen, toggleNav }) => {
               <Link href="/#usługi">Usługi</Link>
             </li>
             <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/#galeria">Galeria</Link>
+              <Link href="/#firma">O Firmie</Link>
             </li>
+
             <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/Realizacje">Realizacje</Link>
             </li>
