@@ -1,62 +1,74 @@
-import Link from "next/link";
-import { useState, useEffect } from "react";
+"use client";
+import { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import classes from "./Hero.module.scss";
-import heroImageMobile from "../../assets/image/hero2_640.jpg";
-import heroImageDesktop from "../../assets/image/hero2_1920.jpg";
 
-const Hero = () => {
-  const [currentImage, setCurrentImage] = useState(heroImageMobile);
+const Hero = ({
+  heroImageMobile,
+  heroImageDesktop,
+  title,
+  description,
+  showTechnology,
+  showButton,
+  height = "100vh",
+  mobileWhiteBlockColor = "#1D120C",
+  desktopWhiteBlockColor = "#C8C8C8",
+  customHeroTitle = "",
+}) => {
+  const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 992px)");
+  // useEffect(() => {
+  //   const updateHeroHeight = () => {
+  //     setViewportHeight(window.innerHeight);
+  //   };
 
-    const handleMediaQueryChange = (e) => {
-      setCurrentImage(e.matches ? heroImageDesktop : heroImageMobile);
-    };
+  //   window.addEventListener("resize", updateHeroHeight);
+  //   updateHeroHeight();
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-    handleMediaQueryChange(mediaQuery);
+  //   return () => window.removeEventListener("resize", updateHeroHeight);
+  // }, []);
 
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const mediaQuery = window.matchMedia("(min-width: 992px)");
+  //   const handleMediaQueryChange = (e) => {
+  //     setCurrentImage(e.matches ? heroImageDesktop : heroImageMobile);
+  //     setWhiteBlockColor(
+  //       e.matches ? desktopWhiteBlockColor : mobileWhiteBlockColor
+  //     );
+  //   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      const heroSection = document.getElementById("hero");
-      const viewportHeight = window.innerHeight;
-      heroSection.style.height = `${viewportHeight}px`;
-    };
+  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
+  //   handleMediaQueryChange(mediaQuery);
 
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  //   return () => {
+  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
+  //   };
+  // }, [
+  //   heroImageDesktop,
+  //   heroImageMobile,
+  //   mobileWhiteBlockColor,
+  //   desktopWhiteBlockColor,
+  // ]);
 
   return (
-    <section id="hero" className={classes.hero}>
-      <div className={classes.imageContainer}>
-        <Image
-          src={currentImage}
-          alt="Hero grafika"
-          fill={true}
-          style={{ objectFit: "cover" }}
-          priority
-        />
-      </div>
-      <div className={classes.textOverlay}>
-        <h1 className={classes.hero__title}>
-          Kabe Tint&Leather Auto Detailing
-        </h1>
-        <h2 className={classes.hero__text}>Kabe Tint&Leather Auto Detailing</h2>
-        <Link href="#usługi" className={classes.button}>
-          Nasze usługi
-        </Link>
-      </div>
-    </section>
+    <div>
+      <section id="hero" className={classes.hero} style={{ height }}>
+        <div className={classes.textOverlay}>
+          <h1 className={classes.hero__title}>{title}</h1>
+          <p>{description}</p>
+          {showButton && (
+            <a href="#galeria" className={classes.button}>
+              Realizacje
+            </a>
+          )}
+        </div>
+        <div
+          className={`${classes.whiteBlock} ${classes.whiteBlockLeft} `}
+          style={{ backgroundColor: whiteBlockColor }}
+        ></div>
+      </section>
+    </div>
   );
 };
 

@@ -60,7 +60,7 @@
 .hamburgerInner::after {
   width: 40px;
   height: 4px;
-  background-color: $blue-main;
+  background-color: $blue-after;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -112,12 +112,12 @@
 }
 
 .hamburger.scrolled .hamburgerInner {
-  background-color: $blue-after;
+  background-color: $blue-main;
 }
 
 .hamburger.scrolled .hamburgerInner::before,
 .hamburger.scrolled .hamburgerInner::after {
-  background-color: $blue-after;
+  background-color: $blue-main;
 }
 
 @media only screen and (min-width: 992px) {
