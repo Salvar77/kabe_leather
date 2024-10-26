@@ -6,20 +6,32 @@ const nextConfig = {
     console.log("Rewrites configuration loaded");
     return [
       {
-        source: "/O-Mnie",
+        source: "/o-mnie",
         destination: "/AboutMe/AboutPage",
       },
       {
-        source: "/Cennik",
+        source: "/cennik",
         destination: "/PricingSection/PricingSection",
       },
       {
-        source: "/Realizacje",
+        source: "/realizacje",
         destination: "/Realizations/Realizations",
       },
       {
-        source: "/Realizacje/:slug*",
+        source: "/realizacje/:slug*",
         destination: "/Realizations/RealizationsPage/:slug*",
+      },
+      {
+        source: "/kontakt-strona",
+        destination: "/kontakt/ContactSide",
+      },
+      {
+        source: "/blog-strona",
+        destination: "/blog/SectionBlog",
+      },
+      {
+        source: "/blog-strona/:slug",
+        destination: "/blog/blogPage/:slug",
       },
       {
         source: "/:id",

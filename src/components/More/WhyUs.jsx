@@ -13,8 +13,8 @@ const WhyUs = () => {
   const features = [
     {
       icon: <MdOutlineCarRepair size={64} />,
-      title: "BEZPŁATNY DOJAZD DO KLIENTA",
-      text: "Zapewniamy bezpłatny dojazd do klienta, maksymalizując Twoją wygodę i oszczędzając czas.",
+      title: "BEZPŁATNY DOJAZD DO KLIENTA I WYCENA",
+      text: "Zapewniamy bezpłatny dojazd do klienta oraz bezpłatną wycenę, maksymalizując Twoją wygodę i oszczędzając czas.",
       className: classes.whyUs__boxOne,
     },
     {

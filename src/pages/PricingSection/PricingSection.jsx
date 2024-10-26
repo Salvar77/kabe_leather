@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Contact from "@/components/Main/Contact";
 import styles from "./PricingSection.module.scss";
-import cennikImage from "../../assets/image/cennik2.jpg"; // Ścieżka do obrazka cennika
+import cennikImage from "../../assets/image/cennik2.jpg";
 
 const PricingSection = () => {
   return (

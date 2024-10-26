@@ -1,0 +1,114 @@
+@import "../../../styles/colors";
+
+.blogPost {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 12rem;
+
+  img {
+    padding: 1rem;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1.25rem;
+    color: #2c3e50;
+    font-weight: 700;
+    // text-align: center;
+    line-height: 1.3;
+    padding: 1rem;
+  }
+
+  .section {
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
+    border-bottom: 0.125rem solid #ecf0f1;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.625rem;
+      color: #34495e;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      line-height: 1.6;
+      text-align: left;
+    }
+  }
+
+  .backButton {
+    display: block;
+    margin: 1.25rem auto;
+    padding: 0.625rem 1.25rem;
+    background-color: $blue-after;
+    color: $white-smooth;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    width: 12.5rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $blue-main;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blogPost {
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    .section {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .backButton {
+      font-size: 1.8rem;
+      width: 20rem;
+
+      &:hover {
+        background-color: $blue-main;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blogPost {
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    .section {
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    .backButton {
+      font-size: 2rem;
+
+      &:hover {
+        background-color: $blue-main;
+      }
+    }
+  }
+}

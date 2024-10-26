@@ -3,7 +3,7 @@
 .contactSection {
   display: grid;
   gap: 2rem;
-  padding-top: 2rem;
+
   width: 100%;
   padding: 2.5rem;
   background-color: $white-smooth;
@@ -196,7 +196,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1.4rem;
+  // padding-bottom: 1.4rem;
 }
 
 .highlightedText {
@@ -289,6 +289,7 @@
   }
 
   .contactSection {
+    padding: 0;
     .contactForm {
       input,
       textarea {

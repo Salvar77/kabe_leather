@@ -9,6 +9,7 @@ import Logo from "@/components/Nav/Logo";
 import Footer from "@/components/Footer/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ContactMain from "@/components/More/ContactMain";
 
 export default function App({ Component, pageProps }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,7 +77,7 @@ export default function App({ Component, pageProps }) {
       </header>
 
       <Component {...pageProps} />
-
+      <ContactMain />
       <Footer />
     </>
   );

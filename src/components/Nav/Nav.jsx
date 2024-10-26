@@ -14,23 +14,20 @@ const Nav = ({ isOpen, toggleNav }) => {
         <div className={classes.nav__items}>
           <ul aria-hidden="true" className={classes.menu}>
             <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/#O-nas">O nas</Link>
-            </li>
-            <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/#usługi">Usługi</Link>
-            </li>
-            <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/#firma">O Firmie</Link>
+              <Link href="/o-mnie">O nas</Link>
             </li>
 
             <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/Realizacje">Realizacje</Link>
+              <Link href="/realizacje">Realizacje</Link>
             </li>
             <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/Cennik">Cennik</Link>
+              <Link href="/cennik">Cennik</Link>
             </li>
             <li onClick={toggleNav} className={classes.nav__item}>
-              <Link href="/#kontakt">Kontakt</Link>
+              <Link href="/blog-strona">Blog</Link>
+            </li>
+            <li onClick={toggleNav} className={classes.nav__item}>
+              <Link href="/kontakt-strona">Kontakt</Link>
             </li>
           </ul>
         </div>

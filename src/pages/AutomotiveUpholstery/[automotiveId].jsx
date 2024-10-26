@@ -6,13 +6,13 @@ import Link from "next/link";
 
 export async function getServerSideProps(context) {
   const automotiveId = context.params.automotiveId;
-  const automotive = servicesData.find(
-    (service) => service.id === automotiveId
-  );
+  const automotive =
+    servicesData.find((service) => service.id === automotiveId) || null;
 
   const isMobile = context.req.headers["user-agent"]
     .toLowerCase()
     .includes("mobi");
+
   const currentImage = automotive
     ? isMobile
       ? automotive.image

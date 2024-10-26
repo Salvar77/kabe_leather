@@ -1,14 +1,22 @@
 import React from "react";
+import classes from "./SectionBlog.module.scss";
 import Image from "next/image";
-import Link from "next/link";
-import classes from "./Blog.module.scss";
 import blogImage from "../../assets/image/tint1.jpg";
-import { blogPosts } from "../../../constants";
+import Link from "next/link";
+import { blogPosts } from "../../../constants/index";
+import { FaRegCalendarAlt } from "react-icons/fa";
 
-const Blog = () => {
+const SectionBlog = () => {
   return (
-    <section id="blog" className={classes.blog}>
-      <h2 className={classes.blog__header}>Odkryj więcej</h2>
+    <section id="blog-strona" className={classes.blog}>
+      <div className={classes.blog__head}>
+        <h2 className={classes.blog__header}>Blog</h2>
+        <p className={classes.blog__text}>
+          Dowiedz się więcej o naszych usługach, praniu tapicerek, autokosmetyce
+          i przyciemnianiu szyb!
+        </p>
+      </div>
+
       <div className={classes.blog__box}>
         {blogPosts.map((post) => (
           <div key={post.id} className={classes.blog__boxItem}>
@@ -16,32 +24,27 @@ const Blog = () => {
               <Image src={blogImage} alt={post.title} />
             </div>
 
-            <Link href={`/blog-strona/${post.link.split("/").pop()}`}>
-              <p className={classes.blog__subtitle}>{post.subtitle}</p>
-            </Link>
-
+            {/* Zaktualizowane linki, aby prowadziły do dynamicznych stron */}
             <Link href={`/blog-strona/${post.link.split("/").pop()}`}>
               <h3>{post.title}</h3>
             </Link>
 
             <span className={classes.blog__date}>
+              <FaRegCalendarAlt style={{ marginRight: "5px" }} />
               <time dateTime={post.date}>{post.date}</time>
             </span>
-            <p>{post.description}</p>
+
             <Link
               href={`/blog-strona/${post.link.split("/").pop()}`}
               className={classes.blog__readMore}
             >
-              Czytaj Więcej
+              Zobacz
             </Link>
           </div>
         ))}
       </div>
-      <Link href="/blog-strona" className={classes.readMoreLink}>
-        Przeczytaj więcej na blogu
-      </Link>
     </section>
   );
 };
 
-export default Blog;
+export default SectionBlog;

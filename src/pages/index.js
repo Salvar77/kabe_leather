@@ -12,6 +12,7 @@ import Reviews from "@/components/Main/Reviews";
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
 import AboutCompany from "@/components/More/AboutCompany";
 import WhyUs from "@/components/More/WhyUs";
+import Blog from "@/components/Main/Blog";
 
 export default function Home() {
   return (
@@ -71,6 +72,7 @@ export default function Home() {
         </div>
         <AboutCompany />
         <div className="container">
+          <Blog />
           <SliderSection />
           <Contact />
         </div>

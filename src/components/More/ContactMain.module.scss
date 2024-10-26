@@ -1,0 +1,75 @@
+@import "../../styles/colors";
+
+.contactMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $blue-after;
+  color: $white-smooth;
+  padding: 1rem;
+}
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // margin-top: 2rem;
+
+  p {
+    margin: 0.1rem;
+  }
+
+  .address {
+    margin-top: 0.5rem;
+  }
+}
+
+.heading {
+  // padding-bottom: 0.5rem;
+  border-bottom: 2px solid $white-smooth;
+}
+
+.infoBlock {
+  padding: 1rem;
+}
+
+.logoBlock {
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+}
+
+.email {
+  margin-bottom: 0.5rem;
+}
+
+.policy {
+  &__link {
+    text-decoration: none;
+    color: $white-smooth;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contactMain {
+    flex-direction: row;
+    // justify-content: space-around;
+    gap: 3rem;
+    padding-right: 9.5rem;
+  }
+
+  .column {
+    font-size: 2rem;
+  }
+  .logoBlock {
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "../../styles/colors";
+
+.blog {
+  padding: 1rem;
+  margin-top: 9rem;
+
+  &__head {
+    background-color: $blue-after;
+    width: 100vw;
+    width: 99.5vw;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+
+    padding: 2rem 1rem;
+
+    & > * {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  }
+
+  &__header {
+    color: $white-smooth;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-decoration: overline;
+  }
+
+  &__text {
+    color: $white-smooth;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  &__boxItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px rgba($blue-after, 0.4);
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  &__image {
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+  }
+
+  &__date {
+    margin: 1rem 0;
+    font-style: italic;
+    color: #7d7d7d;
+
+    time {
+      font-weight: bold;
+      color: #333;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-after;
+  }
+
+  .blog__readMore {
+    padding-top: 1rem;
+    color: $blue-after;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+
+    &:hover {
+      color: $blue-main;
+    }
+  }
+
+  .readMoreLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem auto 0;
+    color: $blue-after;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+
+    &:hover {
+      color: $blue-main;
+    }
+  }
+
+  @media (min-width: 992px) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 10rem;
+
+    &__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    &__header {
+      font-size: 3rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+    }
+
+    &__boxItem {
+      flex-basis: 30%;
+      max-width: 30%;
+      padding: 1.5rem;
+      border-radius: 2rem;
+    }
+
+    &__image img {
+      border-radius: 2rem;
+    }
+  }
+}

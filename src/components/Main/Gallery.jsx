@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SliderBeforeAfter from "./SliderBeforeAfter";
 import classes from "./Gallery.module.scss";
 import beforeImage1 from "../../assets/image/renovation_1.jpg";
