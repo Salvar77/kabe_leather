@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $white-smooth;
-  color: $dark-smooth;
+  // background-color: $white-smooth;
+  color: $white-smooth;
+  text-shadow: 0.15rem 0.15rem 0.25rem $dark-smooth;
   font-size: 2.4rem;
   padding: 2rem;
   font-weight: bold;
@@ -16,7 +17,12 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: $white-smooth;
+  background: linear-gradient(
+    179deg,
+    $blue-after,
+    $white-smooth,
+    $white-smooth
+  );
 }
 
 .customBgColor {

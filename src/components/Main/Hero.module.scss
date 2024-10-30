@@ -108,9 +108,9 @@
   transition: 0.3s;
 
   &:hover {
-    color: $green2;
-    box-shadow: 0.5rem 0.8rem 1rem rgba(160, 92, 14, 0.4),
-      0 0 1rem rgba(220, 94, 15, 0.5);
+    color: $blue-after;
+    box-shadow: 0.5rem 0.8rem 1rem rgba($blue-main, 0.4),
+      0 0 1rem rgba($blue-after, 0.5);
     transform: scale(1.05);
   }
 }

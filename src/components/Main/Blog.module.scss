@@ -82,9 +82,20 @@
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease, font-weight 0.3s ease;
-
+    padding: 0.8rem 1.4rem;
+    font-size: 1.6rem;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    border-radius: 0.8rem;
+    max-width: 250px;
+    background-color: $white-smooth;
+    box-shadow: 0.2rem 0.4rem 0.6rem rgba($blue-after, 0.4);
+    text-decoration: none;
+    transition: 0.3s;
     &:hover {
       color: $blue-main;
+      box-shadow: 0.5rem 0.8rem 1rem rgba($blue-after, 0.4),
+        0 0 1rem rgba($blue-after, 0.5);
+      transform: scale(1.05);
     }
   }
 
@@ -108,7 +119,10 @@
       border-radius: 2rem;
     }
 
-    .blog__readMore {
+    .readMore {
+      &Link {
+        font-size: 1.7rem;
+      }
       &::after {
         font-size: 2.5rem;
       }

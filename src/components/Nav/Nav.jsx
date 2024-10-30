@@ -27,6 +27,9 @@ const Nav = ({ isOpen, toggleNav }) => {
               <Link href="/blog-strona">Blog</Link>
             </li>
             <li onClick={toggleNav} className={classes.nav__item}>
+              <Link href="/referencje">Referencje</Link>
+            </li>
+            <li onClick={toggleNav} className={classes.nav__item}>
               <Link href="/kontakt-strona">Kontakt</Link>
             </li>
           </ul>

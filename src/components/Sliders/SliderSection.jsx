@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SliderTrue from "./SliderTrue";
 import BeforeImage1 from "../../assets/image/renovation_7.jpg";
 import AfterImage1 from "../../assets/image/renovation_8.jpg";
@@ -7,11 +8,9 @@ import BeforeImage3 from "../../assets/image/renovatio2.JPG";
 import AfterImage3 from "../../assets/image/renovatio.JPG";
 import BeforeImage4 from "../../assets/image/renovation_8-1.jpg";
 import AfterImage4 from "../../assets/image/renovation_7-1.jpg";
-import BeforeImage5 from "../../assets/image/renovation_9.jpg";
-import AfterImage5 from "../../assets/image/renovation_9-1.jpg";
-
 import classes from "./SliderSection.module.scss";
 import Link from "next/link";
+import { blurUp } from "../../../utils/motion";
 
 const SliderSection = ({
   showTitle = true,
@@ -43,11 +42,15 @@ const SliderSection = ({
         {images
           .slice(0, maxImagesToShow)
           .map(({ beforeImage, afterImage }, index) => (
-            <SliderTrue
+            <motion.div
               key={index}
-              beforeImage={beforeImage}
-              afterImage={afterImage}
-            />
+              variants={blurUp(index * 0.1, 0.8)} // blurUp dla efektu przesunięcia i rozmycia
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 0.3 }}
+            >
+              <SliderTrue beforeImage={beforeImage} afterImage={afterImage} />
+            </motion.div>
           ))}
       </div>
       {showButton && (

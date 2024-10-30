@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./SectionBlog.module.scss";
 import Image from "next/image";
-import blogImage from "../../assets/image/tint1.jpg";
+
 import Link from "next/link";
 import { blogPosts } from "../../../constants/index";
 import { FaRegCalendarAlt } from "react-icons/fa";
@@ -21,7 +21,7 @@ const SectionBlog = () => {
         {blogPosts.map((post) => (
           <div key={post.id} className={classes.blog__boxItem}>
             <div className={classes.blog__image}>
-              <Image src={blogImage} alt={post.title} />
+              <Image src={post.image} alt={post.title} />
             </div>
 
             {/* Zaktualizowane linki, aby prowadziły do dynamicznych stron */}

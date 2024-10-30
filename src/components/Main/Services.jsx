@@ -8,6 +8,8 @@ import heroImageLarge from "../../assets/image/hero2_1920.jpg";
 import furnitureImageLarge from "../../assets/image/detailing.jpg";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
 import cleanImg from "../../assets/image/clean4.png";
+import { motion } from "framer-motion";
+import { fadeScale } from "../../../utils/motion";
 
 export const servicesData = [
   {
@@ -62,36 +64,45 @@ export const servicesData = [
 
 const Services = () => {
   return (
-    <section id="usługi" className={classes.services}>
-      <h2>Usługi</h2>
-      <div className={classes.services__wrapper}>
-        {servicesData.map((service) => (
-          <div key={service.id} className={classes.services__item}>
-            <div
-              className={classes.services__imageWrapper}
-              style={{ backgroundImage: service.gradient }}
+    <div className={classes.servicesBackground}>
+      <section id="usługi" className={classes.services}>
+        <h2>Usługi</h2>
+        <div className={classes.services__wrapper}>
+          {servicesData.map((service, index) => (
+            <motion.div
+              key={service.id}
+              className={classes.services__item}
+              variants={fadeScale(index * 0.15, 0.9)} // Dodajemy animację wyłaniającą się
+              initial="hidden"
+              whileInView="show"
+              viewport={{ amount: 0.3 }}
             >
-              <Image
-                src={service.image}
-                srcSet={`${service.largeImage} ${service.largeImageWidth}w`}
-                sizes="(min-width: 992px) 100vw, (min-width: 1600px) 1600px, 1920px"
-                alt="obrazy prania tapicerki i przyciemniania szyb, oraz prania tapicerki samochodowej"
-              />
-              <div className={classes.services__content}>
-                <p>{service.description}</p>
-                <Link
-                  href={`/${service.id}`}
-                  className={classes.services__button}
-                  aria-label={`Sprawdź usługę: ${service.description}`}
-                >
-                  Sprawdź
-                </Link>
+              <div
+                className={classes.services__imageWrapper}
+                style={{ backgroundImage: service.gradient }}
+              >
+                <Image
+                  src={service.image}
+                  srcSet={`${service.largeImage} ${service.largeImageWidth}w`}
+                  sizes="(min-width: 992px) 100vw, (min-width: 1600px) 1600px, 1920px"
+                  alt="obrazy prania tapicerki i przyciemniania szyb, oraz prania tapicerki samochodowej"
+                />
+                <div className={classes.services__content}>
+                  <p>{service.description}</p>
+                  <Link
+                    href={`/${service.id}`}
+                    className={classes.services__button}
+                    aria-label={`Sprawdź usługę: ${service.description}`}
+                  >
+                    Sprawdź
+                  </Link>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -30,6 +30,10 @@ const nextConfig = {
         destination: "/blog/SectionBlog",
       },
       {
+        source: "/referencje",
+        destination: "/referencje/Referency",
+      },
+      {
         source: "/blog-strona/:slug",
         destination: "/blog/blogPage/:slug",
       },

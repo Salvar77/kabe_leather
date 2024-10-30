@@ -13,6 +13,7 @@ import ElfsightWidget from "@/components/Main/ElfsightWidget";
 import AboutCompany from "@/components/More/AboutCompany";
 import WhyUs from "@/components/More/WhyUs";
 import Blog from "@/components/Main/Blog";
+import GoogleMap from "@/components/More/GoogleMap";
 
 export default function Home() {
   return (
@@ -67,15 +68,21 @@ export default function Home() {
       <div className="bg">
         <div className="container">
           <WhyUs />
+        </div>
+        <Services />
+        <div className="container">
           <AboutUs />
-          <Services />
         </div>
         <AboutCompany />
         <div className="container">
           <Blog />
-          <SliderSection />
+        </div>
+        <SliderSection />
+        <div className="container">
+          <ElfsightWidget />
           <Contact />
         </div>
+        <GoogleMap />
       </div>
     </>
   );

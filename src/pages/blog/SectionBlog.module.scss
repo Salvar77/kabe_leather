@@ -2,32 +2,20 @@
 
 .blog {
   padding: 1rem;
-  margin-top: 9rem;
+  padding-top: 10rem;
 
   &__head {
-    background-color: $blue-after;
-    width: 100vw;
-    width: 99.5vw;
-    margin-left: calc(-50vw + 50%);
-    position: relative;
-
     padding: 2rem 1rem;
-
-    & > * {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
   }
 
   &__header {
-    color: $white-smooth;
+    // color: $white-smooth;
     text-align: center;
     margin-bottom: 1.5rem;
     text-decoration: overline;
   }
 
   &__text {
-    color: $white-smooth;
     font-weight: bold;
     text-align: center;
   }
@@ -114,11 +102,29 @@
       gap: 2rem;
     }
 
+    &__head {
+      background-color: $blue-after;
+      width: 100vw;
+      width: 99.5vw;
+      margin-left: calc(-50vw + 50%);
+      position: relative;
+
+      padding: 2rem 1rem;
+
+      & > * {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+    }
+
     &__header {
+      color: $white-smooth;
+      margin-bottom: 1.5rem;
       font-size: 3rem;
     }
 
     &__text {
+      color: $white-smooth;
       font-size: 1.8rem;
     }
 

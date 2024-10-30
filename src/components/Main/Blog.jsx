@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./Blog.module.scss";
-import blogImage from "../../assets/image/tint1.jpg";
-import { blogPosts } from "../../../constants";
+import { blogPosts } from "../../../constants"; // Import dynamicznych postów blogowych
 
 const Blog = () => {
   return (
@@ -13,7 +13,12 @@ const Blog = () => {
         {blogPosts.map((post) => (
           <div key={post.id} className={classes.blog__boxItem}>
             <div className={classes.blog__image}>
-              <Image src={blogImage} alt={post.title} />
+              <Image
+                src={post.image} // Dynamiczne zdjęcie z blogPosts
+                alt={post.title}
+                width={500}
+                height={300}
+              />
             </div>
 
             <Link href={`/blog-strona/${post.link.split("/").pop()}`}>

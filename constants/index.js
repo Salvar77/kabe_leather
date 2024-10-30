@@ -4,162 +4,196 @@ import {
   blogBeforeAfter3,
   blogBeforeAfter4,
   blogBeforeAfter5,
+  blogBeforeAfter6,
+  blogBeforeAfter7,
+  blogBeforeAfter8,
+  blogBeforeAfter9,
+  blogBeforeAfter10,
+  blogMain1,
+  blogMain2,
+  blogMain3,
+  blogMain4,
+  blogMain5,
+  blogMain6,
+  referencyPhoto1,
+  referencyPhoto2,
+  referencyPhoto3,
 } from "../utils/index";
 
 const blogPosts = [
   {
     id: 1,
-    title: "Jak zapobiec powstaniu plamy?",
-    subtitle: "PRANIE WYKŁADZIN BIUROWYCH",
+    title: "Jak zapobiec powstaniu plam na tapicerce samochodowej?",
+    subtitle: "CZYSZCZENIE TAPICERKI SAMOCHODOWEJ",
     date: "2024-10-02",
     description:
-      "Plama – co za pech! Jak nie dopuścić do powstania plamy – czyli co możemy zrobić zanim wezwamy specjalistę od plam? Działaj szybko! Usuń nadmiar substancji! Użyj zimnej wody. WAŻNE OSTRZEŻENIE: Nie używaj gorącej wody ani suszarki...",
-    link: "/blog/jak-zapobiec-powstaniu-plamy",
+      "Plama na tapicerce samochodowej to problem, którego można uniknąć! Dowiedz się, jak szybko i skutecznie reagować, aby nie doprowadzić do trwałych zabrudzeń. Oto kilka kroków, które warto zastosować, aby utrzymać tapicerkę w czystości.",
+    link: "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
+    image: blogMain3,
   },
   {
     id: 2,
-    title: "Jak usunąć plamy z tapicerki?",
-    subtitle: "USUWANIE PLAM Z TAPICERKI",
+    title: "Jak skutecznie wyczyścić tapicerkę samochodową?",
+    subtitle: "PRANIE TAPICERKI SAMOCHODOWEJ",
     date: "2024-09-15",
     description:
-      "Usuwanie plam z tapicerki może być trudne, ale istnieją sposoby, które mogą pomóc w skutecznym czyszczeniu...",
-    link: "/jak-usunac-plamy-z-tapicerki",
+      "Dowiedz się, jak skutecznie wyczyścić tapicerkę samochodową, aby pozbyć się nawet najtrudniejszych plam i zabrudzeń. Nasze profesjonalne metody czyszczenia pozwolą Ci cieszyć się świeżością wnętrza samochodu przez długi czas.",
+    link: "/jak-wyczyscic-tapicerke-samochodowa",
+    image: blogMain5,
   },
   {
     id: 3,
-    title: "Jak dbać o skórzaną tapicerkę?",
-    subtitle: "PIELĘGNACJA SKÓRZANEJ TAPICERKI",
+    title: "Jak dbać o tapicerkę skórzaną w samochodzie?",
+    subtitle: "PIELĘGNACJA SKÓRZANEJ TAPICERKI SAMOCHODOWEJ",
     date: "2024-08-30",
     description:
-      "Skórzana tapicerka wymaga specjalnej pielęgnacji. Oto kilka wskazówek, jak dbać o nią na co dzień...",
-    link: "/jak-dbac-o-skorzana-tapicerke",
+      "Skórzana tapicerka samochodowa wymaga regularnej pielęgnacji. Dowiedz się, jakie środki i techniki stosować, aby tapicerka zachowała swój elegancki wygląd przez wiele lat.",
+    link: "/jak-dbac-o-skorzana-tapicerke-samochodowa",
+    image: blogMain2,
   },
   {
     id: 4,
-    title: "Najlepsze środki do czyszczenia auta",
-    subtitle: "ŚRODKI CZYSZCZĄCE DO AUTA",
+    title: "Najlepsze preparaty do autokosmetyki",
+    subtitle: "AUTOKOSMETYKA SAMOCHODOWA",
     date: "2024-07-12",
     description:
-      "Wybór odpowiednich środków do czyszczenia auta może mieć ogromny wpływ na jego wygląd i trwałość...",
-    link: "/najlepsze-srodki-do-czyszczenia-auta",
+      "Wybór odpowiednich preparatów do pielęgnacji samochodu jest kluczowy, aby zapewnić mu idealny wygląd i ochronę. Sprawdź, które środki są najlepsze do pielęgnacji karoserii, wnętrza oraz szyb.",
+    link: "/najlepsze-preparaty-do-autokosmetyki",
+    image: blogMain4,
   },
   {
     id: 5,
-    title: "Jak wyczyścić plamy po jedzeniu?",
-    subtitle: "PLAMY PO JEDZENIU",
+    title: "Jak skutecznie przyciemnić szyby w samochodzie?",
+    subtitle: "PRZECIEMNIANIE SZYB SAMOCHODOWYCH",
     date: "2024-06-25",
     description:
-      "Plamy po jedzeniu to częsty problem. Dowiedz się, jak skutecznie je usuwać, aby nie uszkodzić powierzchni...",
-    link: "/jak-wyczyscic-plamy-po-jedzeniu",
+      "Przyciemnianie szyb samochodowych to nie tylko kwestia estetyki, ale także komfortu i bezpieczeństwa. Dowiedz się, jak prawidłowo przeprowadzić ten zabieg oraz jakie są korzyści z przyciemniania szyb.",
+    link: "/jak-przyciemnic-szyby-samochodowe",
+    image: blogMain1,
   },
 ];
 
 const pagesContent = {
-  "jak-zapobiec-powstaniu-plamy": {
-    title: "Jak zapobiec powstaniu plamy?",
+  "jak-zapobiec-plamom-na-tapicerce-samochodowej": {
+    title: "Jak zapobiec powstaniu plam na tapicerce samochodowej?",
     sections: [
       {
-        heading: "Jak uniknąć powstania plamy?",
+        heading: "Jak uniknąć powstania plam na tapicerce samochodowej?",
         content:
-          "Plama – co za pech! Jak nie dopuścić do powstania plamy – czyli co możemy zrobić zanim wezwamy specjalistę od plam? Działaj szybko! Usuń nadmiar substancji! Użyj zimnej wody. WAŻNE OSTRZEŻENIE: Nie używaj gorącej wody ani suszarki!",
+          "Plamy na tapicerce samochodowej to problem, który może wpłynąć na estetykę i wartość wnętrza auta. Aby zapobiec powstawaniu trudnych do usunięcia zabrudzeń, warto regularnie wykonywać pranie tapicerki samochodowej. Pranie i czyszczenie tapicerki pozwala na zachowanie jej świeżości i zabezpiecza materiał przed głębokim osadzaniem się zabrudzeń. Dowiedz się, jakie techniki czyszczenia mogą przedłużyć trwałość tapicerki i pomóc w utrzymaniu wnętrza auta w idealnym stanie.",
       },
       {
         heading: "Dlaczego szybka reakcja jest ważna?",
         content:
-          "Im szybciej zareagujesz na plamę, tym łatwiej będzie ją usunąć. Użycie odpowiednich środków czyszczących może znacznie zmniejszyć ryzyko trwałego uszkodzenia powierzchni.",
+          "Im szybciej podejmiesz działania związane z czyszczeniem tapicerki, tym większa szansa na całkowite usunięcie plamy. Regularne pranie tapicerki samochodowej pozwala na kontrolowanie jakości materiału i eliminuje ryzyko trwałego zabrudzenia. Nasza oferta profesjonalnych usług prania tapicerki umożliwia zachowanie czystości wnętrza samochodu na najwyższym poziomie.",
       },
       {
         heading: "Jakie środki najlepiej używać?",
         content:
-          "Warto mieć pod ręką delikatne środki czyszczące, które są bezpieczne dla różnych materiałów. Skontaktuj się z nami, aby dowiedzieć się, jak możemy pomóc.",
+          "Wybór odpowiednich środków do prania tapicerki samochodowej jest kluczowy, aby zachować materiał w idealnym stanie. Delikatne preparaty przeznaczone do czyszczenia tapicerki skutecznie usuwają zabrudzenia, nie uszkadzając materiału. Skontaktuj się z nami, aby poznać najlepsze produkty do czyszczenia tapicerki i dowiedzieć się, jak utrzymać wnętrze auta w doskonałym stanie.",
       },
     ],
-    images: [blogBeforeAfter4, blogBeforeAfter3],
+    images: [blogBeforeAfter1, blogBeforeAfter2],
   },
-  "jak-usunac-plamy-z-tapicerki": {
-    title: "Jak usunąć plamy z tapicerki?",
+  "jak-wyczyscic-tapicerke-samochodowa": {
+    title: "Jak skutecznie wyczyścić tapicerkę samochodową?",
     sections: [
       {
-        heading: "Plamy z tapicerki – jak sobie z nimi poradzić?",
+        heading: "Plamy na tapicerce – jak sobie z nimi poradzić?",
         content:
-          "Usuwanie plam z tapicerki może być trudne, ale istnieją sposoby, które mogą pomóc w skutecznym czyszczeniu. Ważne jest, aby działać szybko, zanim plama się utrwali.",
+          "Pranie i czyszczenie tapicerki samochodowej to kluczowe elementy dbania o czystość wnętrza pojazdu. Usuwanie plam i zabrudzeń z tapicerki może być wyzwaniem, ale odpowiednie środki i techniki czyszczenia pozwalają przywrócić tapicerce świeży wygląd. W naszej ofercie znajdziesz skuteczne rozwiązania na pranie tapicerki, które pozwalają usunąć nawet najtrudniejsze zabrudzenia i zachować estetykę wnętrza auta na dłużej.",
       },
       {
-        heading: "Domowe metody usuwania plam",
+        heading: "Domowe metody czyszczenia",
         content:
-          "Istnieje wiele domowych sposobów, które mogą pomóc w usuwaniu plam z tapicerki. Należy jednak uważać, aby nie uszkodzić materiału.",
+          "Niektóre plamy można usunąć za pomocą domowych metod, które są delikatniejsze dla materiału. Warto jednak pamiętać, że profesjonalne pranie tapicerki oferuje głębsze czyszczenie i jest bardziej skuteczne w usuwaniu uporczywych plam. Jeśli cenisz sobie czas i komfort, nasze usługi czyszczenia tapicerki to idealne rozwiązanie.",
       },
       {
         heading: "Profesjonalne usługi czyszczenia tapicerki",
         content:
-          "Nasza firma oferuje profesjonalne usługi czyszczenia tapicerki, które gwarantują doskonałe rezultaty i bezpieczne usuwanie nawet najbardziej uporczywych plam.",
+          "Profesjonalne czyszczenie tapicerki to sposób na uzyskanie maksymalnych efektów bez ryzyka uszkodzenia materiału. Nasze usługi prania tapicerki samochodowej umożliwiają zachowanie wnętrza w doskonałym stanie, a także eliminację nieprzyjemnych zapachów. Oferujemy kompleksowe rozwiązania w zakresie prania tapicerki, które gwarantują bezpieczeństwo materiału i długotrwałe efekty.",
       },
     ],
-    images: [blogBeforeAfter4, blogBeforeAfter5],
+    images: [blogBeforeAfter6, blogBeforeAfter7],
   },
-  "jak-dbac-o-skorzana-tapicerke": {
-    title: "Jak dbać o skórzaną tapicerkę?",
+  "jak-dbac-o-skorzana-tapicerke-samochodowa": {
+    title: "Jak dbać o tapicerkę skórzaną w samochodzie?",
     sections: [
       {
-        heading: "Pielęgnacja skórzanej tapicerki",
+        heading: "Pielęgnacja skórzanej tapicerki samochodowej",
         content:
-          "Skórzana tapicerka wymaga specjalnej pielęgnacji. Regularne czyszczenie i konserwacja mogą znacznie przedłużyć życie skórzanych mebli i zapewnić im długotrwały, estetyczny wygląd.",
+          "Skórzana tapicerka samochodowa to element luksusu, który wymaga szczególnej pielęgnacji. Aby zapewnić jej piękny wygląd na dłużej, konieczne jest regularne czyszczenie tapicerki oraz stosowanie specjalnych preparatów do skóry. Skóra jest materiałem wymagającym, dlatego profesjonalne pranie tapicerki skórzanej może pomóc w zachowaniu jej elastyczności i estetyki przez wiele lat.",
       },
       {
         heading: "Jakie środki są najlepsze do skóry?",
         content:
-          "Zaleca się stosowanie środków specjalnie przeznaczonych do pielęgnacji skóry. Unikaj ostrych detergentów, które mogą uszkodzić delikatną strukturę skóry.",
+          "Środki do czyszczenia tapicerki skórzanej powinny być delikatne i dostosowane do potrzeb tego materiału. Nasze specjalistyczne produkty pozwalają na skuteczne usunięcie zabrudzeń, jednocześnie dbając o kondycję skóry. Regularne pranie i czyszczenie tapicerki skórzanej pomaga zachować jej naturalny wygląd i chroni przed wysuszeniem.",
       },
       {
         heading: "Skontaktuj się z nami",
         content:
-          "Jeśli potrzebujesz pomocy w pielęgnacji swoich skórzanych mebli, skontaktuj się z nami. Oferujemy profesjonalne usługi pielęgnacji i konserwacji skóry.",
+          "Jeśli zależy Ci na profesjonalnym czyszczeniu i konserwacji tapicerki skórzanej, skontaktuj się z nami. Nasze usługi prania tapicerki skórzanej pozwalają na długotrwałą ochronę materiału i jego piękny wygląd. Wybierając nasze usługi, masz pewność, że Twoja tapicerka skórzana zostanie poddana odpowiedniej pielęgnacji.",
       },
     ],
-    images: [blogBeforeAfter1, blogBeforeAfter2],
+    images: [blogBeforeAfter8, blogBeforeAfter5],
   },
-  "najlepsze-srodki-do-czyszczenia-auta": {
-    title: "Najlepsze środki do czyszczenia auta",
+  "najlepsze-preparaty-do-autokosmetyki": {
+    title: "Najlepsze preparaty do autokosmetyki",
     sections: [
       {
-        heading: "Wybór odpowiednich środków czyszczących",
+        heading: "Wybór odpowiednich preparatów do auta",
         content:
-          "Wybór odpowiednich środków do czyszczenia auta może mieć ogromny wpływ na jego wygląd i trwałość. Nie wszystkie środki dostępne na rynku są bezpieczne dla lakieru lub wnętrza pojazdu.",
+          "Autokosmetyka to kluczowy element dbania o estetykę pojazdu. Wybór odpowiednich preparatów do pielęgnacji auta, takich jak środki do prania tapicerki czy woski ochronne, pomaga zachować wnętrze i karoserię w doskonałym stanie. Nasze rekomendacje preparatów do autokosmetyki pozwolą Ci zadbać o każdy detal i utrzymać auto w nienagannym wyglądzie.",
       },
       {
         heading: "Jak dbać o wnętrze auta?",
         content:
-          "Regularne czyszczenie wnętrza auta pomaga utrzymać jego estetykę i zwiększa komfort jazdy. Ważne jest, aby używać środków, które nie uszkodzą tapicerki ani plastikowych elementów.",
+          "Regularne czyszczenie wnętrza auta, w tym profesjonalne pranie tapicerki, jest istotne dla komfortu i estetyki pojazdu. Odpowiednie środki do autokosmetyki nie tylko usuwają zabrudzenia, ale także chronią materiały, co przedłuża ich trwałość. Nasza oferta preparatów do autokosmetyki zapewnia kompleksowe rozwiązania dla wymagających klientów.",
       },
       {
-        heading: "Czyszczenie zewnętrzne auta",
+        heading: "Czyszczenie karoserii i szyb",
         content:
-          "Czyszczenie zewnętrzne auta, w tym mycie i woskowanie, jest niezbędne, aby zabezpieczyć lakier przed działaniem czynników zewnętrznych.",
-      },
-    ],
-    images: [blogBeforeAfter1, blogBeforeAfter2],
-  },
-  "jak-wyczyscic-plamy-po-jedzeniu": {
-    title: "Jak wyczyścić plamy po jedzeniu?",
-    sections: [
-      {
-        heading: "Plamy po jedzeniu – jak sobie z nimi radzić?",
-        content:
-          "Plamy po jedzeniu to częsty problem, zwłaszcza na tapicerce i meblach. Ważne jest, aby działać szybko, zanim plama się utrwali.",
-      },
-      {
-        heading: "Domowe sposoby na plamy",
-        content:
-          "Do usuwania plam po jedzeniu można używać delikatnych środków czyszczących, jednak nie zawsze są one skuteczne. Jeśli plama jest trudna do usunięcia, warto skorzystać z profesjonalnych usług.",
-      },
-      {
-        heading: "Profesjonalne czyszczenie plam",
-        content:
-          "Nasza firma oferuje kompleksowe usługi usuwania plam, które są skuteczne i bezpieczne dla różnych materiałów.",
+          "Czystość karoserii i szyb to wizytówka każdego pojazdu. Nasze środki do autokosmetyki, przeznaczone do mycia karoserii i polerowania szyb, pozwalają na usunięcie wszelkich zabrudzeń oraz zabezpieczenie powierzchni przed czynnikami zewnętrznymi. Dzięki naszym preparatom do autokosmetyki Twoje auto będzie prezentować się doskonale każdego dnia.",
       },
     ],
     images: [blogBeforeAfter3, blogBeforeAfter4],
   },
+  "jak-przyciemnic-szyby-samochodowe": {
+    title: "Jak skutecznie przyciemnić szyby w samochodzie?",
+    sections: [
+      {
+        heading: "Korzyści z przyciemniania szyb",
+        content:
+          "Przyciemnianie szyb samochodowych to rozwiązanie, które poprawia komfort jazdy, chroni wnętrze auta przed promieniowaniem UV oraz zwiększa estetykę pojazdu. Dzięki przyciemnionym szybom wnętrze samochodu jest mniej narażone na nagrzewanie, co znacząco poprawia komfort użytkowania, szczególnie w słoneczne dni.",
+      },
+      {
+        heading: "Jakie są dostępne metody przyciemniania?",
+        content:
+          "Przyciemnianie szyb można wykonać za pomocą specjalnych folii lub powłok ochronnych, które zapewniają różny stopień zaciemnienia. Wybór metody zależy od indywidualnych potrzeb oraz wymagań użytkownika. Nasze usługi przyciemniania szyb gwarantują profesjonalne podejście i zgodność z przepisami.",
+      },
+      {
+        heading: "Zalecenia i przepisy",
+        content:
+          "Przyciemnianie szyb samochodowych musi być zgodne z przepisami prawa, które regulują dopuszczalny stopień przyciemnienia szyb przednich i bocznych. Nasze usługi są w pełni zgodne z polskimi przepisami, co pozwala na bezpieczne użytkowanie pojazdu po wykonaniu zabiegu przyciemniania szyb. Skontaktuj się z nami, aby uzyskać więcej informacji o zaleceniach dotyczących przyciemniania szyb.",
+      },
+    ],
+    images: [blogBeforeAfter9, blogBeforeAfter10],
+  },
 };
 
-export { blogPosts, pagesContent };
+const referencyImages = [
+  {
+    src: referencyPhoto1,
+    alt: "zdjęcie referencji właściciela Kabe",
+  },
+  {
+    src: referencyPhoto2,
+    alt: "zdjęcie referencji właściciela Kabe",
+  },
+  {
+    src: referencyPhoto3,
+    alt: "zdjęcie referencji właściciela Kabe",
+  },
+];
+
+export { blogPosts, pagesContent, referencyImages };

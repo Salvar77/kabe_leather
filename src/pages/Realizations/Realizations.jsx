@@ -22,7 +22,7 @@ import photoAutoscmetic1 from "../../assets/image/autocosmetic1.jpg";
 import photoAutoscmetic2 from "../../assets/image/autocosmetic2.jpg";
 import photoAutoscmetic3 from "../../assets/image/autocosmetic.png";
 import photoAutoscmetic4 from "../../assets/image/autocosmetic5.jpg";
-import photoAutoscmetic5 from "../../assets/image/autocosmetic6.jpg";
+import photoAutoscmetic5 from "../../assets/image/blogPhoto3.jpg";
 import photoClean from "../../assets/image/clean4.png";
 import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";

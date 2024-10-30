@@ -31,7 +31,7 @@
     align-items: center;
     padding: 1rem;
     max-width: 100%;
-    text-align: center;
+    // text-align: center;
   }
 
   &__header {
@@ -51,7 +51,7 @@
 
   &__list {
     list-style: none;
-    font-weight: bold;
+    // font-weight: bold;
     padding: 0.5rem;
     // margin: 1rem 0;
     text-align: center;
@@ -80,6 +80,11 @@
       }
     }
   }
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: $blue-after;
 }
 
 .buttonContainer {

@@ -75,6 +75,72 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
+export const rotateIn = (delay, duration) => {
+  return {
+    hidden: { rotate: 45, opacity: 0 },
+    show: {
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+    },
+  };
+};
+
+export const fadeScale = (delay, duration) => {
+  return {
+    hidden: { opacity: 0, scale: 0.95 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        type: "tween",
+        delay: delay,
+        duration: duration,
+        ease: "easeInOut",
+      },
+    },
+  };
+};
+
+export const slideRotate = (delay, duration) => {
+  return {
+    hidden: { opacity: 0, y: 50, rotate: -5 }, // Startowe wartości: niska przezroczystość, przesunięcie w dół i obrót
+    show: {
+      opacity: 1,
+      y: 0,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+    },
+  };
+};
+
+export const blurUp = (delay, duration) => {
+  return {
+    hidden: { opacity: 0, y: 20, filter: "blur(2px)" },
+    show: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        type: "tween",
+        delay: delay,
+        duration: duration,
+        ease: "easeInOut",
+      },
+    },
+  };
+};
+
 export const staggerContainer = (staggerChildren, delayChildren) => {
   return {
     hidden: {},

@@ -1,18 +1,27 @@
 @import "../../styles/colors";
 
+.servicesBackground {
+  background: linear-gradient(
+    195deg,
+    $blue-after,
+    $white-smooth,
+    $white-smooth
+  );
+}
+
 .services {
   gap: 2rem;
   padding: 2.6rem;
 
   align-items: center;
-  background-color: $white-smooth;
 
   h2 {
     text-align: center;
     grid-column: 1 / -1;
-    color: $dark-smooth;
+    color: $white-smooth;
     font-size: 2.4rem;
     margin: 2rem;
+    text-shadow: 0.15rem 0.15rem 0.25rem $dark-smooth;
   }
 
   p {
@@ -46,7 +55,7 @@
     position: relative;
     max-width: 100%;
     max-height: 40rem;
-    border-radius: 0.4rem;
+    border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +89,7 @@
     p {
       color: $white-smooth;
       font-size: 2rem;
+      text-shadow: 0.2rem 0.2rem 0.4rem $dark-smooth;
     }
 
     .services__button {
@@ -87,7 +97,7 @@
       margin: 0 auto;
       padding: 0.6rem 1.2rem;
       font-size: 1.6rem;
-      transition: background-color 0.3s;
+      transition: color 0.3s;
       border-radius: 0.6rem;
       color: $dark-smooth;
       background-color: $white-smooth;
@@ -98,8 +108,9 @@
       margin-top: 2rem;
 
       &:hover {
-        box-shadow: 0.4rem 0.6rem 0 0 rgba(54, 74, 131, 0.8),
-          inset 0.6rem 0.2rem 0.6rem rgba(67, 85, 158, 0.711);
+        box-shadow: 0.4rem 0.6rem 0 0 rgba($blue-main, 0.35),
+          inset 0.6rem 0.2rem 0.6rem rgba($blue-after, 0.45);
+        color: $blue-main;
       }
 
       @media (min-width: 768px) {
@@ -129,6 +140,8 @@
   }
 
   @media (min-width: 992px) {
+    max-width: 1100px;
+    margin: 0 auto;
     h2 {
       font-size: 3rem;
     }
