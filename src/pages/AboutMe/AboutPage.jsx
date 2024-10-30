@@ -16,7 +16,7 @@ const AboutPage = () => {
             Tapicerki skórzanej to usługa dla osób które chcą by ich tapicerka
             odzyskała blask. Nasze usługi to gwarancja wysokiej jakości i
             precyzji. Zadzwoń lub odwiedź nas już dziś, a my zadbamy o Twój
-            samochód.
+            samochód!
           </p>
         </div>
         <div className={classes.aboutMe__box}>
