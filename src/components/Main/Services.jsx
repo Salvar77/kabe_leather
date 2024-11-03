@@ -25,7 +25,7 @@ export const servicesData = [
       "Nasza usługa prania tapicerki to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
   },
   {
-    id: "renowacja-skor",
+    id: "renowacja-i-impregnacja-skor",
     description: "Renowacja i Impregnacja Skór",
     image: heroImage,
     largeImage: heroImageLarge,

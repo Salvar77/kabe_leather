@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .referencySection {
   padding-top: 10rem;
 
@@ -5,6 +7,7 @@
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
   }
 }
 

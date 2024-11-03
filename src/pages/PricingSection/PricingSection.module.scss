@@ -1,15 +1,29 @@
 @import "../../styles/colors";
 
 .pricingSection {
-  padding: 2.5rem;
-  max-width: 1200px;
+  padding: 1rem;
+  max-width: 1100px;
   margin: 0 auto;
-  margin-top: 4.7rem;
-}
+  margin-top: 7.7rem;
+  background-image: url("/kabelogowhite.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  // color: $white-smooth;
+  border-radius: 0.5rem;
+  overflow: hidden;
 
-.priceContact {
-  max-width: 1200px;
-  margin: 0 auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($white-smooth, 0.9);
+    z-index: 1;
+  }
 }
 
 .pricingHeader {
@@ -17,153 +31,69 @@
   padding: 1rem;
   margin: 1rem;
   color: $dark-smooth;
-  font-size: 2.6rem;
+  // font-size: 2.6rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
 }
 
-.img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    max-width: 100%;
-    max-height: 30rem;
-    object-fit: cover;
-
-    @media (min-width: 992px) {
-      max-width: 60rem;
-      max-height: 50rem;
-    }
-  }
-}
-
-.imageContainer {
-  img {
-    border-radius: 0.4rem;
-  }
-}
-
-.h3 {
-  padding: 2rem;
-}
-
-.pricingList {
-  padding: 1rem;
-
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-  border: 2px solid rgba(61, 54, 54, 0.1);
-}
-
-.pricingInfo {
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-  border: 2px solid rgba(61, 54, 54, 0.1);
-}
-
-.pricingType {
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-  border: 2px solid rgba(61, 54, 54, 0.1);
-  margin: 1rem;
-  padding: 1rem;
-  font-weight: bold;
-}
-
-.pricingListItem {
-  border: 1px solid white;
-
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-  border: 2px solid rgba(61, 54, 54, 0.1);
-  padding: 1rem;
-  margin: 1rem;
+.servicesList {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.dataRow:nth-child(odd) {
-  background-color: $white-smooth;
-}
-
-.dataRow:nth-child(even) {
-  background-color: $white-smooth-hover;
-}
-
-.servicesContainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-  color: $white-smooth;
+.servicesList,
+.pricingHeader {
+  position: relative;
+  z-index: 2;
 }
 
 .serviceItem {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  flex: 1;
-}
-
-.serviceHeader {
-  cursor: pointer;
-  padding: 10px;
-  background-color: $white-smooth;
-  color: $dark-smooth;
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-  border: 2px solid rgba(61, 54, 54, 0.1);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-bottom: 2px solid $dark-smooth;
+  border-radius: 1rem;
   font-weight: bold;
 }
 
-.serviceDetails {
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-.active {
-  background-color: $white-smooth;
-  color: $dark-smooth;
+.serviceIcon {
+  margin-right: 0.8rem;
 }
 
-.priceValue {
+.serviceName {
+  flex: 1;
+  background: rgba($white-smooth, 0.9);
+  border-radius: 1rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.1);
+}
+
+.servicePrice {
+  white-space: nowrap;
   color: $blue-after;
+  background: rgba($white-smooth, 0.9);
+  border-radius: 1rem;
 }
 
-@media (min-width: 768px) {
-  .pricingHeader {
-    font-size: 2.8rem;
-  }
-  .pricingList {
-    font-size: 2rem;
-  }
-
-  .pricingInfo {
-    font-size: 1.8rem;
-  }
-
-  .serviceHeader {
-    font-size: 1.8rem;
-  }
-
-  .h3 {
-    font-size: 2rem;
-  }
+.priceContact {
+  padding: 0;
 }
 
-@media (min-width: 992px) {
-  .pricingSection {
-    margin-top: 7rem;
-  }
+@media screen and (min-width: 992px) {
   .pricingHeader {
     font-size: 3rem;
   }
-  .pricingList {
-    font-size: 2.2rem;
+  .priceContact {
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
-  .serviceHeader {
-    font-size: 2.2rem;
+  .serviceName {
+    background: rgba($white-smooth, 0.4);
   }
 
-  .pricingInfo {
-    font-size: 2.2rem;
-  }
-
-  .h3 {
-    font-size: 2.2rem;
+  .servicePrice {
+    background: rgba($white-smooth, 0.3);
   }
 }

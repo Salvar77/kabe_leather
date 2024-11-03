@@ -1,8 +1,8 @@
-"use client";
 import { useEffect, useState } from "react";
 import React from "react";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import classes from "./Hero.module.scss";
+import { slideRotate, blurUp, staggerContainer } from "../../../utils/motion";
 
 const Hero = ({
   heroImageMobile,
@@ -18,55 +18,50 @@ const Hero = ({
 }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
-  // useEffect(() => {
-  //   const updateHeroHeight = () => {
-  //     setViewportHeight(window.innerHeight);
-  //   };
-
-  //   window.addEventListener("resize", updateHeroHeight);
-  //   updateHeroHeight();
-
-  //   return () => window.removeEventListener("resize", updateHeroHeight);
-  // }, []);
-
-  // useEffect(() => {
-  //   const mediaQuery = window.matchMedia("(min-width: 992px)");
-  //   const handleMediaQueryChange = (e) => {
-  //     setCurrentImage(e.matches ? heroImageDesktop : heroImageMobile);
-  //     setWhiteBlockColor(
-  //       e.matches ? desktopWhiteBlockColor : mobileWhiteBlockColor
-  //     );
-  //   };
-
-  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
-  //   handleMediaQueryChange(mediaQuery);
-
-  //   return () => {
-  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  //   };
-  // }, [
-  //   heroImageDesktop,
-  //   heroImageMobile,
-  //   mobileWhiteBlockColor,
-  //   desktopWhiteBlockColor,
-  // ]);
-
   return (
     <div>
       <section id="hero" className={classes.hero} style={{ height }}>
-        <div className={classes.textOverlay}>
-          <h1 className={classes.hero__title}>{title}</h1>
-          <p>{description}</p>
+        <motion.div
+          className={classes.textOverlay}
+          variants={staggerContainer(0.2, 0.5)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          whileInView="show"
+          viewport={{ once: false }}
+        >
+          <motion.h1
+            className={classes.hero__title}
+            variants={slideRotate(0.2, 1)}
+          >
+            {title}
+          </motion.h1>
+          <motion.p
+            className={classes.hero__description}
+            variants={blurUp(0.3, 1)}
+          >
+            {description}
+          </motion.p>
           {showButton && (
-            <a href="#galeria" className={classes.button}>
+            <motion.a
+              href="#galeria"
+              className={classes.button}
+              variants={blurUp(0.4, 1)}
+            >
               Realizacje
-            </a>
+            </motion.a>
           )}
-        </div>
+        </motion.div>
         <div
-          className={`${classes.whiteBlock} ${classes.whiteBlockLeft} `}
+          className={classes.whiteBlockWrapper}
           style={{ backgroundColor: whiteBlockColor }}
-        ></div>
+        >
+          <div className={`${classes.whiteBlock} ${classes.whiteBlockLeft}`}>
+            <div className={classes.whiteBlockTextContainer}>
+              <span className={classes.whiteBlockText}>Dbałość O Detale</span>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

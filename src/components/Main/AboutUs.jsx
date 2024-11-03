@@ -1,7 +1,7 @@
 import classes from "./AboutUs.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import image from "../../assets/image/kabelogowhite.webp";
+import image from "../../assets/image/kabelogowhite2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHandSparkles,
@@ -76,8 +76,8 @@ const AboutUs = () => {
         </ul>
 
         <div className={classes.buttonContainer}>
-          <Link href="/O-Mnie" className={classes.realizationButton}>
-            &#10132;
+          <Link href="/cennik" className={classes.realizationButton}>
+            Sprawdź cennik
           </Link>
           <div className={classes.aboutMe__socialLinks}>
             <a

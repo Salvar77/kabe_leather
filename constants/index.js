@@ -20,6 +20,16 @@ import {
   referencyPhoto3,
 } from "../utils/index";
 
+import {
+  FaCar,
+  FaTint,
+  FaSprayCan,
+  FaCogs,
+  FaShieldAlt,
+  FaPaintRoller,
+} from "react-icons/fa";
+import { GiCarWheel, GiAutoRepair } from "react-icons/gi";
+
 const blogPosts = [
   {
     id: 1,
@@ -196,4 +206,70 @@ const referencyImages = [
   },
 ];
 
-export { blogPosts, pagesContent, referencyImages };
+const services = [
+  { name: "Mycie ręczne pojazdu", price: "80zł", icon: <FaCar /> },
+  {
+    name: "Mycie ręczne pojazdu z powłoką syntetyczną",
+    price: "150zł",
+    icon: <FaSprayCan />,
+  },
+  {
+    name: "Pranie tapicerki materiałowej",
+    price: "250zł",
+    icon: <GiAutoRepair />,
+  },
+  { name: "Czyszczenie tapicerki skórzanej", price: "250zł", icon: <FaCogs /> },
+  {
+    name: "Impregnacja tapicerki skórzanej",
+    price: "100zł",
+    icon: <FaShieldAlt />,
+  },
+  {
+    name: "Renowacja tapicerki skórzanej",
+    price: "OD 200zł",
+    icon: <FaCogs />,
+  },
+  {
+    name: "Renowacja kierownicy skórzanej",
+    price: "250zł",
+    icon: <GiCarWheel />,
+  },
+  {
+    name: "Kompleksowe czyszczenie wnętrza bez prania tapicerki / czyszczenia skóry",
+    price: "200zł",
+    icon: <FaCar />,
+  },
+  {
+    name: "Kompleksowe czyszczenie wnętrza z praniem tapicerki / czyszczeniem skóry",
+    price: "400zł",
+    icon: <FaCar />,
+  },
+  {
+    name: "Mycie ręczne z powłoką, kompleksowe czyszczenie wnętrza bez prania tapicerki / czyszczenia skóry",
+    price: "300zł",
+    icon: <FaSprayCan />,
+  },
+  {
+    name: "Mycie ręczne, kompleksowe czyszczenie wnętrza wraz z praniem tapicerki / czyszczeniem skór oraz powłoką syntetyczną",
+    price: "500zł",
+    icon: <FaCar />,
+  },
+  {
+    name: "Przyciemnianie szyb samochodowych",
+    price: "OD 450zł",
+    icon: <FaTint />,
+  },
+  {
+    name: "Naprawa podsufitki samochodowej",
+    price: "OD 600zł",
+    icon: <GiAutoRepair />,
+  },
+  { name: "Korekta lakieru", price: "OD 800zł", icon: <FaPaintRoller /> },
+  {
+    name: "Ochronna folia PPF",
+    price: "Cena ustalana indywidualnie",
+    icon: <FaShieldAlt />,
+  },
+];
+
+export { blogPosts, pagesContent, referencyImages, services };

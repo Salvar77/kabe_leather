@@ -56,7 +56,7 @@ export const realizationsData = [
     // ],
   },
   {
-    id: "renowacja-skor",
+    id: "renowacja-i-impregnacja-skor",
     description: "Renowacja Skór",
     images: [
       photoLeathers1,

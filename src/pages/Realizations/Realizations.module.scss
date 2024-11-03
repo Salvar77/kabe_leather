@@ -16,6 +16,7 @@
     margin: 2rem 0;
     color: $dark-smooth;
     padding-top: 1.5rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
 
     @media (min-width: 992px) {
       font-size: 3rem;
@@ -50,6 +51,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 2rem;
 
     &::before {
       content: "";
@@ -76,7 +78,7 @@
     color: $dark-smooth;
     text-decoration: none;
     flex-direction: column;
-    border-radius: 0.4rem;
+    border-radius: 0.6rem;
     font-weight: bold;
     transition: background-color 0.3s;
 
@@ -99,6 +101,7 @@
     p {
       font-size: 2rem;
       padding: 1rem;
+      text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.7);
     }
   }
 }

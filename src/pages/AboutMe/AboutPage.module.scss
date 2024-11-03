@@ -16,6 +16,12 @@
     width: 100%;
   }
 
+  &__highlightText {
+    font-weight: bold;
+    color: $blue-after;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba($dark-smooth, 0.2);
+  }
+
   &__box {
     display: flex;
     justify-content: center;
@@ -24,7 +30,7 @@
 
     img {
       max-width: 100%;
-      border-radius: 0.2rem;
+      border-radius: 1rem;
       height: 100%;
       box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     }
@@ -33,6 +39,7 @@
   &__header {
     padding: 1rem;
     text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
   }
 
   &__text {
@@ -40,7 +47,9 @@
     margin: 2rem;
     padding: 1rem;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-    border: 2px solid rgba(61, 54, 54, 0.1);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
+    border: 2px solid rgba($dark-smooth, 0.1);
+    border-radius: 2rem;
     text-align: center;
   }
 

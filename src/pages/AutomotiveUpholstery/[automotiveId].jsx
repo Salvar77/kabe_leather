@@ -37,7 +37,7 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
           )}
         </div>
         <div className={classes.textWrapper}>
-          {automotive.id === "renowacja-skor" && (
+          {automotive.id === "renowacja-i-impregnacja-skor" && (
             <ContentUpholstery automotive={automotive} />
           )}
           {automotive.id === "przyciemnianie-szyb" && (

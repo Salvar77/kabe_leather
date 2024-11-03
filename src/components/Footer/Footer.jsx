@@ -1,4 +1,6 @@
+import React from "react";
 import classes from "./Footer.module.scss";
+import ContactMain from "../More/ContactMain";
 import Link from "next/link";
 
 const Footer = () => {
@@ -6,6 +8,7 @@ const Footer = () => {
 
   return (
     <footer className={classes.footer}>
+      <ContactMain />
       <div className={classes.footer__container}>
         <div className={classes.footer__text}>
           <p className={classes.footer__textInfo}>
@@ -21,7 +24,6 @@ const Footer = () => {
               rel="noopener noreferrer"
             ></a>
           </li>
-
           <li>
             <a
               href="https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg=="
