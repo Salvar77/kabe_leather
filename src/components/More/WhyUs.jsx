@@ -13,8 +13,8 @@ const WhyUs = () => {
   const features = [
     {
       icon: <MdOutlineCarRepair size={64} />,
-      title: "BEZPŁATNY DOJAZD DO KLIENTA I WYCENA",
-      text: "Zapewniamy bezpłatny dojazd do klienta oraz bezpłatną wycenę, maksymalizując Twoją wygodę i oszczędzając czas.",
+      title: "BEZPŁATNA WYCENA USŁUGI",
+      text: "Zapewniamy bezpłatną wycenę, maksymalizując Twoją wygodę i oszczędzając czas.",
       className: classes.whyUs__boxOne,
     },
     {
@@ -32,7 +32,7 @@ const WhyUs = () => {
     {
       icon: <MdSchedule size={64} />,
       title: "DYSPOZYCYJNOŚĆ",
-      text: "Oferujemy elastyczność godzin pracy, dostosowując się do Twojego grafika, w tym realizację usług poza standardowymi godzinami pracy.",
+      text: "Oferujemy elastyczny czas pracy, dostosowując się do Twojego grafika, w tym realizację usług poza standardowymi godzinami pracy.",
       className: classes.whyUs__boxFour,
     },
   ];
@@ -51,7 +51,7 @@ const WhyUs = () => {
           <motion.div
             key={index}
             className={feature.className}
-            variants={fadeIn("up", "spring", index * 0.1, 1)} // Dynamiczne opóźnienie dla efektu "stagger"
+            variants={fadeIn("up", "spring", index * 0.1, 1)}
             initial="hidden"
             whileInView="show"
           >

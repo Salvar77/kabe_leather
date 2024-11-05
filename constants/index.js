@@ -148,22 +148,22 @@ const pagesContent = {
     images: [blogBeforeAfter8, blogBeforeAfter5],
   },
   "najlepsze-preparaty-do-autokosmetyki": {
-    title: "Najlepsze preparaty do autokosmetyki",
+    title: "Używamy profesjonalnych produktów",
     sections: [
       {
         heading: "Wybór odpowiednich preparatów do auta",
         content:
-          "Autokosmetyka to kluczowy element dbania o estetykę pojazdu. Wybór odpowiednich preparatów do pielęgnacji auta, takich jak środki do prania tapicerki czy woski ochronne, pomaga zachować wnętrze i karoserię w doskonałym stanie. Nasze rekomendacje preparatów do autokosmetyki pozwolą Ci zadbać o każdy detal i utrzymać auto w nienagannym wyglądzie.",
+          "Autokosmetyka to kluczowy element dbania o estetykę pojazdu. Wybór odpowiednich preparatów do pielęgnacji auta, takich jak środki do prania i czyszczenia tapicerki, mycia samochodu, szampon do samochodu, woski ochronne czy powłoka ceramiczna, pomaga zachować wnętrze i karoserię w doskonałym stanie. Nasze rekomendacje preparatów do autokosmetyki pozwolą Ci zadbać o każdy detal i utrzymać auto w nienagannym wyglądzie.",
       },
       {
         heading: "Jak dbać o wnętrze auta?",
         content:
-          "Regularne czyszczenie wnętrza auta, w tym profesjonalne pranie tapicerki, jest istotne dla komfortu i estetyki pojazdu. Odpowiednie środki do autokosmetyki nie tylko usuwają zabrudzenia, ale także chronią materiały, co przedłuża ich trwałość. Nasza oferta preparatów do autokosmetyki zapewnia kompleksowe rozwiązania dla wymagających klientów.",
+          "Regularne czyszczenie wnętrza auta, w tym profesjonalne pranie i czyszczenie tapicerki, jest istotne dla komfortu i estetyki pojazdu. Odpowiednie środki nie tylko usuwają zabrudzenia, ale także chronią materiały, co przedłuża ich trwałość. Nasza oferta preparatów zapewniają kompleksowe rozwiązania dla wymagających klientów.",
       },
       {
         heading: "Czyszczenie karoserii i szyb",
         content:
-          "Czystość karoserii i szyb to wizytówka każdego pojazdu. Nasze środki do autokosmetyki, przeznaczone do mycia karoserii i polerowania szyb, pozwalają na usunięcie wszelkich zabrudzeń oraz zabezpieczenie powierzchni przed czynnikami zewnętrznymi. Dzięki naszym preparatom do autokosmetyki Twoje auto będzie prezentować się doskonale każdego dnia.",
+          "Czystość karoserii i szyb to wizytówka każdego pojazdu. Nasze środki, przeznaczone do mycia karoserii i czyszczenia szyb, pozwalają na usunięcie wszelkich zabrudzeń oraz zabezpieczenie powierzchni przed czynnikami zewnętrznymi. Dzięki naszym preparatom Twoje auto będzie prezentować się doskonale każdego dnia.",
       },
     ],
     images: [blogBeforeAfter3, blogBeforeAfter4],
@@ -174,12 +174,12 @@ const pagesContent = {
       {
         heading: "Korzyści z przyciemniania szyb",
         content:
-          "Przyciemnianie szyb samochodowych to rozwiązanie, które poprawia komfort jazdy, chroni wnętrze auta przed promieniowaniem UV oraz zwiększa estetykę pojazdu. Dzięki przyciemnionym szybom wnętrze samochodu jest mniej narażone na nagrzewanie, co znacząco poprawia komfort użytkowania, szczególnie w słoneczne dni.",
+          "zwieksza wydajnosc klimatyzacji zmniejszajac temperature wwntatrz pojazdu Przyciemnianie szyb samochodowych to rozwiązanie, które poprawia komfort jazdy, chroni wnętrze auta przed promieniowaniem UV oraz zwiększa estetykę pojazdu. Dzięki przyciemnionym szybom wnętrze samochodu jest mniej narażone na nagrzewanie, co znacząco poprawia komfort użytkowania, szczególnie w słoneczne dni.",
       },
       {
-        heading: "Jakie są dostępne metody przyciemniania?",
+        heading: "Jakie są metody przyciemniania szyb?",
         content:
-          "Przyciemnianie szyb można wykonać za pomocą specjalnych folii lub powłok ochronnych, które zapewniają różny stopień zaciemnienia. Wybór metody zależy od indywidualnych potrzeb oraz wymagań użytkownika. Nasze usługi przyciemniania szyb gwarantują profesjonalne podejście i zgodność z przepisami.",
+          "przyciemnianie szyb metoda piecową: opis, bezinwazyjne przyciemnianie szyb za pomocą folii: opis",
       },
       {
         heading: "Zalecenia i przepisy",

@@ -40,14 +40,16 @@ const AboutCompany = () => {
               viewport={{ once: true }}
               className={classes.company__boxTextOne}
             >
-              Firma „KabeTint&Leather” specjalizuje się w praniu tapicerek
-              samochodowych, renowacji i impregnacji skór, autokosmetyce oraz
-              przyciemnianiu szyb. Dzięki nowoczesnym technologiom i
-              wykwalifikowanemu zespołowi, zapewniamy skuteczne usuwanie
-              zabrudzeń i plam, odświeżenie wyglądu tapicerki oraz przywrócenie
-              pierwotnego blasku skór. Oferujemy również profesjonalne usługi
-              konserwacji, co pozwala na długotrwałe zachowanie ich jakości i
-              trwałości.
+              Firma „KabeTint&Leather” to firma specjalizująca się w
+              profesjonalnej kosmetyce samochodowej. Oferujemy kompleksowe
+              usługi, takie jak pranie i czyszczenie tapicerki samochodowej,
+              czyszczenie, impregnację i renowację skór, ręczne mycie pojazdów,
+              a także zabezpieczanie karoserii woskiem lub powłoką ceramiczną.
+              Dodatkowo zajmujemy się korektą lakieru i aplikacją bezbarwnej
+              folii ochronnej PPF, która zapewnia długotrwałą ochronę
+              powierzchni lakierniczej. Nasza oferta to najwyższa jakość usług
+              dla osób, które cenią sobie perfekcyjny wygląd i trwałość swojego
+              pojazdu.
             </motion.p>
             <motion.p
               initial="hidden"
@@ -58,7 +60,7 @@ const AboutCompany = () => {
             >
               „KabeTint&Leather” obsługuje zarówno klientów indywidualnych, jak
               i firmy, oferując wysokiej klasy detergenty oraz preparaty
-              bezpieczne dla ludzi i zwierząt. Korzystamy z zaawansowanego
+              bezpieczne dla ludzi i zwierząt. Korzystam z zaawansowanego
               technicznie sprzętu, a każdemu Zleceniodawcy zapewniamy pełną
               satysfakcję z naszych usług oraz konkurencyjne ceny.
             </motion.p>

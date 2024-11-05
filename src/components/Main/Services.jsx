@@ -1,13 +1,13 @@
 import classes from "./Services.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "../../assets/image/hero2_640.jpg";
-import furnitureImage from "../../assets/image/detailing.jpg";
+import heroImage from "../../assets/image/services1.jpg";
+import furnitureImage from "../../assets/image/services3.jpg";
 import tintImage from "../../assets/image/tint_640.jpg";
 import heroImageLarge from "../../assets/image/hero2_1920.jpg";
 import furnitureImageLarge from "../../assets/image/detailing.jpg";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
-import cleanImg from "../../assets/image/clean4.png";
+import cleanImg from "../../assets/image/heroMainn.jpg";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
 
@@ -25,10 +25,10 @@ export const servicesData = [
       "Nasza usługa prania tapicerki to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
   },
   {
-    id: "renowacja-i-impregnacja-skor",
-    description: "Renowacja i Impregnacja Skór",
+    id: "renowacja-i-czyszczenie-skor",
+    description: "Renowacja i Czyszczenie Skór",
     image: heroImage,
-    largeImage: heroImageLarge,
+    largeImage: heroImage,
     largeImageWidth: 1920,
     title: "Sprawdź",
     backgroundImage: "url('../../assets/image/hero4_640.jpg')",
@@ -40,7 +40,7 @@ export const servicesData = [
     id: "autokosmetyka",
     description: "Autokosmetyka ",
     image: furnitureImage,
-    largeImage: furnitureImageLarge,
+    largeImage: furnitureImage,
     largeImageWidth: 1600,
     title: "Sprawdź",
     backgroundImage: "url('../../assets/image/furniture_640.jpg')",
@@ -72,7 +72,7 @@ const Services = () => {
             <motion.div
               key={service.id}
               className={classes.services__item}
-              variants={fadeScale(index * 0.15, 0.9)} // Dodajemy animację wyłaniającą się
+              variants={fadeScale(index * 0.15, 0.9)}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3 }}

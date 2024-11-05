@@ -1,0 +1,38 @@
+@import "../../styles/colors";
+
+.contactBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue-after-hover;
+  padding: 0.8rem;
+  gap: 1rem;
+  color: $white-smooth;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+
+  .contactButton {
+    color: $white-smooth;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    background-color: $blue-after;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($blue-after, 10%);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contactBar {
+    display: none;
+  }
+}

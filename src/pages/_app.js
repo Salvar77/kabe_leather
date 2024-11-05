@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import ContactBubble from "@/components/More/ContactBubble";
+import ContactBar from "@/components/Main/ContactBar";
 
 export default function App({ Component, pageProps }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +73,7 @@ export default function App({ Component, pageProps }) {
       />
 
       <header>
+        <ContactBar />
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
         <BurgerMenu handleOpen={toggleNav} isOpen={isOpen} />
         <Logo showLogo={showLogo} />

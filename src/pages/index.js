@@ -58,7 +58,7 @@ export default function Home() {
         heroImageMobile={heroImageMobile}
         heroImageDesktop={heroImageDesktop}
         title="Kabe Tint&Leather Auto Detailing"
-        description="Kabe Tint&Leather Auto Detailing"
+        description="Kompleksowe czyszczenie samochodu"
         showTechnology={true}
         showButton={true}
         height="100vh"

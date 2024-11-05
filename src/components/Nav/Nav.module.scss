@@ -10,14 +10,13 @@
   transition: transform 0.4s ease-in-out;
 
   &__show {
-    top: 8.6rem;
+    top: 15rem;
     transform: translateX(0);
     border-top-left-radius: 0.6rem;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     padding: 2rem;
-
     z-index: 100;
     background-color: rgba($white-smooth, 0.9);
     font-weight: bold;
@@ -98,7 +97,7 @@
 
   &:hover::after,
   &.activeLink::after {
-    transform: scaleX(1) !important;
+    transform: scaleX(1);
   }
 }
 

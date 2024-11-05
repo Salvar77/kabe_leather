@@ -76,7 +76,7 @@ const ContactMain = () => {
           </li>
           <li>
             <a
-              href="https://www.tiktok.com/@kabe_tintleather"
+              href="https://www.tiktok.com/@kabetintleather"
               target="_blank"
               rel="noopener noreferrer"
               className="fab fa-tiktok"

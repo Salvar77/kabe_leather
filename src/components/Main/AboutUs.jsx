@@ -46,7 +46,7 @@ const AboutUs = () => {
             </li>
             <li>
               <FontAwesomeIcon icon={faDog} className={classes.icon} /> Usuwanie
-              zapachów po zwierzętach
+              zapachów
             </li>
             <li>
               <FontAwesomeIcon icon={faTools} className={classes.icon} />{" "}
@@ -71,6 +71,14 @@ const AboutUs = () => {
             <li>
               <FontAwesomeIcon icon={faWind} className={classes.icon} />{" "}
               Ozonowanie
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faWind} className={classes.icon} /> Korekty
+              lakieru
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faWind} className={classes.icon} /> Folia
+              PPF
             </li>
           </ul>
         </ul>

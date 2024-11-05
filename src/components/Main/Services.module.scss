@@ -71,6 +71,11 @@
       background: inherit;
       z-index: 1;
     }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__content {
