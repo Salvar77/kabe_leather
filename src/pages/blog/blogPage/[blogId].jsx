@@ -10,15 +10,16 @@ const BlogPost = ({ pageContent }) => {
 
   return (
     <div className={classes.blogPost}>
-      <div className={classes.blogPost__image}>
-        {pageContent.dynamicImage && (
+      {/* Render dynamicImage podobnie jak inne obrazy */}
+      {pageContent.dynamicImage && (
+        <div className={classes.blogPost__image}>
           <Image
             src={pageContent.dynamicImage}
             alt="Dynamiczne zdjęcie główne bloga"
             objectFit="cover"
           />
-        )}
-      </div>
+        </div>
+      )}
 
       <div className={classes.blogPost__box}>
         <h1>{pageContent.title}</h1>
@@ -72,13 +73,8 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  // Upewnienie się, że `dynamicImage` jest ustawione, nawet jeśli jest `undefined`
+  // Upewnienie się, że `dynamicImage` zawsze istnieje, nawet jeśli jest `undefined`
   pageContent.dynamicImage = pageContent.dynamicImage || null;
-
-  // Zamiana `undefined` w `images` na `null`
-  if (pageContent.images) {
-    pageContent.images = pageContent.images.map((image) => image ?? null);
-  }
 
   return {
     props: {
