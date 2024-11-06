@@ -6,11 +6,13 @@ import Image from "next/image";
 
 const BlogPost = ({ pageContent }) => {
   const router = useRouter();
-  const { blogId } = router.query;
+
+  if (!pageContent) {
+    return <p>Ładowanie...</p>;
+  }
 
   return (
     <div className={classes.blogPost}>
-      {/* Render dynamicImage podobnie jak inne obrazy */}
       {pageContent.dynamicImage && (
         <div className={classes.blogPost__image}>
           <Image
@@ -60,21 +62,23 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: "blocking",
   };
 }
 
 export async function getStaticProps({ params }) {
-  const pageContent = pagesContent[params.blogId];
+  const pageContent = pagesContent[params.blogId] || null;
+
+  // Zabezpieczenie dynamicImage, aby nie było undefined
+  if (pageContent && !pageContent.dynamicImage) {
+    pageContent.dynamicImage = null;
+  }
 
   if (!pageContent) {
     return {
       notFound: true,
     };
   }
-
-  // Upewnienie się, że `dynamicImage` zawsze istnieje, nawet jeśli jest `undefined`
-  pageContent.dynamicImage = pageContent.dynamicImage || null;
 
   return {
     props: {
