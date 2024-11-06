@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { pagesContent } from "../../../../constants";
-
 import Link from "next/link";
 import classes from "./BlogPage.module.scss";
 import Image from "next/image";
@@ -12,14 +11,13 @@ const BlogPost = ({ pageContent }) => {
   return (
     <div className={classes.blogPost}>
       <div className={classes.blogPost__image}>
-        {[pageContent.dynamicImage].map((image, index) => (
+        {pageContent.dynamicImage && (
           <Image
-            key={index}
-            src={image}
+            src={pageContent.dynamicImage}
             alt="Dynamiczne zdjęcie główne bloga"
             objectFit="cover"
           />
-        ))}
+        )}
       </div>
 
       <div className={classes.blogPost__box}>
@@ -65,7 +63,6 @@ export async function getStaticPaths() {
   };
 }
 
-// Pobieranie danych na podstawie `blogId`
 export async function getStaticProps({ params }) {
   const pageContent = pagesContent[params.blogId];
 
@@ -75,7 +72,6 @@ export async function getStaticProps({ params }) {
     };
   }
 
-  // Sprawdzanie `images` i zamiana `undefined` na `null`
   if (pageContent.images) {
     pageContent.images = pageContent.images.map((image) => image ?? null);
   }
