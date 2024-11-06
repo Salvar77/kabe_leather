@@ -82,7 +82,6 @@ export default function Home() {
           <ElfsightWidget />
           <Contact />
         </div>
-        <GoogleMap />
       </div>
     </>
   );

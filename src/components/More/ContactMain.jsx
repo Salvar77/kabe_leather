@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/image/kabelogo_transparent2.png";
+import Logo from "../../assets/image/kabelogo_transparent2-1.png";
 import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";

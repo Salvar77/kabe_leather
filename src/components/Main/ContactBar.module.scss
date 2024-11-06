@@ -15,6 +15,7 @@
   color: $white-smooth;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1100;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba($dark-smooth, 0.9);
 
   .contactButton {
     color: $white-smooth;
@@ -22,12 +23,26 @@
     text-decoration: none;
     padding: 0.6rem 1.2rem;
     border-radius: 5px;
-    background-color: $blue-after;
+
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       background-color: darken($blue-after, 10%);
     }
+
+    .icon {
+      margin-right: 0.5rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .separator {
+    width: 1px;
+    height: 50%;
+    background-color: $white-smooth;
   }
 }
 

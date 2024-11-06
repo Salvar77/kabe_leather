@@ -8,7 +8,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 
 const SectionBlog = () => {
   return (
-    <section id="blog-strona" className={classes.blog}>
+    <section id="blog" className={classes.blog}>
       <div className={classes.blog__head}>
         <h2 className={classes.blog__header}>Blog</h2>
         <p className={classes.blog__text}>
@@ -24,8 +24,7 @@ const SectionBlog = () => {
               <Image src={post.image} alt={post.title} />
             </div>
 
-            {/* Zaktualizowane linki, aby prowadziły do dynamicznych stron */}
-            <Link href={`/blog-strona/${post.link.split("/").pop()}`}>
+            <Link href={`/blog/${post.link.split("/").pop()}`}>
               <h3>{post.title}</h3>
             </Link>
 
@@ -35,7 +34,7 @@ const SectionBlog = () => {
             </span>
 
             <Link
-              href={`/blog-strona/${post.link.split("/").pop()}`}
+              href={`/blog/${post.link.split("/").pop()}`}
               className={classes.blog__readMore}
             >
               Zobacz

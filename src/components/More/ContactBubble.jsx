@@ -30,7 +30,7 @@ const ContactBubble = () => {
           />
         </svg>
         <span className={classes.text}>
-          Zadzwoń do nas :{" "}
+          Zadzwoń do mnie :{" "}
           <a href="tel:+48881325631" className={classes.phoneNumber}>
             +48 881 325 631
           </a>

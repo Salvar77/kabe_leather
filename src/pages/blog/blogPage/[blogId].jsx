@@ -1,41 +1,22 @@
 import { useRouter } from "next/router";
 import { pagesContent } from "../../../../constants";
-import { useState, useEffect } from "react";
+
 import Link from "next/link";
 import classes from "./BlogPage.module.scss";
-import blogFoto1 from "../../../assets/image/hero4_640.jpg";
-import blogFoto2 from "../../../assets/image/hero4_1920.jpg";
 import Image from "next/image";
 
 const BlogPost = ({ pageContent }) => {
   const router = useRouter();
   const { blogId } = router.query;
 
-  const [dynamicImage, setDynamicImage] = useState(blogFoto1);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 992) {
-        setDynamicImage(blogFoto2);
-      } else {
-        setDynamicImage(blogFoto1);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  if (router.isFallback || !pageContent) {
-    return <p>Post nie został znaleziony!</p>;
-  }
-
   return (
     <div className={classes.blogPost}>
       <div className={classes.blogPost__image}>
-        <Image src={dynamicImage} alt="Blog, dynamiczne zdjęcie pokazowe" />
+        <Image
+          src={pageContent.dynamicImage}
+          alt="Dynamiczne zdjęcie główne bloga"
+          objectFit="cover"
+        />
       </div>
 
       <div className={classes.blogPost__box}>
@@ -70,7 +51,6 @@ const BlogPost = ({ pageContent }) => {
   );
 };
 
-// Generowanie dynamicznych ścieżek na podstawie `pagesContent`
 export async function getStaticPaths() {
   const paths = Object.keys(pagesContent).map((key) => ({
     params: { blogId: key },
@@ -90,6 +70,11 @@ export async function getStaticProps({ params }) {
     return {
       notFound: true,
     };
+  }
+
+  // Sprawdzanie `images` i zamiana `undefined` na `null`
+  if (pageContent.images) {
+    pageContent.images = pageContent.images.map((image) => image ?? null);
   }
 
   return {

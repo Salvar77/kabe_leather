@@ -14,6 +14,7 @@ import {
   faSun,
   faHammer,
   faWind,
+  faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const AboutUs = () => {
@@ -31,56 +32,53 @@ const AboutUs = () => {
           Kabe Tint&Leather Auto Detailing
         </h2>
         <ul className={classes.aboutMe__list}>
-          <ul>
-            <li>
-              <FontAwesomeIcon icon={faHandSparkles} className={classes.icon} />{" "}
-              Myjnia ręczna
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faBroom} className={classes.icon} />{" "}
-              Czyszczenie wnętrza
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCouch} className={classes.icon} /> Pranie
-              tapicerki
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faDog} className={classes.icon} /> Usuwanie
-              zapachów
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faTools} className={classes.icon} />{" "}
-              Renowacja tapicerki skórzanej
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faTint} className={classes.icon} />{" "}
-              Czyszczenie i impregnacja tapicerki skórzanej
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faGem} className={classes.icon} />{" "}
-              Woskowanie
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faSun} className={classes.icon} />{" "}
-              Przyciemnianie szyb samochodowych
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faHammer} className={classes.icon} />{" "}
-              Naprawa podsufitek samochodowych
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faWind} className={classes.icon} />{" "}
-              Ozonowanie
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faWind} className={classes.icon} /> Korekty
-              lakieru
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faWind} className={classes.icon} /> Folia
-              PPF
-            </li>
-          </ul>
+          <li>
+            <FontAwesomeIcon icon={faHandSparkles} className={classes.icon} />{" "}
+            Myjnia ręczna
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faBroom} className={classes.icon} />{" "}
+            Czyszczenie wnętrza
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCouch} className={classes.icon} /> Pranie
+            tapicerki
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faDog} className={classes.icon} /> Usuwanie
+            zapachów
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faTools} className={classes.icon} />{" "}
+            Renowacja tapicerki skórzanej
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faTint} className={classes.icon} />{" "}
+            Czyszczenie i impregnacja tapicerki skórzanej
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faGem} className={classes.icon} /> Woskowanie
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faSun} className={classes.icon} />{" "}
+            Przyciemnianie szyb samochodowych
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faHammer} className={classes.icon} /> Naprawa
+            podsufitek samochodowych
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faWind} className={classes.icon} />{" "}
+            Ozonowanie
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faGem} className={classes.icon} /> Korekty
+            lakieru
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faShieldAlt} className={classes.icon} />{" "}
+            Folia PPF
+          </li>
         </ul>
 
         <div className={classes.buttonContainer}>

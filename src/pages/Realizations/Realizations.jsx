@@ -160,7 +160,7 @@ const Realizations = () => {
               <div className={classes.realizations__content}>
                 <p>{realization.description}</p>
                 <Link
-                  href={`/Realizacje/${realization.id}`}
+                  href={`/realizacje/${realization.id}`}
                   className={classes.realizations__button}
                 >
                   &#10132;

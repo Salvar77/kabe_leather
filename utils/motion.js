@@ -109,7 +109,7 @@ export const fadeScale = (delay, duration) => {
 
 export const slideRotate = (delay, duration) => {
   return {
-    hidden: { opacity: 0, y: 50, rotate: -5 }, // Startowe wartości: niska przezroczystość, przesunięcie w dół i obrót
+    hidden: { opacity: 0, y: 50, rotate: -5 },
     show: {
       opacity: 1,
       y: 0,

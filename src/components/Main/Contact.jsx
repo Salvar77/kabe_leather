@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <>
-      <section id="kontakt" className={classes.contactSection}>
+      <section id="kontakt-główna" className={classes.contactSection}>
         <div className={classes.contactInfo}>
           <h2>Kontakt</h2>
           <p>Ulica: Generała Emila Fieldorfa 12</p>

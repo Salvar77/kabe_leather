@@ -16,6 +16,28 @@ import blogMain4 from "../src/assets/image/blogPhoto5.jpg";
 import blogMain5 from "../src/assets/image/blogPhoto4.jpg";
 import blogMain6 from "../src/assets/image/autocosmetic1.jpg";
 
+import blogFotoMain from "../src/assets/image/blogFotoMain1.jpg";
+import blogFotoMain2 from "../src/assets/image/blogFotoMain2.jpg";
+import blogFotoMain3 from "../src/assets/image/blogFotoMain3.jpg";
+import blogFotoMain31 from "../src/assets/image/blogFotoMain3-1.jpg";
+import blogFotoMain4 from "../src/assets/image/blogFotoMain4.jpg";
+import blogFotoMain41 from "../src/assets/image/blogFotoMain4-1.jpg";
+import blogFotoMain42 from "../src/assets/image/blogFotoMain4-2.jpg";
+import blogFotoMain5 from "../src/assets/image/tint_1920.jpg";
+
+import blogFoto1 from "../src/assets/image/blogFoto1.jpg";
+import blogFoto2 from "../src/assets/image/blogFoto2.jpg";
+import blogFoto3 from "../src/assets/image/blogFoto3.jpg";
+import blogFoto4 from "../src/assets/image/blogFoto4.jpg";
+import blogFoto5 from "../src/assets/image/blogFoto5.jpg";
+import blogFoto6 from "../src/assets/image/blogFoto6.jpg";
+import blogFoto7 from "../src/assets/image/blogFoto7.jpg";
+import blogFoto8 from "../src/assets/image/blogFoto8.jpg";
+import blogFoto9 from "../src/assets/image/blogFoto9.jpg";
+import blogFoto10 from "../src/assets/image/blogFoto10.jpg";
+import blogFoto11 from "../src/assets/image/blogFoto11.jpg";
+import blogFoto12 from "../src/assets/image/detalShot3.jpg";
+
 import referencyPhoto1 from "../src/assets/image/detalShot.jpg";
 import referencyPhoto2 from "../src/assets/image/detalShot1.jpg";
 import referencyPhoto3 from "../src/assets/image/detalShot3.jpg";
@@ -40,4 +62,24 @@ export {
   referencyPhoto1,
   referencyPhoto2,
   referencyPhoto3,
+  blogFotoMain,
+  blogFotoMain2,
+  blogFotoMain3,
+  blogFotoMain31,
+  blogFotoMain4,
+  blogFotoMain41,
+  blogFotoMain42,
+  blogFotoMain5,
+  blogFoto1,
+  blogFoto2,
+  blogFoto3,
+  blogFoto4,
+  blogFoto5,
+  blogFoto6,
+  blogFoto7,
+  blogFoto8,
+  blogFoto9,
+  blogFoto10,
+  blogFoto11,
+  blogFoto12,
 };

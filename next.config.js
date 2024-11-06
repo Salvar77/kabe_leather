@@ -22,11 +22,11 @@ const nextConfig = {
         destination: "/Realizations/RealizationsPage/:slug*",
       },
       {
-        source: "/kontakt-strona",
+        source: "/kontakt",
         destination: "/kontakt/ContactSide",
       },
       {
-        source: "/blog-strona",
+        source: "/blog",
         destination: "/blog/SectionBlog",
       },
       {
@@ -34,7 +34,7 @@ const nextConfig = {
         destination: "/referencje/Referency",
       },
       {
-        source: "/blog-strona/:slug",
+        source: "/blog/:slug",
         destination: "/blog/blogPage/:slug",
       },
       {

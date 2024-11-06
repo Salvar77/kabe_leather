@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import { motion } from "framer-motion";
 import classes from "./Hero.module.scss";
-import { slideRotate, blurUp, staggerContainer } from "../../../utils/motion";
 
 const Hero = ({
   heroImageMobile,
@@ -21,37 +19,15 @@ const Hero = ({
   return (
     <div>
       <section id="hero" className={classes.hero} style={{ height }}>
-        <motion.div
-          className={classes.textOverlay}
-          variants={staggerContainer(0.2, 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          whileInView="show"
-          viewport={{ once: false }}
-        >
-          <motion.h1
-            className={classes.hero__title}
-            variants={slideRotate(0.2, 1)}
-          >
-            {title}
-          </motion.h1>
-          <motion.p
-            className={classes.hero__description}
-            variants={blurUp(0.3, 1)}
-          >
-            {description}
-          </motion.p>
+        <div className={classes.textOverlay}>
+          <h1 className={classes.hero__title}>{title}</h1>
+          <p className={classes.hero__description}>{description}</p>
           {showButton && (
-            <motion.a
-              href="#galeria"
-              className={classes.button}
-              variants={blurUp(0.4, 1)}
-            >
+            <a href="#galeria" className={classes.button}>
               Realizacje
-            </motion.a>
+            </a>
           )}
-        </motion.div>
+        </div>
         <div
           className={classes.whiteBlockWrapper}
           style={{ backgroundColor: whiteBlockColor }}

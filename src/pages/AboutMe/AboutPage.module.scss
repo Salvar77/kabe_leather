@@ -1,25 +1,64 @@
 @import "../../styles/colors";
 
+.backgroundAbout {
+  background: linear-gradient(
+    125deg,
+    $blue-after,
+    $white-smooth,
+    $white-smooth
+  );
+}
+
 .aboutMe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: $dark-smooth;
-  height: 100vh;
   padding-top: 10rem;
   max-width: 1100px;
   margin: 0 auto;
+  color: $dark-smooth;
+  text-shadow: 0.05rem 0.05rem 0.1rem rgba($dark-smooth, 0.1);
 
   &__grid {
     display: grid;
     gap: 2rem;
     width: 100%;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
   }
 
-  &__highlightText {
-    font-weight: bold;
-    color: $blue-after;
-    text-shadow: 0.1rem 0.1rem 0.2rem rgba($dark-smooth, 0.2);
+  .highlight {
+    color: $blue-main;
+  }
+
+  &__header {
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    // grid-column: span 2;
+  }
+
+  &__content {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0.1rem 0.1rem 0.1rem $blue-after;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    @media (min-width: 992px) {
+      font-size: 2rem;
+      text-align: left;
+    }
   }
 
   &__box {
@@ -31,112 +70,30 @@
     img {
       max-width: 100%;
       border-radius: 1rem;
-      height: 100%;
+      height: auto;
       box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
     }
   }
-
-  &__header {
-    padding: 1rem;
-    text-align: center;
-    text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
-  }
-
-  &__text {
-    font-size: 1.8rem;
-    margin: 2rem;
-    padding: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.9);
-    text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.15);
-    border: 2px solid rgba($dark-smooth, 0.1);
-    border-radius: 2rem;
-    text-align: center;
-  }
-
-  &__content {
-    padding: 0.5rem;
-  }
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-
-  padding: 2rem;
 }
 
 .realizationButton {
+  display: block;
   padding: 1rem 2rem;
   background-color: $blue-after;
   color: $white-smooth;
   text-decoration: none;
-  flex-direction: column;
   border-radius: 0.4rem;
-  margin-top: -1rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-weight: bold;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: darken($blue-main, 10%);
-    text-decoration: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .aboutMe {
-    &__header {
-      font-size: 3.4rem;
-    }
-
-    &__text {
-      font-size: 2.4rem;
-    }
+    background-color: darken($blue-after, 10%);
   }
 
-  .realizationButton {
+  @media (min-width: 992px) {
+    margin-top: 1rem;
     font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .aboutMe {
-    flex-direction: column;
-    padding-top: 20rem;
-
-    &__grid {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-
-    &__header {
-      font-size: 3rem;
-      grid-column: span 2;
-      text-align: center;
-    }
-
-    &__box {
-      img {
-        box-shadow: 0.3rem 0.4rem 0.8rem 0.44rem rgba(232, 232, 235, 0.1);
-        max-width: 100%;
-      }
-    }
-
-    &__text {
-      font-size: 2.4rem;
-    }
-
-    .buttonContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      grid-column: span 2;
-    }
-  }
-
-  .realizationButton {
-    font-size: 2.2rem;
-    margin-top: 0;
   }
 }

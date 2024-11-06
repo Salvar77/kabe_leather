@@ -4,10 +4,9 @@ import Image from "next/image";
 import heroImage from "../../assets/image/services1.jpg";
 import furnitureImage from "../../assets/image/services3.jpg";
 import tintImage from "../../assets/image/tint_640.jpg";
-import heroImageLarge from "../../assets/image/hero2_1920.jpg";
-import furnitureImageLarge from "../../assets/image/detailing.jpg";
+
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
-import cleanImg from "../../assets/image/heroMainn.jpg";
+import cleanImg from "../../assets/image/heroMain.jpg";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
 

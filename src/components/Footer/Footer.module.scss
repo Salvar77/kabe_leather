@@ -3,6 +3,7 @@
 .footer {
   background-color: $blue-after-hover;
   color: $white-smooth;
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
 
   &__text {
     display: flex;

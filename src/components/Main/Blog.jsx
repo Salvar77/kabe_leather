@@ -3,18 +3,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./Blog.module.scss";
-import { blogPosts } from "../../../constants"; // Import dynamicznych postów blogowych
+import { blogPosts } from "../../../constants";
 
 const Blog = () => {
   return (
-    <section id="blog" className={classes.blog}>
+    <section id="blog-główna" className={classes.blog}>
       <h2 className={classes.blog__header}>Odkryj więcej</h2>
       <div className={classes.blog__box}>
         {blogPosts.map((post) => (
           <div key={post.id} className={classes.blog__boxItem}>
             <div className={classes.blog__image}>
               <Image
-                src={post.image} // Dynamiczne zdjęcie z blogPosts
+                src={post.image}
                 alt={post.title}
                 width={500}
                 height={300}

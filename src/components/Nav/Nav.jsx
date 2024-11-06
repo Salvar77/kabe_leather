@@ -20,12 +20,12 @@ const Nav = ({ isOpen, toggleNav }) => {
         <div className={classes.nav__items}>
           <ul className={classes.menu}>
             {[
-              { href: "/o-mnie", label: "O nas" },
+              { href: "/o-mnie", label: "O mnie" },
               { href: "/realizacje", label: "Realizacje" },
-              { href: "/blog-strona", label: "Blog" },
+              { href: "/blog", label: "Blog" },
               { href: "/referencje", label: "Referencje" },
               { href: "/cennik", label: "Cennik" },
-              { href: "/kontakt-strona", label: "Kontakt" },
+              { href: "/kontakt", label: "Kontakt" },
             ].map((item) => (
               <li
                 key={item.href}
