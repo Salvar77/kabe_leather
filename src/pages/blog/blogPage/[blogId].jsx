@@ -12,11 +12,14 @@ const BlogPost = ({ pageContent }) => {
   return (
     <div className={classes.blogPost}>
       <div className={classes.blogPost__image}>
-        <Image
-          src={pageContent.dynamicImage}
-          alt="Dynamiczne zdjęcie główne bloga"
-          objectFit="cover"
-        />
+        {[pageContent.dynamicImage].map((image, index) => (
+          <Image
+            key={index}
+            src={image}
+            alt="Dynamiczne zdjęcie główne bloga"
+            objectFit="cover"
+          />
+        ))}
       </div>
 
       <div className={classes.blogPost__box}>
