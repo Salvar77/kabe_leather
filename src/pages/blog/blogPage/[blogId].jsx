@@ -72,6 +72,10 @@ export async function getStaticProps({ params }) {
     };
   }
 
+  // Upewnienie się, że `dynamicImage` jest ustawione, nawet jeśli jest `undefined`
+  pageContent.dynamicImage = pageContent.dynamicImage || null;
+
+  // Zamiana `undefined` w `images` na `null`
   if (pageContent.images) {
     pageContent.images = pageContent.images.map((image) => image ?? null);
   }
