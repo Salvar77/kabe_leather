@@ -6,57 +6,102 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://www.kabetintleather.pl/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/O-Mnie</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/o-mnie</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/pranie-tapicerki</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/uslugi/pranie-tapicerki</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.99</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/renowacja-tapicerki-skorzanej</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/uslugi/renowacja-tapicerki-skorzanej</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/autokosmetyka</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/uslugi/autokosmetyka</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/przyciemnianie-szyb</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/uslugi/przyciemnianie-szyb</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/Realizacje</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/realizacje</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/Realizacje/pranie-tapicerki</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/realizacje/pranie-tapicerki</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.99</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/Realizacje/renowacje-skor</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/realizacje/renowacja-i-czyszczenie-skor</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/Realizacje/autokosmetyka</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/realizacje/autokosmetyka</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.kabetintleather.pl/Realizacje/przyciemnianie-szyb</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <loc>https://www.kabetintleather.pl/realizacje/przyciemnianie-szyb</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/blog</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/blog/jak-zapobiec-plamom-na-tapicerce-samochodowej</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/blog/jak-wyczyscic-tapicerke-samochodowa</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/blog/jak-dbac-o-skorzana-tapicerke-samochodowa</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/blog/uzywamy-profesjonalnych-produktow</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/blog/jak-przyciemnic-szyby-samochodowe</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/referencje</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/cennik</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.kabetintleather.pl/kontakt</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <priority>0.75</priority>
   </url>
 </urlset>

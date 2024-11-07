@@ -8,7 +8,8 @@ import SEO from "@/components/Main/SEO";
 export async function getServerSideProps(context) {
   const automotiveId = context.params.automotiveId;
   const automotive =
-    servicesData.find((service) => service.id === automotiveId) || null;
+    servicesData.find((service) => service.id === `uslugi/${automotiveId}`) ||
+    null;
 
   const isMobile = context.req.headers["user-agent"]
     .toLowerCase()
@@ -48,16 +49,16 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             )}
           </div>
           <div className={classes.textWrapper}>
-            {automotive.id === "renowacja-i-czyszczenie-skor" && (
+            {automotive.id === "uslugi/renowacja-i-czyszczenie-skor" && (
               <ContentUpholstery automotive={automotive} />
             )}
-            {automotive.id === "przyciemnianie-szyb" && (
+            {automotive.id === "uslugi/przyciemnianie-szyb" && (
               <ContentTinting automotive={automotive} />
             )}
-            {automotive.id === "pranie-tapicerki" && (
+            {automotive.id === "uslugi/pranie-tapicerki" && (
               <ContentCleaning automotive={automotive} />
             )}
-            {automotive.id === "autokosmetyka" && (
+            {automotive.id === "uslugi/autokosmetyka" && (
               <ContentCosmetic automotive={automotive} />
             )}
           </div>

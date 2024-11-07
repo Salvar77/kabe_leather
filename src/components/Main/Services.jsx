@@ -12,7 +12,7 @@ import { fadeScale } from "../../../utils/motion";
 
 export const servicesData = [
   {
-    id: "pranie-tapicerki",
+    id: "uslugi/pranie-tapicerki",
     description: "Pranie Tapicerki",
     image: cleanImg,
     largeImage: cleanImg,
@@ -24,7 +24,7 @@ export const servicesData = [
       "Nasza usługa prania tapicerki to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
   },
   {
-    id: "renowacja-i-czyszczenie-skor",
+    id: "uslugi/renowacja-i-czyszczenie-skor",
     description: "Renowacja i Czyszczenie Skór",
     image: heroImage,
     largeImage: heroImage,
@@ -36,7 +36,7 @@ export const servicesData = [
       "Nasza usługa renowacji skór to idealne rozwiązanie dla tych, którzy pragną odświeżyć wygląd i przedłużyć żywotność swoich mebli lub wnętrza samochodowego. Dzięki naszym zaawansowanym technikom oraz wysokiej jakości materiałom, Twoja tapicerka odzyska pierwotny wygląd i funkcjonalność.",
   },
   {
-    id: "autokosmetyka",
+    id: "uslugi/autokosmetyka",
     description: "Autokosmetyka ",
     image: furnitureImage,
     largeImage: furnitureImage,
@@ -48,7 +48,7 @@ export const servicesData = [
       "Nasza usługa autokosmetyki to pełne zadbanie o wygląd i stan Twojego auta, zarówno wewnątrz, jak i na zewnątrz. Dzięki naszym profesjonalnym usługom, Twój samochód odzyska świeżość, elegancję i doskonały wygląd, jak nowy.",
   },
   {
-    id: "przyciemnianie-szyb",
+    id: "uslugi/przyciemnianie-szyb",
     description: "Przyciemnianie Szyb",
     image: tintImage,
     largeImage: tintImageLarge,

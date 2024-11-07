@@ -38,7 +38,7 @@ const nextConfig = {
         destination: "/blog/blogPage/:slug",
       },
       {
-        source: "/:id",
+        source: "/uslugi/:id",
         destination: "/AutomotiveUpholstery/:id",
       },
     ];
