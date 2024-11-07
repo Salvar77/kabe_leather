@@ -11,7 +11,7 @@ const ContactBar = () => {
         </a>
         <div className={classes.separator}></div>
         <a
-          href="https://wa.me/881325631"
+          href="https://wa.me/48881325631"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.contactButton}
