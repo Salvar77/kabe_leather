@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import classes from "./Logo.module.scss";
-import logoMain from "../../assets/image/kabelogo_transparent.png";
-import logoSubpage from "../../assets/image/kabelogowhite_transparent.png";
+import logoMain from "../../assets/image/150x150white.png";
+import logoSubpage from "../../assets/image/150x150black.png";
 import Link from "next/link";
 
 const ALT_TEXT =

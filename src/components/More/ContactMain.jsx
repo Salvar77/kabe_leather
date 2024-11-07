@@ -43,7 +43,7 @@ const ContactMain = () => {
               <Link href="/cennik">Cennik</Link>
             </li>
             <li>
-              <Link href="/kontakt-strona">Kontakt</Link>
+              <Link href="/kontakt">Kontakt</Link>
             </li>
           </ul>
         </nav>
@@ -56,7 +56,7 @@ const ContactMain = () => {
             <Link href="/polityka-prywatnosci">Polityka Prywatności</Link>
           </li>
           <li>
-            <Link href="/blog-strona">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </li>
           <li>
             <a
