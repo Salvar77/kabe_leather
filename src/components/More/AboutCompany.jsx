@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import firmPhoto from "../../assets/image/clean4.png";
+import firmPhoto from "../../assets/image/blogFotoMain4-2.jpg";
 import classes from "./AboutCompany.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../utils/motion";

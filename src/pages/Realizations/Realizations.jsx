@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import classes from "./Realizations.module.scss";
-import photoRealizations from "../../assets/image/hero2_640.jpg";
-import photoRealizations2 from "../../assets/image/detailing.jpg";
+import photoRealizations from "../../assets/image/blogFotoMain3-1.jpg";
+import photoRealizations2 from "../../assets/image/blogFoto11.jpg";
 import photoRealizations3 from "../../assets/image/tint_640.jpg";
 // import photoDetailing from "../../assets/image/detailing.jpg";
 // import photoDetailing1 from "../../assets/image/detailing1.jpg";
@@ -23,7 +23,7 @@ import photoAutoscmetic2 from "../../assets/image/autocosmetic2.jpg";
 import photoAutoscmetic3 from "../../assets/image/autocosmetic.png";
 import photoAutoscmetic4 from "../../assets/image/autocosmetic5.jpg";
 import photoAutoscmetic5 from "../../assets/image/blogPhoto3.jpg";
-import photoClean from "../../assets/image/clean4.png";
+import photoClean from "../../assets/image/hero_main.jpg";
 import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
@@ -57,8 +57,8 @@ export const realizationsData = [
     // ],
   },
   {
-    id: "renowacja-i-impregnacja-skor",
-    description: "Renowacja Skór",
+    id: "renowacja-i-czyszczenie-skor",
+    description: "Renowacja i Czyszczenie Skór",
     images: [
       photoLeathers1,
       photoLeathers2,
@@ -89,7 +89,7 @@ export const realizationsData = [
       photoAutoscmetic5,
     ],
     image: photoRealizations2,
-    largeImage: photoRealizations3,
+    largeImage: photoRealizations2,
     largeImageWidth: 1920,
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",

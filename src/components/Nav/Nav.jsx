@@ -14,9 +14,9 @@ const Nav = ({ isOpen, toggleNav }) => {
   }, []);
 
   const handleLinkClick = () => {
-    setShouldTransition(false); // Wyłączenie przejścia
-    toggleNav(); // Zamknięcie menu
-    setTimeout(() => setShouldTransition(true), 500); // Przywrócenie przejścia dla następnych otwarć
+    setShouldTransition(false);
+    toggleNav();
+    setTimeout(() => setShouldTransition(true), 500);
   };
 
   const navClasses = `${classes.nav} ${
