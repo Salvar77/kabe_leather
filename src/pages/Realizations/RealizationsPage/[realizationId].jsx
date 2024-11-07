@@ -4,6 +4,7 @@ import Image from "next/image";
 import classes from "./RealizationsPage.module.scss";
 import { realizationsData } from "../Realizations";
 import Link from "next/link";
+import SEO from "@/components/Main/SEO";
 
 const RealizationDetail = ({ realization }) => {
   if (!realization) return <p>Nie został znaleziony</p>;
@@ -15,7 +16,9 @@ const RealizationDetail = ({ realization }) => {
           <div key={index} className={classes.realizationDetail__imageWrapper}>
             <Image
               src={image}
-              alt={`${realization.description} ${index + 1}`}
+              alt={`${realization.description} - ${
+                index + 1
+              } - pranie tapicerki, czyszczenie samochodu, przyciemnianie szyb`}
             />
           </div>
         ))}
@@ -24,21 +27,35 @@ const RealizationDetail = ({ realization }) => {
   };
 
   return (
-    <section id="realizacje" className={classes.realizationDetail}>
-      <h1 className={classes.realizationDetail__header}>
-        {realization.description}
-      </h1>
-      <div className={classes.realizationDetail__box}>{renderContent()}</div>
-      <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}
-      >
-        <Link href="/realizacje">
-          <button className={classes.resetButton}>
-            Powrót do wyboru kategorii
-          </button>
-        </Link>
-      </div>
-    </section>
+    <div>
+      <SEO
+        title={`${realization.description} - Realizacja Kabe Tint&Leather`}
+        description={`Zobacz szczegóły realizacji: ${realization.description}. Profesjonalne usługi w Kabe Tint&Leather Auto Detailing.`}
+        image={
+          realization.largeImage ||
+          "https://www.kabetintleather.pl/autocosmetic.png"
+        }
+      />
+      <section id="realizacje" className={classes.realizationDetail}>
+        <h1 className={classes.realizationDetail__header}>
+          {realization.description}
+        </h1>
+        <div className={classes.realizationDetail__box}>{renderContent()}</div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          <Link href="/realizacje">
+            <button className={classes.resetButton}>
+              Powrót do wyboru kategorii
+            </button>
+          </Link>
+        </div>
+      </section>
+    </div>
   );
 };
 

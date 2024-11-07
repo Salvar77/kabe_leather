@@ -15,17 +15,17 @@ const Blog = () => {
             <div className={classes.blog__image}>
               <Image
                 src={post.image}
-                alt={post.title}
+                alt={`${post.title} - pranie tapicerki, czyszczenie samochodu, czyszczenie tapicerki`}
                 width={500}
                 height={300}
               />
             </div>
 
-            <Link href={`/blog-strona/${post.link.split("/").pop()}`}>
+            <Link href={`/blog/${post.link.split("/").pop()}`}>
               <p className={classes.blog__subtitle}>{post.subtitle}</p>
             </Link>
 
-            <Link href={`/blog-strona/${post.link.split("/").pop()}`}>
+            <Link href={`/blog/${post.link.split("/").pop()}`}>
               <h3>{post.title}</h3>
             </Link>
 
@@ -34,7 +34,7 @@ const Blog = () => {
             </span>
             <p>{post.description}</p>
             <Link
-              href={`/blog-strona/${post.link.split("/").pop()}`}
+              href={`/blog/${post.link.split("/").pop()}`}
               className={classes.blog__readMore}
             >
               Czytaj Więcej
@@ -42,7 +42,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <Link href="/blog-strona" className={classes.readMoreLink}>
+      <Link href="/blog" className={classes.readMoreLink}>
         Przeczytaj więcej na blogu
       </Link>
     </section>

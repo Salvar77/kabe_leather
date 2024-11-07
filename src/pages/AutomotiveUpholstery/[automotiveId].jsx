@@ -3,6 +3,7 @@ import { servicesData } from "../../components/Main/Services";
 import classes from "./AutomotiveUpholstery.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import SEO from "@/components/Main/SEO";
 
 export async function getServerSideProps(context) {
   const automotiveId = context.params.automotiveId;
@@ -28,39 +29,50 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
   if (!automotive) return <p>Usługa nie została znaleziona.</p>;
 
   return (
-    <section id="tapicerka1" className={classes.automotivePage}>
-      <h2>{automotive.description}</h2>
-      <div className={classes.automotivePage__grid}>
-        <div className={classes.imageWrapper}>
-          {currentImage && (
-            <Image src={currentImage} alt="Obraz przedstawiający tapicerkę" />
-          )}
+    <div>
+      <SEO
+        title={`${automotive.title} - Kabe Tint&Leather Auto Detailing w Opolu`}
+        description={`Profesjonalne usługi ${automotive.title.toLowerCase()} w Opolu. Oferujemy ${automotive.title.toLowerCase()} z najwyższą dbałością o każdy detal.`}
+        image={currentImage || "https://www.kabetintleather.pl/kabelogooo.webp"}
+      />
+      <section id="tapicerka1" className={classes.automotivePage}>
+        <h2>{automotive.description}</h2>
+        <div className={classes.automotivePage__grid}>
+          <div className={classes.imageWrapper}>
+            {currentImage && (
+              <Image
+                src={currentImage}
+                alt={`Zdjęcie przedstawiające ${automotive.title.toLowerCase()} - profesjonalne ${automotive.title.toLowerCase()} w Opolu`}
+                className={classes.automotivePage__img}
+              />
+            )}
+          </div>
+          <div className={classes.textWrapper}>
+            {automotive.id === "renowacja-i-czyszczenie-skor" && (
+              <ContentUpholstery automotive={automotive} />
+            )}
+            {automotive.id === "przyciemnianie-szyb" && (
+              <ContentTinting automotive={automotive} />
+            )}
+            {automotive.id === "pranie-tapicerki" && (
+              <ContentCleaning automotive={automotive} />
+            )}
+            {automotive.id === "autokosmetyka" && (
+              <ContentCosmetic automotive={automotive} />
+            )}
+          </div>
         </div>
-        <div className={classes.textWrapper}>
-          {automotive.id === "renowacja-i-czyszczenie-skor" && (
-            <ContentUpholstery automotive={automotive} />
-          )}
-          {automotive.id === "przyciemnianie-szyb" && (
-            <ContentTinting automotive={automotive} />
-          )}
-          {automotive.id === "pranie-tapicerki" && (
-            <ContentCleaning automotive={automotive} />
-          )}
-          {automotive.id === "autokosmetyka" && (
-            <ContentCosmetic automotive={automotive} />
-          )}
+        <div className={classes.buttonContainer}>
+          <Link
+            href={`/Realizacje/${automotive.id}`}
+            className={classes.appointmentLink}
+            aria-label="Zobacz nasze realizacje"
+          >
+            Zobacz realizacje
+          </Link>
         </div>
-      </div>
-      <div className={classes.buttonContainer}>
-        <Link
-          href={`/Realizacje/${automotive.id}`}
-          className={classes.appointmentLink}
-          aria-label="Umów się na wizytę"
-        >
-          Zobacz realizacje
-        </Link>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

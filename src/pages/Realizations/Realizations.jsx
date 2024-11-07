@@ -38,6 +38,7 @@ import photoCleaning4 from "../../assets/image/cleaning4.jpg";
 // import mercedes1 from "../../assets/image/merc1.jpg";
 // import bmw1 from "../../assets/image/bmw1.jpg";
 // import audi1 from "../../assets/image/audi1.jpg";
+import SEO from "@/components/Main/SEO";
 
 export const realizationsData = [
   {
@@ -147,30 +148,40 @@ export const realizationsData = [
 
 const Realizations = () => {
   return (
-    <section id="realizacje" className={classes.realizations}>
-      <h2>Realizacje</h2>
-      <div className={classes.realizations__wrapper}>
-        {realizationsData.map((realization) => (
-          <div key={realization.id} className={classes.realizations__item}>
-            <div
-              className={classes.realizations__imageWrapper}
-              style={{ backgroundImage: realization.gradient }}
-            >
-              <Image src={realization.image} alt={realization.description} />
-              <div className={classes.realizations__content}>
-                <p>{realization.description}</p>
-                <Link
-                  href={`/realizacje/${realization.id}`}
-                  className={classes.realizations__button}
-                >
-                  &#10132;
-                </Link>
+    <>
+      <SEO
+        title="Nasze Realizacje - Kabe Tint&Leather Auto Detailing"
+        description="Zobacz nasze przykładowe realizacje w Kabe Tint&Leather Auto Detailing. Profesjonalne pranie tapicerki, renowacja skóry, autokosmetyka i przyciemnianie szyb."
+        image="https://www.kabetintleather.pl/autocosmetic.png"
+      />
+      <section id="realizacje" className={classes.realizations}>
+        <h2>Realizacje</h2>
+        <div className={classes.realizations__wrapper}>
+          {realizationsData.map((realization) => (
+            <div key={realization.id} className={classes.realizations__item}>
+              <div
+                className={classes.realizations__imageWrapper}
+                style={{ backgroundImage: realization.gradient }}
+              >
+                <Image
+                  src={realization.image}
+                  alt={`Realizacja - ${realization.description} - profesjonalne pranie tapicerki, czyszczenie samochodu, przyciemnianie szyb`}
+                />
+                <div className={classes.realizations__content}>
+                  <p>{realization.description}</p>
+                  <Link
+                    href={`/realizacje/${realization.id}`}
+                    className={classes.realizations__button}
+                  >
+                    &#10132;
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -33,7 +33,7 @@ const Slider = ({ beforeImage, afterImage }) => {
     top: 0,
     bottom: 0,
     left: `${sliderPosition}%`,
-    width: 0, // Możesz dostosować szerokość linii, jeśli potrzebujesz
+    width: 0,
     borderRight: "2px solid black",
   };
 

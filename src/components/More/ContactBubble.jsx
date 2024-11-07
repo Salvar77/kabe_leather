@@ -16,7 +16,6 @@ const ContactBubble = () => {
       onMouseLeave={() => setIsExpanded(false)}
     >
       <div className={classes.bubbleContent}>
-        {/* Wstawienie białej ikony SVG */}
         <svg
           className={classes.phoneIcon}
           xmlns="http://www.w3.org/2000/svg"

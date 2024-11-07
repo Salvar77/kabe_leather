@@ -1,7 +1,7 @@
 @import "../../styles/colors";
 
 .referencySection {
-  padding-top: 10rem;
+  padding-top: 14rem;
   background: linear-gradient(
     225deg,
     $blue-after 1%,
@@ -33,6 +33,7 @@
 
 @media screen and (min-width: 992px) {
   .referencySection {
+    padding-top: 10rem;
     height: 100vh;
     h2 {
       font-size: 3rem;

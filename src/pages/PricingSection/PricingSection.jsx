@@ -2,10 +2,16 @@ import React from "react";
 import Contact from "@/components/Main/Contact";
 import styles from "./PricingSection.module.scss";
 import { services } from "../../../constants/index";
+import SEO from "@/components/Main/SEO";
 
 const PricingSection = () => {
   return (
     <>
+      <SEO
+        title="Cennik Usług - Kabe Tint&Leather Auto Detailing Opole"
+        description="Sprawdź cennik usług Kabe Tint&Leather Auto Detailing. Oferujemy pranie tapicerki, czyszczenie samochodów, przyciemnianie szyb i więcej. Skontaktuj się z nami, aby poznać szczegóły."
+        image="https://www.kabetintleather.pl/cennik2.jpg"
+      />
       <section id="cennik" className={styles.pricingSection}>
         <h2 className={styles.pricingHeader}>Cennik</h2>
         <ul className={styles.servicesList}>

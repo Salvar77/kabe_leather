@@ -21,10 +21,31 @@ const SliderSection = ({
   style,
 }) => {
   const images = [
-    { beforeImage: BeforeImage1, afterImage: AfterImage1 },
-    { beforeImage: BeforeImage4, afterImage: AfterImage4 },
-    { beforeImage: BeforeImage3, afterImage: AfterImage3 },
-    { beforeImage: BeforeImage2, afterImage: AfterImage2 },
+    {
+      beforeImage: BeforeImage1,
+      afterImage: AfterImage1,
+      altBefore: "Stan przed renowacją tapicerki - zabrudzenia przed praniem",
+      altAfter: "Stan po renowacji tapicerki - efekt czyszczenia samochodu",
+    },
+    {
+      beforeImage: BeforeImage4,
+      afterImage: AfterImage4,
+      altBefore: "Przed czyszczeniem tapicerki - widoczne plamy",
+      altAfter:
+        "Po czyszczeniu tapicerki - tapicerka samochodowa po regeneracji",
+    },
+    {
+      beforeImage: BeforeImage3,
+      afterImage: AfterImage3,
+      altBefore: "Stan przed renowacją skóry - zarysowania i zużycie",
+      altAfter: "Stan po renowacji skóry - odświeżenie wyglądu tapicerki",
+    },
+    {
+      beforeImage: BeforeImage2,
+      afterImage: AfterImage2,
+      altBefore: "Stan przed praniem tapicerki - widoczne zabrudzenia",
+      altAfter: "Stan po praniu tapicerki - efekt czyszczenia wnętrza auta",
+    },
   ];
 
   const gridClass =
@@ -44,7 +65,7 @@ const SliderSection = ({
           .map(({ beforeImage, afterImage }, index) => (
             <motion.div
               key={index}
-              variants={blurUp(index * 0.1, 0.8)} // blurUp dla efektu przesunięcia i rozmycia
+              variants={blurUp(index * 0.1, 0.8)}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3 }}

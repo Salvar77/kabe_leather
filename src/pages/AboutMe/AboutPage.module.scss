@@ -13,11 +13,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 14rem;
   max-width: 1100px;
   margin: 0 auto;
   color: $dark-smooth;
   text-shadow: 0.05rem 0.05rem 0.1rem rgba($dark-smooth, 0.1);
+
+  @media (min-width: 992px) {
+    padding-top: 9rem;
+  }
 
   &__grid {
     display: grid;
@@ -44,7 +48,7 @@
 
   &__content {
     padding: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   &__text {

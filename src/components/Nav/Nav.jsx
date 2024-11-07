@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const Nav = ({ isOpen, toggleNav }) => {
   const [isDesktop, setIsDesktop] = useState(false);
+  const [shouldTransition, setShouldTransition] = useState(true);
 
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth > 992);
@@ -12,7 +13,15 @@ const Nav = ({ isOpen, toggleNav }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const navClasses = `${classes.nav} ${isOpen ? classes.nav__show : ""}`;
+  const handleLinkClick = () => {
+    setShouldTransition(false); // Wyłączenie przejścia
+    toggleNav(); // Zamknięcie menu
+    setTimeout(() => setShouldTransition(true), 500); // Przywrócenie przejścia dla następnych otwarć
+  };
+
+  const navClasses = `${classes.nav} ${
+    isOpen ? classes.nav__show : classes.nav__instant
+  } ${shouldTransition ? classes.transition : ""}`;
 
   return (
     <nav className={navClasses}>
@@ -29,7 +38,7 @@ const Nav = ({ isOpen, toggleNav }) => {
             ].map((item) => (
               <li
                 key={item.href}
-                onClick={toggleNav}
+                onClick={handleLinkClick}
                 className={classes.nav__item}
               >
                 <Link href={item.href}>{item.label}</Link>

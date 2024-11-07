@@ -6,6 +6,9 @@ import logoMain from "../../assets/image/kabelogo_transparent.png";
 import logoSubpage from "../../assets/image/kabelogowhite_transparent.png";
 import Link from "next/link";
 
+const ALT_TEXT =
+  "Kabe Tint&Leather Auto Detailing - pranie tapicerki i czyszczenie samochodu";
+
 const Logo = ({ showLogo }) => {
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
@@ -37,7 +40,7 @@ const Logo = ({ showLogo }) => {
       <Link href="/">
         <Image
           src={isMobile && !isHomePage ? logoSubpage : logoMain}
-          alt="Kabe Tint&Leather Auto Detailing"
+          alt={ALT_TEXT}
           priority
         />
       </Link>

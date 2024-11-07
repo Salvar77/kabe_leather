@@ -20,6 +20,7 @@
     z-index: 100;
     background-color: rgba($white-smooth, 0.9);
     font-weight: bold;
+    transition: transform 0.4s ease-in-out;
 
     &:hover {
       color: $blue-after;
@@ -31,6 +32,11 @@
         opacity: 1;
       }
     }
+  }
+
+  &__instant {
+    top: 15rem;
+    transform: translateX(100%);
   }
 
   &__items {

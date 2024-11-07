@@ -23,7 +23,7 @@ const AboutUs = () => {
       <div className={classes.aboutMe__image}>
         <Image
           src={image}
-          alt="logo firmy do sekcji o nas"
+          alt="Logo firmy specjalizującej się w praniu tapicerki i czyszczeniu samochodów"
           className={classes.aboutMe__img}
         />
       </div>

@@ -28,7 +28,10 @@ const AboutCompany = () => {
               viewport={{ once: true }}
               variants={fadeIn("right", "tween", 0.5, 1)}
             >
-              <Image src={firmPhoto} alt="zdjęcie właściciela firmy Kabe" />
+              <Image
+                src={firmPhoto}
+                alt="Właściciel firmy zajmującej się praniem tapicerki i czyszczeniem samochodów"
+              />
             </motion.div>
           </div>
 
