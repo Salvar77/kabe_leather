@@ -26,7 +26,15 @@ const BlogPost = ({ pageContent }) => {
       />
       <div className={classes.blogPost}>
         {pageContent.dynamicImage && (
-          <div className={classes.blogPost__image}>
+          <div
+            className={`${classes.blogPost__image} ${
+              pageContent.dynamicImage?.src?.includes("blogFotoMain3") ||
+              pageContent.dynamicImage?.src?.includes("blogFotoMain2") ||
+              pageContent.dynamicImage?.src?.includes("blogFotoMain4")
+                ? classes.specialImage
+                : ""
+            }`}
+          >
             <Image
               src={pageContent.dynamicImage}
               alt={`Zdjęcie główne wpisu na blogu: ${pageContent.title} - usługi prania tapicerki i czyszczenia samochodów`}

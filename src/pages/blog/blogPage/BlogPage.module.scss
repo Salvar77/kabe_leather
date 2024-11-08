@@ -12,8 +12,6 @@
     img {
       width: 100%;
       height: auto;
-      max-height: 20rem;
-      object-fit: cover;
       border-radius: 5rem;
     }
   }
@@ -59,7 +57,6 @@
     padding: 0.625rem 1.25rem;
     background-color: $blue-after;
     color: $white-smooth;
-    // font-size: 1.3rem;
     text-align: center;
     border-radius: 0.8rem;
     text-decoration: none;
@@ -133,6 +130,13 @@
         max-height: 30rem;
         object-fit: cover;
         border-radius: 5rem;
+      }
+
+      &.specialImage {
+        img {
+          object-fit: cover;
+          object-position: 20% 80%;
+        }
       }
     }
 
