@@ -61,11 +61,14 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             {automotive.id === "uslugi/autokosmetyka" && (
               <ContentCosmetic automotive={automotive} />
             )}
+            {automotive.id === "uslugi/korekta-lakieru" && (
+              <ContentCorrection automotive={automotive} />
+            )}
           </div>
         </div>
         <div className={classes.buttonContainer}>
           <Link
-            href={`/Realizacje/${automotive.id}`}
+            href={`/realizacje/${automotive.id.replace("uslugi/", "")}`}
             className={classes.appointmentLink}
             aria-label="Zobacz nasze realizacje"
           >
@@ -185,5 +188,33 @@ const ContentCosmetic = ({ automotive }) => {
     </div>
   );
 };
+
+const ContentCorrection = ({ automotive }) => (
+  <div className={classes.listContainer}>
+    <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+    <ul className={classes.listStyle}>
+      <li>
+        <b>Usunięcie rys i zmatowień:</b> Dokładnie eliminujemy drobne rysy,
+        zmatowienia i drobne defekty lakieru, przywracając powierzchni gładkość
+        i estetyczny wygląd.
+      </li>
+      <li>
+        <b>Poprawa głębi koloru:</b> Dzięki zaawansowanym technikom polerowania
+        lakier odzyskuje głębię, nasycenie i intensywność koloru, co sprawia, że
+        pojazd wygląda jak nowy.
+      </li>
+      <li>
+        <b>Ochrona lakieru na dłużej:</b> Po korekcie aplikujemy powłokę
+        ochronną, która zabezpiecza lakier przed promieniowaniem UV,
+        zabrudzeniami i zarysowaniami, przedłużając efekt renowacji.
+      </li>
+      <li>
+        <b>Przywrócenie wartości estetycznej:</b> Korekta lakieru sprawia, że
+        pojazd zyskuje nowy, profesjonalny wygląd, co może zwiększyć jego
+        wartość rynkową i zadowolenie właściciela.
+      </li>
+    </ul>
+  </div>
+);
 
 export default AutomotiveUpholstery;

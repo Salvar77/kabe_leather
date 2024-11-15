@@ -7,6 +7,7 @@ import tintImage from "../../assets/image/tint_640.jpg";
 
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
 import cleanImg from "../../assets/image/heroMain.jpg";
+import paintCorrection from "../../assets/image/paintCorrection.jpg";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
 
@@ -58,6 +59,18 @@ export const servicesData = [
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
       "Nasza usługa przyciemniania szyb to idealne rozwiązanie, jeśli chcesz poprawić estetykę swojego pojazdu oraz zwiększyć komfort i bezpieczeństwo podróży. Korzystamy z najwyższej jakości folii przyciemniającej, aby zapewnić trwałe i skuteczne efekty.",
+  },
+  {
+    id: "uslugi/korekta-lakieru",
+    description: "Korekta Lakieru",
+    image: paintCorrection,
+    largeImage: paintCorrection,
+    largeImageWidth: 1920,
+    title: "Sprawdź",
+    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    additionalInfo:
+      "Nasza usługa korekty lakieru to proces przywracający karoserii doskonały wygląd, eliminując zarysowania, matowe miejsca i drobne defekty. Dzięki zaawansowanym technikom polerowania, lakier odzyskuje głębię i intensywność koloru, a dodatkowa powłoka ochronna zabezpiecza go przed czynnikami zewnętrznymi, przedłużając efekt renowacji.",
   },
 ];
 
