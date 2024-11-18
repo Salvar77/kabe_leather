@@ -11,12 +11,12 @@ const AboutPage = () => {
   return (
     <>
       <SEO
-        title="O Nas - Kabe Tint&Leather Auto Detailing w Opolu"
+        title="O Mnie - Kabe Tint&Leather Auto Detailing w Opolu"
         description="Poznaj Kamila i jego pasję do motoryzacji oraz prania tapicerki i czyszczenia samochodów. Profesjonalna autokosmetyka w Opolu."
         image="https://www.kabetintleather.pl/heroMain.jpg"
       />
       <div className={classes.backgroundAbout}>
-        <section id="about" className={classes.aboutMe}>
+        <section id="o-mnie" className={classes.aboutMe}>
           <h2 className={classes.aboutMe__header}>O mnie</h2>
           <div className={classes.aboutMe__grid}>
             <motion.div
@@ -104,7 +104,7 @@ const AboutPage = () => {
                 zapraszam do kontaktu!
               </motion.p>
               <Link
-                href="/Realizacje"
+                href="/realizacje"
                 className={classes.realizationButton}
                 aria-label="Zobacz nasze realizacje"
               >
