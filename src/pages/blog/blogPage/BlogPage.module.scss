@@ -138,6 +138,10 @@
           object-position: 20% 80%;
         }
       }
+
+      &.largeImage img {
+        min-height: 55rem;
+      }
     }
 
     .section {

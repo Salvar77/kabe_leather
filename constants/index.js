@@ -29,6 +29,7 @@ import {
   blogFotoMain41,
   blogFotoMain42,
   blogFotoMain5,
+  blogFotoMain6,
 } from "../utils/index";
 
 import {
@@ -91,6 +92,16 @@ const blogPosts = [
       "Przyciemnianie szyb samochodowych to nie tylko kwestia estetyki, ale także komfortu i bezpieczeństwa. Dowiedz się, jak prawidłowo przeprowadzić ten zabieg oraz jakie są korzyści z przyciemniania szyb.",
     link: "/jak-przyciemnic-szyby-samochodowe",
     image: blogMain1,
+  },
+  {
+    id: 6,
+    title: "Korekta lakieru – co to jest i dlaczego warto ją wykonać?",
+    subtitle: "PIELĘGNACJA LAKIERU SAMOCHODOWEGO",
+    date: "2024-11-21",
+    description:
+      "Dowiedz się, czym jest korekta lakieru, jakie korzyści przynosi i dlaczego warto ją wykonać. Popraw wygląd swojego samochodu i zabezpiecz lakier przed uszkodzeniami!",
+    link: "/korekta-lakieru",
+    image: blogFotoMain6,
   },
 ];
 
@@ -205,6 +216,33 @@ const pagesContent = {
       },
     ],
     images: [blogBeforeAfter9, blogBeforeAfter10],
+  },
+  "korekta-lakieru": {
+    title: "Korekta lakieru – co to jest i dlaczego warto ją wykonać?",
+    dynamicImage: blogFotoMain6,
+    sections: [
+      {
+        heading: "Czym jest korekta lakieru?",
+        content:
+          "Korekta lakieru to proces, który ma na celu poprawienie wyglądu karoserii samochodu poprzez usunięcie niedoskonałości takich jak zarysowania, swirle, oksydacja, a także różne inne wady lakieru. W trakcie tego procesu, specjalistyczne narzędzia i preparaty pomagają w przywróceniu głębi koloru oraz uzyskaniu gładkiej i lśniącej powierzchni. W zależności od stanu lakieru oraz oczekiwań klienta, korekta może obejmować jedną, kilka lub nawet kilka warstw lakieru.",
+      },
+      {
+        heading: "Dlaczego warto wykonać korektę lakieru?",
+        content:
+          "Estetyka – Największą korzyścią z korekty lakieru jest znacząca poprawa wyglądu pojazdu. Usunięcie zarysowań, swirli oraz innych niedoskonałości sprawia, że lakier nabiera głębi i intensywności koloru, a samochód wygląda jak nowy.\n\nOchrona – Proces ten usuwa także drobne zanieczyszczenia oraz zanieczyszczenia powierzchniowe, co poprawia odporność lakieru na czynniki atmosferyczne, takie jak deszcz, promieniowanie UV czy zanieczyszczenia drogowe.\n\nWartość rynkowa – Pojazd, który ma estetycznie wyglądający lakier, może osiągnąć wyższą cenę sprzedaży. Dbanie o wygląd zewnętrzny samochodu zwiększa jego wartość, a proces korekty lakieru jest inwestycją, która może się opłacić w dłuższej perspektywie.\n\nWydłużenie trwałości lakieru – Usuwając mikrourazy i zanieczyszczenia, dbamy o powierzchnię lakieru, co sprawia, że samochód jest mniej podatny na dalsze uszkodzenia.",
+      },
+      {
+        heading: "Korekta lakieru One Step – co to jest?",
+        content:
+          "Korekta lakieru typu „one step” (jednoetapowa) to szybka i mniej skomplikowana wersja tradycyjnej korekty. W jej trakcie stosuje się jedną pastę polerską i jeden etap polerowania, co sprawia, że jest to proces mniej czasochłonny i bardziej przystępny cenowo. Korekta typu „one step” jest idealna w przypadku, gdy stan lakieru nie wymaga intensywnego zabiegu, a celem jest jedynie poprawienie ogólnego wyglądu pojazdu.",
+      },
+      {
+        heading: "Kiedy warto wybrać korektę One Step?",
+        content:
+          "Lekkie zarysowania i swirle – Korekta One Step jest doskonała do usuwania drobnych zarysowań oraz śladów użytkowania, które pojawiły się na lakierze. Jeśli Twój samochód nie ma głębokich uszkodzeń, zabieg ten może być wystarczający.\n\nSkrócenie czasu pracy – Proces One Step jest szybszy niż tradycyjna, wieloetapowa korekta, co może być istotnym atutem, jeśli zależy Ci na szybkiej poprawie wyglądu pojazdu.\n\nBudżet – Ze względu na mniejszą liczbę etapów polerowania i użycie jednej pasty, korekta One Step jest tańszą alternatywą dla tradycyjnej korekty, oferującą zadowalające efekty w przystępnej cenie.\n\nUtrzymanie wyglądu auta – Jeśli chcesz utrzymać swój samochód w dobrym stanie, ale nie masz potrzeby przeprowadzania pełnej, wieloetapowej korekty, to korekta One Step może być odpowiednią opcją.",
+      },
+    ],
+    images: [blogFotoMain6],
   },
 };
 
