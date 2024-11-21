@@ -47,7 +47,7 @@ const blogPosts = [
     id: 1,
     title: "Jak zapobiec powstaniu plam na tapicerce samochodowej?",
     subtitle: "CZYSZCZENIE TAPICERKI SAMOCHODOWEJ",
-    date: "2024-10-02",
+    date: "2024-07-04",
     description:
       "Plama na tapicerce samochodowej to problem, którego można uniknąć! Dowiedz się, jak szybko i skutecznie reagować, aby nie doprowadzić do trwałych zabrudzeń. Oto kilka kroków, które warto zastosować, aby utrzymać tapicerkę w czystości.",
     link: "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
@@ -57,7 +57,7 @@ const blogPosts = [
     id: 2,
     title: "Jak skutecznie wyczyścić tapicerkę samochodową?",
     subtitle: "PRANIE TAPICERKI SAMOCHODOWEJ",
-    date: "2024-09-15",
+    date: "2024-07-15",
     description:
       "Dowiedz się, jak skutecznie wyczyścić tapicerkę samochodową, aby pozbyć się nawet najtrudniejszych plam i zabrudzeń. Nasze profesjonalne metody czyszczenia pozwolą Ci cieszyć się świeżością wnętrza samochodu przez długi czas.",
     link: "/jak-wyczyscic-tapicerke-samochodowa",
@@ -67,7 +67,7 @@ const blogPosts = [
     id: 3,
     title: "Jak dbać o tapicerkę skórzaną w samochodzie?",
     subtitle: "PIELĘGNACJA SKÓRZANEJ TAPICERKI SAMOCHODOWEJ",
-    date: "2024-08-30",
+    date: "2024-08-09",
     description:
       "Skórzana tapicerka samochodowa wymaga regularnej pielęgnacji. Dowiedz się, jakie środki i techniki stosować, aby tapicerka zachowała swój elegancki wygląd przez wiele lat.",
     link: "/jak-dbac-o-skorzana-tapicerke-samochodowa",
@@ -77,7 +77,7 @@ const blogPosts = [
     id: 4,
     title: "Używamy profesjonalnych produktów",
     subtitle: "AUTOKOSMETYKA SAMOCHODOWA",
-    date: "2024-07-12",
+    date: "2024-09-12",
     description:
       "Wybór odpowiednich preparatów do pielęgnacji samochodu jest kluczowy, aby zapewnić mu idealny wygląd i ochronę. Sprawdź, które środki są najlepsze do pielęgnacji karoserii, wnętrza oraz szyb.",
     link: "/uzywamy-profesjonalnych-produktow",
@@ -87,7 +87,7 @@ const blogPosts = [
     id: 5,
     title: "Jak skutecznie przyciemnić szyby w samochodzie?",
     subtitle: "PRZECIEMNIANIE SZYB SAMOCHODOWYCH",
-    date: "2024-06-25",
+    date: "2024-10-01",
     description:
       "Przyciemnianie szyb samochodowych to nie tylko kwestia estetyki, ale także komfortu i bezpieczeństwa. Dowiedz się, jak prawidłowo przeprowadzić ten zabieg oraz jakie są korzyści z przyciemniania szyb.",
     link: "/jak-przyciemnic-szyby-samochodowe",
