@@ -4,7 +4,6 @@ import Image from "next/image";
 import heroImage from "../../assets/image/services1.jpg";
 import furnitureImage from "../../assets/image/services3.jpg";
 import tintImage from "../../assets/image/tint_640.jpg";
-
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
 import cleanImg from "../../assets/image/heroMain.jpg";
 import paintCorrection from "../../assets/image/paintCorrection.jpg";

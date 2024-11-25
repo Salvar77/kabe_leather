@@ -38,7 +38,7 @@
 .hamburger.isActive .hamburgerInner,
 .hamburger.isActive .hamburgerInner::before,
 .hamburger.isActive .hamburgerInner::after {
-  background-color: $blue-after;
+  background-color: $blue-after-nav;
 }
 
 .hamburgerBox {
@@ -60,7 +60,7 @@
 .hamburgerInner::after {
   width: 40px;
   height: 4px;
-  background-color: $blue-after;
+  background-color: $blue-after-nav;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -126,9 +126,6 @@
   }
 
   .hamburgerContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    right: 20rem;
+    height: auto;
   }
 }

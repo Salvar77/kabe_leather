@@ -3,12 +3,10 @@
 .contactSection {
   display: grid;
   gap: 2rem;
-
   width: 100%;
   padding: 2rem;
   background-color: $white-smooth;
   font-size: 1.8rem;
-
   color: $white-smooth;
 
   h2 {
@@ -16,47 +14,36 @@
     text-align: center;
   }
 
-  .contactInfo {
+  .contactInfo,
+  .contactForm {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     align-items: center;
     width: 100%;
-    text-decoration: none;
-    color: $white-smooth;
     background-color: $dark-smooth-hover;
     box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
     border: 1px solid rgba(61, 54, 54, 0.9);
     padding: 2rem;
     font-weight: bold;
-
-    p {
-      margin-bottom: 0.5rem;
-      text-decoration: none;
-    }
-  }
-
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
     color: $white-smooth;
-    background-color: $dark-smooth-hover;
-    box-shadow: 0.3rem 0.4rem 0.8rem rgba(232, 232, 235, 0.1);
-    border: 1px solid rgba(61, 54, 54, 0.9);
-    padding: 2rem;
-    width: 100%;
-    width: 100%;
 
     h2 {
       margin-bottom: 1rem;
     }
+  }
+
+  .contactInfo {
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .contactForm {
+    justify-content: center;
 
     input,
     textarea {
-      width: 100%;
       width: 100%;
       padding: 0.5rem;
       margin-bottom: 1rem;
@@ -70,7 +57,6 @@
       background-color: $blue-after;
       color: $white-smooth;
       border: none;
-
       font-size: 1.6rem;
       cursor: pointer;
       transition: background-color 0.3s ease;
@@ -84,27 +70,14 @@
   }
 }
 
-.contactSection .contactInfo {
-  padding-top: 2rem;
+.highlightedText {
+  color: $blue-after;
+  text-decoration: none;
 }
 
-.contactSection .contactInfo h2,
-.contactSection .contactForm h2 {
-  padding-bottom: 1rem;
-  font-size: 2.2rem;
-}
-
-.messageStatus {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid $white-smooth;
-  border-radius: 0.6rem;
-
-  background-color: $white-smooth;
-  color: $dark-smooth;
-  text-align: center;
-  font-size: 2rem;
+.noLinkStyle {
+  text-decoration: none;
+  cursor: default;
 }
 
 .modal {
@@ -116,16 +89,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $dark-smooth;
   background-color: $dark-smooth;
   z-index: 1000;
-}
 
-.modalContent {
-  background-color: $white-smooth;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 10px rgba(44, 28, 28, 0.25);
+  .modalContent {
+    background-color: $white-smooth;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(44, 28, 28, 0.25);
+  }
 }
 
 .appointmentLink {
@@ -141,48 +113,9 @@
   background-color: transparent;
   transition: background-color 0.3s, color 0.3s;
 
-  &::before,
-  &::after {
-    display: block;
-    position: absolute;
-    content: "";
-    transition: all 0.5s;
-    z-index: -1;
-  }
-
-  &::before {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-
-  &::after {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-
   &:hover {
-    border: 1px solid transparent;
     color: $blue-after;
-  }
-
-  &:hover::after {
-    bottom: 0.3rem;
-    left: 0.4rem;
-    border-bottom: 4px solid $blue-after;
-    border-right: 4px solid $blue-after;
-  }
-
-  &:hover::before {
-    top: 0.3rem;
-    right: 0.4rem;
-    border-top: 4px solid $blue-after;
-    border-left: 4px solid $blue-after;
+    border-color: $blue-after;
   }
 }
 
@@ -190,24 +123,6 @@
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
-}
-
-.mapWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // padding-bottom: 1.4rem;
-}
-
-.highlightedText {
-  color: $blue-after;
-  text-decoration: none;
-}
-
-.noLinkStyle {
-  text-decoration: none;
-  -webkit-text-decoration: none;
-  cursor: default;
 }
 
 .consentWrapper {
@@ -232,74 +147,16 @@
   }
 }
 
-.policy {
-  color: $dark-smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.2rem;
-  justify-content: center;
-  border: 1px solid rgba(61, 54, 54, 0.3);
-  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
-  padding: 1rem;
-  margin-bottom: 0.4rem;
-  text-align: center;
-
-  &__link {
-    text-decoration: none;
-    color: $blue-after;
-  }
-}
-
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  .consentWrapper {
-    input[type="checkbox"] {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      border: 1px solid #ccc;
-      background-color: $dark-smooth-hover;
-      border-radius: 0.2rem;
-      cursor: pointer;
-      vertical-align: middle;
-    }
-  }
-}
-
-@media screen and (max-device-width: 480px) and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {
-  .consentWrapper {
-    input[type="checkbox"] {
-      width: 1.5rem;
-      height: 1.5rem;
-      border: 1px solid $white-smooth;
-      background-color: $dark-smooth-hover;
-      border-radius: 0.2rem;
-      cursor: pointer;
-      vertical-align: middle;
-    }
-  }
-}
-
 @media (min-width: 768px) {
-  .consentWrapper {
-    font-size: 1.2rem;
-  }
-
-  .policy {
-    font-size: 1.4rem;
-  }
-
   .contactSection {
-    padding: 0;
+    .contactInfo,
     .contactForm {
+      font-size: 2rem;
+
       input,
       textarea {
         padding: 1rem;
-        margin-bottom: 1rem;
-        min-width: 100%;
-        max-width: 100%;
         border-radius: 0.4rem;
-        border: 1px solid black;
       }
 
       button {
@@ -307,124 +164,44 @@
         padding: 0.8rem 1.6rem;
       }
     }
-
-    .contactInfo {
-      font-size: 2rem;
-    }
-  }
-
-  .appointmentLink {
-    font-size: 2.4rem;
-  }
-
-  .contactSection .contactInfo h2,
-  .contactSection .contactForm h2 {
-    font-size: 2.4rem;
   }
 }
 
 @media (min-width: 992px) {
   .contactSection {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 2rem;
-
     padding-top: 15vh;
 
-    h2 {
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .contactInfo {
-      display: flex;
-      justify-content: center;
-      font-size: 2.2rem;
-    }
-
+    .contactInfo,
     .contactForm {
-      display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-
-      input,
-      textarea {
-        padding: 1rem;
-        margin-bottom: 1rem;
-        min-width: 100%;
-        max-width: 100%;
-        border-radius: 1rem;
-        border: 1px solid black;
-      }
-
-      button {
-        font-size: 2rem;
-        padding: 1rem 2rem;
-
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        border-radius: 0.4rem;
-
-        &:hover {
-          background-color: $blue-main;
-        }
-      }
     }
 
-    .contactSection .contactInfo h2,
-    .contactSection .contactForm h2 {
-      font-size: 2.6rem;
+    .appointmentLink {
+      font-size: 2.4rem; // Larger font size for larger screens
     }
 
     .linkWrapper {
       grid-column: 1 / -1;
-      display: flex;
-      justify-content: center;
-      margin-top: 1.5rem;
     }
-
-    .mapWrapper {
-      grid-column: 1 / -1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-  }
-
-  .appointmentLink {
-    font-size: 2.6rem;
-  }
-
-  .mapWrapper {
-    width: 99.5vw;
-    margin-left: calc(-50vw + 50%);
-    padding: 0.1rem;
   }
 }
 
 @media (max-width: 280px) {
   .contactSection {
     padding: 1rem;
-    width: auto;
-  }
 
-  .contactSection .contactInfo,
-  .contactSection .contactForm {
-    padding: 1rem;
-    width: auto;
-  }
+    .contactInfo,
+    .contactForm {
+      padding: 1rem;
 
-  .contactSection input,
-  .contactSection textarea {
-    padding: 0.4rem;
-    width: 90%;
-  }
-
-  .contactSection button {
-    padding: 0.4rem 0.8rem;
+      input,
+      textarea,
+      button {
+        padding: 0.4rem;
+        width: 90%;
+      }
+    }
   }
 }

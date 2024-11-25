@@ -33,7 +33,12 @@
   &__title {
     color: $white-smooth;
     z-index: 2;
+    font-size: 2.6rem;
     text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
+  }
+
+  p {
+    font-size: 1.6rem;
   }
 
   &__description {
@@ -76,13 +81,6 @@
   }
 }
 
-.hero__title {
-  &Span {
-    color: $green2;
-    font-weight: bold;
-  }
-}
-
 .textOverlay {
   position: absolute;
   top: 50%;
@@ -99,14 +97,6 @@
     color: $white-smooth;
     text-shadow: 3px 3px 6px rgba($dark-smooth, 0.9);
   }
-}
-
-.hero h1 {
-  font-size: 2.6rem;
-}
-
-.hero p {
-  font-size: 1.6rem;
 }
 
 .button {
@@ -131,24 +121,18 @@
   }
 }
 
-.customHeroTitle {
-  font-size: 10rem;
-  color: #d35400;
-  text-align: left;
-  padding-top: 20px;
-}
-
 .customHeroTitleRealizations {
   text-shadow: 2px 2px 4px rgba($dark-smooth, 0.9);
 }
 
-@media (min-width: 768px) {
-  .hero h1 {
-    font-size: 3.4rem;
-  }
-
-  .hero p {
-    font-size: 2rem;
+@media screen and (min-width: 768px) {
+  .hero {
+    h1 {
+      font-size: 3.4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
   }
 
   .button {
@@ -156,7 +140,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .hero {
     &::before {
       position: fixed;
@@ -168,6 +152,13 @@
         ),
         url("../../assets/image/heroMain.jpg");
       background-position: 70% 30%;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2.4rem;
     }
 
     .whiteBlock {
@@ -200,14 +191,6 @@
         }
       }
     }
-  }
-
-  .hero h1 {
-    font-size: 4rem;
-  }
-
-  .hero p {
-    font-size: 2.4rem;
   }
 
   .button {
