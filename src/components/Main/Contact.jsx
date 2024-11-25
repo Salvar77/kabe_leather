@@ -80,7 +80,7 @@ const Contact = () => {
           </p>
         </div>
         <form className={classes.contactForm} onSubmit={handleSubmit}>
-          <h2>Wyślij nam wiadomość</h2>
+          <h2>Wyślij mi wiadomość</h2>
           <input
             type="text"
             name="name"
