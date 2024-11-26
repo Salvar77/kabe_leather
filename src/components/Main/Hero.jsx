@@ -12,17 +12,9 @@ const Hero = ({
   height = "100vh",
   mobileWhiteBlockColor = "#1D120C",
 }) => {
-  const [isTitleVisible, setIsTitleVisible] = useState(false);
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
   const isMobile = useMediaQuery("(max-width: 768px)");
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsTitleVisible(true);
-    }, 500);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div>
@@ -40,7 +32,7 @@ const Hero = ({
         ) : null}
 
         <div className={classes.textOverlay}>
-          {isTitleVisible && <h1 className={classes.hero__title}>{title}</h1>}
+          <h1 className={classes.hero__title}>{title}</h1>
           <p className={classes.hero__description}>{description}</p>
           {showButton && (
             <a href="#galeria" className={classes.button}>
