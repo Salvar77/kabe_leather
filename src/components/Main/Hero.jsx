@@ -32,7 +32,6 @@ const Hero = ({
         ) : null}
 
         <div className={classes.textOverlay}>
-          <h1 className={classes.hero__title}>{title}</h1>
           <p className={classes.hero__description}>{description}</p>
           {showButton && (
             <a href="#galeria" className={classes.button}>
