@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
-import HeroImageMobile from "../../assets/image/heroMain.jpg";
+import HeroImageMobile from "../../assets/image/heroMainWebpBig.webp";
 
 const Hero = ({
   title,
