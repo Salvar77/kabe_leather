@@ -14,13 +14,21 @@ const Hero = ({
   desktopWhiteBlockColor = "#C8C8C8",
   customHeroTitle = "",
 }) => {
+  const [isTitleVisible, setIsTitleVisible] = useState(false);
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsTitleVisible(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div>
       <section id="hero" className={classes.hero} style={{ height }}>
         <div className={classes.textOverlay}>
-          <h1 className={classes.hero__title}>{title}</h1>
+          {isTitleVisible && <h1 className={classes.hero__title}>{title}</h1>}
           <p className={classes.hero__description}>{description}</p>
           {showButton && (
             <a href="#galeria" className={classes.button}>
