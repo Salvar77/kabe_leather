@@ -13,6 +13,7 @@ class MyDocument extends Document {
             data-cbid={process.env.COOKIEBOT_SECRET_KEY}
             data-blockingmode="auto"
             strategy="lazyOnload"
+            async
           ></Script>
 
           {/* Preconnect & Preload */}
