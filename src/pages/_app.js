@@ -118,6 +118,7 @@ export default function App({ Component, pageProps }) {
         <ContactBar />
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
         <BurgerMenu handleOpen={toggleNav} isOpen={isOpen} />
+        <Logo showLogo={showLogo} />
       </header>
 
       <Component {...pageProps} />
