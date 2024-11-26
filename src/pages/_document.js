@@ -1,17 +1,21 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <script
+          {/* Cookiebot */}
+          <Script
             id="Cookiebot"
             src="https://consent.cookiebot.com/uc.js"
             data-cbid={process.env.COOKIEBOT_SECRET_KEY}
             data-blockingmode="auto"
-            type="text/javascript"
-          ></script>
+            strategy="lazyOnload"
+          ></Script>
+
+          {/* Preconnect & Preload */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -27,8 +31,11 @@ class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
           {/* Google Tag Manager */}
-          <script
+          <Script
+            id="gtm"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -39,44 +46,46 @@ class MyDocument extends Document {
               `,
             }}
           />
-          {/* End Google Tag Manager */}
-          {/* Google Analytics Tag */}
-          <script
-            async
+
+          {/* Google Analytics */}
+          <Script
             src="https://www.googletagmanager.com/gtag/js?id=AW-16652411588"
-          ></script>
-          <script
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-analytics"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-
                 gtag('config', 'AW-16652411588');
               `,
             }}
           />
-          {/* End Google Analytics Tag */}
-          {/* Google Ads Tag */}
-          <script
-            async
+
+          {/* Google Ads */}
+          <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-PFL7MVJ5ZE"
-          ></script>
-          <script
+            strategy="afterInteractive"
+          />
+          <Script
+            id="google-ads"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-
                 gtag('config', 'G-PFL7MVJ5ZE');
-                gtag('config', 'AW-16608400370'); // New Google Ads Conversion Tag
+                gtag('config', 'AW-16608400370');
               `,
             }}
           />
-          {/* End Google Ads Tag */}
         </Head>
         <body>
+          {/* Google Tag Manager (noscript) */}
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-NC377D3W"
@@ -85,18 +94,20 @@ class MyDocument extends Document {
               style={{ display: "none", visibility: "hidden" }}
             ></iframe>
           </noscript>
-          {/* Google Tag Manager (noscript) */}
+
           <Main />
           <NextScript />
-          {/* Event snippet for Kontakt conversion page */}
-          <script
+
+          {/* Google Ads Event Snippet */}
+          <Script
+            id="google-ads-event"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 gtag('event', 'conversion', {'send_to': 'AW-16608400370/9avKCNyvktMZEPKnwO89'});
               `,
             }}
           />
-          {/* End Google Ads Event Snippet */}
         </body>
       </Html>
     );
