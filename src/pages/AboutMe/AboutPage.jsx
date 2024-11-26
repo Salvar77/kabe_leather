@@ -13,7 +13,7 @@ const AboutPage = () => {
       <SEO
         title="O Mnie - Kabe Tint&Leather Auto Detailing w Opolu"
         description="Poznaj Kamila i jego pasję do motoryzacji oraz prania tapicerki i czyszczenia samochodów. Profesjonalna autokosmetyka w Opolu."
-        image="https://www.kabetintleather.pl/heroMain.jpg"
+        image="https://www.kabetintleather.pl/hero_main.jpg"
       />
       <div className={classes.backgroundAbout}>
         <section id="o-mnie" className={classes.aboutMe}>
