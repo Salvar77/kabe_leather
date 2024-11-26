@@ -33,6 +33,17 @@ body {
   overflow: hidden;
 }
 
+.cookie-banner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in;
+}
+
+.cookie-banner.loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
 #O-nas,
 #usługi,
 #galeria,

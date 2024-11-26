@@ -95,6 +95,24 @@ class MyDocument extends Document {
             ></iframe>
           </noscript>
 
+          {/* Skrypt do zarządzania Cookiebotem */}
+          <Script
+            id="cookiebot-loader"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                document.addEventListener('DOMContentLoaded', () => {
+                  setTimeout(() => {
+                    const cookieBanner = document.querySelector('.cookie-banner');
+                    if (cookieBanner) {
+                      cookieBanner.classList.add('loaded');
+                    }
+                  }, 1000); // Opóźnienie 1 sekundy
+                });
+              `,
+            }}
+          />
+
           <Main />
           <NextScript />
 
