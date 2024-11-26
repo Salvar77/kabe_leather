@@ -36,7 +36,6 @@
 
   &__title {
     color: $white-smooth;
-    z-index: 2;
     font-size: 2.6rem;
   }
 
@@ -168,6 +167,16 @@
     }
     p {
       font-size: 2.4rem;
+    }
+
+    .whiteBlock {
+      .whiteBlockTextContainer {
+        transform: skew(45deg);
+
+        .whiteBlockText {
+          display: none;
+        }
+      }
     }
   }
 

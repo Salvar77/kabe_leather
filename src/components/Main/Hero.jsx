@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
@@ -6,11 +6,15 @@ import classes from "./Hero.module.scss";
 
 const Hero = ({
   heroImageMobile,
+  heroImageDesktop,
   title,
   description,
+  showTechnology,
   showButton,
   height = "100vh",
   mobileWhiteBlockColor = "#1D120C",
+  desktopWhiteBlockColor = "#C8C8C8",
+  customHeroTitle = "",
 }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
