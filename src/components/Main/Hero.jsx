@@ -3,18 +3,14 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
+import HeroImageMobile from "../../assets/image/heroMain.jpg";
 
 const Hero = ({
-  heroImageMobile,
-  heroImageDesktop,
   title,
   description,
-  showTechnology,
   showButton,
   height = "100vh",
   mobileWhiteBlockColor = "#1D120C",
-  desktopWhiteBlockColor = "#C8C8C8",
-  customHeroTitle = "",
 }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
@@ -26,7 +22,7 @@ const Hero = ({
         {isMobile ? (
           <div className={classes.imageWrapper}>
             <Image
-              src={heroImageMobile}
+              src={HeroImageMobile}
               alt="Hero Background Mobile"
               layout="fill"
               objectFit="cover"
