@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import Image from "next/image";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
 
 const Hero = ({
   heroImageMobile,
-  heroImageDesktop,
   title,
   description,
-  showTechnology,
   showButton,
   height = "100vh",
   mobileWhiteBlockColor = "#1D120C",
-  desktopWhiteBlockColor = "#C8C8C8",
-  customHeroTitle = "",
 }) => {
   const [isTitleVisible, setIsTitleVisible] = useState(false);
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
+
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -27,6 +27,18 @@ const Hero = ({
   return (
     <div>
       <section id="hero" className={classes.hero} style={{ height }}>
+        {isMobile ? (
+          <div className={classes.imageWrapper}>
+            <Image
+              src={heroImageMobile}
+              alt="Hero Background Mobile"
+              layout="fill"
+              objectFit="cover"
+              priority
+            />
+          </div>
+        ) : null}
+
         <div className={classes.textOverlay}>
           {isTitleVisible && <h1 className={classes.hero__title}>{title}</h1>}
           <p className={classes.hero__description}>{description}</p>
@@ -36,6 +48,7 @@ const Hero = ({
             </a>
           )}
         </div>
+
         <div
           className={classes.whiteBlockWrapper}
           style={{ backgroundColor: whiteBlockColor }}

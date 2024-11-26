@@ -3,7 +3,7 @@ import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
 import Hero from "@/components/Main/Hero";
-import heroImageMobile from "../assets/image/hero2_640.jpg";
+import heroImageMobile from "../assets/image/heroMain.jpg";
 import heroImageDesktop from "../assets/image/hero2_1920.jpg";
 import SliderSection from "@/components/Sliders/SliderSection";
 import { NextSeo } from "next-seo";
@@ -100,11 +100,7 @@ export default function Home() {
         heroImageDesktop={heroImageDesktop}
         title="Kabe Tint&Leather Auto Detailing"
         description="Kompleksowe czyszczenie samochodu"
-        showTechnology={true}
         showButton={true}
-        height="100vh"
-        mobileWhiteBlockColor="#fcfcfc"
-        desktopWhiteBlockColor="#e0e0e0"
       />
       <div className="bg">
         <div className="container">

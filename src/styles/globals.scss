@@ -1,7 +1,5 @@
 @import "./colors";
 
-@import "hamburgers/dist/hamburgers.css";
-
 *,
 *::before,
 *::after {
@@ -48,7 +46,7 @@ body {
 #usługi,
 #galeria,
 #kontakt {
-  scroll-margin-top: 9rem; // Odpowiednie przesunięcie w górę
+  scroll-margin-top: 9rem;
 }
 
 @media only screen and (max-width: 768px) {
