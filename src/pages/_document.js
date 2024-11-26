@@ -6,16 +6,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Cookiebot */}
-          <Script
-            id="Cookiebot"
-            src="https://consent.cookiebot.com/uc.js"
-            data-cbid={process.env.COOKIEBOT_SECRET_KEY}
-            data-blockingmode="auto"
-            strategy="lazyOnload"
-            async
-          ></Script>
-
           {/* Preconnect & Preload */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
