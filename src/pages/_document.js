@@ -12,7 +12,6 @@ class MyDocument extends Document {
             src="https://consent.cookiebot.com/uc.js"
             data-cbid={process.env.COOKIEBOT_SECRET_KEY}
             data-blockingmode="auto"
-            strategy="lazyOnload"
             async
           ></Script>
 
