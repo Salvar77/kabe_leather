@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
-import HeroImageMobile from "../../assets/image/heroMain.jpg";
+import HeroImageMobile from "../../assets/image/heroMainWebp640.webp";
+import HeroImageDesktop from "../../assets/image/heroMainWebpBig.webp";
 
 const Hero = ({
   title,
@@ -14,22 +15,21 @@ const Hero = ({
 }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useMediaQuery("(max-width: 992px)");
 
   return (
     <div>
       <section id="hero" className={classes.hero} style={{ height }}>
-        {isMobile ? (
-          <div className={classes.imageWrapper}>
-            <Image
-              src={HeroImageMobile}
-              alt="Hero Background Mobile"
-              layout="fill"
-              objectFit="cover"
-              priority
-            />
-          </div>
-        ) : null}
+        <div className={classes.imageWrapper}>
+          <Image
+            src={isMobile ? HeroImageMobile : HeroImageDesktop}
+            alt="Hero Background"
+            layout="fill"
+            objectFit="cover"
+            objectPosition={isMobile ? "center" : "70% 30%"}
+            priority
+          />
+        </div>
 
         <div className={classes.textOverlay}>
           <h1 className={classes.hero__title}>{title}</h1>
