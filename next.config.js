@@ -1,9 +1,62 @@
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
 
+  async redirects() {
+    return [
+      {
+        source: "/AboutMe/AboutPage",
+        destination: "/o-mnie",
+        permanent: true,
+      },
+      {
+        source: "/PricingSection/PricingSection",
+        destination: "/cennik",
+        permanent: true,
+      },
+      {
+        source: "/Realizations/Realizations",
+        destination: "/realizacje",
+        permanent: true,
+      },
+      {
+        source: "/Realizations/RealizationsPage/:slug*",
+        destination: "/realizacje/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/kontakt/ContactSide",
+        destination: "/kontakt",
+        permanent: true,
+      },
+      {
+        source: "/blog/SectionBlog",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/referencje/Referency",
+        destination: "/referencje",
+        permanent: true,
+      },
+      {
+        source: "/blog/blogPage/:slug",
+        destination: "/blog/:slug",
+        permanent: true,
+      },
+      {
+        source: "/AutomotiveUpholstery/:id",
+        destination: "/uslugi/:id",
+        permanent: true,
+      },
+    ];
+  },
+
   async rewrites() {
-    console.log("Rewrites configuration loaded");
     return [
       {
         source: "/o-mnie",
@@ -38,7 +91,7 @@ const nextConfig = {
         destination: "/blog/blogPage/:slug",
       },
       {
-        source: "/:id",
+        source: "/uslugi/:id",
         destination: "/AutomotiveUpholstery/:id",
       },
     ];
@@ -54,4 +107,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

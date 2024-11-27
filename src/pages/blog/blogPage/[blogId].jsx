@@ -9,6 +9,8 @@ const BlogPost = ({ pageContent }) => {
     return <p>Ładowanie...</p>;
   }
 
+  const isLargeImage = pageContent.title.includes("Korekta lakieru");
+
   return (
     <div>
       <SEO
@@ -26,7 +28,11 @@ const BlogPost = ({ pageContent }) => {
       />
       <div className={classes.blogPost}>
         {pageContent.dynamicImage && (
-          <div className={classes.blogPost__image}>
+          <div
+            className={`${classes.blogPost__image} ${
+              isLargeImage ? classes.largeImage : ""
+            }`}
+          >
             <Image
               src={pageContent.dynamicImage}
               alt={`Zdjęcie główne wpisu na blogu: ${pageContent.title} - usługi prania tapicerki i czyszczenia samochodów`}

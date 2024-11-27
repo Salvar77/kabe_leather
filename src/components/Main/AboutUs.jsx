@@ -19,7 +19,7 @@ import {
 
 const AboutUs = () => {
   return (
-    <section id="O-nas" className={classes.aboutMe}>
+    <section id="o-nas" className={classes.aboutMe}>
       <div className={classes.aboutMe__image}>
         <Image
           src={image}

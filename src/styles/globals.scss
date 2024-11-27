@@ -1,7 +1,5 @@
 @import "./colors";
 
-@import "hamburgers/dist/hamburgers.css";
-
 *,
 *::before,
 *::after {
@@ -23,6 +21,27 @@ body {
   min-height: 100dvh;
 }
 
+@font-face {
+  font-family: "Oxygen";
+  src: url("/fonts/Oxygen-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  src: url("/fonts/Oxygen-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oxygen";
+  src: url("/fonts/Oxygen-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -33,11 +52,22 @@ body {
   overflow: hidden;
 }
 
+.cookie-banner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in;
+}
+
+.cookie-banner.loaded {
+  opacity: 1;
+  visibility: visible;
+}
+
 #O-nas,
 #usługi,
 #galeria,
 #kontakt {
-  scroll-margin-top: 9rem; // Odpowiednie przesunięcie w górę
+  scroll-margin-top: 9rem;
 }
 
 @media only screen and (max-width: 768px) {

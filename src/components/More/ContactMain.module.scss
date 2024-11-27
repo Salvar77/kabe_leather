@@ -60,14 +60,6 @@
   }
 }
 
-.logoBlock {
-  padding: 1rem;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .policy__link {
   text-decoration: none;
   color: $white-smooth;
@@ -103,6 +95,13 @@
   }
 }
 
+.logoBlack {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (min-width: 992px) {
   .contactMain {
     align-items: flex-start;
@@ -110,9 +109,10 @@
     gap: 2rem;
   }
 
-  .logoBlock {
+  .logoBlack {
     img {
-      width: 30rem;
+      width: 100%;
+      height: 100%;
     }
   }
 }

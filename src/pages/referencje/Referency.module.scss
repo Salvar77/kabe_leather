@@ -3,7 +3,7 @@
 .referencySection {
   padding-top: 14rem;
   background: linear-gradient(
-    225deg,
+    200deg,
     $blue-after 1%,
     $white-smooth,
     $white-smooth
@@ -34,7 +34,7 @@
 @media screen and (min-width: 992px) {
   .referencySection {
     padding-top: 10rem;
-    height: 100vh;
+
     h2 {
       font-size: 3rem;
     }

@@ -24,6 +24,7 @@ import blogFotoMain4 from "../src/assets/image/blogFotoMain4.jpg";
 import blogFotoMain41 from "../src/assets/image/blogFotoMain4-1.jpg";
 import blogFotoMain42 from "../src/assets/image/blogFotoMain4-2.jpg";
 import blogFotoMain5 from "../src/assets/image/tint_1920.jpg";
+import blogFotoMain6 from "../src/assets/image/paintCorrection.jpg";
 
 import blogFoto1 from "../src/assets/image/blogFoto1.jpg";
 import blogFoto2 from "../src/assets/image/blogFoto2.jpg";
@@ -70,6 +71,7 @@ export {
   blogFotoMain41,
   blogFotoMain42,
   blogFotoMain5,
+  blogFotoMain6,
   blogFoto1,
   blogFoto2,
   blogFoto3,

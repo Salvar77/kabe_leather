@@ -8,7 +8,8 @@ import SEO from "@/components/Main/SEO";
 export async function getServerSideProps(context) {
   const automotiveId = context.params.automotiveId;
   const automotive =
-    servicesData.find((service) => service.id === automotiveId) || null;
+    servicesData.find((service) => service.id === `uslugi/${automotiveId}`) ||
+    null;
 
   const isMobile = context.req.headers["user-agent"]
     .toLowerCase()
@@ -48,23 +49,26 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             )}
           </div>
           <div className={classes.textWrapper}>
-            {automotive.id === "renowacja-i-czyszczenie-skor" && (
+            {automotive.id === "uslugi/renowacja-i-czyszczenie-skor" && (
               <ContentUpholstery automotive={automotive} />
             )}
-            {automotive.id === "przyciemnianie-szyb" && (
+            {automotive.id === "uslugi/przyciemnianie-szyb" && (
               <ContentTinting automotive={automotive} />
             )}
-            {automotive.id === "pranie-tapicerki" && (
+            {automotive.id === "uslugi/pranie-tapicerki" && (
               <ContentCleaning automotive={automotive} />
             )}
-            {automotive.id === "autokosmetyka" && (
+            {automotive.id === "uslugi/autokosmetyka" && (
               <ContentCosmetic automotive={automotive} />
+            )}
+            {automotive.id === "uslugi/korekta-lakieru" && (
+              <ContentCorrection automotive={automotive} />
             )}
           </div>
         </div>
         <div className={classes.buttonContainer}>
           <Link
-            href={`/Realizacje/${automotive.id}`}
+            href={`/realizacje/${automotive.id.replace("uslugi/", "")}`}
             className={classes.appointmentLink}
             aria-label="Zobacz nasze realizacje"
           >
@@ -184,5 +188,33 @@ const ContentCosmetic = ({ automotive }) => {
     </div>
   );
 };
+
+const ContentCorrection = ({ automotive }) => (
+  <div className={classes.listContainer}>
+    <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+    <ul className={classes.listStyle}>
+      <li>
+        <b>Usunięcie rys i zmatowień:</b> Dokładnie eliminujemy drobne rysy,
+        zmatowienia i drobne defekty lakieru, przywracając powierzchni gładkość
+        i estetyczny wygląd.
+      </li>
+      <li>
+        <b>Poprawa głębi koloru:</b> Dzięki zaawansowanym technikom polerowania
+        lakier odzyskuje głębię, nasycenie i intensywność koloru, co sprawia, że
+        pojazd wygląda jak nowy.
+      </li>
+      <li>
+        <b>Ochrona lakieru na dłużej:</b> Po korekcie aplikujemy powłokę
+        ochronną, która zabezpiecza lakier przed promieniowaniem UV,
+        zabrudzeniami i zarysowaniami, przedłużając efekt renowacji.
+      </li>
+      <li>
+        <b>Przywrócenie wartości estetycznej:</b> Korekta lakieru sprawia, że
+        pojazd zyskuje nowy, profesjonalny wygląd, co może zwiększyć jego
+        wartość rynkową i zadowolenie właściciela.
+      </li>
+    </ul>
+  </div>
+);
 
 export default AutomotiveUpholstery;
