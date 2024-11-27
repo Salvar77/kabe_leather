@@ -10,25 +10,11 @@ class MyDocument extends Document {
           <Script
             id="Cookiebot"
             src="https://consent.cookiebot.com/uc.js"
-            data-cbid={process.env.COOKIEBOT_SECRET_KEY}
+            data-cbid={process.env.NEXT_PUBLIC_COOKIEBOT_SECRET_KEY}
             data-blockingmode="auto"
             strategy="lazyOnload"
             async
-          ></Script>
-
-          {/* Preconnect & Preload */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
           />
-
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          />
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
           {/* Google Tag Manager */}
           <Script
@@ -36,52 +22,52 @@ class MyDocument extends Document {
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[]; 
-                w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'}); 
-                var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; 
-                j.async=true; 
-                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-NC377D3W');
-            `,
+                (function(w,d,s,l,i){
+                  w[l]=w[l]||[];
+                  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+                  var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                  j.async=true;
+                  j.src='https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}'+dl;
+                  f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
+              `,
             }}
           />
 
           {/* Google Analytics */}
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=AW-16652411588"
-            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+            strategy="lazyOnload"
           />
           <Script
             id="google-analytics"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'AW-16652411588');
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
               `,
             }}
           />
 
           {/* Google Ads */}
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-PFL7MVJ5ZE"
-            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}`}
+            strategy="lazyOnload"
           />
           <Script
             id="google-ads"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-PFL7MVJ5ZE');
-                gtag('config', 'AW-16608400370');
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_AW_ID}');
               `,
             }}
           />
@@ -90,44 +76,15 @@ class MyDocument extends Document {
           {/* Google Tag Manager (noscript) */}
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-NC377D3W"
+              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}
             ></iframe>
           </noscript>
 
-          {/* Skrypt do zarządzania Cookiebotem */}
-          <Script
-            id="cookiebot-loader"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                document.addEventListener('DOMContentLoaded', () => {
-                  setTimeout(() => {
-                    const cookieBanner = document.querySelector('.cookie-banner');
-                    if (cookieBanner) {
-                      cookieBanner.classList.add('loaded');
-                    }
-                  }, 1000); // Opóźnienie 1 sekundy
-                });
-              `,
-            }}
-          />
-
           <Main />
           <NextScript />
-
-          {/* Google Ads Event Snippet */}
-          <Script
-            id="google-ads-event"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                gtag('event', 'conversion', {'send_to': 'AW-16608400370/9avKCNyvktMZEPKnwO89'});
-              `,
-            }}
-          />
         </body>
       </Html>
     );

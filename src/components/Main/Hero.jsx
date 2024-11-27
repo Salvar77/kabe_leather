@@ -26,7 +26,7 @@ const Hero = ({
             alt="Hero Background"
             layout="fill"
             objectFit="cover"
-            objectPosition={isMobile ? "center" : "70% 30%"}
+            objectPosition={isMobile ? "center" : "80% 20%"}
             priority
           />
         </div>

@@ -11,37 +11,29 @@
   text-align: center;
 
   &::before {
-    z-index: -1;
-  }
-
-  .imageWrapper {
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba($blue-after, 0.2) 70%,
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../../assets/image/heroMain.jpg");
+    background-size: cover;
+    background-position: center;
     z-index: -1;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-      z-index: 1;
-    }
+    transform: translateY(0);
+    transition: transform 0.5s ease-out;
   }
 
   &__title {
     color: $white-smooth;
-    font-size: 2.6rem;
+    z-index: 2;
     text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
-  }
-
-  p {
-    font-size: 1.6rem;
   }
 
   &__description {
@@ -84,6 +76,13 @@
   }
 }
 
+.hero__title {
+  &Span {
+    color: $green2;
+    font-weight: bold;
+  }
+}
+
 .textOverlay {
   position: absolute;
   top: 50%;
@@ -100,6 +99,14 @@
     color: $white-smooth;
     text-shadow: 3px 3px 6px rgba($dark-smooth, 0.9);
   }
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+}
+
+.hero p {
+  font-size: 1.6rem;
 }
 
 .button {
@@ -124,18 +131,24 @@
   }
 }
 
+.customHeroTitle {
+  font-size: 10rem;
+  color: #d35400;
+  text-align: left;
+  padding-top: 20px;
+}
+
 .customHeroTitleRealizations {
   text-shadow: 2px 2px 4px rgba($dark-smooth, 0.9);
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    h1 {
-      font-size: 3.4rem;
-    }
-    p {
-      font-size: 2rem;
-    }
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.4rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
   }
 
   .button {
@@ -143,46 +156,58 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .hero {
-    .imageWrapper {
+    &::before {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-        background-size: cover;
-        background-position: 70% 30%;
-        z-index: 1;
-      }
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-    p {
-      font-size: 2.4rem;
+      transform: translateY(9rem);
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba($blue-after, 0.2) 70%,
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("../../assets/image/heroMain.jpg");
+      background-position: 70% 30%;
     }
 
     .whiteBlock {
+      position: absolute;
+      height: 5rem;
+      width: 80%;
+      background: $white-smooth;
+      transform: skew(-45deg);
+      z-index: 3;
+
+      &Left {
+        bottom: 0;
+        left: -50px;
+      }
+
+      &Right {
+        top: 15rem;
+        right: -50px;
+        transform: skew(45deg);
+      }
+
       .whiteBlockTextContainer {
         transform: skew(45deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .whiteBlockText {
           display: none;
         }
       }
     }
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 2.4rem;
   }
 
   .button {
