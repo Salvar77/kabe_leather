@@ -16,10 +16,23 @@ class MyDocument extends Document {
             async
           />
 
+          {/* Preconnect & Preload */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
           {/* Google Tag Manager */}
           <Script
             id="gtm-script"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){
@@ -73,7 +86,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          {/* Google Tag Manager (noscript) */}
+          {/* Google Tag Manager (noscript fallback) */}
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
