@@ -25,18 +25,7 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "www.kabetintleather.pl",
-          },
-        ],
-        destination: "https://www.kabetintleather.pl/:path*",
-        permanent: true,
-      },
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "kabetintleather.pl",
+            value: "http://www.kabetintleather.pl",
           },
         ],
         destination: "https://www.kabetintleather.pl/:path*",
