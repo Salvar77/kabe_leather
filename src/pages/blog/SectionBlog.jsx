@@ -16,7 +16,7 @@ const SectionBlog = () => {
       />
       <section id="blog" className={classes.blog}>
         <div className={classes.blog__head}>
-          <h2 className={classes.blog__header}>Blog</h2>
+          <h1 className={classes.blog__header}>Blog</h1>
           <p className={classes.blog__text}>
             Dowiedz się więcej o naszych usługach, praniu tapicerek,
             autokosmetyce i przyciemnianiu szyb!

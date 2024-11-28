@@ -166,7 +166,7 @@ const Realizations = () => {
         image="https://www.kabetintleather.pl/autocosmetic.png"
       />
       <section id="realizacje" className={classes.realizations}>
-        <h2>Realizacje</h2>
+        <h1>Realizacje</h1>
         <div className={classes.realizations__wrapper}>
           {realizationsData.map((realization) => (
             <div key={realization.id} className={classes.realizations__item}>

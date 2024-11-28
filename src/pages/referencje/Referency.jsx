@@ -14,7 +14,7 @@ const Referency = () => {
         image="https://www.kabetintleather.pl/kabelogooo.webp"
       />
       <section id="referencje" className={classes.referencySection}>
-        <h2>Referencje</h2>
+        <h1>Referencje</h1>
         <div className={classes.photosContainer}>
           {referencyImages.map((photo, index) => {
             return (

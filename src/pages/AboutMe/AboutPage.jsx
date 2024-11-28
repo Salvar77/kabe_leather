@@ -17,7 +17,7 @@ const AboutPage = () => {
       />
       <div className={classes.backgroundAbout}>
         <section id="o-mnie" className={classes.aboutMe}>
-          <h2 className={classes.aboutMe__header}>O mnie</h2>
+          <h1 className={classes.aboutMe__header}>O mnie</h1>
           <div className={classes.aboutMe__grid}>
             <motion.div
               className={classes.aboutMe__box}

@@ -13,7 +13,7 @@ const PricingSection = () => {
         image="https://www.kabetintleather.pl/cennik2.jpg"
       />
       <section id="cennik" className={styles.pricingSection}>
-        <h2 className={styles.pricingHeader}>Cennik</h2>
+        <h1 className={styles.pricingHeader}>Cennik</h1>
         <ul className={styles.servicesList}>
           {services.map((service, index) => (
             <li key={index} className={styles.serviceItem}>

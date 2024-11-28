@@ -37,7 +37,7 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
         image={currentImage || "https://www.kabetintleather.pl/kabelogooo.webp"}
       />
       <section id="tapicerka1" className={classes.automotivePage}>
-        <h2>{automotive.description}</h2>
+        <h1>{automotive.description}</h1>
         <div className={classes.automotivePage__grid}>
           <div className={classes.imageWrapper}>
             {currentImage && (

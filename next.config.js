@@ -8,6 +8,41 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // Redirect all HTTP requests to HTTPS
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "kabetintleather.pl",
+          },
+        ],
+        destination: "https://www.kabetintleather.pl/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.kabetintleather.pl",
+          },
+        ],
+        destination: "https://www.kabetintleather.pl/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "kabetintleather.pl",
+          },
+        ],
+        destination: "https://www.kabetintleather.pl/:path*",
+        permanent: true,
+      },
+      // Other existing redirects
       {
         source: "/AboutMe/AboutPage",
         destination: "/o-mnie",
