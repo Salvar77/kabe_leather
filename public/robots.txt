@@ -12,6 +12,8 @@ Disallow: /Realizacje/przyciemnianie-szyb
 Disallow: /Realizations/Realizations
 
 
+
+
 Disallow: /Tapicerka/tapicerka-domowa
 Disallow: /Tapicerka/bezinwazyjne-przyciemnianie-szyb
 Disallow: /Tapicerka/pranie-tapicerki-skorzanej
@@ -24,6 +26,6 @@ Disallow: /tapicerka-samochodowa
 Disallow: /renowacja-tapicerki-skorzanej
 Disallow: /uslugi/renowacja-tapicerki-skorzanej
 Disallow: /Cennik
-Allow: /
+
 
 Sitemap: https://www.kabetintleather.pl/sitemap.xml
