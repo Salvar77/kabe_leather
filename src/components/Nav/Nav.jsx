@@ -41,7 +41,12 @@ const Nav = ({ isOpen, toggleNav }) => {
                 onClick={handleLinkClick}
                 className={classes.nav__item}
               >
-                <Link href={item.href}>{item.label}</Link>
+                <Link
+                  href={item.href}
+                  aria-label={`Przejdź do sekcji ${item.label}`}
+                >
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>

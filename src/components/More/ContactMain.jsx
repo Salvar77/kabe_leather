@@ -28,22 +28,38 @@ const ContactMain = () => {
       </div>
       <div className={classes.column}>
         <h2 className={classes.heading}>Menu:</h2>
-        <nav className={classes.nav}>
+        <nav className={classes.nav} role="navigation" aria-label="Główne menu">
           <ul>
             <li>
-              <Link href="/o-mnie">O nas</Link>
+              <Link href="/o-mnie" aria-label="Przejdź do sekcji O nas">
+                O nas
+              </Link>
             </li>
             <li>
-              <Link href="/realizacje">Realizacje</Link>
+              <Link
+                href="/realizacje"
+                aria-label="Przejdź do sekcji Realizacje"
+              >
+                Realizacje
+              </Link>
             </li>
             <li>
-              <Link href="/referencje">Referencje</Link>
+              <Link
+                href="/referencje"
+                aria-label="Przejdź do sekcji Referencje"
+              >
+                Referencje
+              </Link>
             </li>
             <li>
-              <Link href="/cennik">Cennik</Link>
+              <Link href="/cennik" aria-label="Przejdź do sekcji Cennik">
+                Cennik
+              </Link>
             </li>
             <li>
-              <Link href="/kontakt">Kontakt</Link>
+              <Link href="/kontakt" aria-label="Przejdź do sekcji Kontakt">
+                Kontakt
+              </Link>
             </li>
           </ul>
         </nav>
@@ -51,12 +67,23 @@ const ContactMain = () => {
 
       <div className={classes.column}>
         <h2 className={classes.heading}>Linki:</h2>
-        <ul className={classes.socialList}>
+        <ul
+          className={classes.socialList}
+          role="navigation"
+          aria-label="Linki społecznościowe"
+        >
           <li>
-            <Link href="/polityka-prywatnosci">Polityka Prywatności</Link>
+            <Link
+              href="/polityka-prywatnosci"
+              aria-label="Przejdź do Polityki Prywatności"
+            >
+              Polityka Prywatności
+            </Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog" aria-label="Przejdź do bloga">
+              Blog
+            </Link>
           </li>
           <li>
             <a

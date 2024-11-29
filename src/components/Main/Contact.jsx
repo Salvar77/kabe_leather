@@ -113,7 +113,7 @@ const Contact = () => {
               onChange={() => setConsent(!consent)}
               required
             />
-            <label htmlFor="rodoConsent">
+            <label htmlFor="rodoConsent" id="rodoDescription">
               Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o
               ochronie danych osobowych w związku z wysłaniem zapytania przez
               formularz kontaktowy. Podanie danych jest dobrowolne, ale
@@ -123,10 +123,16 @@ const Contact = () => {
               Leather Auto Detailing Kamil Brzoskwinia, ul. Grota Roweckiego 18.
             </label>
           </div>
-          <button type="submit">Wyślij</button>
+          <button type="submit" aria-label="Wyślij formularz kontaktowy">
+            Wyślij
+          </button>
         </form>
         <div className={classes.linkWrapper}>
-          <Link href="tel:+48881325631" className={classes.appointmentLink}>
+          <Link
+            href="tel:+48881325631"
+            className={classes.appointmentLink}
+            aria-label="Zadzwoń, aby umówić wizytę"
+          >
             Umów się na wizytę!
           </Link>
         </div>

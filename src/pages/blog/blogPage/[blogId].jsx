@@ -67,7 +67,11 @@ const BlogPost = ({ pageContent }) => {
             </div>
           )}
 
-          <Link href="/blog" className={classes.backButton}>
+          <Link
+            href="/blog"
+            className={classes.backButton}
+            aria-label="powrót do bloga"
+          >
             Powrót do bloga
           </Link>
         </div>

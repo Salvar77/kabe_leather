@@ -82,7 +82,11 @@ const AboutUs = () => {
         </ul>
 
         <div className={classes.buttonContainer}>
-          <Link href="/cennik" className={classes.realizationButton}>
+          <Link
+            href="/cennik"
+            className={classes.realizationButton}
+            aria-label="Sprawdź nasz cennik usług"
+          >
             Sprawdź cennik
           </Link>
           <div className={classes.aboutMe__socialLinks}>

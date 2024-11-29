@@ -183,6 +183,7 @@ const Realizations = () => {
                   <Link
                     href={`/realizacje/${realization.id}`}
                     className={classes.realizations__button}
+                    aria-label={`Zobacz więcej o realizacji: ${realization.description}`}
                   >
                     &#10132;
                   </Link>
