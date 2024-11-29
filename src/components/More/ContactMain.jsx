@@ -67,11 +67,7 @@ const ContactMain = () => {
 
       <div className={classes.column}>
         <h2 className={classes.heading}>Linki:</h2>
-        <ul
-          className={classes.socialList}
-          role="navigation"
-          aria-label="Linki społecznościowe"
-        >
+        <ul className={classes.socialList}>
           <li>
             <Link
               href="/polityka-prywatnosci"
