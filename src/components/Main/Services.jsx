@@ -1,12 +1,16 @@
 import classes from "./Services.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "../../assets/image/services1.jpg";
-import furnitureImage from "../../assets/image/services3.jpg";
+import heroImage from "../../assets/image/services1.webp";
+import heroImageLarge from "../../assets/image/services1.jpg";
+import furnitureImage from "../../assets/image/services3.webp";
+import furnitureImageLarge from "../../assets/image/services3.jpg";
 import tintImage from "../../assets/image/tint_640.jpg";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
-import cleanImg from "../../assets/image/heroMain.jpg";
-import paintCorrection from "../../assets/image/paintCorrection.jpg";
+import cleanImg from "../../assets/image/heroMainWebp640.webp";
+import cleanImgLarge from "../../assets/image/heroMainWebpBig.webp";
+import paintCorrection from "../../assets/image/paintCorrection.webp";
+import paintCorrectionLarge from "../../assets/image/paintCorrection.jpg";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
 
@@ -15,7 +19,7 @@ export const servicesData = [
     id: "uslugi/pranie-tapicerki",
     description: "Pranie Tapicerki",
     image: cleanImg,
-    largeImage: cleanImg,
+    largeImage: cleanImgLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
     backgroundImage: " url('../../assets/image/clean4.png')",
@@ -27,7 +31,7 @@ export const servicesData = [
     id: "uslugi/renowacja-i-czyszczenie-skor",
     description: "Renowacja i Czyszczenie Skór",
     image: heroImage,
-    largeImage: heroImage,
+    largeImage: heroImageLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
     backgroundImage: "url('../../assets/image/hero4_640.jpg')",
@@ -39,7 +43,7 @@ export const servicesData = [
     id: "uslugi/autokosmetyka",
     description: "Autokosmetyka ",
     image: furnitureImage,
-    largeImage: furnitureImage,
+    largeImage: furnitureImageLarge,
     largeImageWidth: 1600,
     title: "Sprawdź",
     backgroundImage: "url('../../assets/image/furniture_640.jpg')",
@@ -63,7 +67,7 @@ export const servicesData = [
     id: "uslugi/korekta-lakieru",
     description: "Korekta Lakieru",
     image: paintCorrection,
-    largeImage: paintCorrection,
+    largeImage: paintCorrectionLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
     backgroundImage: " url('../../assets/image/tint_640.jpg')",

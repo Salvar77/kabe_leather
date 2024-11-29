@@ -8,7 +8,7 @@ const ContactMain = () => {
   return (
     <section id="kontakt-główny" className={classes.contactMain}>
       <div className={classes.column}>
-        <h4 className={classes.heading}>Dane kontaktowe:</h4>
+        <h2 className={classes.heading}>Dane kontaktowe:</h2>
         <p className={classes.address}>ul. Generała Emila Fieldorfa 12</p>
         <p className={classes.addressTwo}>45-273 Opole</p>
         <p className={classes.phone}>Tel: 881 325 631</p>
@@ -27,7 +27,7 @@ const ContactMain = () => {
         </div>
       </div>
       <div className={classes.column}>
-        <h4 className={classes.heading}>Menu:</h4>
+        <h2 className={classes.heading}>Menu:</h2>
         <nav className={classes.nav}>
           <ul>
             <li>
@@ -50,7 +50,7 @@ const ContactMain = () => {
       </div>
 
       <div className={classes.column}>
-        <h4 className={classes.heading}>Linki:</h4>
+        <h2 className={classes.heading}>Linki:</h2>
         <ul className={classes.socialList}>
           <li>
             <Link href="/polityka-prywatnosci">Polityka Prywatności</Link>
@@ -64,7 +64,10 @@ const ContactMain = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="fab fa-facebook-f"
-            ></a>
+              aria-label="Odwiedź nas na Facebooku"
+            >
+              <span className="sr-only">Facebook</span>
+            </a>
           </li>
           <li>
             <a
@@ -72,7 +75,10 @@ const ContactMain = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="fab fa-instagram"
-            ></a>
+              aria-label="Odwiedź nas na Instagramie"
+            >
+              <span className="sr-only">Instagram</span>
+            </a>
           </li>
           <li>
             <a
@@ -80,7 +86,10 @@ const ContactMain = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="fab fa-tiktok"
-            ></a>
+              aria-label="Odwiedź nas na TikToku"
+            >
+              <span className="sr-only">TikTok</span>
+            </a>
           </li>
         </ul>
       </div>

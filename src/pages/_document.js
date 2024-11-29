@@ -28,10 +28,17 @@ class MyDocument extends Document {
           {/* Preconnect & Preload */}
 
           <link
-            rel="stylesheet"
+            rel="preload"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            async
+            as="style"
+            onload="this.rel='stylesheet'"
           />
+          <noscript>
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            />
+          </noscript>
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         </Head>
         <body>

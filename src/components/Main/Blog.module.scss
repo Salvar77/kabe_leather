@@ -55,7 +55,9 @@
   }
 
   .blog__readMore {
-    padding-top: 1rem;
+    display: inline-block;
+    background-color: $white-smooth;
+    padding: 1rem 1.5rem;
     color: $blue-after;
     font-weight: bold;
     text-decoration: none;
