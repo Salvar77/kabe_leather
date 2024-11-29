@@ -6,15 +6,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Preconnect & Preload */}
-
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            async
-          />
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
           {/* Google Tag Manager */}
           <Script
             id="gtm-script"
@@ -51,6 +42,15 @@ class MyDocument extends Document {
               `,
             }}
           />
+
+          {/* Preconnect & Preload */}
+
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            async
+          />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
           {/* Google Ads */}
           <Script
