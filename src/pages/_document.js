@@ -25,24 +25,6 @@ class MyDocument extends Document {
             }}
           />
 
-          {/* Google Analytics */}
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-            strategy="lazyOnload"
-          />
-          <Script
-            id="google-analytics"
-            strategy="lazyOnload"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-              `,
-            }}
-          />
-
           {/* Preconnect & Preload */}
 
           <link
@@ -51,25 +33,6 @@ class MyDocument extends Document {
             async
           />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-          {/* Google Ads */}
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}`}
-            strategy="lazyOnload"
-          />
-          <Script
-            id="google-ads"
-            strategy="lazyOnload"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');
-                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_AW_ID}');
-              `,
-            }}
-          />
         </Head>
         <body>
           {/* Google Tag Manager (noscript fallback) */}
