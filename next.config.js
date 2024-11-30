@@ -8,7 +8,7 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Redirect all HTTP requests to HTTPS
+      // Redirect all HTTP and non-www traffic to HTTPS with www
       {
         source: "/:path*",
         has: [
@@ -31,6 +31,18 @@ const nextConfig = {
         destination: "https://www.kabetintleather.pl/:path*",
         permanent: true,
       },
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "https://kabetintleather.pl",
+          },
+        ],
+        destination: "https://www.kabetintleather.pl/:path*",
+        permanent: true,
+      },
+
       // Other existing redirects
       {
         source: "/AboutMe/AboutPage",

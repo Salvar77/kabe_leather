@@ -93,11 +93,7 @@ export default function Home() {
         }}
       />
 
-      <Hero
-        title="Kabe Tint&Leather Auto Detailing"
-        description="Kompleksowe czyszczenie samochodu"
-        showButton={true}
-      />
+      <Hero showButton={true} />
       <div className="bg">
         <div className="container">
           <WhyUs />

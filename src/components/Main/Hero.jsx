@@ -3,12 +3,10 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
-import HeroImageMobile from "../../assets/image/heroMainWebp640.webp";
+import HeroImageMobile from "../../assets/image/heroMainW.webp";
 import HeroImageDesktop from "../../assets/image/heroMainWebpBig.webp";
 
 const Hero = ({
-  title,
-  description,
   showButton,
   height = "100vh",
   mobileWhiteBlockColor = "#1D120C",
@@ -16,6 +14,9 @@ const Hero = ({
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
 
   const isMobile = useMediaQuery("(max-width: 992px)");
+
+  const title = "Kabe Tint&Leather Auto Detailing";
+  const description = "Kompleksowe czyszczenie samochodu";
 
   return (
     <div>
@@ -28,6 +29,7 @@ const Hero = ({
             objectFit="cover"
             objectPosition={isMobile ? "center" : "80% 20%"}
             priority
+            sizes="(max-width: 768px) 100vw, 100vh"
           />
         </div>
 
