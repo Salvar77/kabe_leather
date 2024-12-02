@@ -15,9 +15,6 @@ const Hero = ({
 
   const isMobile = useMediaQuery("(max-width: 992px)");
 
-  const title = "Kabe Tint&Leather Auto Detailing";
-  const description = "Kompleksowe czyszczenie samochodu";
-
   return (
     <div>
       <section id="hero" className={classes.hero} style={{ height }}>
@@ -34,8 +31,12 @@ const Hero = ({
         </div>
 
         <div className={classes.textOverlay}>
-          <h1 className={classes.hero__title}>{title}</h1>
-          <p className={classes.hero__description}>{description}</p>
+          <h1 className={classes.hero__title}>
+            Kabe Tint&Leather Auto Detailing
+          </h1>
+          <p className={classes.hero__description}>
+            Kompleksowe czyszczenie samochodu
+          </p>
           {showButton && (
             <a href="#galeria" className={classes.button}>
               Realizacje
