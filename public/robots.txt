@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: / 
 Disallow: /private/
 Disallow: /O-mnie
 Disallow: /O-Mnie
@@ -10,9 +9,6 @@ Disallow: /Realizacje/renowacje-skor
 Disallow: /Realizacje/autokosmetyka
 Disallow: /Realizacje/przyciemnianie-szyb	
 Disallow: /Realizations/Realizations
-
-
-
 
 Disallow: /Tapicerka/tapicerka-domowa
 Disallow: /Tapicerka/bezinwazyjne-przyciemnianie-szyb
@@ -26,6 +22,5 @@ Disallow: /tapicerka-samochodowa
 Disallow: /renowacja-tapicerki-skorzanej
 Disallow: /uslugi/renowacja-tapicerki-skorzanej
 Disallow: /Cennik
-
 
 Sitemap: https://www.kabetintleather.pl/sitemap.xml
