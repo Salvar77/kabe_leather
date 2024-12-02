@@ -93,7 +93,7 @@ export default function Home() {
         }}
       />
 
-      <Hero showButton={true} />
+      <Hero />
       <div className="bg">
         <div className="container">
           <WhyUs />

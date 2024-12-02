@@ -6,14 +6,12 @@ import classes from "./Hero.module.scss";
 import HeroImageMobile from "../../assets/image/heroMainW.webp";
 import HeroImageDesktop from "../../assets/image/heroMainWebpBig.webp";
 
-const Hero = ({
-  showButton,
-  height = "100vh",
-  mobileWhiteBlockColor = "#1D120C",
-}) => {
+const Hero = ({ height = "100vh", mobileWhiteBlockColor = "#1D120C" }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
-
   const isMobile = useMediaQuery("(max-width: 992px)");
+
+  const title = "Kabe Tint&Leather Auto Detailing";
+  const description = "Kompleksowe czyszczenie samochodu";
 
   return (
     <div>
@@ -31,17 +29,11 @@ const Hero = ({
         </div>
 
         <div className={classes.textOverlay}>
-          <h1 className={classes.hero__title}>
-            Kabe Tint&Leather Auto Detailing
-          </h1>
-          <p className={classes.hero__description}>
-            Kompleksowe czyszczenie samochodu
-          </p>
-          {showButton && (
-            <a href="#galeria" className={classes.button}>
-              Realizacje
-            </a>
-          )}
+          <h1 className={classes.hero__title}>{title}</h1>
+          <p className={classes.hero__description}>{description}</p>
+          <a href="#galeria" className={classes.button}>
+            Realizacje
+          </a>
         </div>
 
         <div
