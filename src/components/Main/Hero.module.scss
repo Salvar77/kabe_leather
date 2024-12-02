@@ -15,7 +15,7 @@
   }
 
   .imageWrapper {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -154,6 +154,10 @@
 
     &__description {
       text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
+    }
+
+    .imageWrapper {
+      position: fixed;
     }
 
     .whiteBlock {
