@@ -4,11 +4,19 @@ import classes from "./BlogPage.module.scss";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 
-const BlogPost = ({ pageContent }) => {
+const specialImagePages = [
+  "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
+  "/jak-wyczyscic-tapicerke-samochodowa",
+  "/jak-dbac-o-skorzana-tapicerke-samochodowa",
+  "/uzywamy-profesjonalnych-produktow",
+];
+
+const BlogPost = ({ pageContent, blogId }) => {
   if (!pageContent) {
     return <p>Ładowanie...</p>;
   }
 
+  const isSpecialImage = specialImagePages.includes(`/` + blogId);
   const isLargeImage = pageContent.title.includes("Korekta lakieru");
 
   return (
@@ -31,7 +39,7 @@ const BlogPost = ({ pageContent }) => {
           <div
             className={`${classes.blogPost__image} ${
               isLargeImage ? classes.largeImage : ""
-            }`}
+            } ${isSpecialImage ? classes.specialImage : ""}`}
           >
             <Image
               src={pageContent.dynamicImage}
@@ -107,6 +115,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       pageContent,
+      blogId: params.blogId,
     },
   };
 }

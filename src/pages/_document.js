@@ -23,9 +23,8 @@ class MyDocument extends Document {
                 })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
               `,
             }}
-          />
+          />{" "}
           {/* Preconnect & Preload */}
-
           <link
             rel="preload"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
