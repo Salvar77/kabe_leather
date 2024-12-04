@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Policy.module.scss";
+import classes from "./polityka-prywatnosci.module.scss";
 import SEO from "@/components/Main/SEO";
 
 const PrivacyPolicyPage = () => {
@@ -8,7 +8,7 @@ const PrivacyPolicyPage = () => {
       <SEO
         title="Polityka Prywatności - Kabe Tint&Leather Auto Detailing"
         description="Zapoznaj się z naszą Polityką Prywatności. Dowiedz się, jak chronimy dane osobowe użytkowników korzystających z usług Kabe Tint&Leather Auto Detailing."
-        image="https://www.kabetintleather.pl/kabelogooo.webp"
+        image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
       />
       <div id="polityka-prywatnosci" className={classes.policy}>
         <h1>Polityka Prywatności</h1>

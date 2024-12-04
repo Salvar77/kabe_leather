@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Image from "next/image";
 import classes from "./RealizationsPage.module.scss";
-import { realizationsData } from "../Realizations";
+import { realizationsData } from "../realizacje";
 import Link from "next/link";
 import SEO from "@/components/Main/SEO";
 
@@ -33,7 +33,7 @@ const RealizationDetail = ({ realization }) => {
         description={`Zobacz szczegóły realizacji: ${realization.description}. Profesjonalne usługi w Kabe Tint&Leather Auto Detailing.`}
         image={
           realization.largeImage ||
-          "https://www.kabetintleather.pl/autocosmetic.png"
+          "https://www.kabetintleather.opole.pl/autocosmetic.png"
         }
       />
       <section id="realizacje" className={classes.realizationDetail}>

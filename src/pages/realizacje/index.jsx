@@ -163,7 +163,7 @@ const Realizations = () => {
       <SEO
         title="Nasze Realizacje - Kabe Tint&Leather Auto Detailing"
         description="Zobacz nasze przykładowe realizacje w Kabe Tint&Leather Auto Detailing. Profesjonalne pranie tapicerki, renowacja skóry, autokosmetyka i przyciemnianie szyb."
-        image="https://www.kabetintleather.pl/autocosmetic.png"
+        image="https://www.kabetintleather.opole.pl/autocosmetic.png"
       />
       <section id="realizacje" className={classes.realizations}>
         <h1>Realizacje</h1>

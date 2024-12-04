@@ -14,11 +14,11 @@ const SEO = ({ title, description, image }) => (
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          url: "https://www.kabetintleather.pl",
+          url: "https://kabetintleather.opole.pl",
           name: "Kabe Tint&Leather Auto Detailing",
           description:
             "Profesjonalne pranie tapicerki, czyszczenie tapicerki oraz czyszczenie samochodu w Opolu. Skontaktuj się z nami, aby zadbać o czystość swojego pojazdu.",
-          logo: "https://www.kabetintleather.pl/kabelogooo.webp",
+          logo: "https://kabetintleather.opole.pl/kabelogooo.webp",
           telephone: "+48-881-325-631",
           contactPoint: {
             "@type": "ContactPoint",

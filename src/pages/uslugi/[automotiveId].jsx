@@ -1,6 +1,6 @@
 import React from "react";
 import { servicesData } from "../../components/Main/Services";
-import classes from "./AutomotiveUpholstery.module.scss";
+import classes from "./uslugi.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import SEO from "@/components/Main/SEO";
@@ -34,7 +34,9 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
       <SEO
         title={`${automotive.title} - Kabe Tint&Leather Auto Detailing w Opolu`}
         description={`Profesjonalne usługi ${automotive.title.toLowerCase()} w Opolu. Oferujemy ${automotive.title.toLowerCase()} z najwyższą dbałością o każdy detal.`}
-        image={currentImage || "https://www.kabetintleather.pl/kabelogooo.webp"}
+        image={
+          currentImage || "https://www.kabetintleather.opole.pl/kabelogooo.webp"
+        }
       />
       <section id="tapicerka1" className={classes.automotivePage}>
         <h1>{automotive.description}</h1>

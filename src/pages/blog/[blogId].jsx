@@ -1,4 +1,4 @@
-import { pagesContent } from "../../../../constants";
+import { pagesContent } from "../../../constants";
 import Link from "next/link";
 import classes from "./BlogPage.module.scss";
 import Image from "next/image";
@@ -31,7 +31,7 @@ const BlogPost = ({ pageContent, blogId }) => {
         }`}
         image={
           pageContent.dynamicImage ||
-          "https://www.kabetintleather.pl/kabelogooo.webp"
+          "https://kabetintleather.opole.pl/kabelogooo.webp"
         }
       />
       <div className={classes.blogPost}>

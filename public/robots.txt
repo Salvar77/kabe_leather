@@ -1,27 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /private/
-Disallow: /O-mnie
-Disallow: /O-Mnie
-Disallow: /Realizacje
-Disallow: /Realizacje/pranie-tapicerki
-Disallow: /Realizacje/renowacja-skor
-Disallow: /Realizacje/renowacje-skor
-Disallow: /Realizacje/autokosmetyka
-Disallow: /Realizacje/przyciemnianie-szyb	
-Disallow: /Realizations/Realizations
 
-Disallow: /Tapicerka/tapicerka-domowa
-Disallow: /Tapicerka/bezinwazyjne-przyciemnianie-szyb
-Disallow: /Tapicerka/pranie-tapicerki-skorzanej
-Disallow: /Tapicerka/tapicerka-samochodowa
-Disallow: /Tapicerka/pranie-tapicerki-samochodowej
-Disallow: /autokosmetyka
-Disallow: /przyciemnianie-szyb
-Disallow: /pranie-tapicerki
-Disallow: /tapicerka-samochodowa
-Disallow: /renowacja-tapicerki-skorzanej
-Disallow: /uslugi/renowacja-tapicerki-skorzanej
-Disallow: /Cennik
 
-Sitemap: https://www.kabetintleather.pl/sitemap.xml
+Sitemap: https://kabetintleather.opole.pl/sitemap.xml

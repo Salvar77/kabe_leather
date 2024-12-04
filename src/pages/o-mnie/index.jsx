@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { zoomIn } from "../../../utils/motion";
-import classes from "./AboutPage.module.scss";
+import classes from "./o-mnie.module.scss";
 import picture from "../../assets/image/heroMain.jpg";
 import SEO from "@/components/Main/SEO";
 
@@ -13,7 +13,7 @@ const AboutPage = () => {
       <SEO
         title="O Mnie - Kabe Tint&Leather Auto Detailing w Opolu"
         description="Poznaj Kamila i jego pasję do motoryzacji oraz prania tapicerki i czyszczenia samochodów. Profesjonalna autokosmetyka w Opolu."
-        image="https://www.kabetintleather.pl/hero_main.jpg"
+        image="https://www.kabetintleather.opole.pl/hero_main.jpg"
       />
       <div className={classes.backgroundAbout}>
         <section id="o-mnie" className={classes.aboutMe}>
