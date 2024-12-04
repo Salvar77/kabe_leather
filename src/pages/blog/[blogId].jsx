@@ -31,7 +31,7 @@ const BlogPost = ({ pageContent, blogId }) => {
         }`}
         image={
           pageContent.dynamicImage ||
-          "https://kabetintleather.opole.pl/kabelogooo.webp"
+          "https://www.kabetintleather.opole.pl/kabelogooo.webp"
         }
       />
       <div className={classes.blogPost}>
