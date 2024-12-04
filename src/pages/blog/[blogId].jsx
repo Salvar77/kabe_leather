@@ -1,6 +1,6 @@
 import { pagesContent } from "../../../constants";
 import Link from "next/link";
-import classes from "./BlogPage.module.scss";
+import classes from "./blogStrona.module.scss";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 

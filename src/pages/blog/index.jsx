@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./SectionBlog.module.scss";
+import classes from "./sekcjaBlog.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "../../../constants/index";

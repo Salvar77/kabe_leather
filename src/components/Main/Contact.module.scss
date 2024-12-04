@@ -93,10 +93,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $dark-smooth;
+  background-color: $green;
   z-index: 1000;
 
   .modalContent {
+    color: $dark-smooth;
     background-color: $white-smooth;
     padding: 2rem;
     border-radius: 0.5rem;
