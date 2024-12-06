@@ -31,7 +31,7 @@ class MyDocument extends Document {
             rel="preload"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
             as="style"
-            onload="this.rel='stylesheet'"
+            onLoad="this.rel='stylesheet'"
           />
           <noscript>
             <link

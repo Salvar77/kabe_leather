@@ -32,7 +32,7 @@ const ContactMain = () => {
           <ul>
             <li>
               <Link href="/o-mnie" aria-label="Przejdź do sekcji O nas">
-                O nas
+                O mnie
               </Link>
             </li>
             <li>
