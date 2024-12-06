@@ -1,6 +1,5 @@
 User-agent: *
-Allow: /
 Disallow: /private/
+Allow: /
 
-
-Sitemap: https://kabetintleather.opole.pl/sitemap.xml
+Sitemap: https://www.kabetintleather.opole.pl/sitemap.xml
