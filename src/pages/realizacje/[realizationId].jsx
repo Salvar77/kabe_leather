@@ -35,6 +35,7 @@ const RealizationDetail = ({ realization }) => {
           realization.largeImage ||
           "https://www.kabetintleather.opole.pl/autocosmetic.png"
         }
+        url={`https://www.kabetintleather.opole.pl/realizacje/${realization.id}`}
       />
       <section id="realizacje" className={classes.realizationDetail}>
         <h1 className={classes.realizationDetail__header}>

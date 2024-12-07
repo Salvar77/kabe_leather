@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const SEO = ({ title, description, image }) => (
+const SEO = ({ title, description, image, url }) => (
   <Head>
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -8,8 +8,8 @@ const SEO = ({ title, description, image }) => (
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:url" content="https://www.kabetintleather.opole.pl" />
-    <link rel="canonical" href="https://www.kabetintleather.opole.pl" />
+    <meta property="og:url" content={url} />
+    <link rel="canonical" href={url} />
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{

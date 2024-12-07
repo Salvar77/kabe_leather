@@ -14,6 +14,7 @@ const AboutPage = () => {
         title="O Mnie - Kabe Tint&Leather Auto Detailing w Opolu"
         description="Poznaj Kamila i jego pasję do motoryzacji oraz prania tapicerki i czyszczenia samochodów. Profesjonalna autokosmetyka w Opolu."
         image="https://www.kabetintleather.opole.pl/hero_main.jpg"
+        url="https://www.kabetintleather.opole.pl/o-mnie"
       />
       <div className={classes.backgroundAbout}>
         <section id="o-mnie" className={classes.aboutMe}>

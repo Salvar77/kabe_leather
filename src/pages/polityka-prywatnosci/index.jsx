@@ -9,6 +9,7 @@ const PrivacyPolicyPage = () => {
         title="Polityka Prywatności - Kabe Tint&Leather Auto Detailing"
         description="Zapoznaj się z naszą Polityką Prywatności. Dowiedz się, jak chronimy dane osobowe użytkowników korzystających z usług Kabe Tint&Leather Auto Detailing."
         image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
+        url="https://www.kabetintleather.opole.pl/polityka-prywatnosci"
       />
       <div id="polityka-prywatnosci" className={classes.policy}>
         <h1>Polityka Prywatności</h1>

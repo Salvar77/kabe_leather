@@ -9,7 +9,8 @@ const ContactSide = () => {
       <SEO
         title="Kontakt - Kabe Tint&Leather Auto Detailing w Opolu"
         description="Skontaktuj się z nami! Kabe Tint&Leather Auto Detailing oferuje profesjonalne usługi prania tapicerki, czyszczenia samochodów i przyciemniania szyb. Zapraszamy do kontaktu."
-        image="https://www.kabetintleather.opole.pl/logo.jpg"
+        image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
+        url="https://www.kabetintleather.opole.pl/kontakt"
       />
       <section id="kontakt" className={classes.contactSide}>
         <div className={classes.contactSide__box}>

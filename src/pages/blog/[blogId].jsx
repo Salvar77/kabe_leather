@@ -33,6 +33,7 @@ const BlogPost = ({ pageContent, blogId }) => {
           pageContent.dynamicImage ||
           "https://www.kabetintleather.opole.pl/kabelogooo.webp"
         }
+        url={`https://www.kabetintleather.opole.pl/blog/${blogId}`}
       />
       <div className={classes.blogPost}>
         {pageContent.dynamicImage && (
