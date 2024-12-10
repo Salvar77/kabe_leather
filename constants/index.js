@@ -370,14 +370,6 @@ const referencyImages = [
     src: referencyPhoto1,
     alt: "zdjęcie referencji właściciela Kabe",
   },
-  {
-    src: referencyPhoto2,
-    alt: "zdjęcie referencji właściciela Kabe",
-  },
-  {
-    src: referencyPhoto3,
-    alt: "zdjęcie referencji właściciela Kabe",
-  },
 ];
 
 const services = [

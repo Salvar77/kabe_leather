@@ -39,9 +39,7 @@ import blogFoto10 from "../src/assets/image/blogFoto10.jpg";
 import blogFoto11 from "../src/assets/image/blogFoto11.jpg";
 import blogFoto12 from "../src/assets/image/detalShot3.jpg";
 
-import referencyPhoto1 from "../src/assets/image/detalShot.jpg";
-import referencyPhoto2 from "../src/assets/image/detalShot1.jpg";
-import referencyPhoto3 from "../src/assets/image/detalShot3.jpg";
+import referencyPhoto1 from "../src/assets/image/referencyMain.jpg";
 
 export {
   blogBeforeAfter1,
@@ -61,8 +59,6 @@ export {
   blogMain5,
   blogMain6,
   referencyPhoto1,
-  referencyPhoto2,
-  referencyPhoto3,
   blogFotoMain,
   blogFotoMain2,
   blogFotoMain3,

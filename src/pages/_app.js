@@ -40,12 +40,12 @@ export default function App({ Component, pageProps }) {
         url="https://www.kabetintleather.opole.pl/"
       />
       <NextSeo
-        title="Pranie Tapicerki, Czyszczenie Samochodu | Kabe Tint&Leather Auto Detailing"
+        title="Pranie tapicerki samochodowej Opole | Kabe Tint&Leather Auto Detailing"
         description="Profesjonalne pranie tapicerki i czyszczenie samochodu w Opolu. Oferujemy skuteczne czyszczenie tapicerki samochodowej, dbając o detale. Skontaktuj się z nami!"
         canonical="https://www.kabetintleather.opole.pl/"
         openGraph={{
           url: "https://www.kabetintleather.opole.pl/",
-          title: "Pranie Tapicerki, Czyszczenie Samochodu | Kabe Tint&Leather",
+          title: "Pranie tapicerki samochodowej Opole | Kabe Tint&Leather",
           description:
             "Oferujemy najwyższej jakości usługi prania tapicerki i czyszczenia samochodów w Opolu. Specjalizujemy się w czyszczeniu tapicerki, dbając o każdy szczegół.",
           images: [
