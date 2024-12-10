@@ -18,6 +18,7 @@ export default function Home() {
         title="Kabe Tint&Leather - Pranie Tapicerki i Czyszczenie Samochodów w Opolu"
         description="Kabe Tint&Leather specjalizuje się w profesjonalnym praniu tapicerki oraz czyszczeniu samochodów. Zadbaj o swoje auto z naszą pomocą."
         image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
+        url="https://www.kabetintleather.opole.pl/"
       />
       <NextSeo
         title="Pranie Tapicerki, Czyszczenie Samochodu | Kabe Tint&Leather Auto Detailing"

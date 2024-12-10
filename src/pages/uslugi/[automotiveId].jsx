@@ -92,7 +92,12 @@ const ContentUpholstery = ({ automotive }) => (
     <ul className={classes.listStyle}>
       <li>
         <b>Odnowienie koloru i tekstury:</b> Przywracamy skórze jej naturalny
-        kolor i gładkość, eliminując zarysowania, plamy i odbarwienia.
+        kolor i gładkość, eliminując zarysowania, plamy i odbarwienia. Więcej o
+        tym, jak dbać o skórzaną tapicerkę, znajdziesz w naszym wpisie:{" "}
+        <Link href="/blog/jak-dbac-o-skorzana-tapicerke-samochodowa">
+          Dbaj o skórzaną tapicerkę
+        </Link>
+        .
       </li>
       <li>
         <b>Zwiększenie trwałości:</b> Nasze zabiegi zabezpieczają skórę przed
@@ -118,23 +123,32 @@ const ContentTinting = ({ automotive }) => (
     <ul className={classes.listStyle}>
       <li>
         <b>Redukcja energii słonecznej:</b> Obniż temperaturę w samochodzie, co
-        zwiększa komfort jazdy, szczególnie w gorące dni.
+        zwiększa komfort jazdy, szczególnie w gorące dni. Dowiedz się więcej o{" "}
+        <Link href="/blog/jak-przyciemnic-szyby-samochodowe">
+          korzyściach przyciemniania szyb
+        </Link>{" "}
+        na naszym blogu.
       </li>
-      <li>
-        <b>Ochrona przed szkodliwymi promieniami UV:</b> Folie przyciemniające
-        chronią pasażerów przed szkodliwymi promieniami UV.
-      </li>
+
       <li>
         <b>Zwiększenie prywatności:</b> Popraw swoją prywatność i bezpieczeństwo
-        dzięki foliom, które utrudniają widoczność z zewnątrz.
+        dzięki foliom, które utrudniają widoczność z zewnątrz, co podnosi
+        komfort jazdy i zapobiega niepożądanym spojrzeniom.
       </li>
-      <li>
-        <b>Bezpieczeństwo w razie wypadku:</b> Folie przyciemniające mogą pomóc
-        w ochronie pasażerów przed odłamkami stłuczonego szkła podczas wypadków.
-      </li>
+
       <li>
         <b>Estetyka pojazdu:</b> Nowoczesne folie nadają samochodowi elegancki i
-        stylowy wygląd, który wyróżnia się na drodze.
+        stylowy wygląd, który wyróżnia się na drodze. Sprawdź szczegóły na{" "}
+        <Link href="/blog/jak-przyciemnic-szyby-samochodowe">naszym blogu</Link>{" "}
+        i dowiedz się, jak wybrać najlepszą metodę przyciemniania szyb.
+      </li>
+      <li>
+        <b>Metody przyciemniania szyb:</b> Oferujemy metody takie jak{" "}
+        <Link href="/blog/jak-przyciemnic-szyby-samochodowe">
+          przyciemnianie folią
+        </Link>{" "}
+        oraz metodę piecową, które zapewniają trwałość i estetykę, spełniając
+        Twoje indywidualne potrzeby.
       </li>
     </ul>
   </div>
@@ -147,7 +161,11 @@ const ContentCleaning = ({ automotive }) => (
       <li>
         <b>Głęboki i skuteczny efekt czyszczenia:</b> Usuwamy zanieczyszczenia,
         kurz, brud i plamy, przywracając tapicerce jej pierwotny wygląd i
-        zapach.
+        zapach. Więcej o{" "}
+        <Link href="/blog/jak-wyczyscic-tapicerke-samochodowa">
+          skutecznym czyszczeniu tapicerki
+        </Link>{" "}
+        dowiesz się z naszego bloga.
       </li>
       <li>
         <b>Poprawa higieny:</b> Nasze metody czyszczenia eliminują bakterie,
@@ -166,34 +184,35 @@ const ContentCleaning = ({ automotive }) => (
   </div>
 );
 
-const ContentCosmetic = ({ automotive }) => {
-  return (
-    <div className={classes.listContainer}>
-      <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
-      <ul className={classes.listStyle}>
-        <li>
-          <b>Idealny wygląd i blask:</b> Nasze zabiegi zapewniają gruntowne
-          czyszczenie i polerowanie, które przywracają karoserii i wnętrzu
-          samochodu świeżość i blask.
-        </li>
-        <li>
-          <b>Ochrona lakieru:</b> Stosujemy preparaty zabezpieczające lakier
-          przed działaniem szkodliwych czynników atmosferycznych, takich jak UV,
-          sól czy zanieczyszczenia drogowe.
-        </li>
-        <li>
-          <b>Wnętrze jak nowe:</b> Skutecznie usuwamy zabrudzenia, plamy i
-          nieprzyjemne zapachy z tapicerki, dywaników i powierzchni
-          wewnętrznych.
-        </li>
-        <li>
-          <b>Wzmocnienie odświeżenia:</b> Wykonujemy detailing, który poprawia
-          wygląd, stan techniczny i komfort użytkowania Twojego pojazdu.
-        </li>
-      </ul>
-    </div>
-  );
-};
+const ContentCosmetic = ({ automotive }) => (
+  <div className={classes.listContainer}>
+    <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+    <ul className={classes.listStyle}>
+      <li>
+        <b>Idealny wygląd i blask:</b> Nasze zabiegi zapewniają gruntowne
+        czyszczenie i polerowanie, które przywracają karoserii i wnętrzu
+        samochodu świeżość i blask. Sprawdź nasze wpisy o{" "}
+        <Link href="/blog/uzywamy-profesjonalnych-produktow">
+          profesjonalnych produktach
+        </Link>{" "}
+        stosowanych w autokosmetyce.
+      </li>
+      <li>
+        <b>Ochrona lakieru:</b> Stosujemy preparaty zabezpieczające lakier przed
+        działaniem szkodliwych czynników atmosferycznych, takich jak UV, sól czy
+        zanieczyszczenia drogowe.
+      </li>
+      <li>
+        <b>Wnętrze jak nowe:</b> Skutecznie usuwamy zabrudzenia, plamy i
+        nieprzyjemne zapachy z tapicerki, dywaników i powierzchni wewnętrznych.
+      </li>
+      <li>
+        <b>Wzmocnienie odświeżenia:</b> Wykonujemy detailing, który poprawia
+        wygląd, stan techniczny i komfort użytkowania Twojego pojazdu.
+      </li>
+    </ul>
+  </div>
+);
 
 const ContentCorrection = ({ automotive }) => (
   <div className={classes.listContainer}>
@@ -202,22 +221,29 @@ const ContentCorrection = ({ automotive }) => (
       <li>
         <b>Usunięcie rys i zmatowień:</b> Dokładnie eliminujemy drobne rysy,
         zmatowienia i drobne defekty lakieru, przywracając powierzchni gładkość
-        i estetyczny wygląd.
+        i estetyczny wygląd. Dowiedz się więcej o{" "}
+        <Link href="/blog/korekta-lakieru">procesie korekty lakieru</Link>.
       </li>
       <li>
         <b>Poprawa głębi koloru:</b> Dzięki zaawansowanym technikom polerowania
-        lakier odzyskuje głębię, nasycenie i intensywność koloru, co sprawia, że
-        pojazd wygląda jak nowy.
+        lakier odzyskuje głębię, nasycenie i intensywność koloru. Sprawdź wpis o{" "}
+        <Link href="/blog/uzywamy-profesjonalnych-produktow">
+          profesjonalnych produktach do pielęgnacji lakieru
+        </Link>
+        .
       </li>
       <li>
         <b>Ochrona lakieru na dłużej:</b> Po korekcie aplikujemy powłokę
         ochronną, która zabezpiecza lakier przed promieniowaniem UV,
-        zabrudzeniami i zarysowaniami, przedłużając efekt renowacji.
+        zabrudzeniami i zarysowaniami.
       </li>
+
       <li>
-        <b>Przywrócenie wartości estetycznej:</b> Korekta lakieru sprawia, że
-        pojazd zyskuje nowy, profesjonalny wygląd, co może zwiększyć jego
-        wartość rynkową i zadowolenie właściciela.
+        <b>Szybka korekta One Step:</b> Dla osób szukających szybkiego i
+        przystępnego cenowo rozwiązania oferujemy korektę lakieru typu{" "}
+        <Link href="/blog/korekta-lakieru">One Step</Link>. Jest to jednoetapowy
+        proces, który pozwala na znaczną poprawę wyglądu lakieru w krótkim
+        czasie, idealny dla lekkich zarysowań i drobnych defektów.
       </li>
     </ul>
   </div>

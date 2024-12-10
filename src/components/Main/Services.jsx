@@ -26,6 +26,7 @@ export const servicesData = [
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
       "Nasza usługa prania tapicerki to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
+    relatedBlogPost: "/jak-wyczyscic-tapicerke-samochodowa",
   },
   {
     id: "uslugi/renowacja-i-czyszczenie-skor",
@@ -38,6 +39,7 @@ export const servicesData = [
     gradient: "linear-gradient(rgba(90, 42, 42, 0.5), rgba(0, 0, 0, 0.5))",
     additionalInfo:
       "Nasza usługa renowacji skór to idealne rozwiązanie dla tych, którzy pragną odświeżyć wygląd i przedłużyć żywotność swoich mebli lub wnętrza samochodowego. Dzięki naszym zaawansowanym technikom oraz wysokiej jakości materiałom, Twoja tapicerka odzyska pierwotny wygląd i funkcjonalność.",
+    relatedBlogPost: "/jak-dbac-o-skorzana-tapicerke-samochodowa",
   },
   {
     id: "uslugi/autokosmetyka",

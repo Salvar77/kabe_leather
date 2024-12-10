@@ -19,6 +19,25 @@ const BlogPost = ({ pageContent, blogId }) => {
   const isSpecialImage = specialImagePages.includes(`/` + blogId);
   const isLargeImage = pageContent.title.includes("Korekta lakieru");
 
+  const parseContent = (content, links) => {
+    const parts = content.split(/(\{.*?\})/);
+    return parts.map((part, index) => {
+      const match = part.match(/\{(.*?)\}/);
+      if (match) {
+        const linkKey = match[1];
+        const linkData = links[linkKey];
+        if (linkData) {
+          return (
+            <Link key={index} href={linkData.href}>
+              {linkData.text}
+            </Link>
+          );
+        }
+      }
+      return part;
+    });
+  };
+
   return (
     <div>
       <SEO
@@ -56,7 +75,7 @@ const BlogPost = ({ pageContent, blogId }) => {
           {pageContent.sections.map((section, index) => (
             <div key={index} className={classes.section}>
               <h2>{section.heading}</h2>
-              <p>{section.content}</p>
+              <p>{parseContent(section.content, pageContent.links)}</p>
             </div>
           ))}
 
