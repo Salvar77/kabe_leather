@@ -7,8 +7,6 @@ import {
   blogMain4,
   blogMain5,
   referencyPhoto1,
-  referencyPhoto2,
-  referencyPhoto3,
   blogFoto1,
   blogFoto2,
   blogFoto3,

@@ -39,7 +39,7 @@ import blogFoto10 from "../src/assets/image/blogFoto10.jpg";
 import blogFoto11 from "../src/assets/image/blogFoto11.jpg";
 import blogFoto12 from "../src/assets/image/detalShot3.jpg";
 
-import referencyPhoto1 from "../src/assets/image/referencyMain.jpg";
+import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
 
 export {
   blogBeforeAfter1,
