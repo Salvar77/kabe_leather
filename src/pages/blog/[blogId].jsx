@@ -3,6 +3,7 @@ import Link from "next/link";
 import classes from "./blogStrona.module.scss";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
+import CTA from "@/components/More/CTA";
 
 const specialImagePages = [
   "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
@@ -104,6 +105,7 @@ const BlogPost = ({ pageContent, blogId }) => {
           </Link>
         </div>
       </div>
+      <CTA />
     </div>
   );
 };

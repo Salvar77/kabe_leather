@@ -4,6 +4,7 @@ import classes from "./uslugi.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import SEO from "@/components/Main/SEO";
+import CTA from "@/components/More/CTA";
 
 export async function getServerSideProps(context) {
   const automotiveId = context.params.automotiveId;
@@ -81,6 +82,7 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             Zobacz realizacje
           </Link>
         </div>
+        <CTA />
       </section>
     </div>
   );
