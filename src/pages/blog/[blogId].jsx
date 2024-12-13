@@ -54,6 +54,8 @@ const BlogPost = ({ pageContent, blogId }) => {
           "https://www.kabetintleather.opole.pl/kabelogooo.webp"
         }
         url={`https://www.kabetintleather.opole.pl/blog/${blogId}`}
+        datePublished={pageContent.date}
+        isBlogPost={true}
       />
       <div className={classes.blogPost}>
         {pageContent.dynamicImage && (

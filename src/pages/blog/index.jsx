@@ -14,6 +14,7 @@ const SectionBlog = () => {
         description="Dowiedz się więcej o naszych usługach, takich jak pranie tapicerek, autokosmetyka i przyciemnianie szyb, w sekcji blogowej Kabe Tint&Leather."
         image="https://www.kabetintleather.opole.pl/hero_main.jpg"
         url="https://www.kabetintleather.opole.pl/blog"
+        isBlogPost={false}
       />
       <section id="blog" className={classes.blog} aria-labelledby="blog-title">
         <header className={classes.blog__head}>
