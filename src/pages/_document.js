@@ -39,7 +39,7 @@ class MyDocument extends Document {
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
             />
           </noscript>
-          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+          <link rel="icon" href="/favicon1.ico" />
         </Head>
         <body>
           {/* Google Tag Manager (noscript fallback) */}
