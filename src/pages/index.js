@@ -6,17 +6,10 @@ import Hero from "@/components/Main/Hero";
 import SliderSection from "@/components/Sliders/SliderSection";
 import { NextSeo } from "next-seo";
 import SEO from "@/components/Main/SEO";
-
+import ElfsightLazyWrapper from "@/components/Main/ElfsightLazyWrapper";
 import AboutCompany from "@/components/More/AboutCompany";
 import WhyUs from "@/components/More/WhyUs";
 import Blog from "@/components/Main/Blog";
-
-const ElfsightWidget = dynamic(
-  () => import("@/components/Main/ElfsightWidget"),
-  {
-    ssr: false,
-  }
-);
 
 export default function Home() {
   return (
@@ -116,7 +109,7 @@ export default function Home() {
         </div>
         <SliderSection />
         <div className="container">
-          <ElfsightWidget />
+          <ElfsightLazyWrapper />
           <Contact />
         </div>
       </div>
