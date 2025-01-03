@@ -1,4 +1,4 @@
-import Head from "next/head";
+import dynamic from "next/dynamic";
 import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
@@ -6,10 +6,17 @@ import Hero from "@/components/Main/Hero";
 import SliderSection from "@/components/Sliders/SliderSection";
 import { NextSeo } from "next-seo";
 import SEO from "@/components/Main/SEO";
-import ElfsightWidget from "@/components/Main/ElfsightWidget";
+
 import AboutCompany from "@/components/More/AboutCompany";
 import WhyUs from "@/components/More/WhyUs";
 import Blog from "@/components/Main/Blog";
+
+const ElfsightWidget = dynamic(
+  () => import("@/components/Main/ElfsightWidget"),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (
