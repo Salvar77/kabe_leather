@@ -120,7 +120,8 @@ const Contact = () => {
               niezbędne do przetworzenia zapytania. Przysługuje mi prawo dostępu
               do swoich danych, ich poprawienia oraz żądania zaprzestania
               przetwarzania. Administratorem danych osobowych jest KaBe Tint &
-              Leather Auto Detailing Kamil Brzoskwinia, ul. Grota Roweckiego 18.
+              Leather Auto Detailing Kamil Brzoskwinia, ul. Generała Emila
+              Fieldorfa 12.
             </label>
           </div>
           <button type="submit" aria-label="Wyślij formularz kontaktowy">

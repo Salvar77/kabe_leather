@@ -42,8 +42,7 @@
   .contactForm {
     justify-content: center;
 
-    input,
-    textarea {
+    input {
       width: 100%;
       padding: 0.5rem;
       margin-bottom: 1rem;
@@ -52,6 +51,17 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 100%;
+      min-height: 100px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      border: 1px solid black;
+      resize: vertical;
     }
 
     button {
@@ -199,7 +209,7 @@
   label {
     display: inline-block;
     margin-left: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: $white-smooth;
   }
 }
