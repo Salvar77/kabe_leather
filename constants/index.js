@@ -19,6 +19,8 @@ import {
   blogFoto10,
   blogFoto11,
   blogFoto12,
+  blogFoto13,
+  blogFoto14,
   blogFotoMain,
   blogFotoMain2,
   blogFotoMain3,
@@ -109,7 +111,7 @@ const blogPosts = [
     description:
       "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
     link: "/folia-ppf-ochrona-lakieru",
-    image: blogMain1,
+    image: blogFoto13,
   },
 ];
 
@@ -373,7 +375,7 @@ const pagesContent = {
   },
   "folia-ppf-ochrona-lakieru": {
     title: "Folia PPF – jak skutecznie chronić lakier samochodu?",
-    dynamicImage: blogMain1,
+    dynamicImage: blogFoto14,
     sections: [
       {
         heading: "Czym jest folia PPF?",
@@ -411,7 +413,7 @@ const pagesContent = {
         text: "korekta lakieru",
       },
     },
-    images: [blogMain1],
+    images: [blogFoto13, blogFoto14],
   },
 };
 

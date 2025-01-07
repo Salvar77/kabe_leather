@@ -17,10 +17,11 @@ const BlogPost = ({ pageContent, blogId }) => {
     return <p>Ładowanie...</p>;
   }
 
-  const isSpecialImage = specialImagePages.includes(`/` + blogId);
-  const isLargeImage =
-    pageContent.title.includes("Korekta lakieru") ||
-    pageContent.title.includes("Folia PPF");
+  const isSpecialImage = specialImagePages.includes("/" + blogId);
+
+  const isLargeImage = pageContent.title.includes("Korekta lakieru");
+
+  const isFoliaPPF = pageContent.title.includes("Folia PPF");
 
   const parseContent = (content, links) => {
     const parts = content.split(/(\{.*?\})/);
@@ -37,11 +38,9 @@ const BlogPost = ({ pageContent, blogId }) => {
           );
         }
       }
-
       if (/<\/?[a-z][\s\S]*>/i.test(part)) {
         return <span key={index} dangerouslySetInnerHTML={{ __html: part }} />;
       }
-
       return part;
     });
   };
@@ -64,12 +63,16 @@ const BlogPost = ({ pageContent, blogId }) => {
         datePublished={pageContent.date}
         isBlogPost={true}
       />
+
       <div className={classes.blogPost}>
         {pageContent.dynamicImage && (
           <div
-            className={`${classes.blogPost__image} ${
-              isLargeImage ? classes.largeImage : ""
-            } ${isSpecialImage ? classes.specialImage : ""}`}
+            className={`
+              ${classes.blogPost__image}
+              ${isLargeImage ? classes.largeImage : ""}
+              ${isSpecialImage ? classes.specialImage : ""}
+              ${isFoliaPPF ? classes.foliaMaxWidth : ""}
+            `}
           >
             <Image
               src={pageContent.dynamicImage}
@@ -132,17 +135,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const pageContent = pagesContent[params.blogId] || null;
-
   if (pageContent && !pageContent.dynamicImage) {
     pageContent.dynamicImage = null;
   }
-
   if (!pageContent) {
-    return {
-      notFound: true,
-    };
+    return { notFound: true };
   }
-
   return {
     props: {
       pageContent,

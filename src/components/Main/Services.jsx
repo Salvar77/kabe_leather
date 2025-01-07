@@ -11,6 +11,7 @@ import cleanImg from "../../assets/image/heroMainWebp640.webp";
 import cleanImgLarge from "../../assets/image/heroMainWebpBig.webp";
 import paintCorrection from "../../assets/image/paintCorrection.webp";
 import paintCorrectionLarge from "../../assets/image/paintCorrection.jpg";
+import ppfFoilImage from "../../assets/image/ppf.webp";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
 
@@ -80,8 +81,8 @@ export const servicesData = [
   {
     id: "uslugi/folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
-    image: paintCorrection,
-    largeImage: paintCorrectionLarge,
+    image: ppfFoilImage,
+    largeImage: ppfFoilImage,
     largeImageWidth: 1920,
     title: "Sprawdź",
     backgroundImage: " url('../../assets/image/tint_640.jpg')",

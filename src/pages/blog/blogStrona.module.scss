@@ -144,13 +144,25 @@
 
       &.specialImage {
         img {
-          object-fit: cover;
           object-position: 25% 75%;
         }
       }
 
       &.largeImage img {
         min-height: 50rem;
+      }
+    }
+
+    .foliaMaxWidth {
+      display: flex;
+      justify-content: center;
+
+      img {
+        object-fit: cover;
+        filter: brightness(0.8);
+        max-width: 100%;
+        width: 100%;
+        height: auto;
       }
     }
 

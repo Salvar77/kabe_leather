@@ -46,9 +46,11 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    cursor: pointer;
 
     li {
-      a {
+      a,
+      span {
         color: $white-smooth;
         text-decoration: none;
 
@@ -99,6 +101,65 @@
   img {
     width: 100%;
     height: 100%;
+  }
+}
+
+.fullScreenModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .closeButton {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    color: $white-smooth;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue-after;
+    }
+  }
+
+  .modalTitle {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: $white-smooth;
+  }
+
+  .servicesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      margin: 1rem 0;
+      padding: 1rem;
+      font-weight: bold;
+      box-shadow: 0.2rem 0.2rem 0.4rem $blue-after;
+
+      a {
+        font-size: 1.8rem;
+        color: $white-smooth;
+        text-decoration: none;
+
+        &:hover {
+          color: $blue-main;
+        }
+      }
+    }
   }
 }
 

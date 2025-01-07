@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/image/150x150white2.png";
 import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
 const ContactMain = () => {
+  // --- Stan do pokazywania/ukrywania usług ---
+  const [showServices, setShowServices] = useState(false);
+
+  // Funkcja toggle dla modala z usługami
+  const toggleServices = () => {
+    setShowServices((prev) => !prev);
+  };
+
   return (
     <section id="kontakt-główny" className={classes.contactMain}>
       <div className={classes.column}>
@@ -17,6 +25,7 @@ const ContactMain = () => {
         <p className={classes.hoursDetails}>pon. - pt. 07:00 - 20:00</p>
         <p className={classes.hoursDetails}>sob. 08:00 - 18:00</p>
       </div>
+
       <div className={classes.column}>
         <div className={classes.logoBlock}>
           <Image
@@ -26,6 +35,7 @@ const ContactMain = () => {
           />
         </div>
       </div>
+
       <div className={classes.column}>
         <h2 className={classes.heading}>Menu:</h2>
         <nav className={classes.nav} role="navigation" aria-label="Główne menu">
@@ -35,6 +45,17 @@ const ContactMain = () => {
                 O mnie
               </Link>
             </li>
+
+            {/*
+              Zamiast zwykłego <Link> do /uslugi – mamy <span>, 
+              który zawsze wyświetla modal z usługami (bez rozróżnienia na mobile/desktop).
+            */}
+            <li>
+              <span onClick={toggleServices} aria-label="Pokaż usługi">
+                Usługi
+              </span>
+            </li>
+
             <li>
               <Link
                 href="/realizacje"
@@ -116,6 +137,57 @@ const ContactMain = () => {
           </li>
         </ul>
       </div>
+
+      {showServices && (
+        <div className={classes.fullScreenModal}>
+          <button
+            className={classes.closeButton}
+            onClick={toggleServices}
+            aria-label="Zamknij usługi"
+          >
+            ×
+          </button>
+          <h3 className={classes.modalTitle}>Usługi:</h3>
+          <ul className={classes.servicesList}>
+            <li>
+              <Link href="/uslugi/pranie-tapicerki" onClick={toggleServices}>
+                Pranie tapicerki
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/uslugi/renowacja-i-czyszczenie-skor"
+                onClick={toggleServices}
+              >
+                Renowacja skór
+              </Link>
+            </li>
+            <li>
+              <Link href="/uslugi/autokosmetyka" onClick={toggleServices}>
+                Autokosmetyka
+              </Link>
+            </li>
+            <li>
+              <Link href="/uslugi/przyciemnianie-szyb" onClick={toggleServices}>
+                Przyciemnianie szyb
+              </Link>
+            </li>
+            <li>
+              <Link href="/uslugi/korekta-lakieru" onClick={toggleServices}>
+                Korekta lakieru
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/uslugi/folia-ppf-ochrona-lakieru"
+                onClick={toggleServices}
+              >
+                Folia PPF
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </section>
   );
 };
