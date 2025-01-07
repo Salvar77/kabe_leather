@@ -35,6 +35,11 @@ const BlogPost = ({ pageContent, blogId }) => {
           );
         }
       }
+
+      if (/<\/?[a-z][\s\S]*>/i.test(part)) {
+        return <span key={index} dangerouslySetInnerHTML={{ __html: part }} />;
+      }
+
       return part;
     });
   };

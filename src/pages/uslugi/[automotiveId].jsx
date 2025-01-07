@@ -71,6 +71,9 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             {automotive.id === "uslugi/korekta-lakieru" && (
               <ContentCorrection automotive={automotive} />
             )}
+            {automotive.id === "uslugi/folia-ppf-ochrona-lakieru" && (
+              <ContentPPF automotive={automotive} />
+            )}
           </div>
         </div>
         <div className={classes.buttonContainer}>
@@ -246,6 +249,35 @@ const ContentCorrection = ({ automotive }) => (
         <Link href="/blog/korekta-lakieru">One Step</Link>. Jest to jednoetapowy
         proces, który pozwala na znaczną poprawę wyglądu lakieru w krótkim
         czasie, idealny dla lekkich zarysowań i drobnych defektów.
+      </li>
+    </ul>
+  </div>
+);
+
+const ContentPPF = ({ automotive }) => (
+  <div className={classes.listContainer}>
+    <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+    <ul className={classes.listStyle}>
+      <li>
+        <b>Ochrona lakieru:</b> Folia PPF skutecznie zabezpiecza lakier przed
+        zarysowaniami, odpryskami i wpływem czynników atmosferycznych. Więcej o{" "}
+        <Link href="/blog/folia-ppf-ochrona-lakieru">zaletach folii PPF</Link>{" "}
+        znajdziesz na naszym blogu.
+      </li>
+      <li>
+        <b>Samoregeneracja:</b> Dzięki innowacyjnej technologii folia PPF
+        potrafi samodzielnie usuwać drobne zarysowania pod wpływem ciepła.
+      </li>
+      <li>
+        <b>Hydrofobowa powierzchnia:</b> Folia PPF odpycha wodę i
+        zanieczyszczenia, co ułatwia codzienną pielęgnację samochodu i
+        zachowanie jego doskonałego wyglądu.
+      </li>
+      <li>
+        <b>Trwałość i estetyka:</b> Dzięki wysokiej jakości folii Twój samochód
+        zyskuje nowoczesny wygląd i ochronę lakieru na wiele lat. Sprawdź także{" "}
+        <Link href="/uslugi/korekta-lakieru">usługę korekty lakieru</Link>,
+        która doskonale uzupełnia ochronę PPF.
       </li>
     </ul>
   </div>

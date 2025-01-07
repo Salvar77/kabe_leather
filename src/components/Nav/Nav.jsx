@@ -37,6 +37,7 @@ const Nav = ({ isOpen, toggleNav }) => {
         { href: "/uslugi/autokosmetyka", label: "Autokosmetyka" },
         { href: "/uslugi/przyciemnianie-szyb", label: "Przyciemnianie szyb" },
         { href: "/uslugi/korekta-lakieru", label: "Korekta lakieru" },
+        { href: "/uslugi/folia-ppf-ochrona-lakieru", label: "Folia PPF" },
       ],
     },
     { href: "/realizacje", label: "Realizacje" },

@@ -77,6 +77,18 @@ export const servicesData = [
     additionalInfo:
       "Nasza usługa korekty lakieru to proces przywracający karoserii doskonały wygląd, eliminując zarysowania, matowe miejsca i drobne defekty. Dzięki zaawansowanym technikom polerowania, lakier odzyskuje głębię i intensywność koloru, a dodatkowa powłoka ochronna zabezpiecza go przed czynnikami zewnętrznymi, przedłużając efekt renowacji.",
   },
+  {
+    id: "uslugi/folia-ppf-ochrona-lakieru",
+    description: "Folia PPF",
+    image: paintCorrection,
+    largeImage: paintCorrectionLarge,
+    largeImageWidth: 1920,
+    title: "Sprawdź",
+    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    additionalInfo:
+      "Nasza usługa korekty lakieru to proces przywracający karoserii doskonały wygląd, eliminując zarysowania, matowe miejsca i drobne defekty. Dzięki zaawansowanym technikom polerowania, lakier odzyskuje głębię i intensywność koloru, a dodatkowa powłoka ochronna zabezpiecza go przed czynnikami zewnętrznymi, przedłużając efekt renowacji.",
+  },
 ];
 
 const Services = () => {

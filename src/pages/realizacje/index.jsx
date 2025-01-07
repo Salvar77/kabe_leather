@@ -155,6 +155,16 @@ export const realizationsData = [
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
   },
+  {
+    id: "folia-ppf",
+    description: "Folia PPF",
+    images: [photoCorrection],
+    image: photoCorrection,
+    largeImage: photoCorrection,
+    largeImageWidth: 1920,
+
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+  },
 ];
 
 const Realizations = () => {

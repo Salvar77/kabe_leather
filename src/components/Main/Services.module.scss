@@ -30,24 +30,35 @@
 
   &__item {
     position: relative;
-
     display: grid;
     align-items: center;
     justify-items: center;
   }
 
   &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 1rem;
+    justify-content: center;
 
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
+    & > div {
+      flex: 1 1 calc(25% - 2rem);
+      max-width: calc(25% - 2rem);
     }
 
-    @media (min-width: 992px) {
-      grid-template-columns: repeat(5, 1fr);
+    @media (max-width: 992px) {
+      & > div {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+      }
+    }
+
+    @media (max-width: 768px) {
+      & > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
     }
   }
 

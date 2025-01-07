@@ -101,6 +101,16 @@ const blogPosts = [
     link: "/korekta-lakieru",
     image: blogFotoMain6,
   },
+  {
+    id: 7,
+    title: "Folia PPF – jak skutecznie chronić lakier samochodu?",
+    subtitle: "OCHRONA LAKIERU SAMOCHODOWEGO",
+    date: "2025-01-06",
+    description:
+      "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
+    link: "/folia-ppf-ochrona-lakieru",
+    image: blogMain1,
+  },
 ];
 
 const pagesContent = {
@@ -360,6 +370,48 @@ const pagesContent = {
     },
 
     images: [blogFotoMain6],
+  },
+  "folia-ppf-ochrona-lakieru": {
+    title: "Folia PPF – jak skutecznie chronić lakier samochodu?",
+    dynamicImage: blogMain1,
+    sections: [
+      {
+        heading: "Czym jest folia PPF?",
+        content:
+          "Folia ochronna PPF (Paint Protection Film) to innowacyjne rozwiązanie zaprojektowane z myślą o długotrwałej ochronie lakieru samochodowego. Dzięki swojej przeźroczystej strukturze, <a href='/uslugi/folia-ppf-ochrona-lakieru'>folia PPF</a>, jest praktycznie niewidoczna, co oznacza, że zachowuje naturalny wygląd pojazdu, jednocześnie chroniąc jego powierzchnię przed szkodliwymi czynnikami zewnętrznymi. Folia PPF zapewnia skuteczną ochronę przed zarysowaniami, odpryskami kamieni, promieniowaniem UV oraz działaniem substancji chemicznych, takich jak sól drogowa czy kwaśne deszcze. Jej elastyczność sprawia, że doskonale przylega do skomplikowanych kształtów karoserii, gwarantując kompleksową ochronę zarówno dla całego pojazdu, jak i jego poszczególnych elementów.",
+      },
+      {
+        heading: "Dlaczego warto zainwestować w folię PPF?",
+        content:
+          "Ochrona lakieru jest kluczowa dla utrzymania wartości i estetyki Twojego pojazdu. Folia PPF to jedno z najlepszych rozwiązań dostępnych na rynku, które nie tylko zapewnia ochronę, ale również podnosi walory estetyczne samochodu.<br><br>Najważniejsze korzyści:<br>- <strong>Doskonała ochrona:</strong> Folia PPF zabezpiecza lakier przed zarysowaniami, odpryskami i korozją.<br>- <strong>Samoregeneracja:</strong> Innowacyjna technologia pozwala na samodzielne usuwanie drobnych zarysowań pod wpływem ciepła.<br>- <strong>Hydrofobowość:</strong> Powierzchnia folii odpycha wodę, brud i inne zanieczyszczenia.<br>- <strong>Estetyka:</strong> Folia PPF podkreśla głębię koloru i połysk lakieru.<br>- <strong>Długa trwałość:</strong> Wysokiej jakości folie PPF mogą wytrzymać od 5 do nawet 10 lat.<br><br>Jeśli interesuje Cię kompleksowa ochrona lakieru, sprawdź także naszą <a href='/uslugi/korekta-lakieru'>korektę lakieru</a>, która usuwa zarysowania i przywraca gładką powierzchnię.",
+      },
+      {
+        heading: "Jakie są rodzaje folii PPF?",
+        content:
+          "Na rynku dostępnych jest wiele rodzajów folii PPF, które można dopasować do indywidualnych potrzeb użytkownika:<br>- <strong>Matowe:</strong> Nadają lakierowi nowoczesny, elegancki wygląd.<br>- <strong>Błyszczące:</strong> Podkreślają połysk lakieru, nadając mu głębię.<br>- <strong>Samoregenerujące:</strong> Dzięki technologii znikają drobne zarysowania.<br>- <strong>Hydrofobowe:</strong> Odpychają wodę, brud i oleje, co ułatwia utrzymanie samochodu w idealnym stanie.",
+      },
+      {
+        heading: "Przykładowy cennik folii PPF",
+        content:
+          "Cena aplikacji folii PPF zależy od zakresu ochrony, powierzchni pojazdu oraz rodzaju folii. Oto przykładowe koszty:<br>- Reflektory: od 300 zł za komplet.<br>- Słupki black piano: od 400 zł za stronę.<br>- Wnęki klamek: od 200 zł za komplet.<br>- Progi: od 500 zł.<br>- Kompletna ochrona przodu samochodu: od 3000 zł.<br>- Kompletna ochrona całego samochodu: od 8000 zł.",
+      },
+      {
+        heading: "Na jak długo wystarcza folia PPF?",
+        content:
+          "Trwałość folii PPF wynosi od 5 do 10 lat, w zależności od jakości folii, warunków eksploatacji oraz odpowiedniej pielęgnacji. Regularne czyszczenie i unikanie agresywnych środków chemicznych pozwolą na maksymalne wykorzystanie potencjału folii.",
+      },
+    ],
+    links: {
+      foliaPPFLink: {
+        href: "/uslugi/folia-ppf-ochrona-lakieru",
+        text: "folia PPF",
+      },
+      korektaLakieruLink: {
+        href: "/uslugi/korekta-lakieru",
+        text: "korekta lakieru",
+      },
+    },
+    images: [blogMain1],
   },
 };
 
