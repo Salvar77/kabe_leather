@@ -40,6 +40,8 @@ import blogFoto11 from "../src/assets/image/blogFoto11.jpg";
 import blogFoto12 from "../src/assets/image/detalShot3.jpg";
 import blogFoto13 from "../src/assets/image/ppf.webp";
 import blogFoto14 from "../src/assets/image/ppf1.webp";
+import blogFoto15 from "../src/assets/image/ppf2.jpg";
+import blogFoto16 from "../src/assets/image/ppf3.jpg";
 
 import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
 import referencyPhoto2 from "../src/assets/image/referrency.jpg";
@@ -86,4 +88,6 @@ export {
   blogFoto12,
   blogFoto13,
   blogFoto14,
+  blogFoto15,
+  blogFoto16,
 };

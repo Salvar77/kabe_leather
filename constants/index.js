@@ -22,6 +22,8 @@ import {
   blogFoto12,
   blogFoto13,
   blogFoto14,
+  blogFoto15,
+  blogFoto16,
   blogFotoMain,
   blogFotoMain2,
   blogFotoMain3,
@@ -414,7 +416,7 @@ const pagesContent = {
         text: "korekta lakieru",
       },
     },
-    images: [blogFoto13, blogFoto14],
+    images: [blogFoto13, blogFoto14, blogFoto15, blogFoto16],
   },
 };
 

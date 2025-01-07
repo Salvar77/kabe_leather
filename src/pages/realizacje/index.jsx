@@ -30,6 +30,8 @@ import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 import photoCleaning4 from "../../assets/image/cleaning4.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
 import photoFoilPpf from "../../assets/image/ppf.webp";
+import photoFoilPpf2 from "../../assets/image/ppf2.jpg";
+import photoFoilPpf3 from "../../assets/image/ppf3.jpg";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
@@ -159,7 +161,7 @@ export const realizationsData = [
   {
     id: "folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
-    images: [photoFoilPpf],
+    images: [photoFoilPpf2, photoFoilPpf3],
     image: photoFoilPpf,
     largeImage: photoFoilPpf,
     largeImageWidth: 1920,
