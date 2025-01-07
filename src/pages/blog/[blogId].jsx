@@ -18,7 +18,9 @@ const BlogPost = ({ pageContent, blogId }) => {
   }
 
   const isSpecialImage = specialImagePages.includes(`/` + blogId);
-  const isLargeImage = pageContent.title.includes("Korekta lakieru");
+  const isLargeImage =
+    pageContent.title.includes("Korekta lakieru") ||
+    pageContent.title.includes("Folia PPF");
 
   const parseContent = (content, links) => {
     const parts = content.split(/(\{.*?\})/);
