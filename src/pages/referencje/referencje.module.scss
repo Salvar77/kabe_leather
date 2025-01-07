@@ -20,9 +20,9 @@
 .photosContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 2rem;
   gap: 1rem;
-  flex-wrap: wrap;
 
   img {
     width: 100%;
@@ -43,7 +43,7 @@
 
   .photosContainer {
     padding: auto;
-
+    align-items: center;
     img {
       width: 55rem;
     }

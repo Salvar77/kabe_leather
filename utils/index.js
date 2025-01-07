@@ -42,6 +42,7 @@ import blogFoto13 from "../src/assets/image/ppf.webp";
 import blogFoto14 from "../src/assets/image/ppf1.webp";
 
 import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
+import referencyPhoto2 from "../src/assets/image/referrency.jpg";
 
 export {
   blogBeforeAfter1,
@@ -61,6 +62,7 @@ export {
   blogMain5,
   blogMain6,
   referencyPhoto1,
+  referencyPhoto2,
   blogFotoMain,
   blogFotoMain2,
   blogFotoMain3,

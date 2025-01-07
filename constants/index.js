@@ -7,6 +7,7 @@ import {
   blogMain4,
   blogMain5,
   referencyPhoto1,
+  referencyPhoto2,
   blogFoto1,
   blogFoto2,
   blogFoto3,
@@ -420,6 +421,10 @@ const pagesContent = {
 const referencyImages = [
   {
     src: referencyPhoto1,
+    alt: "zdjęcie referencji właściciela Kabe",
+  },
+  {
+    src: referencyPhoto2,
     alt: "zdjęcie referencji właściciela Kabe",
   },
 ];
