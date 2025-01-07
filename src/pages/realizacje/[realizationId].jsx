@@ -10,15 +10,20 @@ const RealizationDetail = ({ realization }) => {
   if (!realization) return <p>Nie został znaleziony</p>;
 
   const renderContent = () => {
+    const isFoliaPpf = realization.id === "folia-ppf-ochrona-lakieru";
+
     return (
       <div className={classes.realizationDetail__images}>
         {realization.images.map((image, index) => (
-          <div key={index} className={classes.realizationDetail__imageWrapper}>
+          <div
+            key={index}
+            className={`${classes.realizationDetail__imageWrapper} ${
+              isFoliaPpf ? classes.isFoliaPpf : ""
+            }`}
+          >
             <Image
               src={image}
-              alt={`${realization.description} - ${
-                index + 1
-              } - pranie tapicerki, czyszczenie samochodu, przyciemnianie szyb`}
+              alt={`${realization.description} - ${index + 1}`}
             />
           </div>
         ))}

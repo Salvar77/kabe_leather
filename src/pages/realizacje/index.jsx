@@ -29,6 +29,7 @@ import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 import photoCleaning4 from "../../assets/image/cleaning4.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
+import photoFoilPpf from "../../assets/image/ppf.webp";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
@@ -156,14 +157,14 @@ export const realizationsData = [
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
   },
   {
-    id: "folia-ppf",
+    id: "folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
-    images: [photoCorrection],
-    image: photoCorrection,
-    largeImage: photoCorrection,
+    images: [photoFoilPpf],
+    image: photoFoilPpf,
+    largeImage: photoFoilPpf,
     largeImageWidth: 1920,
 
-    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    gradient: "linear-gradient(rgba(38, 32, 32, 0.5), rgba(40, 31, 31, 0.5))",
   },
 ];
 

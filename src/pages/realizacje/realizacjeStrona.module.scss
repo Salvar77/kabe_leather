@@ -122,11 +122,6 @@
       font-size: 3rem;
     }
 
-    img {
-      max-width: 100%;
-      height: 100%;
-    }
-
     &__images {
       flex-direction: row;
       flex-wrap: wrap;
@@ -137,6 +132,18 @@
       flex: 1 1 45%;
       max-width: 45%;
       margin-bottom: 1.5rem;
+
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+
+    .isFoliaPpf {
+      @media (min-width: 992px) {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
     }
   }
 

@@ -4,119 +4,147 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
   <url>
     <loc>https://www.kabetintleather.opole.pl/</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
+
+
   <url>
     <loc>https://www.kabetintleather.opole.pl/o-mnie</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
+
+
   <url>
     <loc>https://www.kabetintleather.opole.pl/uslugi/pranie-tapicerki</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.99</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/uslugi/renowacja-i-czyszczenie-skor</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/uslugi/autokosmetyka</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/uslugi/przyciemnianie-szyb</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/uslugi/korekta-lakieru</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://www.kabetintleather.opole.pl/uslugi/folia-ppf-ochrona-lakieru</loc>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+
+  <url>
     <loc>https://www.kabetintleather.opole.pl/realizacje</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/realizacje/pranie-tapicerki</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.99</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/realizacje/renowacja-i-czyszczenie-skor</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/realizacje/autokosmetyka</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/realizacje/przyciemnianie-szyb</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/realizacje/korekta-lakieru</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://www.kabetintleather.opole.pl/realizacje/folia-ppf-ochrona-lakieru</loc>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+
+  <url>
     <loc>https://www.kabetintleather.opole.pl/blog</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/blog/jak-zapobiec-plamom-na-tapicerce-samochodowej</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/blog/jak-wyczyscic-tapicerke-samochodowa</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/blog/jak-dbac-o-skorzana-tapicerke-samochodowa</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/blog/uzywamy-profesjonalnych-produktow</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/blog/jak-przyciemnic-szyby-samochodowe</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/blog/korekta-lakieru</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
+    <loc>https://www.kabetintleather.opole.pl/blog/folia-ppf-ochrona-lakieru</loc>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Referencje, Cennik, Kontakt -->
+  <url>
     <loc>https://www.kabetintleather.opole.pl/referencje</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/cennik</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.kabetintleather.opole.pl/kontakt</loc>
-    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2025-01-07T00:00:00+00:00</lastmod>
     <priority>0.75</priority>
   </url>
+
 </urlset>
