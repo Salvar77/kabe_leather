@@ -7,7 +7,7 @@ const ContactSide = () => {
   return (
     <>
       <SEO
-        title="Kontakt - Kabe Tint&Leather Auto Detailing w Opolu"
+        title="Pranie tapicerki samochodowej Opole | Kabe Tint&Leather Auto Detailing"
         description="Skontaktuj się z nami! Kabe Tint&Leather Auto Detailing oferuje profesjonalne usługi prania tapicerki, czyszczenia samochodów i przyciemniania szyb. Zapraszamy do kontaktu."
         image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
         url="https://www.kabetintleather.opole.pl/kontakt"
