@@ -67,7 +67,7 @@ const Contact = () => {
           <h2>Kontakt</h2>
           <p>KabeTintLeather - Pranie tapicerki samochodowej Opole</p>
           <p>Ulica: Generała Emila Fieldorfa 12</p>
-          <p>Miasto: Opole</p>
+          <p>Miasto: 45-273 Opole</p>
           <p>
             <FaPhoneAlt /> Telefon:{" "}
             <span
