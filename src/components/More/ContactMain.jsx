@@ -17,6 +17,7 @@ const ContactMain = () => {
     <section id="kontakt-główny" className={classes.contactMain}>
       <div className={classes.column}>
         <h2 className={classes.heading}>Dane kontaktowe:</h2>
+        <p>KabeTintLeather - Pranie tapicerki samochodowej Opole</p>
         <p className={classes.address}>ul. Generała Emila Fieldorfa 12</p>
         <p className={classes.addressTwo}>45-273 Opole</p>
         <p className={classes.phone}>Tel: 881 325 631</p>

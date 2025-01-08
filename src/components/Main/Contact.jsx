@@ -65,6 +65,7 @@ const Contact = () => {
       <section id="kontakt-główna" className={classes.contactSection}>
         <div className={classes.contactInfo}>
           <h2>Kontakt</h2>
+          <p>KabeTintLeather - Pranie tapicerki samochodowej Opole</p>
           <p>Ulica: Generała Emila Fieldorfa 12</p>
           <p>Miasto: Opole</p>
           <p>
