@@ -176,4 +176,13 @@
       height: 100%;
     }
   }
+
+  .column {
+    p {
+      word-wrap: anywhere;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+    }
+  }
 }
