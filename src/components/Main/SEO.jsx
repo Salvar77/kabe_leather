@@ -92,7 +92,6 @@ const SEO = ({
                   "https://gra.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
                   "https://strefabiznesu.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
                   "https://strefaedukacji.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-                  "https://www.cylex-polska.pl/opole/mycie+samochod%C3%B3w.html",
                 ],
                 makesOffer: [
                   {
