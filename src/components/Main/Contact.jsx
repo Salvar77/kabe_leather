@@ -79,7 +79,43 @@ const Contact = () => {
           <p>
             <FaEnvelope /> E-mail: kabetint@gmail.com
           </p>
+          <div className={classes.openingHours}>
+            <h3>Godziny otwarcia:</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Poniedziałek:</td>
+                  <td className={classes.hours}>07:00–20:00</td>
+                </tr>
+                <tr>
+                  <td>Wtorek:</td>
+                  <td className={classes.hours}>07:00–20:00</td>
+                </tr>
+                <tr>
+                  <td>Środa:</td>
+                  <td className={classes.hours}>07:00–20:00</td>
+                </tr>
+                <tr>
+                  <td>Czwartek:</td>
+                  <td className={classes.hours}>07:00–20:00</td>
+                </tr>
+                <tr>
+                  <td>Piątek:</td>
+                  <td className={classes.hours}>07:00–20:00</td>
+                </tr>
+                <tr>
+                  <td>Sobota:</td>
+                  <td className={classes.hours}>08:00–18:00</td>
+                </tr>
+                <tr>
+                  <td>Niedziela:</td>
+                  <td className={classes.closed}>Zamknięte</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
         <form className={classes.contactForm} onSubmit={handleSubmit}>
           <h2>Wyślij mi wiadomość</h2>
           <input
