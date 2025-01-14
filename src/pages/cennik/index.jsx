@@ -8,8 +8,8 @@ const PricingSection = () => {
   return (
     <>
       <SEO
-        title="Cennik Usług - Kabe Tint&Leather Auto Detailing Opole"
-        description="Sprawdź cennik usług Kabe Tint&Leather Auto Detailing. Oferujemy pranie tapicerki, czyszczenie samochodów, przyciemnianie szyb i więcej. Skontaktuj się z nami, aby poznać szczegóły."
+        title="Cennik Usług - KabeTintLeather Auto Detailing Opole"
+        description="Sprawdź cennik usług KabeTintLeather Auto Detailing. Oferujemy pranie tapicerki, czyszczenie samochodów, przyciemnianie szyb i więcej. Skontaktuj się z nami, aby poznać szczegóły."
         image="https://www.kabetintleather.opole.pl/cennik2.jpg"
         url="https://www.kabetintleather.opole.pl/cennik"
       />

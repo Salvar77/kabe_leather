@@ -29,7 +29,7 @@ const AboutUs = () => {
       </div>
       <div className={classes.aboutMe__content}>
         <h2 className={classes.aboutMe__header}>
-          Kabe Tint&Leather Auto Detailing
+          KabeTintLeather Auto Detailing
         </h2>
         <ul className={classes.aboutMe__list}>
           <li>
@@ -99,7 +99,7 @@ const AboutUs = () => {
               <i className="fab fa-facebook"></i>
             </a>
             <a
-              href="https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg=="
+              href="https://www.instagram.com/kabetintleather_autodetailing/#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Odwiedź nas na Instagramie"

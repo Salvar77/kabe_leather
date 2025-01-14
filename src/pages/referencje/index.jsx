@@ -9,8 +9,8 @@ const Referency = () => {
   return (
     <div>
       <SEO
-        title="Referencje - Kabe Tint&Leather Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki"
-        description="Sprawdź opinie naszych zadowolonych klientów! Referencje i zdjęcia z realizacji Kabe Tint&Leather Auto Detailing - Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki."
+        title="Referencje - Kabe TintLeather Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki"
+        description="Sprawdź opinie naszych zadowolonych klientów! Referencje i zdjęcia z realizacji KabeTintLeather Auto Detailing - Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki."
         image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
         url="https://www.kabetintleather.opole.pl/referencje"
       />

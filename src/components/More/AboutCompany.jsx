@@ -43,7 +43,7 @@ const AboutCompany = () => {
               viewport={{ once: true }}
               className={classes.company__boxTextOne}
             >
-              Firma „KabeTint&Leather” to firma specjalizująca się w
+              Firma „KabeTintLeather” to firma specjalizująca się w
               profesjonalnej kosmetyce samochodowej. Oferujemy kompleksowe
               usługi, takie jak pranie i czyszczenie tapicerki samochodowej,
               czyszczenie, impregnację i renowację skór, ręczne mycie pojazdów,
@@ -61,8 +61,8 @@ const AboutCompany = () => {
               variants={fadeIn("left", "tween", 0.7, 1)}
               className={classes.company__boxTextTwo}
             >
-              „KabeTint&Leather” obsługuje zarówno klientów indywidualnych, jak
-              i firmy, oferując wysokiej klasy detergenty oraz preparaty
+              „KabeTintLeather” obsługuje zarówno klientów indywidualnych, jak i
+              firmy, oferując wysokiej klasy detergenty oraz preparaty
               bezpieczne dla ludzi i zwierząt. Korzystam z zaawansowanego
               technicznie sprzętu, a każdemu Zleceniodawcy zapewniamy pełną
               satysfakcję z naszych usług oraz konkurencyjne ceny.

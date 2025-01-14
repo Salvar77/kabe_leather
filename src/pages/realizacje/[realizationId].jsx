@@ -27,8 +27,8 @@ const RealizationDetail = ({ realization }) => {
   return (
     <div>
       <SEO
-        title={`${realization.description} - Realizacja Kabe Tint&Leather`}
-        description={`Zobacz szczegóły realizacji: ${realization.description}. Profesjonalne usługi w Kabe Tint&Leather Auto Detailing.`}
+        title={`${realization.description} - Realizacja KabeTintLeather`}
+        description={`Zobacz szczegóły realizacji: ${realization.description}. Profesjonalne usługi w KabeTintLeather Auto Detailing.`}
         image={
           realization.largeImage ||
           "https://www.kabetintleather.opole.pl/autocosmetic.png"

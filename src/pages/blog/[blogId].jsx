@@ -48,7 +48,7 @@ const BlogPost = ({ pageContent, blogId }) => {
   return (
     <div>
       <SEO
-        title={`${pageContent.title} - Kabe Tint&Leather Blog`}
+        title={`${pageContent.title} - KabeTintLeather Blog`}
         description={`Przeczytaj wpis na blogu: ${
           pageContent.title
         }. Dowiedz się więcej o ${

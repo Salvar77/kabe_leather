@@ -10,7 +10,7 @@ const Hero = ({ height = "100vh", mobileWhiteBlockColor = "#1D120C" }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
   const isMobile = useMediaQuery("(max-width: 992px)");
 
-  const title = "Kabe Tint&Leather Auto Detailing";
+  const title = "KabeTintLeather Auto Detailing";
   const description = "Kompleksowe czyszczenie samochodu";
 
   return (

@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={classes.footer__container}>
         <div className={classes.footer__text}>
           <p className={classes.footer__textInfo}>
-            &copy;{currentYear} Kabe Tint&Leather Auto Detailing
+            &copy;{currentYear} KabeTintLeather Auto Detailing
           </p>
         </div>
       </div>

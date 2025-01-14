@@ -31,11 +31,11 @@ const SEO = ({
                 datePublished: datePublished,
                 author: {
                   "@type": "Person",
-                  name: "Kabe Tint&Leather Auto Detailing",
+                  name: "KabeTintLeather Auto Detailing",
                 },
                 publisher: {
                   "@type": "Organization",
-                  name: "Kabe Tint&Leather Auto Detailing",
+                  name: "KabeTintLeather Auto Detailing",
                   logo: {
                     "@type": "ImageObject",
                     url: "https://www.kabetintleather.opole.pl/kabelogooo.webp",
@@ -50,7 +50,7 @@ const SEO = ({
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 url: "https://www.kabetintleather.opole.pl",
-                name: "Kabe Tint&Leather Auto Detailing",
+                name: "KabeTintLeather Auto Detailing",
                 description:
                   "Profesjonalne pranie tapicerki, czyszczenie tapicerki oraz czyszczenie samochodu w Opolu. Skontaktuj się z nami, aby zadbać o czystość swojego pojazdu.",
                 logo: "https://www.kabetintleather.opole.pl/kabelogooo.webp",
@@ -78,12 +78,36 @@ const SEO = ({
                 priceRange: "PLN",
                 sameAs: [
                   "https://www.facebook.com/profile.php?id=61554800660887",
-                  "https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg==",
+                  "https://www.instagram.com/kabe_tintleather_autodetailing/#",
+                  "https://www.tiktok.com/@kabetintleather",
+                  "https://www.youtube.com/@Nesill3262",
+                  "https://www.linkedin.com/company/kabetintleather",
+                  "https://www.pinterest.com/kabetintleather",
+                  "https://www.yelp.com/biz/kabetintleather",
+                  "https://www.twitter.com/kabetintleather",
                 ],
-                serviceType: [
-                  "Pranie tapicerki",
-                  "Czyszczenie samochodu",
-                  "Czyszczenie tapicerki",
+                makesOffer: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Pranie tapicerki",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Czyszczenie samochodu",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Czyszczenie tapicerki",
+                    },
+                  },
                 ],
                 areaServed: {
                   "@type": "Place",

@@ -156,9 +156,9 @@ const Contact = () => {
               formularz kontaktowy. Podanie danych jest dobrowolne, ale
               niezbędne do przetworzenia zapytania. Przysługuje mi prawo dostępu
               do swoich danych, ich poprawienia oraz żądania zaprzestania
-              przetwarzania. Administratorem danych osobowych jest KaBe Tint &
-              Leather Auto Detailing Kamil Brzoskwinia, ul. Generała Emila
-              Fieldorfa 12.
+              przetwarzania. Administratorem danych osobowych jest
+              KabeTintLeather Auto Detailing Kamil Brzoskwinia, ul. Generała
+              Emila Fieldorfa 12.
             </label>
           </div>
           <button type="submit" aria-label="Wyślij formularz kontaktowy">

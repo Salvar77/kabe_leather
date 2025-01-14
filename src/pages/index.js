@@ -15,18 +15,18 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Pranie tapicerki samochodowej Opole | Kabe Tint&Leather Auto Detailing"
+        title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
         description="Kabe Tint&Leather specjalizuje się w profesjonalnym praniu tapicerki oraz czyszczeniu samochodów. Zadbaj o swoje auto z naszą pomocą."
         image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
         url="https://www.kabetintleather.opole.pl/"
       />
       <NextSeo
-        title="Pranie tapicerki samochodowej Opole | Kabe Tint&Leather Auto Detailing"
+        title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
         description="Profesjonalne pranie tapicerki i czyszczenie samochodu w Opolu. Oferujemy skuteczne czyszczenie tapicerki samochodowej, dbając o detale. Skontaktuj się z nami!"
         canonical="https://www.kabetintleather.opole.pl/"
         openGraph={{
           url: "https://www.kabetintleather.opole.pl/",
-          title: "Pranie tapicerki samochodowej Opole | Kabe Tint&Leather",
+          title: "Pranie tapicerki samochodowej Opole | KabeTintLeather",
           description:
             "Oferujemy najwyższej jakości usługi prania tapicerki i czyszczenia samochodów w Opolu. Specjalizujemy się w czyszczeniu tapicerki, dbając o każdy szczegół.",
           images: [
@@ -34,11 +34,11 @@ export default function Home() {
               url: "https://www.kabetintleather.opole.pl/kabelogooo.webp",
               width: 800,
               height: 600,
-              alt: "Czyszczenie tapicerki - Kabe Tint&Leather",
+              alt: "Czyszczenie tapicerki - KabeTintLeather",
               type: "image/webp",
             },
           ],
-          site_name: "Kabe Tint&Leather Auto Detailing",
+          site_name: "KabeTintLeather Auto Detailing",
           locale: "pl_PL",
           type: "business.business",
           business: {
@@ -84,7 +84,7 @@ export default function Home() {
         ]}
         instagram={{
           handle: "@KabeTintLeather",
-          site: "https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg==",
+          site: "https://www.instagram.com/kabetintleather_autodetailing/#",
           cardType: "summary_large_image",
         }}
         facebook={{

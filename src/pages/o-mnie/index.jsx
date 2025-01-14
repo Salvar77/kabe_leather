@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <>
       <SEO
-        title="O Mnie - Kabe Tint&Leather Auto Detailing w Opolu"
+        title="O Mnie - KabeTintLeather Auto Detailing w Opolu"
         description="Poznaj Kamila i jego pasję do motoryzacji oraz prania tapicerki i czyszczenia samochodów. Profesjonalna autokosmetyka w Opolu."
         image="https://www.kabetintleather.opole.pl/hero_main.jpg"
         url="https://www.kabetintleather.opole.pl/o-mnie"
@@ -29,7 +29,7 @@ const AboutPage = () => {
             >
               <Image
                 src={picture}
-                alt="Właściciel Kabe Tint&Leather wykonujący pranie tapicerki i czyszczenie samochodu"
+                alt="Właściciel KabeTintLeather wykonujący pranie tapicerki i czyszczenie samochodu"
                 className={classes.aboutMe__img}
                 priority
               />
