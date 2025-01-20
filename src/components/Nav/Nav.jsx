@@ -38,6 +38,10 @@ const Nav = ({ isOpen, toggleNav }) => {
         { href: "/uslugi/przyciemnianie-szyb", label: "Przyciemnianie szyb" },
         { href: "/uslugi/korekta-lakieru", label: "Korekta lakieru" },
         { href: "/uslugi/folia-ppf-ochrona-lakieru", label: "Folia PPF" },
+        {
+          href: "/uslugi/powloka-ceramiczna",
+          label: "Powłoka ceramiczna",
+        },
       ],
     },
     { href: "/realizacje", label: "Realizacje" },

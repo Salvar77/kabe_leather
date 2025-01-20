@@ -16,6 +16,7 @@ import {
   faWind,
   faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const AboutUs = () => {
   return (
@@ -96,7 +97,7 @@ const AboutUs = () => {
               rel="noopener noreferrer"
               aria-label="Odwiedź nas na Facebooku"
             >
-              <i className="fab fa-facebook"></i>
+              <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
             <a
               href="https://www.instagram.com/kabetintleather_autodetailing/#"
@@ -104,7 +105,7 @@ const AboutUs = () => {
               rel="noopener noreferrer"
               aria-label="Odwiedź nas na Instagramie"
             >
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
           </div>
         </div>

@@ -10,6 +10,7 @@ const specialImagePages = [
   "/jak-wyczyscic-tapicerke-samochodowa",
   "/jak-dbac-o-skorzana-tapicerke-samochodowa",
   "/uzywamy-profesjonalnych-produktow",
+  "/powloka-ceramiczna",
 ];
 
 const BlogPost = ({ pageContent, blogId }) => {

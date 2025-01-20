@@ -4,11 +4,17 @@ import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+
 const ContactMain = () => {
-  // --- Stan do pokazywania/ukrywania usług ---
   const [showServices, setShowServices] = useState(false);
 
-  // Funkcja toggle dla modala z usługami
   const toggleServices = () => {
     setShowServices((prev) => !prev);
   };
@@ -50,10 +56,6 @@ const ContactMain = () => {
               </Link>
             </li>
 
-            {/*
-              Zamiast zwykłego <Link> do /uslugi – mamy <span>, 
-              który zawsze wyświetla modal z usługami (bez rozróżnienia na mobile/desktop).
-            */}
             <li>
               <span onClick={toggleServices} aria-label="Pokaż usługi">
                 Usługi
@@ -111,20 +113,20 @@ const ContactMain = () => {
               href="https://www.facebook.com/profile.php?id=61554800660887"
               target="_blank"
               rel="noopener noreferrer"
-              className="fab fa-facebook-f"
-              aria-label="Odwiedź nas na Facebooku"
+              aria-label="Odwiedź mnie na Facebooku"
             >
+              <FontAwesomeIcon icon={faFacebookF} size="lg" />
               <span className="sr-only">Facebook</span>
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg=="
+              href="https://www.instagram.com/kabetintleather_autodetailing/#"
               target="_blank"
               rel="noopener noreferrer"
-              className="fab fa-instagram"
-              aria-label="Odwiedź nas na Instagramie"
+              aria-label="Odwiedź mnie na Instagramie"
             >
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
               <span className="sr-only">Instagram</span>
             </a>
           </li>
@@ -133,10 +135,21 @@ const ContactMain = () => {
               href="https://www.tiktok.com/@kabetintleather"
               target="_blank"
               rel="noopener noreferrer"
-              className="fab fa-tiktok"
-              aria-label="Odwiedź nas na TikToku"
+              aria-label="Odwiedź mnie na TikToku"
             >
+              <FontAwesomeIcon icon={faTiktok} size="lg" />
               <span className="sr-only">TikTok</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@Nesill3262"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Odwiedź mnie na YouTube"
+            >
+              <FontAwesomeIcon icon={faYoutube} size="lg" />
+              <span className="sr-only">YouTube</span>
             </a>
           </li>
         </ul>
@@ -187,6 +200,11 @@ const ContactMain = () => {
                 onClick={toggleServices}
               >
                 Folia PPF
+              </Link>
+            </li>
+            <li>
+              <Link href="/uslugi/powloka-ceramiczna" onClick={toggleServices}>
+                Powłoka ceramiczna
               </Link>
             </li>
           </ul>

@@ -12,6 +12,7 @@ import cleanImgLarge from "../../assets/image/heroMainWebpBig.webp";
 import paintCorrection from "../../assets/image/paintCorrection.webp";
 import paintCorrectionLarge from "../../assets/image/paintCorrection.jpg";
 import ppfFoilImage from "../../assets/image/ppf.webp";
+import ceramicCoatingImage from "../../assets/image/ceramicCoating.jpeg";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
 
@@ -89,6 +90,18 @@ export const servicesData = [
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
       "Folia PPF to doskonałe rozwiązanie, które chroni lakier przed uszkodzeniami mechanicznymi, zarysowaniami oraz wpływem czynników atmosferycznych. Aby uzyskać najlepsze efekty, przed aplikacją folii zalecamy wykonanie polerki lakieru, która przywraca mu blask i gładkość. Następnie lakier jest zabezpieczany folią PPF, co gwarantuje trwałość i ochronę na długie lata.",
+  },
+  {
+    id: "uslugi/powloka-ceramiczna",
+    description: "Powłoka Ceramiczna",
+    image: ceramicCoatingImage,
+    largeImage: ceramicCoatingImage,
+    largeImageWidth: 1920,
+    title: "Sprawdź",
+    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    additionalInfo:
+      "Nasza powłoka ceramiczna to innowacyjne rozwiązanie, które tworzy trwałą, niewidoczną barierę chroniącą lakier przed drobnymi zarysowaniami, promieniowaniem UV i innymi czynnikami zewnętrznymi. Lakier zyskuje wyjątkowy połysk i głębię koloru, a bieżąca pielęgnacja staje się prostsza, dzięki łatwiejszemu usuwaniu zabrudzeń. To doskonały sposób, by nadać samochodowi świeży wygląd na dłużej i zabezpieczyć go przed przedwczesnym zużyciem.",
   },
 ];
 

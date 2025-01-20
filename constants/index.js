@@ -24,6 +24,10 @@ import {
   blogFoto14,
   blogFoto15,
   blogFoto16,
+  blogFoto17,
+  blogFoto18,
+  blogFoto19,
+  blogFoto20,
   blogFotoMain,
   blogFotoMain2,
   blogFotoMain3,
@@ -33,6 +37,7 @@ import {
   blogFotoMain42,
   blogFotoMain5,
   blogFotoMain6,
+  blogFotoMain7,
 } from "../utils/index";
 
 import {
@@ -115,6 +120,16 @@ const blogPosts = [
       "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
     link: "/folia-ppf-ochrona-lakieru",
     image: blogFoto13,
+  },
+  {
+    id: 8,
+    title: "Powłoka ceramiczna – dlaczego warto zainwestować?",
+    subtitle: "OCHRONA I WYGLĄD LAKIERU SAMOCHODOWEGO",
+    date: "2025-01-17",
+    description:
+      "Powłoka ceramiczna to nowoczesne rozwiązanie, które chroni lakier Twojego samochodu przed zarysowaniami, czynnikami atmosferycznymi oraz promieniowaniem UV. Poznaj wszystkie korzyści wynikające z zastosowania powłoki ceramicznej i ciesz się doskonałym wyglądem swojego pojazdu na dłużej!",
+    link: "/powloka-ceramiczna",
+    image: blogFotoMain7,
   },
 ];
 
@@ -331,7 +346,7 @@ const pagesContent = {
   },
   "korekta-lakieru": {
     title: "Korekta lakieru – co to jest i dlaczego warto ją wykonać?",
-    dynamicImage: blogFotoMain6,
+    dynamicImage: blogFoto17,
     sections: [
       {
         heading: "Czym jest korekta lakieru?",
@@ -374,7 +389,7 @@ const pagesContent = {
       },
     },
 
-    images: [blogFotoMain6],
+    images: [blogFotoMain6, blogFoto17, blogFoto19],
   },
   "folia-ppf-ochrona-lakieru": {
     title: "Folia PPF – jak skutecznie chronić lakier samochodu?",
@@ -417,6 +432,44 @@ const pagesContent = {
       },
     },
     images: [blogFoto13, blogFoto14, blogFoto15, blogFoto16],
+  },
+  "powloka-ceramiczna": {
+    title: "Powłoka ceramiczna – ochrona i połysk Twojego auta",
+    dynamicImage: blogFotoMain7,
+    sections: [
+      {
+        heading: "Czym jest powłoka ceramiczna?",
+        content:
+          "Powłoka ceramiczna to <b>innowacyjne rozwiązanie</b>, które tworzy trwałą, niewidoczną warstwę ochronną na lakierze samochodu. Dzięki swoim właściwościom hydrofobowym i odporności na zarysowania, <a href='/uslugi/powloka-ceramiczna'>powłoka ceramiczna</a> zabezpiecza Twój pojazd przed działaniem szkodliwych czynników atmosferycznych, promieniowaniem UV oraz zabrudzeniami. Powłoka ta doskonale podkreśla <b>głębię koloru</b> lakieru, nadając mu niesamowity połysk i świeży wygląd, jak z salonu. Jej elastyczność i trwałość sprawiają, że jest to rozwiązanie idealne zarówno dla nowych, jak i używanych samochodów.",
+      },
+      {
+        heading: "Dlaczego warto wybrać powłokę ceramiczną?",
+        content:
+          "Powłoka ceramiczna oferuje szereg korzyści, które znacząco wpływają na <b>estetykę</b> i <b>ochronę</b> Twojego pojazdu.<br><br><b>Najważniejsze zalety:</b><br>- <b>Ochrona przed zarysowaniami:</b> Powłoka tworzy twardą i trwałą barierę, która minimalizuje ryzyko uszkodzeń mechanicznych.<br>- <b>Hydrofobowe właściwości:</b> Woda i zabrudzenia spływają z powierzchni lakieru, co ułatwia czyszczenie pojazdu.<br>- <b>Odporność na chemikalia:</b> Powłoka ceramiczna zabezpiecza lakier przed działaniem agresywnych środków czyszczących.<br>- <b>Trwała ochrona:</b> Powłoka zachowuje swoje właściwości przez wiele miesięcy, a nawet lat.<br>- <b>Estetyka:</b> Głębia koloru i połysk lakieru sprawiają, że samochód wygląda wyjątkowo elegancko.<br>- <b>Ochrona przed promieniowaniem UV:</b> Powłoka chroni lakier przed blaknięciem, co przedłuża jego żywotność.",
+      },
+      {
+        heading: "Jak aplikujemy powłokę ceramiczną?",
+        content:
+          "Proces aplikacji powłoki ceramicznej wymaga <b>precyzji</b> i <b>doświadczenia</b>, aby osiągnąć maksymalne efekty. Obejmuje on następujące kroki:<br><br>1. <b>Dokładne mycie i przygotowanie powierzchni:</b> Usunięcie wszelkich zabrudzeń, takich jak kurz, tłuszcz czy pozostałości wosku.<br>2. <b>Korekta lakieru:</b> W przypadku pojazdów używanych usuwane są drobne rysy i zmatowienia.<br>3. <b>Aplikacja powłoki:</b> Powłoka nakładana jest równomiernie na powierzchnię lakieru.<br>4. <b>Utwardzanie:</b> Powłoka ceramiczna wymaga odpowiedniego czasu na utwardzenie, aby zapewnić maksymalną trwałość.",
+      },
+      {
+        heading: "Cennik powłoki ceramicznej",
+        content:
+          "Cena aplikacji powłoki ceramicznej zależy od <b>rodzaju pojazdu</b>, <b>zakresu usługi</b> oraz <b>wybranych produktów</b>. Oto przykładowe koszty:<br>- <b>Małe auta (np. hatchback):</b> od 1200 zł.<br>- <b>Samochody średniej wielkości (np. sedan):</b> od 1500 zł.<br>- <b>SUV-y i większe pojazdy:</b> od 2000 zł.<br>- <b>Ochrona elementów (np. maska, zderzaki):</b> od 500 zł za element.<br><br>Skontaktuj się z nami, aby otrzymać <b>indywidualną wycenę</b> i dowiedzieć się więcej o dostępnych opcjach. Szczegóły znajdziesz także na stronie <a href='/uslugi/powloka-ceramiczna'>powłoki ceramicznej</a>.",
+      },
+      {
+        heading: "Jak długo utrzymuje się powłoka ceramiczna?",
+        content:
+          "Powłoka ceramiczna to inwestycja na długie lata. Jej trwałość zależy od jakości produktu i pielęgnacji, ale zwykle zachowuje swoje właściwości przez 2 do 5 lat. Regularne mycie i stosowanie środków pielęgnacyjnych zalecanych przez specjalistów pozwala jeszcze bardziej wydłużyć jej żywotność.",
+      },
+    ],
+    links: {
+      powlokaCeramicznaLink: {
+        href: "/uslugi/powloka-ceramiczna",
+        text: "powłoka ceramiczna",
+      },
+    },
+    images: [blogFotoMain7],
   },
 };
 

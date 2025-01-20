@@ -25,6 +25,7 @@ import blogFotoMain41 from "../src/assets/image/blogFotoMain4-1.jpg";
 import blogFotoMain42 from "../src/assets/image/blogFotoMain4-2.jpg";
 import blogFotoMain5 from "../src/assets/image/tint_1920.jpg";
 import blogFotoMain6 from "../src/assets/image/paintCorrection.jpg";
+import blogFotoMain7 from "../src/assets/image/ceramicCoating.jpeg";
 
 import blogFoto1 from "../src/assets/image/blogFoto1.jpg";
 import blogFoto2 from "../src/assets/image/blogFoto2.jpg";
@@ -42,6 +43,10 @@ import blogFoto13 from "../src/assets/image/ppf.webp";
 import blogFoto14 from "../src/assets/image/ppf1.webp";
 import blogFoto15 from "../src/assets/image/ppf2.jpg";
 import blogFoto16 from "../src/assets/image/ppf3.jpg";
+import blogFoto17 from "../src/assets/image/paintCorrection1.jpg";
+import blogFoto18 from "../src/assets/image/paintCorrection2.jpg";
+import blogFoto19 from "../src/assets/image/paintCorrection3.jpg";
+import blogFoto20 from "../src/assets/image/autocosmetic7.jpg";
 
 import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
 import referencyPhoto2 from "../src/assets/image/referrency.jpg";
@@ -74,6 +79,7 @@ export {
   blogFotoMain42,
   blogFotoMain5,
   blogFotoMain6,
+  blogFotoMain7,
   blogFoto1,
   blogFoto2,
   blogFoto3,
@@ -90,4 +96,8 @@ export {
   blogFoto14,
   blogFoto15,
   blogFoto16,
+  blogFoto17,
+  blogFoto18,
+  blogFoto19,
+  blogFoto20,
 };

@@ -74,6 +74,9 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             {automotive.id === "uslugi/folia-ppf-ochrona-lakieru" && (
               <ContentPPF automotive={automotive} />
             )}
+            {automotive.id === "uslugi/powloka-ceramiczna" && (
+              <ContentCeramic automotive={automotive} />
+            )}
           </div>
         </div>
         <div className={classes.buttonContainer}>
@@ -278,6 +281,35 @@ const ContentPPF = ({ automotive }) => (
         zyskuje nowoczesny wygląd i ochronę lakieru na wiele lat. Sprawdź także{" "}
         <Link href="/uslugi/korekta-lakieru">usługę korekty lakieru</Link>,
         która doskonale uzupełnia ochronę PPF.
+      </li>
+    </ul>
+  </div>
+);
+
+const ContentCeramic = ({ automotive }) => (
+  <div className={classes.listContainer}>
+    <p className={classes.paragraphStyle}>{automotive.additionalInfo}</p>
+    <ul className={classes.listStyle}>
+      <li>
+        <b>Trwała bariera ochronna:</b> Powłoka ceramiczna chroni lakier przed
+        promieniowaniem UV, drobnymi zarysowaniami oraz czynnikami
+        atmosferycznymi. Przeczytaj więcej na naszym blogu:{" "}
+        <Link href="/blog/powloka-ceramiczna">zalety powłoki ceramicznej</Link>.
+      </li>
+      <li>
+        <b>Wyjątkowy połysk:</b> Nadaje lakierowi głębię koloru i sprawia, że
+        samochód prezentuje się doskonale w każdych warunkach.
+      </li>
+      <li>
+        <b>Łatwiejsze czyszczenie:</b> Dzięki hydrofobowej powierzchni powłoki
+        brud i zanieczyszczenia mniej przylegają do karoserii, co znacząco
+        ułatwia mycie. Dowiedz się więcej na naszym blogu:{" "}
+        <Link href="/blog/powloka-ceramiczna">powłoka ceramiczna</Link>.
+      </li>
+      <li>
+        <b>Długotrwały efekt:</b> Odpowiednio nałożona powłoka ceramiczna
+        potrafi utrzymać swoje właściwości ochronne i wizualne przez wiele
+        miesięcy, a nawet lat.
       </li>
     </ul>
   </div>
