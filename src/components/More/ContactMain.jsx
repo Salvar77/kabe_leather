@@ -40,7 +40,7 @@ const ContactMain = () => {
         <div className={classes.logoBlock}>
           <Image
             src={Logo}
-            alt="Logo firmy Kabe Tint&Leather - pranie tapicerki, czyszczenie samochodów"
+            alt="Logo firmy KabeTintLeather - pranie tapicerki, czyszczenie samochodów"
             className={classes.logo}
           />
         </div>

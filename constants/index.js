@@ -6,6 +6,7 @@ import {
   blogMain3,
   blogMain4,
   blogMain5,
+  blogMain7,
   referencyPhoto1,
   referencyPhoto2,
   blogFoto1,
@@ -38,6 +39,7 @@ import {
   blogFotoMain5,
   blogFotoMain6,
   blogFotoMain7,
+  blogFotoMain8,
 } from "../utils/index";
 
 import {
@@ -63,7 +65,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Jak skutecznie wyczyścić tapicerkę samochodową?",
+    title: "Pranie tapicerki Opole - Jak wyczyścić tapicerkę samochodowa.",
     subtitle: "PRANIE TAPICERKI SAMOCHODOWEJ",
     date: "2024-12-01",
     description:
@@ -73,7 +75,8 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "Jak dbać o tapicerkę skórzaną w samochodzie?",
+    title:
+      "Czyszczenie tapicerki skórzanej Opole - Jak dbać o tapicerkę skórzaną?",
     subtitle: "PIELĘGNACJA SKÓRZANEJ TAPICERKI SAMOCHODOWEJ",
     date: "2024-11-26",
     description:
@@ -83,17 +86,19 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: "Używamy profesjonalnych produktów",
+    title:
+      "Autokosmetyka samochodowa Opole - Używamy profesjonalnych produktów.",
     subtitle: "AUTOKOSMETYKA SAMOCHODOWA",
     date: "2024-11-09",
     description:
       "Wybór odpowiednich preparatów do pielęgnacji samochodu jest kluczowy, aby zapewnić mu idealny wygląd i ochronę. Sprawdź, które środki są najlepsze do pielęgnacji karoserii, wnętrza oraz szyb.",
     link: "/uzywamy-profesjonalnych-produktow",
-    image: blogMain4,
+    image: blogMain7,
   },
   {
     id: 5,
-    title: "Jak skutecznie przyciemnić szyby w samochodzie?",
+    title:
+      "Przyciemnianie szyb samochodowych Opole - Jak skutecznie przyciemnić szyby.",
     subtitle: "PRZECIEMNIANIE SZYB SAMOCHODOWYCH",
     date: "2024-10-21",
     description:
@@ -103,7 +108,8 @@ const blogPosts = [
   },
   {
     id: 6,
-    title: "Korekta lakieru – co to jest i dlaczego warto ją wykonać?",
+    title:
+      "Polerowanie lakieru Opole - Co to jest i dlaczego warto ja wykonać.",
     subtitle: "PIELĘGNACJA LAKIERU SAMOCHODOWEGO",
     date: "2024-09-29",
     description:
@@ -113,7 +119,7 @@ const blogPosts = [
   },
   {
     id: 7,
-    title: "Folia PPF – jak skutecznie chronić lakier samochodu?",
+    title: "Folia PPF Opole - Jak skutecznie chronić lakier?",
     subtitle: "OCHRONA LAKIERU SAMOCHODOWEGO",
     date: "2025-01-06",
     description:
@@ -123,7 +129,8 @@ const blogPosts = [
   },
   {
     id: 8,
-    title: "Powłoka ceramiczna – dlaczego warto zainwestować?",
+    title:
+      "Powłoka ceramiczna Opole - Dlaczego warto zainwestować w zabezpieczenie lakieru.",
     subtitle: "OCHRONA I WYGLĄD LAKIERU SAMOCHODOWEGO",
     date: "2025-01-17",
     description:
@@ -238,7 +245,7 @@ const pagesContent = {
       },
       czyszczenieTapicerkiSkórzanejLink: {
         href: "/uslugi/pranie-tapicerki",
-        text: "pranie tapicerki skórzanej",
+        text: "czyszczenie tapicerki skórzanej",
       },
       środkiDoSkóryLink: {
         href: "/uslugi/renowacja-i-czyszczenie-skor",
@@ -547,6 +554,11 @@ const services = [
     name: "Ochronna folia PPF",
     price: "Cena ustalana indywidualnie",
     icon: <FaShieldAlt />,
+  },
+  {
+    name: "Powłoka ceramiczna",
+    price: "OD 1400zł",
+    icon: <FaSprayCan />,
   },
 ];
 

@@ -15,6 +15,7 @@ import blogMain3 from "../src/assets/image/blogPhoto2.jpg";
 import blogMain4 from "../src/assets/image/blogPhoto5.jpg";
 import blogMain5 from "../src/assets/image/blogPhoto4.jpg";
 import blogMain6 from "../src/assets/image/autocosmetic1.jpg";
+import blogMain7 from "../src/assets/image/autocosmetic_blog.webp";
 
 import blogFotoMain from "../src/assets/image/blogFotoMain1.jpg";
 import blogFotoMain2 from "../src/assets/image/blogFotoMain2.jpg";
@@ -68,6 +69,7 @@ export {
   blogMain4,
   blogMain5,
   blogMain6,
+  blogMain7,
   referencyPhoto1,
   referencyPhoto2,
   blogFotoMain,

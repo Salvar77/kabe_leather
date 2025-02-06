@@ -17,6 +17,10 @@
     color: $dark-smooth;
   }
 
+  h2 {
+    font-weight: normal;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
