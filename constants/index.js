@@ -57,7 +57,7 @@ const blogPosts = [
     id: 1,
     title: "Jak zapobiec powstaniu plam na tapicerce samochodowej?",
     subtitle: "CZYSZCZENIE TAPICERKI SAMOCHODOWEJ",
-    date: "2024-12-11",
+    date: "2025-02-07",
     description:
       "Plama na tapicerce samochodowej to problem, którego można uniknąć! Dowiedz się, jak szybko i skutecznie reagować, aby nie doprowadzić do trwałych zabrudzeń. Oto kilka kroków, które warto zastosować, aby utrzymać tapicerkę w czystości.",
     link: "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
@@ -67,7 +67,7 @@ const blogPosts = [
     id: 2,
     title: "Pranie tapicerki Opole - Jak wyczyścić tapicerkę samochodowa.",
     subtitle: "PRANIE TAPICERKI SAMOCHODOWEJ",
-    date: "2024-12-01",
+    date: "2025-02-05",
     description:
       "Dowiedz się, jak skutecznie wyczyścić tapicerkę samochodową, aby pozbyć się nawet najtrudniejszych plam i zabrudzeń. Nasze profesjonalne metody czyszczenia pozwolą Ci cieszyć się świeżością wnętrza samochodu przez długi czas.",
     link: "/jak-wyczyscic-tapicerke-samochodowa",
@@ -78,7 +78,7 @@ const blogPosts = [
     title:
       "Czyszczenie tapicerki skórzanej Opole - Jak dbać o tapicerkę skórzaną?",
     subtitle: "PIELĘGNACJA SKÓRZANEJ TAPICERKI SAMOCHODOWEJ",
-    date: "2024-11-26",
+    date: "2025-02-01",
     description:
       "Skórzana tapicerka samochodowa wymaga regularnej pielęgnacji. Dowiedz się, jakie środki i techniki stosować, aby tapicerka zachowała swój elegancki wygląd przez wiele lat.",
     link: "/jak-dbac-o-skorzana-tapicerke-samochodowa",
@@ -89,7 +89,7 @@ const blogPosts = [
     title:
       "Autokosmetyka samochodowa Opole - Używamy profesjonalnych produktów.",
     subtitle: "AUTOKOSMETYKA SAMOCHODOWA",
-    date: "2024-11-09",
+    date: "2025-01-25",
     description:
       "Wybór odpowiednich preparatów do pielęgnacji samochodu jest kluczowy, aby zapewnić mu idealny wygląd i ochronę. Sprawdź, które środki są najlepsze do pielęgnacji karoserii, wnętrza oraz szyb.",
     link: "/uzywamy-profesjonalnych-produktow",
@@ -100,7 +100,7 @@ const blogPosts = [
     title:
       "Przyciemnianie szyb samochodowych Opole - Jak skutecznie przyciemnić szyby.",
     subtitle: "PRZECIEMNIANIE SZYB SAMOCHODOWYCH",
-    date: "2024-10-21",
+    date: "2025-01-18",
     description:
       "Przyciemnianie szyb samochodowych to nie tylko kwestia estetyki, ale także komfortu i bezpieczeństwa. Dowiedz się, jak prawidłowo przeprowadzić ten zabieg oraz jakie są korzyści z przyciemniania szyb.",
     link: "/jak-przyciemnic-szyby-samochodowe",
@@ -111,7 +111,7 @@ const blogPosts = [
     title:
       "Polerowanie lakieru Opole - Co to jest i dlaczego warto ja wykonać.",
     subtitle: "PIELĘGNACJA LAKIERU SAMOCHODOWEGO",
-    date: "2024-09-29",
+    date: "2025-01-14",
     description:
       "Dowiedz się, czym jest korekta lakieru, jakie korzyści przynosi i dlaczego warto ją wykonać. Popraw wygląd swojego samochodu i zabezpiecz lakier przed uszkodzeniami!",
     link: "/korekta-lakieru",
@@ -132,7 +132,7 @@ const blogPosts = [
     title:
       "Powłoka ceramiczna Opole - Dlaczego warto zainwestować w zabezpieczenie lakieru.",
     subtitle: "OCHRONA I WYGLĄD LAKIERU SAMOCHODOWEGO",
-    date: "2025-01-17",
+    date: "2025-01-07",
     description:
       "Powłoka ceramiczna to nowoczesne rozwiązanie, które chroni lakier Twojego samochodu przed zarysowaniami, czynnikami atmosferycznymi oraz promieniowaniem UV. Poznaj wszystkie korzyści wynikające z zastosowania powłoki ceramicznej i ciesz się doskonałym wyglądem swojego pojazdu na dłużej!",
     link: "/powloka-ceramiczna",
