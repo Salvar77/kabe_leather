@@ -499,14 +499,18 @@ const services = [
     icon: <FaSprayCan />,
   },
   {
-    name: "Pranie tapicerki materiałowej",
-    price: "250zł",
+    name: "Pranie tapicerki materiałowej (wnętrze auta)",
+    price: "300zł",
     icon: <GiAutoRepair />,
   },
-  { name: "Czyszczenie tapicerki skórzanej", price: "250zł", icon: <FaCogs /> },
+  {
+    name: "Czyszczenie tapicerki skórzanej (5 foteli w samochodzie osobowym)",
+    price: "350zł",
+    icon: <FaCogs />,
+  },
   {
     name: "Impregnacja tapicerki skórzanej",
-    price: "100zł",
+    price: "150zł",
     icon: <FaShieldAlt />,
   },
   {
@@ -526,17 +530,17 @@ const services = [
   },
   {
     name: "Kompleksowe czyszczenie wnętrza z praniem tapicerki / czyszczeniem skóry",
-    price: "400zł",
+    price: "500zł",
     icon: <FaCar />,
   },
   {
     name: "Mycie ręczne z powłoką, kompleksowe czyszczenie wnętrza bez prania tapicerki / czyszczenia skóry",
-    price: "300zł",
+    price: "350zł",
     icon: <FaSprayCan />,
   },
   {
     name: "Mycie ręczne, kompleksowe czyszczenie wnętrza wraz z praniem tapicerki / czyszczeniem skór oraz powłoką syntetyczną",
-    price: "500zł",
+    price: "600zł",
     icon: <FaCar />,
   },
   {
