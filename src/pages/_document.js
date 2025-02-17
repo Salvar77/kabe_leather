@@ -45,7 +45,6 @@ class MyDocument extends Document {
           />
 
           {/* Preconnect & Preload */}
-
           <link
             rel="preload"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -64,7 +63,7 @@ class MyDocument extends Document {
           {/* Google Tag Manager (noscript fallback) */}
           <noscript>
             <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+              src="https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}"
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}
