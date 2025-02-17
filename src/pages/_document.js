@@ -12,16 +12,17 @@ class MyDocument extends Document {
             strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],
-                    j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-TFKQ2BQV');
-            `,
+                (function(w,d,s,l,i){
+                  w[l] = w[l] || [];
+                  w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+                  var f = d.getElementsByTagName(s)[0],
+                      j = d.createElement(s),
+                      dl = l!='dataLayer'?'&l='+l:'';
+                  j.async = true;
+                  j.src = 'https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}'+dl;
+                  f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
+              `,
             }}
           />
 
@@ -31,7 +32,7 @@ class MyDocument extends Document {
             strategy="lazyOnload"
           />
           <Script
-            id="google-analytics"
+            id="ga-script"
             strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
@@ -45,7 +46,7 @@ class MyDocument extends Document {
 
           {/* Google Ads */}
           <Script
-            src="https://www.googletagmanager.com/gtag/js?id=GT-WV3XD826"
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}`}
             strategy="lazyOnload"
           />
           <Script
@@ -53,35 +54,22 @@ class MyDocument extends Document {
             strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              // Konfiguracje z dwoma ID:
-              gtag('config', 'GT-WV3XD826');
-              gtag('config', 'AW-16608400370');
-            `,
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}');
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS_AW_ID}');
+              `,
             }}
           />
 
-          <link
-            rel="preload"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            as="style"
-            onLoad="this.rel='stylesheet'"
-          />
-          <noscript>
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            />
-          </noscript>
           <link rel="icon" href="/favicon1.ico" />
         </Head>
         <body>
-          {/* Google Tag Manager (noscript fallback) */}
+          {/* Noscript fallback (GTM) */}
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-TFKQ2BQV"
+              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}
