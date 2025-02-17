@@ -28,7 +28,6 @@ import photoClean from "../../assets/image/hero_main.jpg";
 import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
-import photoCleaning4 from "../../assets/image/cleaning4.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
 import photoCorrection1 from "../../assets/image/paintCorrection1.jpg";
 import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
@@ -53,7 +52,7 @@ export const realizationsData = [
   {
     id: "pranie-tapicerki",
     description: "Pranie Tapicerki",
-    images: [photoCleaning, photoCleaning2, photoCleaning3, photoCleaning4],
+    images: [photoCleaning, photoCleaning2, photoCleaning3],
     image: photoClean,
     largeImage: photoClean,
     largeImageWidth: 1920,
