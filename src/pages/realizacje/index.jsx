@@ -32,10 +32,14 @@ import photoCorrection from "../../assets/image/paintCorrection.jpg";
 import photoCorrection1 from "../../assets/image/paintCorrection1.jpg";
 import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
 import photoCorrection3 from "../../assets/image/paintCorrection3.jpg";
+import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
+import photoCorrection5 from "../../assets/image/paintCorrection5.jpeg";
 import photoFoilPpf from "../../assets/image/ppf.webp";
 import photoFoilPpf2 from "../../assets/image/ppf2.jpg";
 import photoFoilPpf3 from "../../assets/image/ppf3.jpg";
+import photoFoilPpf4 from "../../assets/image/ppf4.jpeg";
 import ceramicCoatingImage from "../../assets/image/ceramicCoating.jpeg";
+import ceramicCoatingImage2 from "../../assets/image/ceramicCoating2.jpeg";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
@@ -161,6 +165,8 @@ export const realizationsData = [
       photoCorrection1,
       photoCorrection2,
       photoCorrection3,
+      photoCorrection4,
+      photoCorrection5,
     ],
     image: photoCorrection,
     largeImage: photoCorrection,
@@ -171,7 +177,7 @@ export const realizationsData = [
   {
     id: "folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
-    images: [photoFoilPpf2, photoFoilPpf3],
+    images: [photoFoilPpf2, photoFoilPpf3, photoFoilPpf4],
     image: photoFoilPpf,
     largeImage: photoFoilPpf,
     largeImageWidth: 1920,
@@ -181,7 +187,7 @@ export const realizationsData = [
   {
     id: "powloka-ceramiczna",
     description: "Powłoka Ceramiczna",
-    images: [ceramicCoatingImage],
+    images: [ceramicCoatingImage, ceramicCoatingImage2],
     image: ceramicCoatingImage,
     largeImage: ceramicCoatingImage,
     largeImageWidth: 1920,
