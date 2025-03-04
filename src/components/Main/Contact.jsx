@@ -16,13 +16,15 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Sprawdzamy, czy zaznaczono checkbox:
     if (!consent) {
       setMessageStatus(
         "Musisz wyrazić zgodę na przetwarzanie danych osobowych."
       );
       setShowModal(true);
-      return;
+      return; // przerywamy wysyłanie
     }
+
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -37,17 +39,23 @@ const Contact = () => {
         setMessageStatus("Wiadomość wysłana pomyślnie!");
         console.log("Wiadomość wysłana: ", data.message);
 
-        window.gtag("event", "conversion", {
-          send_to: "AW-16652411588/FSKBCKn448gZEMTFvoQ-",
-        });
+        // Wywołanie konwersji Google Ads, jeśli potrzebne
+        if (typeof window !== "undefined" && window.gtag) {
+          window.gtag("event", "conversion", {
+            send_to: "AW-16652411588/FSKBCKn448gZEMTFvoQ-",
+          });
+        }
+
         setShowModal(true);
       } else {
         setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
         console.error("Błąd wysyłania: ", data.error);
+        setShowModal(true);
       }
     } catch (error) {
       setMessageStatus("Wystąpił błąd przy wysyłaniu wiadomości.");
       console.error("Błąd: ", error);
+      setShowModal(true);
     }
   };
 
@@ -135,20 +143,19 @@ const Contact = () => {
             required
           />
           <textarea
-            type="message"
             name="message"
             placeholder="Twoja wiadomość"
             value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
+
           <div className={classes.consentWrapper}>
             <input
               type="checkbox"
               id="rodoConsent"
               checked={consent}
               onChange={() => setConsent(!consent)}
-              required
             />
             <label htmlFor="rodoConsent" id="rodoDescription">
               Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o
@@ -161,10 +168,12 @@ const Contact = () => {
               Emila Fieldorfa 12.
             </label>
           </div>
+
           <button type="submit" aria-label="Wyślij formularz kontaktowy">
             Wyślij
           </button>
         </form>
+
         <div className={classes.linkWrapper}>
           <Link
             href="tel:+48881325631"
@@ -174,6 +183,7 @@ const Contact = () => {
             Umów się na wizytę!
           </Link>
         </div>
+
         {showModal && (
           <div className={classes.modal} onClick={closeModal}>
             <div className={classes.modalContent}>
