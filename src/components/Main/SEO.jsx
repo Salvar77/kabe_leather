@@ -8,6 +8,8 @@ const SEO = ({
   datePublished,
   isBlogPost = false,
   isProduct = false,
+
+  isHome = false,
 }) => {
   const blogSnippet = {
     "@context": "https://schema.org",
@@ -164,6 +166,12 @@ const SEO = ({
       name: "Opole, Poland",
     },
   };
+
+  const localBusinessSnippetNoReviews = JSON.parse(
+    JSON.stringify(localBusinessSnippet)
+  );
+  delete localBusinessSnippetNoReviews.aggregateRating;
+  delete localBusinessSnippetNoReviews.review;
 
   const productSnippet = {
     "@context": "https://schema.org",
@@ -344,8 +352,13 @@ const SEO = ({
   const structuredData = isBlogPost
     ? blogSnippet
     : isProduct
-    ? [localBusinessSnippet, productSnippet]
-    : localBusinessSnippet;
+    ? [
+        isHome ? localBusinessSnippet : localBusinessSnippetNoReviews,
+        productSnippet,
+      ]
+    : isHome
+    ? localBusinessSnippet
+    : localBusinessSnippetNoReviews;
 
   return (
     <Head>

@@ -12,6 +12,7 @@ const PricingSection = () => {
         description="Sprawdź cennik usług KabeTintLeather Auto Detailing. Oferujemy pranie tapicerki, czyszczenie samochodów, przyciemnianie szyb i więcej. Skontaktuj się z nami, aby poznać szczegóły."
         image="https://www.kabetintleather.opole.pl/cennik2.jpg"
         url="https://www.kabetintleather.opole.pl/cennik"
+        isProduct={true}
       />
       <section id="cennik" className={styles.pricingSection}>
         <h1 className={styles.pricingHeader}>Cennik</h1>

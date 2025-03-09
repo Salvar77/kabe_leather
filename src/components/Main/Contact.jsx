@@ -16,13 +16,12 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Sprawdzamy, czy zaznaczono checkbox:
     if (!consent) {
       setMessageStatus(
         "Musisz wyrazić zgodę na przetwarzanie danych osobowych."
       );
       setShowModal(true);
-      return; // przerywamy wysyłanie
+      return; 
     }
 
     try {
@@ -39,7 +38,7 @@ const Contact = () => {
         setMessageStatus("Wiadomość wysłana pomyślnie!");
         console.log("Wiadomość wysłana: ", data.message);
 
-        // Wywołanie konwersji Google Ads, jeśli potrzebne
+       
         if (typeof window !== "undefined" && window.gtag) {
           window.gtag("event", "conversion", {
             send_to: "AW-16652411588/FSKBCKn448gZEMTFvoQ-",

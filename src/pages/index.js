@@ -19,6 +19,7 @@ export default function Home() {
         description="KabeTintLeather specjalizuje się w profesjonalnym praniu tapicerki oraz czyszczeniu samochodów. Zadbaj o swoje auto z naszą pomocą."
         image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
         url="https://www.kabetintleather.opole.pl/"
+        isHome={true}
       />
       <NextSeo
         title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
