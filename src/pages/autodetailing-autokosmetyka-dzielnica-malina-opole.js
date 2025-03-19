@@ -11,6 +11,7 @@ export default function AutodetailingMalinaOpole() {
       title={currentArea.title}
       city={currentArea.city}
       mapSrc={currentArea.mapSrc}
+      url={`https://www.kabetintleather.opole.pl/${currentArea.id}`}
     />
   );
 }

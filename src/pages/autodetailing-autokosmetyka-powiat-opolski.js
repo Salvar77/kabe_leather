@@ -13,6 +13,7 @@ export default function AutodetailingAutokosmetykaPowiatOpolski() {
       }
       city={currentArea?.city || "Powiat Opolski"}
       mapSrc={currentArea?.mapSrc || ""}
+      url={`https://www.kabetintleather.opole.pl/${currentArea.id}`}
     />
   );
 }

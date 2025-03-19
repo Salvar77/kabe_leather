@@ -11,6 +11,7 @@ export default function AutodetailingAutokosmetykaLubniany() {
       title={currentArea?.title || "Autodetailing i Autokosmetyka Łubniany"}
       city={currentArea?.city || "Łubniany"}
       mapSrc={currentArea?.mapSrc || ""}
+      url={`https://www.kabetintleather.opole.pl/${currentArea.id}`}
     />
   );
 }
