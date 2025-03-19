@@ -15,7 +15,7 @@ export default function AreaTemplate({ title, city, mapSrc, url }) {
         <h1 className={classes.areaTitle}>{title}</h1>
 
         <h2 className={classes.areaSubtitle}>
-          Profesjonalny autodetailing – {city}
+          KabeTintLeather Profesjonalny autodetailing – {city}
         </h2>
         <p className={classes.areaText}>
           Oferujemy szeroki zakres usług autodetailingu, które spełniają
@@ -24,9 +24,12 @@ export default function AreaTemplate({ title, city, mapSrc, url }) {
           Twoje auto będzie prezentować się perfekcyjnie.
         </p>
 
-        <h2 className={classes.areaSubtitle}>Co oferujemy?</h2>
+        <h2 className={classes.areaSubtitle}>
+          Co oferujemy w ramach usług autodetailingu?
+        </h2>
         <ul className={classes.areaList}>
-          <li>Pranie i czyszczenie tapicerki samochodowej</li>
+          <li>Pranie tapicerki samochodowej</li>
+          <li>Czyszczenie tapicerki samochodowej</li>
           <li>Renowacja tapicerki skórzanej</li>
           <li>Przyciemnianie szyb samochodowych</li>
           <li>Korekta lakieru</li>
@@ -35,7 +38,7 @@ export default function AreaTemplate({ title, city, mapSrc, url }) {
         </ul>
 
         <h2 className={classes.areaSubtitle}>
-          Dlaczego warto skorzystać z naszych usług?
+          KabeTintLeather {city} - dlaczego my?
         </h2>
         <p className={classes.areaText}>
           Jesteśmy zespołem pasjonatów z dużym doświadczeniem. Korzystamy
@@ -51,9 +54,11 @@ export default function AreaTemplate({ title, city, mapSrc, url }) {
         <p className={classes.areaText}>
           Zachęcamy do zapoznania się z naszymi realizacjami, które znajdziesz
           na naszej stronie internetowej. Możesz się nimi zainspirować lub
-          skorzystać z naszej pomocy w stworzeniu całkowicie indywidualnego
-          projektu. Jesteśmy z Tobą na każdym etapie współpracy – od pierwszych
-          konsultacji, przez projektowanie, aż po finalny montaż.
+          skorzystać z naszej pomocy w doborze odpowiednich usług detailingowych
+          dla Twojego pojazdu. Jesteśmy z Tobą na każdym etapie współpracy – od
+          pierwszej konsultacji, przez profesjonalną pielęgnację i
+          zabezpieczenie lakieru, aż po finalne dopracowanie detali, które
+          podkreślą wyjątkowy wygląd Twojego auta.
         </p>
 
         <h2 className={classes.areaSubtitle}>Masz pytania?</h2>
