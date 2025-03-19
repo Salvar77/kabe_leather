@@ -3,8 +3,6 @@ import "hamburgers/dist/hamburgers.min.css";
 import Nav from "@/components/Nav/Nav";
 import BurgerMenu from "@/components/Nav/BurgerMenu";
 import { useState, useEffect } from "react";
-import { NextSeo } from "next-seo";
-import SEO from "@/components/Main/SEO";
 import Logo from "@/components/Nav/Logo";
 import Footer from "@/components/Footer/Footer";
 import ContactBubble from "@/components/More/ContactBubble";

@@ -566,4 +566,65 @@ const services = [
   },
 ];
 
-export { blogPosts, pagesContent, referencyImages, services };
+const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+const obszaryAutodetailing = [
+  // WSIE
+  {
+    id: "autodetailing-autokosmetyka-ozimek",
+    title: "Autodetailing i Autokosmetyka Ozimek",
+    city: "Ozimek",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Ozimek&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+  {
+    id: "autodetailing-autokosmetyka-proszkow",
+    title: "Autodetailing i Autokosmetyka Prószków",
+    city: "Prószków",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Prószków&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+  {
+    id: "autodetailing-autokosmetyka-lubniany",
+    title: "Autodetailing i Autokosmetyka Łubniany",
+    city: "Łubniany",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Łubniany&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+  {
+    id: "autodetailing-autokosmetyka-komprachcice",
+    title: "Autodetailing i Autokosmetyka Komprachcice",
+    city: "Komprachcice",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Komprachcice&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+
+  // DZIELNICE
+  {
+    id: "autodetailing-autokosmetyka-dzielnica-malina-opole",
+    title: "Autodetailing i Autokosmetyka dzielnica Malina, Opole",
+    city: "Malina, Opole",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Malina,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+  {
+    id: "autodetailing-autokosmetyka-dzielnica-zaodrze-opole",
+    title: "Autodetailing i Autokosmetyka dzielnica Zaodrze, Opole",
+    city: "Zaodrze, Opole",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Zaodrze,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+  {
+    id: "autodetailing-autokosmetyka-dzielnica-wrzoski-opole",
+    title: "Autodetailing i Autokosmetyka dzielnica Wrzoski, Opole",
+    city: "Wrzoski, Opole",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Wrzoski,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+  {
+    id: "autodetailing-autokosmetyka-dzielnica-polwies-opole",
+    title: "Autodetailing i Autokosmetyka dzielnica Półwieś, Opole",
+    city: "Półwieś, Opole",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Półwieś,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
+];
+export {
+  blogPosts,
+  pagesContent,
+  referencyImages,
+  services,
+  obszaryAutodetailing,
+};

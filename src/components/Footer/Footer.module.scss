@@ -12,7 +12,7 @@
 
     &Info {
       margin-top: 0.7em;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -34,5 +34,24 @@
         }
       }
     }
+  }
+}
+
+.policy {
+  color: $white-smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
+  padding: 2rem;
+  text-align: center;
+
+  &__link {
+    text-decoration: none;
+    color: $blue-after;
+  }
+  span {
+    font-weight: bold;
   }
 }

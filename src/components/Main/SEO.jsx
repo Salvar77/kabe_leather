@@ -123,7 +123,7 @@ const SEO = ({
     priceRange: "PLN",
     sameAs: [
       "https://www.facebook.com/profile.php?id=61554800660887",
-      "https://www.instagram.com/kabe_tintleather_autodetailing/#",
+      "https://www.instagram.com/kabe_tintleather_autodetailing/",
       "https://www.tiktok.com/@kabetintleather",
       "https://www.youtube.com/@Nesill3262",
       "https://aleo.com/pl/firma/kabe-tint-leather-kamil-brzoskwinia",
