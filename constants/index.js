@@ -569,6 +569,12 @@ const services = [
 const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
 const obszaryAutodetailing = [
+  {
+    id: "autodetailing-autokosmetyka-opole",
+    title: "Autodetailing i Autokosmetyka Opole",
+    city: "Opole",
+    mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+  },
   // WSIE
   {
     id: "autodetailing-autokosmetyka-ozimek",
