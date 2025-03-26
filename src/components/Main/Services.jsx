@@ -93,7 +93,7 @@ export const servicesData = [
   },
   {
     id: "uslugi/powloka-ceramiczna",
-    description: "Powłoka Ceramiczna",
+    description: "Powłoka Ceramiczna Opole",
     image: ceramicCoatingImage,
     largeImage: ceramicCoatingImage,
     largeImageWidth: 1920,
