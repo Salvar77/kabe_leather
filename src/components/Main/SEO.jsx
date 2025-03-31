@@ -173,6 +173,33 @@ const SEO = ({
   delete localBusinessSnippetNoReviews.aggregateRating;
   delete localBusinessSnippetNoReviews.review;
 
+  const commonOfferDetails = {
+    shippingDetails: {
+      "@type": "DeliveryTimeSettings",
+      transitTimeLabel: "Standard",
+      handlingTime: {
+        "@type": "QuantitativeValue",
+        minValue: 1,
+        maxValue: 3,
+        unitCode: "d",
+      },
+      transitTime: {
+        "@type": "QuantitativeValue",
+        minValue: 1,
+        maxValue: 5,
+        unitCode: "d",
+      },
+    },
+    hasMerchantReturnPolicy: {
+      "@type": "MerchantReturnPolicy",
+      isReturnable: true,
+      returnPolicyCategory: "https://schema.org/RefundPolicy",
+      merchantReturnDays: 14,
+      returnMethod: "https://schema.org/ReturnByMail",
+      returnFees: "https://schema.org/FreeReturn",
+    },
+  };
+
   const productSnippet = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -181,10 +208,67 @@ const SEO = ({
     description: description,
     sku: "SERV-001",
     mpn: "SERV-001",
+    productID: "kabetintleather-service-bundle",
     brand: {
       "@type": "Brand",
       name: "KabeTintLeather",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "3",
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Dariusz Grzebień",
+        },
+        datePublished: "2025-02-03",
+        reviewBody:
+          "Auto oddane na kompleksowe czyszczenie wnętrza wraz z praniem tapicerki, dodatkowo nałożona została powłoka ceramiczną oraz zabezpieczony został front folia PPF. polecam!",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Denis Bul",
+        },
+        datePublished: "2025-02-17",
+        reviewBody:
+          "Mimo że auto jest nowe, zdecydowałem się na korektę lakieru One Step przed nałożeniem 2-letniej powłoki ceramicznej – jak się okazało, to standardowa procedura, aby usunąć mikro zarysowania i maksymalnie przygotować powierzchnię pod zabezpieczenie. Pan Kamil wykonał usługę perfekcyjnie! Lakier zyskał niesamowitą głębię i blask, a powłoka ceramiczna dodała efektu szklistości i ochrony. Samochód wygląda lepiej niż w salonie! Największym atutem, poza samą jakością pracy, było profesjonalne podejście i ogromna wiedza Pana Kamila. Poświęcił czas, aby dokładnie wytłumaczyć mi, jak działają powłoki, jak o nie dbać i na co zwracać uwagę, aby efekt utrzymał się jak najdłużej. Widać, że to pasjonat w swoim fachu. Jeśli ktoś szuka fachowej usługi detailingowej, to zdecydowanie polecam Pana Kamila",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Tomasz Proszkowiec",
+        },
+        datePublished: "2025-01-24",
+        reviewBody:
+          "Citroen C5, kompleksowe czyszczenie samochodu wykonane perfekcyjnie. Samochód w środku jak i na zewnątrz wygląda jak nowy. Panowie gratuluję takiego podejścia do swojej wykonywanej pracy i oczywiście wszystkim serdecznie bardzo polecam skorzystać z usług tej firmy.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+    ],
+
     offers: [
       {
         "@type": "Offer",
@@ -195,6 +279,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -205,6 +290,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -215,6 +301,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -225,6 +312,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -235,6 +323,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -245,6 +334,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -255,6 +345,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -265,6 +356,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -275,6 +367,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -285,6 +378,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -295,6 +389,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -305,6 +400,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -315,6 +411,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -325,16 +422,18 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
-        name: "Ochronna folia PPF (cena indywidualna)",
+        name: "Ochronna folia PPF (cena ustalana indywidualnie)",
         url: url,
-        price: "Indywidualnie",
+        price: "0.01",
         priceCurrency: "PLN",
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/PreOrder",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
       {
         "@type": "Offer",
@@ -345,6 +444,7 @@ const SEO = ({
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
+        ...commonOfferDetails,
       },
     ],
   };
