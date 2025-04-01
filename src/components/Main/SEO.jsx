@@ -175,28 +175,35 @@ const SEO = ({
 
   const commonOfferDetails = {
     shippingDetails: {
-      "@type": "DeliveryTimeSettings",
-      transitTimeLabel: "Standard",
-      handlingTime: {
-        "@type": "QuantitativeValue",
-        minValue: 1,
-        maxValue: 3,
-        unitCode: "d",
+      "@type": "OfferShippingDetails",
+      shippingDestination: {
+        "@type": "DefinedRegion",
+        addressCountry: "PL",
       },
-      transitTime: {
-        "@type": "QuantitativeValue",
-        minValue: 1,
-        maxValue: 5,
-        unitCode: "d",
+      deliveryTime: {
+        "@type": "ShippingDeliveryTime",
+        handlingTime: {
+          "@type": "QuantitativeValue",
+          minValue: 1,
+          maxValue: 3,
+          unitCode: "d",
+        },
+        transitTime: {
+          "@type": "QuantitativeValue",
+          minValue: 1,
+          maxValue: 5,
+          unitCode: "d",
+        },
       },
     },
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",
       isReturnable: true,
-      returnPolicyCategory: "https://schema.org/RefundPolicy",
+      returnPolicyCategory: "RefundPolicy",
       merchantReturnDays: 14,
-      returnMethod: "https://schema.org/ReturnByMail",
-      returnFees: "https://schema.org/FreeReturn",
+      returnMethod: "ReturnByMail",
+      returnFees: "FreeReturn",
+      applicableCountry: "PL",
     },
   };
 
