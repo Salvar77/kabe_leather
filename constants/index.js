@@ -405,7 +405,7 @@ const pagesContent = {
       {
         heading: "Czym jest folia PPF?",
         content:
-          "Folia ochronna PPF (Paint Protection Film) to innowacyjne rozwiązanie zaprojektowane z myślą o długotrwałej ochronie lakieru samochodowego. Dzięki swojej przeźroczystej strukturze, <a href='/uslugi/folia-ppf-ochrona-lakieru'>folia PPF</a>, jest praktycznie niewidoczna, co oznacza, że zachowuje naturalny wygląd pojazdu, jednocześnie chroniąc jego powierzchnię przed szkodliwymi czynnikami zewnętrznymi. Folia PPF zapewnia skuteczną ochronę przed zarysowaniami, odpryskami kamieni, promieniowaniem UV oraz działaniem substancji chemicznych, takich jak sól drogowa czy kwaśne deszcze. Jej elastyczność sprawia, że doskonale przylega do skomplikowanych kształtów karoserii, gwarantując kompleksową ochronę zarówno dla całego pojazdu, jak i jego poszczególnych elementów.",
+          "Folia ochronna PPF (Paint Protection Film) to innowacyjne rozwiązanie zaprojektowane z myślą o długotrwałej ochronie lakieru samochodowego. Dzięki swojej przeźroczystej strukturze, <a href='/uslugi/folia-ppf-ochrona-lakieru'>folia PPF</a>, jest praktycznie niewidoczna, co oznacza, że zachowuje naturalny wygląd pojazdu, jednocześnie chroniąc jego powierzchnię przed szkodliwymi czynnikami zewnętrznymi. Folia PPF zapewnia skuteczną ochronę przed zarysowaniami, promieniowaniem UV oraz działaniem substancji chemicznych, takich jak sól drogowa czy kwaśne deszcze. Jej elastyczność sprawia, że doskonale przylega do skomplikowanych kształtów karoserii, gwarantując kompleksową ochronę zarówno dla całego pojazdu, jak i jego poszczególnych elementów.",
       },
       {
         heading: "Dlaczego warto zainwestować w folię PPF?",
@@ -468,6 +468,63 @@ const pagesContent = {
         heading: "Jak długo utrzymuje się powłoka ceramiczna?",
         content:
           "Powłoka ceramiczna to inwestycja na długie lata. Jej trwałość zależy od jakości produktu i pielęgnacji, ale zwykle zachowuje swoje właściwości przez 2 do 5 lat. Regularne mycie i stosowanie środków pielęgnacyjnych zalecanych przez specjalistów pozwala jeszcze bardziej wydłużyć jej żywotność.",
+      },
+      {
+        heading: "Czym jest powłoka elastomerowa?",
+        content:
+          "Powłoka elastomerowa to <b>elastyczna warstwa ochronna</b>, która tworzy szczelną powłokę na powierzchni lakieru. W przeciwieństwie do <a href='/uslugi/powloka-ceramiczna'>powłoki ceramicznej</a>, charakteryzuje się <b>wysoką rozciągliwością</b> i zdolnością do 'samoregeneracji' drobnych uszkodzeń. Dzięki temu doskonale sprawdza się w warunkach, gdzie lakier narażony jest na <b>zmiany temperatury, kamienie czy sól drogową</b>. Powłoka elastomerowa nadaje pojazdowi matowe lub satynowe wykończenie, a jej elastyczność sprawia, że jest mniej podatna na pękanie w przypadku uderzeń.",
+      },
+
+      {
+        heading: "Powłoka ceramiczna czy elastomerowa – co wybrać?",
+        content:
+          "Wybór odpowiedniej powłoki zależy od <b>Twoich oczekiwań</b> oraz sposobu eksploatacji pojazdu.<br><br><b>Porównanie:</b><br><br>" +
+          "<b>Powłoka ceramiczna:</b><br>- Twarda i błyszcząca powierzchnia<br>- Głębia koloru i wysoki połysk<br>- Doskonała ochrona przed UV, chemią i zabrudzeniami<br>- Idealna do samochodów pokazowych, zadbanych, nowych<br><br>" +
+          "<b>Powłoka elastomerowa:</b><br>- Matowe lub satynowe wykończenie<br>- Elastyczność i odporność na mikrouszkodzenia<br>- Lepsza ochrona mechaniczna (np. przed kamykami)<br>- Świetna opcja dla aut terenowych, użytkowych, zimowych",
+      },
+      {
+        heading: "Jakie są rodzaje powłok ceramicznych?",
+        content:
+          "Na rynku dostępne są różne rodzaje <a href='/uslugi/powloka-ceramiczna'>powłok ceramicznych</a>, które różnią się trwałością, składem i efektem wizualnym.<br><br>" +
+          "<b>Najpopularniejsze typy:</b><br>" +
+          "- <b>1-letnie powłoki:</b> Podstawowa ochrona, idealna na sezon lub dla osób, które lubią częste odświeżanie lakieru.<br>" +
+          "- <b>3-letnie powłoki:</b> Świetny kompromis między ceną a trwałością – dobre zabezpieczenie przy umiarkowanym użytkowaniu.<br>" +
+          "- <b>5-letnie i dłuższe:</b> Profesjonalne produkty o wysokiej odporności, polecane dla aut premium lub nowych pojazdów.<br>" +
+          "- <b>Powłoki z dodatkiem tytanu, grafenu lub SiO2:</b> Zapewniają jeszcze większą twardość i głębię koloru.<br><br>" +
+          "Dobór odpowiedniego typu zależy od <b>potrzeb właściciela</b> i warunków użytkowania auta.",
+      },
+      {
+        heading: "Dlaczego warto zabezpieczyć lakier samochodu?",
+        content:
+          "<b>Zabezpieczenie lakieru</b> to nie tylko kwestia estetyki – to przede wszystkim <b>inwestycja w trwałość i wartość pojazdu</b>.<br><br>" +
+          "Z czasem lakier narażony jest na:<br>" +
+          "- Działanie promieniowania UV i blaknięcie<br>" +
+          "- Zabrudzenia drogowe, pyły, sól zimowa<br>" +
+          "- Mikro zarysowania z myjni automatycznych<br>" +
+          "- Opady atmosferyczne i kwaśne deszcze<br><br>" +
+          "Dobrze zaaplikowana powłoka ceramiczna tworzy barierę ochronną, która <b>znacznie wydłuża żywotność lakieru</b>, ułatwia jego czyszczenie i poprawia wygląd auta na długie lata.",
+      },
+      {
+        heading: "Co dokładnie chroni powłoka ceramiczna?",
+        content:
+          "<b>Powłoka ceramiczna</b> działa jak <b>niewidzialna tarcza</b> – tworzy twardą strukturę, która wiąże się z lakierem i zabezpiecza:<br><br>" +
+          "- <b>Przed UV:</b> lakier nie blaknie i nie matowieje<br>" +
+          "- <b>Przed wodą i brudem:</b> dzięki efektowi hydrofobowemu<br>" +
+          "- <b>Przed chemią drogową:</b> sól, asfalt, owady – nie wżerają się<br>" +
+          "- <b>Przed ptasimi odchodami:</b> które mogą wypalić lakier<br>" +
+          "- <b>Przed drobnymi rysami:</b> twardość powłoki ogranicza mikrouszkodzenia<br><br>" +
+          "Jeśli chcesz, by Twój samochód <b>wyglądał jak nowy przez wiele lat</b>, wybór <a href='/uslugi/powloka-ceramiczna'>powłoki ceramicznej</a> to najlepsze rozwiązanie.",
+      },
+      {
+        heading: "Łatwość mycia i efekt szklistości lakieru",
+        content:
+          "Jedną z największych zalet powłoki ceramicznej jest <b>znaczne ułatwienie codziennej pielęgnacji auta</b>. Dzięki właściwościom hydrofobowym, woda i brud nie przywierają do powierzchni, lecz spływają, zabierając ze sobą zanieczyszczenia.<br><br>" +
+          "Dodatkowo powłoka nadaje lakierowi niesamowitą <b>szklistość</b> – samochód wygląda, jakby właśnie wyjechał z salonu. Efekt lustra sprawia, że nawet starsze auto zyskuje nową głębię koloru i elegancki, <b>błyszczący wygląd</b>.<br><br>" +
+          "<b>Najważniejsze korzyści:</b><br>" +
+          "- Samochód pozostaje czysty przez dłuższy czas<br>" +
+          "- Brud łatwiej się usuwa, bez szorowania<br>" +
+          "- Połysk i odbicie światła jak na lakierze „showcar”<br>" +
+          "- Mniej ryzyka zarysowań podczas mycia",
       },
     ],
     links: {
