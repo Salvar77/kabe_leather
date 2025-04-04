@@ -11,6 +11,7 @@ const specialImagePages = [
   "/jak-dbac-o-skorzana-tapicerke-samochodowa",
   "/uzywamy-profesjonalnych-produktow",
   "/powloka-ceramiczna",
+  "/autokosmetyka-i-detailing",
 ];
 
 const BlogPost = ({ pageContent, blogId }) => {

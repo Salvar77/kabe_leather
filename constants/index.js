@@ -138,6 +138,17 @@ const blogPosts = [
     link: "/powloka-ceramiczna",
     image: blogFotoMain7,
   },
+  {
+    id: 9,
+    title:
+      "Detailing samochodowy Opole – Profesjonalna pielęgnacja lakieru i wnętrza",
+    subtitle: "KOMPLEKSOWY DETAILING SAMOCHODOWY",
+    date: "2025-04-04",
+    description:
+      "Czym różni się detailing od zwykłego mycia auta? To precyzyjna renowacja i ochrona pojazdu – od korekty lakieru, przez czyszczenie wnętrza, po aplikację powłok ochronnych. Zadbaj o każdy detal swojego samochodu i przywróć mu wygląd jak z salonu.",
+    link: "/autokosmetyka-i-detailing",
+    image: blogMain7,
+  },
 ];
 
 const pagesContent = {
@@ -427,6 +438,18 @@ const pagesContent = {
         content:
           "Trwałość folii PPF wynosi od 5 do 10 lat, w zależności od jakości folii, warunków eksploatacji oraz odpowiedniej pielęgnacji. Regularne czyszczenie i unikanie agresywnych środków chemicznych pozwolą na maksymalne wykorzystanie potencjału folii.",
       },
+      {
+        heading: "Po co stosuje się folię PPF i kiedy warto ją założyć?",
+        content:
+          "Folia PPF to rozwiązanie dla osób, które chcą <b>zabezpieczyć nowy lakier</b> przed szybkim zużyciem lub przywrócić ochronę w przypadku świeżo odnowionych powierzchni. To świetna alternatywa dla właścicieli <b>nowych samochodów</b>, <b>aut luksusowych</b> lub <b>pojazdów firmowych</b>, gdzie ważna jest nienaganna prezencja.<br><br>" +
+          "Najczęstsze powody montażu folii PPF:<br>" +
+          "- Auto świeżo odebrane z salonu<br>" +
+          "- Lakier po korekcie lub lakierowaniu<br>" +
+          "- Częste podróże autostradą (ryzyko odprysków)<br>" +
+          '- Chęć uzyskania efektu "show car" na długie lata<br><br>' +
+          "Folia skutecznie chroni przed: <b>odpryskami, zarysowaniami, osadami drogowymi, ptasimi odchodami, owadami, solą i chemią</b>. Dzięki temu auto wygląda jak nowe i łatwiej utrzymać je w czystości.<br><br>" +
+          "Jeśli chcesz sprawdzić, jakie elementy warto zabezpieczyć w Twoim aucie, zajrzyj do naszej <a href='/uslugi/folia-ppf-ochrona-lakieru'>oferty folii PPF</a> i skontaktuj się po darmową konsultację.",
+      },
     ],
     links: {
       foliaPPFLink: {
@@ -436,6 +459,10 @@ const pagesContent = {
       korektaLakieruLink: {
         href: "/uslugi/korekta-lakieru",
         text: "korekta lakieru",
+      },
+      foliaPPFOfertaLink: {
+        href: "/uslugi/folia-ppf-ochrona-lakieru",
+        text: "oferty folii PPF",
       },
     },
     images: [blogFoto13, blogFoto14, blogFoto15, blogFoto16],
@@ -534,6 +561,60 @@ const pagesContent = {
       },
     },
     images: [blogFotoMain7],
+  },
+  "autokosmetyka-i-detailing": {
+    title: "Autokosmetyka i detailing – kompleksowa pielęgnacja Twojego auta",
+    dynamicImage: blogFotoMain41,
+    sections: [
+      {
+        heading: "Czym jest autokosmetyka i detailing?",
+        content:
+          "Autokosmetyka i <b>detailing</b> to proces kompleksowego czyszczenia, odnawiania i zabezpieczania pojazdu – zarówno wewnątrz, jak i na zewnątrz. To znacznie więcej niż zwykłe mycie samochodu – to <b>precyzyjna pielęgnacja</b>, która przywraca lub nawet poprawia fabryczny wygląd auta.<br><br>" +
+          "<b>Detailing zewnętrzny</b> obejmuje m.in. korektę lakieru, dekontaminację, aplikację <a href='/uslugi/powloka-ceramiczna'>powłok ceramicznych</a> lub wosków, pielęgnację szyb i felg. <b>Detailing wnętrza</b> to z kolei czyszczenie tapicerki, pielęgnacja tworzyw, impregnacja skór, ozonowanie i odświeżanie powietrza.<br><br>" +
+          "Więcej znajdziesz w sekcji <a href='/uslugi/autokosmetyka'>autokosmetyka</a>.",
+      },
+      {
+        heading: "Dlaczego warto korzystać z detailingu?",
+        content:
+          "<b>Detailing</b> to nie tylko zabieg estetyczny, ale także praktyczne zabezpieczenie Twojego auta przed codziennym zużyciem.<br><br>" +
+          "- Zachowujesz lub przywracasz wygląd auta jak z salonu<br>" +
+          "- Chronisz lakier i wnętrze przed zużyciem i czynnikami atmosferycznymi<br>" +
+          "- Zwiększasz wartość pojazdu przy ewentualnej odsprzedaży<br>" +
+          "- Zyskujesz komfort i przyjemność z jazdy<br>" +
+          "- Twój samochód wygląda profesjonalnie i zadbanie<br><br>" +
+          "Detailing to <b>świadoma pielęgnacja</b> i długofalowa ochrona inwestycji, która realnie wpływa na trwałość pojazdu.",
+      },
+      {
+        heading: "Jakie usługi wchodzą w zakres detailingu?",
+        content:
+          "Detailing to zestaw zaawansowanych zabiegów pielęgnacyjnych i ochronnych, które mają na celu przywrócenie oraz utrzymanie perfekcyjnego stanu pojazdu. W zależności od potrzeb auta i oczekiwań właściciela, oferujemy:<br><br>" +
+          "- <b>Mycie detailingowe</b> z dekontaminacją i neutralizacją osadów<br>" +
+          "- <b>Korektę lakieru</b> – jednoetapową (One Step) lub wieloetapową<br>" +
+          "- <b>Aplikację powłok ochronnych</b> – ceramicznych, kwarcowych lub elastomerowych<br>" +
+          "- <b>Detailing wnętrza</b> – czyszczenie i impregnację tapicerki, tworzyw, skóry<br>" +
+          "- <b>Renowację elementów zewnętrznych</b> – felgi, listwy, zderzaki, szyby<br><br>" +
+          "Szczegóły każdej z usług oraz ich wycenę znajdziesz na stronie <a href='/cennik'>cennika</a>.",
+      },
+    ],
+    links: {
+      powlokaCeramicznaLink: {
+        href: "/uslugi/powloka-ceramiczna",
+        text: "powłoka ceramiczna",
+      },
+      detailingLink: {
+        href: "/uslugi/autokosmetyka",
+        text: "detailing",
+      },
+      cennikLink: {
+        href: "/cennik",
+        text: "cennika",
+      },
+      autokosmetykaLink: {
+        href: "/uslugi/autokosmetyka",
+        text: "autokosmetyka",
+      },
+    },
+    images: [blogFotoMain41, blogFotoMain42, blogFoto9, blogFoto10, blogFoto11],
   },
 };
 
