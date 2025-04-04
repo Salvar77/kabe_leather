@@ -6,29 +6,20 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Cookiebot */}
-          <Script
-            id="Cookiebot"
-            src="https://consent.cookiebot.com/uc.js"
-            data-cbid={process.env.NEXT_PUBLIC_COOKIEBOT_SECRET_KEY}
-            data-blockingmode="auto"
-            strategy="lazyOnload"
-            async
-          />
-
           {/* Google Tag Manager */}
           <Script
             id="gtm-script"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){
-                  w[l]=w[l]||[];
+                  w[l] = w[l] || [];
                   w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-                  var f=d.getElementsByTagName(s)[0],
-                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-                  j.async=true;
-                  j.src='https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}'+dl;
+                  var f = d.getElementsByTagName(s)[0],
+                      j = d.createElement(s),
+                      dl = l!='dataLayer'?'&l='+l:'';
+                  j.async = true;
+                  j.src = 'https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}'+dl;
                   f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_GTM_ID}');
               `,
@@ -41,7 +32,7 @@ class MyDocument extends Document {
             strategy="lazyOnload"
           />
           <Script
-            id="google-analytics"
+            id="ga-script"
             strategy="lazyOnload"
             dangerouslySetInnerHTML={{
               __html: `
@@ -71,16 +62,18 @@ class MyDocument extends Document {
               `,
             }}
           />
+
+          <link rel="icon" href="/favicon1.ico" />
         </Head>
         <body>
-          {/* Google Tag Manager (noscript) */}
+          {/* Noscript fallback (GTM) */}
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}
-            ></iframe>
+            />
           </noscript>
 
           <Main />

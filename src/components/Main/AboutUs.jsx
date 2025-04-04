@@ -16,6 +16,7 @@ import {
   faWind,
   faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const AboutUs = () => {
   return (
@@ -29,7 +30,7 @@ const AboutUs = () => {
       </div>
       <div className={classes.aboutMe__content}>
         <h2 className={classes.aboutMe__header}>
-          Kabe Tint&Leather Auto Detailing
+          KabeTintLeather Auto Detailing
         </h2>
         <ul className={classes.aboutMe__list}>
           <li>
@@ -82,7 +83,11 @@ const AboutUs = () => {
         </ul>
 
         <div className={classes.buttonContainer}>
-          <Link href="/cennik" className={classes.realizationButton}>
+          <Link
+            href="/cennik"
+            className={classes.realizationButton}
+            aria-label="Sprawdź nasz cennik usług"
+          >
             Sprawdź cennik
           </Link>
           <div className={classes.aboutMe__socialLinks}>
@@ -92,15 +97,15 @@ const AboutUs = () => {
               rel="noopener noreferrer"
               aria-label="Odwiedź nas na Facebooku"
             >
-              <i className="fab fa-facebook"></i>
+              <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
             <a
-              href="https://www.instagram.com/kabe_tintleather_autodetailing?igsh=MWdwYzAzdmM2c2Rlbg=="
+              href="https://www.instagram.com/kabetintleather_autodetailing/#"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Odwiedź nas na Instagramie"
             >
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
           </div>
         </div>

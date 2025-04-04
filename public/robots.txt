@@ -1,8 +1,5 @@
 User-agent: *
 Disallow: /private/
-Disallow: /O-mnie
-Disallow: /O-mnie/
-Disallow: /redirected-path/
 Allow: /
 
-Sitemap: https://www.kabetintleather.pl/sitemap.xml
+Sitemap: https://www.kabetintleather.opole.pl/sitemap.xml

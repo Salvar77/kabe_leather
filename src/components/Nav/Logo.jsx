@@ -7,7 +7,7 @@ import logoSubpage from "../../assets/image/150x150black.png";
 import Link from "next/link";
 
 const ALT_TEXT =
-  "Kabe Tint&Leather Auto Detailing - pranie tapicerki i czyszczenie samochodu";
+  "KabeTintLeather Auto Detailing - pranie tapicerki i czyszczenie samochodu";
 
 const Logo = ({ showLogo }) => {
   const router = useRouter();

@@ -21,11 +21,17 @@ const Blog = () => {
               />
             </div>
 
-            <Link href={`/blog/${post.link.split("/").pop()}`}>
+            <Link
+              href={`/blog/${post.link.split("/").pop()}`}
+              aria-label={`Przeczytaj więcej o ${post.title}`}
+            >
               <p className={classes.blog__subtitle}>{post.subtitle}</p>
             </Link>
 
-            <Link href={`/blog/${post.link.split("/").pop()}`}>
+            <Link
+              href={`/blog/${post.link.split("/").pop()}`}
+              aria-label={`Przeczytaj artykuł: ${post.title}`}
+            >
               <h3>{post.title}</h3>
             </Link>
 
@@ -36,6 +42,7 @@ const Blog = () => {
             <Link
               href={`/blog/${post.link.split("/").pop()}`}
               className={classes.blog__readMore}
+              aria-label={`Przeczytaj więcej o: ${post.title}`}
             >
               Czytaj Więcej
             </Link>

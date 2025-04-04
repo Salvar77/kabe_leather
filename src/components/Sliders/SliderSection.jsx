@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import SliderTrue from "./SliderTrue";
-import BeforeImage1 from "../../assets/image/renovation_7.jpg";
-import AfterImage1 from "../../assets/image/renovation_8.jpg";
+import BeforeImage1 from "../../assets/image/renovation_7.webp";
+import AfterImage1 from "../../assets/image/renovation_8.webp";
 import BeforeImage2 from "../../assets/image/renovation_4.jpg";
 import AfterImage2 from "../../assets/image/renovation_3.jpg";
-import BeforeImage3 from "../../assets/image/renovatio2.JPG";
-import AfterImage3 from "../../assets/image/renovatio.JPG";
-import BeforeImage4 from "../../assets/image/renovation_8-1.jpg";
-import AfterImage4 from "../../assets/image/renovation_7-1.jpg";
+import BeforeImage3 from "../../assets/image/renovatio2.webp";
+import AfterImage3 from "../../assets/image/renovatio.webp";
+import BeforeImage4 from "../../assets/image/renovation_11-1.webp";
+import AfterImage4 from "../../assets/image/renovation_11.webp";
 import classes from "./SliderSection.module.scss";
 import Link from "next/link";
 import { blurUp } from "../../../utils/motion";
@@ -24,27 +24,26 @@ const SliderSection = ({
     {
       beforeImage: BeforeImage1,
       afterImage: AfterImage1,
-      altBefore: "Stan przed renowacją tapicerki - zabrudzenia przed praniem",
-      altAfter: "Stan po renowacji tapicerki - efekt czyszczenia samochodu",
+      altBefore: "Tapicerka przed praniem z widocznymi zabrudzeniami",
+      altAfter: "Tapicerka po praniu z czystym i świeżym wyglądem",
     },
     {
       beforeImage: BeforeImage4,
       afterImage: AfterImage4,
-      altBefore: "Przed czyszczeniem tapicerki - widoczne plamy",
-      altAfter:
-        "Po czyszczeniu tapicerki - tapicerka samochodowa po regeneracji",
+      altBefore: "Stan tapicerki przed czyszczeniem - liczne plamy",
+      altAfter: "Efekt czyszczenia - tapicerka jak nowa",
     },
     {
       beforeImage: BeforeImage3,
       afterImage: AfterImage3,
-      altBefore: "Stan przed renowacją skóry - zarysowania i zużycie",
-      altAfter: "Stan po renowacji skóry - odświeżenie wyglądu tapicerki",
+      altBefore: "Skórzana tapicerka przed renowacją - widoczne uszkodzenia",
+      altAfter: "Skórzana tapicerka po renowacji - pełne odświeżenie",
     },
     {
       beforeImage: BeforeImage2,
       afterImage: AfterImage2,
-      altBefore: "Stan przed praniem tapicerki - widoczne zabrudzenia",
-      altAfter: "Stan po praniu tapicerki - efekt czyszczenia wnętrza auta",
+      altBefore: "Wnętrze auta przed praniem - widoczne zabrudzenia",
+      altAfter: "Wnętrze auta po praniu - świeżość i czystość",
     },
   ];
 
@@ -62,7 +61,7 @@ const SliderSection = ({
       <div className={`${classes.sliderGrid} ${gridClass}`}>
         {images
           .slice(0, maxImagesToShow)
-          .map(({ beforeImage, afterImage }, index) => (
+          .map(({ beforeImage, afterImage, altBefore, altAfter }, index) => (
             <motion.div
               key={index}
               variants={blurUp(index * 0.1, 0.8)}
@@ -70,7 +69,11 @@ const SliderSection = ({
               whileInView="show"
               viewport={{ amount: 0.3 }}
             >
-              <SliderTrue beforeImage={beforeImage} afterImage={afterImage} />
+              <SliderTrue
+                beforeImage={beforeImage}
+                afterImage={afterImage}
+                alt={`Zdjęcie: ${altBefore} oraz ${altAfter}`}
+              />
             </motion.div>
           ))}
       </div>
