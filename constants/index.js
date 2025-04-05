@@ -121,7 +121,7 @@ const blogPosts = [
     id: 7,
     title: "Folia PPF Opole - Jak skutecznie chronić lakier?",
     subtitle: "OCHRONA LAKIERU SAMOCHODOWEGO",
-    date: "2025-01-06",
+    date: "2025-04-02",
     description:
       "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
     link: "/folia-ppf-ochrona-lakieru",
@@ -132,7 +132,7 @@ const blogPosts = [
     title:
       "Powłoka ceramiczna Opole - Dlaczego warto zainwestować w zabezpieczenie lakieru.",
     subtitle: "OCHRONA I WYGLĄD LAKIERU SAMOCHODOWEGO",
-    date: "2025-01-07",
+    date: "2025-04-03",
     description:
       "Powłoka ceramiczna to nowoczesne rozwiązanie, które chroni lakier Twojego samochodu przed zarysowaniami, czynnikami atmosferycznymi oraz promieniowaniem UV. Poznaj wszystkie korzyści wynikające z zastosowania powłoki ceramicznej i ciesz się doskonałym wyglądem swojego pojazdu na dłużej!",
     link: "/powloka-ceramiczna",
@@ -450,6 +450,11 @@ const pagesContent = {
           "Folia skutecznie chroni przed: <b>odpryskami, zarysowaniami, osadami drogowymi, ptasimi odchodami, owadami, solą i chemią</b>. Dzięki temu auto wygląda jak nowe i łatwiej utrzymać je w czystości.<br><br>" +
           "Jeśli chcesz sprawdzić, jakie elementy warto zabezpieczyć w Twoim aucie, zajrzyj do naszej <a href='/uslugi/folia-ppf-ochrona-lakieru'>oferty folii PPF</a> i skontaktuj się po darmową konsultację.",
       },
+      {
+        heading: "Folia PPF Opole – gdzie świadczymy usługę?",
+        content:
+          "Nasze usługi <strong>Folia PPF Opole</strong> dostępne są nie tylko w samym Opolu, ale również w pobliskich miejscowościach. Sprawdź wszystkie lokalizacje na stronie <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a> i przekonaj się, czy jesteśmy również w Twojej okolicy!",
+      },
     ],
     links: {
       foliaPPFLink: {
@@ -463,6 +468,10 @@ const pagesContent = {
       foliaPPFOfertaLink: {
         href: "/uslugi/folia-ppf-ochrona-lakieru",
         text: "oferty folii PPF",
+      },
+      obszaryDzialalnosciLink: {
+        href: "/obszary-naszej-dzialalnosci",
+        text: "obszary naszej działalności",
       },
     },
     images: [blogFoto13, blogFoto14, blogFoto15, blogFoto16],
@@ -553,11 +562,20 @@ const pagesContent = {
           "- Połysk i odbicie światła jak na lakierze „showcar”<br>" +
           "- Mniej ryzyka zarysowań podczas mycia",
       },
+      {
+        heading: "Powłoka ceramiczna Opole - gdzie działamy?",
+        content:
+          "Usługę <strong>powłoka ceramiczna Opole</strong> oferujemy nie tylko w samym Opolu, ale również w pobliskich miejscowościach i dzielnicach. Sprawdź pełną listę lokalizacji w sekcji <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a> i przekonaj się, czy działamy także w Twojej okolicy!",
+      },
     ],
     links: {
       powlokaCeramicznaLink: {
         href: "/uslugi/powloka-ceramiczna",
         text: "powłoka ceramiczna",
+      },
+      obszaryDzialalnosciLink: {
+        href: "/obszary-naszej-dzialalnosci",
+        text: "obszary naszej działalności",
       },
     },
     images: [blogFotoMain7],
@@ -595,6 +613,11 @@ const pagesContent = {
           "- <b>Renowację elementów zewnętrznych</b> – felgi, listwy, zderzaki, szyby<br><br>" +
           "Szczegóły każdej z usług oraz ich wycenę znajdziesz na stronie <a href='/cennik'>cennika</a>.",
       },
+      {
+        heading: "Gdzie oferujemy nasze usługi detailingu?",
+        content:
+          "Nasze usługi <strong>autokosmetyki i detailingu</strong> są dostępne w wielu lokalizacjach. Odwiedź stronę <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a>, aby zobaczyć pełną listę miejscowości i dzielnic, w których działamy, w tym m.in. <strong>Opole</strong>.",
+      },
     ],
     links: {
       powlokaCeramicznaLink: {
@@ -612,6 +635,10 @@ const pagesContent = {
       autokosmetykaLink: {
         href: "/uslugi/autokosmetyka",
         text: "autokosmetyka",
+      },
+      obszaryDzialalnosciLink: {
+        href: "/obszary-naszej-dzialalnosci",
+        text: "obszary naszej działalności",
       },
     },
     images: [blogFotoMain41, blogFotoMain42, blogFoto9, blogFoto10, blogFoto11],
@@ -712,6 +739,8 @@ const obszaryAutodetailing = [
     title: "Autodetailing i Autokosmetyka Opole",
     city: "Opole",
     mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+    description:
+      "Szukasz profesjonalnych usług w zakresie detailingu i autokosmetyki w Opolu? Sprawdź nasze kompleksowe rozwiązania i przeczytaj więcej na blogu o tym, czym jest <a href='/blog/autokosmetyka-i-detailing'>autokosmetyka i detailing</a>, jak działa <a href='/blog/powloka-ceramiczna'>powłoka ceramiczna</a> oraz dlaczego warto wybrać <a href='/blog/folia-ppf-ochrona-lakieru'>folię PPF</a> dla ochrony lakieru.",
   },
   // WSIE
   {
@@ -745,24 +774,32 @@ const obszaryAutodetailing = [
     title: "Autodetailing i Autokosmetyka dzielnica Malina, Opole",
     city: "Malina, Opole",
     mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Malina,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+    description:
+      "Szukasz profesjonalnych usług w zakresie detailingu i autokosmetyki w Opolu? Sprawdź nasze kompleksowe rozwiązania i przeczytaj więcej na blogu o tym, czym jest <a href='/blog/autokosmetyka-i-detailing'>autokosmetyka i detailing</a>, jak działa <a href='/blog/powloka-ceramiczna'>powłoka ceramiczna</a> oraz dlaczego warto wybrać <a href='/blog/folia-ppf-ochrona-lakieru'>folię PPF</a> dla ochrony lakieru.",
   },
   {
     id: "autodetailing-autokosmetyka-dzielnica-zaodrze-opole",
     title: "Autodetailing i Autokosmetyka dzielnica Zaodrze, Opole",
     city: "Zaodrze, Opole",
     mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Zaodrze,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+    description:
+      "Szukasz profesjonalnych usług w zakresie detailingu i autokosmetyki w Opolu? Sprawdź nasze kompleksowe rozwiązania i przeczytaj więcej na blogu o tym, czym jest <a href='/blog/autokosmetyka-i-detailing'>autokosmetyka i detailing</a>, jak działa <a href='/blog/powloka-ceramiczna'>powłoka ceramiczna</a> oraz dlaczego warto wybrać <a href='/blog/folia-ppf-ochrona-lakieru'>folię PPF</a> dla ochrony lakieru.",
   },
   {
     id: "autodetailing-autokosmetyka-dzielnica-wrzoski-opole",
     title: "Autodetailing i Autokosmetyka dzielnica Wrzoski, Opole",
     city: "Wrzoski, Opole",
     mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Wrzoski,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+    description:
+      "Szukasz profesjonalnych usług w zakresie detailingu i autokosmetyki w Opolu? Sprawdź nasze kompleksowe rozwiązania i przeczytaj więcej na blogu o tym, czym jest <a href='/blog/autokosmetyka-i-detailing'>autokosmetyka i detailing</a>, jak działa <a href='/blog/powloka-ceramiczna'>powłoka ceramiczna</a> oraz dlaczego warto wybrać <a href='/blog/folia-ppf-ochrona-lakieru'>folię PPF</a> dla ochrony lakieru.",
   },
   {
     id: "autodetailing-autokosmetyka-dzielnica-polwies-opole",
     title: "Autodetailing i Autokosmetyka dzielnica Półwieś, Opole",
     city: "Półwieś, Opole",
     mapSrc: `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_API_KEY}&origin=Półwieś,Opole&destination=KabeTintLeather+-+Pranie+tapicerki+samochodowej+Opole&mode=driving`,
+    description:
+      "Szukasz profesjonalnych usług w zakresie detailingu i autokosmetyki w Opolu? Sprawdź nasze kompleksowe rozwiązania i przeczytaj więcej na blogu o tym, czym jest <a href='/blog/autokosmetyka-i-detailing'>autokosmetyka i detailing</a>, jak działa <a href='/blog/powloka-ceramiczna'>powłoka ceramiczna</a> oraz dlaczego warto wybrać <a href='/blog/folia-ppf-ochrona-lakieru'>folię PPF</a> dla ochrony lakieru.",
   },
 ];
 export {

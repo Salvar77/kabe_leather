@@ -12,6 +12,7 @@ export default function AutodetailingPolwiesOpole() {
       city={currentArea.city}
       mapSrc={currentArea.mapSrc}
       url={`https://www.kabetintleather.opole.pl/${currentArea.id}`}
+      description={currentArea?.description}
     />
   );
 }

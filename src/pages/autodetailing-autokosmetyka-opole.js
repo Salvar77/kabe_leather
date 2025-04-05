@@ -12,6 +12,7 @@ export default function AutodetailingAutokosmetykaOpole() {
       city={currentArea?.city || "Opole"}
       mapSrc={currentArea?.mapSrc || ""}
       url={`https://www.kabetintleather.opole.pl/${currentArea.id}`}
+      description={currentArea?.description}
     />
   );
 }

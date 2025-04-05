@@ -1,7 +1,13 @@
 import classes from "./AreaTemplate.module.scss";
 import SEO from "../Main/SEO";
 
-export default function AreaTemplate({ title, city, mapSrc, url }) {
+export default function AreaTemplate({
+  title,
+  city,
+  mapSrc,
+  url,
+  description,
+}) {
   return (
     <>
       <SEO
@@ -72,6 +78,13 @@ export default function AreaTemplate({ title, city, mapSrc, url }) {
             Przejdź do formularza kontaktowego
           </a>
         </p>
+
+        {description && (
+          <div
+            className={classes.areaDescription}
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+        )}
 
         <div className={classes.mapContainer}>
           <iframe

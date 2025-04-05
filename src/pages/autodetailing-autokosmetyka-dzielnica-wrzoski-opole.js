@@ -12,6 +12,7 @@ export default function AutodetailingWrzoskiOpole() {
       city={currentArea.city}
       mapSrc={currentArea.mapSrc}
       url={`https://www.kabetintleather.opole.pl/${currentArea.id}`}
+      description={currentArea?.description}
     />
   );
 }
