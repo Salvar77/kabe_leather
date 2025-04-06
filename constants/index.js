@@ -54,6 +54,38 @@ import { GiCarWheel, GiAutoRepair } from "react-icons/gi";
 
 const blogPosts = [
   {
+    id: 9,
+    title:
+      "Detailing samochodowy Opole – Profesjonalna pielęgnacja lakieru i wnętrza",
+    subtitle: "KOMPLEKSOWY DETAILING SAMOCHODOWY",
+    date: "2025-04-04",
+    description:
+      "Czym różni się detailing od zwykłego mycia auta? To precyzyjna renowacja i ochrona pojazdu – od korekty lakieru, przez czyszczenie wnętrza, po aplikację powłok ochronnych. Zadbaj o każdy detal swojego samochodu i przywróć mu wygląd jak z salonu.",
+    link: "/autokosmetyka-i-detailing",
+    image: blogMain7,
+  },
+  {
+    id: 8,
+    title:
+      "Powłoka ceramiczna Opole - Dlaczego warto zainwestować w zabezpieczenie lakieru.",
+    subtitle: "OCHRONA I WYGLĄD LAKIERU SAMOCHODOWEGO",
+    date: "2025-04-03",
+    description:
+      "Powłoka ceramiczna to nowoczesne rozwiązanie, które chroni lakier Twojego samochodu przed zarysowaniami, czynnikami atmosferycznymi oraz promieniowaniem UV. Poznaj wszystkie korzyści wynikające z zastosowania powłoki ceramicznej i ciesz się doskonałym wyglądem swojego pojazdu na dłużej!",
+    link: "/powloka-ceramiczna",
+    image: blogFotoMain7,
+  },
+  {
+    id: 7,
+    title: "Folia PPF Opole - Jak skutecznie chronić lakier?",
+    subtitle: "OCHRONA LAKIERU SAMOCHODOWEGO",
+    date: "2025-04-02",
+    description:
+      "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
+    link: "/folia-ppf-ochrona-lakieru",
+    image: blogFoto13,
+  },
+  {
     id: 1,
     title: "Jak zapobiec powstaniu plam na tapicerce samochodowej?",
     subtitle: "CZYSZCZENIE TAPICERKI SAMOCHODOWEJ",
@@ -116,38 +148,6 @@ const blogPosts = [
       "Dowiedz się, czym jest korekta lakieru, jakie korzyści przynosi i dlaczego warto ją wykonać. Popraw wygląd swojego samochodu i zabezpiecz lakier przed uszkodzeniami!",
     link: "/korekta-lakieru",
     image: blogFotoMain6,
-  },
-  {
-    id: 7,
-    title: "Folia PPF Opole - Jak skutecznie chronić lakier?",
-    subtitle: "OCHRONA LAKIERU SAMOCHODOWEGO",
-    date: "2025-04-02",
-    description:
-      "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
-    link: "/folia-ppf-ochrona-lakieru",
-    image: blogFoto13,
-  },
-  {
-    id: 8,
-    title:
-      "Powłoka ceramiczna Opole - Dlaczego warto zainwestować w zabezpieczenie lakieru.",
-    subtitle: "OCHRONA I WYGLĄD LAKIERU SAMOCHODOWEGO",
-    date: "2025-04-03",
-    description:
-      "Powłoka ceramiczna to nowoczesne rozwiązanie, które chroni lakier Twojego samochodu przed zarysowaniami, czynnikami atmosferycznymi oraz promieniowaniem UV. Poznaj wszystkie korzyści wynikające z zastosowania powłoki ceramicznej i ciesz się doskonałym wyglądem swojego pojazdu na dłużej!",
-    link: "/powloka-ceramiczna",
-    image: blogFotoMain7,
-  },
-  {
-    id: 9,
-    title:
-      "Detailing samochodowy Opole – Profesjonalna pielęgnacja lakieru i wnętrza",
-    subtitle: "KOMPLEKSOWY DETAILING SAMOCHODOWY",
-    date: "2025-04-04",
-    description:
-      "Czym różni się detailing od zwykłego mycia auta? To precyzyjna renowacja i ochrona pojazdu – od korekty lakieru, przez czyszczenie wnętrza, po aplikację powłok ochronnych. Zadbaj o każdy detal swojego samochodu i przywróć mu wygląd jak z salonu.",
-    link: "/autokosmetyka-i-detailing",
-    image: blogMain7,
   },
 ];
 
