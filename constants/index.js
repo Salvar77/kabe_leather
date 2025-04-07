@@ -55,9 +55,8 @@ import { GiCarWheel, GiAutoRepair } from "react-icons/gi";
 const blogPosts = [
   {
     id: 9,
-    title:
-      "Detailing samochodowy Opole – Profesjonalna pielęgnacja lakieru i wnętrza",
-    subtitle: "KOMPLEKSOWY DETAILING SAMOCHODOWY",
+    title: "Auto detailing Opole – Profesjonalna pielęgnacja lakieru i wnętrza",
+    subtitle: "KOMPLEKSOWY AUTO DETAILING",
     date: "2025-04-04",
     description:
       "Czym różni się detailing od zwykłego mycia auta? To precyzyjna renowacja i ochrona pojazdu – od korekty lakieru, przez czyszczenie wnętrza, po aplikację powłok ochronnych. Zadbaj o każdy detal swojego samochodu i przywróć mu wygląd jak z salonu.",
