@@ -39,7 +39,7 @@ import {
   blogFotoMain5,
   blogFotoMain6,
   blogFotoMain7,
-  blogFotoMain8,
+  headlightPolishing,
 } from "../utils/index";
 
 import {
@@ -53,6 +53,16 @@ import {
 import { GiCarWheel, GiAutoRepair } from "react-icons/gi";
 
 const blogPosts = [
+  {
+    id: 10,
+    title: "Polerowanie reflektorów Opole – Przywróć blask swoim światłom",
+    subtitle: "RENOWACJA I POLERKA REFLEKTORÓW SAMOCHODOWYCH",
+    date: "2025-04-08",
+    description:
+      "Zmatowiałe reflektory to nie tylko problem estetyczny, ale także zagrożenie dla bezpieczeństwa na drodze. Dowiedz się, na czym polega polerowanie reflektorów, jakie są jego korzyści i kiedy warto się na nie zdecydować.",
+    link: "/polerowanie-reflektorow",
+    image: headlightPolishing,
+  },
   {
     id: 9,
     title: "Auto detailing Opole – Profesjonalna pielęgnacja lakieru i wnętrza",
@@ -641,6 +651,60 @@ const pagesContent = {
       },
     },
     images: [blogFotoMain41, blogFotoMain42, blogFoto9, blogFoto10, blogFoto11],
+  },
+  "polerowanie-reflektorow": {
+    title: "Polerowanie reflektorów – bezpieczeństwo i estetyka Twojego auta",
+    dynamicImage: headlightPolishing,
+    sections: [
+      {
+        heading: "Na czym polega polerowanie reflektorów?",
+        content:
+          "Polerowanie reflektorów to proces renowacji zmatowiałych, pożółkłych lub porysowanych kloszy lamp. Dzięki odpowiednim technikom ściernym i polerującym, przywracamy im <b>pierwotną przejrzystość</b> i estetykę.<br><br>" +
+          "Z czasem reflektory tracą swoją przezroczystość, co wpływa negatywnie na widoczność podczas jazdy nocą. Profesjonalne polerowanie pozwala przywrócić pełną sprawność oświetlenia oraz <b>poprawia wygląd całego pojazdu</b>.<br><br>" +
+          "Więcej szczegółów znajdziesz na stronie <a href='/uslugi/polerowanie-reflektorow'>polerowanie reflektorów</a>.",
+      },
+      {
+        heading: "Dlaczego warto wypolerować reflektory?",
+        content:
+          "Polerowanie reflektorów to nie tylko poprawa estetyki, ale przede wszystkim <b>zwiększenie bezpieczeństwa</b> na drodze.<br><br>" +
+          "- Lepsza widoczność w nocy i podczas złych warunków pogodowych<br>" +
+          "- Zwiększenie zasięgu światła i poprawa kontrastu<br>" +
+          "- Przywrócenie estetycznego wyglądu lamp<br>" +
+          "- Uniknięcie konieczności kosztownej wymiany reflektorów<br>" +
+          "- Możliwość <b>przejścia przeglądu technicznego</b> bez problemów<br><br>" +
+          "Zadbane reflektory to <b>lepszy wygląd auta</b> i większe bezpieczeństwo na drodze.",
+      },
+      {
+        heading: "Jak przebiega proces polerowania reflektorów?",
+        content:
+          "Cały proces odbywa się w kilku precyzyjnych krokach i trwa zazwyczaj około 1–2 godzin:<br><br>" +
+          "- <b>Dokładne oczyszczenie</b> powierzchni reflektorów<br>" +
+          "- <b>Matowanie</b> zniszczonej warstwy wierzchniej papierami ściernymi o różnej gradacji<br>" +
+          "- <b>Polerowanie mechaniczne</b> pastami ściernymi i wykańczającymi<br>" +
+          "- <b>Opcjonalne zabezpieczenie</b> kloszy specjalną powłoką ochronną<br><br>" +
+          "Sprawdź również nasz <a href='/cennik'>cennik</a> usług.",
+      },
+      {
+        heading: "Gdzie wykonujemy usługę polerowania reflektorów?",
+        content:
+          "Usługę <strong>polerowania reflektorów</strong> wykonujemy w wielu lokalizacjach, m.in. <strong>Opole</strong> i okolice. Pełna lista dostępna jest na stronie <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a>.",
+      },
+    ],
+    links: {
+      polerowanieLink: {
+        href: "/uslugi/polerowanie-reflektorow",
+        text: "polerowanie reflektorów",
+      },
+      cennikLink: {
+        href: "/cennik",
+        text: "cenniku",
+      },
+      obszaryDzialalnosciLink: {
+        href: "/obszary-naszej-dzialalnosci",
+        text: "obszary naszej działalności",
+      },
+    },
+    images: [headlightPolishing],
   },
 };
 

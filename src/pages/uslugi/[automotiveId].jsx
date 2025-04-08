@@ -77,6 +77,9 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
             {automotive.id === "uslugi/powloka-ceramiczna" && (
               <ContentCeramic automotive={automotive} />
             )}
+            {automotive.id === "uslugi/polerowanie-reflektorow" && (
+              <ContentHeadlightPolishing automotive={automotive} />
+            )}
           </div>
         </div>
         <div className={classes.buttonContainer}>
@@ -427,6 +430,50 @@ const ContentCeramic = ({ automotive }) => (
         <p>
           Odpowiednio nałożona powłoka ceramiczna potrafi utrzymać swoje
           właściwości ochronne i wizualne przez wiele miesięcy, a nawet lat.
+        </p>
+      </li>
+    </ul>
+  </div>
+);
+
+const ContentHeadlightPolishing = ({ automotive }) => (
+  <div className={classes.listContainer}>
+    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <ul className={classes.listStyle}>
+      <li>
+        <h3>Poprawiona widoczność na drodze</h3>
+        <p>
+          Wypolerowane reflektory znacząco zwiększają skuteczność oświetlenia
+          podczas jazdy nocą oraz w trudnych warunkach pogodowych. Przeczytaj
+          więcej na naszym blogu:{" "}
+          <Link
+            href="/blog/polerowanie-reflektorow"
+            className={classes.linkStyle}
+          >
+            polerowanie reflektorów
+          </Link>
+          .
+        </p>
+      </li>
+      <li>
+        <h3>Estetyka i nowoczesny wygląd</h3>
+        <p>
+          Usługa przywraca przejrzystość reflektorów, dzięki czemu samochód
+          wygląda świeżo i zadbanie, jak po wizycie w salonie.
+        </p>
+      </li>
+      <li>
+        <h3>Większe bezpieczeństwo</h3>
+        <p>
+          Lepsze światło to krótszy czas reakcji i większe bezpieczeństwo Twoje
+          oraz innych uczestników ruchu.
+        </p>
+      </li>
+      <li>
+        <h3>Niższe koszty niż wymiana</h3>
+        <p>
+          Zamiast inwestować w nowe lampy, możesz w atrakcyjnej cenie przywrócić
+          reflektorom pełną funkcjonalność i wygląd.
         </p>
       </li>
     </ul>

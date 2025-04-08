@@ -8,7 +8,6 @@ const SEO = ({
   datePublished,
   isBlogPost = false,
   isProduct = false,
-
   isHome = false,
 }) => {
   const blogSnippet = {
@@ -38,133 +37,101 @@ const SEO = ({
 
   const localBusinessSnippet = {
     "@context": "https://schema.org",
+    "@id": "http://www.kabetintleather.opole.pl/",
     "@type": "LocalBusiness",
-    url: "https://www.kabetintleather.opole.pl",
-    name: "KabeTintLeather Auto Detailing",
-    description:
-      "Profesjonalne pranie tapicerki, czyszczenie tapicerki oraz czyszczenie samochodu w Opolu. Skontaktuj się z nami, aby zadbać o czystość swojego pojazdu.",
-    logo: "https://www.kabetintleather.opole.pl/kabelogooo.webp",
-    telephone: "+48-881-325-631",
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: "+48-881-325-631",
-      contactType: "Customer Support",
-      areaServed: "Poland",
-      availableLanguage: ["Polish", "English"],
-    },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "ul. Generała Emila Fieldorfa 12",
-      addressLocality: "Opole",
-      postalCode: "45-273",
       addressCountry: "PL",
+      addressLocality: "Opole",
+      addressRegion: "PL",
+      postalCode: "45-273",
+      streetAddress: "Generała Emila Fieldorfa 12",
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "3",
+      bestRating: "5",
+      ratingCount: "43",
+      ratingValue: "5.0",
     },
-    review: [
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Dariusz Grzebień",
-        },
-        datePublished: "2025-02-03",
-        reviewBody:
-          "Auto oddane na kompleksowe czyszczenie wnętrza wraz z praniem tapicerki, dodatkowo nałożona została powłoka ceramiczną oraz zabezpieczony został front folia PPF. polecam!",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-          worstRating: "1",
-        },
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Denis Bul",
-        },
-        datePublished: "2025-02-17",
-        reviewBody:
-          "Mimo że auto jest nowe, zdecydowałem się na korektę lakieru One Step przed nałożeniem 2-letniej powłoki ceramicznej – jak się okazało, to standardowa procedura, aby usunąć mikro zarysowania i maksymalnie przygotować powierzchnię pod zabezpieczenie. Pan Kamil wykonał usługę perfekcyjnie! Lakier zyskał niesamowitą głębię i blask, a powłoka ceramiczna dodała efektu szklistości i ochrony. Samochód wygląda lepiej niż w salonie! Największym atutem, poza samą jakością pracy, było profesjonalne podejście i ogromna wiedza Pana Kamila. Poświęcił czas, aby dokładnie wytłumaczyć mi, jak działają powłoki, jak o nie dbać i na co zwracać uwagę, aby efekt utrzymał się jak najdłużej. Widać, że to pasjonat w swoim fachu. Jeśli ktoś szuka fachowej usługi detailingowej, to zdecydowanie polecam Pana Kamila",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-          worstRating: "1",
-        },
-      },
-      {
-        "@type": "Review",
-        author: {
-          "@type": "Person",
-          name: "Tomasz Proszkowiec",
-        },
-        datePublished: "2025-01-24",
-        reviewBody:
-          "Citroen C5, kompleksowe czyszczenie samochodu wykonane perfekcyjnie. Samochód w środku jak i na zewnątrz wygląda jak nowy. Panowie gratuluję takiego podejścia do swojej wykonywanej pracy i oczywiście wszystkim serdecznie bardzo polecam skorzystać z usług tej firmy.",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-          bestRating: "5",
-          worstRating: "1",
-        },
-      },
-    ],
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "50.675106",
-      longitude: "17.921298",
-    },
-    openingHours: ["Mo,Tu,We,Th,Fr 07:00-20:00", "Sa 08:00-18:00"],
-    priceRange: "PLN",
-    sameAs: [
-      "https://www.facebook.com/profile.php?id=61554800660887",
-      "https://www.instagram.com/kabe_tintleather_autodetailing/",
-      "https://www.tiktok.com/@kabetintleather",
-      "https://www.youtube.com/@Nesill3262",
-      "https://aleo.com/pl/firma/kabe-tint-leather-kamil-brzoskwinia",
-      "https://www.oferteo.pl/kabe-tintleather-pranie-tapicerki-samochodowej-opole/firma/6596416",
-      "https://opole.naszemiasto.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-      "https://www.baza-firm.com.pl/myjnie-samochodowe-auto-detailing/opole/kabetintleather-pranie-tapicerki-samochodowej-opole/pl/388643.html",
-      "https://www.cylex-polska.pl/firmy/kabetintleather---pranie-tapicerki-samochodowej-opole-14154902.html",
-      "https://nto.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-      "https://motofakty.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-      "https://pruszkow.naszemiasto.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-      "https://gra.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-      "https://strefabiznesu.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-      "https://strefaedukacji.pl/kabetintleather-pranie-tapicerki-samochodowej-opole/kf/654209",
-    ],
+    description:
+      "KabeTintLeather to firma specjalizująca się w kompleksowym autodetailingu. Oferujemy szeroki zakres usług, w tym pranie tapicerki samochodowej, czyszczenie, renowację i impregnację skór, przywracając im pierwotny wygląd i trwałość. Zajmujemy się także polerowaniem lakieru oraz reflektorów, usuwając zarysowania i przywracając blask pojazdu. Dodatkowo, nakładamy folie PPF (Paint Protection Film), chroniąc lakier przed uszkodzeniami. Oferujemy również naprawę podsufitek samochodowych, dbając o detale, które sprawiają, że Twoje auto wygląda jak nowe. Zapraszam do korzystania z naszych usług KabeTintLeather Opole.",
+    hasMap: "https://maps.google.com/maps?cid=2514215909979545298",
+    image:
+      "https://lh3.googleusercontent.com/fYcRPzM9pXxHoFVGVa1fcXQiNtKtpItNFh4UxjvDiw9gsNU6-9Ayb90kqSqr6D0jVqSMWHit6d7OD2VeuA=s0",
     makesOffer: [
+      { "@type": "Offer", name: "Czyszczenie samochodów" },
+      { "@type": "Offer", name: "Czyszczenie tapicerki" },
+      { "@type": "Offer", name: "Myjnia samochodowa" },
+      { "@type": "Offer", name: "Naprawa wyrobów skórzanych" },
+      { "@type": "Offer", name: "Mycie ciśnieniowe" },
+      { "@type": "Offer", name: "Usługi oklejania pojazdów" },
+      { "@type": "Offer", name: "Usługa przyciemniania szyb samochodowych" },
+    ],
+    name: "KabeTintLeather - Pranie tapicerki samochodowej Opole",
+    openingHoursSpecification: [
       {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Pranie tapicerki",
-        },
+        "@type": "OpeningHoursSpecification",
+        closes: "20:00:00",
+        dayOfWeek: "MONDAY",
+        opens: "07:00:00",
       },
       {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Czyszczenie samochodu",
-        },
+        "@type": "OpeningHoursSpecification",
+        closes: "20:00:00",
+        dayOfWeek: "TUESDAY",
+        opens: "07:00:00",
       },
       {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Czyszczenie tapicerki",
-        },
+        "@type": "OpeningHoursSpecification",
+        closes: "20:00:00",
+        dayOfWeek: "WEDNESDAY",
+        opens: "07:00:00",
       },
+      {
+        "@type": "OpeningHoursSpecification",
+        closes: "20:00:00",
+        dayOfWeek: "THURSDAY",
+        opens: "07:00:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        closes: "20:00:00",
+        dayOfWeek: "FRIDAY",
+        opens: "07:00:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        closes: "18:00:00",
+        dayOfWeek: "SATURDAY",
+        opens: "08:00:00",
+      },
+    ],
+    sameAs: [
+      "https://www.facebook.com/people/Kabe-TintLeather-Auto-Detailing/61554800660887/",
+      "https://www.instagram.com/kabetintleather_autodetailing/",
+      "https://www.youtube.com/@KabeTintLeather",
+      "https://www.tiktok.com/@kabetintleather",
+      "https://www.oferteo.pl/kabe-tintleather-pranie-tapicerki-samochodowej-opole/firma/6596416",
+      "https://www.baza-firm.com.pl/myjnie-samochodowe-auto-detailing/opole/kabe-tintleather/pl/388643.html",
+      "https://aleo.com/pl/firma/kabe-tint-leather-kamil-brzoskwinia",
+      "https://www.cylex-polska.pl/firmy/kabetintleather---pranie-tapicerki-samochodowej-opole-14325875.html#address",
+      "https://mapa.targeo.pl/kabetintleather-gen-fieldorfa-nila-augusta-emila-12-45-273-opole~24104337/myjnia-samochodowa/adres",
+      "https://teraz-otwarte.pl/opole/kabetintleather-pranie-tapicerki-samochodowej-opole-4246979",
+      "https://firmania.pl/opole/kabetintleather-pranie-tapicerki-samochodowej-opole-1355084",
+      "https://powiatopolski.pl/494/firma.html?id=246",
+      "https://www.24opole.pl/38983,KaBe_TintLeather_Pranie_Tapicerki_samochodowej,firma.html",
+      "https://www.orlyczystosci.pl/profile-526226-kabe-tint-leather-auto-detailing",
+      "https://www.firmy.net/uslugi-motoryzacyjne/kabetintleather.html",
+      "https://katalog-firm.cybo.com/PL-biz/kabe-tintleather-pranie-tapicerki",
+      "https://znane-firmy.pl/firma/54457+kabe-tintleather.html",
+      "https://twojeopinie.com/kabetint-leather",
     ],
     areaServed: {
       "@type": "Place",
-      name: "Opole, Poland",
+      name: "Opole, Polska",
     },
+    telephone: "+48 881 325 631",
+    url: "http://www.kabetintleather.opole.pl/",
   };
 
   const localBusinessSnippetNoReviews = JSON.parse(

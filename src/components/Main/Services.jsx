@@ -15,6 +15,7 @@ import ppfFoilImage from "../../assets/image/ppf.webp";
 import ceramicCoatingImage from "../../assets/image/ceramicCoating.jpeg";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../../utils/motion";
+import { headlightPolishing } from "../../../utils";
 
 export const servicesData = [
   {
@@ -102,6 +103,18 @@ export const servicesData = [
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
       "Nasza powłoka ceramiczna to innowacyjne rozwiązanie, które tworzy trwałą, niewidoczną barierę chroniącą lakier przed drobnymi zarysowaniami, promieniowaniem UV i innymi czynnikami zewnętrznymi. Lakier zyskuje wyjątkowy połysk i głębię koloru, a bieżąca pielęgnacja staje się prostsza, dzięki łatwiejszemu usuwaniu zabrudzeń. To doskonały sposób, by nadać samochodowi świeży wygląd na dłużej i zabezpieczyć go przed przedwczesnym zużyciem.",
+  },
+  {
+    id: "uslugi/polerowanie-reflektorow",
+    description: "Polerowanie Reflektorów",
+    image: headlightPolishing,
+    largeImage: headlightPolishing,
+    largeImageWidth: 1920,
+    title: "Sprawdź",
+    backgroundImage: "url('../../assets/image/headlight_640.jpg')",
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    additionalInfo:
+      "Zmatowiałe, pożółkłe reflektory nie tylko pogarszają wygląd auta, ale też ograniczają widoczność na drodze. Nasza usługa polerowania reflektorów przywraca im przejrzystość i blask, znacząco poprawiając bezpieczeństwo jazdy po zmroku. To szybki i skuteczny sposób na renowację reflektorów bez potrzeby ich wymiany.",
   },
 ];
 

@@ -19,7 +19,9 @@ const BlogPost = ({ pageContent, blogId }) => {
     return <p>Ładowanie...</p>;
   }
 
-  const isSpecialImage = specialImagePages.includes("/" + blogId);
+  const isSpecialImage =
+    specialImagePages.includes("/" + blogId) ||
+    pageContent.title.includes("Polerowanie reflektorów");
 
   const isLargeImage = pageContent.title.includes("Korekta lakieru");
 

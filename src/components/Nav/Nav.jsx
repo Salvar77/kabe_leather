@@ -42,6 +42,10 @@ const Nav = ({ isOpen, toggleNav }) => {
           href: "/uslugi/powloka-ceramiczna",
           label: "Powłoka ceramiczna",
         },
+        {
+          href: "/uslugi/polerowanie-reflektorow",
+          label: "Polerowanie Reflektorów",
+        },
       ],
     },
     { href: "/realizacje", label: "Realizacje" },
