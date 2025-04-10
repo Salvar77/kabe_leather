@@ -36,7 +36,8 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
         title={`${automotive.title} - KabeTintLeather Auto Detailing w Opolu`}
         description={`Profesjonalne usługi ${automotive.title.toLowerCase()} w Opolu. Oferujemy ${automotive.title.toLowerCase()} z najwyższą dbałością o każdy detal.`}
         image={
-          currentImage || "https://www.kabetintleather.opole.pl/kabelogooo.webp"
+          currentImage ||
+          "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
         }
         url={`https://www.kabetintleather.opole.pl/uslugi/${automotive.id.replace(
           "uslugi/",
@@ -99,40 +100,75 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
 
 const ContentUpholstery = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
     <ul className={classes.listStyle}>
       <li>
-        <h3>Odnowienie koloru i tekstury:</h3>
+        <h3>Wieloletnie doświadczenie z tapicerką skórzaną</h3>
         <p>
-          Przywracamy skórze jej naturalny kolor i gładkość, eliminując
-          zarysowania, plamy i odbarwienia. Więcej o tym, jak dbać o skórzaną
-          tapicerkę, znajdziesz w naszym wpisie:
-          <Link href="/blog/jak-dbac-o-skorzana-tapicerke-samochodowa">
-            Dbaj o skórzaną tapicerkę
+          Od ponad 10 lat specjalizuję się w pielęgnacji i renowacji skórzanych
+          wnętrz samochodów – zarówno nowoczesnych SUV-ów, jak i klasycznych
+          modeli BMW czy Mercedes. Zaufały mi dziesiątki właścicieli aut klasy
+          premium.
+        </p>
+      </li>
+      <li>
+        <h3>Profesjonalne produkty i techniki</h3>
+        <p>
+          Korzystam z profesjonalnych preparatów marki{" "}
+          <strong>Colourlock</strong>, dobieranych do rodzaju skóry – licowej,
+          pigmentowanej czy anilinowej. Do aplikacji wykorzystuję narzędzia
+          specjalistyczne, m.in. pady do pigmentacji, szczotki detailingowe i
+          aplikatory piankowe.
+        </p>
+      </li>
+      <li>
+        <h3>Regeneracja koloru i faktury</h3>
+        <p>
+          Przywracam skórze jej oryginalny kolor, miękkość i naturalną fakturę,
+          eliminując zarysowania, przetarcia i odbarwienia. Zabezpieczam
+          powierzchnię przed promieniowaniem UV, wilgocią i zabrudzeniami.
+          Więcej o dbaniu o skórzaną tapicerkę przeczytasz na blogu:{" "}
+          <Link
+            href="/blog/jak-dbac-o-skorzana-tapicerke-samochodowa"
+            className={classes.linkStyle}
+          >
+            jak dbać o skórzaną tapicerkę
           </Link>
           .
         </p>
       </li>
       <li>
-        <h3>Zwiększenie trwałości:</h3>
+        <h3>Naprawa i ochrona</h3>
         <p>
-          Nasze zabiegi zabezpieczają skórę przed przyszłymi uszkodzeniami i
-          zużyciem, co pozwala cieszyć się jej doskonałym stanem przez długie
-          lata.
+          Uzupełniam pęknięcia, wygładzam drobne uszkodzenia i nakładam
+          specjalne środki impregnujące, które przedłużają żywotność skóry. W
+          razie potrzeby stosuję barwienie i zabezpieczenie top-coatem.
         </p>
       </li>
       <li>
-        <h3>Wzmocnienie i naprawa:</h3>
-        <p>
-          Naprawiamy drobne pęknięcia i rozdarcia, które mogą wpłynąć na
-          estetykę i komfort użytkowania.
-        </p>
+        <h3>Co mówią klienci?</h3>
+        <blockquote className={classes.clientQuote}>
+          „Jestem bardzo zadowolony z usługi prania tapicerki i czyszczenia
+          samochodu. Samochód po wykonanej usłudze wygląda jak nowy, tapicerka
+          jest dokładnie wyczyszczona. Profesjonalne podejście, dbałość o każdy
+          detal sprawiają, że mogę polecić tę firmę każdemu, kto chce zadbać o
+          swoje auto.” –{" "}
+          <strong>
+            <span>Piotr Fatek, Opole</span>
+          </strong>
+        </blockquote>
       </li>
+
       <li>
-        <h3>Ochrona przed czynnikami zewnętrznymi:</h3>
+        <h3>Usługę wykonuje osobiście</h3>
         <p>
-          Stosujemy specjalistyczne preparaty, które chronią skórę przed
-          działaniem promieni UV, wilgocią i innymi szkodliwymi czynnikami.
+          Każde zlecenie wykonuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>. Masz pewność, że
+          Twoje auto trafia w ręce pasjonata z doświadczeniem i podejściem
+          premium.
         </p>
       </li>
     </ul>
@@ -141,58 +177,76 @@ const ContentUpholstery = ({ automotive }) => (
 
 const ContentTinting = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
     <ul className={classes.listStyle}>
       <li>
-        <h3>Redukcja energii słonecznej</h3>
+        <h3>Doświadczenie i precyzja</h3>
         <p>
-          Obniż temperaturę w samochodzie, co zwiększa komfort jazdy,
-          szczególnie w gorące dni. Dowiedz się więcej o{" "}
+          Od lat zajmuję się{" "}
+          <strong>profesjonalnym przyciemnianiem szyb</strong> w samochodach
+          osobowych, dostawczych i premium. W ciągu ostatnich 12 miesięcy
+          przyciemniłem ponad 200 pojazdów, zapewniając im nie tylko lepszy
+          wygląd, ale i komfort jazdy.
+        </p>
+      </li>
+      <li>
+        <h3>Folie klasy premium</h3>
+        <p>
+          Korzystam z folii <strong>3M i Llumar</strong> – posiadają one atesty,
+          spełniają normy prawne i oferują doskonałą trwałość. Folie nie
+          odbarwiają się, nie pęcherzykują i zapewniają estetyczny wygląd przez
+          wiele lat.
+        </p>
+      </li>
+      <li>
+        <h3>Bezpieczeństwo i zgodność z przepisami</h3>
+        <p>
+          Przyciemnianie wykonuję zgodnie z obowiązującymi przepisami –{" "}
+          <strong>
+            szyby przednie i boczne przednie pozostają zgodne z normą
+            przepuszczalności światła
+          </strong>
+          . Każdy klient otrzymuje dokumentację potwierdzającą legalność użytej
+          folii.
+        </p>
+      </li>
+      <li>
+        <h3>Estetyka i komfort</h3>
+        <p>
+          Redukcja nagrzewania wnętrza, większa prywatność oraz ochrona przed
+          promieniowaniem UV to tylko niektóre korzyści. Dowiedz się więcej o{" "}
           <Link
             href="/blog/jak-przyciemnic-szyby-samochodowe"
             className={classes.linkStyle}
           >
-            korzyściach przyciemniania szyb
+            przyciemnianiu szyb
           </Link>{" "}
           na naszym blogu.
         </p>
       </li>
-
       <li>
-        <h3>Zwiększenie prywatności</h3>
-        <p>
-          Popraw swoją prywatność i bezpieczeństwo dzięki foliom, które
-          utrudniają widoczność z zewnątrz, co podnosi komfort jazdy i zapobiega
-          niepożądanym spojrzeniom.
-        </p>
-      </li>
-
-      <li>
-        <h3>Estetyka pojazdu</h3>
-        <p>
-          Nowoczesne folie nadają samochodowi elegancki i stylowy wygląd, który
-          wyróżnia się na drodze. Sprawdź szczegóły na{" "}
-          <Link
-            href="/blog/jak-przyciemnic-szyby-samochodowe"
-            className={classes.linkStyle}
-          >
-            naszym blogu
-          </Link>{" "}
-          i dowiedz się, jak wybrać najlepszą metodę przyciemniania szyb.
-        </p>
+        <h3>Opinia klienta</h3>
+        <blockquote className={classes.clientQuote}>
+          „Gorąco polecam pana Kamila. Korzystam z usług od dłuższego czasu, pan
+          Kamil robił mi 3 samochody. Każdy zrobiony perfekcyjnie. Czy to
+          sprzątanie i pranie czy mycie z woskowaniem, czy przyciemnianie szyb,
+          czy odnowienie kierownicy, czy dziś folia ppf na lampy. Zawsze
+          zrobione perfekcyjnie z dbaniem o najmniejsze szczegóły.” –{" "}
+          <strong>Łukasz, Opole</strong>
+        </blockquote>
       </li>
       <li>
-        <h3>Metody przyciemniania szyb</h3>
+        <h3>Usługę wykonuję osobiście</h3>
         <p>
-          Oferujemy metody takie jak{" "}
-          <Link
-            href="/blog/jak-przyciemnic-szyby-samochodowe"
-            className={classes.linkStyle}
-          >
-            przyciemnianie folią
-          </Link>{" "}
-          oraz metodę piecową, które zapewniają trwałość i estetykę, spełniając
-          Twoje indywidualne potrzeby.
+          Cały proces wykonuję osobiście –{" "}
+          <strong>
+            Kamil, właściciel i specjalista ds. przyciemniania szyb
+          </strong>{" "}
+          w KabeTintLeather. Dzięki temu masz pewność, że Twoje auto trafia w
+          ręce fachowca z pasją i doświadczeniem.
         </p>
       </li>
     </ul>
@@ -201,42 +255,75 @@ const ContentTinting = ({ automotive }) => (
 
 const ContentCleaning = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
+
     <ul className={classes.listStyle}>
       <li>
-        <h3>Głęboki i skuteczny efekt czyszczenia</h3>
+        <h3>Doświadczenie, które ma znaczenie</h3>
         <p>
-          Usuwamy zanieczyszczenia, kurz, brud i plamy, przywracając tapicerce
-          jej pierwotny wygląd i zapach. Więcej o{" "}
+          Od ponad 10 lat zajmuję się{" "}
+          <strong>profesjonalnym czyszczeniem tapicerek</strong>. Przez ten czas
+          usunąłem setki trudnych plam – od błota po kawę – z różnych rodzajów
+          tkanin, takich jak welur, mikrofibra czy skóra.
+        </p>
+      </li>
+      <li>
+        <h3>Profesjonalny sprzęt i środki</h3>
+        <p>
+          Do czyszczenia używam{" "}
+          <strong>odkurzaczy ekstrakcyjnych Kärcher</strong> oraz{" "}
+          <strong>środków marki Tenzi i ADBL</strong>, które są bezpieczne dla
+          materiałów i skuteczne nawet przy głęboko osadzonym brudzie. Dzięki
+          temu tapicerka odzyskuje świeżość, kolor i zapach.
+        </p>
+      </li>
+      <li>
+        <h3>Indywidualne podejście do tkanin</h3>
+        <p>
+          Każda tapicerka wymaga innego podejścia – inaczej traktuję welur,
+          inaczej skórę, a jeszcze inaczej mikrofibrę. Wybieram odpowiednie
+          środki i techniki w zależności od materiału i stopnia zabrudzenia.
+        </p>
+      </li>
+      <li>
+        <h3>Długotrwały efekt i impregnacja</h3>
+        <p>
+          Po praniu stosuję <strong>impregnat zabezpieczający</strong>, który
+          tworzy niewidzialną warstwę ochronną i wydłuża efekt czystości,
+          chroniąc tapicerkę przed ponownym zabrudzeniem.
+        </p>
+      </li>
+      <li>
+        <h3>Więcej informacji i porady</h3>
+        <p>
+          Więcej o skutecznym czyszczeniu i pielęgnacji tapicerki przeczytasz na
+          naszym blogu:{" "}
           <Link
             href="/blog/jak-wyczyscic-tapicerke-samochodowa"
             className={classes.linkStyle}
           >
-            skutecznym czyszczeniu tapicerki
-          </Link>{" "}
-          dowiesz się z naszego bloga.
+            Jak wyczyścić tapicerkę samochodową
+          </Link>
+          .
         </p>
       </li>
       <li>
-        <h3>Poprawa higieny</h3>
-        <p>
-          Nasze metody czyszczenia eliminują bakterie, roztocza i alergeny,
-          poprawiając jakość powietrza i komfort użytkowania.
-        </p>
+        <h3>Opinia klienta</h3>
+        <blockquote className={classes.clientQuote}>
+          „Auto wyczyszczone bardzo dokładnie.Pranie tapicerki, wyczyszczone
+          wszystkie wnęki.Polecam!” - <strong>Monika Zaśko, Opole</strong>
+        </blockquote>
       </li>
+
       <li>
-        <h3>Odświeżenie kolorów</h3>
+        <h3>Usługę wykonuje właściciel</h3>
         <p>
-          Przywracamy naturalne kolory tapicerki, eliminując matowienie i
-          przebarwienia spowodowane użytkowaniem.
-        </p>
-      </li>
-      <li>
-        <h3>Ochrona tkanin</h3>
-        <p>
-          Stosujemy specjalne preparaty, które nie tylko czyszczą, ale również
-          zabezpieczają tapicerkę przed przyszłymi zanieczyszczeniami i
-          zużyciem.
+          Wszystkie usługi wykonuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>. Masz pewność, że
+          Twoje auto jest w rękach fachowca z pasją i doświadczeniem.
         </p>
       </li>
     </ul>
@@ -245,43 +332,64 @@ const ContentCleaning = ({ automotive }) => (
 
 const ContentCosmetic = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
     <ul className={classes.listStyle}>
       <li>
-        <h3>Idealny wygląd i blask</h3>
+        <h3>Doświadczenie i pasja</h3>
         <p>
-          Nasze zabiegi zapewniają gruntowne czyszczenie i polerowanie, które
-          przywracają karoserii i wnętrzu samochodu świeżość i blask. Sprawdź
-          nasze wpisy o{" "}
+          Jako specjalista z ponad 10-letnim doświadczeniem, przeprowadziłem
+          setki pełnych zabiegów autokosmetyki – zarówno dla klientów
+          indywidualnych, jak i salonów samochodowych. Autokosmetyka to dla mnie
+          coś więcej niż praca – to pasja, która przekłada się na jakość
+          wykonania.
+        </p>
+      </li>
+      <li>
+        <h3>Profesjonalne kosmetyki i narzędzia</h3>
+        <p>
+          Korzystam wyłącznie z renomowanych kosmetyków marki{" "}
+          <strong>Gyeon</strong>, które gwarantują bezpieczeństwo lakieru i
+          tapicerki. Do aplikacji i czyszczenia wykorzystuję sprzęt{" "}
+          <strong>Rupes</strong> oraz sprężone powietrze z{" "}
+          <strong>Tornadora</strong>. Więcej o używanych produktach przeczytasz
+          tutaj:{" "}
           <Link
             href="/blog/uzywamy-profesjonalnych-produktow"
             className={classes.linkStyle}
           >
-            profesjonalnych produktach
-          </Link>{" "}
-          stosowanych w autokosmetyce.
+            profesjonalne produkty w autokosmetyce
+          </Link>
+          .
         </p>
       </li>
       <li>
-        <h3>Ochrona lakieru</h3>
+        <h3>Kompleksowe odświeżenie wnętrza i nadwozia</h3>
         <p>
-          Stosujemy preparaty zabezpieczające lakier przed działaniem
-          szkodliwych czynników atmosferycznych, takich jak UV, sól czy
-          zanieczyszczenia drogowe.
+          Detailing wnętrza obejmuje odkurzanie, czyszczenie plastików,
+          pielęgnację skóry i pranie tapicerki materiałowej. Nadwozie przechodzi
+          dokładne mycie, dekontaminację, a także polerowanie powierzchni dla
+          uzyskania głębi koloru.
         </p>
       </li>
       <li>
-        <h3>Wnętrze jak nowe</h3>
-        <p>
-          Skutecznie usuwamy zabrudzenia, plamy i nieprzyjemne zapachy z
-          tapicerki, dywaników i powierzchni wewnętrznych.
-        </p>
+        <h3>Opinie klientów</h3>
+        <blockquote className={classes.clientQuote}>
+          „Skorzystałem z usług firmy Kabe Tint Leather i jestem bardzo
+          zadowolony z efektów prania tapicerki samochodowej. Tapicerka została
+          dokładnie wyczyszczona, usunięto wszystkie plamy i nieprzyjemne
+          zapachy. Pracownicy byli profesjonalni, a usługa wykonana szybko i
+          solidnie. Zdecydowanie polecam!” – <strong>Daniel, Opole</strong>
+        </blockquote>
       </li>
       <li>
-        <h3>Wzmocnienie odświeżenia</h3>
+        <h3>Usługę wykonuje właściciel</h3>
         <p>
-          Wykonujemy detailing, który poprawia wygląd, stan techniczny i komfort
-          użytkowania Twojego pojazdu.
+          Każde zlecenie realizuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>. Dzięki temu masz
+          pewność indywidualnego podejścia i dbałości o każdy detal.
         </p>
       </li>
     </ul>
@@ -290,14 +398,18 @@ const ContentCosmetic = ({ automotive }) => (
 
 const ContentCorrection = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
     <ul className={classes.listStyle}>
       <li>
         <h3>Usunięcie rys i zmatowień</h3>
         <p>
-          Dokładnie eliminujemy drobne rysy, zmatowienia i drobne defekty
-          lakieru, przywracając powierzchni gładkość i estetyczny wygląd.
-          Dowiedz się więcej o{" "}
+          Od ponad dekady specjalizuję się w korekcie lakieru – od delikatnych
+          polerek One Step po wieloetapowe renowacje. Dokładnie eliminuję drobne
+          rysy, zmatowienia i defekty lakieru, przywracając powierzchni gładkość
+          i estetyczny wygląd. Dowiedz się więcej o{" "}
           <Link href="/blog/korekta-lakieru" className={classes.linkStyle}>
             procesie korekty lakieru
           </Link>
@@ -307,8 +419,11 @@ const ContentCorrection = ({ automotive }) => (
       <li>
         <h3>Poprawa głębi koloru</h3>
         <p>
-          Dzięki zaawansowanym technikom polerowania lakier odzyskuje głębię,
-          nasycenie i intensywność koloru. Sprawdź wpis o{" "}
+          Dobieram technikę polerowania do twardości lakieru – inna dla BMW,
+          inna dla Mazdy. Używam maszyn <strong>Rupes</strong> oraz past{" "}
+          <strong>Menzerna</strong> i <strong>Koch Chemie</strong>, które
+          pozwalają uzyskać głębię, nasycenie i intensywność koloru. Sprawdź
+          wpis o{" "}
           <Link
             href="/blog/uzywamy-profesjonalnych-produktow"
             className={classes.linkStyle}
@@ -321,22 +436,47 @@ const ContentCorrection = ({ automotive }) => (
       <li>
         <h3>Ochrona lakieru na dłużej</h3>
         <p>
-          Po korekcie aplikujemy powłokę ochronną, która zabezpiecza lakier
-          przed promieniowaniem UV, zabrudzeniami i zarysowaniami.
+          Po korekcie aplikuję powłokę ochronną, która zabezpiecza lakier przed
+          promieniowaniem UV, zabrudzeniami i zarysowaniami, wydłużając efekt
+          wizualny i zabezpieczający.
         </p>
       </li>
-
       <li>
         <h3>Szybka korekta One Step</h3>
         <p>
-          Dla osób szukających szybkiego i przystępnego cenowo rozwiązania
-          oferujemy korektę lakieru typu{" "}
+          Dla osób szukających przystępnego cenowo rozwiązania oferuję korektę
+          lakieru typu{" "}
           <Link href="/blog/korekta-lakieru" className={classes.linkStyle}>
             One Step
           </Link>
-          . Jest to jednoetapowy proces, który pozwala na znaczną poprawę
-          wyglądu lakieru w krótkim czasie, idealny dla lekkich zarysowań i
-          drobnych defektów.
+          . To jednoetapowy proces idealny dla lekkich zarysowań i drobnych
+          defektów, który w krótkim czasie znacznie poprawia wygląd lakieru.
+        </p>
+      </li>
+      <li>
+        <h3>Opinie klientów i realizacje</h3>
+        <blockquote className={classes.clientQuote}>
+          „Polecam usługę prania tapicerki oraz polerowanie lakieru w tej
+          firmie. Auto błyszczy się jak nowe!” –{" "}
+          <strong>160298nk, Dzielnica Zaodrze</strong>
+        </blockquote>
+        <p>
+          Zobacz więcej efektów w sekcji{" "}
+          <Link
+            href="/realizacje/korekta-lakieru"
+            className={classes.linkStyle}
+          >
+            Realizacje – korekta lakieru
+          </Link>
+          .
+        </p>
+      </li>
+      <li>
+        <h3>Usługę wykonuję osobiście</h3>
+        <p>
+          Każde zlecenie realizuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>. Dzięki temu masz
+          gwarancję indywidualnego podejścia i dbałości o każdy detal.
         </p>
       </li>
     </ul>
@@ -345,8 +485,21 @@ const ContentCorrection = ({ automotive }) => (
 
 const ContentPPF = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
     <ul className={classes.listStyle}>
+      <li>
+        <h3>Doświadczenie i precyzja</h3>
+        <p>
+          Od ponad 5 lat zajmuję się{" "}
+          <strong>profesjonalną aplikacją folii PPF</strong>. W tym czasie
+          zabezpieczyłem lakier w ponad 100 pojazdach – od miejskich hatchbacków
+          po auta premium. Każdy projekt traktuję indywidualnie i wykonuję
+          osobiście, z dbałością o każdy detal.
+        </p>
+      </li>
       <li>
         <h3>Ochrona lakieru</h3>
         <p>
@@ -362,28 +515,49 @@ const ContentPPF = ({ automotive }) => (
         </p>
       </li>
       <li>
-        <h3>Samoregeneracja</h3>
+        <h3>Technologia i jakość</h3>
         <p>
-          Dzięki innowacyjnej technologii folia PPF potrafi samodzielnie usuwać
-          drobne zarysowania pod wpływem ciepła.
+          Pracuję na foliach <strong>3M i SunTek</strong> o grubości 200
+          mikronów, nakładanych metodą „wet application”. Folia samoregeneruje
+          drobne rysy pod wpływem ciepła i dopasowuje się perfekcyjnie do
+          każdego kształtu karoserii.
         </p>
       </li>
       <li>
-        <h3>Hydrofobowa powierzchnia</h3>
+        <h3>Hydrofobowość i łatwa pielęgnacja</h3>
         <p>
-          Folia PPF odpycha wodę i zanieczyszczenia, co ułatwia codzienną
-          pielęgnację samochodu i zachowanie jego doskonałego wyglądu.
+          Powierzchnia folii odpycha wodę i zanieczyszczenia, co znacząco
+          ułatwia codzienną pielęgnację auta i pozwala dłużej cieszyć się jego
+          perfekcyjnym wyglądem.
         </p>
       </li>
       <li>
-        <h3>Trwałość i estetyka</h3>
+        <h3>Połączenie z korektą lakieru</h3>
         <p>
-          Dzięki wysokiej jakości folii Twój samochód zyskuje nowoczesny wygląd
-          i ochronę lakieru na wiele lat. Sprawdź także{" "}
+          Przed aplikacją folii zalecam wykonanie{" "}
           <Link href="/uslugi/korekta-lakieru" className={classes.linkStyle}>
-            usługę korekty lakieru
+            korekty lakieru
           </Link>
-          , która doskonale uzupełnia ochronę PPF.
+          , która przywraca mu blask i gładkość. Tylko wtedy folia ma idealne
+          warunki do trwałego połączenia z lakierem.
+        </p>
+      </li>
+      <li>
+        <h3>Opinia klienta</h3>
+        <blockquote className={classes.clientQuote}>
+          „Usługa wykonana bardzo profesjonalnie.Auto jak nowe.Polecam
+          serdecznie.” – <strong>Justyna Pałęcka, Lubniany</strong>
+        </blockquote>
+      </li>
+      <li>
+        <h3>Usługę wykonuję osobiście</h3>
+        <p>
+          Każdą aplikację realizuję sam –{" "}
+          <strong>
+            Kamil, aplikator folii ochronnych i właściciel KabeTintLeather
+          </strong>
+          . Nie ma u nas przypadkowości – jest tylko jakość, dokładność i
+          trwałość.
         </p>
       </li>
     </ul>
@@ -392,7 +566,10 @@ const ContentPPF = ({ automotive }) => (
 
 const ContentCeramic = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
     <ul className={classes.listStyle}>
       <li>
         <h3>Trwała bariera ochronna</h3>
@@ -410,7 +587,10 @@ const ContentCeramic = ({ automotive }) => (
         <h3>Wyjątkowy połysk</h3>
         <p>
           Nadaje lakierowi głębię koloru i sprawia, że samochód prezentuje się
-          doskonale w każdych warunkach.
+          doskonale w każdych warunkach. Aplikuję powłoki ceramiczne od ponad 5
+          lat – na lakierach różnych marek i o różnej twardości – od Skody po
+          BMW. Używam sprawdzonych produktów <strong>Gyeon</strong> i{" "}
+          <strong>Ultracoat</strong>.
         </p>
       </li>
       <li>
@@ -430,6 +610,35 @@ const ContentCeramic = ({ automotive }) => (
         <p>
           Odpowiednio nałożona powłoka ceramiczna potrafi utrzymać swoje
           właściwości ochronne i wizualne przez wiele miesięcy, a nawet lat.
+          Przed aplikacją wykonuję pełne przygotowanie auta: dekontaminację,
+          glinkowanie i korektę lakieru. Usługę wykonuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>.
+        </p>
+      </li>
+      <li>
+        <h3>Doświadczenie i realizacje</h3>
+        <p>
+          Powłoki ceramiczne aplikuję od ponad 5 lat – wykonałem ich już ponad{" "}
+          <strong>150</strong>, zarówno na autach prywatnych, jak i flotowych.
+          Każde auto traktuję indywidualnie, dopasowując technikę i produkt do
+          lakieru.
+        </p>
+      </li>
+      <li>
+        <h3>Opinia klienta</h3>
+        <blockquote className={classes.clientQuote}>
+          „Robota na najwyższym poziomie! Wszystko wykonane kompleksowo i
+          perfekcyjnie 🙂 Na samochód została nałożona powłoka ceramiczna
+          najwyższej klasy także jest efekt WOW🤩🤩 Na żywo - szczena opada😃😎”
+          – <strong>Mateusz Korzeniowski, Opole</strong>
+        </blockquote>
+      </li>
+      <li>
+        <h3>Usługę wykonuję osobiście</h3>
+        <p>
+          Powłokę ceramiczną wykonuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>. Dzięki temu masz
+          pewność jakości, dokładności i doświadczenia.
         </p>
       </li>
     </ul>
@@ -438,7 +647,11 @@ const ContentCeramic = ({ automotive }) => (
 
 const ContentHeadlightPolishing = ({ automotive }) => (
   <div className={classes.listContainer}>
-    <h2 className={classes.paragraphStyle}>{automotive.additionalInfo}</h2>
+    <h2
+      className={classes.paragraphStyle}
+      dangerouslySetInnerHTML={{ __html: automotive.additionalInfo }}
+    />
+
     <ul className={classes.listStyle}>
       <li>
         <h3>Poprawiona widoczność na drodze</h3>
@@ -456,6 +669,15 @@ const ContentHeadlightPolishing = ({ automotive }) => (
         </p>
       </li>
       <li>
+        <h3>Profesjonalny proces i zabezpieczenie UV</h3>
+        <p>
+          Używam past polerskich <strong>Menzerna</strong> i <strong>3M</strong>{" "}
+          oraz aplikuję powłokę UV, która zabezpiecza klosze przed ponownym
+          matowieniem. Proces wykonuję osobiście i zawsze dostosowuję go do
+          stanu plastiku i marki auta.
+        </p>
+      </li>
+      <li>
         <h3>Estetyka i nowoczesny wygląd</h3>
         <p>
           Usługa przywraca przejrzystość reflektorów, dzięki czemu samochód
@@ -466,7 +688,8 @@ const ContentHeadlightPolishing = ({ automotive }) => (
         <h3>Większe bezpieczeństwo</h3>
         <p>
           Lepsze światło to krótszy czas reakcji i większe bezpieczeństwo Twoje
-          oraz innych uczestników ruchu.
+          oraz innych uczestników ruchu. Reflektory poleruję ręcznie i maszynowo
+          – w zależności od ich stanu technicznego.
         </p>
       </li>
       <li>
@@ -474,6 +697,31 @@ const ContentHeadlightPolishing = ({ automotive }) => (
         <p>
           Zamiast inwestować w nowe lampy, możesz w atrakcyjnej cenie przywrócić
           reflektorom pełną funkcjonalność i wygląd.
+        </p>
+      </li>
+      <li>
+        <h3>Doświadczenie i efekty</h3>
+        <p>
+          W ciągu ostatniego roku wypolerowałem ponad{" "}
+          <strong>100 reflektorów</strong> – zarówno w samochodach osobowych,
+          jak i flotach firmowych. Każde zlecenie traktuję indywidualnie, z
+          pełnym zaangażowaniem.
+        </p>
+      </li>
+      <li>
+        <h3>Opinia klienta</h3>
+        <blockquote className={classes.clientQuote}>
+          „Po renowacji reflektorów światła są dwa razy mocniejsze, a auto
+          wygląda o 10 lat młodziej! Polecam każdemu.” –{" "}
+          <strong>Darek, Opole Zaodrze</strong>
+        </blockquote>
+      </li>
+      <li>
+        <h3>Usługę wykonuję osobiście</h3>
+        <p>
+          Polerowanie reflektorów wykonuję osobiście –{" "}
+          <strong>Kamil, właściciel KabeTintLeather</strong>. Dzięki temu masz
+          pewność jakości, dokładności i doświadczenia.
         </p>
       </li>
     </ul>

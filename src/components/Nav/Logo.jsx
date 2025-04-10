@@ -14,6 +14,7 @@ const Logo = ({ showLogo }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   const isHomePage = router.pathname === "/";
+  const isAboutPage = router.pathname === "/o-mnie";
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,7 +40,7 @@ const Logo = ({ showLogo }) => {
     <div style={logoStyle} className={classes.logo}>
       <Link href="/">
         <Image
-          src={isMobile && !isHomePage ? logoSubpage : logoMain}
+          src={isMobile && !isHomePage && !isAboutPage ? logoSubpage : logoMain}
           alt={ALT_TEXT}
           priority
         />

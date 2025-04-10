@@ -26,7 +26,7 @@ const SEO = ({
       name: "KabeTintLeather Auto Detailing",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.kabetintleather.opole.pl/kabelogooo.webp",
+        url: "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg",
       },
     },
     mainEntityOfPage: {

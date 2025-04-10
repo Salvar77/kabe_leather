@@ -61,7 +61,7 @@ const BlogPost = ({ pageContent, blogId }) => {
         }`}
         image={
           pageContent.dynamicImage ||
-          "https://www.kabetintleather.opole.pl/kabelogooo.webp"
+          "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
         }
         url={`https://www.kabetintleather.opole.pl/blog/${blogId}`}
         datePublished={pageContent.date}

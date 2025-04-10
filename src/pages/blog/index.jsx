@@ -12,7 +12,7 @@ const SectionBlog = () => {
       <SEO
         title="Blog - KabeTintLeather Auto Detailing"
         description="Dowiedz się więcej o naszych usługach, takich jak pranie tapicerek, autokosmetyka i przyciemnianie szyb, w sekcji blogowej KabeTintLeather."
-        image="https://www.kabetintleather.opole.pl/hero_main.jpg"
+        image="https://www.kabetintleather.opole.pl/owner-kamil-brzoskwinia-kabetintleather.jpg"
         url="https://www.kabetintleather.opole.pl/blog"
         isBlogPost={false}
       />

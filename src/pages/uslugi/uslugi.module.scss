@@ -157,6 +157,18 @@
   grid-column: span 2;
 }
 
+.clientQuote {
+  font-style: italic;
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.ownerName {
+  color: $blue-after;
+}
+
 @media screen and (min-width: 768px) {
   .paragraphStyle {
     font-size: 2rem;

@@ -9,7 +9,7 @@ const ContactSide = () => {
       <SEO
         title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
         description="Skontaktuj się z nami! KabeTintLeather Auto Detailing oferuje profesjonalne usługi prania tapicerki, czyszczenia samochodów i przyciemniania szyb. Zapraszamy do kontaktu."
-        image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
+        image="https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
         url="https://www.kabetintleather.opole.pl/kontakt"
       />
       <section id="kontakt" className={classes.contactSide}>

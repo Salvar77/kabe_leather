@@ -17,7 +17,7 @@ export default function Home() {
       <SEO
         title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
         description="KabeTintLeather specjalizuje się w profesjonalnym praniu tapicerki oraz czyszczeniu samochodów. Zadbaj o swoje auto z naszą pomocą."
-        image="https://www.kabetintleather.opole.pl/kabelogooo.webp"
+        image="https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
         url="https://www.kabetintleather.opole.pl/"
         isHome={true}
       />
@@ -32,7 +32,7 @@ export default function Home() {
             "Oferujemy najwyższej jakości usługi prania tapicerki i czyszczenia samochodów w Opolu. Specjalizujemy się w czyszczeniu tapicerki, dbając o każdy szczegół.",
           images: [
             {
-              url: "https://www.kabetintleather.opole.pl/kabelogooo.webp",
+              url: "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole",
               width: 800,
               height: 600,
               alt: "Czyszczenie tapicerki - KabeTintLeather",

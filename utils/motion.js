@@ -11,6 +11,8 @@ export const textVariant = (delay) => {
         type: "spring",
         duration: 1.25,
         delay: delay,
+        stiffness: 80,
+        damping: 8,
       },
     },
   };

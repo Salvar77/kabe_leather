@@ -31,7 +31,7 @@ const RealizationDetail = ({ realization }) => {
         description={`Zobacz szczegóły realizacji: ${realization.description}. Profesjonalne usługi w KabeTintLeather Auto Detailing.`}
         image={
           realization.largeImage ||
-          "https://www.kabetintleather.opole.pl/autocosmetic.png"
+          "https://www.kabetintleather.opole.pl/autocosmetic.jpg"
         }
         url={`https://www.kabetintleather.opole.pl/realizacje/${realization.id}`}
       />

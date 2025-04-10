@@ -213,7 +213,7 @@ const Realizations = () => {
       <SEO
         title="KabeTintLeather - Pranie tapicerki samochodowej Opole"
         description="Zobacz nasze przykładowe realizacje w KabeTintLeather Auto Detailing. Profesjonalne pranie tapicerki, renowacja skóry, autokosmetyka i przyciemnianie szyb."
-        image="https://www.kabetintleather.opole.pl/autocosmetic.png"
+        image="https://www.kabetintleather.opole.pl/autocosmetic.jpg"
         url="https://www.kabetintleather.opole.pl/realizacje"
       />
       <section id="realizacje" className={classes.realizations}>
