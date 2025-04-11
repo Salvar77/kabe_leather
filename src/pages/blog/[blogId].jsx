@@ -4,6 +4,7 @@ import classes from "./blogStrona.module.scss";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 import CTA from "@/components/More/CTA";
+import parse, { domToReact } from "html-react-parser";
 
 const specialImagePages = [
   "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
@@ -27,25 +28,14 @@ const BlogPost = ({ pageContent, blogId }) => {
 
   const isFoliaPPF = pageContent.title.includes("Folia PPF");
 
-  const parseContent = (content, links) => {
-    const parts = content.split(/(\{.*?\})/);
-    return parts.map((part, index) => {
-      const match = part.match(/\{(.*?)\}/);
-      if (match) {
-        const linkKey = match[1];
-        const linkData = links[linkKey];
-        if (linkData) {
-          return (
-            <Link key={index} href={linkData.href}>
-              {linkData.text}
-            </Link>
-          );
+  const parseContent = (content) => {
+    return parse(content, {
+      replace: (domNode) => {
+        if (domNode.name === "a" && domNode.attribs?.href?.startsWith("/")) {
+          domNode.attribs.class = classes.linkStyle;
+          return domNode;
         }
-      }
-      if (/<\/?[a-z][\s\S]*>/i.test(part)) {
-        return <span key={index} dangerouslySetInnerHTML={{ __html: part }} />;
-      }
-      return part;
+      },
     });
   };
 
@@ -89,12 +79,24 @@ const BlogPost = ({ pageContent, blogId }) => {
         <div className={classes.blogPost__box}>
           <h1>{pageContent.title}</h1>
 
-          {pageContent.sections.map((section, index) => (
-            <div key={index} className={classes.section}>
-              <h2>{section.heading}</h2>
-              <p>{parseContent(section.content, pageContent.links)}</p>
-            </div>
-          ))}
+          {pageContent.sections.map((section, index) => {
+            const isTestimonial =
+              section.heading.toLowerCase().includes("opinie") ||
+              section.heading.toLowerCase().includes("mówią moi klienci");
+            return (
+              <div
+                key={index}
+                className={`${classes.section} ${
+                  isTestimonial ? classes.testimonial : ""
+                }`}
+              >
+                <h2>{section.heading}</h2>
+                <div className={classes.section__content}>
+                  {parseContent(section.content, pageContent.links)}
+                </div>
+              </div>
+            );
+          })}
 
           {pageContent.images && (
             <div className={classes.imageGrid}>

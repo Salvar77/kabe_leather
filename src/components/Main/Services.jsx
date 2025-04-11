@@ -25,10 +25,10 @@ export const servicesData = [
     largeImage: cleanImgLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: " url('../../assets/image/clean4.png')",
+
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "Nasza usługa <strong>prania tapicerki</strong> to doskonały sposób na przywrócenie świeżości i czystości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki naszym nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
+      "Profesjonalna usługa <strong>prania tapicerki</strong> to doskonały sposób na przywrócenie czystości i świeżości Twoim kanapom, fotelom czy siedzeniom samochodowym. Dzięki nowoczesnym technikom oraz skutecznym środkom czyszczącym, skutecznie usuniemy zanieczyszczenia, plamy i nieprzyjemne zapachy.",
     relatedBlogPost: "/jak-wyczyscic-tapicerke-samochodowa",
   },
   {
@@ -38,10 +38,10 @@ export const servicesData = [
     largeImage: heroImageLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: "url('../../assets/image/hero4_640.jpg')",
+
     gradient: "linear-gradient(rgba(90, 42, 42, 0.5), rgba(0, 0, 0, 0.5))",
     additionalInfo:
-      "Profesjonalna <strong>renowacja i czyszczenie skór</strong> z użyciem systemu Colourlock. Usługa dedykowana właścicielom aut premium i klasycznych pojazdów, którzy oczekują trwałego efektu oraz pełnego odświeżenia wnętrza.",
+      "Profesjonalna <strong>renowacja i czyszczenie skór</strong> z wykorzystaniem systemu <strong>Colourlock</strong>. Usługa skierowana do właścicieli aut premium oraz klasycznych pojazdów, którzy oczekują trwałego efektu na swoich skórach oraz pełnego odświeżenia wnętrza.",
     relatedBlogPost: "/jak-dbac-o-skorzana-tapicerke-samochodowa",
   },
   {
@@ -51,10 +51,10 @@ export const servicesData = [
     largeImage: furnitureImageLarge,
     largeImageWidth: 1600,
     title: "Sprawdź",
-    backgroundImage: "url('../../assets/image/furniture_640.jpg')",
+
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "<strong>Autokosmetyka</strong> w naszym wykonaniu to połączenie wieloletniego doświadczenia, profesjonalnych środków i precyzyjnych technik. <strong>Twoje auto</strong> odzyska wygląd, zapach i estetykę jak po wyjeździe z salonu.",
+      "<strong>Autokosmetyka</strong> w moim wykonaniu to połączenie wieloletniego doświadczenia, profesjonalnych środków i precyzyjnych technik. <strong>Twoje auto</strong> odzyska wygląd, zapach i estetykę niczym po wyjeździe z salonu.",
   },
   {
     id: "uslugi/przyciemnianie-szyb",
@@ -63,10 +63,10 @@ export const servicesData = [
     largeImage: tintImageLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "<strong>Profesjonalne przyciemnianie szyb</strong> w KabeTintLeather to połączenie precyzji, certyfikowanych materiałów i wieloletniego doświadczenia. Gwarantujemy estetyczny wygląd, komfort jazdy i zgodność z przepisami.",
+      "<strong>Profesjonalne przyciemnianie szyb</strong> w KabeTintLeather to połączenie precyzji wykonania, certyfikowanych folii i wieloletniego doświadczenia. Gwarantujemy estetyczny efekt, większy komfort jazdy oraz pełną zgodność z obowiązującymi przepisami.",
   },
   {
     id: "uslugi/korekta-lakieru",
@@ -75,10 +75,10 @@ export const servicesData = [
     largeImage: paintCorrectionLarge,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "<strong>Korekta lakieru</strong> w KabeTintLeather to precyzyjna renowacja wykonywana przez specjalistę z ponad 10-letnim doświadczeniem. Używamy past <strong>Menzerna</strong>, maszyn <strong>Rupes</strong> i technik dobranych do konkretnego lakieru - efekt to głębia, połysk i trwała ochrona.",
+      "<strong>Korekta lakieru</strong> w KabeTintLeather to precyzyjna renowacja wykonywana przez specjalistę z ponad 10-letnim doświadczeniem. Używamy past polerskich <strong>Menzerna</strong>, maszyn <strong>Rupes</strong> oraz indywidualnie dobranych technik, dopasowanych do rodzaju lakieru. Efekt? Głęboki połysk, intensywna barwa i długotrwała ochrona.",
   },
   {
     id: "uslugi/folia-ppf-ochrona-lakieru",
@@ -87,10 +87,10 @@ export const servicesData = [
     largeImage: ppfFoilImage,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "Profesjonalna aplikacja <strong>folii PPF</strong> w KabeTintLeather to gwarancja trwałej ochrony i perfekcyjnego wyglądu. Stosujemy <strong>folie</strong> klasy <strong>premium</strong>, które dopasowujemy do auta z pełną precyzją – by zabezpieczenie było nie tylko skuteczne, ale i estetyczne.",
+      "Profesjonalna aplikacja <strong>folii PPF</strong> w KabeTintLeather to gwarancja trwałej ochrony i perfekcyjnego wykończenia. Korzystamy wyłącznie z folii klasy premium, które precyzyjnie dopasowujemy do każdego pojazdu – tak, by zabezpieczenie było nie tylko skuteczne, ale również estetyczne.",
   },
   {
     id: "uslugi/powloka-ceramiczna",
@@ -99,10 +99,10 @@ export const servicesData = [
     largeImage: ceramicCoatingImage,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: " url('../../assets/image/tint_640.jpg')",
+
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "<strong>Powłoka ceramiczna</strong> to skuteczna ochrona i estetyka w jednym. W KabeTintLeather aplikujemy sprawdzone systemy ochronne, które nadają lakierowi głębię, połysk i zabezpieczenie na lata – z gwarancją fachowego wykonania.",
+      "<strong>Powłoka ceramiczna</strong> to połączenie skutecznej ochrony i wyjątkowej estetyki. W KabeTintLeather aplikujemy sprawdzone systemy ochronne, które nadają lakierowi głębię, połysk i zabezpieczenie na lata – z gwarancją fachowego wykonania.",
   },
   {
     id: "uslugi/polerowanie-reflektorow",
@@ -111,10 +111,9 @@ export const servicesData = [
     largeImage: headlightPolishing,
     largeImageWidth: 1920,
     title: "Sprawdź",
-    backgroundImage: "url('../../assets/image/headlight_640.jpg')",
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
-      "Zmatowiałe, pożółkłe reflektory nie tylko psują estetykę auta, ale przede wszystkim pogarszają widoczność na drodze. Jako specjalista od detailingu z Opola, przywracam reflektorom fabryczny blask – bez konieczności wymiany. Korzystam z profesjonalnych past <strong>3M</strong> i <strong>Menzerna</strong> oraz zabezpieczam powierzchnię warstwą UV. Renowacja reflektorów to szybki, skuteczny i niedrogi sposób na poprawę bezpieczeństwa i wyglądu Twojego samochodu.",
+      "Zmatowiałe, pożółkłe reflektory nie tylko pogarszają wygląd auta, ale przede wszystkim obniżają bezpieczeństwo poprzez słabszą widoczność na drodze. Jako specjalista od detailingu z Opola, przywracam reflektorom fabryczny blask – bez konieczności wymiany. Korzystam z profesjonalnych past <strong>3M</strong> i <strong>Menzerna</strong> oraz zabezpieczam powierzchnię warstwą UV. Renowacja reflektorów to szybki, skuteczny i niedrogi sposób na poprawę bezpieczeństwa i wyglądu Twojego samochodu.",
   },
 ];
 

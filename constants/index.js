@@ -166,19 +166,51 @@ const pagesContent = {
     dynamicImage: blogFotoMain2,
     sections: [
       {
+        heading: "Kim jestem i dlaczego warto mi zaufać?",
+        content:
+          "Nazywam się Kamil i od ponad 10 lat prowadzę <strong>KabeTintLeather</strong> w Opolu. Zajmuję się w profesjonalnym <a href='/uslugi/pranie-tapicerki'>praniu i czyszczeniu tapicerki</a> samochodowej – zarówno materiałowej, jak i skórzanej czy alcantary. Przez lata pomogłem setkom klientów uratować wnętrza po zalaniu kawą, plamach po błocie, tłuszczu czy dziecięcych niespodziankach. Pracuję wyłącznie na sprawdzonych i bezpiecznych środkach takich jak <strong>Tenzi, ProElite, Gyeon, Soft99</strong>, co pozwala mi działać skutecznie i bezpiecznie – z gwarancją efektu WOW.",
+      },
+      {
         heading: "Jak uniknąć powstania plam na tapicerce samochodowej?",
         content:
-          "Plamy na tapicerce samochodowej to problem, który nie tylko obniża estetykę wnętrza, ale również może wpłynąć na wartość pojazdu, szczególnie jeśli zabrudzenia są głębokie i trudne do usunięcia. Regularne {pranieTapicerkiLink} jest kluczowe, aby zapobiegać powstawaniu trwałych plam i osadzaniu się brudu, który z czasem staje się coraz trudniejszy do usunięcia. Profesjonalne pranie i czyszczenie tapicerki pozwala na zachowanie świeżości wnętrza auta, nadając mu przyjemny zapach oraz chroniąc materiał przed zniszczeniem. Dzięki zastosowaniu specjalistycznych technik i odpowiednich środków czyszczących możliwe jest usunięcie nawet najbardziej uporczywych zabrudzeń, takich jak plamy po kawie, tłuste ślady, czy ślady po napojach. Nasze usługi prania tapicerki nie tylko przywracają jej pierwotny wygląd, ale także tworzą warstwę ochronną, która minimalizuje osadzanie się brudu w przyszłości. Dowiedz się, jakie techniki czyszczenia i zabezpieczania materiału mogą przedłużyć trwałość tapicerki, zapewniając wnętrzu auta idealny stan przez długie lata, niezależnie od intensywności jego użytkowania.",
+          "Plamy na tapicerce to nie tylko problem estetyczny – mogą również obniżyć wartość auta, zwłaszcza jeśli zabrudzenia są głębokie i trudne do usunięcia. Regularne <a href='/uslugi/pranie-tapicerki'>pranie tapicerki samochodowej</a> jest kluczowe, aby zapobiegać powstawaniu trwałych plam i osadzaniu się brudu, który z czasem staje się coraz trudniejszy do usunięcia. Profesjonalne pranie i czyszczenie tapicerki pozwala na zachowanie świeżości wnętrza auta, nadając mu przyjemny zapach oraz chroniąc materiał przed zniszczeniem. Dzięki zastosowaniu specjalistycznych technik i odpowiednich środków czyszczących możliwe jest usunięcie nawet najbardziej uporczywych zabrudzeń, takich jak plamy po kawie, tłuste ślady, czy ślady po napojach. Nasze usługi <a href='/uslugi/pranie-tapicerki'>prania tapicerki</a> nie tylko przywracają jej pierwotny wygląd, ale także tworzą warstwę ochronną, która minimalizuje osadzanie się brudu w przyszłości. Dowiedz się, jakie techniki czyszczenia i zabezpieczania materiału mogą przedłużyć trwałość tapicerki, zapewniając wnętrzu auta idealny stan przez długie lata, niezależnie od intensywności jego użytkowania.",
       },
       {
         heading: "Dlaczego szybka reakcja jest ważna?",
         content:
-          "Im szybciej podejmiesz działania związane z {czyszczenieTapicerkiLink}, tym większa szansa na całkowite usunięcie plamy, zanim wniknie ona głęboko w strukturę materiału. Świeże zabrudzenia są zazwyczaj łatwiejsze do usunięcia, co pozwala uniknąć ryzyka ich trwałego osadzenia się w tkaninie. Regularne pranie tapicerki samochodowej to kluczowy element dbania o wnętrze pojazdu, który pozwala na bieżąco kontrolować jakość materiałów, eliminując trudne do usunięcia zabrudzenia i przywracając świeżość wnętrza. Nasza oferta profesjonalnych usług prania tapicerki jest dostosowana do różnych typów tkanin i materiałów, co umożliwia dokładne czyszczenie przy zachowaniu pełnego bezpieczeństwa tapicerki. Korzystając z zaawansowanych środków i technik, gwarantujemy zachowanie czystości wnętrza samochodu na najwyższym poziomie, a także długotrwałą ochronę materiałów przed codziennym zużyciem i gromadzeniem się nowych zabrudzeń. Dzięki naszej pomocy Twoje auto zyskuje nie tylko estetyczny wygląd, ale również zwiększony komfort i wartość.",
+          "Im szybciej podejmiesz działania związane z <a href='/uslugi/pranie-tapicerki'>czyszczeniem tapicerki</a>, tym zwiększysz szansę na całkowite usunięcie plamy, zanim wniknie ona głęboko w strukturę materiału. Świeże zabrudzenia są zazwyczaj łatwiejsze do usunięcia, co pozwala uniknąć ryzyka ich trwałego osadzenia się w tkaninie. Regularne <a href='/uslugi/pranie-tapicerki'>pranie tapicerki</a> to kluczowy element dbania o wnętrze pojazdu, który pozwala na bieżąco kontrolować jakość materiałów, eliminując trudne do usunięcia zabrudzenia i przywracając świeżość wnętrza. Nasza oferta profesjonalnych usług czyszczenia jest dostosowana do różnych typów tkanin i materiałów, co umożliwia dokładne czyszczenie przy zachowaniu pełnego bezpieczeństwa tapicerki. Korzystając z zaawansowanych środków i technik, gwarantujemy zachowanie czystości wnętrza samochodu na najwyższym poziomie, a także długotrwałą ochronę materiałów przed codziennym zużyciem i gromadzeniem się nowych zabrudzeń. Dzięki naszej pomocy Twoje auto zyskuje nie tylko estetyczny wygląd, ale również zwiększony komfort i wartość.",
       },
       {
-        heading: "Jakie środki najlepiej używać?",
+        heading: "Jakie środki najlepiej stosować?",
         content:
-          "Wybór odpowiednich {srodkiDoTapicerkiLink} jest kluczowy, aby zachować materiał w idealnym stanie przez wiele lat. Różne typy tapicerki, od tkanin po skórę, wymagają specjalistycznych preparatów, które są nie tylko skuteczne, ale również delikatne dla powierzchni. Nasze środki do czyszczenia tapicerki zostały starannie opracowane, aby dokładnie usuwać nawet trudne zabrudzenia, takie jak plamy po napojach, tłuste ślady czy kurz, jednocześnie nie naruszając struktury materiału. Dzięki temu tapicerka zachowuje swoją miękkość, kolor oraz estetykę, niezależnie od intensywności użytkowania. Skontaktuj się z nami, aby dowiedzieć się, jakie produkty najlepiej sprawdzą się dla Twojego wnętrza i jak stosować je efektywnie, by osiągnąć długotrwałe rezultaty. Nasz zespół doradzi Ci, jak dobrać odpowiednie preparaty do rodzaju tapicerki w Twoim aucie, co pozwoli utrzymać wnętrze w doskonałym stanie i zapewni komfort każdej podróży.",
+          "Dobór odpowiednich <a href='/uslugi/autokosmetyka'>środków do czyszczenia tapicerki samochodowej</a> ma kluczowe znaczenie, jeśli chcesz zachować wnętrze auta w świetnej kondycji na lata. Różne rodzaje tapicerki – materiałowej, skórzanej czy z alcantary – wymagają indywidualnego podejścia i specjalistycznych preparatów, które są jednocześnie skuteczne i bezpieczne dla powierzchni.<br><br>" +
+          "W mojej pracy używam starannie dobranych produktów, które pozwalają usuwać nawet najbardziej uporczywe zabrudzenia – plamy po napojach, tłuste ślady czy kurz – bez ryzyka uszkodzenia materiału. Dzięki temu tapicerka zachowuje miękkość, intensywny kolor i estetykę, nawet przy regularnym użytkowaniu.<br><br>" +
+          "Chętnie doradzę, jak dobrać preparaty do konkretnego typu tapicerki oraz jak stosować je skutecznie, by osiągnąć długotrwały efekt.",
+      },
+      {
+        heading: "Gdzie działam?",
+        content:
+          "Działam głównie na terenie <strong>Opola</strong> i okolicznych miejscowości. Dojeżdżam również do klientów w:<br>" +
+          "- <strong>Ozimek</strong><br>" +
+          "- <strong>Prószków</strong><br>" +
+          "- <strong>Komprachcice</strong><br>" +
+          "- <strong>Lubniany</strong><br>" +
+          "oraz w dzielnicach Opola takich jak <strong>Zaodrze, Wrzoski, Malina</strong> i <strong>Półwieś</strong>.<br><br>" +
+          "Pełną listę lokalizacji znajdziesz w sekcji <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a>.",
+      },
+      {
+        heading: "Co mówią moi klienci?",
+        content:
+          "<blockquote>„Autko wysprzątane na błysk. Szybko i bez żadnych problemów. Krótki czas oczekiwania na wizytę. Gorąco polecam.”<br>– <strong>Marcin Rozycki</strong></blockquote><br>" +
+          "<blockquote>„Auto wyczyszczone bardzo dokładnie.Pranie tapicerki, wyczyszczone wszystkie wnęki.Polecam!”<br>– <strong>Monika Zaśko</strong></blockquote>",
+      },
+      {
+        heading: "Masz pytania? Skontaktuj się ze mną",
+        content:
+          "Jeśli chcesz omówić szczegóły usługi lub uzyskać indywidualną wycenę – <a href='/kontakt'>skontaktuj się ze mną</a>. Z przyjemnością doradzę i pomogę dobrać najlepsze rozwiązanie dla Twojego auta.<br><br>" +
+          "Nazywam się <strong>Kamil</strong> – jestem właścicielem <strong>KabeTintLeather</strong> i specjalistą od detailingu z ponad 10-letnim doświadczeniem. Każdą usługę wykonuję osobiście – z pełnym zaangażowaniem i dbałością o detale. " +
+          "Działam głównie na terenie <strong>Opola</strong> i okolicznych miejscowości.<br><br>" +
+          "Zajrzyj do <a href='/kontakt'>sekcji kontakt</a>, zadzwoń lub napisz – odpowiadam osobiście.",
       },
     ],
 
@@ -194,6 +226,10 @@ const pagesContent = {
       srodkiDoTapicerkiLink: {
         href: "/uslugi/autokosmetyka",
         text: "środków do czyszczenia tapicerki samochodowej",
+      },
+      obszaryDzialalnosciLink: {
+        href: "/obszary-naszej-dzialalnosci",
+        text: "obszary naszej działalności",
       },
     },
 
@@ -423,29 +459,45 @@ const pagesContent = {
     dynamicImage: blogFoto14,
     sections: [
       {
+        heading: "Kim jestem?",
+        content:
+          "Nazywam się Kamil i prowadzę <strong>KabeTintLeather</strong> w Opolu. Od wielu lat specjalizuję się w <strong>auto detailingu i aplikacji folii PPF</strong>. Zabezpieczyłem dziesiątki samochodów – od miejskich hatchbacków po auta klasy premium. Stawiam na indywidualne podejście i dokładność – dzięki temu uzyskuję efekt, który łączy jakość z trwałością.",
+      },
+      {
         heading: "Czym jest folia PPF?",
         content:
-          "Folia ochronna PPF (Paint Protection Film) to innowacyjne rozwiązanie zaprojektowane z myślą o długotrwałej ochronie lakieru samochodowego. Dzięki swojej przeźroczystej strukturze, <a href='/uslugi/folia-ppf-ochrona-lakieru'>folia PPF</a>, jest praktycznie niewidoczna, co oznacza, że zachowuje naturalny wygląd pojazdu, jednocześnie chroniąc jego powierzchnię przed szkodliwymi czynnikami zewnętrznymi. Folia PPF zapewnia skuteczną ochronę przed zarysowaniami, promieniowaniem UV oraz działaniem substancji chemicznych, takich jak sól drogowa czy kwaśne deszcze. Jej elastyczność sprawia, że doskonale przylega do skomplikowanych kształtów karoserii, gwarantując kompleksową ochronę zarówno dla całego pojazdu, jak i jego poszczególnych elementów.",
+          "Folia ochronna PPF (Paint Protection Film) to nowoczesna forma zabezpieczenia, która zapewnia długotrwałą ochronę lakieru przed uszkodzeniami. Dzięki swojej przeźroczystej strukturze, <a href='/uslugi/folia-ppf-ochrona-lakieru'>folia PPF</a>, jest praktycznie niewidoczna, co oznacza, że zachowuje naturalny wygląd pojazdu, jednocześnie chroniąc jego powierzchnię przed szkodliwymi czynnikami zewnętrznymi. Folia PPF zapewnia skuteczną ochronę przed zarysowaniami, promieniowaniem UV oraz działaniem substancji chemicznych, takich jak sól drogowa czy kwaśne deszcze. Jej elastyczność sprawia, że doskonale przylega do skomplikowanych kształtów karoserii, gwarantując kompleksową ochronę zarówno dla całego pojazdu, jak i jego poszczególnych elementów.",
       },
       {
         heading: "Dlaczego warto zainwestować w folię PPF?",
         content:
-          "Ochrona lakieru jest kluczowa dla utrzymania wartości i estetyki Twojego pojazdu. Folia PPF to jedno z najlepszych rozwiązań dostępnych na rynku, które nie tylko zapewnia ochronę, ale również podnosi walory estetyczne samochodu.<br><br>Najważniejsze korzyści:<br>- <strong>Doskonała ochrona:</strong> Folia PPF zabezpiecza lakier przed zarysowaniami, odpryskami i korozją.<br>- <strong>Samoregeneracja:</strong> Innowacyjna technologia pozwala na samodzielne usuwanie drobnych zarysowań pod wpływem ciepła.<br>- <strong>Hydrofobowość:</strong> Powierzchnia folii odpycha wodę, brud i inne zanieczyszczenia.<br>- <strong>Estetyka:</strong> Folia PPF podkreśla głębię koloru i połysk lakieru.<br>- <strong>Długa trwałość:</strong> Wysokiej jakości folie PPF mogą wytrzymać od 5 do nawet 10 lat.<br><br>Jeśli interesuje Cię kompleksowa ochrona lakieru, sprawdź także naszą <a href='/uslugi/korekta-lakieru'>korektę lakieru</a>, która usuwa zarysowania i przywraca gładką powierzchnię.",
+          "Zabezpieczenie lakieru to kluczowy krok w utrzymaniu estetyki i wartości samochodu. <strong>Folia PPF</strong> to jedno z najskuteczniejszych rozwiązań dostępnych na rynku – nie tylko chroni, ale też podkreśla wygląd pojazdu.<br><br>" +
+          "<strong>Najważniejsze zalety folii PPF:</strong><br>" +
+          "- <strong>Doskonała ochrona:</strong> Skutecznie zabezpiecza lakier przed zarysowaniami, odpryskami i korozją.<br>" +
+          "- <strong>Technologia samoregeneracji:</strong> Drobne rysy znikają pod wpływem ciepła.<br>" +
+          "- <strong>Hydrofobowa powierzchnia:</strong> Odpycha wodę, brud i inne zanieczyszczenia, ułatwiając pielęgnację.<br>" +
+          "- <strong>Efekt wizualny:</strong> Folia wzmacnia głębię koloru i połysk lakieru.<br>" +
+          "- <strong>Trwałość:</strong> Najwyższej jakości folie mogą chronić lakier nawet do 10 lat.<br><br>" +
+          "Dla maksymalnego efektu, przed aplikacją folii warto wykonać <a href='/uslugi/korekta-lakieru'>korektę lakieru</a>, która usuwa zarysowania i wygładza powierzchnię.",
       },
       {
         heading: "Jakie są rodzaje folii PPF?",
         content:
-          "Na rynku dostępnych jest wiele rodzajów folii PPF, które można dopasować do indywidualnych potrzeb użytkownika:<br>- <strong>Matowe:</strong> Nadają lakierowi nowoczesny, elegancki wygląd.<br>- <strong>Błyszczące:</strong> Podkreślają połysk lakieru, nadając mu głębię.<br>- <strong>Samoregenerujące:</strong> Dzięki technologii znikają drobne zarysowania.<br>- <strong>Hydrofobowe:</strong> Odpychają wodę, brud i oleje, co ułatwia utrzymanie samochodu w idealnym stanie.",
+          "Na rynku dostępnych jest kilka typów folii PPF, które można dopasować do indywidualnych potrzeb i oczekiwań właściciela pojazdu:<br><br>" +
+          "- <strong>Folie matowe:</strong> Nadają lakierowi nowoczesny, satynowy wygląd i elegancję.<br>" +
+          "- <strong>Folie błyszczące:</strong> Wzmacniają połysk i głębię koloru, podkreślając estetykę auta.<br>" +
+          "- <strong>Folie samoregenerujące:</strong> Dzięki innowacyjnej technologii drobne zarysowania znikają pod wpływem ciepła.<br>" +
+          "- <strong>Folie hydrofobowe:</strong> Odpychają wodę, zabrudzenia i oleje, co znacząco ułatwia pielęgnację samochodu.",
       },
       {
         heading: "Przykładowy cennik folii PPF",
         content:
-          "Cena aplikacji folii PPF zależy od zakresu ochrony, powierzchni pojazdu oraz rodzaju folii. Oto przykładowe koszty:<br>- Reflektory: od 300 zł za komplet.<br>- Słupki black piano: od 400 zł za stronę.<br>- Wnęki klamek: od 200 zł za komplet.<br>- Progi: od 500 zł.<br>- Kompletna ochrona przodu samochodu: od 3000 zł.<br>- Kompletna ochrona całego samochodu: od 8000 zł.",
+          "Cena aplikacji folii PPF zależy od zakresu ochrony, powierzchni pojazdu oraz rodzaju folii. Oto przykładowe koszty:<br>- Reflektory: od 300 zł za komplet.<br>- Słupki black piano: od 400 zł za stronę.<br>- Wnęki klamek: od 200 zł za komplet.<br>- Progi: od 500 zł.<br>- Kompletna ochrona przodu samochodu: od <strong>3000</strong> zł.<br>- Kompletna ochrona całego samochodu: od <strong>8000</strong> zł.",
       },
       {
         heading: "Na jak długo wystarcza folia PPF?",
         content:
-          "Trwałość folii PPF wynosi od 5 do 10 lat, w zależności od jakości folii, warunków eksploatacji oraz odpowiedniej pielęgnacji. Regularne czyszczenie i unikanie agresywnych środków chemicznych pozwolą na maksymalne wykorzystanie potencjału folii.",
+          "Trwałość folii PPF wynosi od 5 do 10 lat, w zależności od jakości folii, warunków eksploatacji oraz odpowiedniej pielęgnacji. Regularne jej czyszczenie i unikanie agresywnych środków chemicznych pozwolą na maksymalne wykorzystanie potencjału folii.",
       },
       {
         heading: "Po co stosuje się folię PPF i kiedy warto ją założyć?",
@@ -463,6 +515,20 @@ const pagesContent = {
         heading: "Folia PPF Opole – gdzie świadczymy usługę?",
         content:
           "Nasze usługi <strong>Folia PPF Opole</strong> dostępne są nie tylko w samym Opolu, ale również w pobliskich miejscowościach. Sprawdź wszystkie lokalizacje na stronie <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a> i przekonaj się, czy jesteśmy również w Twojej okolicy!",
+      },
+      {
+        heading: "Co mówią moi klienci?",
+        content:
+          "<blockquote>„Usługa wykonana bardzo rzetelnie. Szybki czas realizacji. Polecam”<br>– <strong>Łukasz “Proppo”</strong></blockquote><br>" +
+          "<blockquote>„Auto oddane na kompleksowe czyszczenie wnętrza wraz z praniem tapicerki , dodatkowo nałożona została powłoka ceramiczną oraz zabezpieczony został front folia PPF. polecam!”<br>– <strong>Dariusz Grzebień</strong></blockquote>",
+      },
+      {
+        heading: "Masz pytania? Skontaktuj się ze mną",
+        content:
+          "Jeśli chcesz omówić szczegóły usługi lub uzyskać indywidualną wycenę – <a href='/kontakt'>skontaktuj się ze mną</a>. Z przyjemnością doradzę i pomogę dobrać najlepsze rozwiązanie dla Twojego auta.<br><br>" +
+          "Nazywam się <strong>Kamil</strong> – jestem właścicielem <strong>KabeTintLeather</strong> i specjalistą od detailingu z ponad 10-letnim doświadczeniem. Każdą usługę wykonuję osobiście – z pełnym zaangażowaniem i dbałością o detale. " +
+          "Działam głównie na terenie <strong>Opola</strong> i okolicznych miejscowości.<br><br>" +
+          "Zajrzyj do <a href='/kontakt'>sekcji kontakt</a>, zadzwoń lub napisz – odpowiadam osobiście.",
       },
     ],
     links: {
@@ -490,9 +556,17 @@ const pagesContent = {
     dynamicImage: blogFotoMain7,
     sections: [
       {
+        heading: "Kim jestem?",
+        content:
+          "Nazywam się Kamil, prowadzę <strong>KabeTintLeather</strong> w Opolu i od lat specjalizuję się w aplikacji <strong>powłok ceramicznych</strong> oraz kompleksowym detailingu. Zabezpieczyłem lakier w setkach samochodów - od miejskich hatchbacków po SUV-y i auta sportowe. Wiem, jak dobrać właściwą powłokę do auta, stylu jazdy i oczekiwań właściciela.",
+      },
+
+      {
         heading: "Czym jest powłoka ceramiczna?",
         content:
-          "Powłoka ceramiczna to <b>innowacyjne rozwiązanie</b>, które tworzy trwałą, niewidoczną warstwę ochronną na lakierze samochodu. Dzięki swoim właściwościom hydrofobowym i odporności na zarysowania, <a href='/uslugi/powloka-ceramiczna'>powłoka ceramiczna</a> zabezpiecza Twój pojazd przed działaniem szkodliwych czynników atmosferycznych, promieniowaniem UV oraz zabrudzeniami. Powłoka ta doskonale podkreśla <b>głębię koloru</b> lakieru, nadając mu niesamowity połysk i świeży wygląd, jak z salonu. Jej elastyczność i trwałość sprawiają, że jest to rozwiązanie idealne zarówno dla nowych, jak i używanych samochodów.",
+          "Powłoka ceramiczna to <b>trwała, niewidoczna warstwa ochronna</b>, która wiąże się z lakierem samochodu i chroni go przed zarysowaniami, promieniowaniem UV, brudem i chemią drogową. <br><br>" +
+          "W mojej pracy stosuję powłoki <strong>Gyeon, Ultracoat i Soft99</strong>, które sprawdziły się w praktyce – zarówno w miejskich autach, jak i w samochodach premium. Efekt? Głębia koloru, połysk i lakier jak nowy nawet po 3 zimach. <br><br>" +
+          "Więcej informacji o powłoce znajdziesz w sekcji usługi: <a href='/uslugi/powloka-ceramiczna'>powłoka ceramiczna</a>.",
       },
       {
         heading: "Dlaczego warto wybrać powłokę ceramiczną?",
@@ -571,10 +645,25 @@ const pagesContent = {
           "- Połysk i odbicie światła jak na lakierze „showcar”<br>" +
           "- Mniej ryzyka zarysowań podczas mycia",
       },
+
       {
         heading: "Powłoka ceramiczna Opole - gdzie działamy?",
         content:
           "Usługę <strong>powłoka ceramiczna Opole</strong> oferujemy nie tylko w samym Opolu, ale również w pobliskich miejscowościach i dzielnicach. Sprawdź pełną listę lokalizacji w sekcji <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a> i przekonaj się, czy działamy także w Twojej okolicy!",
+      },
+      {
+        heading: "Co mówią moi klienci?",
+        content:
+          "<blockquote>„Robota na najwyższym poziomie! Wszystko wykonane kompleksowo i perfekcyjnie 🙂 Na samochód została nałożona powłoka ceramiczna najwyższej klasy także jest efekt WOW🤩🤩 Na żywo - szczena opada😃😎”<br>– <strong>Mateusz Korzeniowski</strong></blockquote><br>" +
+          "<blockquote>„Usługa wykonana bardzo profesjonalnie.Auto jak nowe.Polecam serdecznie.”<br>– <strong>Justyna Pałęcka</strong></blockquote>",
+      },
+      {
+        heading: "Masz pytania? Skontaktuj się ze mną",
+        content:
+          "Jeśli chcesz omówić szczegóły usługi lub uzyskać indywidualną wycenę – <a href='/kontakt'>skontaktuj się ze mną</a>. Z przyjemnością doradzę i pomogę dobrać najlepsze rozwiązanie dla Twojego auta.<br><br>" +
+          "Nazywam się <strong>Kamil</strong> – jestem właścicielem <strong>KabeTintLeather</strong> i specjalistą od detailingu z ponad 10-letnim doświadczeniem. Każdą usługę wykonuję osobiście – z pełnym zaangażowaniem i dbałością o detale. " +
+          "Działam głównie na terenie <strong>Opola</strong> i okolicznych miejscowości.<br><br>" +
+          "Zajrzyj do <a href='/kontakt'>sekcji kontakt</a>, zadzwoń lub napisz – odpowiadam osobiście.",
       },
     ],
     links: {
@@ -590,42 +679,65 @@ const pagesContent = {
     images: [blogFotoMain7],
   },
   "autokosmetyka-i-detailing": {
-    title: "Autokosmetyka i detailing – kompleksowa pielęgnacja Twojego auta",
+    title: "Autokosmetyka i detailing – profesjonalna pielęgnacja Twojego auta",
     dynamicImage: blogFotoMain41,
     sections: [
       {
-        heading: "Czym jest autokosmetyka i detailing?",
+        heading: "Kim jestem?",
         content:
-          "Autokosmetyka i <b>detailing</b> to proces kompleksowego czyszczenia, odnawiania i zabezpieczania pojazdu – zarówno wewnątrz, jak i na zewnątrz. To znacznie więcej niż zwykłe mycie samochodu – to <b>precyzyjna pielęgnacja</b>, która przywraca lub nawet poprawia fabryczny wygląd auta.<br><br>" +
-          "<b>Detailing zewnętrzny</b> obejmuje m.in. korektę lakieru, dekontaminację, aplikację <a href='/uslugi/powloka-ceramiczna'>powłok ceramicznych</a> lub wosków, pielęgnację szyb i felg. <b>Detailing wnętrza</b> to z kolei czyszczenie tapicerki, pielęgnacja tworzyw, impregnacja skór, ozonowanie i odświeżanie powietrza.<br><br>" +
-          "Więcej znajdziesz w sekcji <a href='/uslugi/autokosmetyka'>autokosmetyka</a>.",
+          "Nazywam się Kamil i od ponad 10 lat zajmuję się kompleksową pielęgnacją samochodów - zarówno wnętrza, jak i karoserii. Prowadzę <strong>KabeTintLeather</strong> w Opolu, gdzie z pasją dbam o detale każdego auta, niezależnie od marki czy wieku. W mojej pracy łączę praktyczne doświadczenie z zaawansowaną wiedzą z zakresu <b>auto detailingu</b>.",
       },
       {
-        heading: "Dlaczego warto korzystać z detailingu?",
+        heading: "Czym jest autokosmetyka i detailing?",
         content:
-          "<b>Detailing</b> to nie tylko zabieg estetyczny, ale także praktyczne zabezpieczenie Twojego auta przed codziennym zużyciem.<br><br>" +
-          "- Zachowujesz lub przywracasz wygląd auta jak z salonu<br>" +
-          "- Chronisz lakier i wnętrze przed zużyciem i czynnikami atmosferycznymi<br>" +
-          "- Zwiększasz wartość pojazdu przy ewentualnej odsprzedaży<br>" +
-          "- Zyskujesz komfort i przyjemność z jazdy<br>" +
-          "- Twój samochód wygląda profesjonalnie i zadbanie<br><br>" +
-          "Detailing to <b>świadoma pielęgnacja</b> i długofalowa ochrona inwestycji, która realnie wpływa na trwałość pojazdu.",
+          "Autokosmetyka i <b>detailing</b> to znacznie więcej niż mycie auta. To proces dokładnego czyszczenia, odnawiania i zabezpieczania pojazdu z wykorzystaniem profesjonalnych technik i produktów.<br><br>" +
+          "W KabeTintLeather oferuję m.in.:<br>" +
+          "- <b>Detailing zewnętrzny</b> (dekontaminacja, polerowanie, powłoki ochronne)<br>" +
+          "- <b>Detailing wnętrza</b> (czyszczenie tapicerki, ozonowanie, impregnacja)<br>" +
+          "- <b>Usługi ochronne</b>: <a href='/uslugi/powloka-ceramiczna'>powłoki ceramiczne</a>, <a href='/uslugi/folia-ppf-ochrona-lakieru'>folie PPF</a> i woski klasy premium<br><br>" +
+          "Korzystam wyłącznie ze sprawdzonych marek, takich jak <strong>Gyeon, Menzerna, Koch Chemie, Soft99</strong> oraz <strong>Rupes</strong>.<br><br>" +
+          "Więcej szczegółów znajdziesz w sekcji <a href='/uslugi/autokosmetyka'>autokosmetyka</a>.",
+      },
+      {
+        heading: "Dlaczego warto zainwestować w detailing?",
+        content:
+          "Z mojego doświadczenia wynika, że profesjonalnie wykonany <b>detailing</b>:<br><br>" +
+          "- Chroni lakier i wnętrze auta przed procesem starzenia<br>" +
+          "- Zdecydowanie poprawia wygląd auta – samochód prezentuje się jak nowy<br>" +
+          "- Podnosi wartość pojazdu przy odsprzedaży<br>" +
+          "- Przynosi realną satysfakcję z codziennego użytkowania auta<br><br>" +
+          "To <b>świadoma forma dbania</b> o inwestycję, którą często zaniedbujemy na co dzień.",
       },
       {
         heading: "Jakie usługi wchodzą w zakres detailingu?",
         content:
-          "Detailing to zestaw zaawansowanych zabiegów pielęgnacyjnych i ochronnych, które mają na celu przywrócenie oraz utrzymanie perfekcyjnego stanu pojazdu. W zależności od potrzeb auta i oczekiwań właściciela, oferujemy:<br><br>" +
-          "- <b>Mycie detailingowe</b> z dekontaminacją i neutralizacją osadów<br>" +
-          "- <b>Korektę lakieru</b> – jednoetapową (One Step) lub wieloetapową<br>" +
-          "- <b>Aplikację powłok ochronnych</b> – ceramicznych, kwarcowych lub elastomerowych<br>" +
-          "- <b>Detailing wnętrza</b> – czyszczenie i impregnację tapicerki, tworzyw, skóry<br>" +
-          "- <b>Renowację elementów zewnętrznych</b> – felgi, listwy, zderzaki, szyby<br><br>" +
-          "Szczegóły każdej z usług oraz ich wycenę znajdziesz na stronie <a href='/cennik'>cennika</a>.",
+          "W zależności od potrzeb Twojego auta wykonuję m.in.:<br><br>" +
+          "- <b>Mycie detailingowe</b> z dekontaminacją lakieru (glinkowanie, iron remover)<br>" +
+          "- <b>Korektę lakieru</b>: One Step lub Full Correction<br>" +
+          "- <b>Aplikację powłok</b>: ceramicznych, elastomerowych lub twardych wosków<br>" +
+          "- <b>Detailing wnętrza</b>: pranie, impregnacja, odgrzybianie, ozonowanie<br>" +
+          "- <b>Renowację</b> elementów takich jak plastiki, listwy, reflektory czy felgi<br><br>" +
+          "Szczegóły każdej z usług i ich wyceny znajdziesz na stronie <a href='/cennik'>cennika</a>.",
       },
       {
-        heading: "Gdzie oferujemy nasze usługi detailingu?",
+        heading: "Gdzie działam?",
         content:
-          "Nasze usługi <strong>autokosmetyki i detailingu</strong> są dostępne w wielu lokalizacjach. Odwiedź stronę <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a>, aby zobaczyć pełną listę miejscowości i dzielnic, w których działamy, w tym m.in. <strong>Opole</strong>.",
+          "Działam głównie na terenie <strong>Opola</strong> oraz pobliskich miejscowości, takich jak <strong>Ozimek, Prószków, Lubniany, Komprachcice</strong>, a także w opolskich dzielnicach: <strong>Zaodrze, Malina</strong> i <strong>Wrzoski</strong>.<br><br>" +
+          "Zobacz pełną listę lokalizacji w sekcji <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a>.",
+      },
+      {
+        heading: "Opinie klientów",
+        content:
+          "<blockquote>„Po oddaniu samochodu do mycia pan Kamil zaproponował wyczyszczenie wnętrza i podsufitki. Efekt był niesamowity – cudownie pachnące auto w środku i super błyszczący wosk na zewnątrz. Z czystym sumieniem polecam usługi tej firmy, na pewno jeszcze skorzystam.”<footer>Karolina Idziorek</footer></blockquote>" +
+          "<blockquote>„Polecam tę usługę z całego serca! Mój samochód, w którym często przewożę psa, wymagał naprawdę porządnego czyszczenia. Efekt przerósł moje oczekiwania – tapicerka została świetnie odświeżona, a wnętrze auta odzyskało świeżość. Jestem bardzo zadowolona z rezultatu i z pewnością skorzystam z tej usługi ponownie. Naprawdę warto! ;)”<footer>Michalina Rodziewicz</footer></blockquote>",
+      },
+      {
+        heading: "Masz pytania? Skontaktuj się ze mną",
+        content:
+          "Jeśli chcesz omówić szczegóły usługi lub uzyskać indywidualną wycenę – <a href='/kontakt'>skontaktuj się ze mną</a>. Z przyjemnością doradzę i pomogę dobrać najlepsze rozwiązanie dla Twojego auta.<br><br>" +
+          "Nazywam się <strong>Kamil</strong> – jestem właścicielem <strong>KabeTintLeather</strong> i specjalistą od detailingu z ponad 10-letnim doświadczeniem. Każdą usługę wykonuję osobiście – z pełnym zaangażowaniem i dbałością o detale. " +
+          "Działam głównie na terenie <strong>Opola</strong> i okolicznych miejscowości.<br><br>" +
+          "Zajrzyj do <a href='/kontakt'>sekcji kontakt</a>, zadzwoń lub napisz – odpowiadam osobiście.",
       },
     ],
     links: {
@@ -635,15 +747,15 @@ const pagesContent = {
       },
       detailingLink: {
         href: "/uslugi/autokosmetyka",
-        text: "detailing",
+        text: "autokosmetyka",
+      },
+      foliaPPFLink: {
+        href: "/uslugi/folia-ppf-ochrona-lakieru",
+        text: "folie PPF",
       },
       cennikLink: {
         href: "/cennik",
         text: "cennika",
-      },
-      autokosmetykaLink: {
-        href: "/uslugi/autokosmetyka",
-        text: "autokosmetyka",
       },
       obszaryDzialalnosciLink: {
         href: "/obszary-naszej-dzialalnosci",

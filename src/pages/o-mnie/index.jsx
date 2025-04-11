@@ -45,11 +45,11 @@ const AboutPage = () => {
                 <span className={classes.highlight}>Kamil Brzoskwinia</span> i
                 jestem właścicielem firmy{" "}
                 <span className={classes.highlight}>KabeTintLeather</span>. Moja
-                pasja do motoryzacji rozpoczęła się w wieku 15 lat, a od ponad
-                10 lat profesjonalnie zajmuję się{" "}
+                pasja związana z motoryzacją rozpoczęła się w wieku 15 lat, a od
+                ponad 10 lat profesjonalnie zajmuję się{" "}
                 <span className={classes.highlight}>auto detailingiem</span>.
                 Specjalizuję się w kompleksowej pielęgnacji pojazdów, dbając o
-                każdy, nawet najmniejszy detal.
+                każdy najmniejszy detal.
               </motion.p>
               <motion.p
                 className={classes.aboutMe__text}
@@ -58,8 +58,8 @@ const AboutPage = () => {
                 variants={textVariant(0.4)}
                 viewport={{ once: true }}
               >
-                W swojej pracy korzystam z najwyższej jakości produktów i
-                nowoczesnych technologii, co pozwala mi osiągać doskonałe
+                W swojej pracy wykorzystuje najwyższej jakości produkty i
+                nowoczesne technologie, co pozwala mi osiągać doskonałe
                 rezultaty. Moje usługi obejmują{" "}
                 <Link
                   href={"/uslugi/pranie-tapicerki"}
@@ -131,10 +131,10 @@ const AboutPage = () => {
                 variants={textVariant(0.8)}
                 viewport={{ once: true }}
               >
-                Moim celem jest nie tylko poprawa wyglądu samochodu, ale także
-                zapewnienie jego długotrwałej ochrony i zwiększenie wartości.
-                Każde zlecenie traktuję indywidualnie, dostosowując usługi do
-                potrzeb i oczekiwań klienta.
+                Moim celem jest nie tylko poprawa wyglądu samochodu, ale również
+                zapewnienie jego długotrwałej ochrony i zwiększenie wartości
+                auta. Każde zlecenie traktuję indywidualnie, dostosowując usługi
+                do potrzeb i oczekiwań klienta.
               </motion.p>
               <motion.p
                 className={classes.aboutMe__text}
@@ -143,9 +143,9 @@ const AboutPage = () => {
                 variants={textVariant(1)}
                 viewport={{ once: true }}
               >
-                Jeśli chcesz, aby Twój samochód wyglądał jak nowy i był
-                odpowiednio zabezpieczony, zapraszam do kontaktu. Razem zadbamy
-                o to, by Twój pojazd prezentował się doskonale przez długi czas.
+                Jeśli chcesz, aby Twoje auto wyglądało jak nowe i było należycie
+                zabezpieczone, zapraszam do kontaktu. Razem zadbamy o to, by
+                Twój samochód prezentował się doskonale przez długi czas.
               </motion.p>
               <div className={classes.signature}>
                 <span className={classes.signature__name}>
