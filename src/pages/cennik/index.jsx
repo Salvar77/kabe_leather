@@ -26,6 +26,43 @@ const PricingSection = () => {
           ))}
         </ul>
       </section>
+      <div className={styles.pricingInfo}>
+        <h2>Cennik usług – KabeTintLeather Opole</h2>
+        <p>
+          Nazywam się Kamil, mam ponad 10 lat doświadczenia w auto detailingu i
+          prowadzę studio <strong>KabeTintLeather w Opolu</strong>. Pomagam
+          kierowcom zadbać o wygląd i czystość samochodu – od{" "}
+          <strong>prania tapicerki</strong>, przez
+          <strong> czyszczenie tapicerki skórzanej</strong>, aż po
+          <strong> korektę lakieru i aplikację powłok ceramicznych</strong>.
+        </p>
+        <p>
+          Każda usługa wyceniana jest indywidualnie – w zależności od wielkości
+          auta, stopnia zabrudzenia i oczekiwanego efektu. Powyższy{" "}
+          <strong>cennik usług detailingowych</strong> ma charakter orientacyjny
+          – pełną ofertę ustalam po krótkiej rozmowie lub oględzinach auta.
+        </p>
+        <p>
+          📞{" "}
+          <strong>
+            Umów się na wycenę – oddzwonię maksymalnie w 15 minut!
+          </strong>
+          <br />
+          ✉️ <a href="mailto:kabetint@gmail.com">kabetint@gmail.com</a>
+          <br />
+          📍 Opole i okolice: Ozimek, Prószków, Komprachcice, Lubniany, Zaodrze,
+          Wrzoski, Malina, Półwieś
+        </p>
+        <p>
+          Szukasz <strong>profesjonalnego detailingu w Opolu</strong>?
+          Interesuje Cię
+          <strong> przyciemnianie szyb</strong>,{" "}
+          <strong>czyszczenie tapicerki</strong> lub
+          <strong> korekta lakieru</strong>? Dobrze trafiłeś – skontaktuj się ze
+          mną już dziś i dołącz do grona zadowolonych klientów.
+        </p>
+      </div>
+
       <div className={styles.priceContact}>
         <Contact />
       </div>

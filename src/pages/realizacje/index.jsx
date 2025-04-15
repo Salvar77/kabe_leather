@@ -30,10 +30,14 @@ import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
 import photoCorrection1 from "../../assets/image/paintCorrection1.jpg";
-import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
+// import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
 import photoCorrection3 from "../../assets/image/paintCorrection3.jpg";
-import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
+// import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
 import photoCorrection5 from "../../assets/image/paintCorrection5.jpeg";
+import photoCorrection6 from "../../assets/image/paintCorrection6.jpg";
+import photoCorrection7 from "../../assets/image/paintCorrection7.jpg";
+import photoCorrection8 from "../../assets/image/paintCorrection8.jpg";
+import photoCorrection9 from "../../assets/image/paintCorrection9.jpg";
 import photoFoilPpf from "../../assets/image/ppf.webp";
 import photoFoilPpf2 from "../../assets/image/ppf2.jpg";
 import photoFoilPpf3 from "../../assets/image/ppf3.jpg";
@@ -164,9 +168,11 @@ export const realizationsData = [
     images: [
       photoCorrection,
       photoCorrection1,
-      photoCorrection2,
+      photoCorrection6,
+      photoCorrection7,
+      photoCorrection8,
+      photoCorrection9,
       photoCorrection3,
-      photoCorrection4,
       photoCorrection5,
     ],
     image: photoCorrection,

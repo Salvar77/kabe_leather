@@ -21,7 +21,7 @@ const Contact = () => {
         "Musisz wyrazić zgodę na przetwarzanie danych osobowych."
       );
       setShowModal(true);
-      return; 
+      return;
     }
 
     try {
@@ -38,7 +38,6 @@ const Contact = () => {
         setMessageStatus("Wiadomość wysłana pomyślnie!");
         console.log("Wiadomość wysłana: ", data.message);
 
-       
         if (typeof window !== "undefined" && window.gtag) {
           window.gtag("event", "conversion", {
             send_to: "AW-16652411588/FSKBCKn448gZEMTFvoQ-",
@@ -77,11 +76,12 @@ const Contact = () => {
           <p>Miasto: 45-273 Opole</p>
           <p>
             <FaPhoneAlt /> Telefon:{" "}
-            <span
+            <a
+              href="tel:881325631"
               className={`${classes.highlightedText} ${classes.noLinkStyle}`}
             >
               881 325 631
-            </span>
+            </a>
           </p>
           <p>
             <FaEnvelope /> E-mail: kabetint@gmail.com

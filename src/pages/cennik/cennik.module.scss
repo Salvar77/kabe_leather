@@ -78,13 +78,44 @@
   padding: 0;
 }
 
+.pricingInfo {
+  color: $dark-smooth;
+  max-width: 800px;
+  margin: 4rem auto 2rem auto;
+  padding: 2rem;
+  line-height: 1.6;
+  background: rgba($white-smooth, 0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 1rem rgba($dark-smooth, 0.1);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $blue-after;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 @media screen and (min-width: 992px) {
   .pricingSection {
     margin-top: 7.6rem;
   }
+
   .pricingHeader {
     font-size: 3rem;
   }
+
   .priceContact {
     max-width: 1100px;
     margin: 0 auto;
@@ -96,5 +127,20 @@
 
   .servicePrice {
     background: rgba($white-smooth, 0.3);
+  }
+
+  .pricingInfo {
+    max-width: 950px;
+    padding: 2rem 3rem;
+    box-shadow: 0 0.6rem 1.2rem rgba($dark-smooth, 0.12);
+
+    a {
+      color: $blue-after;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }

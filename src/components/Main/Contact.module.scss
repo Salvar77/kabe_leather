@@ -143,7 +143,6 @@
 
 .noLinkStyle {
   text-decoration: none;
-  cursor: default;
   -webkit-text-decoration: none;
 }
 
@@ -291,7 +290,7 @@
   .contactSection {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding-top: 15vh;
+    padding-top: 10vh;
 
     .contactInfo,
     .contactForm {

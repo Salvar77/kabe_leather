@@ -30,17 +30,40 @@
 }
 
 .areaList {
-  margin: 15px auto;
   max-width: 800px;
-  padding-left: 20px;
+  margin: 0 auto 20px;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  font-family: inherit;
+  font-weight: normal;
 
   li {
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 }
 
 .contactText {
   text-align: center;
+}
+
+.areaText a,
+.contactText a {
+  color: $blue-after;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: darken($blue-after, 10%);
+    text-decoration: underline;
+  }
 }
 
 .contactLink {
@@ -53,6 +76,11 @@
   &:hover {
     color: darken($blue-after, 15%);
   }
+}
+
+.strong {
+  font-weight: 700;
+  color: $dark-smooth;
 }
 
 .mapContainer {
