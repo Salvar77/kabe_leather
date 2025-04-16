@@ -1145,68 +1145,68 @@ const referencyImages = [
 ];
 
 const services = [
-  { name: "Mycie ręczne pojazdu", price: "80zł", icon: <FaCar /> },
+  { name: "Mycie ręczne pojazdu", price: "100 zł", icon: <FaCar /> },
   {
     name: "Mycie ręczne pojazdu z powłoką syntetyczną",
-    price: "150zł",
+    price: "200 zł",
     icon: <FaSprayCan />,
   },
   {
     name: "Pranie tapicerki materiałowej (wnętrze auta)",
-    price: "300zł",
+    price: "250 zł",
     icon: <GiAutoRepair />,
   },
   {
     name: "Czyszczenie tapicerki skórzanej (5 foteli w samochodzie osobowym)",
-    price: "350zł",
+    price: "350 zł",
     icon: <FaCogs />,
   },
   {
     name: "Impregnacja tapicerki skórzanej",
-    price: "150zł",
+    price: "150 zł",
     icon: <FaShieldAlt />,
   },
   {
     name: "Renowacja tapicerki skórzanej",
-    price: "OD 200zł",
+    price: "od 200 zł",
     icon: <FaCogs />,
   },
   {
     name: "Renowacja kierownicy skórzanej",
-    price: "250zł",
+    price: "250 zł",
     icon: <GiCarWheel />,
   },
   {
     name: "Kompleksowe czyszczenie wnętrza bez prania tapicerki / czyszczenia skóry",
-    price: "200zł",
+    price: "200 zł",
     icon: <FaCar />,
   },
   {
     name: "Kompleksowe czyszczenie wnętrza z praniem tapicerki / czyszczeniem skóry",
-    price: "500zł",
+    price: "500 zł",
     icon: <FaCar />,
   },
   {
     name: "Mycie ręczne z powłoką, kompleksowe czyszczenie wnętrza bez prania tapicerki / czyszczenia skóry",
-    price: "350zł",
+    price: "350 zł",
     icon: <FaSprayCan />,
   },
   {
     name: "Mycie ręczne, kompleksowe czyszczenie wnętrza wraz z praniem tapicerki / czyszczeniem skór oraz powłoką syntetyczną",
-    price: "600zł",
+    price: "600 zł",
     icon: <FaCar />,
   },
   {
     name: "Przyciemnianie szyb samochodowych",
-    price: "OD 450zł",
+    price: "od 450 zł",
     icon: <FaTint />,
   },
   {
     name: "Naprawa podsufitki samochodowej",
-    price: "OD 600zł",
+    price: "od 600 zł",
     icon: <GiAutoRepair />,
   },
-  { name: "Korekta lakieru", price: "OD 800zł", icon: <FaPaintRoller /> },
+  { name: "Korekta lakieru", price: "od 800 zł", icon: <FaPaintRoller /> },
   {
     name: "Ochronna folia PPF",
     price: "Cena ustalana indywidualnie",
@@ -1214,7 +1214,7 @@ const services = [
   },
   {
     name: "Powłoka ceramiczna",
-    price: "OD 1400zł",
+    price: "od 1400 zł",
     icon: <FaSprayCan />,
   },
 ];
