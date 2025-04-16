@@ -53,7 +53,7 @@ import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
 import referencyPhoto2 from "../src/assets/image/referrency.jpg";
 
 import headlightPolishing from "../src/assets/image/headlight.jpeg";
-import headlightPolishing2 from "../src/assets/image/headlight2.JPG";
+import headlightPolishing2 from "../src/assets/image/headlight2.jpg";
 
 export {
   blogBeforeAfter1,
