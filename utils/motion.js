@@ -1,3 +1,17 @@
+// /src/utils/motion.js
+
+export const staggerContainer = (staggerChildren, delayChildren) => {
+  return {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: staggerChildren,
+        delayChildren: delayChildren || 0,
+      },
+    },
+  };
+};
+
 export const textVariant = (delay) => {
   return {
     hidden: {
@@ -138,18 +152,6 @@ export const blurUp = (delay, duration) => {
         delay: delay,
         duration: duration,
         ease: "easeInOut",
-      },
-    },
-  };
-};
-
-export const staggerContainer = (staggerChildren, delayChildren) => {
-  return {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: staggerChildren,
-        delayChildren: delayChildren || 0,
       },
     },
   };
