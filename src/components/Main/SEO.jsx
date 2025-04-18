@@ -147,6 +147,11 @@ const SEO = ({
         "@type": "DefinedRegion",
         addressCountry: "PL",
       },
+      shippingRate: {
+        "@type": "MonetaryAmount",
+        value: 0,
+        currency: "PLN",
+      },
       deliveryTime: {
         "@type": "ShippingDeliveryTime",
         handlingTime: {
@@ -166,7 +171,8 @@ const SEO = ({
     hasMerchantReturnPolicy: {
       "@type": "MerchantReturnPolicy",
       isReturnable: true,
-      returnPolicyCategory: "RefundPolicy",
+      returnPolicyCategory:
+        "https://schema.org/MerchantReturnFiniteReturnWindow",
       merchantReturnDays: 14,
       returnMethod: "ReturnByMail",
       returnFees: "FreeReturn",
@@ -248,7 +254,7 @@ const SEO = ({
         "@type": "Offer",
         name: "Mycie ręczne pojazdu",
         url: url,
-        price: "80",
+        price: "100",
         priceCurrency: "PLN",
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
@@ -259,7 +265,7 @@ const SEO = ({
         "@type": "Offer",
         name: "Mycie ręczne pojazdu z powłoką syntetyczną",
         url: url,
-        price: "150",
+        price: "200",
         priceCurrency: "PLN",
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
@@ -270,7 +276,7 @@ const SEO = ({
         "@type": "Offer",
         name: "Pranie tapicerki materiałowej (wnętrze auta)",
         url: url,
-        price: "300",
+        price: "250",
         priceCurrency: "PLN",
         itemCondition: "https://schema.org/NewCondition",
         availability: "https://schema.org/InStock",
