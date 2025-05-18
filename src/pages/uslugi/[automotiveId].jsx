@@ -12,15 +12,15 @@ export async function getServerSideProps(context) {
     servicesData.find((service) => service.id === `uslugi/${automotiveId}`) ||
     null;
 
+  if (!automotive) {
+    return { notFound: true };
+  }
+
   const isMobile = context.req.headers["user-agent"]
     .toLowerCase()
     .includes("mobi");
 
-  const currentImage = automotive
-    ? isMobile
-      ? automotive.image
-      : automotive.largeImage
-    : null;
+  const currentImage = isMobile ? automotive.image : automotive.largeImage;
 
   return {
     props: { automotive, currentImage },
