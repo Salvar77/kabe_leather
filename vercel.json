@@ -4,6 +4,11 @@
       "source": "/jak-wyczyscic-tapicerke-samochodowa",
       "destination": "/blog/jak-wyczyscic-tapicerke-samochodowa",
       "permanent": true
+    },
+    {
+      "source": "/uslugi/renowacja-tapicerki-skorzanej",
+      "destination": "/uslugi/renowacja-i-czyszczenie-skor",
+      "permanent": true
     }
   ]
 }
