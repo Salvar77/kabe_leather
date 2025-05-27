@@ -46,6 +46,7 @@ import ceramicCoatingImage from "../../assets/image/ceramicCoating.jpeg";
 import ceramicCoatingImage2 from "../../assets/image/ceramicCoating2.jpeg";
 import { headlightPolishing } from "../../../utils";
 import { headlightPolishing2 } from "../../../utils";
+import { headlightPolishing3 } from "../../../utils";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
@@ -205,7 +206,7 @@ export const realizationsData = [
   {
     id: "polerowanie-reflektorow",
     description: "Polerowanie Reflektorów",
-    images: [headlightPolishing, headlightPolishing2],
+    images: [headlightPolishing, headlightPolishing2, headlightPolishing3],
     image: headlightPolishing,
     largeImage: headlightPolishing,
     largeImageWidth: 1920,

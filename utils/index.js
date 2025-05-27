@@ -54,6 +54,7 @@ import referencyPhoto2 from "../src/assets/image/referrency.jpg";
 
 import headlightPolishing from "../src/assets/image/headlight.jpeg";
 import headlightPolishing2 from "../src/assets/image/headlight2.jpg";
+import headlightPolishing3 from "../src/assets/image/headlight3.jpg";
 
 export {
   blogBeforeAfter1,
@@ -107,4 +108,5 @@ export {
   blogFoto20,
   headlightPolishing,
   headlightPolishing2,
+  headlightPolishing3,
 };

@@ -40,6 +40,7 @@ import {
   blogFotoMain6,
   blogFotoMain7,
   headlightPolishing,
+  headlightPolishing3,
 } from "../utils/index";
 
 import {
@@ -1129,7 +1130,7 @@ const pagesContent = {
         text: "obszary naszej działalności",
       },
     },
-    images: [headlightPolishing],
+    images: [headlightPolishing, headlightPolishing3],
   },
 };
 
