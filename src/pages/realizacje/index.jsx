@@ -22,14 +22,14 @@ import photoAutoscmetic1 from "../../assets/image/autocosmetic1.jpg";
 import photoAutoscmetic2 from "../../assets/image/autocosmetic2.jpg";
 import photoAutoscmetic3 from "../../assets/image/autocosmetic.png";
 import photoAutoscmetic4 from "../../assets/image/autocosmetic5.jpg";
-import photoAutoscmetic5 from "../../assets/image/blogPhoto3.jpg";
-import photoAutoscmetic6 from "../../assets/image/autocosmetic7-1.jpg";
+import photoAutoscmetic5 from "../../assets/image/autocosmetic6.jpg";
+import photoAutoscmetic6 from "../../assets/image/autocosmetic7.jpg";
+
 import photoClean from "../../assets/image/hero_main.jpg";
 import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
-import photoCorrection1 from "../../assets/image/paintCorrection1.jpg";
 // import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
 import photoCorrection3 from "../../assets/image/paintCorrection3.jpg";
 // import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
@@ -169,7 +169,6 @@ export const realizationsData = [
     description: "Korekta Lakieru",
     images: [
       photoCorrection,
-      photoCorrection1,
       photoCorrection6,
       // photoCorrection7,
       // photoCorrection8,
