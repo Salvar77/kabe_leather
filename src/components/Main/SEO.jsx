@@ -71,39 +71,39 @@ const SEO = ({
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        closes: "20:00:00",
         dayOfWeek: "MONDAY",
         opens: "07:00:00",
+        closes: "20:00:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        closes: "20:00:00",
         dayOfWeek: "TUESDAY",
         opens: "07:00:00",
+        closes: "20:00:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        closes: "20:00:00",
         dayOfWeek: "WEDNESDAY",
         opens: "07:00:00",
+        closes: "20:00:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        closes: "20:00:00",
         dayOfWeek: "THURSDAY",
         opens: "07:00:00",
+        closes: "20:00:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        closes: "20:00:00",
         dayOfWeek: "FRIDAY",
         opens: "07:00:00",
+        closes: "20:00:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        closes: "18:00:00",
         dayOfWeek: "SATURDAY",
         opens: "08:00:00",
+        closes: "18:00:00",
       },
     ],
     sameAs: [
@@ -125,6 +125,11 @@ const SEO = ({
       "https://katalog-firm.cybo.com/PL-biz/kabe-tintleather-pranie-tapicerki",
       "https://znane-firmy.pl/firma/54457+kabe-tintleather.html",
       "https://twojeopinie.com/kabetint-leather",
+      "https://www.polecanymechanik.pl/firma/kabetintleather-pranie-tapicerki-samochodowej-opole-9736668",
+      "https://www.jestporzadek.pl/firma/kabetintleather-pranie-tapicerki-samochodowej-opole-9736668",
+      "https://www.misterwhat.pl/company/1105265-kabetintleather-pranie-tapicerki-samochodowej-opole",
+      "https://panoramafirm.pl/opolskie,,opole,emila_fieldorfa,12/kabetintleather_pranie_tapicerki_samochodowej_opole-bahnfs_ndp.html",
+      "https://www.pkt.pl/firma/kabetintleather-pranie-tapicerki-samochodowej-opole-9736668",
     ],
     areaServed: {
       "@type": "Place",
