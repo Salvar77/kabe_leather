@@ -55,6 +55,16 @@ import { GiCarWheel, GiAutoRepair } from "react-icons/gi";
 
 const blogPosts = [
   {
+    id: 11,
+    title: "Auto detailing – Jak podnieść wartość swojego samochodu",
+    subtitle: "ZWIĘKSZ WARTOŚĆ ODSPRZEDAŻY AUTA",
+    date: "2025-06-08",
+    description:
+      "Dowiedz się, jak profesjonalny auto detailing – od korekty lakieru po pranie tapicerki – może realnie zwiększyć cenę, którą otrzymasz przy sprzedaży samochodu.",
+    link: "/auto-detailing-jak-podniesc-wartosc-samochodu",
+    image: blogMain7,
+  },
+  {
     id: 10,
     title: "Polerowanie reflektorów Opole – Przywróć blask swoim światłom",
     subtitle: "RENOWACJA I POLERKA REFLEKTORÓW SAMOCHODOWYCH",
@@ -1131,6 +1141,79 @@ const pagesContent = {
       },
     },
     images: [headlightPolishing, headlightPolishing3],
+  },
+  "auto-detailing-jak-podniesc-wartosc-samochodu": {
+    title: "Auto detailing – Jak podnieść wartość swojego samochodu",
+    dynamicImage: blogFotoMain42,
+    sections: [
+      {
+        heading: "Kim jestem i dlaczego warto mi zaufać?",
+        content:
+          "Nazywam się Kamil i od ponad dekady doskonalę się w sztuce auto detailingu. w Opolu. Specjalizuję się w kompleksowym <a href='/uslugi/autokosmetyka-i-detailing'>auto detailingu</a> – od <a href='/korekta-lakieru'>korekty lakieru</a>, przez <a href='/uslugi/pranie-tapicerki'>pranie tapicerki</a>, po aplikację <a href='/powloka-ceramiczna'>powłok ceramicznych</a>. Dzięki tysiącom godzin pracy przy setkach aut wiem, które zabiegi realnie podnoszą wartość rynkową pojazdu i jak je bezpiecznie wykonać.",
+      },
+      {
+        heading: "Dlaczego auto detailing zwiększa cenę odsprzedaży?",
+        content:
+          "Kupujący oceniają auto <em>w ciągu pierwszych 7 sekund</em>. Błyszczący lakier, czysta tapicerka i świeży zapach wnętrza sygnalizują, że samochód był <strong>dbany i serwisowany</strong>. Dobrze przygotowany samochód może sprzedać się nawet o <strong>5–15 %</strong> drożej i szybciej, ponieważ wyróżnia się na tle podobnych ofert.",
+      },
+      {
+        heading: "Kluczowe usługi zwiększające wartość pojazdu",
+        content:
+          "<ul>" +
+          "<li><a href='/korekta-lakieru'>Polerowanie i korekta lakieru</a> – usuwa rysy, przywraca głębię koloru.</li>" +
+          "<li><a href='/powloka-ceramiczna'>Powłoka ceramiczna</a> – dodaje blasku i chroni lakier nawet przez 3 lata.</li>" +
+          "<li><a href='/uslugi/pranie-tapicerki'>Pranie tapicerki</a> i <a href='/uslugi/renowacja-i-czyszczenie-skor'>pielęgnacja skóry</a> – usuwa plamy, alergeny i nieprzyjemne zapachy.</li>" +
+          "<li><a href='/polerowanie-reflektorow'>Renowacja reflektorów</a> – poprawia wygląd i bezpieczeństwo jazdy.</li>" +
+          "</ul>",
+      },
+      {
+        heading: "Ile możesz zyskać?",
+        content:
+          "Z mojego doświadczenia wynika, że właściciele aut klasy kompakt, którzy zainwestowali ok. 1500 zł w detailing, uzyskali średnio <strong>3000–4500 zł</strong> wyższą cenę sprzedaży. Przy autach premium ta różnica bywa jeszcze większa.",
+      },
+      {
+        heading: "Co mówią moi klienci?",
+        content:
+          "<blockquote>„Usługi Autodetailingu na wysokim poziomie. Auto wyczyszczone doskonale , lakier się błyszczy jak nowy. Polecam”<br><strong>– Szymon</strong></blockquote>",
+      },
+      {
+        heading: "Gdzie działam?",
+        content:
+          "Swoje usługi świadczę głównie w <strong>Opolu</strong> oraz okolicznych miejscowościach: <strong>Ozimek</strong>, <strong>Prószków</strong>, <strong>Komprachcice</strong>, <strong>Lubniany</strong>. Obsługuję także dzielnice <strong>Zaodrze</strong>, <strong>Wrzoski</strong>, <strong>Malina</strong> i <strong>Półwieś</strong>.",
+      },
+      {
+        heading: "Masz pytania? Skontaktuj się ze mną",
+        content:
+          "Chcesz dowiedzieć się, ile może zyskać Twoje auto po detailingu? <a href='/kontakt'>Napisz lub zadzwoń</a>. Przygotuję indywidualną wycenę i plan działania.<br><br>" +
+          "<strong>KabeTintLeather – Kamil Brzoskwinia</strong><br>" +
+          "📍 ul. Generała Emila Fieldorfa 12, Opole<br>" +
+          "📞 881&nbsp;325&nbsp;631<br>" +
+          "✉️ kabetint@gmail.com",
+      },
+    ],
+    links: {
+      autoDetailingLink: {
+        href: "/uslugi/autokosmetyka-i-detailing",
+        text: "auto detailingu",
+      },
+      korektaLakieruLink: {
+        href: "/korekta-lakieru",
+        text: "korekty lakieru",
+      },
+      pranieTapicerkiLink: {
+        href: "/uslugi/pranie-tapicerki",
+        text: "pranie tapicerki",
+      },
+      powlokaCeramicznaLink: {
+        href: "/powloka-ceramiczna",
+        text: "powłoka ceramiczna",
+      },
+      kontaktLink: {
+        href: "/kontakt",
+        text: "skontaktuj się ze mną",
+      },
+    },
+    images: [blogFotoMain5, blogFoto3, blogFotoMain7],
   },
 };
 
