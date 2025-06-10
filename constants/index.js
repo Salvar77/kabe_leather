@@ -1160,10 +1160,10 @@ const pagesContent = {
         heading: "Kluczowe usługi zwiększające wartość pojazdu",
         content:
           "<ul>" +
-          "<li><a href='/korekta-lakieru'>Polerowanie i korekta lakieru</a> – usuwa rysy, przywraca głębię koloru.</li>" +
-          "<li><a href='/powloka-ceramiczna'>Powłoka ceramiczna</a> – dodaje blasku i chroni lakier nawet przez 3 lata.</li>" +
+          "<li><a href='/uslugi/korekta-lakieru'>Polerowanie i korekta lakieru</a> – usuwa rysy, przywraca głębię koloru.</li>" +
+          "<li><a href='/uslugi/powloka-ceramiczna'>Powłoka ceramiczna</a> – dodaje blasku i chroni lakier nawet przez 3 lata.</li>" +
           "<li><a href='/uslugi/pranie-tapicerki'>Pranie tapicerki</a> i <a href='/uslugi/renowacja-i-czyszczenie-skor'>pielęgnacja skóry</a> – usuwa plamy, alergeny i nieprzyjemne zapachy.</li>" +
-          "<li><a href='/polerowanie-reflektorow'>Renowacja reflektorów</a> – poprawia wygląd i bezpieczeństwo jazdy.</li>" +
+          "<li><a href='/uslugi/polerowanie-reflektorow'>Renowacja reflektorów</a> – poprawia wygląd i bezpieczeństwo jazdy.</li>" +
           "</ul>",
       },
       {
