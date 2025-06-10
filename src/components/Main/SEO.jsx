@@ -9,6 +9,7 @@ const SEO = ({
   isBlogPost = false,
   isProduct = false,
   isHome = false,
+  isService = false,
 }) => {
   const blogSnippet = {
     "@context": "https://schema.org",
@@ -37,7 +38,7 @@ const SEO = ({
 
   const localBusinessSnippet = {
     "@context": "https://schema.org",
-    "@id": "http://www.kabetintleather.opole.pl/",
+    "@id": "https://www.kabetintleather.opole.pl/",
     "@type": "LocalBusiness",
     address: {
       "@type": "PostalAddress",
@@ -66,6 +67,10 @@ const SEO = ({
       { "@type": "Offer", name: "Mycie ciśnieniowe" },
       { "@type": "Offer", name: "Usługi oklejania pojazdów" },
       { "@type": "Offer", name: "Usługa przyciemniania szyb samochodowych" },
+      { "@type": "Offer", name: "Korekta lakieru" },
+      { "@type": "Offer", name: "Folia PPF - ochrona lakieru" },
+      { "@type": "Offer", name: "Powłoka ceramiczna" },
+      { "@type": "Offer", name: "Polerowanie reflektorów" },
     ],
     name: "KabeTintLeather - Pranie tapicerki samochodowej Opole",
     openingHoursSpecification: [
@@ -136,7 +141,7 @@ const SEO = ({
       name: "Opole, Polska",
     },
     telephone: "+48 881 325 631",
-    url: "http://www.kabetintleather.opole.pl/",
+    url: "https://www.kabetintleather.opole.pl/",
   };
 
   const localBusinessSnippetNoReviews = JSON.parse(
@@ -182,6 +187,23 @@ const SEO = ({
       returnMethod: "ReturnByMail",
       returnFees: "FreeReturn",
       applicableCountry: "PL",
+    },
+  };
+
+  const localBusinessBase = {
+    "@type": "LocalBusiness",
+    "@id": "https://www.kabetintleather.opole.pl/",
+    name: "KabeTintLeather Auto Detailing",
+    image: image,
+    url: "https://www.kabetintleather.opole.pl/",
+    telephone: "+48 881 325 631",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Generała Emila Fieldorfa 12",
+      addressLocality: "Opole",
+      addressRegion: "PL",
+      postalCode: "45-273",
+      addressCountry: "PL",
     },
   };
 
@@ -434,16 +456,45 @@ const SEO = ({
     ],
   };
 
-  const structuredData = isBlogPost
-    ? blogSnippet
-    : isProduct
-    ? [
-        isHome ? localBusinessSnippet : localBusinessSnippetNoReviews,
-        productSnippet,
-      ]
-    : isHome
-    ? localBusinessSnippet
-    : localBusinessSnippetNoReviews;
+  const serviceSnippet = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: title,
+    description,
+    url,
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: "Opole, Polska",
+    },
+    provider: {
+      "@type": "LocalBusiness",
+      name: "KabeTintLeather Auto Detailing",
+      telephone: "+48 881 325 631",
+      address: localBusinessBase.address,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Usługi autodetailingu",
+      itemListElement: localBusinessSnippet.makesOffer,
+    },
+  };
+
+  let structuredData;
+  if (isBlogPost) {
+    structuredData = blogSnippet;
+  } else if (isProduct) {
+    structuredData = [
+      isHome ? localBusinessSnippet : localBusinessSnippetNoReviews,
+      productSnippet,
+    ];
+  } else if (isService) {
+    // For service pages include both Service + LocalBusiness
+    structuredData = [serviceSnippet, localBusinessSnippetNoReviews];
+  } else if (isHome) {
+    structuredData = localBusinessSnippet;
+  } else {
+    structuredData = localBusinessSnippetNoReviews;
+  }
 
   return (
     <Head>

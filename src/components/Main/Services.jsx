@@ -20,11 +20,11 @@ import { headlightPolishing } from "../../../utils";
 export const servicesData = [
   {
     id: "uslugi/pranie-tapicerki",
-    description: "Pranie Tapicerki",
+    title: "Pranie Tapicerki",
     image: cleanImg,
     largeImage: cleanImgLarge,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
@@ -33,11 +33,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/renowacja-i-czyszczenie-skor",
-    description: "Renowacja i Czyszczenie Skór",
+    title: "Renowacja i Czyszczenie Skór",
     image: heroImage,
     largeImage: heroImageLarge,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(90, 42, 42, 0.5), rgba(0, 0, 0, 0.5))",
     additionalInfo:
@@ -46,11 +46,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/autokosmetyka",
-    description: "Autokosmetyka ",
+    title: "Autokosmetyka ",
     image: furnitureImage,
     largeImage: furnitureImageLarge,
     largeImageWidth: 1600,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
@@ -58,11 +58,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/przyciemnianie-szyb",
-    description: "Przyciemnianie Szyb",
+    title: "Przyciemnianie Szyb",
     image: tintImage,
     largeImage: tintImageLarge,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
@@ -70,11 +70,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/korekta-lakieru",
-    description: "Korekta Lakieru",
+    title: "Korekta Lakieru",
     image: paintCorrection,
     largeImage: paintCorrectionLarge,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
@@ -82,11 +82,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/folia-ppf-ochrona-lakieru",
-    description: "Folia PPF",
+    title: "Folia PPF",
     image: ppfFoilImage,
     largeImage: ppfFoilImage,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
@@ -94,11 +94,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/powloka-ceramiczna",
-    description: "Powłoka Ceramiczna Opole",
+    title: "Powłoka Ceramiczna Opole",
     image: ceramicCoatingImage,
     largeImage: ceramicCoatingImage,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
@@ -106,11 +106,11 @@ export const servicesData = [
   },
   {
     id: "uslugi/polerowanie-reflektorow",
-    description: "Polerowanie Reflektorów",
+    title: "Polerowanie Reflektorów",
     image: headlightPolishing,
     largeImage: headlightPolishing,
     largeImageWidth: 1920,
-    title: "Sprawdź",
+    description: "Sprawdź",
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
     additionalInfo:
       "Zmatowiałe, pożółkłe reflektory nie tylko pogarszają wygląd auta, ale przede wszystkim obniżają bezpieczeństwo poprzez słabszą widoczność na drodze. Jako specjalista od detailingu z Opola, przywracam reflektorom fabryczny blask – bez konieczności wymiany. Korzystam z profesjonalnych past <strong>3M</strong> i <strong>Menzerna</strong> oraz zabezpieczam powierzchnię warstwą UV. Renowacja reflektorów to szybki, skuteczny i niedrogi sposób na poprawę bezpieczeństwa i wyglądu Twojego samochodu.",

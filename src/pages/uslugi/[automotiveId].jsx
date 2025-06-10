@@ -45,7 +45,7 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
         )}`}
       />
       <section id="tapicerka1" className={classes.automotivePage}>
-        <h1>{automotive.description}</h1>
+        <h1>{automotive.title}</h1>
         <div className={classes.automotivePage__grid}>
           <div className={classes.imageWrapper}>
             {currentImage && (
