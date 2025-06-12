@@ -43,6 +43,7 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
           "uslugi/",
           ""
         )}`}
+        isService
       />
       <section id="tapicerka1" className={classes.automotivePage}>
         <h1>{automotive.title}</h1>
