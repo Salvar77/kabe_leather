@@ -143,7 +143,7 @@ const Services = () => {
                   alt={`${service.description} - profesjonalne pranie tapicerki, czyszczenie samochodu, oraz renowacja wnętrz samochodowych`}
                 />
                 <div className={classes.services__content}>
-                  <p>{service.description}</p>
+                  <p>{service.title}</p>
                   <Link
                     href={`/${service.id}`}
                     className={classes.services__button}

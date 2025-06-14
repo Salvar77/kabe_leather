@@ -41,6 +41,9 @@ import {
   blogFotoMain7,
   headlightPolishing,
   headlightPolishing3,
+  autodetailingBlogPhoto,
+  autodetailingBlogPhoto2,
+  autodetailingBlogPhoto3,
 } from "../utils/index";
 
 import {
@@ -1149,7 +1152,7 @@ const pagesContent = {
       {
         heading: "Kim jestem i dlaczego warto mi zaufać?",
         content:
-          "Nazywam się Kamil i od ponad dekady doskonalę się w sztuce auto detailingu. w Opolu. Specjalizuję się w kompleksowym <a href='/uslugi/autokosmetyka-i-detailing'>auto detailingu</a> – od <a href='/korekta-lakieru'>korekty lakieru</a>, przez <a href='/uslugi/pranie-tapicerki'>pranie tapicerki</a>, po aplikację <a href='/powloka-ceramiczna'>powłok ceramicznych</a>. Dzięki tysiącom godzin pracy przy setkach aut wiem, które zabiegi realnie podnoszą wartość rynkową pojazdu i jak je bezpiecznie wykonać.",
+          "Nazywam się Kamil i od ponad dekady doskonalę się w sztuce auto detailingu w Opolu. Specjalizuję się w kompleksowym <a href='/uslugi/pranie-tapicerki'>auto detailingu</a> – od <a href='/uslugi/korekta-lakieru'>korekty lakieru</a>, przez <a href='/uslugi/pranie-tapicerki'>pranie tapicerki</a>, po aplikację <a href='/uslugi/powloka-ceramiczna'>powłok ceramicznych</a>. Dzięki tysiącom godzin pracy przy setkach aut wiem, które zabiegi realnie podnoszą wartość rynkową pojazdu i jak je bezpiecznie wykonać.",
       },
       {
         heading: "Dlaczego auto detailing zwiększa cenę odsprzedaży?",
@@ -1192,12 +1195,8 @@ const pagesContent = {
       },
     ],
     links: {
-      autoDetailingLink: {
-        href: "/uslugi/autokosmetyka-i-detailing",
-        text: "auto detailingu",
-      },
       korektaLakieruLink: {
-        href: "/korekta-lakieru",
+        href: "/uslugi/korekta-lakieru",
         text: "korekty lakieru",
       },
       pranieTapicerkiLink: {
@@ -1205,7 +1204,7 @@ const pagesContent = {
         text: "pranie tapicerki",
       },
       powlokaCeramicznaLink: {
-        href: "/powloka-ceramiczna",
+        href: "/uslugi/powloka-ceramiczna",
         text: "powłoka ceramiczna",
       },
       kontaktLink: {
@@ -1213,7 +1212,11 @@ const pagesContent = {
         text: "skontaktuj się ze mną",
       },
     },
-    images: [blogFotoMain5, blogFoto3, blogFotoMain7],
+    images: [
+      autodetailingBlogPhoto,
+      autodetailingBlogPhoto3,
+      autodetailingBlogPhoto2,
+    ],
   },
 };
 

@@ -57,6 +57,10 @@ import headlightPolishing2 from "../src/assets/image/headlight2.jpg";
 import headlightPolishing3 from "../src/assets/image/headlight3.JPG";
 import headlightPolishing4 from "../src/assets/image/headlightPhoto.jpg";
 
+import autodetailingBlogPhoto from "../src/assets/image/autocosmetic7.jpg";
+import autodetailingBlogPhoto2 from "../src/assets/image/autocosmetic6.jpg";
+import autodetailingBlogPhoto3 from "../src/assets/image/autocosmetic5.jpg";
+
 export {
   blogBeforeAfter1,
   blogBeforeAfter2,
@@ -111,4 +115,7 @@ export {
   headlightPolishing2,
   headlightPolishing3,
   headlightPolishing4,
+  autodetailingBlogPhoto,
+  autodetailingBlogPhoto2,
+  autodetailingBlogPhoto3,
 };
