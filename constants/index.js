@@ -269,7 +269,7 @@ const pagesContent = {
           "- ❌ nie usuwają bakterii i zapachów,<br>" +
           "- ❌ nie docierają głęboko do wnętrza włókien,<br>" +
           "- ❌ mogą uszkodzić delikatny materiał (np. alcantarę).<br><br>" +
-          "Dlatego najlepiej zlecić <a href='/uslugi/pranie-tapicerki'>czyszczenie tapicerki</a> profesjonaliście. Oszczędzasz czas, unikasz ryzyka i masz gwarancję efektu WOW.",
+          "Dlatego najlepiej zlecić czyszczenie tapicerki profesjonaliście. Oszczędzasz czas, unikasz ryzyka i masz gwarancję efektu WOW.",
       },
       {
         heading: "Jak wygląda profesjonalne czyszczenie?",
@@ -280,12 +280,12 @@ const pagesContent = {
           "3. Pranie ekstrakcyjne (Kärcher) – wypłukuję plamy z głębi włókien<br>" +
           "4. <strong>Neutralizacja zapachów</strong> – stosuję ozonowanie lub środki antybakteryjne (opcjonalnie)<br>" +
           "5. Impregnacja – ochrona materiału przed kolejnymi zabrudzeniami<br><br>" +
-          "Używam tylko profesjonalnych <a href='/uslugi/autokosmetyka'>środków czyszczących</a> dopasowanych do rodzaju tapicerki – bezpiecznych, skutecznych i neutralnych dla wnętrza auta.",
+          "Używam tylko profesjonalnych środków czyszczących dopasowanych do rodzaju tapicerki – bezpiecznych, skutecznych i neutralnych dla wnętrza auta.",
       },
       {
         heading: "Jak często warto prać tapicerkę?",
         content:
-          "Rekomenduję <a href='/uslugi/pranie-tapicerki'>pranie tapicerki samochodowej</a> w zależności od stylu użytkowania auta:<br>" +
+          "Rekomenduję pranie tapicerki samochodowej w zależności od stylu użytkowania auta:<br>" +
           "- co 6 miesięcy – jeśli masz dzieci, psa lub jasną tapicerkę<br>" +
           "- co 12 miesięcy – przy normalnym użytkowaniu auta<br><br>" +
           "Regularne czyszczenie to nie tylko wygląd i zapach, ale też:<br>" +
@@ -308,12 +308,12 @@ const pagesContent = {
           "- <strong>Komprachcice</strong><br>" +
           "- <strong>Lubniany</strong><br>" +
           "- oraz dzielnic: <strong>Zaodrze, Wrzoski, Malina, Półwieś</strong><br><br>" +
-          "Pełną listę lokalizacji znajdziesz w sekcji <a href='/obszary-naszej-dzialalnosci'>obszary naszej działalności</a>.",
+          "Pełną listę lokalizacji znajdziesz w sekcji obszary naszej działalności.",
       },
       {
         heading: "Masz pytania? Skontaktuj się ze mną",
         content:
-          "Chcesz umówić się na usługę, zapytać o szczegóły lub uzyskać wycenę? <a href='/kontakt'>Skontaktuj się ze mną</a> – odpowiadam osobiście.<br><br>" +
+          "Chcesz umówić się na usługę, zapytać o szczegóły lub uzyskać wycenę? Skontaktuj się ze mną – odpowiadam osobiście.<br><br>" +
           "Nazywam się <strong>Kamil</strong> i jestem właścicielem KabeTintLeather. Każde auto traktuję indywidualnie – z precyzją i pasją. Działam lokalnie w Opolu i okolicach.<br><br>" +
           "<strong>KabeTintLeather – Kamil Brzoskwinia</strong><br>" +
           "📍 ul. Generała Emila Fieldorfa 12, Opole<br>" +
