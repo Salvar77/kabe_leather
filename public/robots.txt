@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /private/
+Disallow: /uslugi/%5BautomotiveId%5D
+Disallow: /uslugi/[automotiveId]
 Allow: /
 
 Sitemap: https://www.kabetintleather.opole.pl/sitemap.xml
