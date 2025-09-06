@@ -1,112 +1,80 @@
-import { pagesContent } from "../../../constants";
+import { pagesContent } from "@/constants";
 import Link from "next/link";
-import classes from "./blogStrona.module.scss";
+import classes from "@/styles/blogStrona.module.scss";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 import CTA from "@/components/More/CTA";
-import parse, { domToReact } from "html-react-parser";
+import parse from "html-react-parser";
 
-const specialImagePages = [
-  "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
-  "/jak-wyczyscic-tapicerke-samochodowa",
-  "/jak-dbac-o-skorzana-tapicerke-samochodowa",
-  "/uzywamy-profesjonalnych-produktow",
-  "/powloka-ceramiczna",
-  "/autokosmetyka-i-detailing",
-];
+export async function getStaticPaths() {
+  const paths = Object.keys(pagesContent).map((key) => ({
+    params: { blogId: key },
+  }));
+  return { paths, fallback: "blocking" };
+}
 
-const BlogPost = ({ pageContent, blogId }) => {
-  if (!pageContent) {
-    return <p>Ładowanie...</p>;
-  }
+export async function getStaticProps({ params }) {
+  const pageContent = pagesContent[params.blogId];
+  if (!pageContent) return { notFound: true };
+  return { props: { pageContent, blogId: params.blogId } };
+}
 
-  const isSpecialImage =
-    specialImagePages.includes("/" + blogId) ||
-    pageContent.title.includes("Polerowanie reflektorów");
-
-  const isLargeImage = pageContent.title.includes("Korekta lakieru");
-
-  const isFoliaPPF = pageContent.title.includes("Folia PPF");
-
-  const parseContent = (content) => {
-    return parse(content, {
-      replace: (domNode) => {
-        if (domNode.name === "a" && domNode.attribs?.href?.startsWith("/")) {
-          domNode.attribs.class = classes.linkStyle;
-          return domNode;
-        }
-      },
-    });
-  };
+export default function BlogPost({ pageContent, blogId }) {
+  const isSpecialImage = [
+    "/jak-zabezpieczyc-tapicerke-przed-plamami",
+    "/jak-wyczyscic-tapicerke-samochodowa",
+    "/jak-dbac-o-skorzana-tapicerke-samochodowa",
+    "/uzywamy-profesjonalnych-produktow",
+    "/powloka-ceramiczna",
+    "/autokosmetyka-i-detailing",
+  ].includes("/" + blogId);
 
   return (
-    <div>
+    <>
       <SEO
         title={`${pageContent.title} - KabeTintLeather Blog`}
-        description={`Przeczytaj wpis na blogu: ${
-          pageContent.title
-        }. Dowiedz się więcej o ${
-          pageContent.summary ||
-          "naszych usługach prania tapicerek i autokosmetyce."
-        }`}
-        image={
-          pageContent.dynamicImage ||
-          "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
-        }
+        description={pageContent.description}
+        image={pageContent.dynamicImage || "/images/logo.jpg"}
         url={`https://www.kabetintleather.opole.pl/blog/${blogId}`}
         datePublished={pageContent.date}
-        isBlogPost={true}
+        isBlogPost
       />
 
       <div className={classes.blogPost}>
-        {pageContent.dynamicImage && (
-          <div
-            className={`
-              ${classes.blogPost__image}
-              ${isLargeImage ? classes.largeImage : ""}
-              ${isSpecialImage ? classes.specialImage : ""}
-              ${isFoliaPPF ? classes.foliaMaxWidth : ""}
-            `}
-          >
-            <Image
-              src={pageContent.dynamicImage}
-              alt={`Zdjęcie główne wpisu na blogu: ${pageContent.title} - usługi prania tapicerki i czyszczenia samochodów`}
-              objectFit="cover"
-            />
-          </div>
-        )}
+        <div
+          className={`${classes.blogPost__image} ${
+            isSpecialImage ? classes.specialImage : ""
+          }`}
+        >
+          <Image
+            src={pageContent.dynamicImage}
+            alt={pageContent.title}
+            width={1200}
+            height={600}
+            objectFit="cover"
+          />
+        </div>
 
         <div className={classes.blogPost__box}>
           <h1>{pageContent.title}</h1>
+          <p className={classes.date}>{pageContent.date}</p>
 
-          {pageContent.sections.map((section, index) => {
-            const isTestimonial =
-              section.heading.toLowerCase().includes("opinie") ||
-              section.heading.toLowerCase().includes("mówią moi klienci");
-            return (
-              <div
-                key={index}
-                className={`${classes.section} ${
-                  isTestimonial ? classes.testimonial : ""
-                }`}
-              >
-                <h2>{section.heading}</h2>
-                <div className={classes.section__content}>
-                  {parseContent(section.content, pageContent.links)}
-                </div>
+          {pageContent.sections.map((section, idx) => (
+            <section key={idx} className={classes.section}>
+              <h2>{section.heading}</h2>
+              <div className={classes.section__content}>
+                {parse(section.content)}
               </div>
-            );
-          })}
+            </section>
+          ))}
 
           {pageContent.images && (
             <div className={classes.imageGrid}>
-              {pageContent.images.map((image, index) => (
+              {pageContent.images.map((src, idx) => (
                 <Image
-                  key={index}
-                  src={image}
-                  alt={`Blog image ${
-                    index + 1
-                  } - pranie tapicerki, czyszczenie samochodów`}
+                  key={idx}
+                  src={src}
+                  alt={`${pageContent.title} ${idx}`}
                   width={800}
                   height={450}
                 />
@@ -114,45 +82,13 @@ const BlogPost = ({ pageContent, blogId }) => {
             </div>
           )}
 
-          <Link
-            href="/blog"
-            className={classes.backButton}
-            aria-label="powrót do bloga"
-          >
-            Powrót do bloga
+          <Link href="/blog">
+            <a className={classes.backButton}>← Powrót do bloga</a>
           </Link>
         </div>
       </div>
+
       <CTA />
-    </div>
+    </>
   );
-};
-
-export async function getStaticPaths() {
-  const paths = Object.keys(pagesContent).map((key) => ({
-    params: { blogId: key },
-  }));
-
-  return {
-    paths,
-    fallback: "blocking",
-  };
 }
-
-export async function getStaticProps({ params }) {
-  const pageContent = pagesContent[params.blogId] || null;
-  if (pageContent && !pageContent.dynamicImage) {
-    pageContent.dynamicImage = null;
-  }
-  if (!pageContent) {
-    return { notFound: true };
-  }
-  return {
-    props: {
-      pageContent,
-      blogId: params.blogId,
-    },
-  };
-}
-
-export default BlogPost;

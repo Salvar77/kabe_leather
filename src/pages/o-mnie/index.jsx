@@ -3,10 +3,20 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { textVariant } from "../../../utils/motion";
 import classes from "./o-mnie.module.scss";
-import ownerPhoto from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather.webp";
+
+import backgroundDesktop from "../../assets/image/blogFotoMain4-2.webp";
+import backgroundMobile from "../../assets/image/blogFotoMain4-2-mobile.webp";
+
+import ownerPhotoDesktop from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather.webp";
+import ownerPhotoMobile from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather-mobile.webp";
+
 import SEO from "@/components/Main/SEO";
 
 const AboutPage = () => {
+  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 992;
+  const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
+  const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
+
   return (
     <>
       <SEO
@@ -16,6 +26,16 @@ const AboutPage = () => {
         url="https://www.kabetintleather.opole.pl/o-mnie"
       />
       <div className={classes.backgroundAbout}>
+        <Image
+          src={backgroundImage}
+          alt="Tło strony"
+          fill
+          sizes="100vw"
+          priority
+          className={classes.backgroundAbout__image}
+        />
+        <div className={classes.backgroundAbout__overlay} />
+
         <section id="o-mnie" className={classes.aboutMe}>
           <h1 className={classes.aboutMe__header}>O mnie</h1>
           <div className={classes.aboutMe__grid}>
@@ -27,7 +47,7 @@ const AboutPage = () => {
               viewport={{ once: true }}
             >
               <Image
-                src={ownerPhoto}
+                src={ownerImage}
                 alt="Kamil Brzoskwinia, właściciel KabeTintLeather"
                 className={classes.aboutMe__img}
                 priority
