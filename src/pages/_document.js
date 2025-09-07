@@ -9,7 +9,7 @@ class MyDocument extends Document {
           {/* Google Tag Manager */}
           <Script
             id="gtm-script"
-            strategy="lazyOnload"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){
@@ -29,11 +29,11 @@ class MyDocument extends Document {
           {/* Google Analytics */}
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-            strategy="lazyOnload"
+            strategy="beforeInteractive"
           />
           <Script
             id="ga-script"
-            strategy="lazyOnload"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -47,11 +47,11 @@ class MyDocument extends Document {
           {/* Google Ads */}
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}`}
-            strategy="lazyOnload"
+            strategy="beforeInteractive"
           />
           <Script
             id="google-ads"
-            strategy="lazyOnload"
+            strategy="beforeInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
