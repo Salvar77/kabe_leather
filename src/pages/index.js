@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import AboutUs from "@/components/Main/AboutUs";
 import Services from "@/components/Main/Services";
 import Contact from "@/components/Main/Contact";
