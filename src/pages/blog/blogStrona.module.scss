@@ -44,6 +44,24 @@
       color: #34495e;
     }
 
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding-left: 1rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      &:before {
+        content: "• ";
+        position: absolute;
+        left: 0;
+        color: $blue-after;
+      }
+    }
     &__content {
       color: #707979;
       line-height: 1.5;

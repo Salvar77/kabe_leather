@@ -1,10 +1,10 @@
-import { pagesContent } from "@/constants";
+import { pagesContent } from "../../../constants";
 import Link from "next/link";
-import classes from "@/styles/blogStrona.module.scss";
+import classes from "./blogStrona.module.scss";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 import CTA from "@/components/More/CTA";
-import parse from "html-react-parser";
+import parse, { domToReact } from "html-react-parser";
 
 export async function getStaticPaths() {
   const paths = Object.keys(pagesContent).map((key) => ({
@@ -63,7 +63,18 @@ export default function BlogPost({ pageContent, blogId }) {
             <section key={idx} className={classes.section}>
               <h2>{section.heading}</h2>
               <div className={classes.section__content}>
-                {parse(section.content)}
+                {parse(section.content, {
+                  replace: (node) => {
+                    // Jeśli to element i jego nazwa to 'blockquote'
+                    if (node.type === "tag" && node.name === "blockquote") {
+                      return (
+                        <blockquote className={classes.testimonial}>
+                          {domToReact(node.children)}
+                        </blockquote>
+                      );
+                    }
+                  },
+                })}
               </div>
             </section>
           ))}
@@ -82,8 +93,8 @@ export default function BlogPost({ pageContent, blogId }) {
             </div>
           )}
 
-          <Link href="/blog">
-            <a className={classes.backButton}>← Powrót do bloga</a>
+          <Link href="/blog" className={classes.backButton}>
+            ← Powrót do bloga
           </Link>
         </div>
       </div>
