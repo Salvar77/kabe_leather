@@ -14,31 +14,20 @@ import ownerPhotoMobile from "../../assets/image/owner-kamil-brzoskwinia-kabetin
 import SEO from "@/components/Main/SEO";
 
 const AboutPage = () => {
-  // Użyj stanu do śledzenia szerokości ekranu
-  // Początkowa wartość jest null, co zapobiega błędom po stronie serwera
   const [isDesktop, setIsDesktop] = useState(null);
 
-  // Użyj useEffect, by kod wykonywał się tylko w przeglądarce
   useEffect(() => {
-    // Funkcja do aktualizowania stanu
     const handleResize = () => {
-      // Ustawia stan na true, jeśli szerokość ekranu jest >= 992px
       setIsDesktop(window.innerWidth >= 992);
     };
 
-    // Ustawia początkową wartość po zamontowaniu komponentu
     handleResize();
 
-    // Dodaje nasłuchiwanie na zmianę rozmiaru okna
     window.addEventListener("resize", handleResize);
 
-    // Funkcja czyszcząca po odmontowaniu komponentu
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Pusta tablica zależności, by efekt wywołał się tylko raz
+  }, []);
 
-  // Warunkowo wybieraj obrazy na podstawie stanu `isDesktop`
-  // Pamiętaj, że na początku `isDesktop` jest null, więc te warunki nie będą wywołane
-  // Po hydratacji, `isDesktop` będzie true lub false
   const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
   const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
 
