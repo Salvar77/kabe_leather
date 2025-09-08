@@ -3,14 +3,57 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { textVariant } from "../../../utils/motion";
 import classes from "./o-mnie.module.scss";
+import { useState, useEffect } from "react"; // Dodaj importy useState i useEffect
 
-// Importuj tylko wersje desktop, Next.js zajmie się resztą
 import backgroundDesktop from "../../assets/image/blogFotoMain4-2.webp";
+import backgroundMobile from "../../assets/image/blogFotoMain4-2-mobile.webp";
+
 import ownerPhotoDesktop from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather.webp";
+import ownerPhotoMobile from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather-mobile.webp";
 
 import SEO from "@/components/Main/SEO";
 
 const AboutPage = () => {
+  // Użyj stanu do śledzenia szerokości ekranu
+  // Początkowa wartość jest null, co zapobiega błędom po stronie serwera
+  const [isDesktop, setIsDesktop] = useState(null);
+
+  // Użyj useEffect, by kod wykonywał się tylko w przeglądarce
+  useEffect(() => {
+    // Funkcja do aktualizowania stanu
+    const handleResize = () => {
+      // Ustawia stan na true, jeśli szerokość ekranu jest >= 992px
+      setIsDesktop(window.innerWidth >= 992);
+    };
+
+    // Ustawia początkową wartość po zamontowaniu komponentu
+    handleResize();
+
+    // Dodaje nasłuchiwanie na zmianę rozmiaru okna
+    window.addEventListener("resize", handleResize);
+
+    // Funkcja czyszcząca po odmontowaniu komponentu
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Pusta tablica zależności, by efekt wywołał się tylko raz
+
+  // Warunkowo wybieraj obrazy na podstawie stanu `isDesktop`
+  // Pamiętaj, że na początku `isDesktop` jest null, więc te warunki nie będą wywołane
+  // Po hydratacji, `isDesktop` będzie true lub false
+  const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
+  const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
+
+  // Możesz też warunkowo renderować, jeśli `isDesktop` jest null
+  if (isDesktop === null) {
+    // Możesz tutaj zwrócić prosty, mobilny widok lub loader,
+    // który będzie renderowany na serwerze i pokaże się do czasu hydratacji
+    return (
+      <div className={classes.loadingContainer}>
+        {/* Placeholder lub loader */}
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
   return (
     <>
       <SEO
@@ -21,7 +64,7 @@ const AboutPage = () => {
       />
       <div className={classes.backgroundAbout}>
         <Image
-          src={backgroundDesktop}
+          src={backgroundImage}
           alt="Tło strony"
           fill
           sizes="100vw"
@@ -41,10 +84,9 @@ const AboutPage = () => {
               viewport={{ once: true }}
             >
               <Image
-                src={ownerPhotoDesktop}
+                src={ownerImage}
                 alt="Kamil Brzoskwinia, właściciel KabeTintLeather"
                 className={classes.aboutMe__img}
-                sizes="(max-width: 991px) 100vw, 50vw"
                 priority
               />
             </motion.div>
