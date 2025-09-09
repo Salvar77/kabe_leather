@@ -52,10 +52,11 @@ import blogFoto20 from "../src/assets/image/autocosmetic7.jpg";
 import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
 import referencyPhoto2 from "../src/assets/image/referrency.jpg";
 
-import headlightPolishing from "../src/assets/image/headlight.jpeg";
+import headlightPolishing from "../src/assets/image/headlightPhoto.jpg";
+import headlightPolishingMobile from "../src/assets/image/headlightPhoto-mobile.webp";
 import headlightPolishing2 from "../src/assets/image/headlight2.jpg";
 import headlightPolishing3 from "../src/assets/image/headlight3.JPG";
-import headlightPolishing4 from "../src/assets/image/headlightPhoto.jpg";
+import headlightPolishing4 from "../src/assets/image/headlight.jpeg";
 
 import autodetailingBlogPhoto from "../src/assets/image/autocosmetic7.jpg";
 import autodetailingBlogPhoto2 from "../src/assets/image/autocosmetic6.jpg";
@@ -118,4 +119,5 @@ export {
   autodetailingBlogPhoto,
   autodetailingBlogPhoto2,
   autodetailingBlogPhoto3,
+  headlightPolishingMobile,
 };

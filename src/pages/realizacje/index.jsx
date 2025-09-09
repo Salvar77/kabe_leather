@@ -3,8 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import classes from "./realizacje.module.scss";
 import photoRealizations from "../../assets/image/blogFotoMain3-1.jpg";
+import photoRealizationsMobile from "../../assets/image/blogFotoMain3-1-mobile.webp";
 import photoRealizations2 from "../../assets/image/blogFoto11.jpg";
+import photoRealizations2Mobile from "../../assets/image/blogFoto11-mobile.webp";
 import photoRealizations3 from "../../assets/image/tint_640.jpg";
+import photoRealizations3Mobile from "../../assets/image/tint_640-mobile.webp";
 // import photoDetailing from "../../assets/image/detailing.jpg";
 // import photoDetailing1 from "../../assets/image/detailing1.jpg";
 // import photoDetailing2 from "../../assets/image/detailing2.jpg";
@@ -26,10 +29,12 @@ import photoAutoscmetic5 from "../../assets/image/autocosmetic6.jpg";
 import photoAutoscmetic6 from "../../assets/image/autocosmetic7.jpg";
 
 import photoClean from "../../assets/image/hero_main.jpg";
+import photoCleanMobile from "../../assets/image/hero_main-mobile.webp";
 import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
+import photoCorrectionMobile from "../../assets/image/paintCorrection-mobile.webp";
 // import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
 import photoCorrection3 from "../../assets/image/paintCorrection3.jpg";
 // import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
@@ -43,8 +48,10 @@ import photoFoilPpf2 from "../../assets/image/ppf2.jpg";
 import photoFoilPpf3 from "../../assets/image/ppf3.jpg";
 import photoFoilPpf4 from "../../assets/image/ppf4.jpeg";
 import ceramicCoatingImage from "../../assets/image/ceramicCoating.jpeg";
+import ceramicCoatingImageMobile from "../../assets/image/ceramicCoating-mobile.webp";
 import ceramicCoatingImage2 from "../../assets/image/ceramicCoating2.jpeg";
 import { headlightPolishing } from "../../../utils";
+import { headlightPolishingMobile } from "../../../utils";
 import { headlightPolishing2 } from "../../../utils";
 import { headlightPolishing3 } from "../../../utils";
 import { headlightPolishing4 } from "../../../utils";
@@ -65,7 +72,7 @@ export const realizationsData = [
     id: "pranie-tapicerki",
     description: "Pranie Tapicerki",
     images: [photoCleaning, photoCleaning2, photoCleaning3],
-    image: photoClean,
+    image: photoCleanMobile,
     largeImage: photoClean,
     largeImageWidth: 1920,
 
@@ -87,7 +94,7 @@ export const realizationsData = [
       photoLeathers5,
       photoLeathers6,
     ],
-    image: photoRealizations,
+    image: photoRealizationsMobile,
     largeImage: photoRealizations,
     largeImageWidth: 1920,
 
@@ -109,7 +116,7 @@ export const realizationsData = [
       photoAutoscmetic5,
       photoAutoscmetic6,
     ],
-    image: photoRealizations2,
+    image: photoRealizations2Mobile,
     largeImage: photoRealizations2,
     largeImageWidth: 1920,
 
@@ -139,7 +146,7 @@ export const realizationsData = [
     id: "przyciemnianie-szyb",
     description: "Przyciemnianie Szyb",
     images: [photoTint3, photoTint2, photoTint1],
-    image: photoRealizations3,
+    image: photoRealizations3Mobile,
     largeImage: photoRealizations3,
     largeImageWidth: 1920,
 
@@ -165,24 +172,7 @@ export const realizationsData = [
     //   },
     // ],
   },
-  {
-    id: "korekta-lakieru",
-    description: "Korekta Lakieru",
-    images: [
-      photoCorrection,
-      photoCorrection6,
-      // photoCorrection7,
-      // photoCorrection8,
-      photoCorrection9,
-      photoCorrection3,
-      photoCorrection5,
-    ],
-    image: photoCorrection,
-    largeImage: photoCorrection,
-    largeImageWidth: 1920,
 
-    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
-  },
   {
     id: "folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
@@ -197,23 +187,41 @@ export const realizationsData = [
     id: "powloka-ceramiczna",
     description: "Powłoka Ceramiczna",
     images: [ceramicCoatingImage, ceramicCoatingImage2],
-    image: ceramicCoatingImage,
+    image: ceramicCoatingImageMobile,
     largeImage: ceramicCoatingImage,
     largeImageWidth: 1920,
 
     gradient: "linear-gradient(rgba(38, 32, 32, 0.5), rgba(40, 31, 31, 0.5))",
   },
   {
+    id: "korekta-lakieru",
+    description: "Korekta Lakieru",
+    images: [
+      photoCorrection,
+      photoCorrection6,
+      // photoCorrection7,
+      // photoCorrection8,
+      photoCorrection9,
+      photoCorrection3,
+      photoCorrection5,
+    ],
+    image: photoCorrectionMobile,
+    largeImage: photoCorrection,
+    largeImageWidth: 1920,
+
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+  },
+  {
     id: "polerowanie-reflektorow",
     description: "Polerowanie Reflektorów",
     images: [
-      headlightPolishing4,
       headlightPolishing,
+      headlightPolishing4,
       headlightPolishing2,
       headlightPolishing3,
     ],
-    image: headlightPolishing4,
-    largeImage: headlightPolishing4,
+    image: headlightPolishingMobile,
+    largeImage: headlightPolishing,
     largeImageWidth: 1920,
 
     gradient: "linear-gradient(rgba(38, 32, 32, 0.5), rgba(40, 31, 31, 0.5))",
@@ -240,7 +248,16 @@ const Realizations = () => {
               >
                 <Image
                   src={realization.image}
-                  alt={`Realizacja - ${realization.description} - profesjonalne pranie tapicerki, czyszczenie samochodu, przyciemnianie szyb`}
+                  alt={`Realizacja - ${realization.description}`}
+                  sizes="(max-width: 991px) 100vw, 0"
+                  className={`${classes.realizations__image} ${classes.mobileImage}`}
+                />
+                {/* Obraz dla wersji desktop */}
+                <Image
+                  src={realization.largeImage}
+                  alt={`Realizacja - ${realization.description} - wersja desktop`}
+                  sizes="(min-width: 992px) 100vw, 0"
+                  className={`${classes.realizations__image} ${classes.desktopImage}`}
                 />
                 <div className={classes.realizations__content}>
                   <p>{realization.description}</p>
