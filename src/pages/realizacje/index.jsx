@@ -240,7 +240,7 @@ const Realizations = () => {
       <section id="realizacje" className={classes.realizations}>
         <h1>Realizacje</h1>
         <div className={classes.realizations__wrapper}>
-          {realizationsData.map((realization) => (
+          {realizationsData.map((realization, index) => (
             <div key={realization.id} className={classes.realizations__item}>
               <div
                 className={classes.realizations__imageWrapper}
