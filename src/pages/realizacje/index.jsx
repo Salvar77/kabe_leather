@@ -78,6 +78,11 @@ export const realizationsData = [
     largeImageWidth: 1920,
 
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    // brands: [
+    //   { src: audi.src, alt: "Audi", backgroundImage: audi1 },
+    //   { src: mercedes.src, alt: "Mercedes", backgroundImage: mercedes1 },
+    //   { src: bmw.src, alt: "BMW", backgroundImage: bmw1 },
+    // ],
   },
   {
     id: "renowacja-i-czyszczenie-skor",
