@@ -44,6 +44,7 @@ import photoCorrection7 from "../../assets/image/paintCorrection7.JPG";
 import photoCorrection8 from "../../assets/image/paintCorrection8.JPG";
 import photoCorrection9 from "../../assets/image/paintCorrection9.JPG";
 import photoFoilPpf from "../../assets/image/ppf.webp";
+import photoFoilPpfMobile from "../../assets/image/ppf-mobile.webp";
 import photoFoilPpf2 from "../../assets/image/ppf2.jpg";
 import photoFoilPpf3 from "../../assets/image/ppf3.jpg";
 import photoFoilPpf4 from "../../assets/image/ppf4.jpeg";
@@ -194,7 +195,7 @@ export const realizationsData = [
     id: "folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
     images: [photoFoilPpf2, photoFoilPpf3, photoFoilPpf4],
-    image: photoFoilPpf,
+    image: photoFoilPpfMobile,
     largeImage: photoFoilPpf,
     largeImageWidth: 1920,
 
