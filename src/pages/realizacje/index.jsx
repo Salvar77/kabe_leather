@@ -251,13 +251,24 @@ const Realizations = () => {
                   alt={`Realizacja - ${realization.description}`}
                   sizes="(max-width: 991px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.mobileImage}`}
+                  // Ustawiasz priority tylko dla pierwszego obrazu w pętli
                   priority={index === 0}
+                  // Dodajesz atrybut fetchpriority tylko dla pierwszego obrazu
+                  // (Pamiętaj o warunku, bo nie chcesz go na wszystkich!)
+                  fetchPriority={index === 0 ? "high" : "auto"}
                 />
+
+                {/* Obraz dla wersji desktop */}
                 <Image
                   src={realization.largeImage}
                   alt={`Realizacja - ${realization.description} - wersja desktop`}
                   sizes="(min-width: 992px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.desktopImage}`}
+                  // Ustawiasz priority tylko dla pierwszego obrazu w pętli
+                  priority={index === 0}
+                  // Dodajesz atrybut fetchpriority tylko dla pierwszego obrazu
+                  // (Pamiętaj o warunku, bo nie chcesz go na wszystkich!)
+                  fetchPriority={index === 0 ? "high" : "auto"}
                 />
                 <div className={classes.realizations__content}>
                   <p>{realization.description}</p>
