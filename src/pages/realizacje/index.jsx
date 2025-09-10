@@ -34,7 +34,7 @@ import photoCleaning from "../../assets/image/cleaning.jpg";
 import photoCleaning2 from "../../assets/image/cleaning2.jpg";
 import photoCleaning3 from "../../assets/image/cleaning3.jpg";
 import photoCorrection from "../../assets/image/paintCorrection.jpg";
-import photoCorrectionMobile from "../../assets/image/paintCorrection-mobile.webp";
+import photoCorrectionMobile from "../../assets/image/paintCorrection-mobile2.webp";
 // import photoCorrection2 from "../../assets/image/paintCorrection2.jpg";
 import photoCorrection3 from "../../assets/image/paintCorrection3.jpg";
 // import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
@@ -172,7 +172,24 @@ export const realizationsData = [
     //   },
     // ],
   },
+  {
+    id: "korekta-lakieru",
+    description: "Korekta Lakieru",
+    images: [
+      photoCorrection,
+      photoCorrection6,
+      // photoCorrection7,
+      // photoCorrection8,
+      photoCorrection9,
+      photoCorrection3,
+      photoCorrection5,
+    ],
+    image: photoCorrectionMobile,
+    largeImage: photoCorrection,
+    largeImageWidth: 1920,
 
+    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+  },
   {
     id: "folia-ppf-ochrona-lakieru",
     description: "Folia PPF",
@@ -192,24 +209,6 @@ export const realizationsData = [
     largeImageWidth: 1920,
 
     gradient: "linear-gradient(rgba(38, 32, 32, 0.5), rgba(40, 31, 31, 0.5))",
-  },
-  {
-    id: "korekta-lakieru",
-    description: "Korekta Lakieru",
-    images: [
-      photoCorrection,
-      photoCorrection6,
-      // photoCorrection7,
-      // photoCorrection8,
-      photoCorrection9,
-      photoCorrection3,
-      photoCorrection5,
-    ],
-    image: photoCorrectionMobile,
-    largeImage: photoCorrection,
-    largeImageWidth: 1920,
-
-    gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
   },
   {
     id: "polerowanie-reflektorow",

@@ -53,7 +53,7 @@ import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
 import referencyPhoto2 from "../src/assets/image/referrency.jpg";
 
 import headlightPolishing from "../src/assets/image/headlightPhoto.jpg";
-import headlightPolishingMobile from "../src/assets/image/headlightPhoto-mobile.webp";
+import headlightPolishingMobile from "../src/assets/image/headlightPhoto-mobile2.webp";
 import headlightPolishing2 from "../src/assets/image/headlight2.jpg";
 import headlightPolishing3 from "../src/assets/image/headlight3.JPG";
 import headlightPolishing4 from "../src/assets/image/headlight.jpeg";
