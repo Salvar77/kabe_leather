@@ -240,7 +240,7 @@ const Realizations = () => {
       <section id="realizacje" className={classes.realizations}>
         <h1>Realizacje</h1>
         <div className={classes.realizations__wrapper}>
-          {realizationsData.map((realization, index) => (
+          {realizationsData.map((realization) => (
             <div key={realization.id} className={classes.realizations__item}>
               <div
                 className={classes.realizations__imageWrapper}
@@ -251,24 +251,14 @@ const Realizations = () => {
                   alt={`Realizacja - ${realization.description}`}
                   sizes="(max-width: 991px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.mobileImage}`}
-                  // Ustawiasz priority tylko dla pierwszego obrazu w pętli
-                  priority={index === 0}
-                  // Dodajesz atrybut fetchpriority tylko dla pierwszego obrazu
-                  // (Pamiętaj o warunku, bo nie chcesz go na wszystkich!)
-                  fetchPriority={index === 0 ? "high" : "auto"}
+                  priority={true}
                 />
-
-                {/* Obraz dla wersji desktop */}
                 <Image
                   src={realization.largeImage}
                   alt={`Realizacja - ${realization.description} - wersja desktop`}
                   sizes="(min-width: 992px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.desktopImage}`}
-                  // Ustawiasz priority tylko dla pierwszego obrazu w pętli
-                  priority={index === 0}
-                  // Dodajesz atrybut fetchpriority tylko dla pierwszego obrazu
-                  // (Pamiętaj o warunku, bo nie chcesz go na wszystkich!)
-                  fetchPriority={index === 0 ? "high" : "auto"}
+                  priority={true}
                 />
                 <div className={classes.realizations__content}>
                   <p>{realization.description}</p>
@@ -276,7 +266,6 @@ const Realizations = () => {
                     href={`/realizacje/${realization.id}`}
                     className={classes.realizations__button}
                     aria-label={`Zobacz więcej o realizacji: ${realization.description}`}
-                    priority={index === 0}
                   >
                     &#10132;
                   </Link>
