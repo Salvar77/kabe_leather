@@ -251,7 +251,7 @@ const Realizations = () => {
                   alt={`Realizacja - ${realization.description}`}
                   sizes="(max-width: 991px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.mobileImage}`}
-                  priority={true}
+                  priority={index === 0}
                 />
                 <Image
                   src={realization.largeImage}
@@ -265,7 +265,7 @@ const Realizations = () => {
                     href={`/realizacje/${realization.id}`}
                     className={classes.realizations__button}
                     aria-label={`Zobacz więcej o realizacji: ${realization.description}`}
-                    priority={true}
+                    priority={index === 0}
                   >
                     &#10132;
                   </Link>
