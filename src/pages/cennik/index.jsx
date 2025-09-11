@@ -1,4 +1,3 @@
-// /src/pages/cennik/index.jsx
 import React from "react";
 import Contact from "@/components/Main/Contact";
 import styles from "./cennik.module.scss";
@@ -31,9 +30,7 @@ const PricingSection = () => (
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <motion.h1 className={styles.pricingHeader} variants={textVariant(0.1)}>
-        Cennik
-      </motion.h1>
+      <h1 className={styles.pricingHeader}>Cennik</h1>
 
       <motion.ul
         className={styles.servicesList}
