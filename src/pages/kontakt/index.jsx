@@ -30,7 +30,7 @@ const ContactSide = () => (
         <motion.h2
           variants={textVariant(0.2)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           Skontaktuj się z KabeTintLeather – Opole
@@ -39,7 +39,7 @@ const ContactSide = () => (
         <motion.p
           variants={fadeIn("up", "tween", 0.3, 0.7)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           Cześć! Nazywam się <span className={classes.bold}>Kamil</span>, mam
@@ -54,7 +54,7 @@ const ContactSide = () => (
         <motion.p
           variants={fadeIn("up", "tween", 0.4, 0.7)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           Masz pytanie? Chcesz zapytać mnie o termin, zakres usługi lub cenę?{" "}
@@ -68,7 +68,7 @@ const ContactSide = () => (
         <motion.h3
           variants={textVariant(0.6)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           Dane kontaktowe
@@ -77,7 +77,7 @@ const ContactSide = () => (
         <motion.p
           variants={fadeIn("up", "tween", 0.7, 0.7)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           <span className={classes.bold}>
@@ -94,7 +94,7 @@ const ContactSide = () => (
         <motion.h3
           variants={textVariant(0.9)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           Godziny otwarcia
@@ -103,7 +103,7 @@ const ContactSide = () => (
         <motion.p
           variants={fadeIn("up", "tween", 1.0, 0.7)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           🕒 Pon.–Pt. 07:00–20:00
@@ -116,7 +116,7 @@ const ContactSide = () => (
         <motion.p
           variants={fadeIn("up", "tween", 1.1, 0.7)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           💬 Wycena jest{" "}
@@ -128,7 +128,7 @@ const ContactSide = () => (
         <motion.h3
           variants={textVariant(1.2)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           Znajdziesz mnie również tutaj:
@@ -138,7 +138,7 @@ const ContactSide = () => (
           className={classes.socialList}
           variants={fadeScale(1.3, 0.7)}
           initial="hidden"
-          whileInView="show"
+          animate="show"
           viewport={{ once: true, amount: 0.3 }}
         >
           <li>
