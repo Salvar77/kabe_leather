@@ -28,7 +28,7 @@ const SectionBlog = () => {
         </header>
 
         <div className={classes.blog__box}>
-          {blogPosts.map((post) => (
+          {blogPosts.map((post, index) => (
             <article key={post.id} className={classes.blog__boxItem}>
               <div className={classes.blog__image}>
                 <Image
@@ -36,6 +36,8 @@ const SectionBlog = () => {
                   alt={`Ilustracja do wpisu na blogu: ${post.title}`}
                   width={400}
                   height={250}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index === 0}
                 />
               </div>
 

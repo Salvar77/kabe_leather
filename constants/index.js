@@ -4,6 +4,7 @@ import {
   blogBeforeAfter10,
   blogMain1,
   blogMain3,
+  blogMain3Mobile,
   blogMain4,
   blogMain5,
   blogMain7,
@@ -21,6 +22,7 @@ import {
   blogFoto10,
   blogFoto11,
   blogFoto12,
+  blogFoto12Mobile,
   blogFoto13,
   blogFoto14,
   blogFoto15,
@@ -40,6 +42,7 @@ import {
   blogFotoMain6,
   blogFotoMain7,
   headlightPolishing,
+  headlightPolishingMobile,
   headlightPolishing3,
   autodetailingBlogPhoto,
   autodetailingBlogPhoto2,
@@ -75,7 +78,8 @@ const blogPosts = [
     description:
       "Zmatowiałe reflektory to nie tylko problem estetyczny, ale także zagrożenie dla bezpieczeństwa na drodze. Dowiedz się, na czym polega polerowanie reflektorów, jakie są jego korzyści i kiedy warto się na nie zdecydować.",
     link: "/polerowanie-reflektorow",
-    image: headlightPolishing,
+    image: headlightPolishingMobile,
+    largeImage: headlightPolishing,
   },
   {
     id: 9,
@@ -116,7 +120,8 @@ const blogPosts = [
     description:
       "Plama na tapicerce samochodowej to problem, którego można uniknąć! Dowiedz się, jak szybko i skutecznie reagować, aby nie doprowadzić do trwałych zabrudzeń. Oto kilka kroków, które warto zastosować, aby utrzymać tapicerkę w czystości.",
     link: "/jak-zapobiec-plamom-na-tapicerce-samochodowej",
-    image: blogMain3,
+    image: blogMain3Mobile,
+    largeImage: blogMain3,
   },
   {
     id: 2,
@@ -137,7 +142,8 @@ const blogPosts = [
     description:
       "Skórzana tapicerka samochodowa wymaga regularnej pielęgnacji. Dowiedz się, jakie środki i techniki stosować, aby tapicerka zachowała swój elegancki wygląd przez wiele lat.",
     link: "/jak-dbac-o-skorzana-tapicerke-samochodowa",
-    image: blogFoto12,
+    image: blogFoto12Mobile,
+    largeImage: blogFoto12,
   },
   {
     id: 4,

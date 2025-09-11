@@ -259,8 +259,6 @@ const Realizations = () => {
                   alt={`Realizacja - ${realization.description} - wersja desktop`}
                   sizes="(min-width: 992px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.desktopImage}`}
-                  priority={index === 0}
-                  fetchPriority={index === 0 ? "high" : undefined}
                 />
                 <div className={classes.realizations__content}>
                   <p>{realization.description}</p>
