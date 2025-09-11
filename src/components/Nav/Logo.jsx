@@ -43,6 +43,7 @@ const Logo = ({ showLogo }) => {
           src={isMobile && !isHomePage && !isAboutPage ? logoSubpage : logoMain}
           alt={ALT_TEXT}
           priority
+          fetchPriority="high"
         />
       </Link>
     </div>

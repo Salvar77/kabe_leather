@@ -252,6 +252,7 @@ const Realizations = () => {
                   sizes="(max-width: 991px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.mobileImage}`}
                   priority={true}
+                  fetchPriority="high"
                 />
                 <Image
                   src={realization.largeImage}
@@ -259,6 +260,7 @@ const Realizations = () => {
                   sizes="(min-width: 992px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.desktopImage}`}
                   priority={true}
+                  fetchPriority="high"
                 />
                 <div className={classes.realizations__content}>
                   <p>{realization.description}</p>
