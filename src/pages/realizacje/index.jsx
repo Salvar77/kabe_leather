@@ -240,7 +240,7 @@ const Realizations = () => {
       <section id="realizacje" className={classes.realizations}>
         <h1>Realizacje</h1>
         <div className={classes.realizations__wrapper}>
-          {realizationsData.map((realization) => (
+          {realizationsData.map((realization, index) => (
             <div key={realization.id} className={classes.realizations__item}>
               <div
                 className={classes.realizations__imageWrapper}
@@ -251,16 +251,16 @@ const Realizations = () => {
                   alt={`Realizacja - ${realization.description}`}
                   sizes="(max-width: 991px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.mobileImage}`}
-                  priority={true}
-                  fetchPriority="high"
+                  priority={index === 0}
+                  fetchPriority={index === 0 ? "high" : undefined}
                 />
                 <Image
                   src={realization.largeImage}
                   alt={`Realizacja - ${realization.description} - wersja desktop`}
                   sizes="(min-width: 992px) 100vw, 0"
                   className={`${classes.realizations__image} ${classes.desktopImage}`}
-                  priority={true}
-                  fetchPriority="high"
+                  priority={index === 0}
+                  fetchPriority={index === 0 ? "high" : undefined}
                 />
                 <div className={classes.realizations__content}>
                   <p>{realization.description}</p>
