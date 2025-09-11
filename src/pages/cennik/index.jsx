@@ -22,33 +22,35 @@ const PricingSection = () => (
       isProduct={true}
     />
 
-    <motion.section
-      id="cennik"
-      className={styles.pricingSection}
-      variants={staggerContainer(0.15, 0.25)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <h1 className={styles.pricingHeader}>Cennik</h1>
-
-      <motion.ul
-        className={styles.servicesList}
-        variants={fadeIn("up", "tween", 0.2, 0.8)}
+    <section id="cennik" className={styles.pricingSection}>
+      <motion.div
+        variants={staggerContainer(0.15, 0.25)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
       >
-        {services.map((service, index) => (
-          <motion.li
-            key={index}
-            className={styles.serviceItem}
-            variants={fadeScale(index * 0.1, 0.6)}
-          >
-            <span className={styles.serviceIcon}>{service.icon}</span>
-            <span className={styles.serviceName}>{service.name}</span>
-            <span className={styles.servicePrice}>{service.price}</span>
-          </motion.li>
-        ))}
-      </motion.ul>
-    </motion.section>
+        <motion.h1 className={styles.pricingHeader} variants={textVariant(0.1)}>
+          Cennik
+        </motion.h1>
+
+        <motion.ul
+          className={styles.servicesList}
+          variants={fadeIn("up", "tween", 0.2, 0.8)}
+        >
+          {services.map((service, index) => (
+            <motion.li
+              key={index}
+              className={styles.serviceItem}
+              variants={fadeScale(index * 0.1, 0.6)}
+            >
+              <span className={styles.serviceIcon}>{service.icon}</span>
+              <span className={styles.serviceName}>{service.name}</span>
+              <span className={styles.servicePrice}>{service.price}</span>
+            </motion.li>
+          ))}
+        </motion.ul>
+      </motion.div>
+    </section>
 
     <motion.div
       className={styles.pricingInfo}
