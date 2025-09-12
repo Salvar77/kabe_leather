@@ -15,6 +15,7 @@ import blogMain3 from "../src/assets/image/blogPhoto2.jpg";
 import blogMain3Mobile from "../src/assets/image/blogPhoto2-mobile.webp";
 import blogMain4 from "../src/assets/image/blogPhoto5.jpg";
 import blogMain5 from "../src/assets/image/blogPhoto4.jpg";
+import blogMain5Mobile from "../src/assets/image/blogPhoto4-mobile.webp";
 import blogMain6 from "../src/assets/image/autocosmetic1.jpg";
 import blogMain7 from "../src/assets/image/autocosmetic_blog.webp";
 
@@ -43,6 +44,7 @@ import blogFoto11 from "../src/assets/image/blogFoto11.jpg";
 import blogFoto12 from "../src/assets/image/detalShot3.jpg";
 import blogFoto12Mobile from "../src/assets/image/detalShot3-mobile.webp";
 import blogFoto13 from "../src/assets/image/ppf.webp";
+import blogFoto13Mobile from "../src/assets/image/ppf-mobile.webp";
 import blogFoto14 from "../src/assets/image/ppf1.webp";
 import blogFoto15 from "../src/assets/image/ppf2.jpg";
 import blogFoto16 from "../src/assets/image/ppf3.jpg";
@@ -78,8 +80,10 @@ export {
   blogMain1,
   blogMain2,
   blogMain3,
+  blogMain3Mobile,
   blogMain4,
   blogMain5,
+  blogMain5Mobile,
   blogMain6,
   blogMain7,
   referencyPhoto1,
@@ -108,6 +112,7 @@ export {
   blogFoto12,
   blogFoto12Mobile,
   blogFoto13,
+  blogFoto13Mobile,
   blogFoto14,
   blogFoto15,
   blogFoto16,

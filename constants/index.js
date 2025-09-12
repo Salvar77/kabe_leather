@@ -7,6 +7,7 @@ import {
   blogMain3Mobile,
   blogMain4,
   blogMain5,
+  blogMain5Mobile,
   blogMain7,
   referencyPhoto1,
   referencyPhoto2,
@@ -47,6 +48,7 @@ import {
   autodetailingBlogPhoto,
   autodetailingBlogPhoto2,
   autodetailingBlogPhoto3,
+  blogFoto13Mobile,
 } from "../utils/index";
 
 import {
@@ -110,7 +112,8 @@ const blogPosts = [
     description:
       "Folia ochronna PPF to nowoczesne rozwiązanie, które skutecznie zabezpiecza lakier samochodowy przed uszkodzeniami mechanicznymi, zarysowaniami oraz negatywnym wpływem czynników atmosferycznych. Dowiedz się, dlaczego warto zainwestować w folię PPF i jak wygląda proces jej aplikacji.",
     link: "/folia-ppf-ochrona-lakieru",
-    image: blogFoto13,
+    image: blogFoto13Mobile,
+    largeImage: blogFoto13,
   },
   {
     id: 1,
@@ -131,7 +134,8 @@ const blogPosts = [
     description:
       "Dowiedz się, jak skutecznie wyczyścić tapicerkę samochodową, aby pozbyć się nawet najtrudniejszych plam i zabrudzeń. Nasze profesjonalne metody czyszczenia pozwolą Ci cieszyć się świeżością wnętrza samochodu przez długi czas.",
     link: "/jak-wyczyscic-tapicerke-samochodowa",
-    image: blogMain5,
+    image: blogMain5Mobile,
+    largeImage: blogMain5,
   },
   {
     id: 3,
