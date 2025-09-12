@@ -1,4 +1,3 @@
-// /src/pages/referencje/index.jsx
 import React from "react";
 import Image from "next/image";
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
@@ -37,6 +36,18 @@ const Referency = () => (
             <Image
               src={photo.src}
               alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
+              width={400} // Podaj naturalną szerokość mobilnego obrazu
+              height={300} // Podaj naturalną wysokość mobilnego obrazu
+              className={classes.mobileImage}
+              priority={i === 0}
+            />
+            <Image
+              src={photo.largeSrc}
+              alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
+              width={800} // Podaj naturalną szerokość dużego obrazu
+              height={600} // Podaj naturalną wysokość dużego obrazu
+              className={classes.desktopImage}
+              priority={i === 0}
             />
           </div>
         ))}

@@ -54,7 +54,9 @@ import blogFoto19 from "../src/assets/image/paintCorrection3.jpg";
 import blogFoto20 from "../src/assets/image/autocosmetic7.jpg";
 
 import referencyPhoto1 from "../src/assets/image/referencyMain.JPG";
+import referencyPhoto1Mobile from "../src/assets/image/referencyMain-mobile.webp";
 import referencyPhoto2 from "../src/assets/image/referrency.jpg";
+import referencyPhoto2Mobile from "../src/assets/image/referrency-mobile.webp";
 
 import headlightPolishing from "../src/assets/image/headlightPhoto.jpg";
 import headlightPolishingMobile from "../src/assets/image/headlightPhoto-mobile2.webp";
@@ -87,7 +89,9 @@ export {
   blogMain6,
   blogMain7,
   referencyPhoto1,
+  referencyPhoto1Mobile,
   referencyPhoto2,
+  referencyPhoto2Mobile,
   blogFotoMain,
   blogFotoMain2,
   blogFotoMain3,

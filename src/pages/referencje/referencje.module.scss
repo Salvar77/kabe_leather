@@ -111,6 +111,10 @@
   }
 }
 
+.desktopImage {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .referencySection {
     padding-top: 10rem;
@@ -127,5 +131,12 @@
     img {
       width: 55rem;
     }
+  }
+
+  .mobileImage {
+    display: none;
+  }
+  .desktopImage {
+    display: block;
   }
 }

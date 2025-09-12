@@ -10,7 +10,9 @@ import {
   blogMain5Mobile,
   blogMain7,
   referencyPhoto1,
+  referencyPhoto1Mobile,
   referencyPhoto2,
+  referencyPhoto2Mobile,
   blogFoto1,
   blogFoto2,
   blogFoto3,
@@ -1232,11 +1234,13 @@ const pagesContent = {
 
 const referencyImages = [
   {
-    src: referencyPhoto1,
+    src: referencyPhoto1Mobile,
+    largeSrc: referencyPhoto1,
     alt: "zdjęcie referencji właściciela Kabe",
   },
   {
-    src: referencyPhoto2,
+    src: referencyPhoto2Mobile,
+    largeSrc: referencyPhoto2,
     alt: "zdjęcie referencji właściciela Kabe",
   },
 ];
