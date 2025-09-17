@@ -11,9 +11,9 @@ import paintCorrectionLarge from "../../assets/image/paintCorrection.jpg";
 import ppfFoilImage from "../../assets/image/ppf-mobile.webp";
 import ppfFoilImageLarge from "../../assets/image/ppf.webp";
 import ceramicCoatingImage from "../../assets/image/ceramicCoating-mobile.webp";
-import ceramicCoatingImageLarge from "../../assets/image/ceramicCoating.JPEG";
-import { headlightPolishing } from "../../../utils";
-import { headlightPolishingMobile } from "../../../utils";
+import ceramicCoatingImageLarge from "../../assets/image/ceramicCoating.jpeg";
+import headlightPolishing from "../../assets/image/headlightPhoto-mobile2.webp";
+import headlightPolishingLarge from "../../assets/image/headlightPhoto.jpg";
 
 export const automotiveImagesData = [
   {
@@ -53,7 +53,7 @@ export const automotiveImagesData = [
   },
   {
     id: "uslugi/polerowanie-reflektorow",
-    image: { src: headlightPolishingMobile, width: 640, height: 427 },
-    largeImage: { src: headlightPolishing, width: 1920, height: 1280 },
+    image: { src: headlightPolishing, width: 640, height: 427 },
+    largeImage: { src: headlightPolishingLarge, width: 1920, height: 1280 },
   },
 ];
