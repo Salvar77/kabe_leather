@@ -11,7 +11,7 @@ import paintCorrectionLarge from "../../assets/image/paintCorrection.jpg";
 import ppfFoilImage from "../../assets/image/ppf-mobile.webp";
 import ppfFoilImageLarge from "../../assets/image/ppf.webp";
 import ceramicCoatingImage from "../../assets/image/ceramicCoating-mobile.webp";
-import ceramicCoatingImageLarge from "../../assets/image/ceramicCoating.jpeg";
+import ceramicCoatingImageLarge from "../../assets/image/ceramicCoating.JPEG";
 import { headlightPolishing } from "../../../utils";
 import { headlightPolishingMobile } from "../../../utils";
 
