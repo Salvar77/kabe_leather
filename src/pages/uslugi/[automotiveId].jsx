@@ -1,6 +1,6 @@
 import React from "react";
 import { servicesData } from "../../components/Main/Services";
-import { automotiveImagesData } from "./automotiveImagesData";
+import { automotiveImagesData } from "../../components/More/automotiveImagesData";
 import classes from "./uslugi.module.scss";
 import Image from "next/image";
 import Link from "next/link";
