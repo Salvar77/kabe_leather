@@ -4,7 +4,7 @@ import furnitureImage from "../../assets/image/services3.webp";
 import furnitureImageLarge from "../../assets/image/services3.jpg";
 import tintImage from "../../assets/image/tint_640.jpg";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
-import cleanImg from "../../assets/image/heroMainWebp640.webp";
+import cleanImg from "../../assets/image/heroMainWebp.webp";
 import cleanImgLarge from "../../assets/image/heroMainWebpBig.webp";
 import paintCorrection from "../../assets/image/paintCorrection.webp";
 import paintCorrectionLarge from "../../assets/image/paintCorrection.jpg";
