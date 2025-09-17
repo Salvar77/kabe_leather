@@ -35,7 +35,7 @@ export async function getServerSideProps(context) {
 }
 
 const AutomotiveUpholstery = ({ automotive, currentImage }) => {
-  if (!automotive) return <p>Usługa nie została znaleziona.</p>;
+  if (!automotive) return <p>Usługa nie została znaleziona..</p>;
 
   return (
     <div>
