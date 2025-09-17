@@ -1,5 +1,6 @@
 import React from "react";
 import { servicesData } from "../../components/Main/Services";
+import { automotiveImagesData } from "./automotiveImagesData";
 import classes from "./uslugi.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +13,11 @@ export async function getServerSideProps(context) {
     servicesData.find((service) => service.id === `uslugi/${automotiveId}`) ||
     null;
 
-  if (!automotive) {
+  const automotiveImages =
+    automotiveImagesData.find((item) => item.id === `uslugi/${automotiveId}`) ||
+    null;
+
+  if (!automotive || !automotiveImages) {
     return { notFound: true };
   }
 
@@ -20,7 +25,9 @@ export async function getServerSideProps(context) {
     .toLowerCase()
     .includes("mobi");
 
-  const currentImage = isMobile ? automotive.image : automotive.largeImage;
+  const currentImage = isMobile
+    ? automotiveImages.image
+    : automotiveImages.largeImage;
 
   return {
     props: { automotive, currentImage },
@@ -51,9 +58,11 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
           <div className={classes.imageWrapper}>
             {currentImage && (
               <Image
-                src={currentImage}
+                src={currentImage.src}
                 alt={`Zdjęcie przedstawiające ${automotive.title.toLowerCase()} - profesjonalne ${automotive.title.toLowerCase()} w Opolu`}
                 className={classes.automotivePage__img}
+                width={currentImage.width}
+                height={currentImage.height}
               />
             )}
           </div>
