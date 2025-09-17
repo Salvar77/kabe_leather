@@ -61,8 +61,7 @@ const AutomotiveUpholstery = ({ automotive, currentImage }) => {
                 src={currentImage.src}
                 alt={`Zdjęcie przedstawiające ${automotive.title.toLowerCase()} - profesjonalne ${automotive.title.toLowerCase()} w Opolu`}
                 className={classes.automotivePage__img}
-                width={currentImage.width}
-                height={currentImage.height}
+                sizes="(max-width: 992px) 100vw, 50vw"
               />
             )}
           </div>
