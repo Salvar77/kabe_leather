@@ -26,8 +26,6 @@ class MyDocument extends Document {
             }}
           />
 
-          {/* Google Ads */}
-
           <link rel="icon" href="/favicon1.ico" />
         </Head>
         <body>
