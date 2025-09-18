@@ -2,7 +2,7 @@ import heroImage from "../../assets/image/services1.webp";
 import heroImageLarge from "../../assets/image/services1.jpg";
 import furnitureImage from "../../assets/image/services3.webp";
 import furnitureImageLarge from "../../assets/image/services3.jpg";
-import tintImage from "../../assets/image/tint_640.jpg";
+import tintImage from "../../assets/image/tint_640-mobile.webp";
 import tintImageLarge from "../../assets/image/tint_1920.jpg";
 import cleanImg from "../../assets/image/heroMainWebp.webp";
 import cleanImgLarge from "../../assets/image/heroMainWebpBig.webp";
