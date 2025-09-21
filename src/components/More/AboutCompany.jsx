@@ -68,18 +68,6 @@ const AboutCompany = () => {
               technicznie sprzętu, a każdemu Zleceniodawcy zapewniamy pełną
               satysfakcję z naszych usług oraz konkurencyjne ceny.
             </motion.p>
-
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              variants={fadeIn("left", "tween", 0.9, 1)}
-              className={classes.aboutLink}
-            >
-              <Link href="/o-mnie" className={classes.aboutLink__button}>
-                Poznaj właściciela firmy →
-              </Link>
-            </motion.div>
           </div>
         </div>
       </section>
