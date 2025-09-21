@@ -192,7 +192,6 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 
 import { referencyImages } from "../../../constants";
 
-// Importuj oba komponenty, aby móc je warunkowo renderować
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
 import ElfsightLazyWrapper from "@/components/Main/ElfsightLazyWrapper";
 
@@ -229,14 +228,14 @@ const Referency = () => {
                 src={photo.src}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.mobileImage}
-                priority={i === 0}
+                priority={i === 0 && isFirstImageInViewport}
                 fetchPriority="high"
               />
               <Image
                 src={photo.largeSrc}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.desktopImage}
-                priority={i === 0}
+                priority={i === 0 && isFirstImageInViewport}
                 fetchPriority="high"
                 loading={i === 0 ? undefined : "lazy"}
               />
