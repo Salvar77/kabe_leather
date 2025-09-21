@@ -228,14 +228,14 @@ const Referency = () => {
                 src={photo.src}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.mobileImage}
-                priority={i === 0 && isFirstImageInViewport}
+                priority={i === 0}
                 fetchPriority="high"
               />
               <Image
                 src={photo.largeSrc}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.desktopImage}
-                priority={i === 0 && isFirstImageInViewport}
+                priority={i === 0}
                 fetchPriority="high"
                 loading={i === 0 ? undefined : "lazy"}
               />
