@@ -11,6 +11,8 @@ import backgroundMobile from "../../assets/image/blogFotoMain4-2-mobile.webp";
 import ownerPhotoDesktop from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather.webp";
 import ownerPhotoMobile from "../../assets/image/owner-kamil-brzoskwinia-kabetintleather-mobile.webp";
 
+import Head from "next/head";
+
 import SEO from "@/components/Main/SEO";
 
 const AboutPage = () => {
@@ -55,6 +57,19 @@ const AboutPage = () => {
         image="https://www.kabetintleather.opole.pl/owner-kamil-brzoskwinia-kabetintleather.jpg"
         url="https://www.kabetintleather.opole.pl/o-mnie"
       />
+      <Head>
+        <link
+          rel="preload"
+          href="/_next/static/media/owner-kamil-brzoskwinia-kabetintleather.webp"
+          as="image"
+          type="image/webp"
+          imageSrcSet="
+            /_next/static/media/owner-kamil-brzoskwinia-kabetintleather.webp 1x,
+            /_next/static/media/owner-kamil-brzoskwinia-kabetintleather-mobile.webp 2x
+          "
+          imageSizes="(max-width: 991px) 100vw, 50vw"
+        />
+      </Head>
       <div className={classes.backgroundAbout}>
         <Image
           src={backgroundImage}
@@ -79,7 +94,10 @@ const AboutPage = () => {
                 src={ownerImage}
                 alt="Kamil Brzoskwinia, właściciel KabeTintLeather"
                 className={classes.aboutMe__img}
-                priority
+                priority={true}
+                fetchPriority="high"
+                sizes="(max-width: 991px) 100vw, 50vw"
+                quality={85}
               />
             </motion.div>
             <div className={classes.aboutMe__content}>
