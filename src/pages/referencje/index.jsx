@@ -185,7 +185,7 @@ import React from "react";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 import classes from "./referencje.module.scss";
-
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn, fadeScale } from "../../../utils/motion";
 import useMediaQuery from "../../hooks/useMediaQuery";
@@ -195,8 +195,21 @@ import { referencyImages } from "../../../constants";
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
 import ElfsightLazyWrapper from "@/components/Main/ElfsightLazyWrapper";
 
+export const useIsDesktop = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkDesktop = () => setIsDesktop(window.innerWidth >= 769);
+    checkDesktop();
+    window.addEventListener("resize", checkDesktop);
+    return () => window.removeEventListener("resize", checkDesktop);
+  }, []);
+
+  return isDesktop;
+};
+
 const Referency = () => {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useIsDesktop();
 
   return (
     <div>
@@ -228,17 +241,18 @@ const Referency = () => {
                 src={photo.src}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.mobileImage}
-                priority={i === 0}
+                priority={i === 0 && !isDesktop}
                 fetchPriority="high"
               />
-              <Image
-                src={photo.largeSrc}
-                alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
-                className={classes.desktopImage}
-                priority={i === 0}
-                fetchPriority="auto"
-                loading={i === 0 ? undefined : "lazy"}
-              />
+              {isDesktop && (
+                <Image
+                  src={photo.largeSrc}
+                  alt={`Referencje - ${photo.alt}...`}
+                  className={classes.desktopImage}
+                  priority={i === 0}
+                  fetchPriority={i === 0 ? "high" : "auto"}
+                />
+              )}
             </div>
           ))}
         </div>
