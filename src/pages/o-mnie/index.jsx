@@ -62,6 +62,7 @@ const AboutPage = () => {
           fill
           sizes="100vw"
           priority
+          fetchPriority="high"
           className={classes.backgroundAbout__image}
         />
         <div className={classes.backgroundAbout__overlay} />
