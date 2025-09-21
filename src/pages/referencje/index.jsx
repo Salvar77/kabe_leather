@@ -230,14 +230,14 @@ const Referency = () => {
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.mobileImage}
                 priority={i === 0}
-                fetchPriority="high"
+                fetchPriority={i === 0 ? "high" : "auto"}
               />
               <Image
                 src={photo.largeSrc}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.desktopImage}
                 priority={i === 0}
-                fetchPriority="high"
+                fetchPriority={i === 0 ? "high" : "auto"}
               />
             </div>
           ))}
