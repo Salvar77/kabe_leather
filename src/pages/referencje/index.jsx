@@ -236,7 +236,7 @@ const Referency = () => {
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.desktopImage}
                 priority={i === 0}
-                fetchPriority="high"
+                fetchPriority="auto"
                 loading={i === 0 ? undefined : "lazy"}
               />
             </div>
