@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { textVariant } from "../../../utils/motion";
 import classes from "./o-mnie.module.scss";
-import { useState, useEffect } from "react"; // Dodaj importy useState i useEffect
+import { useState, useEffect } from "react";
 
 import backgroundDesktop from "../../assets/image/blogFotoMain4-2.webp";
 import backgroundMobile from "../../assets/image/blogFotoMain4-2-mobile.webp";
@@ -31,17 +31,21 @@ const AboutPage = () => {
   const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
   const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
 
-  // Możesz też warunkowo renderować, jeśli `isDesktop` jest null
   if (isDesktop === null) {
-    // Możesz tutaj zwrócić prosty, mobilny widok lub loader,
-    // który będzie renderowany na serwerze i pokaże się do czasu hydratacji
     return (
       <div className={classes.loadingContainer}>
-        {/* Placeholder lub loader */}
         <p>Loading...</p>
       </div>
     );
   }
+
+  const motionProps = isDesktop
+    ? {
+        initial: "hidden",
+        whileInView: "show",
+        viewport: { once: true },
+      }
+    : {};
 
   return (
     <>
@@ -67,10 +71,8 @@ const AboutPage = () => {
           <div className={classes.aboutMe__grid}>
             <motion.div
               className={classes.aboutMe__box}
-              initial="hidden"
-              whileInView="show"
-              variants={textVariant(0.15)}
-              viewport={{ once: true }}
+              {...motionProps}
+              variants={isDesktop ? textVariant(0.15) : {}}
             >
               <Image
                 src={ownerImage}
@@ -82,10 +84,8 @@ const AboutPage = () => {
             <div className={classes.aboutMe__content}>
               <motion.p
                 className={classes.aboutMe__text}
-                initial="hidden"
-                whileInView="show"
-                variants={textVariant(0.2)}
-                viewport={{ once: true }}
+                {...motionProps}
+                variants={isDesktop ? textVariant(0.2) : {}}
               >
                 Nazywam się{" "}
                 <span className={classes.highlight}>Kamil Brzoskwinia</span> i
@@ -99,10 +99,8 @@ const AboutPage = () => {
               </motion.p>
               <motion.p
                 className={classes.aboutMe__text}
-                initial="hidden"
-                whileInView="show"
-                variants={textVariant(0.4)}
-                viewport={{ once: true }}
+                {...motionProps}
+                variants={isDesktop ? textVariant(0.4) : {}}
               >
                 W swojej pracy wykorzystuje najwyższej jakości produkty i
                 nowoczesne technologie, co pozwala mi osiągać doskonałe
@@ -152,10 +150,8 @@ const AboutPage = () => {
               </motion.p>
               <motion.p
                 className={classes.aboutMe__text}
-                initial="hidden"
-                whileInView="show"
-                variants={textVariant(0.6)}
-                viewport={{ once: true }}
+                {...motionProps}
+                variants={isDesktop ? textVariant(0.6) : {}}
               >
                 Zaufało mi już wielu klientów z Opola i okolic, którzy docenili
                 moje zaangażowanie i profesjonalizm. Opinie zadowolonych
@@ -172,10 +168,8 @@ const AboutPage = () => {
               </motion.p>
               <motion.p
                 className={classes.aboutMe__text}
-                initial="hidden"
-                whileInView="show"
-                variants={textVariant(0.8)}
-                viewport={{ once: true }}
+                {...motionProps}
+                variants={isDesktop ? textVariant(0.8) : {}}
               >
                 Moim celem jest nie tylko poprawa wyglądu samochodu, ale również
                 zapewnienie jego długotrwałej ochrony i zwiększenie wartości
@@ -184,10 +178,8 @@ const AboutPage = () => {
               </motion.p>
               <motion.p
                 className={classes.aboutMe__text}
-                initial="hidden"
-                whileInView="show"
-                variants={textVariant(1)}
-                viewport={{ once: true }}
+                {...motionProps}
+                variants={isDesktop ? textVariant(1) : {}}
               >
                 Jeśli chcesz, aby Twoje auto wyglądało jak nowe i było należycie
                 zabezpieczone, zapraszam do kontaktu. Razem zadbamy o to, by
