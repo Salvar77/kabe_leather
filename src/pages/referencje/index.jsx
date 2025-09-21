@@ -185,6 +185,7 @@ import React from "react";
 import Image from "next/image";
 import SEO from "@/components/Main/SEO";
 import classes from "./referencje.module.scss";
+import { useInView } from "react-intersection-observer";
 
 import { motion } from "framer-motion";
 import { textVariant, fadeIn, fadeScale } from "../../../utils/motion";
@@ -197,6 +198,11 @@ import ElfsightLazyWrapper from "@/components/Main/ElfsightLazyWrapper";
 
 const Referency = () => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  const [firstImageRef, firstImageInView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
 
   return (
     <div>
@@ -223,19 +229,23 @@ const Referency = () => {
 
         <div className={classes.photosContainer}>
           {referencyImages.map((photo, i) => (
-            <div key={i} className={classes.photoWrapper}>
+            <div
+              key={i}
+              className={classes.photoWrapper}
+              ref={i === 0 ? firstImageRef : null}
+            >
               <Image
                 src={photo.src}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.mobileImage}
-                priority={i === 0 && isFirstImageInViewport}
+                priority={i === 0 && firstImageInView}
                 fetchPriority="high"
               />
               <Image
                 src={photo.largeSrc}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.desktopImage}
-                priority={i === 0 && isFirstImageInViewport}
+                priority={i === 0 && firstImageInView}
                 fetchPriority="high"
                 loading={i === 0 ? undefined : "lazy"}
               />
