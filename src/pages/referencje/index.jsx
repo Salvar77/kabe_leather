@@ -230,14 +230,15 @@ const Referency = () => {
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.mobileImage}
                 priority={i === 0}
-                fetchPriority={i === 0 ? "high" : "auto"}
+                fetchPriority="high"
               />
               <Image
                 src={photo.largeSrc}
                 alt={`Referencje - ${photo.alt} - pranie tapicerki, czyszczenie samochodu`}
                 className={classes.desktopImage}
                 priority={i === 0}
-                fetchPriority={i === 0 ? "high" : "auto"}
+                fetchPriority="high"
+                loading={i === 0 ? undefined : "lazy"}
               />
             </div>
           ))}
@@ -245,7 +246,6 @@ const Referency = () => {
 
         <div className={classes.reviewsWrapper}>
           {isDesktop ? (
-            /* WERSJA DESKTOP Z ANIMACJAMI */
             <>
               <motion.div
                 className={classes.reviewsLeftContainer}
