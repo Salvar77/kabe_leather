@@ -14,7 +14,7 @@ import ownerPhotoMobile from "../../assets/image/owner-kamil-brzoskwinia-kabetin
 import SEO from "@/components/Main/SEO";
 
 const AboutPage = () => {
-  const [isDesktop, setIsDesktop] = useState(null);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,13 +31,13 @@ const AboutPage = () => {
   const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
   const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
 
-  if (isDesktop === null) {
-    return (
-      <div className={classes.loadingContainer}>
-        <p>Loading...</p>
-      </div>
-    );
-  }
+  // if (isDesktop === null) {
+  //   return (
+  //     <div className={classes.loadingContainer}>
+  //       <p>Loading...</p>
+  //     </div>
+  //   );
+  // }
 
   const motionProps = isDesktop
     ? {
