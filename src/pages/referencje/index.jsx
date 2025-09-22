@@ -68,7 +68,6 @@ const Referency = () => {
                   className={classes.desktopImage}
                   priority={i === 0}
                   fetchPriority={i === 0 ? "high" : "auto"}
-                  loading={i === 0 ? "eager" : "lazy"}
                 />
               )}
             </div>
