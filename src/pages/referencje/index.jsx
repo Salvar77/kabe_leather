@@ -60,6 +60,7 @@ const Referency = () => {
                 priority={i === 0 && !isDesktop}
                 fetchPriority="high"
                 loading={i === 0 ? "eager" : "lazy"}
+                unoptimized={true}
               />
               {isDesktop && (
                 <Image
