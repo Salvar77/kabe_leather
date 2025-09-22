@@ -28,18 +28,8 @@ const AboutPage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const backgroundImage =
-    isDesktop === null
-      ? backgroundDesktop
-      : isDesktop
-      ? backgroundDesktop
-      : backgroundMobile;
-  const ownerImage =
-    isDesktop === null
-      ? ownerPhotoDesktop
-      : isDesktop
-      ? ownerPhotoDesktop
-      : ownerPhotoMobile;
+  const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
+  const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
 
   if (isDesktop === null) {
     return (
