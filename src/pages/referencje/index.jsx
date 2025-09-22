@@ -188,7 +188,7 @@ import classes from "./referencje.module.scss";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn, fadeScale } from "../../../utils/motion";
-import useMediaQuery from "../../hooks/useMediaQuery";
+import Head from "next/head";
 
 import { referencyImages } from "../../../constants";
 
@@ -213,6 +213,22 @@ const Referency = () => {
 
   return (
     <div>
+      <Head>
+        <link
+          rel="preload"
+          href={referencyImages[0].src}
+          as="image"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <link
+          rel="preload"
+          href={referencyImages[0].largeSrc}
+          as="image"
+          type="image/webp"
+          media="(min-width: 769px)"
+        />
+      </Head>
       <SEO
         title="Referencje - KabeTintLeather Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki"
         description="Sprawdź opinie naszych zadowolonych klientów! Referencje i zdjęcia z realizacji KabeTintLeather Auto Detailing - Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki."
@@ -243,6 +259,7 @@ const Referency = () => {
                 className={classes.mobileImage}
                 priority={i === 0 && !isDesktop}
                 fetchPriority="high"
+                unoptimized={true}
               />
               {isDesktop && (
                 <Image
