@@ -59,7 +59,7 @@ const Referency = () => {
                 className={classes.mobileImage}
                 priority={i === 0 && !isDesktop}
                 fetchPriority="high"
-                loading={i === 0 ? "eager" : "lazy"}
+                loading="eager"
                 unoptimized={true}
               />
               {isDesktop && (
