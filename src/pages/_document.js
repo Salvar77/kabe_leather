@@ -26,6 +26,7 @@ class MyDocument extends Document {
           />
 
           <link rel="icon" href="/favicon1.ico" />
+          <link rel="preconnect" href="https://maps.googleapis.com" />
         </Head>
         <body>
           <noscript>
