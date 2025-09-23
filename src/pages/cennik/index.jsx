@@ -29,7 +29,7 @@ const PricingSection = () => (
         src={backgroundImage}
         alt="Tło strony cennik - KabeTintLeather Auto Detailing Opole"
         fill
-        priority
+        priority={true}
         fetchPriority="high"
         quality={60}
         className={styles.backgroundImage}
