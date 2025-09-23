@@ -25,6 +25,15 @@
   }
 }
 
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
 .pricingHeader {
   text-align: center;
   padding: 1rem;

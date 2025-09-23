@@ -3,7 +3,7 @@ import Contact from "@/components/Main/Contact";
 import styles from "./cennik.module.scss";
 import { services } from "../../../constants";
 import SEO from "@/components/Main/SEO";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   staggerContainer,
@@ -11,6 +11,8 @@ import {
   fadeIn,
   fadeScale,
 } from "../../../utils/motion";
+
+import backgroundImage from "../../assets/image/kabelogowhite.webp";
 
 const PricingSection = () => (
   <>
@@ -23,6 +25,15 @@ const PricingSection = () => (
     />
 
     <section id="cennik" className={styles.pricingSection}>
+      <Image
+        src={backgroundImage}
+        alt="Tło strony cennik - KabeTintLeather Auto Detailing Opole"
+        fill
+        priority
+        fetchPriority="high"
+        quality={60}
+        className={styles.backgroundImage}
+      />
       <motion.div
         variants={staggerContainer(0.15, 0.25)}
         initial="hidden"
