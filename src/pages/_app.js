@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <Script
           id="gtm-script"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
       (function(w,d,s,l,i){
