@@ -31,7 +31,7 @@ export default function Home() {
             "Oferujemy najwyższej jakości usługi prania tapicerki i czyszczenia samochodów w Opolu. Specjalizujemy się w czyszczeniu tapicerki, dbając o każdy szczegół.",
           images: [
             {
-              url: "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole",
+              url: "https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg",
               width: 800,
               height: 600,
               alt: "Czyszczenie tapicerki - KabeTintLeather",

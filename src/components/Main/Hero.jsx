@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
@@ -10,6 +10,23 @@ const Hero = ({ height = "100vh", mobileWhiteBlockColor = "#1D120C" }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
   const isMobile = useMediaQuery("(max-width: 992px)");
 
+  // ✅ USE MEMO - stabilne wartości
+  const imageProps = useMemo(() => {
+    return {
+      src: isMobile ? HeroImageMobile : HeroImageDesktop,
+      objectPosition: isMobile ? "center" : "80% 20%",
+    };
+  }, [isMobile]);
+
+  // ✅ USE CALLBACK - stabilne funkcje
+  const updateWhiteBlock = useCallback(() => {
+    setWhiteBlockColor(mobileWhiteBlockColor);
+  }, [mobileWhiteBlockColor]);
+
+  useEffect(() => {
+    updateWhiteBlock();
+  }, [updateWhiteBlock]);
+
   const title = "KabeTintLeather Auto Detailing";
   const description = "Kompleksowe czyszczenie samochodu";
 
@@ -18,12 +35,16 @@ const Hero = ({ height = "100vh", mobileWhiteBlockColor = "#1D120C" }) => {
       <section id="hero" className={classes.hero} style={{ height }}>
         <div className={classes.imageWrapper}>
           <Image
-            src={isMobile ? HeroImageMobile : HeroImageDesktop}
-            alt="Hero Background"
-            layout="fill"
-            objectFit="cover"
-            objectPosition={isMobile ? "center" : "80% 20%"}
+            {...imageProps}
+            alt="Profesjonalne czyszczenie samochodów - KabeTintLeather"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: imageProps.objectPosition,
+            }}
             priority
+            fetchPriority="high"
+            quality={80}
             sizes="(max-width: 768px) 100vw, 100vh"
           />
         </div>

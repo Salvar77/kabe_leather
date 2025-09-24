@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import classes from "./Footer.module.scss";
 import ContactMain from "../More/ContactMain";
 import Link from "next/link";
@@ -10,33 +10,11 @@ const DynamicGoogleMap = dynamic(() => import("../More/GoogleMap"), {
 });
 
 const Footer = () => {
-  const [shouldLoadMap, setShouldLoadMap] = useState(false);
   const currentYear = new Date().getFullYear();
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShouldLoadMap(true);
-    }, 3000);
 
-    const handleScroll = () => {
-      const footer = document.querySelector("footer");
-      if (footer) {
-        const rect = footer.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-          setShouldLoadMap(true);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <footer className={classes.footer}>
-      {shouldLoadMap ? <DynamicGoogleMap /> : <p>Ładowanie mapy...</p>}
+      <DynamicGoogleMap />
       <ContactMain />
       <div className={classes.footer__container}>
         <div className={classes.footer__text}>

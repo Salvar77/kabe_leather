@@ -42,8 +42,7 @@ const Logo = ({ showLogo }) => {
         <Image
           src={isMobile && !isHomePage && !isAboutPage ? logoSubpage : logoMain}
           alt={ALT_TEXT}
-          priority
-          fetchPriority="high"
+          quality={85}
         />
       </Link>
     </div>
