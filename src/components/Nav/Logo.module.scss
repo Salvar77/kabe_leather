@@ -2,16 +2,14 @@
 
 .logo {
   position: fixed;
-  top: 4.9rem;
-  left: -1.5rem;
+  top: 8.9rem;
+  left: -2.7rem;
 
   z-index: 1000;
 
   img {
-    // width: 20rem;
-    // height: 7rem;
-    width: 150px;
-    height: 150px;
+    width: 20rem;
+    height: 7rem;
     object-fit: cover;
   }
 }
