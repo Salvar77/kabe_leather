@@ -24,7 +24,7 @@ const Hero = ({ height = "100vh", mobileWhiteBlockColor = "#1D120C" }) => {
             objectFit="cover"
             objectPosition={isMobile ? "center" : "80% 20%"}
             priority
-            quality={65}
+            quality={75}
             sizes="(max-width: 768px) 100vw, 100vh"
           />
         </div>
