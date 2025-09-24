@@ -29,20 +29,6 @@ export default function App({ Component, pageProps }) {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
-      const observer = new PerformanceObserver((list) => {
-        list.getEntries().forEach((entry) => {
-          if (entry.entryType === "layout-shift") {
-            console.log("Layout Shift:", entry);
-          }
-        });
-      });
-
-      observer.observe({ entryTypes: ["layout-shift"] });
-    }
-  }, []);
-
   return (
     <>
       <header>
