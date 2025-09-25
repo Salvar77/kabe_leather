@@ -36,7 +36,7 @@
   margin: 0 auto;
   color: $white-smooth;
   text-shadow: 0.1rem 0.1rem 0.4rem rgba($dark-smooth, 0.4);
-  position: relative; /* Zapewnia, że treść jest nad obrazem tła */
+  position: relative;
   z-index: 2;
 
   &__grid {
@@ -73,8 +73,6 @@
     text-align: center;
     box-shadow: 0.1rem 0.1rem 0.2rem $blue-after;
     border-radius: 1rem;
-    padding: 1rem;
-    // background: rgba($dark-smooth, 0.1);
     line-height: 1.6;
   }
 

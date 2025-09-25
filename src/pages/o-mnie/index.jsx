@@ -13,39 +13,26 @@ import ownerPhotoMobile from "../../assets/image/owner-kamil-brzoskwinia-kabetin
 
 import SEO from "@/components/Main/SEO";
 
-const AboutPage = () => {
-  const [isDesktop, setIsDesktop] = useState(null);
+export async function getServerSideProps(context) {
+  const isMobile = context.req.headers["user-agent"]
+    .toLowerCase()
+    .includes("mobi");
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 992);
-    };
+  return {
+    props: {
+      isDesktop: !isMobile,
+      backgroundImage: isMobile ? backgroundMobile : backgroundDesktop,
+      ownerImage: isMobile ? ownerPhotoMobile : ownerPhotoDesktop,
+    },
+  };
+}
 
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const backgroundImage = isDesktop ? backgroundDesktop : backgroundMobile;
-  const ownerImage = isDesktop ? ownerPhotoDesktop : ownerPhotoMobile;
-
-  if (isDesktop === null) {
-    return (
-      <div className={classes.loadingContainer}>
-        <p>Loading...</p>
-      </div>
-    );
-  }
-
-  const motionProps = isDesktop
-    ? {
-        initial: "hidden",
-        whileInView: "show",
-        viewport: { once: true },
-      }
-    : {};
+const AboutPage = ({ isDesktop, backgroundImage, ownerImage }) => {
+  const motionProps = {
+    initial: "hidden",
+    whileInView: "show",
+    viewport: { once: true, margin: "-100px" },
+  };
 
   return (
     <>
@@ -59,7 +46,7 @@ const AboutPage = () => {
       <div className={classes.backgroundAbout}>
         <Image
           src={backgroundImage}
-          alt="Tło strony"
+          alt="Tło strony O mnie - KabeTintLeather Auto Detailing"
           fill
           sizes="100vw"
           priority
