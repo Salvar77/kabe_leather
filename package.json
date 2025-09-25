@@ -40,5 +40,18 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^15.0.3",
     "@svgr/webpack": "^8.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not dead",
+      "not op_mini all",
+      "not ie > 0"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
