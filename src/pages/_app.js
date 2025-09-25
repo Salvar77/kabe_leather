@@ -2,7 +2,7 @@ import "@/styles/globals.scss";
 import "hamburgers/dist/hamburgers.min.css";
 import Nav from "@/components/Nav/Nav";
 import BurgerMenu from "@/components/Nav/BurgerMenu";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Logo from "@/components/Nav/Logo";
 import Footer from "@/components/Footer/Footer";
 import ContactBubble from "@/components/More/ContactBubble";
@@ -13,17 +13,17 @@ export default function App({ Component, pageProps }) {
 
   const [showLogo, setShowLogo] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = document.documentElement.scrollTop;
-      const windowWidth = window.innerWidth;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollPos = document.documentElement.scrollTop;
+  //     const windowWidth = window.innerWidth;
 
-      setShowLogo(!(windowWidth < 992 && currentScrollPos > 200));
-    };
+  //     setShowLogo(!(windowWidth < 992 && currentScrollPos > 200));
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // });
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
