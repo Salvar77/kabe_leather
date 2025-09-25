@@ -1,5 +1,5 @@
 import "@/styles/globals.scss";
-// import "hamburgers/dist/hamburgers.min.css";
+import "hamburgers/dist/hamburgers.min.css";
 import Nav from "@/components/Nav/Nav";
 import BurgerMenu from "@/components/Nav/BurgerMenu";
 import { useState, useEffect } from "react";
