@@ -52,7 +52,7 @@ body {
 
 .bg {
   background-color: $white-smooth;
-  overflow: hidden;
+  overflow: clip;
 }
 
 #O-nas,
