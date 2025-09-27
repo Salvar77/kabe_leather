@@ -9,6 +9,11 @@
       "source": "/uslugi/renowacja-tapicerki-skorzanej",
       "destination": "/uslugi/renowacja-i-czyszczenie-skor",
       "permanent": true
+    },
+    {
+      "source": "/uslugi/[automotiveId]",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
