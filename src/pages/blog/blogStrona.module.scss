@@ -239,7 +239,13 @@
       }
 
       &.largeImage img {
-        min-height: 30rem;
+        min-height: 50rem;
+      }
+
+      &.polerowanieReflektorow {
+        img {
+          min-height: 100rem !important;
+        }
       }
     }
 

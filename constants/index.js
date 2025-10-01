@@ -51,6 +51,8 @@ import {
   autodetailingBlogPhoto2,
   autodetailingBlogPhoto3,
   blogFoto13Mobile,
+  headlightPolishing4,
+  headlightPolishing2,
 } from "../utils/index";
 
 import {
@@ -1078,7 +1080,7 @@ const pagesContent = {
   },
   "polerowanie-reflektorow": {
     title: "Polerowanie reflektorów – bezpieczeństwo i estetyka Twojego auta",
-    dynamicImage: headlightPolishing,
+    dynamicImage: headlightPolishing2,
     sections: [
       {
         heading: "Kim jestem i dlaczego warto mi zaufać?",

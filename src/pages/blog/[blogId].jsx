@@ -43,7 +43,7 @@ export default function BlogPost({ pageContent, blogId }) {
       <div className={classes.blogPost}>
         <div
           className={`${classes.blogPost__image} ${
-            isSpecialImage ? classes.specialImage : ""
+            isSpecialImage ? classes.specialImage : classes.largeImage
           }`}
         >
           <Image
@@ -65,7 +65,6 @@ export default function BlogPost({ pageContent, blogId }) {
               <div className={classes.section__content}>
                 {parse(section.content, {
                   replace: (node) => {
-                    // Jeśli to element i jego nazwa to 'blockquote'
                     if (node.type === "tag" && node.name === "blockquote") {
                       return (
                         <blockquote className={classes.testimonial}>
