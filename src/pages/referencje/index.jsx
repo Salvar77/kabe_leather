@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn, fadeScale } from "../../../utils/motion";
 
-import { referencyImages } from "constants";
+import { referencyImages } from "../../../constants/index";
 
 import ElfsightWidget from "@/components/Main/ElfsightWidget";
 import ElfsightLazyWrapper from "@/components/Main/ElfsightLazyWrapper";
