@@ -1,0 +1,23 @@
+.logo {
+  position: fixed;
+  top: 4.8rem;
+  left: -1.5rem;
+  z-index: 1000;
+}
+.logo img {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .logo {
+    top: -6.3rem;
+    left: 10rem;
+  }
+  .logo img {
+    width: 23rem;
+    height: 23rem;
+  }
+}/*# sourceMappingURL=Logo.module.css.map */

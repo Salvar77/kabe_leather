@@ -1,0 +1,50 @@
+.contactBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f404c;
+  padding: 0.8rem;
+  color: #fcfcfc;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(5, 5, 5, 0.9);
+}
+.contactBar .contactButtonsWrapper {
+  display: flex;
+  gap: 3.8rem;
+}
+.contactBar .contactButton {
+  color: #fcfcfc;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.contactBar .contactButton:hover {
+  background-color: rgb(71.2388663968, 121.8785425101, 140.7611336032);
+}
+.contactBar .contactButton .icon {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.separator {
+  width: 1px;
+  border-bottom: 5rem solid #fcfcfc;
+}
+
+@media screen and (min-width: 992px) {
+  .contactBar {
+    display: none;
+  }
+}/*# sourceMappingURL=ContactBar.module.css.map */

@@ -1,0 +1,137 @@
+.areaContainer {
+  padding: 20px 15px;
+  background-color: #ffffff;
+  margin-top: 13rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.areaTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.areaSubtitle {
+  font-size: 20px;
+  margin: 20px 0 15px;
+  text-align: center;
+  color: #5b96ac;
+}
+
+.areaText {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
+
+.areaList {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  font-family: inherit;
+  font-weight: normal;
+}
+.areaList li {
+  margin-bottom: 0.6rem;
+}
+@media (min-width: 768px) {
+  .areaList {
+    font-size: 18px;
+  }
+}
+
+.contactText {
+  text-align: center;
+}
+
+.areaText a,
+.contactText a {
+  color: #5b96ac;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.areaText a:hover,
+.contactText a:hover {
+  color: rgb(71.2388663968, 121.8785425101, 140.7611336032);
+  text-decoration: underline;
+}
+
+.contactLink {
+  display: inline-block;
+  color: #5b96ac;
+  text-decoration: none;
+  transition: color 0.2s;
+  text-align: center;
+}
+.contactLink:hover {
+  color: rgb(62.6700404858, 107.2186234818, 123.8299595142);
+}
+
+.strong {
+  font-weight: 700;
+  color: #050505;
+}
+
+.mapContainer {
+  max-width: 800px;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.googleMap {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.areaDescription {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 25px;
+  text-align: justify;
+  line-height: 1.6;
+  color: #444;
+}
+.areaDescription a {
+  color: #5b96ac;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.areaDescription a:hover {
+  color: rgb(71.2388663968, 121.8785425101, 140.7611336032);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .areaContainer {
+    margin-top: 10rem;
+    padding: 40px 30px;
+  }
+  .areaTitle {
+    font-size: 32px;
+  }
+  .areaSubtitle {
+    font-size: 26px;
+  }
+  .areaText {
+    font-size: 18px;
+  }
+  .googleMap {
+    height: 450px;
+  }
+  .areaDescription {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=AreaTemplate.module.css.map */
