@@ -19,6 +19,11 @@
       "source": "/uslugi/%5BautomotiveId%5D",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/blog/[blogId]",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
