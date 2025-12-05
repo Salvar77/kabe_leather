@@ -39,10 +39,10 @@ import photoCorrectionMobile from "../../assets/image/paintCorrection-mobile2.we
 import photoCorrection3 from "../../assets/image/paintCorrection3.jpg";
 // import photoCorrection4 from "../../assets/image/paintCorrection4.jpeg";
 import photoCorrection5 from "../../assets/image/paintCorrection5.jpeg";
-import photoCorrection6 from "../../assets/image/paintCorrection6.JPG";
-import photoCorrection7 from "../../assets/image/paintCorrection7.JPG";
-import photoCorrection8 from "../../assets/image/paintCorrection8.JPG";
-import photoCorrection9 from "../../assets/image/paintCorrection9.JPG";
+import photoCorrection6 from "../../assets/image/paintCorrection6.jpg";
+import photoCorrection7 from "../../assets/image/paintCorrection7.jpg";
+import photoCorrection8 from "../../assets/image/paintCorrection8.jpg";
+import photoCorrection9 from "../../assets/image/paintCorrection9.jpg";
 import photoFoilPpf from "../../assets/image/ppf.webp";
 import photoFoilPpfMobile from "../../assets/image/ppf-mobile.webp";
 import photoFoilPpf2 from "../../assets/image/ppf2.jpg";
