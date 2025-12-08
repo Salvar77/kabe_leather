@@ -61,7 +61,7 @@ import referencyPhoto2Mobile from "../src/assets/image/referrency-mobile.webp";
 import headlightPolishing from "../src/assets/image/headlightPhoto.jpg";
 import headlightPolishingMobile from "../src/assets/image/headlightPhoto-mobile2.webp";
 import headlightPolishing2 from "../src/assets/image/headlight2.jpg";
-import headlightPolishing3 from "../src/assets/image/headlight3.jpg";
+import headlightPolishing3 from "../src/assets/image/headlights3.jpg";
 import headlightPolishing4 from "../src/assets/image/headlight.jpeg";
 
 import autodetailingBlogPhoto from "../src/assets/image/autocosmetic7.jpg";

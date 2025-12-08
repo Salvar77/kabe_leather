@@ -52,7 +52,7 @@ import ceramicCoatingImage2 from "../../assets/image/ceramicCoating2.jpeg";
 import headlightPolishing from "../../assets/image/headlightPhoto.jpg";
 import headlightPolishingMobile from "../../assets/image/headlightPhoto-mobile2.webp";
 import headlightPolishing2 from "../../assets/image/headlight2.jpg";
-import headlightPolishing3 from "../../assets/image/headlight3.jpg";
+import headlightPolishing3 from "../../assets/image/headlights3.jpg";
 import headlightPolishing4 from "../../assets/image/headlight.jpeg";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
