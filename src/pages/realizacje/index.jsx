@@ -49,13 +49,11 @@ import photoFoilPpf4 from "../../assets/image/ppf4.jpeg";
 import ceramicCoatingImage from "../../assets/image/ceramicCoating.jpeg";
 import ceramicCoatingImageMobile from "../../assets/image/ceramicCoating-mobile.webp";
 import ceramicCoatingImage2 from "../../assets/image/ceramicCoating2.jpeg";
-import {
-  headlightPolishing,
-  headlightPolishingMobile,
-  headlightPolishing2,
-  headlightPolishing3,
-  headlightPolishing4,
-} from "../../../utils";
+import headlightPolishing from "../../assets/image/headlightPhoto.jpg";
+import headlightPolishingMobile from "../../assets/image/headlightPhoto-mobile2.webp";
+import headlightPolishing2 from "../../assets/image/headlight2.jpg";
+import headlightPolishing3 from "../../assets/image/headlight3.jpg";
+import headlightPolishing4 from "../../assets/image/headlight.jpeg";
 // import photoAutoscmetic4 from "../../assets/image/autocosmetic4.jpg";
 // import fotoo from "../../assets/image/detailing1.jpg";
 // import fotoo1 from "../../assets/image/detailing2.jpg";
