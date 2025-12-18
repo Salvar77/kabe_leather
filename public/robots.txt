@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /private/
 Disallow: /uslugi/%5BautomotiveId%5D
 Disallow: /uslugi/[automotiveId]
+Disallow: /uslugi/renowacja-tapicerki-skorzanej
 Allow: /
 
 Sitemap: https://www.kabetintleather.opole.pl/sitemap.xml
