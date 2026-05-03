@@ -29,11 +29,40 @@ export default function BlogPost({ pageContent, blogId }) {
     "/autokosmetyka-i-detailing",
   ].includes("/" + blogId);
 
+  const generateSeoTitle = () => {
+    let title = `${pageContent.title} | Blog KabeTintLeather Opole`;
+    if (title.length > 68) {
+      title = `${pageContent.title} | KabeTintLeather`;
+    }
+    if (title.length > 68) {
+      title = pageContent.title;
+    }
+    if (title.length > 68) {
+      title = title.substring(0, 65) + "...";
+    }
+    return title;
+  };
+
+  const generateSeoDescription = () => {
+    if (pageContent.description) return pageContent.description;
+    
+    let desc = `${pageContent.title} - poznaj porady eksperta KabeTintLeather Auto Detailing Opole. Zadbaj o swoje auto!`;
+    
+    if (desc.length > 155) {
+      desc = `${pageContent.title} - porady eksperta KabeTintLeather Opole. Sprawdź!`;
+    }
+    
+    if (desc.length > 155) {
+      desc = `${pageContent.title.substring(0, 95)}... - porady KabeTintLeather Opole.`;
+    }
+    return desc;
+  };
+
   return (
     <>
       <SEO
-        title={`${pageContent.title} - KabeTintLeather Blog`}
-        description={pageContent.description}
+        title={generateSeoTitle()}
+        description={generateSeoDescription()}
         image={pageContent.dynamicImage || "/images/logo.jpg"}
         url={`https://www.kabetintleather.opole.pl/blog/${blogId}`}
         datePublished={pageContent.date}

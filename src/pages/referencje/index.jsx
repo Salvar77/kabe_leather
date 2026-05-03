@@ -30,8 +30,8 @@ const Referency = () => {
   return (
     <div>
       <SEO
-        title="Referencje - KabeTintLeather Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki"
-        description="Sprawdź opinie naszych zadowolonych klientów! Referencje i zdjęcia z realizacji KabeTintLeather Auto Detailing - Pranie tapicerki, Czyszczenie samochodu, Czyszczenie tapicerki."
+        title="Opinie i Referencje KabeTintLeather | Auto Detailing Opole"
+        description="Sprawdź opinie o moich usługach! Referencje KabeTintLeather Opole: profesjonalne pranie tapicerki i czyszczenie aut. Zobacz efekty mojej pracy!"
         image="https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
         url="https://www.kabetintleather.opole.pl/referencje"
       />

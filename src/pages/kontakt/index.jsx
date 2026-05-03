@@ -10,8 +10,8 @@ import { textVariant, fadeIn, fadeScale } from "../../../utils/motion";
 const ContactSide = () => (
   <>
     <SEO
-      title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
-      description="Skontaktuj się z nami! KabeTintLeather Auto Detailing oferuje profesjonalne usługi prania tapicerki, czyszczenia samochodów i przyciemniania szyb. Zapraszamy do kontaktu."
+      title="Kontakt i Rezerwacje | KabeTintLeather Auto Detailing Opole"
+      description="Skontaktuj się ze mną! KabeTintLeather Auto Detailing Opole: wykonuję pranie tapicerki, czyszczenie samochodów i przyciemnianie szyb. Zadzwoń!"
       image="https://www.kabetintleather.opole.pl/logo-kabetintleather-auto-detailing-opole.jpg"
       url="https://www.kabetintleather.opole.pl/kontakt"
     />
