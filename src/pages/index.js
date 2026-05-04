@@ -9,6 +9,7 @@ import ElfsightLazyWrapper from "@/components/Main/ElfsightLazyWrapper";
 import AboutCompany from "@/components/More/AboutCompany";
 import WhyUs from "@/components/More/WhyUs";
 import Blog from "@/components/Main/Blog";
+import KabeBoostSeo from "@/components/Main/KabeBoostSeo";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         url="https://www.kabetintleather.opole.pl/"
         isHome={true}
       />
+      <KabeBoostSeo />
       <NextSeo
         title="Pranie tapicerki samochodowej Opole | KabeTintLeather Auto Detailing"
         description="Profesjonalne pranie tapicerki i kompleksowe czyszczenie samochodu w Opolu. Zadbam o perfekcyjną czystość każdego detalu. Umów wizytę!"
