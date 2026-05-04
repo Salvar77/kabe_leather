@@ -56,7 +56,7 @@ const SEO = ({
     },
     description:
       "KabeTintLeather to firma specjalizująca się w kompleksowym autodetailingu. Oferujemy szeroki zakres usług, w tym pranie tapicerki samochodowej, czyszczenie, renowację i impregnację skór, przywracając im pierwotny wygląd i trwałość. Zajmujemy się także polerowaniem lakieru oraz reflektorów, usuwając zarysowania i przywracając blask pojazdu. Dodatkowo, nakładamy folie PPF (Paint Protection Film), chroniąc lakier przed uszkodzeniami. Oferujemy również naprawę podsufitek samochodowych, dbając o detale, które sprawiają, że Twoje auto wygląda jak nowe. Zapraszam do korzystania z naszych usług KabeTintLeather Opole.",
-    hasMap: "https://maps.google.com/maps?cid=2514215909979545298",
+    hasMap: "https://share.google/iETeJNMhU9sSSHa8q",
     image:
       "https://lh3.googleusercontent.com/fYcRPzM9pXxHoFVGVa1fcXQiNtKtpItNFh4UxjvDiw9gsNU6-9Ayb90kqSqr6D0jVqSMWHit6d7OD2VeuA=s0",
     makesOffer: [
@@ -112,6 +112,7 @@ const SEO = ({
       },
     ],
     sameAs: [
+      "https://share.google/iETeJNMhU9sSSHa8q",
       "https://www.facebook.com/people/Kabe-TintLeather-Auto-Detailing/61554800660887/",
       "https://www.instagram.com/kabetintleather_autodetailing/",
       "https://www.youtube.com/@KabeTintLeather",
