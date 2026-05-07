@@ -42,16 +42,56 @@ const KabeBoostSeo = () => {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Usługi Detailingowe",
-        item: `${domain}/#uslugi`,
+        name: "Usługi",
+        item: `${domain}/#usługi`,
       },
       {
         "@type": "ListItem",
         position: 3,
+        name: "Realizacje",
+        item: `${domain}/realizacje`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
         name: "Kontakt",
-        item: `${domain}/#contact`,
+        item: `${domain}/kontakt`,
       },
     ],
+  };
+
+  const sharedReturnPolicy = {
+    "@type": "MerchantReturnPolicy",
+    "applicableCountry": "PL",
+    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+  };
+
+  const sharedShipping = {
+    "@type": "OfferShippingDetails",
+    "shippingRate": {
+      "@type": "MonetaryAmount",
+      "value": "0",
+      "currency": "PLN",
+    },
+    "shippingDestination": {
+      "@type": "DefinedRegion",
+      "addressCountry": "PL",
+    },
+    "deliveryTime": {
+      "@type": "ShippingDeliveryTime",
+      "handlingTime": {
+        "@type": "QuantitativeValue",
+        "minValue": 0,
+        "maxValue": 1,
+        "unitCode": "DAY",
+      },
+      "transitTime": {
+        "@type": "QuantitativeValue",
+        "minValue": 0,
+        "maxValue": 1,
+        "unitCode": "DAY",
+      },
+    },
   };
 
   const extraProducts = [
@@ -63,6 +103,27 @@ const KabeBoostSeo = () => {
       description:
         "Profesjonalna renowacja tapicerki skórzanej systemem Colourlock. Przywracanie koloru i impregnacja skór premium.",
       brand: { "@type": "Brand", name: "KabeTintLeather" },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "54",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Dariusz Grzebień",
+        },
+        reviewBody:
+          "Auto oddane na kompleksowe czyszczenie wnętrza. Skóry po renowacji wyglądają jak nowe, są miękkie i świetnie zabezpieczone. Szczerze polecam!",
+      },
       offers: {
         "@type": "Offer",
         price: "200.00",
@@ -70,6 +131,8 @@ const KabeBoostSeo = () => {
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
         url: domain,
+        hasMerchantReturnPolicy: sharedReturnPolicy,
+        shippingDetails: sharedShipping,
       },
     },
     {
@@ -80,6 +143,27 @@ const KabeBoostSeo = () => {
       description:
         "Wieloetapowa korekta lakieru maszynowo (Rupes) z użyciem past Menzerna. Usuwanie rys i nadawanie lustrzanego blasku.",
       brand: { "@type": "Brand", name: "KabeTintLeather" },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "48",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      review: {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: "Denis Bul",
+        },
+        reviewBody:
+          "Pan Kamil wykonał korektę lakieru perfekcyjnie! Lakier zyskał niesamowitą głębię i blask. Samochód wygląda lepiej niż w salonie!",
+      },
       offers: {
         "@type": "Offer",
         price: "800.00",
@@ -87,6 +171,8 @@ const KabeBoostSeo = () => {
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-12-31",
         url: domain,
+        hasMerchantReturnPolicy: sharedReturnPolicy,
+        shippingDetails: sharedShipping,
       },
     },
   ];
